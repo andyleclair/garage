@@ -17,7 +17,6 @@ module.exports = {
     extend: {
       colors: {
         brand: "#FD4F00",
-        require('./tailwind.phlegethon.colors.json'), // <-- Include colors from Phlegethon
       }
     },
   },
