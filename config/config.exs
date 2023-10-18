@@ -12,6 +12,7 @@ config :garage,
 
 # Configures the endpoint
 config :garage, GarageWeb.Endpoint,
+  adapter: Bandit.PhoenixAdapter,
   url: [host: "localhost"],
   render_errors: [
     formats: [html: GarageWeb.ErrorHTML, json: GarageWeb.ErrorJSON],
@@ -62,9 +63,6 @@ config :phoenix, :json_library, Jason
 config :ash, :use_all_identities_in_manage_relationship?, false
 
 config :garage, ash_apis: [Garage.Builds]
-
-config :tails, colors_file: Path.join(File.cwd!(), "assets/tailwind.phlegethon.colors.json")
-config :phlegethon, :overrides, [Phlegethon.Overrides.Default]
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.

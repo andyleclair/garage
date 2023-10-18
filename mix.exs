@@ -7,7 +7,6 @@ defmodule Garage.MixProject do
       version: "0.1.0",
       elixir: "~> 1.14",
       elixirc_paths: elixirc_paths(Mix.env()),
-      compilers: Mix.compilers() ++ [:phlegethon],
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps()
@@ -39,7 +38,7 @@ defmodule Garage.MixProject do
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 3.3"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "~> 0.19.1", override: true},
+      {:phoenix_live_view, "~> 0.20"},
       {:floki, ">= 0.30.0", only: :test},
       {:phoenix_live_dashboard, "~> 0.8"},
       {:esbuild, "~> 0.7", runtime: Mix.env() == :dev},
@@ -54,7 +53,7 @@ defmodule Garage.MixProject do
       {:ash, "~> 2.6"},
       {:ash_phoenix, "~> 1.1"},
       {:ash_postgres, "~> 1.3.6"},
-      {:phlegethon, github: "frankdugan3/phlegethon", branch: "main"}
+      {:bandit, "~> 1.0-pre"}
     ]
   end
 
