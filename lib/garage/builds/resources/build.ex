@@ -4,6 +4,16 @@ defmodule Garage.Builds.Build do
 
   actions do
     defaults [:create, :read, :update, :destroy]
+
+    read :by_id do
+      # This action has one argument :id of type :uuid
+      argument :id, :uuid, allow_nil?: false
+      # Tells us we expect this action to return a single result
+      get? true
+      # Filters the `:id` given in the argument
+      # against the `id` of each element in the resource
+      filter expr(id == ^arg(:id))
+    end
   end
 
   attributes do
@@ -24,6 +34,15 @@ defmodule Garage.Builds.Build do
     attribute :description, :string
     attribute :frame, :string, default: "stock"
     attribute :subframe, :string
+  end
+
+  code_interface do
+    define_for Garage.Builds
+    define :create, action: :create
+    define :read_all, action: :read
+    define :update, action: :update
+    define :destroy, action: :destroy
+    define :get_by_id, args: [:id], action: :by_id
   end
 
   postgres do
