@@ -32,15 +32,15 @@ defmodule Garage.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.7.2"},
+      {:phoenix, "~> 1.7.9"},
       {:phoenix_ecto, "~> 4.4"},
-      {:ecto_sql, "~> 3.6"},
+      {:ecto_sql, "~> 3.10"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 3.3"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "~> 0.20"},
+      {:phoenix_live_view, "~> 0.20.1"},
       {:floki, ">= 0.30.0", only: :test},
-      {:phoenix_live_dashboard, "~> 0.8"},
+      {:phoenix_live_dashboard, "~> 0.8.2"},
       {:esbuild, "~> 0.7", runtime: Mix.env() == :dev},
       {:tailwind, "~> 0.2.0", runtime: Mix.env() == :dev},
       {:swoosh, "~> 1.3"},
@@ -49,11 +49,11 @@ defmodule Garage.MixProject do
       {:telemetry_poller, "~> 1.0"},
       {:gettext, "~> 0.20"},
       {:jason, "~> 1.2"},
-      {:plug_cowboy, "~> 2.5"},
-      {:ash, "~> 2.6"},
-      {:ash_phoenix, "~> 1.1"},
-      {:ash_postgres, "~> 1.3.6"},
-      {:bandit, "~> 1.0-pre"}
+      {:dns_cluster, "~> 0.1.1"},
+      {:bandit, "~> 1.0-pre"},
+      {:ash, "~> 2.15"},
+      {:ash_postgres, "~> 1.3"},
+      {:ash_phoenix, "~> 1.2"}
     ]
   end
 

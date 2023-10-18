@@ -7,18 +7,18 @@ defmodule Garage.Builds.Build do
   end
 
   attributes do
-    uuid_primary_key(:id)
+    uuid_primary_key :id
 
     attribute :name, :string do
-      allow_nil?(false)
+      allow_nil? false
     end
 
-    attribute(:description, :string)
+    attribute :description, :string
   end
 
   postgres do
-    table("builds")
+    table "builds"
 
-    repo(Garage.Repo)
+    repo Garage.Repo
   end
 end

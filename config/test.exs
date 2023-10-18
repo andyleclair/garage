@@ -17,7 +17,7 @@ config :garage, Garage.Repo,
 # you can enable the server option below.
 config :garage, GarageWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "rtgAFzz+Wx8qmgfrptA+5vVd1rWl2lftQZ1d7yzH/bQG7tgm6fwmlKM/aed1WnTz",
+  secret_key_base: "W2x/f7dT4cYWLuOrmI+RV9vhjLcqKwfYaErjaDumfYkW2UCyGsBzK0KBp/CMpWyD",
   server: false
 
 # In test we don't send emails.

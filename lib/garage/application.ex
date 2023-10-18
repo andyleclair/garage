@@ -8,18 +8,16 @@ defmodule Garage.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Start the Telemetry supervisor
       GarageWeb.Telemetry,
-      # Start the Ecto repository
       Garage.Repo,
-      # Start the PubSub system
+      {DNSCluster, query: Application.get_env(:garage, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: Garage.PubSub},
-      # Start Finch
+      # Start the Finch HTTP client for sending emails
       {Finch, name: Garage.Finch},
-      # Start the Endpoint (http/https)
-      GarageWeb.Endpoint
       # Start a worker by calling: Garage.Worker.start_link(arg)
-      # {Garage.Worker, arg}
+      # {Garage.Worker, arg},
+      # Start to serve requests, typically the last entry
+      GarageWeb.Endpoint
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

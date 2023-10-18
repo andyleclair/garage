@@ -8,18 +8,19 @@
 import Config
 
 config :garage,
-  ecto_repos: [Garage.Repo]
+  ecto_repos: [Garage.Repo],
+  generators: [timestamp_type: :utc_datetime]
 
 # Configures the endpoint
 config :garage, GarageWeb.Endpoint,
-  adapter: Bandit.PhoenixAdapter,
   url: [host: "localhost"],
+  adapter: Bandit.PhoenixAdapter,
   render_errors: [
     formats: [html: GarageWeb.ErrorHTML, json: GarageWeb.ErrorJSON],
     layout: false
   ],
   pubsub_server: Garage.PubSub,
-  live_view: [signing_salt: "ULX+/g0E"]
+  live_view: [signing_salt: "bViCUv7u"]
 
 # Configures the mailer
 #
@@ -42,7 +43,7 @@ config :esbuild,
 
 # Configure tailwind (the version is required)
 config :tailwind,
-  version: "3.2.7",
+  version: "3.3.2",
   default: [
     args: ~w(
       --config=tailwind.config.js
@@ -59,8 +60,6 @@ config :logger, :console,
 
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
-
-config :ash, :use_all_identities_in_manage_relationship?, false
 
 config :garage, ash_apis: [Garage.Builds]
 

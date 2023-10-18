@@ -7,7 +7,7 @@ defmodule GarageWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_garage_key",
-    signing_salt: "jlxGGzdD",
+    signing_salt: "Fqx8BphF",
     same_site: "Lax"
   ]
 
