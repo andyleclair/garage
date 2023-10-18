@@ -3,7 +3,7 @@ defmodule Garage.Builds.Build do
     data_layer: AshPostgres.DataLayer
 
   actions do
-    defaults([:create, :read, :update, :destroy])
+    defaults [:create, :read, :update, :destroy]
   end
 
   attributes do
@@ -13,7 +13,17 @@ defmodule Garage.Builds.Build do
       allow_nil? false
     end
 
+    attribute :make, :string do
+      allow_nil? false
+    end
+
+    attribute :model, :string do
+      allow_nil? false
+    end
+
     attribute :description, :string
+    attribute :frame, :string, default: "stock"
+    attribute :subframe, :string
   end
 
   postgres do
