@@ -53,7 +53,9 @@ defmodule Garage.MixProject do
       {:bandit, "~> 1.0-pre"},
       {:ash, "~> 2.15"},
       {:ash_postgres, "~> 1.3"},
-      {:ash_phoenix, "~> 1.2"}
+      {:ash_phoenix, "~> 1.2"},
+      {:ash_authentication, "~> 3.11.15"},
+      {:ash_authentication_phoenix, "~> 1.8"}
     ]
   end
 

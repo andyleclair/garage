@@ -61,7 +61,7 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
-config :garage, ash_apis: [Garage.Builds]
+config :garage, ash_apis: [Garage.Builds, Garage.Accounts]
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.

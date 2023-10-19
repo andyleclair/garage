@@ -12,10 +12,10 @@ defmodule Garage.Application do
       Garage.Repo,
       {DNSCluster, query: Application.get_env(:garage, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: Garage.PubSub},
+
       # Start the Finch HTTP client for sending emails
       {Finch, name: Garage.Finch},
-      # Start a worker by calling: Garage.Worker.start_link(arg)
-      # {Garage.Worker, arg},
+      {AshAuthentication.Supervisor, otp_app: :example},
       # Start to serve requests, typically the last entry
       GarageWeb.Endpoint
     ]
