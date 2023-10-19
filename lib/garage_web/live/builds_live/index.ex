@@ -1,4 +1,4 @@
-defmodule GarageWeb.HomeLive.Index do
+defmodule GarageWeb.BuildsLive.Index do
   use GarageWeb, :live_view
   import GarageWeb.Components.Builds.Card
 
