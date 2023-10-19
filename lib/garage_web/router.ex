@@ -1,5 +1,4 @@
 defmodule GarageWeb.Router do
-  alias GarageWeb.SignInLive
   use GarageWeb, :router
   use AshAuthentication.Phoenix.Router
 
@@ -21,12 +20,25 @@ defmodule GarageWeb.Router do
   scope "/", GarageWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    ash_authentication_live_session :no_user,
+      on_mount: {GarageWeb.LiveUserAuth, :live_no_user} do
+      live "/register", AuthLive.Index, :register
+      live "/sign-in", AuthLive.Index, :sign_in
+    end
 
-    sign_in_route live_view: SignInLive, register_path: "/register", reset_path: "/reset"
     sign_out_route AuthController
     auth_routes_for Garage.Accounts.User, to: AuthController
     reset_route []
+
+    # ash_authentication_live_session :authentication_required,
+    #  on_mount: {GarageWeb.LiveUserAuth, :live_user_required} do
+    #  live "/protected_route", ProjectLive.Index, :index
+    # end
+
+    ash_authentication_live_session :authentication_optional,
+      on_mount: {GarageWeb.LiveUserAuth, :live_user_optional} do
+      live "/", HomeLive.Index, :index
+    end
   end
 
   # Other scopes may use custom stacks.
