@@ -1,4 +1,5 @@
 defmodule GarageWeb.Router do
+  alias GarageWeb.SignInLive
   use GarageWeb, :router
   use AshAuthentication.Phoenix.Router
 
@@ -22,7 +23,7 @@ defmodule GarageWeb.Router do
 
     get "/", PageController, :home
 
-    sign_in_route register_path: "/register", reset_path: "/reset"
+    sign_in_route live_view: SignInLive, register_path: "/register", reset_path: "/reset"
     sign_out_route AuthController
     auth_routes_for Garage.Accounts.User, to: AuthController
     reset_route []
