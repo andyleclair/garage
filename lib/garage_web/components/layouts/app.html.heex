@@ -1,14 +1,14 @@
-<header class="px-4 sm:px-6 lg:px-8">
-  <div class="flex items-center justify-between border-b border-zinc-100 py-3 text-sm">
+<header class="px-4 sm:px-6 lg:px-8 bg-white border-b boder-color-zinc-800">
+  <div class="flex items-center justify-between py-3 text-sm">
     <div class="flex items-center gap-4">
-      <a href="/">
-        <img src={~p"/images/logo.svg"} width="36" />
-      </a>
-      <p class="bg-brand/5 text-brand rounded-full px-2 font-medium leading-6">
-        v<%= Application.spec(:phoenix, :vsn) %>
-      </p>
+      <.a navigate={~p"/"}>
+        <p class="text-giant_goldfish rounded-full px-2 text-xl">
+          69 Garage™
+        </p>
+      </.a>
     </div>
     <div class="flex items-center gap-4 font-semibold leading-6 text-zinc-900">
+      <.a navigate={~p"/builds"}>Builds</.a>
       <%= if @current_user do %>
         <span class="px-3 py-2 text-sm font-medium text-white rounded-md">
           <%= @current_user.email %>
@@ -22,7 +22,7 @@
     </div>
   </div>
 </header>
-<main class="px-4 py-20 sm:px-6 lg:px-8">
+<main class="px-4 py-20 sm:px-6 lg:px-8 bg-white">
   <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
     <.flash_group flash={@flash} />
     <%= @inner_content %>

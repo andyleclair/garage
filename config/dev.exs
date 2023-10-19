@@ -58,7 +58,8 @@ config :garage, GarageWeb.Endpoint,
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/garage_web/(controllers|live|components)/.*(ex|heex)$"
+      ~r"lib/garage_web/(controllers|live|components)/.*(ex|heex)$",
+      ~r"lib/garage_web/pyro_overrides.ex"
     ]
   ]
 
