@@ -51,7 +51,7 @@ defmodule GarageWeb do
 
   def live_view do
     quote do
-      use Phoenix.LiveView,
+      use Pyro.LiveView,
         layout: {GarageWeb.Layouts, :app}
 
       unquote(html_helpers())
@@ -60,7 +60,15 @@ defmodule GarageWeb do
 
   def live_component do
     quote do
-      use Phoenix.LiveComponent
+      use Pyro.LiveComponent
+
+      unquote(html_helpers())
+    end
+  end
+
+  def component do
+    quote do
+      use Pyro.Component
 
       unquote(html_helpers())
     end
@@ -68,7 +76,7 @@ defmodule GarageWeb do
 
   def html do
     quote do
-      use Phoenix.Component
+      use Pyro.Component
 
       # Import convenience functions from controllers
       import Phoenix.Controller,
@@ -84,7 +92,8 @@ defmodule GarageWeb do
       # HTML escaping functionality
       import Phoenix.HTML
       # Core UI components and translation
-      import GarageWeb.CoreComponents
+      use Pyro.Components
+      # import GarageWeb.CoreComponents
       import GarageWeb.Gettext
 
       # Shortcut for generating JS commands

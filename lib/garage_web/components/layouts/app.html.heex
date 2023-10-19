@@ -9,25 +9,21 @@
       </p>
     </div>
     <div class="flex items-center gap-4 font-semibold leading-6 text-zinc-900">
-      <a href="https://twitter.com/elixirphoenix" class="hover:text-zinc-700">
-        <%= if @current_user do %>
-          <%= @current_user.email %>
-        <% end %>
-      </a>
       <%= if @current_user do %>
-        <a href="/sign-out" class="rounded-lg bg-zinc-100 px-2 py-1 hover:bg-zinc-200/80">
-          Sign out
-        </a>
+        <span class="px-3 py-2 text-sm font-medium text-white rounded-md">
+          <%= @current_user.email %>
+        </span>
+        <.button href={~p"/sign-out"} icon_name="hero-arrow-left-circle">
+          Sign Out
+        </.button>
       <% else %>
-        <a href="/register" class="rounded-lg bg-zinc-100 px-2 py-1 hover:bg-zinc-200/80">
-          Register
-        </a>
+        <.button href={~p"/sign-in"} icon_name="hero-arrow-right-circle">Sign In</.button>
       <% end %>
     </div>
   </div>
 </header>
 <main class="px-4 py-20 sm:px-6 lg:px-8">
-  <div class="mx-auto max-w-2xl">
+  <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
     <.flash_group flash={@flash} />
     <%= @inner_content %>
   </div>

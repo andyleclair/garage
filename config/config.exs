@@ -63,6 +63,9 @@ config :phoenix, :json_library, Jason
 
 config :garage, ash_apis: [Garage.Builds, Garage.Accounts]
 
+config :pyro, :overrides, [Pyro.Overrides.Default]
+config :pyro, :css_file, Path.join(File.cwd!(), "assets/css/pyro.css")
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{config_env()}.exs"

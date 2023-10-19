@@ -20,6 +20,12 @@ defmodule GarageWeb.Router do
   scope "/", GarageWeb do
     pipe_through :browser
 
+    ash_authentication_live_session :authentication_optional,
+      on_mount: {GarageWeb.LiveUserAuth, :live_user_optional} do
+      live "/", HomeLive.Index, :index
+      live "/builds/:build_id", BuildsLive.Show, :show
+    end
+
     ash_authentication_live_session :no_user,
       on_mount: {GarageWeb.LiveUserAuth, :live_no_user} do
       live "/register", AuthLive.Index, :register
@@ -34,11 +40,6 @@ defmodule GarageWeb.Router do
     #  on_mount: {GarageWeb.LiveUserAuth, :live_user_required} do
     #  live "/protected_route", ProjectLive.Index, :index
     # end
-
-    ash_authentication_live_session :authentication_optional,
-      on_mount: {GarageWeb.LiveUserAuth, :live_user_optional} do
-      live "/", HomeLive.Index, :index
-    end
   end
 
   # Other scopes may use custom stacks.

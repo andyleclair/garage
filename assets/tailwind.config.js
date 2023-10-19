@@ -11,11 +11,16 @@ module.exports = {
     "../lib/garage_web.ex",
     "../lib/garage_web/**/*.*ex",
     "../deps/ash_authentication_phoenix/**/*.ex",
+    '../deps/pyro/lib/pyro/**/*.*ex',
   ],
   theme: {
     extend: {
       colors: {
-        brand: "#FD4F00",
+        beach_storm: "#E0E4CC",
+        aoi: "#69D2E7",
+        clean_pondwater: "#A7DBD8",
+        giant_goldfish: "#F38630",
+        unreal_food_pills: "#FA6900"
       }
     },
   },
@@ -30,6 +35,12 @@ module.exports = {
     plugin(({ addVariant }) => addVariant("phx-click-loading", [".phx-click-loading&", ".phx-click-loading &"])),
     plugin(({ addVariant }) => addVariant("phx-submit-loading", [".phx-submit-loading&", ".phx-submit-loading &"])),
     plugin(({ addVariant }) => addVariant("phx-change-loading", [".phx-change-loading&", ".phx-change-loading &"])),
+    plugin(({ addVariant }) =>
+      addVariant('aria-selected', '&[aria-selected]'),
+    ),
+    plugin(({ addVariant }) =>
+      addVariant('aria-checked', '&[aria-checked]'),
+    ),
 
     // Embeds Heroicons (https://heroicons.com) into your app.css bundle
     // See your `CoreComponents.icon/1` for more information.
