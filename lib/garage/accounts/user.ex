@@ -33,4 +33,11 @@ defmodule Garage.Accounts.User do
   identities do
     identity :unique_email, [:email]
   end
+
+  # relationships do
+  #  has_many :builds, Garage.Builds.Build do
+  #    api Garage.Builds
+  #    source_attribute :builder
+  #  end
+  # end
 end
