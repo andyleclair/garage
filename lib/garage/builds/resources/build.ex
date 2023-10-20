@@ -18,6 +18,16 @@ defmodule Garage.Builds.Build do
     read :latest do
       prepare build(limit: 5, sort: [inserted_at: :desc])
     end
+
+    read :by_make do
+      argument :make, :string, allow_nil?: false
+      filter expr(make == ^arg(:make))
+    end
+
+    read :by_model do
+      argument :model, :string, allow_nil?: false
+      filter expr(model == ^arg(:model))
+    end
   end
 
   attributes do
@@ -50,6 +60,8 @@ defmodule Garage.Builds.Build do
     define :destroy, action: :destroy
     define :get_by_id, args: [:id], action: :by_id
     define :latest_builds, action: :latest
+    define :by_make, action: :by_make, args: [:make]
+    define :by_model, action: :by_model, args: [:model]
   end
 
   postgres do

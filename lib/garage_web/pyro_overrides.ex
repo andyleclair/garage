@@ -6,4 +6,8 @@ defmodule GarageWeb.PyroOverrides do
   override Core, :button do
     set :class, "p-2 bg-aoi rounded-lg text-white uppercase"
   end
+
+  override Extra, :a do
+    set :class, "text-giant_goldfish"
+  end
 end
