@@ -22,13 +22,13 @@ defmodule GarageWeb.AuthLive.AuthForm do
 
   @impl true
   def handle_event("submit", %{"user" => params}, socket) do
-    form = socket.assigns.form |> Form.validate(params)
+    form = socket.assigns.form |> Form.validate(params) |> dbg()
 
     socket =
       socket
       |> assign(:form, form)
-      |> assign(:errors, Form.errors(form))
-      |> assign(:trigger_action, form.valid?)
+      |> assign(:errors, Form.errors(form) |> dbg())
+      |> assign(:trigger_action, form.source.valid?)
 
     {:noreply, socket}
   end
@@ -39,16 +39,15 @@ defmodule GarageWeb.AuthLive.AuthForm do
     <div>
       <ul class="error-messages">
         <%= if @form.errors do %>
-          <%= for {k, v} <- @errors do %>
+          <%= for {k, v} <- @form.errors do %>
             <li>
-              <%= humanize("#{k} #{v}") %>
+              <%= humanize("#{k |> dbg()} #{v |> dbg()}") %>
             </li>
           <% end %>
         <% end %>
       </ul>
 
-      <.form
-        :let={f}
+      <.simple_form
         for={@form}
         phx-change="validate"
         phx-submit="submit"
@@ -57,37 +56,17 @@ defmodule GarageWeb.AuthLive.AuthForm do
         action={@action}
         method="POST"
       >
-        <fieldset class="form-group">
-          <%= text_input(f, :email,
-            class: "form-control form-control-lg",
-            placeholder: "Email"
-          ) %>
-        </fieldset>
-
+        <.input field={@form[:email]} type="email" label="Email" required />
         <%= if @is_register? do %>
-          <fieldset class="form-group">
-            <%= text_input(f, :username,
-              class: "form-control form-control-lg",
-              placeholder: "Username"
-            ) %>
-          </fieldset>
-
-          <fieldset class="form-group">
-            <%= text_input(f, :name,
-              class: "form-control form-control-lg",
-              placeholder: "Your Name"
-            ) %>
-          </fieldset>
+          <.input field={@form[:username]} label="Username" required />
+          <.input field={@form[:name]} label="Full Name" required />
         <% end %>
+        <.input field={@form[:password]} type="password" label="Password" required />
 
-        <fieldset class="form-group">
-          <%= password_input(f, :password,
-            class: "form-control form-control-lg",
-            placeholder: "Password"
-          ) %>
-        </fieldset>
-        <%= submit(@cta, class: "btn btn-lg btn-primary pull-xs-right") %>
-      </.form>
+        <:actions>
+          <.button><%= @cta %></.button>
+        </:actions>
+      </.simple_form>
     </div>
     """
   end

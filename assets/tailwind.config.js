@@ -11,7 +11,6 @@ module.exports = {
     "../lib/garage_web.ex",
     "../lib/garage_web/**/*.*ex",
     "../deps/ash_authentication_phoenix/**/*.ex",
-    '../deps/pyro/lib/pyro/**/*.*ex',
   ],
   theme: {
     extend: {

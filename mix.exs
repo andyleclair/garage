@@ -7,7 +7,6 @@ defmodule Garage.MixProject do
       version: "0.1.0",
       elixir: "~> 1.14",
       elixirc_paths: elixirc_paths(Mix.env()),
-      compilers: Mix.compilers() ++ [:pyro],
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps()
@@ -56,8 +55,7 @@ defmodule Garage.MixProject do
       {:ash_postgres, "~> 1.3"},
       {:ash_phoenix, "~> 1.2"},
       {:ash_authentication, "~> 3.11.15"},
-      {:ash_authentication_phoenix, "~> 1.8"},
-      {:pyro, "~> 0.2.0"}
+      {:ash_authentication_phoenix, "~> 1.8"}
     ]
   end
 

@@ -221,6 +221,7 @@ defmodule GarageWeb.CoreComponents do
   """
   attr :type, :string, default: nil
   attr :class, :string, default: nil
+  attr :icon, :string, default: nil, doc: "Optional icon to show"
   attr :rest, :global, include: ~w(disabled form name value)
 
   slot :inner_block, required: true
@@ -237,6 +238,9 @@ defmodule GarageWeb.CoreComponents do
       {@rest}
     >
       <%= render_slot(@inner_block) %>
+      <%= if @icon do %>
+        <.icon name={@icon} />
+      <% end %>
     </button>
     """
   end

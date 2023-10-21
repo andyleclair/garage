@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content={get_csrf_token()} />
-    <.live_title suffix=" · Phoenix Framework">
+    <.live_title suffix=" · Moped Garage">
       <%= assigns[:page_title] || "Garage" %>
     </.live_title>
     <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
@@ -12,6 +12,40 @@
     </script>
   </head>
   <body class="bg-white antialiased">
+    <header class="px-4 sm:px-6 lg:px-20 bg-white border-b boder-color-zinc-800">
+      <div class="flex items-center justify-between py-3 text-sm">
+        <div class="flex items-center gap-4">
+          <.link navigate={~p"/"}>
+            <p class="text-giant_goldfish rounded-full px-2 text-xl">
+              69 Garage™
+            </p>
+          </.link>
+        </div>
+        <div class="flex items-center gap-4 font-semibold leading-6 text-zinc-900">
+          <.link navigate={~p"/builds"}>Builds</.link>
+          <%= if @current_user do %>
+            <span class="px-3 py-2 text-sm font-medium text-slate-800  rounded-md">
+              <%= @current_user.email %>
+            </span>
+            <.link
+              navigate={~p"/users/settings"}
+              class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
+            >
+              Settings
+            </.link>
+            <.link navigate={~p"/users/log_out"} method="delete">
+              <.button icon="hero-arrow-right-circle">
+                Sign Out
+              </.button>
+            </.link>
+          <% else %>
+            <.link navigate={~p"/users/log_in"}>
+              <.button icon="hero-arrow-right-circle">Sign In</.button>
+            </.link>
+          <% end %>
+        </div>
+      </div>
+    </header>
     <%= @inner_content %>
   </body>
 </html>
