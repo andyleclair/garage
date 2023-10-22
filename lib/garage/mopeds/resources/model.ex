@@ -1,6 +1,7 @@
 defmodule Garage.Mopeds.Model do
   use Ash.Resource,
-    data_layer: AshPostgres.DataLayer
+    data_layer: AshPostgres.DataLayer,
+    api: Garage.Mopeds
 
   alias Garage.Mopeds.Make
 
@@ -20,6 +21,11 @@ defmodule Garage.Mopeds.Model do
       # against the `id` of each element in the resource
       filter expr(id == ^arg(:id))
     end
+
+    read :by_make_id do
+      argument :make_id, :uuid, allow_nil?: false
+      filter expr(make_id == ^arg(:make_id))
+    end
   end
 
   code_interface do
@@ -29,6 +35,7 @@ defmodule Garage.Mopeds.Model do
     define :update, action: :update
     define :destroy, action: :destroy
     define :get_by_id, args: [:id], action: :by_id
+    define :by_make_id, args: [:make_id], action: :by_make_id
   end
 
   attributes do
@@ -49,6 +56,10 @@ defmodule Garage.Mopeds.Model do
   relationships do
     belongs_to :make, Make do
       attribute_writable? true
+    end
+
+    has_many :builds, Garage.Builds.Build do
+      api Garage.Builds
     end
   end
 end

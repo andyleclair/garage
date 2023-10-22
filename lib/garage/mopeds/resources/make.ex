@@ -1,6 +1,7 @@
 defmodule Garage.Mopeds.Make do
   use Ash.Resource,
-    data_layer: AshPostgres.DataLayer
+    data_layer: AshPostgres.DataLayer,
+    api: Garage.Mopeds
 
   # require Ecto.Query
 
@@ -44,5 +45,9 @@ defmodule Garage.Mopeds.Make do
 
   relationships do
     has_many :models, Garage.Mopeds.Model
+
+    has_many :builds, Garage.Builds.Build do
+      api Garage.Builds
+    end
   end
 end

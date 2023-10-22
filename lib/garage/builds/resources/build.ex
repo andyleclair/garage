@@ -1,13 +1,16 @@
 defmodule Garage.Builds.Build do
   use Ash.Resource,
-    data_layer: AshPostgres.DataLayer
+    data_layer: AshPostgres.DataLayer,
+    api: Garage.Builds
 
   require Ecto.Query
 
   alias Garage.Builds.Like
+  alias Garage.Mopeds.{Make, Model}
+  alias Garage.Accounts.User
 
   actions do
-    defaults [:create, :read, :update, :destroy]
+    defaults [:create, :update, :destroy]
 
     read :by_id do
       # This action has one argument :id of type :uuid
@@ -17,6 +20,13 @@ defmodule Garage.Builds.Build do
       # Filters the `:id` given in the argument
       # against the `id` of each element in the resource
       filter expr(id == ^arg(:id))
+    end
+
+    read :all_builds do
+      pagination do
+        default_limit 50
+        offset? true
+      end
     end
 
     read :latest do
@@ -63,18 +73,7 @@ defmodule Garage.Builds.Build do
   attributes do
     uuid_primary_key :id
 
-    attribute :name, :string do
-      allow_nil? false
-    end
-
-    attribute :make, :string do
-      allow_nil? false
-    end
-
-    attribute :model, :string do
-      allow_nil? false
-    end
-
+    attribute :name, :string, allow_nil?: false
     attribute :description, :string
     attribute :frame, :string, default: "stock"
     attribute :subframe, :string
@@ -85,7 +84,7 @@ defmodule Garage.Builds.Build do
   code_interface do
     define_for Garage.Builds
     define :create, action: :create
-    define :read_all, action: :read
+    define :all_builds, action: :all_builds
     define :update, action: :update
     define :destroy, action: :destroy
     define :get_by_id, args: [:id], action: :by_id
@@ -105,8 +104,16 @@ defmodule Garage.Builds.Build do
   relationships do
     has_many :likes, Like
 
-    belongs_to :builder, Garage.Accounts.User do
+    belongs_to :builder, User do
       api Garage.Accounts
+    end
+
+    belongs_to :make, Make do
+      api Garage.Mopeds
+    end
+
+    belongs_to :model, Model do
+      api Garage.Mopeds
     end
   end
 

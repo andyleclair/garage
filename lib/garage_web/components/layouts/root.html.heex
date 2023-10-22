@@ -33,13 +33,13 @@
             >
               Settings
             </.link>
-            <.link navigate={~p"/users/log_out"} method="delete">
+            <.link navigate={~p"/sign-out"} method="delete">
               <.button icon="hero-arrow-right-circle">
                 Sign Out
               </.button>
             </.link>
           <% else %>
-            <.link navigate={~p"/users/log_in"}>
+            <.link navigate={~p"/sign-in"}>
               <.button icon="hero-arrow-right-circle">Sign In</.button>
             </.link>
           <% end %>

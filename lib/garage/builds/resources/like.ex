@@ -1,6 +1,7 @@
 defmodule Garage.Builds.Like do
   use Ash.Resource,
-    data_layer: AshPostgres.DataLayer
+    data_layer: AshPostgres.DataLayer,
+    api: Garage.Builds
 
   actions do
     defaults [:read, :destroy]

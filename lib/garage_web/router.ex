@@ -20,6 +20,12 @@ defmodule GarageWeb.Router do
   scope "/", GarageWeb do
     pipe_through :browser
 
+    ash_authentication_live_session :authentication_required,
+      on_mount: {GarageWeb.LiveUserAuth, :live_user_required} do
+      live "/builds/new", BuildsLive.New, :new
+      live "/builds/:build_id/edit", BuildsLive.Edit, :edit
+    end
+
     ash_authentication_live_session :authentication_optional,
       on_mount: {GarageWeb.LiveUserAuth, :live_user_optional} do
       live "/", HomeLive.Index, :index
@@ -36,11 +42,6 @@ defmodule GarageWeb.Router do
     sign_out_route AuthController
     auth_routes_for Garage.Accounts.User, to: AuthController
     reset_route []
-
-    # ash_authentication_live_session :authentication_required,
-    #  on_mount: {GarageWeb.LiveUserAuth, :live_user_required} do
-    #  live "/protected_route", ProjectLive.Index, :index
-    # end
   end
 
   # Other scopes may use custom stacks.
