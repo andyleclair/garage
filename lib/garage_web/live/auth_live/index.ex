@@ -24,7 +24,7 @@ defmodule GarageWeb.AuthLive.Index do
           <%= if @form.errors do %>
             <%= for {k, v} <- @form.errors do %>
               <li>
-                <%= humanize("#{k |> dbg()} #{v |> dbg()}") %>
+                <%= humanize("#{k} #{v}") %>
               </li>
             <% end %>
           <% end %>

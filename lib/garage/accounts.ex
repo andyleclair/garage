@@ -3,5 +3,6 @@ defmodule Garage.Accounts do
 
   resources do
     resource Garage.Accounts.User
+    resource Garage.Accounts.Token
   end
 end

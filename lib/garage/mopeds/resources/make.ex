@@ -8,6 +8,14 @@ defmodule Garage.Mopeds.Make do
   actions do
     defaults [:create, :read, :update, :destroy]
 
+    create :bulk_create do
+      argument :models, {:array, :map} do
+        allow_nil? false
+      end
+
+      change manage_relationship(:models, type: :create)
+    end
+
     read :by_id do
       # This action has one argument :id of type :uuid
       argument :id, :uuid, allow_nil?: false

@@ -1,7 +1,8 @@
 defmodule Garage.Accounts.User do
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
-    extensions: [AshAuthentication]
+    extensions: [AshAuthentication],
+    authorizers: [Ash.Policy.Authorizer]
 
   actions do
     defaults [:create, :read, :update]
@@ -25,6 +26,17 @@ defmodule Garage.Accounts.User do
         identity_field :email
         confirmation_required? false
         register_action_accept [:username, :name]
+
+        resettable do
+          sender Garage.Accounts.User.Senders.SendPasswordResetEmail
+        end
+      end
+
+      tokens do
+        enabled? true
+        token_resource Garage.Accounts.Token
+
+        signing_secret Garage.Accounts.Secrets
       end
     end
   end
@@ -42,6 +54,12 @@ defmodule Garage.Accounts.User do
     has_many :builds, Garage.Builds.Build do
       api Garage.Builds
       destination_attribute :builder_id
+    end
+  end
+
+  policies do
+    bypass AshAuthentication.Checks.AshAuthenticationInteraction do
+      authorize_if always()
     end
   end
 end

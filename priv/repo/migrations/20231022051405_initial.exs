@@ -20,6 +20,16 @@ defmodule Garage.Repo.Migrations.Initial do
 
     create unique_index(:users, [:email], name: "users_unique_email_index")
 
+    create table(:tokens, primary_key: false) do
+      add :updated_at, :utc_datetime, null: false, default: fragment("now()")
+      add :created_at, :utc_datetime, null: false, default: fragment("now()")
+      add :extra_data, :map
+      add :purpose, :text, null: false
+      add :expires_at, :utc_datetime, null: false
+      add :subject, :text, null: false
+      add :jti, :text, null: false, primary_key: true
+    end
+
     create table(:models, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
       add :name, :text, null: false
@@ -88,6 +98,7 @@ defmodule Garage.Repo.Migrations.Initial do
     alter table(:builds) do
       add :name, :text, null: false
       add :description, :text
+      add :year, :bigint, null: false
       add :frame, :text, default: "stock"
       add :subframe, :text
       add :inserted_at, :utc_datetime, null: false, default: fragment("now()")
@@ -134,6 +145,7 @@ defmodule Garage.Repo.Migrations.Initial do
       remove :inserted_at
       remove :subframe
       remove :frame
+      remove :year
       remove :description
       remove :name
     end
@@ -170,6 +182,8 @@ defmodule Garage.Repo.Migrations.Initial do
     drop table(:makes)
 
     drop table(:models)
+
+    drop table(:tokens)
 
     drop_if_exists unique_index(:users, [:email], name: "users_unique_email_index")
 

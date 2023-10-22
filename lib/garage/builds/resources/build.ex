@@ -1,7 +1,8 @@
 defmodule Garage.Builds.Build do
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
-    api: Garage.Builds
+    api: Garage.Builds,
+    authorizers: [Ash.Policy.Authorizer]
 
   require Ecto.Query
 
@@ -136,6 +137,16 @@ defmodule Garage.Builds.Build do
       argument :user_id, :uuid do
         allow_nil? false
       end
+    end
+  end
+
+  policies do
+    policy action_type(:update) do
+      authorize_if relates_to_actor_via(:builder)
+    end
+
+    policy always() do
+      authorize_if always()
     end
   end
 end
