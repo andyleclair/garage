@@ -10,7 +10,11 @@ defmodule Garage.Builds.Build do
   alias Garage.Accounts.User
 
   actions do
-    defaults [:create, :update, :destroy]
+    defaults [:update, :destroy]
+
+    create :create do
+      accept [:name, :description, :year, :builder_id, :make_id, :model_id]
+    end
 
     read :by_id do
       # This action has one argument :id of type :uuid
@@ -75,6 +79,7 @@ defmodule Garage.Builds.Build do
 
     attribute :name, :string, allow_nil?: false
     attribute :description, :string
+    attribute :year, :integer, allow_nil?: false
     attribute :frame, :string, default: "stock"
     attribute :subframe, :string
     create_timestamp :inserted_at
@@ -106,15 +111,22 @@ defmodule Garage.Builds.Build do
 
     belongs_to :builder, User do
       api Garage.Accounts
+      attribute_writable? true
     end
 
     belongs_to :make, Make do
       api Garage.Mopeds
+      attribute_writable? true
     end
 
     belongs_to :model, Model do
       api Garage.Mopeds
+      attribute_writable? true
     end
+  end
+
+  preparations do
+    prepare build(load: [:builder, :make, :model])
   end
 
   calculations do

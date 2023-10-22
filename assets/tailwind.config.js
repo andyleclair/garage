@@ -11,6 +11,8 @@ module.exports = {
     "../lib/garage_web.ex",
     "../lib/garage_web/**/*.*ex",
     "../deps/ash_authentication_phoenix/**/*.ex",
+    '../deps/live_select/lib/live_select/component.*ex',
+
   ],
   theme: {
     extend: {

@@ -9,6 +9,7 @@ defmodule GarageWeb.AuthController do
     |> delete_session(:return_to)
     |> store_in_session(user)
     |> assign(:current_user, user)
+    |> put_flash(:info, "Logged In!")
     |> redirect(to: return_to)
   end
 
@@ -23,6 +24,7 @@ defmodule GarageWeb.AuthController do
 
     conn
     |> clear_session()
+    |> put_flash(:info, "Logged Out!")
     |> redirect(to: return_to)
   end
 end

@@ -13,6 +13,7 @@
   <:col :let={build} label="Name"><%= build.name %></:col>
   <:col :let={build} label="Description"><%= build.description %></:col>
   <:col :let={build} label="Make"><%= build.make.name %></:col>
+  <:col :let={build} label="Model"><%= build.model.name %></:col>
   <:action :let={build}>
     <div class="sr-only">
       <.link navigate={~p"/builds/#{build}"}>Show</.link>

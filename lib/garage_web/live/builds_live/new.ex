@@ -2,7 +2,7 @@ defmodule GarageWeb.BuildsLive.New do
   use GarageWeb, :live_view
 
   alias Garage.Builds.Build
-  alias GarageWeb.BuildLive.FormComponent
+  alias GarageWeb.BuildsLive.FormComponent
 
   @impl true
   def render(assigns) do

@@ -3,6 +3,10 @@ defmodule Garage.Accounts.User do
     data_layer: AshPostgres.DataLayer,
     extensions: [AshAuthentication]
 
+  actions do
+    defaults [:create, :read, :update]
+  end
+
   attributes do
     uuid_primary_key :id
     attribute :name, :string, allow_nil?: false
@@ -34,10 +38,10 @@ defmodule Garage.Accounts.User do
     identity :unique_email, [:email]
   end
 
-  # relationships do
-  #  has_many :builds, Garage.Builds.Build do
-  #    api Garage.Builds
-  #    source_attribute :builder
-  #  end
-  # end
+  relationships do
+    has_many :builds, Garage.Builds.Build do
+      api Garage.Builds
+      destination_attribute :builder_id
+    end
+  end
 end

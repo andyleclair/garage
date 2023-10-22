@@ -1,6 +1,6 @@
 <.header>
   Build <%= @build.id %>
-  <:subtitle>Built by: <%= @build.user.full_name %></:subtitle>
+  <:subtitle>Built by: <%= @build.builder.name %></:subtitle>
   <:actions>
     <.link navigate={~p"/builds/#{@build}/edit"}>
       <.button>Edit build</.button>

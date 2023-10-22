@@ -9,18 +9,19 @@ defmodule GarageWeb.Components.Builds.Card do
     ~H"""
     <div class="inline-block rounded-sm bg-gray-50 m-1 drop-shadow-xl p-2">
       <.link navigate={~p"/builds/#{@build}"}>
-        <img class="rounded-t-lg" src="https://placehold.co/400x250" alt="" />
+        <img class="rounded-t-lg" src="https://placehold.co/250x250" alt="" />
 
         <div class="p-6">
           <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800">
             <%= @build.name %>
           </h5>
+          <h6>By: <%= @build.builder.name %></h6>
 
           <.link patch={~p"/builds?make=#{@build.make}"} replace={false}>
-            <%= @build.make %>
+            <%= @build.make.name %>
           </.link>
           <.link patch={~p"/builds?model=#{@build.model}"} replace={false}>
-            <%= @build.model %>
+            <%= @build.model.name %>
           </.link>
         </div>
       </.link>
