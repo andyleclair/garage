@@ -59,7 +59,12 @@ defmodule GarageWeb.BuildsLive.FormComponent do
 
   @impl true
   def update(%{build: build} = assigns, socket) do
-    form = Form.for_action(build, live_action_to_ash_action(assigns.action), api: Builds)
+    form =
+      Form.for_action(build, live_action_to_ash_action(assigns.action),
+        api: Builds,
+        actor: assigns.current_user
+      )
+
     make_options = make_options()
 
     # if we already have a make set, show the model dropdown
@@ -147,9 +152,6 @@ defmodule GarageWeb.BuildsLive.FormComponent do
   end
 
   defp save_build(socket, :new, params) do
-    # We only set this on the server side to be safe
-    params = Map.put(params, "builder_id", socket.assigns.current_user.id)
-
     case Form.submit(socket.assigns.form, params: params) do
       {:ok, build} ->
         {:noreply,

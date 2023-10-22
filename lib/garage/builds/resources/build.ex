@@ -14,6 +14,8 @@ defmodule Garage.Builds.Build do
 
     create :create do
       accept [:name, :description, :year, :builder_id, :make_id, :model_id]
+
+      change relate_actor(:builder)
     end
 
     read :by_id do
