@@ -10,12 +10,12 @@ defmodule GarageWeb.BuildsLive.Show do
 
   @impl true
   def handle_params(%{"build_id" => id}, _, socket) do
+    build = Build.get_by_id!(id)
+
     {:noreply,
      socket
-     |> assign(:page_title, page_title(socket.assigns.live_action))
-     |> assign(:build, Build.get_by_id!(id))}
+     |> assign(:page_title, build.name)
+     |> assign(:build, build)
+     |> assign(:can_edit?, Build.can_update?(socket.assigns.current_user, build))}
   end
-
-  defp page_title(:show), do: "Show Build"
-  defp page_title(:edit), do: "Edit Build"
 end

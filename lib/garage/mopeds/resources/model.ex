@@ -6,11 +6,7 @@ defmodule Garage.Mopeds.Model do
   alias Garage.Mopeds.Make
 
   actions do
-    defaults [:read, :update, :destroy]
-
-    create :create do
-      accept [:name, :make_id]
-    end
+    defaults [:create, :read, :update, :destroy]
 
     read :by_id do
       # This action has one argument :id of type :uuid

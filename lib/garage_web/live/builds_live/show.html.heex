@@ -2,9 +2,11 @@
   Build <%= @build.id %>
   <:subtitle>Built by: <%= @build.builder.name %></:subtitle>
   <:actions>
-    <.link navigate={~p"/builds/#{@build}/edit"}>
-      <.button>Edit build</.button>
-    </.link>
+    <%= if @can_edit? do %>
+      <.link navigate={~p"/builds/#{@build}/edit"}>
+        <.button>Edit build</.button>
+      </.link>
+    <% end %>
   </:actions>
 </.header>
 
