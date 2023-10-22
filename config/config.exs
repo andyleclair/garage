@@ -61,10 +61,7 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
-config :garage, ash_apis: [Garage.Builds, Garage.Accounts]
-
-config :pyro, :overrides, [GarageWeb.PyroOverrides, Pyro.Overrides.Default]
-config :pyro, :css_file, Path.join(File.cwd!(), "assets/css/pyro.css")
+config :garage, ash_apis: [Garage.Builds, Garage.Accounts, Garage.Mopeds]
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
