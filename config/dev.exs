@@ -81,3 +81,9 @@ config :phoenix_live_view, :debug_heex_annotations, true
 
 # Disable swoosh api client as it is only required for production adapters.
 config :swoosh, :api_client, false
+
+config :garage,
+  upload_bucket: :dev,
+  public_image_root: "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev"
+
+import_config("dev.secret.exs")

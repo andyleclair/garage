@@ -56,7 +56,10 @@ defmodule Garage.MixProject do
       {:ash_phoenix, "~> 1.2"},
       {:ash_authentication, "~> 3.11.15"},
       {:ash_authentication_phoenix, "~> 1.8"},
-      {:live_select, "~> 1.2.1"}
+      {:live_select, "~> 1.2.1"},
+      {:ex_aws, "~> 2.0"},
+      {:ex_aws_s3, "~> 2.0"},
+      {:sweet_xml, "~> 0.6"}
     ]
   end
 

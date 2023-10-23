@@ -10,6 +10,14 @@
   </:actions>
 </.header>
 
+<div class="flex items-inline">
+  <%= for image_url <- @build.image_urls do %>
+    <div class="flex w-64 h-64">
+      <img src={image_url} />
+    </div>
+  <% end %>
+</div>
+
 <.list>
   <:item title="Year"><%= @build.year %></:item>
   <:item title="Name"><%= @build.name %></:item>

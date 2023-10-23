@@ -61,6 +61,10 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
+config :ex_aws,
+  http_client: ExAws.Finch,
+  json_codec: Jason
+
 config :garage, ash_apis: [Garage.Builds, Garage.Accounts, Garage.Mopeds]
 
 # Import environment specific config. This must remain at the bottom

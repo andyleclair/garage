@@ -6,10 +6,18 @@ defmodule GarageWeb.Components.Builds.Card do
   attr :build, :any, required: true, doc: "The `Build` struct"
 
   def card(assigns) do
+    assigns = assign(assigns, :first_image, assigns.build.image_urls |> List.first())
+
     ~H"""
     <div class="inline-block rounded-sm bg-gray-50 m-1 drop-shadow-xl p-2">
       <.link navigate={~p"/builds/#{@build}"}>
-        <img class="rounded-t-lg" src="https://placehold.co/250x250" alt="" />
+        <%= if @first_image do %>
+          <img class="rounded-t-lg max-w-sm max-h-sm" src={@first_image} alt="" />
+        <% else %>
+          <div class="w-64 h-64 bg-gray-300 flex items-stretch">
+            <div class="">No Images</div>
+          </div>
+        <% end %>
 
         <div class="p-6">
           <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800">

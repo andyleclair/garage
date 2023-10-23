@@ -36,3 +36,5 @@ garage-*.tar
 npm-debug.log
 /assets/node_modules/
 
+config/*.secret.exs
+

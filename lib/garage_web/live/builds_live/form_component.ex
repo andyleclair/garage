@@ -1,11 +1,12 @@
 defmodule GarageWeb.BuildsLive.FormComponent do
   use GarageWeb, :live_component
+  alias AshPhoenix.Form
+  alias ExAws.S3
   alias Garage.Builds
   alias Garage.Mopeds.Make
   alias Garage.Mopeds.Model
-  alias AshPhoenix.Form
 
-  attr :current_user_id, :string, required: true
+  attr :current_user, :any, required: true
   attr :build, :any, required: true, doc: "The Build struct"
 
   @impl true
@@ -44,6 +45,136 @@ defmodule GarageWeb.BuildsLive.FormComponent do
             debounce="250"
           />
         <% end %>
+        <div class="space-y-12">
+          <div class="border-gray-900/10 pb-12">
+            <h2 class="text-base font-semibold leading-7 text-gray-900">Images</h2>
+
+            <p class="mt-1 text-sm leading-6 text-gray-600">
+              A photo is worth a thousand words...
+            </p>
+
+            <p class="mt-1 text-sm leading-6 text-gray-600">
+              You may add up to <%= @uploads.image_urls.max_entries %> pictures at a time.
+            </p>
+            <div class="col-span-full">
+              <div
+                class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10"
+                phx-drop-target={@uploads.image_urls.ref}
+              >
+                <div class="text-center">
+                  <svg
+                    class="mx-auto h-12 w-12 text-gray-300"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <div class="mt-4 flex text-sm leading-6 text-gray-600">
+                    <label
+                      for="file-upload"
+                      class="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500"
+                    >
+                      <div>
+                        <label class="cursor-pointer">
+                          <.live_file_input upload={@uploads.image_urls} class="hidden" /> Upload
+                        </label>
+                      </div>
+                    </label>
+
+                    <p class="pl-1">or drag and drop</p>
+                  </div>
+
+                  <p class="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Selected files preview section -->
+        <div class="mt-12">
+          <h2 class="text-base font-semibold leading-7 text-gray-900">Selected files</h2>
+
+          <ul role="list" class="divide-y divide-gray-100">
+            <%= for entry <- @uploads.image_urls.entries do %>
+              <progress value={entry.progress} max="100" class="w-full h-1">
+                <%= entry.progress %>%
+              </progress>
+              <!-- Entry information -->
+              <li
+                class="pending-upload-item relative flex justify-between gap-x-6 py-5"
+                id={"entry-#{entry.ref}"}
+              >
+                <div class="flex gap-x-4">
+                  <.live_img_preview entry={entry} class="h-auto w-12 flex-none bg-gray-50" />
+                  <div class="min-w-0 flex-auto">
+                    <p class="text-sm font-semibold leading-6 break-all text-gray-900">
+                      <span class="absolute inset-x-0 -top-px bottom-0"></span> <%= entry.client_name %>
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-center gap-x-4 cursor-pointer z-10"
+                  phx-click="remove-selected"
+                  phx-value-ref={entry.ref}
+                  id={"close_pic-#{entry.ref}"}
+                >
+                  <svg
+                    fill="#cfcfcf"
+                    height="10"
+                    width="10"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 460.775 460.775"
+                    xml:space="preserve"
+                  >
+                    <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
+                    c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
+                    c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
+                    c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
+                    l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
+                    c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z" />
+                  </svg>
+                </div>
+              </li>
+              <!-- Entry errors -->
+              <div>
+                <%= for err <- upload_errors(@uploads.image_urls, entry) do %>
+                  <div class="rounded-md bg-red-50 p-4 mb-2">
+                    <div class="flex">
+                      <div class="flex-shrink-0">
+                        <svg
+                          class="h-5 w-5 text-red-400"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </div>
+
+                      <div class="ml-3">
+                        <h3 class="text-sm font-medium text-red-800"><%= error_to_string(err) %></h3>
+                      </div>
+                    </div>
+                  </div>
+                <% end %>
+              </div>
+            <% end %>
+          </ul>
+        </div>
+
         <:actions>
           <.button phx-disable-with="Saving...">Save Build</.button>
         </:actions>
@@ -54,7 +185,10 @@ defmodule GarageWeb.BuildsLive.FormComponent do
 
   @impl true
   def mount(socket) do
-    {:ok, socket}
+    {:ok,
+     socket
+     |> assign(:uploaded_images, [])
+     |> allow_upload(:image_urls, accept: ~w(.jpg .jpeg .webp .png), max_entries: 10)}
   end
 
   @impl true
@@ -81,6 +215,11 @@ defmodule GarageWeb.BuildsLive.FormComponent do
      |> assign(:make_options, make_options)
      |> assign(:model_options, model_options)
      |> assign_form(form)}
+  end
+
+  @impl true
+  def handle_event("cancel-upload", %{"ref" => ref}, socket) do
+    {:noreply, cancel_upload(socket, :image_urls, ref)}
   end
 
   @impl true
@@ -134,7 +273,29 @@ defmodule GarageWeb.BuildsLive.FormComponent do
     {:noreply, assign_form(socket, form)}
   end
 
+  @impl true
   def handle_event("save", %{"form" => form}, socket) do
+    uploaded_files =
+      consume_uploaded_entries(socket, :image_urls, fn %{path: path}, entry ->
+        upload_path = upload_path(entry)
+
+        {:ok, %{status_code: 200}} =
+          path
+          |> S3.Upload.stream_file()
+          |> S3.upload(bucket(), upload_path,
+            acl: :public_read,
+            content_type: entry.client_type,
+            content_disposition: "inline"
+          )
+          |> ExAws.request()
+
+        public_path = public_path(upload_path)
+
+        {:ok, public_path}
+      end)
+
+    form = Map.put(form, :image_urls, uploaded_files)
+
     save_build(socket, socket.assigns.action, form)
   end
 
@@ -204,6 +365,26 @@ defmodule GarageWeb.BuildsLive.FormComponent do
     assign(socket, :form, form)
   end
 
+  def are_files_uploadable?(image_urls) do
+    error_list = Map.get(image_urls, :errors)
+    Enum.empty?(error_list) and length(image_urls.entries) > 0
+  end
+
   defp live_action_to_ash_action(:new), do: :create
   defp live_action_to_ash_action(:edit), do: :update
+  defp error_to_string(:too_large), do: "Too large"
+  defp error_to_string(:too_many_files), do: "You have selected too many files"
+  defp error_to_string(:not_accepted), do: "You have selected an unacceptable file type"
+
+  defp bucket, do: Application.get_env(:garage, :upload_bucket)
+
+  defp upload_path(%Phoenix.LiveView.UploadEntry{client_name: name}) do
+    "/garage/builds/uploads/#{Ash.UUID.generate()}-#{name}"
+  end
+
+  defp public_path(upload_path) do
+    "#{public_root()}#{upload_path}"
+  end
+
+  defp public_root, do: Application.get_env(:garage, :public_image_root)
 end

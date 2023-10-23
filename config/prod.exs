@@ -18,3 +18,6 @@ config :logger, level: :info
 
 # Runtime production configuration, including reading
 # of environment variables, is done on config/runtime.exs.
+config :garage,
+  upload_bucket: :prod,
+  public_image_root: "https://pub-f486e11e2a8c44629a55ccb84992176d.r2.dev"

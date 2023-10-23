@@ -13,6 +13,7 @@ defmodule GarageWeb.BuildsLive.Edit do
       title={@page_title}
       action={@live_action}
       build={@build}
+      current_user={@current_user}
     />
 
     <.back navigate={~p"/builds/#{@build}"}>Back to build</.back>

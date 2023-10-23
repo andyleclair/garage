@@ -80,9 +80,13 @@ defmodule Garage.Builds.Build do
   attributes do
     uuid_primary_key :id
 
+    # General attributes
     attribute :name, :string, allow_nil?: false
     attribute :description, :string
     attribute :year, :integer, allow_nil?: false
+    attribute :image_urls, {:array, :string}, default: []
+
+    # Build specifics
     attribute :frame, :string, default: "stock"
     attribute :subframe, :string
     create_timestamp :inserted_at

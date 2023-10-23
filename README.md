@@ -1,5 +1,35 @@
 # Garage
 
+## TODO
+- [x] Upload photos for builds
+- [ ] Likes
+- [ ] Comments
+- [ ] Build details
+  - engine
+    - cylinder
+    - head
+    - piston
+    - cases
+    - crank
+  - carb
+    - make
+    - model
+    - jets
+  - ignition
+    - cdi box
+  - transmission
+    - clutch
+    - GEARING
+      - How to handle vespa, hobbit?
+    - variator
+    - pulley
+  - exhaust
+  - forks
+  - wheels
+- [ ] Tools
+  - Gearing calculator
+  - blowdown etc.
+
 To start your Phoenix server:
 
   * Run `mix setup` to install and setup dependencies
