@@ -133,7 +133,7 @@ defmodule Garage.Builds.Build do
   end
 
   preparations do
-    prepare build(load: [:builder, :make, :model])
+    prepare build(load: [:builder, :make, :model, :first_image])
   end
 
   calculations do
@@ -142,6 +142,8 @@ defmodule Garage.Builds.Build do
         allow_nil? false
       end
     end
+
+    calculate :first_image, :string, expr(at(image_urls, 1))
   end
 
   policies do

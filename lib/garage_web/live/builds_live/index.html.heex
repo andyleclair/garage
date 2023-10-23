@@ -9,15 +9,4 @@
   </:actions>
 </.header>
 
-<.table id="builds" rows={@builds} row_click={fn build -> JS.navigate(~p"/builds/#{build}") end}>
-  <:col :let={build} label="Name"><%= build.name %></:col>
-  <:col :let={build} label="Description"><%= build.description %></:col>
-  <:col :let={build} label="Make"><%= build.make.name %></:col>
-  <:col :let={build} label="Model"><%= build.model.name %></:col>
-  <:action :let={build}>
-    <div class="sr-only">
-      <.link navigate={~p"/builds/#{build}"}>Show</.link>
-    </div>
-    <.link patch={~p"/builds/#{build}/edit"}>Edit</.link>
-  </:action>
-</.table>
+<.build :for={build <- @builds} build={build} />

@@ -1,14 +1,14 @@
-defmodule GarageWeb.Components.Builds.Card do
+defmodule GarageWeb.Components.Builds.Build do
   @moduledoc false
 
   use GarageWeb, :component
 
   attr :build, :any, required: true, doc: "The `Build` struct"
 
-  def card(assigns) do
+  def build(assigns) do
     ~H"""
-    <div class="inline-block rounded-sm bg-gray-50 m-1 drop-shadow-xl p-2">
-      <.link navigate={~p"/builds/#{@build}"}>
+    <div class="inline-block rounded-sm bg-gray-50 m-1 drop-shadow-xl p-2 m-2 w-full">
+      <div class="flex flex-row">
         <%= if @build.first_image do %>
           <div class="">
             <img class="object-cover w-64 h-64" src={@build.first_image} alt="" />
@@ -21,7 +21,9 @@ defmodule GarageWeb.Components.Builds.Card do
 
         <div class="p-6">
           <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800">
-            <%= @build.name %>
+            <.link navigate={~p"/builds/#{@build}"}>
+              <%= @build.name %>
+            </.link>
           </h5>
           <h6>By: <%= @build.builder.name %></h6>
 
@@ -32,7 +34,7 @@ defmodule GarageWeb.Components.Builds.Card do
             <%= @build.model.name %>
           </.link>
         </div>
-      </.link>
+      </div>
     </div>
     """
   end

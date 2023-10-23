@@ -3,6 +3,7 @@ defmodule GarageWeb.BuildsLive.Index do
 
   alias Garage.Builds.Build
   alias Ash.Page.Offset, as: Page
+  import GarageWeb.Components.Builds.Build
 
   @impl true
   def mount(_params, _session, socket) do
