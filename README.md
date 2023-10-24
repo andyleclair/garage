@@ -4,6 +4,7 @@
 - [x] Upload photos for builds
 - [ ] Likes
 - [ ] Comments
+- [ ] Slugs
 - [ ] Build details
   - engine
     - cylinder

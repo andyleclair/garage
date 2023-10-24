@@ -20,4 +20,5 @@ config :logger, level: :info
 # of environment variables, is done on config/runtime.exs.
 config :garage,
   upload_bucket: :prod,
+  # TODO: get a real domain and set it up in cloudflare
   public_image_root: "https://pub-f486e11e2a8c44629a55ccb84992176d.r2.dev"
