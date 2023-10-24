@@ -2,6 +2,12 @@
   Build <%= @build.id %>
   <:subtitle>Built by: <%= @build.builder.name %></:subtitle>
   <:actions>
+    <%= if @build.liked_by_user do %>
+      <.button phx-click="dislike">Unlike this build</.button>
+    <% else %>
+      <.button phx-click="like">Like this build</.button>
+    <% end %>
+
     <%= if @can_edit? do %>
       <.link navigate={~p"/builds/#{@build}/edit"}>
         <.button>Edit build</.button>
@@ -25,5 +31,12 @@
   <:item title="Make"><%= @build.make.name %></:item>
   <:item title="Model"><%= @build.model.name %></:item>
 </.list>
+<!-- likes -->
+<div class="">
+  Liked by:
+  <%= for like <- @build.likes do %>
+    <%= like.user.name %>
+  <% end %>
+</div>
 
 <.back navigate={~p"/builds"}>Back to builds</.back>

@@ -1,11 +1,23 @@
 defmodule Garage.Accounts.User do
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
-    extensions: [AshAuthentication],
-    authorizers: [Ash.Policy.Authorizer]
+    extensions: [AshAuthentication]
 
   actions do
     defaults [:create, :read, :update]
+
+    read :read_all do
+    end
+
+    read :by_id do
+      # This action has one argument :id of type :uuid
+      argument :id, :uuid, allow_nil?: false
+      # Tells us we expect this action to return a single result
+      get? true
+      # Filters the `:id` given in the argument
+      # against the `id` of each element in the resource
+      filter expr(id == ^arg(:id))
+    end
   end
 
   attributes do
@@ -16,6 +28,12 @@ defmodule Garage.Accounts.User do
     attribute :hashed_password, :string, allow_nil?: false, sensitive?: true
     create_timestamp :inserted_at
     update_timestamp :updated_at
+  end
+
+  code_interface do
+    define_for Garage.Accounts
+    define :get_by_id, args: [:id], action: :by_id
+    define :read_all, action: :read_all
   end
 
   authentication do
@@ -54,12 +72,6 @@ defmodule Garage.Accounts.User do
     has_many :builds, Garage.Builds.Build do
       api Garage.Builds
       destination_attribute :builder_id
-    end
-  end
-
-  policies do
-    bypass AshAuthentication.Checks.AshAuthenticationInteraction do
-      authorize_if always()
     end
   end
 end

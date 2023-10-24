@@ -133,7 +133,7 @@ defmodule Garage.Builds.Build do
   end
 
   preparations do
-    prepare build(load: [:builder, :make, :model, :first_image])
+    prepare build(load: [:builder, :make, :model, :first_image, :likes])
   end
 
   calculations do
@@ -147,7 +147,7 @@ defmodule Garage.Builds.Build do
   end
 
   policies do
-    policy action_type(:update) do
+    policy action(:update) do
       authorize_if relates_to_actor_via(:builder)
     end
 
