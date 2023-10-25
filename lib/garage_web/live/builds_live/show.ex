@@ -1,7 +1,9 @@
 defmodule GarageWeb.BuildsLive.Show do
   use GarageWeb, :live_view
 
-  alias Garage.Builds.Build
+  alias Garage.Builds
+  alias Garage.Builds.{Build, Comment}
+  alias AshPhoenix.Form
 
   @impl true
   def mount(_params, _session, socket) do
@@ -13,6 +15,7 @@ defmodule GarageWeb.BuildsLive.Show do
     build =
       Build.get_by_id!(id,
         load: [
+          comments: [user: [:name]],
           likes: [user: [:name]],
           liked_by_user: %{user_id: socket.assigns.current_user.id}
         ]
@@ -22,6 +25,17 @@ defmodule GarageWeb.BuildsLive.Show do
      socket
      |> assign(:page_title, build.name)
      |> assign(:build, build)
+     |> assign(
+       :comment_form,
+       to_form(
+         Form.for_action(
+           Comment,
+           :create,
+           api: Builds,
+           actor: socket.assigns.current_user
+         )
+       )
+     )
      |> assign(:can_edit?, Build.can_update?(socket.assigns.current_user, build))}
   end
 
@@ -57,5 +71,19 @@ defmodule GarageWeb.BuildsLive.Show do
     }
 
     {:noreply, assign(socket, :build, build)}
+  end
+
+  @impl true
+  def handle_event("add_comment", %{"form" => params}, socket) do
+    case Form.submit(socket.assigns.comment_form, params: params) do
+      {:ok, comment} ->
+        {:noreply,
+         socket
+         |> put_flash(:info, "Comment added!")}
+
+      {:error, form} ->
+        dbg(form)
+        {:noreply, assign(socket, :form, form)}
+    end
   end
 end

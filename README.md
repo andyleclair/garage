@@ -2,8 +2,8 @@
 
 ## TODO
 - [x] Upload photos for builds
-- [ ] Likes
-- [ ] Comments
+- [x] Likes
+- [x] Comments
 - [ ] Slugs
 - [ ] Build details
   - engine
@@ -30,6 +30,7 @@
 - [ ] Tools
   - Gearing calculator
   - blowdown etc.
+- [ ] Import
 
 To start your Phoenix server:
 

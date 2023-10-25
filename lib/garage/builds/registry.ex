@@ -7,5 +7,6 @@ defmodule Garage.Builds.Registry do
   entries do
     entry Garage.Builds.Build
     entry Garage.Builds.Like
+    entry Garage.Builds.Comment
   end
 end

@@ -6,7 +6,7 @@ defmodule Garage.Builds.Build do
 
   require Ecto.Query
 
-  alias Garage.Builds.Like
+  alias Garage.Builds.{Comment, Like}
   alias Garage.Mopeds.{Make, Model}
   alias Garage.Accounts.User
 
@@ -115,6 +115,7 @@ defmodule Garage.Builds.Build do
 
   relationships do
     has_many :likes, Like
+    has_many :comments, Comment
 
     belongs_to :builder, User do
       api Garage.Accounts
@@ -154,5 +155,9 @@ defmodule Garage.Builds.Build do
     policy always() do
       authorize_if always()
     end
+  end
+
+  aggregates do
+    count :like_count, :likes
   end
 end

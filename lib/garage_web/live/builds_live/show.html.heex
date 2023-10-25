@@ -38,5 +38,22 @@
     <%= like.user.name %>
   <% end %>
 </div>
+<!-- comments -->
+<div class="">
+  Comments:
+  <%= for comment <- @build.comments do %>
+    <p>By: <%= comment.user.name %></p>
+    <p><%= comment.text %></p>
+    <p><%= comment.inserted_at %></p>
+  <% end %>
+  Add a comment!
+  <.simple_form for={@comment_form} id="comment_form" phx-submit="add_comment" phx-debounce="500">
+    <.input field={@comment_form[:build_id]} value={@build.id} type="hidden" />
+    <.input field={@comment_form[:text]} type="textarea" />
+    <:actions>
+      <.button>Add Comment</.button>
+    </:actions>
+  </.simple_form>
+</div>
 
 <.back navigate={~p"/builds"}>Back to builds</.back>
