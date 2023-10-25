@@ -59,7 +59,8 @@ defmodule Garage.MixProject do
       {:live_select, "~> 1.2.1"},
       {:ex_aws, "~> 2.0"},
       {:ex_aws_s3, "~> 2.0"},
-      {:sweet_xml, "~> 0.6"}
+      {:sweet_xml, "~> 0.6"},
+      {:timex, "~> 3.0"}
     ]
   end
 

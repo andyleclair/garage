@@ -4,6 +4,7 @@ defmodule GarageWeb.BuildsLive.Show do
   alias Garage.Builds
   alias Garage.Builds.{Build, Comment}
   alias AshPhoenix.Form
+  import GarageWeb.Components.Builds.Comment
 
   @impl true
   def mount(_params, _session, socket) do
@@ -74,15 +75,15 @@ defmodule GarageWeb.BuildsLive.Show do
   end
 
   @impl true
-  def handle_event("add_comment", %{"form" => params}, socket) do
+  def handle_event("add_comment", %{"form" => params}, %{assigns: %{build: build}} = socket) do
     case Form.submit(socket.assigns.comment_form, params: params) do
       {:ok, comment} ->
         {:noreply,
          socket
-         |> put_flash(:info, "Comment added!")}
+         |> put_flash(:info, "Comment added!")
+         |> assign(:build, %{build | comments: build.comments ++ [comment]})}
 
       {:error, form} ->
-        dbg(form)
         {:noreply, assign(socket, :form, form)}
     end
   end
