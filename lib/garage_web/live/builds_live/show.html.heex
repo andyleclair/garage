@@ -13,7 +13,7 @@
     <% end %>
 
     <%= if @can_edit? do %>
-      <.link navigate={~p"/builds/#{@build}/edit"}>
+      <.link navigate={~p"/builds/#{@build.slug}/edit"}>
         <.button>Edit build</.button>
       </.link>
     <% end %>

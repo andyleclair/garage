@@ -11,6 +11,15 @@ defmodule Garage.Mopeds.Make do
       change Garage.Changes.SetSlug
     end
 
+    create :bulk_create do
+      argument :models, {:array, :map} do
+        allow_nil? false
+      end
+
+      change Garage.Changes.SetSlug
+      change manage_relationship(:models, type: :create)
+    end
+
     read :by_id do
       # This action has one argument :id of type :uuid
       argument :id, :uuid, allow_nil?: false
@@ -49,6 +58,10 @@ defmodule Garage.Mopeds.Make do
 
   identities do
     identity :slug, [:slug]
+  end
+
+  preparations do
+    prepare build(sort: [:name])
   end
 
   postgres do

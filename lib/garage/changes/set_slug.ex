@@ -5,11 +5,11 @@ defmodule Garage.Changes.SetSlug do
   def change(changeset, _opts, _context) do
     slug = Changeset.get_attribute(changeset, :slug)
     name = Changeset.get_attribute(changeset, :name)
-    slugified = slug || Slug.slugify(name)
+    slugified = Slug.slugify(name || "")
 
     cond do
-      is_nil(name) or name == "" ->
-        {:error, field: :name, message: "must exist"}
+      is_nil(name) ->
+        changeset
 
       slug == slugified ->
         changeset

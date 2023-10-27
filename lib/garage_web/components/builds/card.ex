@@ -8,7 +8,7 @@ defmodule GarageWeb.Components.Builds.Card do
   def card(assigns) do
     ~H"""
     <div class="inline-block rounded-sm bg-gray-50 m-1 drop-shadow-xl p-2">
-      <.link navigate={~p"/builds/#{@build}"}>
+      <.link navigate={~p"/builds/#{@build.slug}"}>
         <%= if @build.first_image do %>
           <div class="">
             <img class="object-cover w-64 h-64" src={@build.first_image} alt="" />

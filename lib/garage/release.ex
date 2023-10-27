@@ -3,7 +3,6 @@ defmodule Garage.Release do
   Used for executing DB release tasks when run in production without Mix
   installed.
   """
-  alias Garage.Mopeds
 
   @app :garage
 
@@ -21,14 +20,7 @@ defmodule Garage.Release do
   end
 
   def seed do
-    Path.join([:code.priv_dir(:garage), "repo", "makes_and_models.json"])
-    |> File.read!()
-    |> Jason.decode!()
-    |> Enum.map(fn {make, models} ->
-      models = for model <- models, do: %{name: model["model"]}
-      %{name: make, models: models}
-    end)
-    |> Mopeds.bulk_create!(Garage.Mopeds.Make, :bulk_create)
+    Garage.Seeds.seeds()
   end
 
   defp repos do

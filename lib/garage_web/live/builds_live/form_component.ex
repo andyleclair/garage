@@ -305,7 +305,7 @@ defmodule GarageWeb.BuildsLive.FormComponent do
         {:noreply,
          socket
          |> put_flash(:info, "Build updated successfully")
-         |> push_navigate(to: ~p"/builds/#{build}")}
+         |> push_navigate(to: ~p"/builds/#{build.slug}")}
 
       {:error, form} ->
         {:noreply, assign_form(socket, form)}
@@ -318,9 +318,10 @@ defmodule GarageWeb.BuildsLive.FormComponent do
         {:noreply,
          socket
          |> put_flash(:info, "Build created successfully")
-         |> push_navigate(to: ~p"/builds/#{build}")}
+         |> push_navigate(to: ~p"/builds/#{build.slug}")}
 
       {:error, form} ->
+        dbg(form)
         {:noreply, assign_form(socket, form)}
     end
   end

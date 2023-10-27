@@ -21,7 +21,7 @@ defmodule GarageWeb.Components.Builds.Build do
 
         <div class="p-6">
           <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800">
-            <.link navigate={~p"/builds/#{@build}"}>
+            <.link navigate={~p"/builds/#{@build.slug}"}>
               <%= @build.name %>
             </.link>
           </h5>

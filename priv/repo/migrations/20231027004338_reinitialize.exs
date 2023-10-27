@@ -50,7 +50,8 @@ defmodule Garage.Repo.Migrations.Reinitialize do
                column: :id,
                name: "models_make_id_fkey",
                type: :uuid,
-               prefix: "public"
+               prefix: "public",
+               on_delete: :delete_all
              )
     end
 
@@ -249,3 +250,4 @@ defmodule Garage.Repo.Migrations.Reinitialize do
     drop table(:users)
   end
 end
+

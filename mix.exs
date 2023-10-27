@@ -72,9 +72,13 @@ defmodule Garage.MixProject do
   # See the documentation for `Mix` for more info on aliases.
   defp aliases do
     [
-      setup: ["deps.get", "ecto.setup", "assets.setup", "assets.build"],
-      "ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
-      "ecto.reset": ["ecto.drop", "ecto.setup"],
+      setup: ["deps.get", "ash_postgres.setup", "assets.setup", "assets.build"],
+      "ash_postgres.setup": [
+        "ash_postgres.create",
+        "ash_postgres.migrate",
+        "run priv/repo/seeds.exs"
+      ],
+      "ash_postgres.reset": ["ash_postgres.drop", "ash_postgres.setup"],
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"],
       "assets.setup": ["tailwind.install --if-missing", "esbuild.install --if-missing"],
       "assets.build": ["tailwind default", "esbuild default"],

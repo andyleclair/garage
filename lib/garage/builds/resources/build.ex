@@ -56,7 +56,7 @@ defmodule Garage.Builds.Build do
     defaults [:update, :destroy]
 
     create :create do
-      accept [:name, :description, :year, :builder_id, :make_id, :model_id]
+      accept [:name, :description, :year, :builder_id, :make_id, :model_id, :image_urls]
 
       change Garage.Changes.SetSlug
       change relate_actor(:builder)
@@ -75,7 +75,7 @@ defmodule Garage.Builds.Build do
     read :by_slug do
       argument :slug, :string, allow_nil?: false
       get? true
-      filter expr(id == ^arg(:slug))
+      filter expr(slug == ^arg(:slug))
     end
 
     read :all_builds do
