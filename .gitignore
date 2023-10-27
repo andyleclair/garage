@@ -38,3 +38,7 @@ npm-debug.log
 
 config/*.secret.exs
 
+# LSP
+.elixir_ls
+.lexical
+

@@ -6,7 +6,12 @@ defmodule Garage.Mopeds.Model do
   alias Garage.Mopeds.Make
 
   actions do
-    defaults [:create, :read, :update, :destroy]
+    defaults [:read, :update, :destroy]
+
+    create :create do
+      primary? true
+      change Garage.Changes.SetSlug
+    end
 
     read :by_id do
       # This action has one argument :id of type :uuid
@@ -25,12 +30,9 @@ defmodule Garage.Mopeds.Model do
   end
 
   code_interface do
-    define_for Garage.Builds
-    define :create, action: :create
-    define :read_all, action: :read
-    define :update, action: :update
-    define :destroy, action: :destroy
-    define :get_by_id, args: [:id], action: :by_id
+    define_for Garage.Mopeds
+    define :create_model, action: :create
+    define :all_models, action: :read
     define :by_make_id, args: [:make_id], action: :by_make_id
   end
 
@@ -39,8 +41,19 @@ defmodule Garage.Mopeds.Model do
     attribute :name, :string, allow_nil?: false
     attribute :description, :string, default: ""
 
+    attribute :slug, :string do
+      allow_nil? false
+      generated? true
+      always_select? true
+      filterable? true
+    end
+
     create_timestamp :inserted_at
     update_timestamp :updated_at
+  end
+
+  identities do
+    identity :slug, [:slug]
   end
 
   postgres do

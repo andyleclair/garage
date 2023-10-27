@@ -23,14 +23,14 @@ defmodule GarageWeb.Router do
     ash_authentication_live_session :authentication_required,
       on_mount: {GarageWeb.LiveUserAuth, :live_user_required} do
       live "/builds/new", BuildsLive.New, :new
-      live "/builds/:build_id/edit", BuildsLive.Edit, :edit
+      live "/builds/:build/edit", BuildsLive.Edit, :edit
     end
 
     ash_authentication_live_session :authentication_optional,
       on_mount: {GarageWeb.LiveUserAuth, :live_user_optional} do
       live "/", HomeLive.Index, :index
       live "/builds", BuildsLive.Index, :index
-      live "/builds/:build_id", BuildsLive.Show, :show
+      live "/builds/:build", BuildsLive.Show, :show
     end
 
     ash_authentication_live_session :no_user,

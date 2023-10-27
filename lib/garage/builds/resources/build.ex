@@ -10,12 +10,55 @@ defmodule Garage.Builds.Build do
   alias Garage.Mopeds.{Make, Model}
   alias Garage.Accounts.User
 
+  attributes do
+    uuid_primary_key :id
+
+    # General attributes
+    attribute :name, :string, allow_nil?: false
+    attribute :description, :string
+    attribute :year, :integer, allow_nil?: false
+    attribute :image_urls, {:array, :string}, default: []
+
+    attribute :slug, :string do
+      allow_nil? false
+      generated? true
+      always_select? true
+      filterable? true
+    end
+
+    # Build specifics
+    attribute :frame, :string, default: "stock"
+    attribute :subframe, :string
+    create_timestamp :inserted_at
+    update_timestamp :updated_at
+  end
+
+  code_interface do
+    define_for Garage.Builds
+    define :create, action: :create
+    define :all_builds, action: :all_builds
+    define :update, action: :update
+    define :destroy, action: :destroy
+    define :get_by_id, args: [:id], action: :by_id
+    define :get_by_slug, args: [:slug], action: :by_slug
+    define :latest_builds, action: :latest
+    define :by_make, action: :by_make, args: [:make]
+    define :by_model, action: :by_model, args: [:model]
+    define :like
+    define :dislike
+  end
+
+  identities do
+    identity :slug, [:slug]
+  end
+
   actions do
     defaults [:update, :destroy]
 
     create :create do
       accept [:name, :description, :year, :builder_id, :make_id, :model_id]
 
+      change Garage.Changes.SetSlug
       change relate_actor(:builder)
     end
 
@@ -27,6 +70,12 @@ defmodule Garage.Builds.Build do
       # Filters the `:id` given in the argument
       # against the `id` of each element in the resource
       filter expr(id == ^arg(:id))
+    end
+
+    read :by_slug do
+      argument :slug, :string, allow_nil?: false
+      get? true
+      filter expr(id == ^arg(:slug))
     end
 
     read :all_builds do
@@ -75,36 +124,6 @@ defmodule Garage.Builds.Build do
         {:ok, changeset.data}
       end
     end
-  end
-
-  attributes do
-    uuid_primary_key :id
-
-    # General attributes
-    attribute :name, :string, allow_nil?: false
-    attribute :description, :string
-    attribute :year, :integer, allow_nil?: false
-    attribute :image_urls, {:array, :string}, default: []
-
-    # Build specifics
-    attribute :frame, :string, default: "stock"
-    attribute :subframe, :string
-    create_timestamp :inserted_at
-    update_timestamp :updated_at
-  end
-
-  code_interface do
-    define_for Garage.Builds
-    define :create, action: :create
-    define :all_builds, action: :all_builds
-    define :update, action: :update
-    define :destroy, action: :destroy
-    define :get_by_id, args: [:id], action: :by_id
-    define :latest_builds, action: :latest
-    define :by_make, action: :by_make, args: [:make]
-    define :by_model, action: :by_model, args: [:model]
-    define :like
-    define :dislike
   end
 
   postgres do

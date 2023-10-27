@@ -51,7 +51,7 @@ defmodule Garage.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.0-pre"},
-      {:ash, github: "ash-project/ash", override: true},
+      {:ash, "~> 2.0"},
       {:ash_postgres, "~> 1.3"},
       {:ash_phoenix, "~> 1.2"},
       {:ash_authentication, "~> 3.11.15"},

@@ -1,4 +1,4 @@
-defmodule Garage.Repo.Migrations.Initial do
+defmodule Garage.Repo.Migrations.Reinitialize do
   @moduledoc """
   Updates resources based on their most recent snapshots.
 
@@ -34,6 +34,7 @@ defmodule Garage.Repo.Migrations.Initial do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
       add :name, :text, null: false
       add :description, :text, default: ""
+      add :slug, :text, null: false
       add :inserted_at, :utc_datetime, null: false, default: fragment("now()")
       add :updated_at, :utc_datetime, null: false, default: fragment("now()")
       add :make_id, :uuid
@@ -53,12 +54,17 @@ defmodule Garage.Repo.Migrations.Initial do
              )
     end
 
+    create unique_index(:models, [:slug], name: "models_slug_index")
+
     alter table(:makes) do
       add :name, :text, null: false
       add :description, :text, default: ""
+      add :slug, :text, null: false
       add :inserted_at, :utc_datetime, null: false, default: fragment("now()")
       add :updated_at, :utc_datetime, null: false, default: fragment("now()")
     end
+
+    create unique_index(:makes, [:slug], name: "makes_slug_index")
 
     create table(:likes, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
@@ -69,6 +75,25 @@ defmodule Garage.Repo.Migrations.Initial do
           references(:users,
             column: :id,
             name: "likes_user_id_fkey",
+            type: :uuid,
+            prefix: "public",
+            on_delete: :delete_all
+          ),
+          null: false
+
+      add :build_id, :uuid, null: false
+    end
+
+    create table(:comments, primary_key: false) do
+      add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
+      add :text, :text, null: false
+      add :inserted_at, :utc_datetime, null: false, default: fragment("now()")
+      add :updated_at, :utc_datetime, null: false, default: fragment("now()")
+
+      add :user_id,
+          references(:users,
+            column: :id,
+            name: "comments_user_id_fkey",
             type: :uuid,
             prefix: "public",
             on_delete: :delete_all
@@ -95,10 +120,23 @@ defmodule Garage.Repo.Migrations.Initial do
 
     create unique_index(:likes, [:user_id, :build_id], name: "likes_unique_user_and_build_index")
 
+    alter table(:comments) do
+      modify :build_id,
+             references(:builds,
+               column: :id,
+               name: "comments_build_id_fkey",
+               type: :uuid,
+               prefix: "public",
+               on_delete: :delete_all
+             )
+    end
+
     alter table(:builds) do
       add :name, :text, null: false
       add :description, :text
       add :year, :bigint, null: false
+      add :image_urls, {:array, :text}, default: []
+      add :slug, :text, null: false
       add :frame, :text, default: "stock"
       add :subframe, :text
       add :inserted_at, :utc_datetime, null: false, default: fragment("now()")
@@ -128,9 +166,13 @@ defmodule Garage.Repo.Migrations.Initial do
             prefix: "public"
           )
     end
+
+    create unique_index(:builds, [:slug], name: "builds_slug_index")
   end
 
   def down do
+    drop_if_exists unique_index(:builds, [:slug], name: "builds_slug_index")
+
     drop constraint(:builds, "builds_builder_id_fkey")
 
     drop constraint(:builds, "builds_make_id_fkey")
@@ -145,9 +187,17 @@ defmodule Garage.Repo.Migrations.Initial do
       remove :inserted_at
       remove :subframe
       remove :frame
+      remove :slug
+      remove :image_urls
       remove :year
       remove :description
       remove :name
+    end
+
+    drop constraint(:comments, "comments_build_id_fkey")
+
+    alter table(:comments) do
+      modify :build_id, :uuid
     end
 
     drop_if_exists unique_index(:likes, [:user_id, :build_id],
@@ -162,16 +212,25 @@ defmodule Garage.Repo.Migrations.Initial do
 
     drop table(:builds)
 
+    drop constraint(:comments, "comments_user_id_fkey")
+
+    drop table(:comments)
+
     drop constraint(:likes, "likes_user_id_fkey")
 
     drop table(:likes)
 
+    drop_if_exists unique_index(:makes, [:slug], name: "makes_slug_index")
+
     alter table(:makes) do
       remove :updated_at
       remove :inserted_at
+      remove :slug
       remove :description
       remove :name
     end
+
+    drop_if_exists unique_index(:models, [:slug], name: "models_slug_index")
 
     drop constraint(:models, "models_make_id_fkey")
 

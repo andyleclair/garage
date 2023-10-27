@@ -21,8 +21,8 @@ defmodule GarageWeb.BuildsLive.Edit do
   end
 
   @impl true
-  def mount(%{"build_id" => build_id}, _session, socket) do
-    build = Build.get_by_id!(build_id)
+  def mount(%{"build" => slug}, _session, socket) do
+    build = Build.get_by_slug!(slug)
 
     if Build.can_update?(socket.assigns.current_user, build) do
       {:ok,

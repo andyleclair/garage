@@ -3,17 +3,12 @@ defmodule Garage.Mopeds.Make do
     data_layer: AshPostgres.DataLayer,
     api: Garage.Mopeds
 
-  # require Ecto.Query
-
   actions do
-    defaults [:create, :read, :update, :destroy]
+    defaults [:read, :update, :destroy]
 
-    create :bulk_create do
-      argument :models, {:array, :map} do
-        allow_nil? false
-      end
-
-      change manage_relationship(:models, type: :create)
+    create :create do
+      primary? true
+      change Garage.Changes.SetSlug
     end
 
     read :by_id do
@@ -28,7 +23,7 @@ defmodule Garage.Mopeds.Make do
   end
 
   code_interface do
-    define_for Garage.Builds
+    define_for Garage.Mopeds
     define :create, action: :create
     define :read_all, action: :read
     define :update, action: :update
@@ -41,8 +36,19 @@ defmodule Garage.Mopeds.Make do
     attribute :name, :string, allow_nil?: false
     attribute :description, :string, default: ""
 
+    attribute :slug, :string do
+      allow_nil? false
+      generated? true
+      always_select? true
+      filterable? true
+    end
+
     create_timestamp :inserted_at
     update_timestamp :updated_at
+  end
+
+  identities do
+    identity :slug, [:slug]
   end
 
   postgres do

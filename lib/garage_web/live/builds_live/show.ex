@@ -12,9 +12,9 @@ defmodule GarageWeb.BuildsLive.Show do
   end
 
   @impl true
-  def handle_params(%{"build_id" => id}, _, socket) do
+  def handle_params(%{"build" => slug}, _, socket) do
     build =
-      Build.get_by_id!(id,
+      Build.get_by_slug!(slug,
         load: [
           comments: [user: [:name]],
           likes: [user: [:name]],
