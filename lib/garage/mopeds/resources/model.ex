@@ -53,7 +53,7 @@ defmodule Garage.Mopeds.Model do
   end
 
   identities do
-    identity :slug, [:slug]
+    identity :slug, [:make_id, :slug]
   end
 
   postgres do

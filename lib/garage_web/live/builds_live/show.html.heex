@@ -37,9 +37,13 @@
 </.list>
 <!-- likes -->
 <div class="">
-  Liked by:
-  <%= for like <- @build.likes do %>
-    <%= like.user.name %>
+  <%= if @build.likes == [] do %>
+    No likes yet, be the first!
+  <% else %>
+    Liked by:
+    <%= for like <- @build.likes do %>
+      <%= like.user.name %>
+    <% end %>
   <% end %>
 </div>
 <!-- comments -->
