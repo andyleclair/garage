@@ -9,7 +9,7 @@ defmodule GarageWeb.AuthController do
     |> delete_session(:return_to)
     |> store_in_session(user)
     |> assign(:current_user, user)
-    |> put_flash(:info, "Logged In!")
+    |> put_flash(:info, "Success!")
     |> redirect(to: return_to)
   end
 
