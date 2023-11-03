@@ -4,7 +4,8 @@
 - [x] Upload photos for builds
 - [x] Likes
 - [x] Comments
-- [ ] Slugs
+- [x] Slugs
+- [x] Password Reset
 - [ ] Build details
   - engine
     - cylinder
@@ -31,6 +32,8 @@
   - Gearing calculator
   - blowdown etc.
 - [ ] Import
+- [ ] User settings page
+- [ ] User profile page
 
 To start your Phoenix server:
 

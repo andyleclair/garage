@@ -1,0 +1,16 @@
+<.header>
+  <%= @user.name %>
+  <:subtitle>AKA: <%= @user.username %></:subtitle>
+</.header>
+
+<h2 class="text-4xl border-b">
+  Builds
+</h2>
+
+<%= if @user.builds == [] do %>
+  <h3 class="text-2xl mt-5">No Builds Yet</h3>
+<% else %>
+  <%= for build <- @user.builds  do %>
+    <.card build={build} />
+  <% end %>
+<% end %>

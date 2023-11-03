@@ -18,6 +18,14 @@ defmodule Garage.Accounts.User do
       # against the `id` of each element in the resource
       filter expr(id == ^arg(:id))
     end
+
+    read :by_username do
+      argument :username, :string, allow_nil?: false
+
+      get? true
+      filter expr(username == ^arg(:username))
+      prepare build(load: [:builds])
+    end
   end
 
   attributes do
@@ -33,6 +41,7 @@ defmodule Garage.Accounts.User do
   code_interface do
     define_for Garage.Accounts
     define :get_by_id, args: [:id], action: :by_id
+    define :get_by_username, args: [:username], action: :by_username
     define :read_all, action: :read_all
   end
 

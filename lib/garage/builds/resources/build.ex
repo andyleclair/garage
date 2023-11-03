@@ -53,7 +53,7 @@ defmodule Garage.Builds.Build do
   end
 
   actions do
-    defaults [:update, :destroy]
+    defaults [:read, :update, :destroy]
 
     create :create do
       accept [:name, :description, :year, :builder_id, :make_id, :model_id, :image_urls]

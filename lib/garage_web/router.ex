@@ -24,6 +24,7 @@ defmodule GarageWeb.Router do
       on_mount: {GarageWeb.LiveUserAuth, :live_user_required} do
       live "/builds/new", BuildsLive.New, :new
       live "/builds/:build/edit", BuildsLive.Edit, :edit
+      live "/user/settings", UsersLive.Settings, :settings
     end
 
     ash_authentication_live_session :authentication_optional,
@@ -31,6 +32,7 @@ defmodule GarageWeb.Router do
       live "/", HomeLive.Index, :index
       live "/builds", BuildsLive.Index, :index
       live "/builds/:build_id", BuildsLive.Show, :show
+      live "/:username", UsersLive.Show, :show
     end
 
     ash_authentication_live_session :no_user,
