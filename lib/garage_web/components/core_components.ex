@@ -433,10 +433,10 @@ defmodule GarageWeb.CoreComponents do
     ~H"""
     <header class={[@actions != [] && "flex items-center justify-between gap-6", "mb-5", @class]}>
       <div>
-        <h1 class="text-9xl font-semibold leading-8 text-zinc-800 h-32 sm:h-full">
+        <h1 class="text-8xl font-semibold leading-8 text-zinc-800 h-32 sm:h-full">
           <%= render_slot(@inner_block) %>
         </h1>
-        <p :if={@subtitle != []} class="text-xl leading-6 text-zinc-600">
+        <p :if={@subtitle != []} class="h-12 text-xl leading-6 text-zinc-600">
           <%= render_slot(@subtitle) %>
         </p>
       </div>

@@ -1,5 +1,5 @@
 <.header>
-  Build <%= @build.id %>
+  <%= @build.name %>
   <:subtitle>
     Built by: <%= @build.builder.name %> Submitted on: <%= to_human_date(@build.inserted_at) %> Last updated: <%= humanize_relative(
       @build.updated_at

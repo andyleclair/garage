@@ -31,7 +31,7 @@ defmodule GarageWeb.Router do
       on_mount: {GarageWeb.LiveUserAuth, :live_user_optional} do
       live "/", HomeLive.Index, :index
       live "/builds", BuildsLive.Index, :index
-      live "/builds/:build_id", BuildsLive.Show, :show
+      live "/builds/:build", BuildsLive.Show, :show
       live "/:username", UsersLive.Show, :show
     end
 
