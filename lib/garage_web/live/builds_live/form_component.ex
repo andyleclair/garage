@@ -26,7 +26,10 @@ defmodule GarageWeb.BuildsLive.FormComponent do
         phx-submit="save"
       >
         <.input field={@form[:name]} type="text" label="Name" />
-        <.input field={@form[:description]} type="textarea" label="Description" />
+        <.input field={@form[:description]} type="hidden" label="Description" id="trix-editor" />
+        <div id="rich-text" phx-update="ignore">
+          <trix-editor input="trix-editor"></trix-editor>
+        </div>
         <div class="flex justify-around">
           <div class="w-1/6">
             <.input field={@form[:year]} type="select" label="Year" options={@year_options} />
@@ -55,11 +58,19 @@ defmodule GarageWeb.BuildsLive.FormComponent do
         </div>
         <div class="space-y-12">
           <div class="border-gray-900/10 pb-12">
-            <h2 class="text-base font-semibold leading-7 text-gray-900">Images</h2>
+            <h2 class="text-base font-semibold leading-7 text-gray-900">
+              Images
+            </h2>
 
             <p class="mt-1 text-sm leading-6 text-gray-600">
               A photo is worth a thousand words...
             </p>
+
+            <div class="md:flex space-x-4 space-y-4">
+              <div :for={image_url <- @build.image_urls} class="md:w-96 sm:w-full">
+                <img src={image_url} />
+              </div>
+            </div>
 
             <p class="mt-1 text-sm leading-6 text-gray-600">
               You may add up to <%= @uploads.image_urls.max_entries %> pictures at a time.

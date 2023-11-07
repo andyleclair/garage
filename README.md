@@ -6,6 +6,13 @@
 - [x] Comments
 - [x] Slugs
 - [x] Password Reset
+- [x] User settings page
+- [x] User profile page
+- [ ] User fancy colors
+- [ ] Build picture carousel
+- [ ] Build image management
+- [ ] Image flagging
+- [x] Rich text editing for Build 
 - [ ] Build details
   - engine
     - cylinder
@@ -32,8 +39,6 @@
   - Gearing calculator
   - blowdown etc.
 - [ ] Import
-- [ ] User settings page
-- [ ] User profile page
 
 To start your Phoenix server:
 

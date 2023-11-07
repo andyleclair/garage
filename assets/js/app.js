@@ -22,11 +22,34 @@ import { Socket } from "phoenix"
 import { LiveSocket } from "phoenix_live_view"
 import topbar from "../vendor/topbar"
 import live_select from "live_select"
+import Trix from "trix"
+const hooks = {
+  TrixEditor: {
+    mounted() {
+      const element = document.querySelector("trix-editor");
+      element.editor.element.addEventListener("trix-change", (e) => {
+        this.el.dispatchEvent(new Event("change", { bubbles: true }));
+      });
+      element.editor.element.addEventListener("trix-initialize", () => {
+        element.editor.element.focus();
+        var length = element.editor.getDocument().toString().length;
+        window.setTimeout(() => {
+          element.editor.setSelectedRange(length, length);
+        }, 1);
+      });
+      this.handleEvent("updateContent", (data) => {
+        element.editor.loadHTML(data.content || "");
+      });
+    },
+  },
+  ...live_select
+}
+
 
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 let liveSocket = new LiveSocket('/live', Socket, {
   params: { _csrf_token: csrfToken },
-  hooks: live_select
+  hooks: hooks
 })
 
 // Show progress bar on live navigation and form submits

@@ -31,7 +31,9 @@
 <.list>
   <:item title="Year"><%= @build.year %></:item>
   <:item title="Name"><%= @build.name %></:item>
-  <:item title="Description"><%= @build.description %></:item>
+  <:item title="Description">
+    <%= raw(@build.description) %>
+  </:item>
   <:item title="Make"><%= @build.make.name %></:item>
   <:item title="Model"><%= @build.model.name %></:item>
 </.list>
