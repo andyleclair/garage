@@ -1,4 +1,7 @@
 defmodule Garage.Changes.SetSlug do
+  @moduledoc """
+  Change module to set the slug on a resource
+  """
   use Ash.Resource.Change
   alias Ash.Changeset
 

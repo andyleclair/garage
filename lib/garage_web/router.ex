@@ -27,20 +27,20 @@ defmodule GarageWeb.Router do
       live "/user/settings", UsersLive.Settings, :settings
     end
 
-    ash_authentication_live_session :authentication_optional,
-      on_mount: {GarageWeb.LiveUserAuth, :live_user_optional} do
-      live "/", HomeLive.Index, :index
-      live "/builds", BuildsLive.Index, :index
-      live "/builds/:build", BuildsLive.Show, :show
-      live "/:username", UsersLive.Show, :show
-    end
-
     ash_authentication_live_session :no_user,
       on_mount: {GarageWeb.LiveUserAuth, :live_no_user} do
       live "/register", AuthLive.Index, :register
       live "/sign-in", AuthLive.Index, :sign_in
       live "/password-reset", AuthLive.Reset, :reset_request
       live "/password-reset/:token", AuthLive.Reset, :reset
+    end
+
+    ash_authentication_live_session :authentication_optional,
+      on_mount: {GarageWeb.LiveUserAuth, :live_user_optional} do
+      live "/", HomeLive.Index, :index
+      live "/builds", BuildsLive.Index, :index
+      live "/builds/:build", BuildsLive.Show, :show
+      live "/:username", UsersLive.Show, :show
     end
 
     sign_out_route AuthController

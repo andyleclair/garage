@@ -1,4 +1,5 @@
 defmodule GarageWeb.UsersLive.Settings do
+  alias Garage.Accounts.User
   alias Garage.Accounts
 
   alias ExAws.S3
@@ -13,6 +14,23 @@ defmodule GarageWeb.UsersLive.Settings do
     <.simple_form for={@form} id="settings-form" phx-change="validate" phx-submit="save">
       <.input field={@form[:username]} type="text" label="Username" />
       <.input field={@form[:email]} type="text" label="Email" />
+      <!-- color management -->
+      <div class="h-20 flex flex-col">
+        <.label>
+          Color (your name will appear in this color around the site)
+        </.label>
+        <div class="flex flex-row h-full mt-2 space-x-4">
+          <div class="h-full w-full rounded-md" style={"background-color: #{@user.color}"} />
+          <img
+            src={~p"/images/dice.svg"}
+            title="roll the dice"
+            class="h-16 cursor-pointer"
+            phx-click="new-color"
+            phx-throttle="1000"
+          />
+        </div>
+      </div>
+      <!-- Avatar management -->
       <div class="md:flex justify-around space-x-4">
         <div class="md:w-1/2 sm:w-full">
           <h2 class="text-base font-semibold leading-7 text-gray-900">
@@ -161,6 +179,12 @@ defmodule GarageWeb.UsersLive.Settings do
      |> allow_upload(:avatar_url, accept: ~w(.jpg .jpeg .webp .png), max_entries: 1)
      |> assign(:user, user)
      |> assign_form(form)}
+  end
+
+  @impl true
+  def handle_event("new-color", _, socket) do
+    {:ok, updated_user} = User.generate_new_color(socket.assigns.user)
+    {:noreply, assign(socket, :user, updated_user)}
   end
 
   @impl true

@@ -9,7 +9,7 @@ defmodule GarageWeb.AuthLive.Index do
   @impl true
   def render(assigns) do
     ~H"""
-    <div class="mx-auto max-w-sm">
+    <div>
       <.header class="text-center">
         <%= @cta %>
         <:subtitle>
@@ -22,7 +22,7 @@ defmodule GarageWeb.AuthLive.Index do
         </:subtitle>
       </.header>
 
-      <div>
+      <div class="mx-auto max-w-sm">
         <.simple_form
           for={@form}
           phx-change="validate"
@@ -91,7 +91,7 @@ defmodule GarageWeb.AuthLive.Index do
 
   @impl true
   def handle_event("validate", %{"user" => params}, socket) do
-    form = socket.assigns.form |> Form.validate(params, errors: false)
+    form = socket.assigns.form |> Form.validate(params)
 
     {:noreply, assign(socket, form: form)}
   end
