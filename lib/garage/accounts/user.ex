@@ -1,5 +1,6 @@
 defmodule Garage.Accounts.User do
   use Ash.Resource,
+    api: Garage.Accounts,
     data_layer: AshPostgres.DataLayer,
     extensions: [AshAuthentication]
 
@@ -34,6 +35,7 @@ defmodule Garage.Accounts.User do
     attribute :email, :ci_string, allow_nil?: false
     attribute :username, :string, allow_nil?: false
     attribute :hashed_password, :string, allow_nil?: false, sensitive?: true
+    attribute :avatar_url, :string
     create_timestamp :inserted_at
     update_timestamp :updated_at
   end

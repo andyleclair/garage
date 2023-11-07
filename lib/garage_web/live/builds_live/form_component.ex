@@ -202,7 +202,6 @@ defmodule GarageWeb.BuildsLive.FormComponent do
   def mount(socket) do
     {:ok,
      socket
-     |> assign(:uploaded_images, [])
      |> allow_upload(:image_urls, accept: ~w(.jpg .jpeg .webp .png), max_entries: 10)}
   end
 
@@ -385,11 +384,6 @@ defmodule GarageWeb.BuildsLive.FormComponent do
 
   defp assign_form(socket, %Phoenix.HTML.Form{} = form) do
     assign(socket, :form, form)
-  end
-
-  def are_files_uploadable?(image_urls) do
-    error_list = Map.get(image_urls, :errors)
-    Enum.empty?(error_list) and length(image_urls.entries) > 0
   end
 
   defp live_action_to_ash_action(:new), do: :create

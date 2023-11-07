@@ -3,6 +3,10 @@
   <:subtitle>AKA: <%= @user.username %></:subtitle>
 </.header>
 
+<div>
+  <img src={@user.avatar_url} alt={"#{@user.username}'s avatar"} />
+</div>
+
 <h2 class="text-4xl border-b">
   Builds
 </h2>
