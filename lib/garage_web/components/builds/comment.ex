@@ -8,9 +8,7 @@ defmodule GarageWeb.Components.Builds.Comment do
     <div>
       <p>"<%= @comment.text %>"</p>
       <p>
-        - <span style={"color: #{@comment.user.color}"}><%= @comment.user.name %></span>, <%= humanize_relative(
-          @comment.inserted_at
-        ) %>
+        - <.username user={@comment.user} />, <%= humanize_relative(@comment.inserted_at) %>
       </p>
     </div>
     """

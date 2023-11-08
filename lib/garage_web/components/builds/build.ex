@@ -25,7 +25,7 @@ defmodule GarageWeb.Components.Builds.Build do
               <%= @build.name %>
             </.link>
           </h5>
-          <h6>By: <%= @build.builder.name %></h6>
+          <h6>By: <.username user={@build.builder} /></h6>
 
           <.link patch={~p"/builds?make=#{@build.make}"} replace={false}>
             <%= @build.make.name %>

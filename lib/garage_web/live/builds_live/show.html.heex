@@ -2,7 +2,7 @@
   <%= @build.name %>
 
   <:subtitle>
-    Built by: <span style={"color: #{@build.builder.color}"}><%= @build.builder.name %></span>
+    Built by: <.username user={@build.builder} />
     Submitted on: <%= to_human_date(@build.inserted_at) %> Last updated: <%= humanize_relative(
       @build.updated_at
     ) %>
@@ -45,7 +45,7 @@
     <% else %>
       Liked by:
       <%= for like <- @build.likes do %>
-        <span style={"color: #{like.user.color}"}><%= like.user.name %></span>
+        <.username user={like.user} />
       <% end %>
     <% end %>
   </div>

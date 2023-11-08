@@ -1,13 +1,15 @@
-<.header>
-  <%= @user.name %>
-  <:subtitle>AKA: <%= @user.username %></:subtitle>
-</.header>
+<div class="flex justify-between">
+  <.header>
+    <%= @user.name %>
+    <:subtitle>AKA: <.username user={@user} /></:subtitle>
+  </.header>
 
-<div>
-  <img src={@user.avatar_url} alt={"#{@user.username}'s avatar"} />
+  <div class="">
+    <img src={@user.avatar_url} title={"#{@user.username}'s avatar"} />
+  </div>
 </div>
 
-<h2 class="text-4xl border-b">
+<h2 class="text-4xl border-b mt-5">
   Builds
 </h2>
 

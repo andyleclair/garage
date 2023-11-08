@@ -637,6 +637,17 @@ defmodule GarageWeb.CoreComponents do
     """
   end
 
+  @doc """
+  Renders a user with their chosen color
+  """
+  attr :user, :any, required: true
+
+  def username(assigns) do
+    ~H"""
+    <span style={"color: #{@user.color}"}><%= @user.name %></span>
+    """
+  end
+
   ## JS Commands
 
   def show(js \\ %JS{}, selector) do
