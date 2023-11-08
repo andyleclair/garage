@@ -35,6 +35,9 @@ defmodule GarageWeb.Router do
       live "/password-reset/:token", AuthLive.Reset, :reset
     end
 
+    sign_out_route AuthController
+    auth_routes_for Garage.Accounts.User, to: AuthController
+
     ash_authentication_live_session :authentication_optional,
       on_mount: {GarageWeb.LiveUserAuth, :live_user_optional} do
       live "/", HomeLive.Index, :index
@@ -42,9 +45,6 @@ defmodule GarageWeb.Router do
       live "/builds/:build", BuildsLive.Show, :show
       live "/:username", UsersLive.Show, :show
     end
-
-    sign_out_route AuthController
-    auth_routes_for Garage.Accounts.User, to: AuthController
   end
 
   # Other scopes may use custom stacks.

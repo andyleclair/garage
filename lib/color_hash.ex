@@ -1,7 +1,7 @@
 defmodule ColorHash do
   @hue_range {0, 360}
-  @saturation_range {50, 80}
-  @lightness_range {85, 100}
+  @saturation_range {50, 100}
+  @lightness_range {12, 90}
 
   def hash(string) do
     {min_h, max_h} = @hue_range
