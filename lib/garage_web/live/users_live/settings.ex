@@ -17,7 +17,10 @@ defmodule GarageWeb.UsersLive.Settings do
       <!-- color management -->
       <div class="h-20 flex flex-col">
         <.label>
-          Color (your name will appear in this color around the site)
+          Color
+          <span class="text-sm font-medium italic">
+            - your name will appear in this color around the site
+          </span>
         </.label>
         <div class="flex flex-row h-full mt-2 space-x-4">
           <div class="h-full w-full rounded-md" style={"background-color: #{@user.color}"} />
