@@ -5,9 +5,14 @@ defmodule GarageWeb.Components.Builds.Comment do
 
   def comment(assigns) do
     ~H"""
-    <p>By: <%= @comment.user.name %></p>
-    <p><%= @comment.text %></p>
-    <p><%= humanize_relative(@comment.inserted_at) %></p>
+    <div>
+      <p>"<%= @comment.text %>"</p>
+      <p>
+        - <span style={"color: #{@comment.user.color}"}><%= @comment.user.name %></span>, <%= humanize_relative(
+          @comment.inserted_at
+        ) %>
+      </p>
+    </div>
     """
   end
 end

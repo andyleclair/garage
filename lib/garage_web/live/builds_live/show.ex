@@ -5,6 +5,7 @@ defmodule GarageWeb.BuildsLive.Show do
   alias Garage.Builds.{Build, Comment}
   alias AshPhoenix.Form
   import GarageWeb.Components.Builds.Comment
+  import GarageWeb.Components.Builds.LikeHeart
 
   @impl true
   def mount(_params, _session, socket) do

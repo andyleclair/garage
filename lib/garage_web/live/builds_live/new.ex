@@ -25,6 +25,6 @@ defmodule GarageWeb.BuildsLive.New do
     {:ok,
      socket
      |> assign(:page_title, "New Build")
-     |> assign(:build, %Build{})}
+     |> assign(:build, %Build{image_urls: []})}
   end
 end

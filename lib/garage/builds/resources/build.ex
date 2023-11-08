@@ -17,7 +17,7 @@ defmodule Garage.Builds.Build do
     attribute :name, :string, allow_nil?: false
     attribute :description, :string
     attribute :year, :integer, allow_nil?: false
-    attribute :image_urls, {:array, :string}, default: []
+    attribute :image_urls, {:array, :string}, allow_nil?: false, default: []
 
     attribute :slug, :string do
       allow_nil? false

@@ -36,7 +36,7 @@ defmodule GarageWeb.UsersLive.Settings do
           <h2 class="text-base font-semibold leading-7 text-gray-900">
             Current Avatar
           </h2>
-          <img src={@user.avatar_url} alt={"#{@user.name}'s avatar"} />
+          <img src={@user.avatar_url} title={"#{@user.name}'s avatar"} />
         </div>
 
         <div class="md:w-1/2 sm:w-full">

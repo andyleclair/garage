@@ -46,7 +46,7 @@ defmodule Garage.Accounts.User do
     attribute :username, :string, allow_nil?: false
     attribute :hashed_password, :string, allow_nil?: false, sensitive?: true
     attribute :avatar_url, :string
-    attribute :color, :string, allow_nil?: false, generated?: true
+    attribute :color, :string, allow_nil?: false, generated?: true, always_select?: true
     attribute :color_nonce, :string, allow_nil?: false, generated?: true
     create_timestamp :inserted_at
     update_timestamp :updated_at

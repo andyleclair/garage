@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content={get_csrf_token()} />
-    <.live_title suffix=" · Moped Garage">
-      <%= assigns[:page_title] || "Garage" %>
+    <.live_title suffix=" · Moped.Build">
+      <%= assigns[:page_title] || "Moped.Build" %>
     </.live_title>
     <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
     <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
@@ -21,12 +21,16 @@
             </p>
           </.link>
         </div>
-        <div class="flex items-center gap-4 font-semibold leading-6 text-zinc-900">
+        <div class="flex items-center gap-8 font-semibold leading-6 text-zinc-900">
           <.link navigate={~p"/builds"}>Builds</.link>
           <%= if @current_user do %>
-            <span class="px-3 py-2 text-sm font-medium text-slate-800  rounded-md">
-              <%= @current_user.email %>
-            </span>
+            <.link
+              navigate={~p"/#{@current_user.username}"}
+              class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
+              style={"color: #{@current_user.color}"}
+            >
+              <%= @current_user.username %>
+            </.link>
             <.link
               navigate={~p"/user/settings"}
               class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"

@@ -438,14 +438,14 @@ defmodule GarageWeb.CoreComponents do
       @class
     ]}>
       <div>
-        <h1 class="font-semibold leading-8 text-zinc-800 text-2xl md:text-4xl lg:text-8xl lg:h-32 md:h-full">
+        <h1 class="font-semibold leading-8 text-zinc-800 text-4xl lg:text-8xl lg:h-32 md:h-full">
           <%= render_slot(@inner_block) %>
         </h1>
         <p :if={@subtitle != []} class="h-12 text-l md:text-xl leading-6 text-zinc-600">
           <%= render_slot(@subtitle) %>
         </p>
       </div>
-      <div class="flex-none"><%= render_slot(@actions) %></div>
+      <div class="flex flex-row gap-4 -mt-8"><%= render_slot(@actions) %></div>
     </header>
     """
   end

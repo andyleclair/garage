@@ -1,17 +1,14 @@
 <.header>
   <%= @build.name %>
+
   <:subtitle>
-    Built by: <%= @build.builder.name %> Submitted on: <%= to_human_date(@build.inserted_at) %> Last updated: <%= humanize_relative(
+    Built by: <span style={"color: #{@build.builder.color}"}><%= @build.builder.name %></span>
+    Submitted on: <%= to_human_date(@build.inserted_at) %> Last updated: <%= humanize_relative(
       @build.updated_at
     ) %>
   </:subtitle>
   <:actions>
-    <%= if @build.liked_by_user do %>
-      <.button phx-click="dislike">Unlike this build</.button>
-    <% else %>
-      <.button phx-click="like">Like this build</.button>
-    <% end %>
-
+    <.like_heart liked_by_user={@build.liked_by_user} class="w-10 h-10" />
     <%= if @can_edit? do %>
       <.link navigate={~p"/builds/#{@build.slug}/edit"}>
         <.button>Edit build</.button>
@@ -38,30 +35,42 @@
   <:item title="Model"><%= @build.model.name %></:item>
 </.list>
 <!-- likes -->
-<div class="">
-  <%= if @build.likes == [] do %>
-    No likes yet, be the first!
-  <% else %>
-    Liked by:
-    <%= for like <- @build.likes do %>
-      <%= like.user.name %>
+<div class="flex space-x-4 mt-10">
+  <div class="w-1/2">
+    <h3 class="text-2xl mb-5 border-b">
+      Likes
+    </h3>
+    <%= if @build.likes == [] do %>
+      No likes yet, be the first!
+    <% else %>
+      Liked by:
+      <%= for like <- @build.likes do %>
+        <span style={"color: #{like.user.color}"}><%= like.user.name %></span>
+      <% end %>
     <% end %>
-  <% end %>
-</div>
-<!-- comments -->
-<div class="">
-  Comments:
-  <%= for comment <- @build.comments do %>
-    <.comment comment={comment} />
-  <% end %>
-  Add a comment!
-  <.simple_form for={@comment_form} id="comment_form" phx-submit="add_comment" phx-debounce="500">
-    <.input field={@comment_form[:build_id]} value={@build.id} type="hidden" />
-    <.input field={@comment_form[:text]} type="textarea" />
-    <:actions>
-      <.button>Add Comment</.button>
-    </:actions>
-  </.simple_form>
+  </div>
+  <!-- comments -->
+  <div class="w-1/2">
+    <h3 class="text-2xl mb-5 border-b">
+      Comments
+    </h3>
+    <%= for comment <- @build.comments do %>
+      <.comment comment={comment} />
+    <% end %>
+    Add a comment!
+    <.simple_form
+      for={@comment_form}
+      id="comment_form"
+      phx-submit="add_comment"
+      phx-debounce="500"
+    >
+      <.input field={@comment_form[:build_id]} value={@build.id} type="hidden" />
+      <.input field={@comment_form[:text]} type="textarea" />
+      <:actions>
+        <.button>Add Comment</.button>
+      </:actions>
+    </.simple_form>
+  </div>
 </div>
 
 <.back navigate={~p"/builds"}>Back to builds</.back>

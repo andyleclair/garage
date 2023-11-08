@@ -30,7 +30,7 @@ defmodule GarageWeb.BuildsLive.Edit do
        |> assign(:page_title, "Edit Build")
        |> assign(:build, build)}
     else
-      {:ok, socket |> put_flash(:error, "Naughty! 😈") |> push_navigate(to: ~p"/")}
+      {:ok, socket |> put_flash(:error, "FORBIDDEN 😈") |> push_navigate(to: ~p"/")}
     end
   end
 end
