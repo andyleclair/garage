@@ -23,7 +23,7 @@ defmodule GarageWeb.Components.Builds.Card do
           <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800">
             <%= @build.name %>
           </h5>
-          <h6>By: <%= @build.builder.name %></h6>
+          <h6>By: <.username user={@build.builder} /></h6>
 
           <.link patch={~p"/builds?make=#{@build.make}"} replace={false}>
             <%= @build.make.name %>

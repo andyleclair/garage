@@ -9,14 +9,16 @@
   </div>
 </div>
 
-<h2 class="text-4xl border-b mt-5">
+<h2 class="text-4xl border-b my-5">
   Builds
 </h2>
 
-<%= if @user.builds == [] do %>
-  <h3 class="text-2xl mt-5">No Builds Yet</h3>
-<% else %>
-  <%= for build <- @user.builds  do %>
-    <.card build={build} />
+<div class="md:flex space-5">
+  <%= if @user.builds == [] do %>
+    <h3 class="text-2xl mt-5">No Builds Yet</h3>
+  <% else %>
+    <%= for build <- @user.builds  do %>
+      <.card build={build} />
+    <% end %>
   <% end %>
-<% end %>
+</div>
