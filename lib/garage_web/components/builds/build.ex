@@ -27,10 +27,10 @@ defmodule GarageWeb.Components.Builds.Build do
           </h5>
           <h6>By: <.username user={@build.builder} /></h6>
 
-          <.link patch={~p"/builds?make=#{@build.make}"} replace={false}>
+          <.link patch={~p"/builds?make=#{@build.make.slug}"}>
             <%= @build.make.name %>
           </.link>
-          <.link patch={~p"/builds?model=#{@build.model}"} replace={false}>
+          <.link patch={~p"/builds?model=#{@build.model.slug}"}>
             <%= @build.model.name %>
           </.link>
         </div>

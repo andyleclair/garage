@@ -42,6 +42,7 @@ defmodule Garage.Builds.Build do
     define :get_by_id, args: [:id], action: :by_id
     define :get_by_slug, args: [:slug], action: :by_slug
     define :latest_builds, action: :latest
+    define :recently_updated, action: :recently_updated
     define :by_make, action: :by_make, args: [:make]
     define :by_model, action: :by_model, args: [:model]
     define :like
@@ -89,14 +90,18 @@ defmodule Garage.Builds.Build do
       prepare build(limit: 5, sort: [inserted_at: :desc])
     end
 
+    read :recently_updated do
+      prepare build(limit: 5, sort: [updated_at: :desc])
+    end
+
     read :by_make do
       argument :make, :string, allow_nil?: false
-      filter expr(make == ^arg(:make))
+      filter expr(make.slug == ^arg(:make))
     end
 
     read :by_model do
       argument :model, :string, allow_nil?: false
-      filter expr(model == ^arg(:model))
+      filter expr(model.slug == ^arg(:model))
     end
 
     update :like do

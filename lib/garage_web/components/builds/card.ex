@@ -25,10 +25,11 @@ defmodule GarageWeb.Components.Builds.Card do
           </h5>
           <h6>By: <.username user={@build.builder} /></h6>
 
-          <.link patch={~p"/builds?make=#{@build.make}"} replace={false}>
+          <%= @build.year %>
+          <.link patch={~p"/builds?make=#{@build.make.slug}"} replace={false}>
             <%= @build.make.name %>
           </.link>
-          <.link patch={~p"/builds?model=#{@build.model}"} replace={false}>
+          <.link patch={~p"/builds?model=#{@build.model.slug}"} replace={false}>
             <%= @build.model.name %>
           </.link>
         </div>

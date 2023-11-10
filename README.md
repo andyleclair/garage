@@ -40,6 +40,7 @@
   - blowdown etc.
 - [ ] Import
 - [ ] Dark mode
+- [ ] Chat
 
 To start your Phoenix server:
 

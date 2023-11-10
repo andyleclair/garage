@@ -24,6 +24,11 @@
         <div class="flex items-center gap-8 font-semibold leading-6 text-zinc-900">
           <.link navigate={~p"/builds"}>Builds</.link>
           <%= if @current_user do %>
+            <.link patch={~p"/builds/new"}>
+              <.button>
+                <.icon name="hero-plus" class="bg-green-500 -mt-1" /> New Build
+              </.button>
+            </.link>
             <.link
               navigate={~p"/#{@current_user.username}"}
               class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"

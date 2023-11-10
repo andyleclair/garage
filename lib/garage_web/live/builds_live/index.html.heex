@@ -1,12 +1,5 @@
 <.header>
   All Builds
-  <:actions>
-    <%= if @current_user do %>
-      <.link patch={~p"/builds/new"}>
-        <.button>New Build</.button>
-      </.link>
-    <% end %>
-  </:actions>
 </.header>
 
 <.build :for={build <- @builds} build={build} />
