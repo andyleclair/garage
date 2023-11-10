@@ -8,9 +8,9 @@
 - [x] Password Reset
 - [x] User settings page
 - [x] User profile page
-- [ ] User fancy colors
-- [ ] Build picture carousel
-- [ ] Build image management
+- [x] User fancy colors
+- [x] Build picture carousel
+- [x] Build image management
 - [ ] Image flagging
 - [x] Rich text editing for Build 
 - [ ] Build details
@@ -39,6 +39,7 @@
   - Gearing calculator
   - blowdown etc.
 - [ ] Import
+- [ ] Dark mode
 
 To start your Phoenix server:
 

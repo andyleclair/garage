@@ -2,10 +2,9 @@
   <%= @build.name %>
 
   <:subtitle>
-    Built by: <.username user={@build.builder} />
-    Submitted on: <%= to_human_date(@build.inserted_at) %> Last updated: <%= humanize_relative(
-      @build.updated_at
-    ) %>
+    Built by: <.username user={@build.builder} /> |
+    Submitted on: <%= to_human_date(@build.inserted_at) %> |
+    Last updated: <%= humanize_relative(@build.updated_at) %>
   </:subtitle>
   <:actions>
     <.like_heart liked_by_user={@build.liked_by_user} class="w-10 h-10" />
@@ -16,27 +15,38 @@
     <% end %>
   </:actions>
 </.header>
-
-<div class="flex items-inline">
-  <%= for image_url <- @build.image_urls do %>
-    <div class="flex w-64 h-64">
-      <img src={image_url} />
-    </div>
-  <% end %>
+<!-- Gallery -->
+<div>
+  <img src={@selected_image} class="w-full rounded-md object-cover mb-5" />
+  <div class="flex items-inline space-x-4 overflow-x-auto">
+    <%= for {image_url, index} <- Enum.with_index(@build.image_urls) do %>
+      <img
+        src={image_url}
+        class="w-24 h-24 rounded-md object-cover cursor-pointer"
+        phx-click="select-image"
+        phx-value-index={index}
+      />
+    <% end %>
+  </div>
 </div>
 
-<.list>
-  <:item title="Year"><%= @build.year %></:item>
-  <:item title="Name"><%= @build.name %></:item>
-  <:item title="Description">
+<div class="my-5 italic">
+  <h3 class="text-2xl mb-5">
+    <%= @build.year %> <%= @build.make.name %> <%= @build.model.name %>
+  </h3>
+</div>
+
+<div>
+  <h3 class="text-2xl mb-5 border-b">
+    Description
+  </h3>
+  <div>
     <%= raw(@build.description) %>
-  </:item>
-  <:item title="Make"><%= @build.make.name %></:item>
-  <:item title="Model"><%= @build.model.name %></:item>
-</.list>
+  </div>
+</div>
 <!-- likes -->
 <div class="flex space-x-4 mt-10">
-  <div class="w-1/2">
+  <div class="md:w-1/2">
     <h3 class="text-2xl mb-5 border-b">
       Likes
     </h3>
@@ -50,26 +60,30 @@
     <% end %>
   </div>
   <!-- comments -->
-  <div class="w-1/2">
+  <div class="md:w-1/2">
     <h3 class="text-2xl mb-5 border-b">
       Comments
     </h3>
     <%= for comment <- @build.comments do %>
       <.comment comment={comment} />
     <% end %>
-    Add a comment!
-    <.simple_form
-      for={@comment_form}
-      id="comment_form"
-      phx-submit="add_comment"
-      phx-debounce="500"
-    >
-      <.input field={@comment_form[:build_id]} value={@build.id} type="hidden" />
-      <.input field={@comment_form[:text]} type="textarea" />
-      <:actions>
-        <.button>Add Comment</.button>
-      </:actions>
-    </.simple_form>
+    <div class="mt-5">
+      <h3 class="text-2xl -mb-10">
+        Add a comment!
+      </h3>
+      <.simple_form
+        for={@comment_form}
+        id="comment_form"
+        phx-submit="add_comment"
+        phx-debounce="500"
+      >
+        <.input field={@comment_form[:build_id]} value={@build.id} type="hidden" />
+        <.input field={@comment_form[:text]} type="textarea" />
+        <:actions>
+          <.button>Add Comment</.button>
+        </:actions>
+      </.simple_form>
+    </div>
   </div>
 </div>
 

@@ -63,18 +63,24 @@ defmodule GarageWeb.BuildsLive.FormComponent do
             </h2>
 
             <p class="mt-1 text-sm leading-6 text-gray-600">
-              A photo is worth a thousand words...
+              Current images - Click the red 'x' to remove an image. Refresh to cancel deleting
             </p>
 
-            <div class="md:flex space-x-4 space-y-4">
-              <div :for={image_url <- @build.image_urls} class="md:w-96 sm:w-full">
-                <img src={image_url} />
+            <div class="columns-2xs">
+              <div :for={{ref, image_url} <- @images} class="relative">
+                <img src={image_url} class="object-cover mb-5 rounded-lg" />
+                <div
+                  class="absolute top-0 right-0 cursor-pointer z-10 hover:border hover:border-red-500 hover:rounded-lg"
+                  phx-click="delete-image"
+                  phx-target={@myself}
+                  phx-value-ref={ref}
+                  id={"delete_image-#{ref}"}
+                >
+                  <.icon name="hero-x-mark" class="bg-red-500 w-10 h-10" />
+                </div>
               </div>
             </div>
 
-            <p class="mt-1 text-sm leading-6 text-gray-600">
-              You may add up to <%= @uploads.image_urls.max_entries %> pictures at a time.
-            </p>
             <div class="col-span-full">
               <div
                 class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10"
@@ -110,6 +116,9 @@ defmodule GarageWeb.BuildsLive.FormComponent do
                   </div>
 
                   <p class="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
+                  <p class="text-xs leading-5 text-gray-600">
+                    Up to <%= @uploads.image_urls.max_entries %> pictures allowed at a time
+                  </p>
                 </div>
               </div>
             </div>
@@ -235,10 +244,14 @@ defmodule GarageWeb.BuildsLive.FormComponent do
         nil
       end
 
+    images = build.image_urls |> Enum.map(fn url -> {random_id(), url} end)
+
     {:ok,
      socket
      |> assign(assigns)
      |> assign(:make_options, make_options)
+     |> assign(:images, images)
+     |> assign(:images_to_delete, [])
      |> assign(:model_options, model_options)
      |> assign(:year_options, year_options)
      |> assign_form(form)}
@@ -247,6 +260,16 @@ defmodule GarageWeb.BuildsLive.FormComponent do
   @impl true
   def handle_event("cancel-upload", %{"ref" => ref}, socket) do
     {:noreply, cancel_upload(socket, :image_urls, ref)}
+  end
+
+  @impl true
+  def handle_event("delete-image", %{"ref" => ref}, socket) do
+    {{^ref, url}, rest_images} = List.keytake(socket.assigns.images, ref, 0)
+
+    {:noreply,
+     socket
+     |> assign(:images, rest_images)
+     |> assign(:images_to_delete, [url | socket.assigns.images_to_delete])}
   end
 
   @impl true
@@ -301,7 +324,13 @@ defmodule GarageWeb.BuildsLive.FormComponent do
   end
 
   @impl true
-  def handle_event("save", %{"form" => form}, socket) do
+  def handle_event(
+        "save",
+        %{"form" => form},
+        %{
+          assigns: %{build: build, action: action, images_to_delete: images_to_delete}
+        } = socket
+      ) do
     uploaded_files =
       consume_uploaded_entries(socket, :image_urls, fn %{path: path}, entry ->
         upload_path = upload_path(entry)
@@ -321,9 +350,18 @@ defmodule GarageWeb.BuildsLive.FormComponent do
         {:ok, public_path}
       end)
 
-    form = Map.put(form, :image_urls, uploaded_files)
+    Enum.each(images_to_delete, fn img ->
+      with %URI{path: path} <- URI.parse(img) do
+        bucket()
+        |> S3.delete_object(path)
+        |> ExAws.request!()
+      end
+    end)
 
-    save_build(socket, socket.assigns.action, form)
+    image_urls = (build.image_urls -- images_to_delete) ++ uploaded_files
+    form = Map.put(form, :image_urls, image_urls)
+
+    save_build(socket, action, form)
   end
 
   defp save_build(socket, :edit, params) do
@@ -348,7 +386,6 @@ defmodule GarageWeb.BuildsLive.FormComponent do
          |> push_navigate(to: ~p"/builds/#{build.slug}")}
 
       {:error, form} ->
-        dbg(form)
         {:noreply, assign_form(socket, form)}
     end
   end
@@ -414,4 +451,17 @@ defmodule GarageWeb.BuildsLive.FormComponent do
   end
 
   defp public_root, do: Application.get_env(:garage, :public_image_root)
+
+  # stolen from Liveview internals 
+  def random_id do
+    "build-img-"
+    |> Kernel.<>(random_encoded_bytes())
+    |> String.replace(["/", "+"], "-")
+  end
+
+  defp random_encoded_bytes do
+    binary = :crypto.strong_rand_bytes(32)
+
+    Base.url_encode64(binary)
+  end
 end

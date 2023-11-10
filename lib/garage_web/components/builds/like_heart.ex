@@ -8,8 +8,8 @@ defmodule GarageWeb.Components.Builds.LikeHeart do
     ~H"""
     <div>
       <%= if @liked_by_user do %>
-        <div phx-click="dislike" class="text-red-600">
-          <.icon name="hero-heart" class={@class} />
+        <div phx-click="dislike">
+          <.icon name="hero-heart-solid" class={"#{@class} bg-red-500"} />
         </div>
       <% else %>
         <div phx-click="like">

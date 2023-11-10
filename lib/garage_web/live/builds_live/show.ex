@@ -27,6 +27,8 @@ defmodule GarageWeb.BuildsLive.Show do
      socket
      |> assign(:page_title, build.name)
      |> assign(:build, build)
+     |> assign(:images, build.image_urls)
+     |> assign(:selected_image, List.first(build.image_urls))
      |> assign(
        :comment_form,
        to_form(
@@ -73,6 +75,16 @@ defmodule GarageWeb.BuildsLive.Show do
     }
 
     {:noreply, assign(socket, :build, build)}
+  end
+
+  @impl true
+  def handle_event("select-image", %{"index" => index}, socket) do
+    {:noreply,
+     assign(
+       socket,
+       :selected_image,
+       Enum.at(socket.assigns.build.image_urls, String.to_integer(index))
+     )}
   end
 
   @impl true
