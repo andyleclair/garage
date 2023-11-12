@@ -29,6 +29,7 @@ defmodule GarageWeb.BuildsLive.Show do
      |> assign(:build, build)
      |> assign(:images, build.image_urls)
      |> assign(:selected_image, List.first(build.image_urls))
+     |> assign(:index, 0)
      |> assign(
        :comment_form,
        to_form(
@@ -79,12 +80,59 @@ defmodule GarageWeb.BuildsLive.Show do
 
   @impl true
   def handle_event("select-image", %{"index" => index}, socket) do
+    index = String.to_integer(index)
+
     {:noreply,
-     assign(
-       socket,
-       :selected_image,
-       Enum.at(socket.assigns.build.image_urls, String.to_integer(index))
-     )}
+     socket
+     |> assign(:selected_image, Enum.at(socket.assigns.build.image_urls, index))
+     |> assign(:index, index)}
+  end
+
+  @impl true
+  def handle_event(
+        "next-image",
+        _,
+        %{assigns: %{index: index, images: images, build: build}} = socket
+      ) do
+    length = length(images)
+
+    # wrap
+    index =
+      if index + 1 == length do
+        0
+      else
+        index + 1
+      end
+
+    {:noreply,
+     socket
+     |> assign(:selected_image, Enum.at(build.image_urls, index))
+     |> assign(:index, index)}
+  end
+
+  @impl true
+  def handle_event(
+        "prev-image",
+        _,
+        %{assigns: %{index: index, images: images, build: build}} = socket
+      ) do
+    length = length(images)
+
+    dbg(index)
+    dbg(length)
+
+    # wrap
+    index =
+      if index - 1 == -1 do
+        length - 1
+      else
+        index - 1
+      end
+
+    {:noreply,
+     socket
+     |> assign(:selected_image, Enum.at(build.image_urls, index))
+     |> assign(:index, index)}
   end
 
   @impl true

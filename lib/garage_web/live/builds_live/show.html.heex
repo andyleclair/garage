@@ -16,24 +16,36 @@
   </:actions>
 </.header>
 <!-- Gallery -->
-<div>
-  <img src={@selected_image} class="w-full rounded-md object-cover mb-5" />
+<div class="mb-5">
+  <div class="relative">
+    <div
+      phx-click="prev-image"
+      class="absolute inset-y-0 left-0 cursor-pointer flex flex-col justify-center"
+    >
+      <.icon name="hero-chevron-double-left" class="w-16 h-16 text-white" />
+    </div>
+    <img src={@selected_image} class="w-full rounded-md object-cover mb-5" />
+    <div
+      phx-click="next-image"
+      class="absolute inset-y-0 right-0 cursor-pointer flex flex-col justify-center"
+    >
+      <.icon name="hero-chevron-double-right" class="w-16 h-16 text-white " />
+    </div>
+  </div>
   <div class="flex items-inline space-x-4 overflow-x-auto">
     <%= for {image_url, index} <- Enum.with_index(@build.image_urls) do %>
       <img
         src={image_url}
-        class="w-24 h-24 rounded-md object-cover cursor-pointer"
+        class={[
+          @index == index && "border-2",
+          "w-24 h-24 rounded-md object-cover cursor-pointer"
+        ]}
+        style={@index == index && "border-color: #{@build.builder.color}"}
         phx-click="select-image"
         phx-value-index={index}
       />
     <% end %>
   </div>
-</div>
-
-<div class="my-5 italic">
-  <h3 class="text-2xl mb-5">
-    <%= @build.year %> <%= @build.make.name %> <%= @build.model.name %>
-  </h3>
 </div>
 
 <div>
