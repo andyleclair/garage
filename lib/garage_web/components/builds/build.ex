@@ -7,7 +7,7 @@ defmodule GarageWeb.Components.Builds.Build do
 
   def build(assigns) do
     ~H"""
-    <div class="inline-block rounded-sm bg-gray-50 m-1 drop-shadow-xl p-2 m-2 w-full">
+    <div class="inline-block rounded-sm bg-gray-50 m-1 shadow-md p-2 m-2 w-full">
       <div class="flex flex-row">
         <%= if @build.first_image do %>
           <div class="">

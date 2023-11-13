@@ -34,7 +34,7 @@
               class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
               style={"color: #{@current_user.color}"}
             >
-              <%= @current_user.username %>
+              My Builds
             </.link>
             <.link
               navigate={~p"/user/settings"}
@@ -55,6 +55,8 @@
         </div>
       </div>
     </header>
-    <%= @inner_content %>
+    <div class="relative">
+      <%= @inner_content %>
+    </div>
   </body>
 </html>
