@@ -20,11 +20,11 @@ config :logger, level: :info
 # of environment variables, is done on config/runtime.exs.
 config :garage,
   upload_bucket: :prod,
-  public_image_root: "https://moped.build"
+  public_image_root: "https://pics.moped.build"
 
 config :ex_aws,
   region: "auto"
 
 config :ex_aws, :s3,
   scheme: "https",
-  host: "https://4e7e19d415ae25f4681ff5aa75b38d98.r2.cloudflarestorage.com/prod"
+  host: "4e7e19d415ae25f4681ff5aa75b38d98.r2.cloudflarestorage.com/prod"
