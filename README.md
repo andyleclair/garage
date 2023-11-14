@@ -41,6 +41,9 @@
 - [ ] Import
 - [ ] Dark mode
 - [ ] Chat
+- [ ] Better index page 
+- [ ] Logo 
+- [ ] Actually send emails
 
 To start your Phoenix server:
 
