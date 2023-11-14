@@ -27,4 +27,4 @@ config :ex_aws,
 
 config :ex_aws, :s3,
   scheme: "https",
-  host: "4e7e19d415ae25f4681ff5aa75b38d98.r2.cloudflarestorage.com/prod"
+  host: "4e7e19d415ae25f4681ff5aa75b38d98.r2.cloudflarestorage.com"

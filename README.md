@@ -44,6 +44,7 @@
 - [ ] Better index page 
 - [ ] Logo 
 - [x] Actually send emails
+- [x] Set prod credentials
 
 To start your Phoenix server:
 

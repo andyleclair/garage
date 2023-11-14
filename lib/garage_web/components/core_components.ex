@@ -644,7 +644,7 @@ defmodule GarageWeb.CoreComponents do
 
   def username(assigns) do
     ~H"""
-    <span style={"color: #{@user.color}"}><%= @user.name %></span>
+    <span style={"color: #{@user.color}"}><%= @user.username %></span>
     """
   end
 
