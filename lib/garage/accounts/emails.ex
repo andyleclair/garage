@@ -10,38 +10,16 @@ defmodule Garage.Accounts.Emails do
       raise "Cannot deliver reset instructions without a url"
     end
 
-    deliver(user.email, "Reset Your Password", """
-    <html>
-      <p>
-        Hi #{user.email},
-      </p>
-
-      <p>
-        <a href="#{url}">Click here</a> to reset your password.
-      </p>
-
-      <p>
-        If you didn't request this change, please ignore this.
-      </p>
-    <html>
-    """)
+    deliver(user.email, "Password Reset Email", %{"password_reset_url" => url})
   end
 
-  # For simplicity, this module simply logs messages to the terminal.
-  # You should replace it by a proper email or notification tool, such as:
-  #
-  #   * Swoosh - https://hexdocs.pm/swoosh
-  #   * Bamboo - https://hexdocs.pm/bamboo
-  #
-  defp deliver(to, subject, body) do
-    IO.puts("Sending email to #{to} with subject #{subject} and body #{body}")
-
+  defp deliver(to, template_name, params) do
     new()
-    |> from({"Andy", "andyleclair@gmail.com"})
+    |> from({"Moped.Build Admin", "admin@moped.build"})
     |> to(to_string(to))
-    |> subject(subject)
     |> put_provider_option(:track_links, "None")
-    |> html_body(body)
+    |> put_provider_option(:custom_vars, params)
+    |> put_provider_option(:template_name, template_name)
     |> Garage.Mailer.deliver!()
   end
 end
