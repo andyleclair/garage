@@ -11,9 +11,11 @@
 - [x] User fancy colors
 - [x] Build picture carousel
 - [x] Build image management
-- [ ] Image flagging
 - [x] Rich text editing for Build 
 - [x] Reorder images
+- [x] Actually send emails
+- [x] Set prod credentials
+- [x] Seeds
 - [ ] Build details
   - engine
     - cylinder
@@ -36,6 +38,7 @@
   - exhaust
   - forks
   - wheels
+- [ ] Image flagging
 - [ ] Tools
   - Gearing calculator
   - blowdown etc.
@@ -44,10 +47,7 @@
 - [ ] Chat
 - [ ] Better index page 
 - [ ] Logo 
-- [x] Actually send emails
-- [x] Set prod credentials
 - [ ] Add signed up users to mailing list
-- [x] Fix seeds
 
 To start the Phoenix server:
 

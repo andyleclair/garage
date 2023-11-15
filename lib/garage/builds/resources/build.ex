@@ -149,11 +149,13 @@ defmodule Garage.Builds.Build do
     belongs_to :make, Make do
       api Garage.Mopeds
       attribute_writable? true
+      allow_nil? false
     end
 
     belongs_to :model, Model do
       api Garage.Mopeds
       attribute_writable? true
+      allow_nil? false
     end
   end
 
