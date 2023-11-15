@@ -22,6 +22,8 @@ import { Socket } from "phoenix"
 import { LiveSocket } from "phoenix_live_view"
 import topbar from "../vendor/topbar"
 import live_select from "live_select"
+import Sortable from "../vendor/sortable"
+
 const hooks = {
   TrixEditor: {
     mounted() {
@@ -40,6 +42,21 @@ const hooks = {
         element.editor.loadHTML(data.content || "");
       });
     },
+  },
+  Sortable: {
+    mounted() {
+      new Sortable(this.el, {
+        animation: 150,
+        delay: 25,
+        dragClass: "drag-item",
+        ghostClass: "drag-ghost",
+        forceFallback: true,
+        onEnd: e => {
+          let params = { old: e.oldIndex, new: e.newIndex, ...e.item.dataset };
+          this.pushEventTo(this.el, "reposition", params);
+        }
+      })
+    }
   },
   ...live_select
 }

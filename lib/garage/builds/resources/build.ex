@@ -168,7 +168,7 @@ defmodule Garage.Builds.Build do
       end
     end
 
-    calculate :first_image, :string, expr(at(image_urls, 1))
+    calculate :first_image, :string, expr(at(image_urls, 0))
   end
 
   policies do

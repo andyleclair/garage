@@ -27,6 +27,12 @@ defmodule Garage.Mopeds.Model do
       argument :make_id, :uuid, allow_nil?: false
       filter expr(make_id == ^arg(:make_id))
     end
+
+    read :by_slug do
+      argument :slug, :string, allow_nil?: false
+      get? true
+      filter expr(slug == ^arg(:slug))
+    end
   end
 
   code_interface do
@@ -34,6 +40,7 @@ defmodule Garage.Mopeds.Model do
     define :create_model, action: :create
     define :all_models, action: :read
     define :by_make_id, args: [:make_id], action: :by_make_id
+    define :get_by_slug, args: [:slug], action: :by_slug
   end
 
   attributes do

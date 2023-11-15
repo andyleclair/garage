@@ -66,17 +66,29 @@ defmodule GarageWeb.BuildsLive.FormComponent do
               Current images - Click the red 'x' to remove an image. Refresh to cancel deleting
             </p>
 
-            <div class="columns-2xs">
-              <div :for={{ref, image_url} <- @images} class="relative">
-                <img src={image_url} class="object-cover mb-5 rounded-lg" />
-                <div
-                  class="absolute top-0 right-0 cursor-pointer z-10 hover:border hover:border-red-500 hover:rounded-lg"
-                  phx-click="delete-image"
-                  phx-target={@myself}
-                  phx-value-ref={ref}
-                  id={"delete_image-#{ref}"}
-                >
-                  <.icon name="hero-x-mark" class="bg-red-500 w-10 h-10" />
+            <div
+              class="md:grid md:grid-cols-4 md:gap-4"
+              id="edit-gallery"
+              phx-hook="Sortable"
+              data-list_id={@build.id}
+            >
+              <div
+                :for={{ref, image_url} <- @images}
+                id={"image-#{ref}"}
+                class="hover:cursor-grab active:cursor-grabbing relative drag-item:focus-within:ring-0 drag-item:focus-within:ring-offset-0 drag-ghost:bg-zinc-300 drag-ghost:border-0 drag-ghost:ring-0"
+                data-id={"image-#{ref}"}
+              >
+                <div class="drag-ghost:opacity-0">
+                  <img src={image_url} class="object-cover mb-5 rounded-lg" />
+                  <div
+                    class="absolute top-0 right-0 cursor-pointer z-10 hover:border hover:border-red-500 hover:rounded-lg"
+                    phx-click="delete-image"
+                    phx-target={@myself}
+                    phx-value-ref={ref}
+                    id={"delete_image-#{ref}"}
+                  >
+                    <.icon name="hero-x-mark" class="bg-red-500 w-10 h-10" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -272,6 +284,11 @@ defmodule GarageWeb.BuildsLive.FormComponent do
      |> assign(:images_to_delete, [url | socket.assigns.images_to_delete])}
   end
 
+  def handle_event("reposition", %{"new" => new_idx, "old" => old_idx}, socket) do
+    new_images = Enum.slide(socket.assigns.images, old_idx, new_idx)
+    {:noreply, assign(socket, :images, new_images)}
+  end
+
   @impl true
   def handle_event(
         "live_select_change",
@@ -328,7 +345,7 @@ defmodule GarageWeb.BuildsLive.FormComponent do
         "save",
         %{"form" => form},
         %{
-          assigns: %{build: build, action: action, images_to_delete: images_to_delete}
+          assigns: %{images: images, action: action, images_to_delete: images_to_delete}
         } = socket
       ) do
     uploaded_files =
@@ -358,7 +375,9 @@ defmodule GarageWeb.BuildsLive.FormComponent do
       end
     end)
 
-    image_urls = (build.image_urls -- images_to_delete) ++ uploaded_files
+    image_urls = for {_ref, img} <- images, do: img
+
+    image_urls = (image_urls -- images_to_delete) ++ uploaded_files
     form = Map.put(form, :image_urls, image_urls)
 
     save_build(socket, action, form)

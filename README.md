@@ -13,6 +13,7 @@
 - [x] Build image management
 - [ ] Image flagging
 - [x] Rich text editing for Build 
+- [x] Reorder images
 - [ ] Build details
   - engine
     - cylinder
@@ -38,22 +39,23 @@
 - [ ] Tools
   - Gearing calculator
   - blowdown etc.
-- [ ] Import
+- [ ] Import from garage / puchshop
 - [ ] Dark mode
 - [ ] Chat
 - [ ] Better index page 
 - [ ] Logo 
 - [x] Actually send emails
 - [x] Set prod credentials
+- [ ] Add signed up users to mailing list
+- [x] Fix seeds
 
-To start your Phoenix server:
+To start the Phoenix server:
 
   * Run `mix setup` to install and setup dependencies
   * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
 ## Learn more
 

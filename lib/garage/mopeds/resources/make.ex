@@ -29,6 +29,12 @@ defmodule Garage.Mopeds.Make do
       # against the `id` of each element in the resource
       filter expr(id == ^arg(:id))
     end
+
+    read :by_slug do
+      argument :slug, :string, allow_nil?: false
+      get? true
+      filter expr(slug == ^arg(:slug))
+    end
   end
 
   code_interface do
@@ -38,6 +44,7 @@ defmodule Garage.Mopeds.Make do
     define :update, action: :update
     define :destroy, action: :destroy
     define :get_by_id, args: [:id], action: :by_id
+    define :get_by_slug, args: [:slug], action: :by_slug
   end
 
   attributes do

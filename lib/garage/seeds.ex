@@ -9,9 +9,12 @@ defmodule Garage.Seeds do
     |> File.read!()
     |> Jason.decode!()
     |> Enum.map(fn {make, models} ->
-      models = for model <- models, do: %{name: model["model"]}
-      %{name: make, models: models}
+      models = for model <- models, into: MapSet.new(), do: %{name: model["model"]}
+      %{name: make, models: MapSet.to_list(models)}
     end)
-    |> Mopeds.bulk_create!(Garage.Mopeds.Make, :bulk_create)
+    |> Mopeds.bulk_create!(Garage.Mopeds.Make, :bulk_create,
+      return_errors?: true,
+      stop_on_error?: true
+    )
   end
 end

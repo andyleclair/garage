@@ -15,6 +15,7 @@ defmodule GarageWeb.CoreComponents do
   Icons are provided by [heroicons](https://heroicons.com). See `icon/1` for usage.
   """
   use Phoenix.Component
+  use GarageWeb, :verified_routes
 
   alias Phoenix.LiveView.JS
   import GarageWeb.Gettext
@@ -644,7 +645,11 @@ defmodule GarageWeb.CoreComponents do
 
   def username(assigns) do
     ~H"""
-    <span style={"color: #{@user.color}"}><%= @user.username %></span>
+    <span style={"color: #{@user.color}"}>
+      <.link navigate={~p"/#{@user.username}"}>
+        <%= @user.username %>
+      </.link>
+    </span>
     """
   end
 

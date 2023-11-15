@@ -118,9 +118,6 @@ defmodule GarageWeb.BuildsLive.Show do
       ) do
     length = length(images)
 
-    dbg(index)
-    dbg(length)
-
     # wrap
     index =
       if index - 1 == -1 do
