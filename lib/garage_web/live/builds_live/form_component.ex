@@ -28,7 +28,7 @@ defmodule GarageWeb.BuildsLive.FormComponent do
         <.input field={@form[:name]} type="text" label="Name" />
         <.input field={@form[:description]} type="hidden" label="Description" id="trix-editor" />
         <div id="rich-text" phx-update="ignore">
-          <trix-editor input="trix-editor"></trix-editor>
+          <trix-editor class="trix-content" input="trix-editor"></trix-editor>
         </div>
         <div class="flex justify-around">
           <div class="w-1/6">
