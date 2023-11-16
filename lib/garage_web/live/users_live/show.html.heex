@@ -14,6 +14,9 @@
       <p class="h-12 text-l md:text-xl leading-6 text-zinc-500">
         ~ <.username user={@user} />
       </p>
+      <div class="trix-content">
+        <%= raw(@user.profile) %>
+      </div>
     </div>
   </div>
   <div class="w-full">

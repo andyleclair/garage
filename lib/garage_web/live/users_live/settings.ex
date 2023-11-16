@@ -166,6 +166,11 @@ defmodule GarageWeb.UsersLive.Settings do
         </div>
       </div>
 
+      <.input field={@form[:profile]} type="hidden" label="Profile" id="trix-editor" />
+      <div id="rich-text" phx-update="ignore">
+        <trix-editor class="trix-content" input="trix-editor"></trix-editor>
+      </div>
+
       <:actions>
         <.button phx-disable-with="Saving...">Save</.button>
       </:actions>
