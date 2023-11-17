@@ -16,28 +16,28 @@
 - [x] Actually send emails
 - [x] Set prod credentials
 - [x] Seeds
-- [ ] Build details
-  - engine
-    - cylinder
+- [x] Build details
+  [x] engine
+    [x] cylinder
     - head
     - piston
-    - cases
-    - crank
-  - carb
-    - make
-    - model
-    - jets
-  - ignition
-    - cdi box
-  - transmission
-    - clutch
-    - GEARING
-      - How to handle vespa, hobbit?
-    - variator
-    - pulley
-  - exhaust
-  - forks
-  - wheels
+    [x] cases -- going to handle these as separate engines
+    [x] crank
+  [x] carb
+    [x] make
+    [x] model
+    [x] jets
+  [x] ignition
+    [x] cdi box
+  [x] transmission
+    [x] clutch
+    [x] GEARING
+      [x] How to handle vespa, hobbit?
+    [x] variator
+    [x] pulley
+  [x] exhaust
+  [x] forks
+  [x] wheels
 - [ ] Image flagging
 - [ ] Tools
   - Gearing calculator

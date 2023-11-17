@@ -1,24 +1,10 @@
-defmodule Garage.Mopeds.Make do
+defmodule Garage.Mopeds.Engine do
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
     api: Garage.Mopeds
 
   actions do
-    defaults [:read, :update, :destroy]
-
-    create :create do
-      primary? true
-      change Garage.Changes.SetSlug
-    end
-
-    create :bulk_create do
-      argument :models, {:array, :map} do
-        allow_nil? false
-      end
-
-      change Garage.Changes.SetSlug
-      change manage_relationship(:models, type: :create)
-    end
+    defaults [:create, :read, :update, :destroy]
 
     read :by_id do
       # This action has one argument :id of type :uuid
@@ -29,12 +15,6 @@ defmodule Garage.Mopeds.Make do
       # against the `id` of each element in the resource
       filter expr(id == ^arg(:id))
     end
-
-    read :by_slug do
-      argument :slug, :string, allow_nil?: false
-      get? true
-      filter expr(slug == ^arg(:slug))
-    end
   end
 
   code_interface do
@@ -44,7 +24,6 @@ defmodule Garage.Mopeds.Make do
     define :update, action: :update
     define :destroy, action: :destroy
     define :get_by_id, args: [:id], action: :by_id
-    define :get_by_slug, args: [:slug], action: :by_slug
   end
 
   attributes do
@@ -52,19 +31,8 @@ defmodule Garage.Mopeds.Make do
     attribute :name, :string, allow_nil?: false
     attribute :description, :string, default: ""
 
-    attribute :slug, :string do
-      allow_nil? false
-      generated? true
-      always_select? true
-      filterable? true
-    end
-
     create_timestamp :inserted_at
     update_timestamp :updated_at
-  end
-
-  identities do
-    identity :slug, [:slug]
   end
 
   preparations do
@@ -72,18 +40,15 @@ defmodule Garage.Mopeds.Make do
   end
 
   postgres do
-    table "makes"
+    table "engines"
 
     repo Garage.Repo
   end
 
   relationships do
-    has_many :models, Garage.Mopeds.Model
+    belongs_to :make, Garage.Mopeds.Make
 
-    has_many :builds, Garage.Builds.Build do
-      api Garage.Builds
-    end
-
-    has_many :engines, Garage.Mopeds.Engine
+    has_many :cylinder, Garage.Mopeds.Cylinder
+    has_many :crank, Garage.Mopeds.Crank
   end
 end

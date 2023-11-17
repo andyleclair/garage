@@ -7,7 +7,23 @@ defmodule Garage.Builds.Build do
   require Ecto.Query
 
   alias Garage.Builds.{Comment, Like}
-  alias Garage.Mopeds.{Make, Model}
+
+  alias Garage.Mopeds.{
+    Carburetor,
+    Clutch,
+    Crank,
+    Cylinder,
+    Engine,
+    Exhaust,
+    Forks,
+    Ignition,
+    Make,
+    Model,
+    Pulley,
+    Variator,
+    Wheels
+  }
+
   alias Garage.Accounts.User
 
   attributes do
@@ -27,10 +43,111 @@ defmodule Garage.Builds.Build do
     end
 
     # Build specifics
-    attribute :frame, :string, default: "stock"
     attribute :subframe, :string
+
+    attribute :cdi_box, :string
+
+    # Carburetor
+    attribute :jetting, :map
+    attribute :slide, :string
+    attribute :needle, :string
+
+    # Transmission
+    attribute :variated?, :boolean, default: false, allow_nil?: false
+    attribute :front_sprocket, :integer
+    attribute :rear_sprocket, :integer
+    attribute :gear_ratio, :string
+
     create_timestamp :inserted_at
     update_timestamp :updated_at
+  end
+
+  relationships do
+    has_many :likes, Like
+    has_many :comments, Comment
+
+    belongs_to :Ignition, Ignition do
+      api Garage.Mopeds
+      attribute_writable? true
+      allow_nil? false
+    end
+
+    belongs_to :carburetor, Carburetor do
+      api Garage.Mopeds
+      attribute_writable? true
+      allow_nil? false
+    end
+
+    belongs_to :wheels, Wheels do
+      api Garage.Mopeds
+      attribute_writable? true
+      allow_nil? false
+    end
+
+    belongs_to :forks, Forks do
+      api Garage.Mopeds
+      attribute_writable? true
+      allow_nil? false
+    end
+
+    belongs_to :cylinder, Cylinder do
+      api Garage.Mopeds
+      attribute_writable? true
+      allow_nil? false
+    end
+
+    belongs_to :exhaust, Exhaust do
+      api Garage.Mopeds
+      attribute_writable? true
+      allow_nil? false
+    end
+
+    belongs_to :clutch, Clutch do
+      api Garage.Mopeds
+      attribute_writable? true
+      allow_nil? false
+    end
+
+    belongs_to :crank, Crank do
+      api Garage.Mopeds
+      attribute_writable? true
+      allow_nil? false
+    end
+
+    belongs_to :variator, Variator do
+      api Garage.Mopeds
+      attribute_writable? true
+    end
+
+    belongs_to :pulley, Pulley do
+      api Garage.Mopeds
+      attribute_writable? true
+    end
+
+    belongs_to :engine, Engine do
+      api Garage.Mopeds
+      attribute_writable? true
+      allow_nil? false
+    end
+
+    belongs_to :builder, User do
+      api Garage.Accounts
+      attribute_writable? true
+    end
+
+    # Make and model correspond to the frame
+    # that's the thing the vin goes on and counts as "the" bike
+    belongs_to :make, Make do
+      api Garage.Mopeds
+      attribute_writable? true
+      allow_nil? false
+    end
+
+    belongs_to :model, Model do
+      api Garage.Mopeds
+      attribute_writable? true
+      allow_nil? false
+    end
   end
 
   code_interface do
@@ -135,28 +252,6 @@ defmodule Garage.Builds.Build do
     table "builds"
 
     repo Garage.Repo
-  end
-
-  relationships do
-    has_many :likes, Like
-    has_many :comments, Comment
-
-    belongs_to :builder, User do
-      api Garage.Accounts
-      attribute_writable? true
-    end
-
-    belongs_to :make, Make do
-      api Garage.Mopeds
-      attribute_writable? true
-      allow_nil? false
-    end
-
-    belongs_to :model, Model do
-      api Garage.Mopeds
-      attribute_writable? true
-      allow_nil? false
-    end
   end
 
   preparations do

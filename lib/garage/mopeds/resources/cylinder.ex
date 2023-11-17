@@ -1,24 +1,12 @@
-defmodule Garage.Mopeds.Make do
+defmodule Garage.Mopeds.Cylinder do
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
     api: Garage.Mopeds
 
+  alias Garage.Mopeds.Engine
+
   actions do
-    defaults [:read, :update, :destroy]
-
-    create :create do
-      primary? true
-      change Garage.Changes.SetSlug
-    end
-
-    create :bulk_create do
-      argument :models, {:array, :map} do
-        allow_nil? false
-      end
-
-      change Garage.Changes.SetSlug
-      change manage_relationship(:models, type: :create)
-    end
+    defaults [:create, :read, :update, :destroy]
 
     read :by_id do
       # This action has one argument :id of type :uuid
@@ -29,42 +17,25 @@ defmodule Garage.Mopeds.Make do
       # against the `id` of each element in the resource
       filter expr(id == ^arg(:id))
     end
-
-    read :by_slug do
-      argument :slug, :string, allow_nil?: false
-      get? true
-      filter expr(slug == ^arg(:slug))
-    end
   end
 
   code_interface do
     define_for Garage.Mopeds
-    define :create, action: :create
     define :read_all, action: :read
     define :update, action: :update
     define :destroy, action: :destroy
     define :get_by_id, args: [:id], action: :by_id
-    define :get_by_slug, args: [:slug], action: :by_slug
   end
 
   attributes do
     uuid_primary_key :id
+    attribute :manufacturer, :string, allow_nil?: false
     attribute :name, :string, allow_nil?: false
     attribute :description, :string, default: ""
-
-    attribute :slug, :string do
-      allow_nil? false
-      generated? true
-      always_select? true
-      filterable? true
-    end
+    attribute :displacement, :integer, default: 50
 
     create_timestamp :inserted_at
     update_timestamp :updated_at
-  end
-
-  identities do
-    identity :slug, [:slug]
   end
 
   preparations do
@@ -72,18 +43,16 @@ defmodule Garage.Mopeds.Make do
   end
 
   postgres do
-    table "makes"
+    table "cylinders"
 
     repo Garage.Repo
   end
 
   relationships do
-    has_many :models, Garage.Mopeds.Model
-
-    has_many :builds, Garage.Builds.Build do
-      api Garage.Builds
+    belongs_to :engine, Engine do
+      api Garage.Mopeds
+      attribute_writable? true
+      allow_nil? false
     end
-
-    has_many :engines, Garage.Mopeds.Engine
   end
 end
