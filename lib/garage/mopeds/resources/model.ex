@@ -3,7 +3,7 @@ defmodule Garage.Mopeds.Model do
     data_layer: AshPostgres.DataLayer,
     api: Garage.Mopeds
 
-  alias Garage.Mopeds.Make
+  alias Garage.Mopeds.Manufacturer
 
   actions do
     defaults [:read, :update, :destroy]
@@ -23,9 +23,9 @@ defmodule Garage.Mopeds.Model do
       filter expr(id == ^arg(:id))
     end
 
-    read :by_make_id do
-      argument :make_id, :uuid, allow_nil?: false
-      filter expr(make_id == ^arg(:make_id))
+    read :by_manufacturer_id do
+      argument :manufacturer_id, :uuid, allow_nil?: false
+      filter expr(manufacturer_id == ^arg(:manufacturer_id))
     end
 
     read :by_slug do
@@ -39,7 +39,7 @@ defmodule Garage.Mopeds.Model do
     define_for Garage.Mopeds
     define :create_model, action: :create
     define :all_models, action: :read
-    define :by_make_id, args: [:make_id], action: :by_make_id
+    define :by_manufacturer_id, args: [:manufacturer_id], action: :by_manufacturer_id
     define :get_by_slug, args: [:slug], action: :by_slug
   end
 
@@ -60,7 +60,7 @@ defmodule Garage.Mopeds.Model do
   end
 
   identities do
-    identity :slug, [:make_id, :slug]
+    identity :slug, [:manufacturer_id, :slug]
   end
 
   postgres do
@@ -70,7 +70,7 @@ defmodule Garage.Mopeds.Model do
   end
 
   relationships do
-    belongs_to :make, Make do
+    belongs_to :manufacturer, Manufacturer do
       attribute_writable? true
     end
 

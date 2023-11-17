@@ -27,7 +27,6 @@ defmodule Garage.Mopeds.Clutch do
 
   attributes do
     uuid_primary_key :id
-    attribute :manufacturer, :string, allow_nil?: false
     attribute :name, :string, allow_nil?: false
     attribute :description, :string, default: ""
 
@@ -39,10 +38,19 @@ defmodule Garage.Mopeds.Clutch do
     has_many :builds, Garage.Builds.Build do
       api Garage.Builds
     end
+
+    belongs_to :manufacturer, Garage.Mopeds.Manufacturer do
+      attribute_writable? true
+      allow_nil? false
+    end
   end
 
   preparations do
     prepare build(sort: [:name])
+  end
+
+  identities do
+    identity :name, [:manufacturer_id, :name]
   end
 
   postgres do

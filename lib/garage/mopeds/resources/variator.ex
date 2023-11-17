@@ -27,11 +27,10 @@ defmodule Garage.Mopeds.Variator do
 
   attributes do
     uuid_primary_key :id
-    attribute :manufacturer, :string, allow_nil?: false
     attribute :name, :string, allow_nil?: false
     attribute :description, :string, default: ""
     # in mm
-    attribute :stroke, :integer, allow_nil?: false
+    attribute :size, :integer, allow_nil?: false
 
     create_timestamp :inserted_at
     update_timestamp :updated_at
@@ -41,6 +40,15 @@ defmodule Garage.Mopeds.Variator do
     has_many :builds, Garage.Builds.Build do
       api Garage.Builds
     end
+
+    belongs_to :manufacturer, Garage.Mopeds.Manufacturer do
+      attribute_writable? true
+      allow_nil? false
+    end
+  end
+
+  identities do
+    identity :name, [:manufacturer_id, :name]
   end
 
   preparations do

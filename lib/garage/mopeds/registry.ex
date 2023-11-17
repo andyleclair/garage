@@ -13,7 +13,7 @@ defmodule Garage.Mopeds.Registry do
     entry Garage.Mopeds.Exhaust
     entry Garage.Mopeds.Forks
     entry Garage.Mopeds.Ignition
-    entry Garage.Mopeds.Make
+    entry Garage.Mopeds.Manufacturer
     entry Garage.Mopeds.Model
     entry Garage.Mopeds.Pulley
     entry Garage.Mopeds.Variator

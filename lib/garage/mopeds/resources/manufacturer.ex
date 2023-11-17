@@ -1,4 +1,4 @@
-defmodule Garage.Mopeds.Make do
+defmodule Garage.Mopeds.Manufacturer do
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
     api: Garage.Mopeds
@@ -16,8 +16,28 @@ defmodule Garage.Mopeds.Make do
         allow_nil? false
       end
 
+      argument :exhausts, {:array, :map} do
+        allow_nil? false
+      end
+
+      argument :forks, {:array, :map} do
+        allow_nil? false
+      end
+
+      argument :wheels, {:array, :map} do
+        allow_nil? false
+      end
+
+      argument :category, :atom do
+        allow_nil? false
+      end
+
+      change set_attribute(:category, arg(:category))
       change Garage.Changes.SetSlug
       change manage_relationship(:models, type: :create)
+      change manage_relationship(:exhausts, type: :create)
+      change manage_relationship(:forks, type: :create)
+      change manage_relationship(:wheels, type: :create)
     end
 
     read :by_id do
@@ -35,6 +55,12 @@ defmodule Garage.Mopeds.Make do
       get? true
       filter expr(slug == ^arg(:slug))
     end
+
+    read :by_category do
+      argument :category, :atom, allow_nil?: false
+      get? true
+      filter expr(category == ^arg(:category))
+    end
   end
 
   code_interface do
@@ -45,11 +71,18 @@ defmodule Garage.Mopeds.Make do
     define :destroy, action: :destroy
     define :get_by_id, args: [:id], action: :by_id
     define :get_by_slug, args: [:slug], action: :by_slug
+    define :by_category, args: [:category], action: :by_category
   end
 
   attributes do
     uuid_primary_key :id
     attribute :name, :string, allow_nil?: false
+
+    attribute :category, :atom do
+      constraints one_of:
+                    ~w(carburetor clutch crank cylinder engine exhaust forks ignition moped pulley variator wheels)a
+    end
+
     attribute :description, :string, default: ""
 
     attribute :slug, :string do
@@ -72,18 +105,27 @@ defmodule Garage.Mopeds.Make do
   end
 
   postgres do
-    table "makes"
+    table "manufacturers"
 
     repo Garage.Repo
   end
 
   relationships do
-    has_many :models, Garage.Mopeds.Model
-
     has_many :builds, Garage.Builds.Build do
       api Garage.Builds
     end
 
+    has_many :carburetors, Garage.Mopeds.Carburetor
+    has_many :clutches, Garage.Mopeds.Clutch
+    has_many :cranks, Garage.Mopeds.Crank
+    has_many :cylinders, Garage.Mopeds.Cylinder
     has_many :engines, Garage.Mopeds.Engine
+    has_many :exhausts, Garage.Mopeds.Exhaust
+    has_many :forks, Garage.Mopeds.Forks
+    has_many :ignitions, Garage.Mopeds.Ignition
+    has_many :models, Garage.Mopeds.Model
+    has_many :pulleys, Garage.Mopeds.Pulley
+    has_many :variators, Garage.Mopeds.Variator
+    has_many :wheels, Garage.Mopeds.Wheels
   end
 end

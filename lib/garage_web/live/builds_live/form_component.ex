@@ -3,7 +3,7 @@ defmodule GarageWeb.BuildsLive.FormComponent do
   alias AshPhoenix.Form
   alias ExAws.S3
   alias Garage.Builds
-  alias Garage.Mopeds.Make
+  alias Garage.Mopeds.Manufacturer
   alias Garage.Mopeds.Model
 
   attr :current_user, :any, required: true
@@ -36,10 +36,10 @@ defmodule GarageWeb.BuildsLive.FormComponent do
           </div>
           <div class="w-1/3">
             <.live_select
-              field={@form[:make_id]}
+              field={@form[:manufacturer_id]}
               phx-focus="set-default"
-              options={@make_options}
-              label="Make"
+              options={@manufacturer_options}
+              label="manufacturer"
               phx-target={@myself}
             />
           </div>
@@ -246,12 +246,12 @@ defmodule GarageWeb.BuildsLive.FormComponent do
       )
 
     year_options = year_options()
-    make_options = make_options()
+    manufacturer_options = manufacturer_options()
 
-    # if we already have a make set, show the model dropdown
+    # if we already have a manufacturer set, show the model dropdown
     model_options =
-      if make_id = form_make_id(form) do
-        model_options_by_id(make_id)
+      if manufacturer_id = form_manufacturer_id(form) do
+        model_options_by_id(manufacturer_id)
       else
         nil
       end
@@ -261,7 +261,7 @@ defmodule GarageWeb.BuildsLive.FormComponent do
     {:ok,
      socket
      |> assign(assigns)
-     |> assign(:make_options, make_options)
+     |> assign(:manufacturer_options, manufacturer_options)
      |> assign(:images, images)
      |> assign(:images_to_delete, [])
      |> assign(:model_options, model_options)
@@ -292,10 +292,10 @@ defmodule GarageWeb.BuildsLive.FormComponent do
   @impl true
   def handle_event(
         "live_select_change",
-        %{"id" => "form_make" <> _ = id, "text" => text},
+        %{"id" => "form_manufacturer" <> _ = id, "text" => text},
         socket
       ) do
-    options = search_options(socket.assigns.make_options, text)
+    options = search_options(socket.assigns.manufacturer_options, text)
     send_update(LiveSelect.Component, options: options, id: id)
 
     {:noreply, socket}
@@ -313,8 +313,8 @@ defmodule GarageWeb.BuildsLive.FormComponent do
   end
 
   @impl true
-  def handle_event("set-default", %{"id" => "form_make" <> _ = id}, socket) do
-    send_update(LiveSelect.Component, options: socket.assigns.make_options, id: id)
+  def handle_event("set-default", %{"id" => "form_manufacturer" <> _ = id}, socket) do
+    send_update(LiveSelect.Component, options: socket.assigns.manufacturer_options, id: id)
 
     {:noreply, socket}
   end
@@ -331,8 +331,8 @@ defmodule GarageWeb.BuildsLive.FormComponent do
     form = Form.validate(socket.assigns.form, params)
 
     socket =
-      if make_id = form_make_id(form) do
-        assign(socket, :model_options, model_options_by_id(make_id))
+      if manufacturer_id = form_manufacturer_id(form) do
+        assign(socket, :model_options, model_options_by_id(manufacturer_id))
       else
         socket
       end
@@ -420,16 +420,16 @@ defmodule GarageWeb.BuildsLive.FormComponent do
     end
   end
 
-  def form_make_id(form) do
-    case Form.value(form, :make_id) do
+  def form_manufacturer_id(form) do
+    case Form.value(form, :manufacturer_id) do
       "" ->
         nil
 
       nil ->
         nil
 
-      make_id ->
-        make_id
+      manufacturer_id ->
+        manufacturer_id
     end
   end
 
@@ -437,12 +437,14 @@ defmodule GarageWeb.BuildsLive.FormComponent do
     2023..1900 |> Enum.to_list()
   end
 
-  defp make_options() do
-    for make <- Make.read_all!(), into: [], do: {make.name, make.id}
+  defp manufacturer_options() do
+    for manufacturer <- Manufacturer.read_all!(),
+        into: [],
+        do: {manufacturer.name, manufacturer.id}
   end
 
-  defp model_options_by_id(make_id) do
-    for model <- Model.by_make_id!(make_id), into: [], do: {model.name, model.id}
+  defp model_options_by_id(manufacturer_id) do
+    for model <- Model.by_manufacturer_id!(manufacturer_id), into: [], do: {model.name, model.id}
   end
 
   defp assign_form(socket, %Form{} = form) do

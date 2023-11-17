@@ -29,7 +29,6 @@ defmodule Garage.Mopeds.Cylinder do
 
   attributes do
     uuid_primary_key :id
-    attribute :manufacturer, :string, allow_nil?: false
     attribute :name, :string, allow_nil?: false
     attribute :description, :string, default: ""
     attribute :displacement, :integer, default: 50
@@ -38,21 +37,30 @@ defmodule Garage.Mopeds.Cylinder do
     update_timestamp :updated_at
   end
 
-  preparations do
-    prepare build(sort: [:name])
-  end
-
-  postgres do
-    table "cylinders"
-
-    repo Garage.Repo
-  end
-
   relationships do
     belongs_to :engine, Engine do
       api Garage.Mopeds
       attribute_writable? true
       allow_nil? false
     end
+
+    belongs_to :manufacturer, Garage.Mopeds.Manufacturer do
+      attribute_writable? true
+      allow_nil? false
+    end
+  end
+
+  preparations do
+    prepare build(sort: [:name])
+  end
+
+  identities do
+    identity :name, [:manufacturer_id, :name]
+  end
+
+  postgres do
+    table "cylinders"
+
+    repo Garage.Repo
   end
 end

@@ -35,20 +35,31 @@ defmodule Garage.Mopeds.Engine do
     update_timestamp :updated_at
   end
 
+  relationships do
+    belongs_to :manufacturer, Garage.Mopeds.Manufacturer do
+      attribute_writable? true
+      allow_nil? false
+    end
+
+    has_many :cylinder, Garage.Mopeds.Cylinder
+    has_many :crank, Garage.Mopeds.Crank
+
+    has_many :builds, Garage.Builds.Build do
+      api Garage.Builds
+    end
+  end
+
   preparations do
     prepare build(sort: [:name])
+  end
+
+  identities do
+    identity :name, [:manufacturer_id, :name]
   end
 
   postgres do
     table "engines"
 
     repo Garage.Repo
-  end
-
-  relationships do
-    belongs_to :make, Garage.Mopeds.Make
-
-    has_many :cylinder, Garage.Mopeds.Cylinder
-    has_many :crank, Garage.Mopeds.Crank
   end
 end

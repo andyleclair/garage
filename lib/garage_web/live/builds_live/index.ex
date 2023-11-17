@@ -16,12 +16,12 @@ defmodule GarageWeb.BuildsLive.Index do
     {:noreply, apply_action(socket, socket.assigns.live_action, params)}
   end
 
-  defp apply_action(socket, :index, %{"make" => make}) do
-    {:ok, builds} = Build.by_make(make)
+  defp apply_action(socket, :index, %{"manufacturer" => manufacturer}) do
+    {:ok, builds} = Build.by_manufacturer(manufacturer)
 
     socket
     |> assign(:builds, builds)
-    |> assign(:page_title, "Listing Builds - #{make}")
+    |> assign(:page_title, "Listing Builds - #{manufacturer}")
   end
 
   defp apply_action(socket, :index, %{"model" => model}) do

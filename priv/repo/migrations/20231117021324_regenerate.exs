@@ -10,21 +10,21 @@ defmodule Garage.Repo.Migrations.Regenerate do
   def up do
     create table(:wheels, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
-      add :manufacturer, :text, null: false
       add :name, :text, null: false
       add :description, :text, default: ""
       add :inserted_at, :utc_datetime_usec, null: false, default: fragment("now()")
       add :updated_at, :utc_datetime_usec, null: false, default: fragment("now()")
+      add :manufacturer_id, :uuid, null: false
     end
 
     create table(:variators, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
-      add :manufacturer, :text, null: false
       add :name, :text, null: false
       add :description, :text, default: ""
-      add :stroke, :bigint, null: false
+      add :size, :bigint, null: false
       add :inserted_at, :utc_datetime_usec, null: false, default: fragment("now()")
       add :updated_at, :utc_datetime_usec, null: false, default: fragment("now()")
+      add :manufacturer_id, :uuid, null: false
     end
 
     create table(:users, primary_key: false) do
@@ -57,12 +57,12 @@ defmodule Garage.Repo.Migrations.Regenerate do
 
     create table(:pulleys, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
-      add :manufacturer, :text, null: false
       add :name, :text, null: false
       add :description, :text, default: ""
       add :size, :bigint, null: false
       add :inserted_at, :utc_datetime_usec, null: false, default: fragment("now()")
       add :updated_at, :utc_datetime_usec, null: false, default: fragment("now()")
+      add :manufacturer_id, :uuid, null: false
     end
 
     create table(:models, primary_key: false) do
@@ -72,34 +72,65 @@ defmodule Garage.Repo.Migrations.Regenerate do
       add :slug, :text, null: false
       add :inserted_at, :utc_datetime_usec, null: false, default: fragment("now()")
       add :updated_at, :utc_datetime_usec, null: false, default: fragment("now()")
-      add :make_id, :uuid
+      add :manufacturer_id, :uuid
     end
 
-    create table(:makes, primary_key: false) do
+    create table(:manufacturers, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
     end
 
-    alter table(:models) do
-      modify :make_id,
-             references(:makes,
+    alter table(:wheels) do
+      modify :manufacturer_id,
+             references(:manufacturers,
                column: :id,
-               name: "models_make_id_fkey",
+               name: "wheels_manufacturer_id_fkey",
                type: :uuid,
                prefix: "public"
              )
     end
 
-    create unique_index(:models, [:make_id, :slug], name: "models_slug_index")
+    alter table(:variators) do
+      modify :manufacturer_id,
+             references(:manufacturers,
+               column: :id,
+               name: "variators_manufacturer_id_fkey",
+               type: :uuid,
+               prefix: "public"
+             )
+    end
 
-    alter table(:makes) do
+    alter table(:pulleys) do
+      modify :manufacturer_id,
+             references(:manufacturers,
+               column: :id,
+               name: "pulleys_manufacturer_id_fkey",
+               type: :uuid,
+               prefix: "public"
+             )
+    end
+
+    alter table(:models) do
+      modify :manufacturer_id,
+             references(:manufacturers,
+               column: :id,
+               name: "models_manufacturer_id_fkey",
+               type: :uuid,
+               prefix: "public"
+             )
+    end
+
+    create unique_index(:models, [:manufacturer_id, :slug], name: "models_slug_index")
+
+    alter table(:manufacturers) do
       add :name, :text, null: false
+      add :category, :text
       add :description, :text, default: ""
       add :slug, :text, null: false
       add :inserted_at, :utc_datetime_usec, null: false, default: fragment("now()")
       add :updated_at, :utc_datetime_usec, null: false, default: fragment("now()")
     end
 
-    create unique_index(:makes, [:slug], name: "makes_slug_index")
+    create unique_index(:manufacturers, [:slug], name: "manufacturers_slug_index")
 
     create table(:likes, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
@@ -121,29 +152,53 @@ defmodule Garage.Repo.Migrations.Regenerate do
 
     create table(:ignitions, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
-      add :manufacturer, :text, null: false
       add :name, :text, null: false
       add :description, :text, default: ""
       add :inserted_at, :utc_datetime_usec, null: false, default: fragment("now()")
       add :updated_at, :utc_datetime_usec, null: false, default: fragment("now()")
+
+      add :manufacturer_id,
+          references(:manufacturers,
+            column: :id,
+            name: "ignitions_manufacturer_id_fkey",
+            type: :uuid,
+            prefix: "public"
+          ),
+          null: false
     end
 
     create table(:forks, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
-      add :manufacturer, :text, null: false
       add :name, :text, null: false
       add :description, :text, default: ""
       add :inserted_at, :utc_datetime_usec, null: false, default: fragment("now()")
       add :updated_at, :utc_datetime_usec, null: false, default: fragment("now()")
+
+      add :manufacturer_id,
+          references(:manufacturers,
+            column: :id,
+            name: "forks_manufacturer_id_fkey",
+            type: :uuid,
+            prefix: "public"
+          ),
+          null: false
     end
 
     create table(:exhausts, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
-      add :manufacturer, :text, null: false
       add :name, :text, null: false
       add :description, :text, default: ""
       add :inserted_at, :utc_datetime_usec, null: false, default: fragment("now()")
       add :updated_at, :utc_datetime_usec, null: false, default: fragment("now()")
+
+      add :manufacturer_id,
+          references(:manufacturers,
+            column: :id,
+            name: "exhausts_manufacturer_id_fkey",
+            type: :uuid,
+            prefix: "public"
+          ),
+          null: false
     end
 
     create table(:engines, primary_key: false) do
@@ -153,18 +208,18 @@ defmodule Garage.Repo.Migrations.Regenerate do
       add :inserted_at, :utc_datetime_usec, null: false, default: fragment("now()")
       add :updated_at, :utc_datetime_usec, null: false, default: fragment("now()")
 
-      add :make_id,
-          references(:makes,
+      add :manufacturer_id,
+          references(:manufacturers,
             column: :id,
-            name: "engines_make_id_fkey",
+            name: "engines_manufacturer_id_fkey",
             type: :uuid,
             prefix: "public"
-          )
+          ),
+          null: false
     end
 
     create table(:cylinders, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
-      add :manufacturer, :text, null: false
       add :name, :text, null: false
       add :description, :text, default: ""
       add :displacement, :bigint, default: 50
@@ -179,11 +234,19 @@ defmodule Garage.Repo.Migrations.Regenerate do
             prefix: "public"
           ),
           null: false
+
+      add :manufacturer_id,
+          references(:manufacturers,
+            column: :id,
+            name: "cylinders_manufacturer_id_fkey",
+            type: :uuid,
+            prefix: "public"
+          ),
+          null: false
     end
 
     create table(:cranks, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
-      add :manufacturer, :text, null: false
       add :name, :text, null: false
       add :description, :text, default: ""
       add :stroke, :bigint, null: false
@@ -194,6 +257,15 @@ defmodule Garage.Repo.Migrations.Regenerate do
           references(:engines,
             column: :id,
             name: "cranks_engine_id_fkey",
+            type: :uuid,
+            prefix: "public"
+          ),
+          null: false
+
+      add :manufacturer_id,
+          references(:manufacturers,
+            column: :id,
+            name: "cranks_manufacturer_id_fkey",
             type: :uuid,
             prefix: "public"
           ),
@@ -221,21 +293,37 @@ defmodule Garage.Repo.Migrations.Regenerate do
 
     create table(:clutches, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
-      add :manufacturer, :text, null: false
       add :name, :text, null: false
       add :description, :text, default: ""
       add :inserted_at, :utc_datetime_usec, null: false, default: fragment("now()")
       add :updated_at, :utc_datetime_usec, null: false, default: fragment("now()")
+
+      add :manufacturer_id,
+          references(:manufacturers,
+            column: :id,
+            name: "clutches_manufacturer_id_fkey",
+            type: :uuid,
+            prefix: "public"
+          ),
+          null: false
     end
 
     create table(:carburetors, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
-      add :manufacturer, :text, null: false
       add :name, :text, null: false
       add :description, :text, default: ""
       add :jets, {:array, :text}, default: []
       add :inserted_at, :utc_datetime_usec, null: false, default: fragment("now()")
       add :updated_at, :utc_datetime_usec, null: false, default: fragment("now()")
+
+      add :manufacturer_id,
+          references(:manufacturers,
+            column: :id,
+            name: "carburetors_manufacturer_id_fkey",
+            type: :uuid,
+            prefix: "public"
+          ),
+          null: false
     end
 
     create table(:builds, primary_key: false) do
@@ -284,10 +372,10 @@ defmodule Garage.Repo.Migrations.Regenerate do
       add :inserted_at, :utc_datetime_usec, null: false, default: fragment("now()")
       add :updated_at, :utc_datetime_usec, null: false, default: fragment("now()")
 
-      add :Ignition_id,
+      add :ignition_id,
           references(:ignitions,
             column: :id,
-            name: "builds_Ignition_id_fkey",
+            name: "builds_ignition_id_fkey",
             type: :uuid,
             prefix: "public"
           ),
@@ -389,10 +477,10 @@ defmodule Garage.Repo.Migrations.Regenerate do
             prefix: "public"
           )
 
-      add :make_id,
-          references(:makes,
+      add :manufacturer_id,
+          references(:manufacturers,
             column: :id,
-            name: "builds_make_id_fkey",
+            name: "builds_manufacturer_id_fkey",
             type: :uuid,
             prefix: "public"
           ),
@@ -414,7 +502,7 @@ defmodule Garage.Repo.Migrations.Regenerate do
   def down do
     drop_if_exists unique_index(:builds, [:slug], name: "builds_slug_index")
 
-    drop constraint(:builds, "builds_Ignition_id_fkey")
+    drop constraint(:builds, "builds_ignition_id_fkey")
 
     drop constraint(:builds, "builds_carburetor_id_fkey")
 
@@ -438,13 +526,13 @@ defmodule Garage.Repo.Migrations.Regenerate do
 
     drop constraint(:builds, "builds_builder_id_fkey")
 
-    drop constraint(:builds, "builds_make_id_fkey")
+    drop constraint(:builds, "builds_manufacturer_id_fkey")
 
     drop constraint(:builds, "builds_model_id_fkey")
 
     alter table(:builds) do
       remove :model_id
-      remove :make_id
+      remove :manufacturer_id
       remove :builder_id
       remove :engine_id
       remove :pulley_id
@@ -456,7 +544,7 @@ defmodule Garage.Repo.Migrations.Regenerate do
       remove :forks_id
       remove :wheels_id
       remove :carburetor_id
-      remove :Ignition_id
+      remove :ignition_id
       remove :updated_at
       remove :inserted_at
       remove :gear_ratio
@@ -493,7 +581,11 @@ defmodule Garage.Repo.Migrations.Regenerate do
 
     drop table(:builds)
 
+    drop constraint(:carburetors, "carburetors_manufacturer_id_fkey")
+
     drop table(:carburetors)
+
+    drop constraint(:clutches, "clutches_manufacturer_id_fkey")
 
     drop table(:clutches)
 
@@ -503,19 +595,29 @@ defmodule Garage.Repo.Migrations.Regenerate do
 
     drop constraint(:cranks, "cranks_engine_id_fkey")
 
+    drop constraint(:cranks, "cranks_manufacturer_id_fkey")
+
     drop table(:cranks)
 
     drop constraint(:cylinders, "cylinders_engine_id_fkey")
 
+    drop constraint(:cylinders, "cylinders_manufacturer_id_fkey")
+
     drop table(:cylinders)
 
-    drop constraint(:engines, "engines_make_id_fkey")
+    drop constraint(:engines, "engines_manufacturer_id_fkey")
 
     drop table(:engines)
 
+    drop constraint(:exhausts, "exhausts_manufacturer_id_fkey")
+
     drop table(:exhausts)
 
+    drop constraint(:forks, "forks_manufacturer_id_fkey")
+
     drop table(:forks)
+
+    drop constraint(:ignitions, "ignitions_manufacturer_id_fkey")
 
     drop table(:ignitions)
 
@@ -523,25 +625,44 @@ defmodule Garage.Repo.Migrations.Regenerate do
 
     drop table(:likes)
 
-    drop_if_exists unique_index(:makes, [:slug], name: "makes_slug_index")
+    drop_if_exists unique_index(:manufacturers, [:slug], name: "manufacturers_slug_index")
 
-    alter table(:makes) do
+    alter table(:manufacturers) do
       remove :updated_at
       remove :inserted_at
       remove :slug
       remove :description
+      remove :category
       remove :name
     end
 
-    drop_if_exists unique_index(:models, [:make_id, :slug], name: "models_slug_index")
+    drop_if_exists unique_index(:models, [:manufacturer_id, :slug], name: "models_slug_index")
 
-    drop constraint(:models, "models_make_id_fkey")
+    drop constraint(:models, "models_manufacturer_id_fkey")
 
     alter table(:models) do
-      modify :make_id, :uuid
+      modify :manufacturer_id, :uuid
     end
 
-    drop table(:makes)
+    drop constraint(:pulleys, "pulleys_manufacturer_id_fkey")
+
+    alter table(:pulleys) do
+      modify :manufacturer_id, :uuid
+    end
+
+    drop constraint(:variators, "variators_manufacturer_id_fkey")
+
+    alter table(:variators) do
+      modify :manufacturer_id, :uuid
+    end
+
+    drop constraint(:wheels, "wheels_manufacturer_id_fkey")
+
+    alter table(:wheels) do
+      modify :manufacturer_id, :uuid
+    end
+
+    drop table(:manufacturers)
 
     drop table(:models)
 

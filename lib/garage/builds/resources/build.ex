@@ -17,7 +17,7 @@ defmodule Garage.Builds.Build do
     Exhaust,
     Forks,
     Ignition,
-    Make,
+    Manufacturer,
     Model,
     Pulley,
     Variator,
@@ -66,7 +66,7 @@ defmodule Garage.Builds.Build do
     has_many :likes, Like
     has_many :comments, Comment
 
-    belongs_to :Ignition, Ignition do
+    belongs_to :ignition, Ignition do
       api Garage.Mopeds
       attribute_writable? true
       allow_nil? false
@@ -135,9 +135,9 @@ defmodule Garage.Builds.Build do
       attribute_writable? true
     end
 
-    # Make and model correspond to the frame
+    # manufacturer and model correspond to the frame
     # that's the thing the vin goes on and counts as "the" bike
-    belongs_to :make, Make do
+    belongs_to :manufacturer, Manufacturer do
       api Garage.Mopeds
       attribute_writable? true
       allow_nil? false
@@ -160,7 +160,7 @@ defmodule Garage.Builds.Build do
     define :get_by_slug, args: [:slug], action: :by_slug
     define :latest_builds, action: :latest
     define :recently_updated, action: :recently_updated
-    define :by_make, action: :by_make, args: [:make]
+    define :by_manufacturer, action: :by_manufacturer, args: [:manufacturer]
     define :by_model, action: :by_model, args: [:model]
     define :like
     define :dislike
@@ -174,7 +174,7 @@ defmodule Garage.Builds.Build do
     defaults [:read, :update, :destroy]
 
     create :create do
-      accept [:name, :description, :year, :builder_id, :make_id, :model_id, :image_urls]
+      accept [:name, :description, :year, :builder_id, :manufacturer_id, :model_id, :image_urls]
 
       change Garage.Changes.SetSlug
       change relate_actor(:builder)
@@ -211,9 +211,9 @@ defmodule Garage.Builds.Build do
       prepare build(limit: 5, sort: [updated_at: :desc])
     end
 
-    read :by_make do
-      argument :make, :string, allow_nil?: false
-      filter expr(make.slug == ^arg(:make))
+    read :by_manufacturer do
+      argument :manufacturer, :string, allow_nil?: false
+      filter expr(manufacturer.slug == ^arg(:manufacturer))
     end
 
     read :by_model do
@@ -255,7 +255,7 @@ defmodule Garage.Builds.Build do
   end
 
   preparations do
-    prepare build(load: [:builder, :make, :model, :first_image, :likes])
+    prepare build(load: [:builder, :manufacturer, :model, :first_image, :likes])
   end
 
   calculations do
