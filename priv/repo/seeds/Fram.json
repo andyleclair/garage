@@ -1,0 +1,107 @@
+{
+  "name": "Fram",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "NR66 Stock Exhaust"
+    },
+    {
+      "name": "NR65 Stock Exhaust"
+    },
+    {
+      "name": "NR52 Stock Exhaust"
+    },
+    {
+      "name": "NR51 Stock Exhaust"
+    },
+    {
+      "name": "NR50 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "NR66 Stock Forks"
+    },
+    {
+      "name": "NR65 Stock Forks"
+    },
+    {
+      "name": "NR52 Stock Forks"
+    },
+    {
+      "name": "NR51 Stock Forks"
+    },
+    {
+      "name": "NR50 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "NR66 Stock Wheels"
+    },
+    {
+      "name": "NR65 Stock Wheels"
+    },
+    {
+      "name": "NR52 Stock Wheels"
+    },
+    {
+      "name": "NR51 Stock Wheels"
+    },
+    {
+      "name": "NR50 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "NR66 Stock Cylinder"
+    },
+    {
+      "name": "NR65 Stock Cylinder"
+    },
+    {
+      "name": "NR52 Stock Cylinder"
+    },
+    {
+      "name": "NR51 Stock Cylinder"
+    },
+    {
+      "name": "NR50 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "NR50"
+    },
+    {
+      "name": "NR51"
+    },
+    {
+      "name": "NR52"
+    },
+    {
+      "name": "NR65"
+    },
+    {
+      "name": "NR66"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

@@ -1,0 +1,167 @@
+{
+  "name": "Bianchi",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Snark Stardust Stock Exhaust"
+    },
+    {
+      "name": "Snark Satelite Stock Exhaust"
+    },
+    {
+      "name": "Snark Eagle Standard Stock Exhaust"
+    },
+    {
+      "name": "Snark Eagle Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Snark Stock Exhaust"
+    },
+    {
+      "name": "Laser Stock Exhaust"
+    },
+    {
+      "name": "Falco Stock Exhaust"
+    },
+    {
+      "name": "Bianchimatic Stock Exhaust"
+    },
+    {
+      "name": "Aquilotto Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Snark Stardust Stock Forks"
+    },
+    {
+      "name": "Snark Satelite Stock Forks"
+    },
+    {
+      "name": "Snark Eagle Standard Stock Forks"
+    },
+    {
+      "name": "Snark Eagle Deluxe Stock Forks"
+    },
+    {
+      "name": "Snark Stock Forks"
+    },
+    {
+      "name": "Laser Stock Forks"
+    },
+    {
+      "name": "Falco Stock Forks"
+    },
+    {
+      "name": "Bianchimatic Stock Forks"
+    },
+    {
+      "name": "Aquilotto Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Snark Stardust Stock Wheels"
+    },
+    {
+      "name": "Snark Satelite Stock Wheels"
+    },
+    {
+      "name": "Snark Eagle Standard Stock Wheels"
+    },
+    {
+      "name": "Snark Eagle Deluxe Stock Wheels"
+    },
+    {
+      "name": "Snark Stock Wheels"
+    },
+    {
+      "name": "Laser Stock Wheels"
+    },
+    {
+      "name": "Falco Stock Wheels"
+    },
+    {
+      "name": "Bianchimatic Stock Wheels"
+    },
+    {
+      "name": "Aquilotto Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Snark Stardust Stock Cylinder"
+    },
+    {
+      "name": "Snark Satelite Stock Cylinder"
+    },
+    {
+      "name": "Snark Eagle Standard Stock Cylinder"
+    },
+    {
+      "name": "Snark Eagle Deluxe Stock Cylinder"
+    },
+    {
+      "name": "Snark Stock Cylinder"
+    },
+    {
+      "name": "Laser Stock Cylinder"
+    },
+    {
+      "name": "Falco Stock Cylinder"
+    },
+    {
+      "name": "Bianchimatic Stock Cylinder"
+    },
+    {
+      "name": "Aquilotto Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Aquilotto"
+    },
+    {
+      "name": "Bianchimatic"
+    },
+    {
+      "name": "Falco"
+    },
+    {
+      "name": "Laser"
+    },
+    {
+      "name": "Snark"
+    },
+    {
+      "name": "Snark Eagle Deluxe"
+    },
+    {
+      "name": "Snark Eagle Standard"
+    },
+    {
+      "name": "Snark Satelite"
+    },
+    {
+      "name": "Snark Stardust"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

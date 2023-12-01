@@ -1,0 +1,407 @@
+{
+  "name": "Hercules",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Supra 4 Enduro Stock Exhaust"
+    },
+    {
+      "name": "SAXONETTE Stock Exhaust"
+    },
+    {
+      "name": "Prima 5 Stock Exhaust"
+    },
+    {
+      "name": "Prima 4 Stock Exhaust"
+    },
+    {
+      "name": "P-3 Stock Exhaust"
+    },
+    {
+      "name": "P-1 Stock Exhaust"
+    },
+    {
+      "name": "MX-1 Stock Exhaust"
+    },
+    {
+      "name": "MP-4 Stock Exhaust"
+    },
+    {
+      "name": "MP-2 Stock Exhaust"
+    },
+    {
+      "name": "M-5 Stock Exhaust"
+    },
+    {
+      "name": "M-4 Stock Exhaust"
+    },
+    {
+      "name": "M-2 Stock Exhaust"
+    },
+    {
+      "name": "M-1 Stock Exhaust"
+    },
+    {
+      "name": "Lastboy Stock Exhaust"
+    },
+    {
+      "name": "L50 Stock Exhaust"
+    },
+    {
+      "name": "K50 Stock Exhaust"
+    },
+    {
+      "name": "Hobbyrider Stock Exhaust"
+    },
+    {
+      "name": "HR-2 Stock Exhaust"
+    },
+    {
+      "name": "Citybike C-3 Stock Exhaust"
+    },
+    {
+      "name": "Accubike E-1 Stock Exhaust"
+    },
+    {
+      "name": "504-1B Stock Exhaust"
+    },
+    {
+      "name": "504-1A Stock Exhaust"
+    },
+    {
+      "name": "5 SL Stock Exhaust"
+    },
+    {
+      "name": "220 Stock Exhaust"
+    },
+    {
+      "name": "218 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Supra 4 Enduro Stock Forks"
+    },
+    {
+      "name": "SAXONETTE Stock Forks"
+    },
+    {
+      "name": "Prima 5 Stock Forks"
+    },
+    {
+      "name": "Prima 4 Stock Forks"
+    },
+    {
+      "name": "P-3 Stock Forks"
+    },
+    {
+      "name": "P-1 Stock Forks"
+    },
+    {
+      "name": "MX-1 Stock Forks"
+    },
+    {
+      "name": "MP-4 Stock Forks"
+    },
+    {
+      "name": "MP-2 Stock Forks"
+    },
+    {
+      "name": "M-5 Stock Forks"
+    },
+    {
+      "name": "M-4 Stock Forks"
+    },
+    {
+      "name": "M-2 Stock Forks"
+    },
+    {
+      "name": "M-1 Stock Forks"
+    },
+    {
+      "name": "Lastboy Stock Forks"
+    },
+    {
+      "name": "L50 Stock Forks"
+    },
+    {
+      "name": "K50 Stock Forks"
+    },
+    {
+      "name": "Hobbyrider Stock Forks"
+    },
+    {
+      "name": "HR-2 Stock Forks"
+    },
+    {
+      "name": "Citybike C-3 Stock Forks"
+    },
+    {
+      "name": "Accubike E-1 Stock Forks"
+    },
+    {
+      "name": "504-1B Stock Forks"
+    },
+    {
+      "name": "504-1A Stock Forks"
+    },
+    {
+      "name": "5 SL Stock Forks"
+    },
+    {
+      "name": "220 Stock Forks"
+    },
+    {
+      "name": "218 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Supra 4 Enduro Stock Wheels"
+    },
+    {
+      "name": "SAXONETTE Stock Wheels"
+    },
+    {
+      "name": "Prima 5 Stock Wheels"
+    },
+    {
+      "name": "Prima 4 Stock Wheels"
+    },
+    {
+      "name": "P-3 Stock Wheels"
+    },
+    {
+      "name": "P-1 Stock Wheels"
+    },
+    {
+      "name": "MX-1 Stock Wheels"
+    },
+    {
+      "name": "MP-4 Stock Wheels"
+    },
+    {
+      "name": "MP-2 Stock Wheels"
+    },
+    {
+      "name": "M-5 Stock Wheels"
+    },
+    {
+      "name": "M-4 Stock Wheels"
+    },
+    {
+      "name": "M-2 Stock Wheels"
+    },
+    {
+      "name": "M-1 Stock Wheels"
+    },
+    {
+      "name": "Lastboy Stock Wheels"
+    },
+    {
+      "name": "L50 Stock Wheels"
+    },
+    {
+      "name": "K50 Stock Wheels"
+    },
+    {
+      "name": "Hobbyrider Stock Wheels"
+    },
+    {
+      "name": "HR-2 Stock Wheels"
+    },
+    {
+      "name": "Citybike C-3 Stock Wheels"
+    },
+    {
+      "name": "Accubike E-1 Stock Wheels"
+    },
+    {
+      "name": "504-1B Stock Wheels"
+    },
+    {
+      "name": "504-1A Stock Wheels"
+    },
+    {
+      "name": "5 SL Stock Wheels"
+    },
+    {
+      "name": "220 Stock Wheels"
+    },
+    {
+      "name": "218 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Supra 4 Enduro Stock Cylinder"
+    },
+    {
+      "name": "SAXONETTE Stock Cylinder"
+    },
+    {
+      "name": "Prima 5 Stock Cylinder"
+    },
+    {
+      "name": "Prima 4 Stock Cylinder"
+    },
+    {
+      "name": "P-3 Stock Cylinder"
+    },
+    {
+      "name": "P-1 Stock Cylinder"
+    },
+    {
+      "name": "MX-1 Stock Cylinder"
+    },
+    {
+      "name": "MP-4 Stock Cylinder"
+    },
+    {
+      "name": "MP-2 Stock Cylinder"
+    },
+    {
+      "name": "M-5 Stock Cylinder"
+    },
+    {
+      "name": "M-4 Stock Cylinder"
+    },
+    {
+      "name": "M-2 Stock Cylinder"
+    },
+    {
+      "name": "M-1 Stock Cylinder"
+    },
+    {
+      "name": "Lastboy Stock Cylinder"
+    },
+    {
+      "name": "L50 Stock Cylinder"
+    },
+    {
+      "name": "K50 Stock Cylinder"
+    },
+    {
+      "name": "Hobbyrider Stock Cylinder"
+    },
+    {
+      "name": "HR-2 Stock Cylinder"
+    },
+    {
+      "name": "Citybike C-3 Stock Cylinder"
+    },
+    {
+      "name": "Accubike E-1 Stock Cylinder"
+    },
+    {
+      "name": "504-1B Stock Cylinder"
+    },
+    {
+      "name": "504-1A Stock Cylinder"
+    },
+    {
+      "name": "5 SL Stock Cylinder"
+    },
+    {
+      "name": "220 Stock Cylinder"
+    },
+    {
+      "name": "218 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "218"
+    },
+    {
+      "name": "220"
+    },
+    {
+      "name": "5 SL"
+    },
+    {
+      "name": "504-1A"
+    },
+    {
+      "name": "504-1B"
+    },
+    {
+      "name": "Accubike E-1"
+    },
+    {
+      "name": "Citybike C-3"
+    },
+    {
+      "name": "HR-2"
+    },
+    {
+      "name": "Hobbyrider"
+    },
+    {
+      "name": "K50"
+    },
+    {
+      "name": "L50"
+    },
+    {
+      "name": "Lastboy"
+    },
+    {
+      "name": "M-1"
+    },
+    {
+      "name": "M-2"
+    },
+    {
+      "name": "M-4"
+    },
+    {
+      "name": "M-5"
+    },
+    {
+      "name": "MP-2"
+    },
+    {
+      "name": "MP-4"
+    },
+    {
+      "name": "MX-1"
+    },
+    {
+      "name": "P-1"
+    },
+    {
+      "name": "P-3"
+    },
+    {
+      "name": "Prima 4"
+    },
+    {
+      "name": "Prima 5"
+    },
+    {
+      "name": "SAXONETTE"
+    },
+    {
+      "name": "Supra 4 Enduro"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

@@ -73,6 +73,17 @@ defmodule Garage.Repo.Migrations.Regenerate do
       add :inserted_at, :utc_datetime_usec, null: false, default: fragment("now()")
       add :updated_at, :utc_datetime_usec, null: false, default: fragment("now()")
       add :manufacturer_id, :uuid
+      add :stock_carburetor_id, :uuid
+      add :stock_clutch_id, :uuid
+      add :stock_crank_id, :uuid
+      add :stock_cylinder_id, :uuid
+      add :stock_engine_id, :uuid
+      add :stock_exhaust_id, :uuid
+      add :stock_forks_id, :uuid
+      add :stock_ignition_id, :uuid
+      add :stock_pulley_id, :uuid
+      add :stock_variator_id, :uuid
+      add :stock_wheels_id, :uuid
     end
 
     create table(:manufacturers, primary_key: false) do
@@ -89,6 +100,8 @@ defmodule Garage.Repo.Migrations.Regenerate do
              )
     end
 
+    create unique_index(:wheels, [:manufacturer_id, :name], name: "wheels_name_index")
+
     alter table(:variators) do
       modify :manufacturer_id,
              references(:manufacturers,
@@ -98,6 +111,8 @@ defmodule Garage.Repo.Migrations.Regenerate do
                prefix: "public"
              )
     end
+
+    create unique_index(:variators, [:manufacturer_id, :name], name: "variators_name_index")
 
     alter table(:pulleys) do
       modify :manufacturer_id,
@@ -109,6 +124,8 @@ defmodule Garage.Repo.Migrations.Regenerate do
              )
     end
 
+    create unique_index(:pulleys, [:manufacturer_id, :name], name: "pulleys_name_index")
+
     alter table(:models) do
       modify :manufacturer_id,
              references(:manufacturers,
@@ -118,8 +135,6 @@ defmodule Garage.Repo.Migrations.Regenerate do
                prefix: "public"
              )
     end
-
-    create unique_index(:models, [:manufacturer_id, :slug], name: "models_slug_index")
 
     alter table(:manufacturers) do
       add :name, :text, null: false
@@ -167,6 +182,8 @@ defmodule Garage.Repo.Migrations.Regenerate do
           null: false
     end
 
+    create unique_index(:ignitions, [:manufacturer_id, :name], name: "ignitions_name_index")
+
     create table(:forks, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
       add :name, :text, null: false
@@ -183,6 +200,8 @@ defmodule Garage.Repo.Migrations.Regenerate do
           ),
           null: false
     end
+
+    create unique_index(:forks, [:manufacturer_id, :name], name: "forks_name_index")
 
     create table(:exhausts, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
@@ -201,6 +220,8 @@ defmodule Garage.Repo.Migrations.Regenerate do
           null: false
     end
 
+    create unique_index(:exhausts, [:manufacturer_id, :name], name: "exhausts_name_index")
+
     create table(:engines, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
       add :name, :text, null: false
@@ -218,6 +239,8 @@ defmodule Garage.Repo.Migrations.Regenerate do
           null: false
     end
 
+    create unique_index(:engines, [:manufacturer_id, :name], name: "engines_name_index")
+
     create table(:cylinders, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
       add :name, :text, null: false
@@ -232,8 +255,7 @@ defmodule Garage.Repo.Migrations.Regenerate do
             name: "cylinders_engine_id_fkey",
             type: :uuid,
             prefix: "public"
-          ),
-          null: false
+          )
 
       add :manufacturer_id,
           references(:manufacturers,
@@ -245,11 +267,13 @@ defmodule Garage.Repo.Migrations.Regenerate do
           null: false
     end
 
+    create unique_index(:cylinders, [:manufacturer_id, :name], name: "cylinders_name_index")
+
     create table(:cranks, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
       add :name, :text, null: false
       add :description, :text, default: ""
-      add :stroke, :bigint, null: false
+      add :stroke, :bigint
       add :inserted_at, :utc_datetime_usec, null: false, default: fragment("now()")
       add :updated_at, :utc_datetime_usec, null: false, default: fragment("now()")
 
@@ -259,8 +283,7 @@ defmodule Garage.Repo.Migrations.Regenerate do
             name: "cranks_engine_id_fkey",
             type: :uuid,
             prefix: "public"
-          ),
-          null: false
+          )
 
       add :manufacturer_id,
           references(:manufacturers,
@@ -271,6 +294,8 @@ defmodule Garage.Repo.Migrations.Regenerate do
           ),
           null: false
     end
+
+    create unique_index(:cranks, [:manufacturer_id, :name], name: "cranks_name_index")
 
     create table(:comments, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
@@ -308,10 +333,108 @@ defmodule Garage.Repo.Migrations.Regenerate do
           null: false
     end
 
+    create unique_index(:clutches, [:manufacturer_id, :name], name: "clutches_name_index")
+
     create table(:carburetors, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
+    end
+
+    alter table(:models) do
+      modify :stock_carburetor_id,
+             references(:carburetors,
+               column: :id,
+               name: "models_stock_carburetor_id_fkey",
+               type: :uuid,
+               prefix: "public"
+             )
+
+      modify :stock_clutch_id,
+             references(:clutches,
+               column: :id,
+               name: "models_stock_clutch_id_fkey",
+               type: :uuid,
+               prefix: "public"
+             )
+
+      modify :stock_crank_id,
+             references(:cranks,
+               column: :id,
+               name: "models_stock_crank_id_fkey",
+               type: :uuid,
+               prefix: "public"
+             )
+
+      modify :stock_cylinder_id,
+             references(:cylinders,
+               column: :id,
+               name: "models_stock_cylinder_id_fkey",
+               type: :uuid,
+               prefix: "public"
+             )
+
+      modify :stock_engine_id,
+             references(:engines,
+               column: :id,
+               name: "models_stock_engine_id_fkey",
+               type: :uuid,
+               prefix: "public"
+             )
+
+      modify :stock_exhaust_id,
+             references(:exhausts,
+               column: :id,
+               name: "models_stock_exhaust_id_fkey",
+               type: :uuid,
+               prefix: "public"
+             )
+
+      modify :stock_forks_id,
+             references(:forks,
+               column: :id,
+               name: "models_stock_forks_id_fkey",
+               type: :uuid,
+               prefix: "public"
+             )
+
+      modify :stock_ignition_id,
+             references(:ignitions,
+               column: :id,
+               name: "models_stock_ignition_id_fkey",
+               type: :uuid,
+               prefix: "public"
+             )
+
+      modify :stock_pulley_id,
+             references(:pulleys,
+               column: :id,
+               name: "models_stock_pulley_id_fkey",
+               type: :uuid,
+               prefix: "public"
+             )
+
+      modify :stock_variator_id,
+             references(:variators,
+               column: :id,
+               name: "models_stock_variator_id_fkey",
+               type: :uuid,
+               prefix: "public"
+             )
+
+      modify :stock_wheels_id,
+             references(:wheels,
+               column: :id,
+               name: "models_stock_wheels_id_fkey",
+               type: :uuid,
+               prefix: "public"
+             )
+    end
+
+    create unique_index(:models, [:manufacturer_id, :slug], name: "models_slug_index")
+
+    alter table(:carburetors) do
       add :name, :text, null: false
       add :description, :text, default: ""
+      add :size, :bigint, default: 12
       add :jets, {:array, :text}, default: []
       add :inserted_at, :utc_datetime_usec, null: false, default: fragment("now()")
       add :updated_at, :utc_datetime_usec, null: false, default: fragment("now()")
@@ -325,6 +448,8 @@ defmodule Garage.Repo.Migrations.Regenerate do
           ),
           null: false
     end
+
+    create unique_index(:carburetors, [:manufacturer_id, :name], name: "carburetors_name_index")
 
     create table(:builds, primary_key: false) do
       add :id, :uuid, null: false, default: fragment("uuid_generate_v4()"), primary_key: true
@@ -378,8 +503,7 @@ defmodule Garage.Repo.Migrations.Regenerate do
             name: "builds_ignition_id_fkey",
             type: :uuid,
             prefix: "public"
-          ),
-          null: false
+          )
 
       add :carburetor_id,
           references(:carburetors,
@@ -387,8 +511,7 @@ defmodule Garage.Repo.Migrations.Regenerate do
             name: "builds_carburetor_id_fkey",
             type: :uuid,
             prefix: "public"
-          ),
-          null: false
+          )
 
       add :wheels_id,
           references(:wheels,
@@ -396,8 +519,7 @@ defmodule Garage.Repo.Migrations.Regenerate do
             name: "builds_wheels_id_fkey",
             type: :uuid,
             prefix: "public"
-          ),
-          null: false
+          )
 
       add :forks_id,
           references(:forks,
@@ -405,8 +527,7 @@ defmodule Garage.Repo.Migrations.Regenerate do
             name: "builds_forks_id_fkey",
             type: :uuid,
             prefix: "public"
-          ),
-          null: false
+          )
 
       add :cylinder_id,
           references(:cylinders,
@@ -414,8 +535,7 @@ defmodule Garage.Repo.Migrations.Regenerate do
             name: "builds_cylinder_id_fkey",
             type: :uuid,
             prefix: "public"
-          ),
-          null: false
+          )
 
       add :exhaust_id,
           references(:exhausts,
@@ -423,8 +543,7 @@ defmodule Garage.Repo.Migrations.Regenerate do
             name: "builds_exhaust_id_fkey",
             type: :uuid,
             prefix: "public"
-          ),
-          null: false
+          )
 
       add :clutch_id,
           references(:clutches,
@@ -432,8 +551,7 @@ defmodule Garage.Repo.Migrations.Regenerate do
             name: "builds_clutch_id_fkey",
             type: :uuid,
             prefix: "public"
-          ),
-          null: false
+          )
 
       add :crank_id,
           references(:cranks,
@@ -441,8 +559,7 @@ defmodule Garage.Repo.Migrations.Regenerate do
             name: "builds_crank_id_fkey",
             type: :uuid,
             prefix: "public"
-          ),
-          null: false
+          )
 
       add :variator_id,
           references(:variators,
@@ -466,8 +583,7 @@ defmodule Garage.Repo.Migrations.Regenerate do
             name: "builds_engine_id_fkey",
             type: :uuid,
             prefix: "public"
-          ),
-          null: false
+          )
 
       add :builder_id,
           references(:users,
@@ -581,9 +697,63 @@ defmodule Garage.Repo.Migrations.Regenerate do
 
     drop table(:builds)
 
+    drop_if_exists unique_index(:carburetors, [:manufacturer_id, :name],
+                     name: "carburetors_name_index"
+                   )
+
     drop constraint(:carburetors, "carburetors_manufacturer_id_fkey")
 
+    alter table(:carburetors) do
+      remove :manufacturer_id
+      remove :updated_at
+      remove :inserted_at
+      remove :jets
+      remove :size
+      remove :description
+      remove :name
+    end
+
+    drop_if_exists unique_index(:models, [:manufacturer_id, :slug], name: "models_slug_index")
+
+    drop constraint(:models, "models_stock_carburetor_id_fkey")
+
+    drop constraint(:models, "models_stock_clutch_id_fkey")
+
+    drop constraint(:models, "models_stock_crank_id_fkey")
+
+    drop constraint(:models, "models_stock_cylinder_id_fkey")
+
+    drop constraint(:models, "models_stock_engine_id_fkey")
+
+    drop constraint(:models, "models_stock_exhaust_id_fkey")
+
+    drop constraint(:models, "models_stock_forks_id_fkey")
+
+    drop constraint(:models, "models_stock_ignition_id_fkey")
+
+    drop constraint(:models, "models_stock_pulley_id_fkey")
+
+    drop constraint(:models, "models_stock_variator_id_fkey")
+
+    drop constraint(:models, "models_stock_wheels_id_fkey")
+
+    alter table(:models) do
+      modify :stock_wheels_id, :uuid
+      modify :stock_variator_id, :uuid
+      modify :stock_pulley_id, :uuid
+      modify :stock_ignition_id, :uuid
+      modify :stock_forks_id, :uuid
+      modify :stock_exhaust_id, :uuid
+      modify :stock_engine_id, :uuid
+      modify :stock_cylinder_id, :uuid
+      modify :stock_crank_id, :uuid
+      modify :stock_clutch_id, :uuid
+      modify :stock_carburetor_id, :uuid
+    end
+
     drop table(:carburetors)
+
+    drop_if_exists unique_index(:clutches, [:manufacturer_id, :name], name: "clutches_name_index")
 
     drop constraint(:clutches, "clutches_manufacturer_id_fkey")
 
@@ -593,11 +763,17 @@ defmodule Garage.Repo.Migrations.Regenerate do
 
     drop table(:comments)
 
+    drop_if_exists unique_index(:cranks, [:manufacturer_id, :name], name: "cranks_name_index")
+
     drop constraint(:cranks, "cranks_engine_id_fkey")
 
     drop constraint(:cranks, "cranks_manufacturer_id_fkey")
 
     drop table(:cranks)
+
+    drop_if_exists unique_index(:cylinders, [:manufacturer_id, :name],
+                     name: "cylinders_name_index"
+                   )
 
     drop constraint(:cylinders, "cylinders_engine_id_fkey")
 
@@ -605,17 +781,27 @@ defmodule Garage.Repo.Migrations.Regenerate do
 
     drop table(:cylinders)
 
+    drop_if_exists unique_index(:engines, [:manufacturer_id, :name], name: "engines_name_index")
+
     drop constraint(:engines, "engines_manufacturer_id_fkey")
 
     drop table(:engines)
+
+    drop_if_exists unique_index(:exhausts, [:manufacturer_id, :name], name: "exhausts_name_index")
 
     drop constraint(:exhausts, "exhausts_manufacturer_id_fkey")
 
     drop table(:exhausts)
 
+    drop_if_exists unique_index(:forks, [:manufacturer_id, :name], name: "forks_name_index")
+
     drop constraint(:forks, "forks_manufacturer_id_fkey")
 
     drop table(:forks)
+
+    drop_if_exists unique_index(:ignitions, [:manufacturer_id, :name],
+                     name: "ignitions_name_index"
+                   )
 
     drop constraint(:ignitions, "ignitions_manufacturer_id_fkey")
 
@@ -636,13 +822,13 @@ defmodule Garage.Repo.Migrations.Regenerate do
       remove :name
     end
 
-    drop_if_exists unique_index(:models, [:manufacturer_id, :slug], name: "models_slug_index")
-
     drop constraint(:models, "models_manufacturer_id_fkey")
 
     alter table(:models) do
       modify :manufacturer_id, :uuid
     end
+
+    drop_if_exists unique_index(:pulleys, [:manufacturer_id, :name], name: "pulleys_name_index")
 
     drop constraint(:pulleys, "pulleys_manufacturer_id_fkey")
 
@@ -650,11 +836,17 @@ defmodule Garage.Repo.Migrations.Regenerate do
       modify :manufacturer_id, :uuid
     end
 
+    drop_if_exists unique_index(:variators, [:manufacturer_id, :name],
+                     name: "variators_name_index"
+                   )
+
     drop constraint(:variators, "variators_manufacturer_id_fkey")
 
     alter table(:variators) do
       modify :manufacturer_id, :uuid
     end
+
+    drop_if_exists unique_index(:wheels, [:manufacturer_id, :name], name: "wheels_name_index")
 
     drop constraint(:wheels, "wheels_manufacturer_id_fkey")
 

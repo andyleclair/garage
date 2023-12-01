@@ -1,0 +1,227 @@
+{
+  "name": "Solo",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Odyssey Stock Exhaust"
+    },
+    {
+      "name": "Mini Stock Exhaust"
+    },
+    {
+      "name": "Electra Stock Exhaust"
+    },
+    {
+      "name": "726 Stock Exhaust"
+    },
+    {
+      "name": "725 Stock Exhaust"
+    },
+    {
+      "name": "722 Stock Exhaust"
+    },
+    {
+      "name": "716 Stock Exhaust"
+    },
+    {
+      "name": "715B Stock Exhaust"
+    },
+    {
+      "name": "715 Stock Exhaust"
+    },
+    {
+      "name": "713 Stock Exhaust"
+    },
+    {
+      "name": "712 Stock Exhaust"
+    },
+    {
+      "name": "711 Stock Exhaust"
+    },
+    {
+      "name": "710 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Odyssey Stock Forks"
+    },
+    {
+      "name": "Mini Stock Forks"
+    },
+    {
+      "name": "Electra Stock Forks"
+    },
+    {
+      "name": "726 Stock Forks"
+    },
+    {
+      "name": "725 Stock Forks"
+    },
+    {
+      "name": "722 Stock Forks"
+    },
+    {
+      "name": "716 Stock Forks"
+    },
+    {
+      "name": "715B Stock Forks"
+    },
+    {
+      "name": "715 Stock Forks"
+    },
+    {
+      "name": "713 Stock Forks"
+    },
+    {
+      "name": "712 Stock Forks"
+    },
+    {
+      "name": "711 Stock Forks"
+    },
+    {
+      "name": "710 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Odyssey Stock Wheels"
+    },
+    {
+      "name": "Mini Stock Wheels"
+    },
+    {
+      "name": "Electra Stock Wheels"
+    },
+    {
+      "name": "726 Stock Wheels"
+    },
+    {
+      "name": "725 Stock Wheels"
+    },
+    {
+      "name": "722 Stock Wheels"
+    },
+    {
+      "name": "716 Stock Wheels"
+    },
+    {
+      "name": "715B Stock Wheels"
+    },
+    {
+      "name": "715 Stock Wheels"
+    },
+    {
+      "name": "713 Stock Wheels"
+    },
+    {
+      "name": "712 Stock Wheels"
+    },
+    {
+      "name": "711 Stock Wheels"
+    },
+    {
+      "name": "710 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Odyssey Stock Cylinder"
+    },
+    {
+      "name": "Mini Stock Cylinder"
+    },
+    {
+      "name": "Electra Stock Cylinder"
+    },
+    {
+      "name": "726 Stock Cylinder"
+    },
+    {
+      "name": "725 Stock Cylinder"
+    },
+    {
+      "name": "722 Stock Cylinder"
+    },
+    {
+      "name": "716 Stock Cylinder"
+    },
+    {
+      "name": "715B Stock Cylinder"
+    },
+    {
+      "name": "715 Stock Cylinder"
+    },
+    {
+      "name": "713 Stock Cylinder"
+    },
+    {
+      "name": "712 Stock Cylinder"
+    },
+    {
+      "name": "711 Stock Cylinder"
+    },
+    {
+      "name": "710 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "710"
+    },
+    {
+      "name": "711"
+    },
+    {
+      "name": "712"
+    },
+    {
+      "name": "713"
+    },
+    {
+      "name": "715"
+    },
+    {
+      "name": "715B"
+    },
+    {
+      "name": "716"
+    },
+    {
+      "name": "722"
+    },
+    {
+      "name": "725"
+    },
+    {
+      "name": "726"
+    },
+    {
+      "name": "Electra"
+    },
+    {
+      "name": "Mini"
+    },
+    {
+      "name": "Odyssey"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

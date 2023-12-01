@@ -1,0 +1,272 @@
+{
+  "name": "Columbia",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Western Flyer Stock Exhaust"
+    },
+    {
+      "name": "Traveller I Stock Exhaust"
+    },
+    {
+      "name": "Open Road Stock Exhaust"
+    },
+    {
+      "name": "Motrek Stock Exhaust"
+    },
+    {
+      "name": "Mediallion 2281 Stock Exhaust"
+    },
+    {
+      "name": "Medallion 2280 Stock Exhaust"
+    },
+    {
+      "name": "Medallion 2271 Stock Exhaust"
+    },
+    {
+      "name": "Imperial Stock Exhaust"
+    },
+    {
+      "name": "Commuter I Stock Exhaust"
+    },
+    {
+      "name": "Commuter 2250 Stock Exhaust"
+    },
+    {
+      "name": "Commuter 2240 Stock Exhaust"
+    },
+    {
+      "name": "Commuter 2220 Stock Exhaust"
+    },
+    {
+      "name": "Commuter Stock Exhaust"
+    },
+    {
+      "name": "57062 Stock Exhaust"
+    },
+    {
+      "name": "2251 Stock Exhaust"
+    },
+    {
+      "name": "2241 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Western Flyer Stock Forks"
+    },
+    {
+      "name": "Traveller I Stock Forks"
+    },
+    {
+      "name": "Open Road Stock Forks"
+    },
+    {
+      "name": "Motrek Stock Forks"
+    },
+    {
+      "name": "Mediallion 2281 Stock Forks"
+    },
+    {
+      "name": "Medallion 2280 Stock Forks"
+    },
+    {
+      "name": "Medallion 2271 Stock Forks"
+    },
+    {
+      "name": "Imperial Stock Forks"
+    },
+    {
+      "name": "Commuter I Stock Forks"
+    },
+    {
+      "name": "Commuter 2250 Stock Forks"
+    },
+    {
+      "name": "Commuter 2240 Stock Forks"
+    },
+    {
+      "name": "Commuter 2220 Stock Forks"
+    },
+    {
+      "name": "Commuter Stock Forks"
+    },
+    {
+      "name": "57062 Stock Forks"
+    },
+    {
+      "name": "2251 Stock Forks"
+    },
+    {
+      "name": "2241 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Western Flyer Stock Wheels"
+    },
+    {
+      "name": "Traveller I Stock Wheels"
+    },
+    {
+      "name": "Open Road Stock Wheels"
+    },
+    {
+      "name": "Motrek Stock Wheels"
+    },
+    {
+      "name": "Mediallion 2281 Stock Wheels"
+    },
+    {
+      "name": "Medallion 2280 Stock Wheels"
+    },
+    {
+      "name": "Medallion 2271 Stock Wheels"
+    },
+    {
+      "name": "Imperial Stock Wheels"
+    },
+    {
+      "name": "Commuter I Stock Wheels"
+    },
+    {
+      "name": "Commuter 2250 Stock Wheels"
+    },
+    {
+      "name": "Commuter 2240 Stock Wheels"
+    },
+    {
+      "name": "Commuter 2220 Stock Wheels"
+    },
+    {
+      "name": "Commuter Stock Wheels"
+    },
+    {
+      "name": "57062 Stock Wheels"
+    },
+    {
+      "name": "2251 Stock Wheels"
+    },
+    {
+      "name": "2241 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Western Flyer Stock Cylinder"
+    },
+    {
+      "name": "Traveller I Stock Cylinder"
+    },
+    {
+      "name": "Open Road Stock Cylinder"
+    },
+    {
+      "name": "Motrek Stock Cylinder"
+    },
+    {
+      "name": "Mediallion 2281 Stock Cylinder"
+    },
+    {
+      "name": "Medallion 2280 Stock Cylinder"
+    },
+    {
+      "name": "Medallion 2271 Stock Cylinder"
+    },
+    {
+      "name": "Imperial Stock Cylinder"
+    },
+    {
+      "name": "Commuter I Stock Cylinder"
+    },
+    {
+      "name": "Commuter 2250 Stock Cylinder"
+    },
+    {
+      "name": "Commuter 2240 Stock Cylinder"
+    },
+    {
+      "name": "Commuter 2220 Stock Cylinder"
+    },
+    {
+      "name": "Commuter Stock Cylinder"
+    },
+    {
+      "name": "57062 Stock Cylinder"
+    },
+    {
+      "name": "2251 Stock Cylinder"
+    },
+    {
+      "name": "2241 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "2241"
+    },
+    {
+      "name": "2251"
+    },
+    {
+      "name": "57062"
+    },
+    {
+      "name": "Commuter"
+    },
+    {
+      "name": "Commuter 2220"
+    },
+    {
+      "name": "Commuter 2240"
+    },
+    {
+      "name": "Commuter 2250"
+    },
+    {
+      "name": "Commuter I"
+    },
+    {
+      "name": "Imperial"
+    },
+    {
+      "name": "Medallion 2271"
+    },
+    {
+      "name": "Medallion 2280"
+    },
+    {
+      "name": "Mediallion 2281"
+    },
+    {
+      "name": "Motrek"
+    },
+    {
+      "name": "Open Road"
+    },
+    {
+      "name": "Traveller I"
+    },
+    {
+      "name": "Western Flyer"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

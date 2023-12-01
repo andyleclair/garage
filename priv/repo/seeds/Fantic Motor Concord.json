@@ -1,0 +1,302 @@
+{
+  "name": "Fantic Motor Concord",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "XKE Stock Exhaust"
+    },
+    {
+      "name": "TX300 Stock Exhaust"
+    },
+    {
+      "name": "Super T Stock Exhaust"
+    },
+    {
+      "name": "Super Lei Stock Exhaust"
+    },
+    {
+      "name": "Shadow Stock Exhaust"
+    },
+    {
+      "name": "Lei Stock Exhaust"
+    },
+    {
+      "name": "Issimo Stock Exhaust"
+    },
+    {
+      "name": "Invader Stock Exhaust"
+    },
+    {
+      "name": "Freedom Stock Exhaust"
+    },
+    {
+      "name": "Concord KE20 Stock Exhaust"
+    },
+    {
+      "name": "Concord 30 Stock Exhaust"
+    },
+    {
+      "name": "Concord 25 Stock Exhaust"
+    },
+    {
+      "name": "Colt II Stock Exhaust"
+    },
+    {
+      "name": "Colt I Stock Exhaust"
+    },
+    {
+      "name": "Chopper 50 Stock Exhaust"
+    },
+    {
+      "name": "Broncco Stock Exhaust"
+    },
+    {
+      "name": "Blazar II Stock Exhaust"
+    },
+    {
+      "name": "Blazar I Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "XKE Stock Forks"
+    },
+    {
+      "name": "TX300 Stock Forks"
+    },
+    {
+      "name": "Super T Stock Forks"
+    },
+    {
+      "name": "Super Lei Stock Forks"
+    },
+    {
+      "name": "Shadow Stock Forks"
+    },
+    {
+      "name": "Lei Stock Forks"
+    },
+    {
+      "name": "Issimo Stock Forks"
+    },
+    {
+      "name": "Invader Stock Forks"
+    },
+    {
+      "name": "Freedom Stock Forks"
+    },
+    {
+      "name": "Concord KE20 Stock Forks"
+    },
+    {
+      "name": "Concord 30 Stock Forks"
+    },
+    {
+      "name": "Concord 25 Stock Forks"
+    },
+    {
+      "name": "Colt II Stock Forks"
+    },
+    {
+      "name": "Colt I Stock Forks"
+    },
+    {
+      "name": "Chopper 50 Stock Forks"
+    },
+    {
+      "name": "Broncco Stock Forks"
+    },
+    {
+      "name": "Blazar II Stock Forks"
+    },
+    {
+      "name": "Blazar I Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "XKE Stock Wheels"
+    },
+    {
+      "name": "TX300 Stock Wheels"
+    },
+    {
+      "name": "Super T Stock Wheels"
+    },
+    {
+      "name": "Super Lei Stock Wheels"
+    },
+    {
+      "name": "Shadow Stock Wheels"
+    },
+    {
+      "name": "Lei Stock Wheels"
+    },
+    {
+      "name": "Issimo Stock Wheels"
+    },
+    {
+      "name": "Invader Stock Wheels"
+    },
+    {
+      "name": "Freedom Stock Wheels"
+    },
+    {
+      "name": "Concord KE20 Stock Wheels"
+    },
+    {
+      "name": "Concord 30 Stock Wheels"
+    },
+    {
+      "name": "Concord 25 Stock Wheels"
+    },
+    {
+      "name": "Colt II Stock Wheels"
+    },
+    {
+      "name": "Colt I Stock Wheels"
+    },
+    {
+      "name": "Chopper 50 Stock Wheels"
+    },
+    {
+      "name": "Broncco Stock Wheels"
+    },
+    {
+      "name": "Blazar II Stock Wheels"
+    },
+    {
+      "name": "Blazar I Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "XKE Stock Cylinder"
+    },
+    {
+      "name": "TX300 Stock Cylinder"
+    },
+    {
+      "name": "Super T Stock Cylinder"
+    },
+    {
+      "name": "Super Lei Stock Cylinder"
+    },
+    {
+      "name": "Shadow Stock Cylinder"
+    },
+    {
+      "name": "Lei Stock Cylinder"
+    },
+    {
+      "name": "Issimo Stock Cylinder"
+    },
+    {
+      "name": "Invader Stock Cylinder"
+    },
+    {
+      "name": "Freedom Stock Cylinder"
+    },
+    {
+      "name": "Concord KE20 Stock Cylinder"
+    },
+    {
+      "name": "Concord 30 Stock Cylinder"
+    },
+    {
+      "name": "Concord 25 Stock Cylinder"
+    },
+    {
+      "name": "Colt II Stock Cylinder"
+    },
+    {
+      "name": "Colt I Stock Cylinder"
+    },
+    {
+      "name": "Chopper 50 Stock Cylinder"
+    },
+    {
+      "name": "Broncco Stock Cylinder"
+    },
+    {
+      "name": "Blazar II Stock Cylinder"
+    },
+    {
+      "name": "Blazar I Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Blazar I"
+    },
+    {
+      "name": "Blazar II"
+    },
+    {
+      "name": "Broncco"
+    },
+    {
+      "name": "Chopper 50"
+    },
+    {
+      "name": "Colt I"
+    },
+    {
+      "name": "Colt II"
+    },
+    {
+      "name": "Concord 25"
+    },
+    {
+      "name": "Concord 30"
+    },
+    {
+      "name": "Concord KE20"
+    },
+    {
+      "name": "Freedom"
+    },
+    {
+      "name": "Invader"
+    },
+    {
+      "name": "Issimo"
+    },
+    {
+      "name": "Lei"
+    },
+    {
+      "name": "Shadow"
+    },
+    {
+      "name": "Super Lei"
+    },
+    {
+      "name": "Super T"
+    },
+    {
+      "name": "TX300"
+    },
+    {
+      "name": "XKE"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

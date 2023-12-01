@@ -1,0 +1,212 @@
+{
+  "name": "Gilera",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Trial Stock Exhaust"
+    },
+    {
+      "name": "Touring Stock Exhaust"
+    },
+    {
+      "name": "SD Stock Exhaust"
+    },
+    {
+      "name": "RS Stock Exhaust"
+    },
+    {
+      "name": "RL Stock Exhaust"
+    },
+    {
+      "name": "RE Stock Exhaust"
+    },
+    {
+      "name": "RA Stock Exhaust"
+    },
+    {
+      "name": "Enduro Stock Exhaust"
+    },
+    {
+      "name": "Eco Stock Exhaust"
+    },
+    {
+      "name": "E-type Stock Exhaust"
+    },
+    {
+      "name": "50 Trial RS Stock Exhaust"
+    },
+    {
+      "name": "50 Touring RS Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Trial Stock Forks"
+    },
+    {
+      "name": "Touring Stock Forks"
+    },
+    {
+      "name": "SD Stock Forks"
+    },
+    {
+      "name": "RS Stock Forks"
+    },
+    {
+      "name": "RL Stock Forks"
+    },
+    {
+      "name": "RE Stock Forks"
+    },
+    {
+      "name": "RA Stock Forks"
+    },
+    {
+      "name": "Enduro Stock Forks"
+    },
+    {
+      "name": "Eco Stock Forks"
+    },
+    {
+      "name": "E-type Stock Forks"
+    },
+    {
+      "name": "50 Trial RS Stock Forks"
+    },
+    {
+      "name": "50 Touring RS Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Trial Stock Wheels"
+    },
+    {
+      "name": "Touring Stock Wheels"
+    },
+    {
+      "name": "SD Stock Wheels"
+    },
+    {
+      "name": "RS Stock Wheels"
+    },
+    {
+      "name": "RL Stock Wheels"
+    },
+    {
+      "name": "RE Stock Wheels"
+    },
+    {
+      "name": "RA Stock Wheels"
+    },
+    {
+      "name": "Enduro Stock Wheels"
+    },
+    {
+      "name": "Eco Stock Wheels"
+    },
+    {
+      "name": "E-type Stock Wheels"
+    },
+    {
+      "name": "50 Trial RS Stock Wheels"
+    },
+    {
+      "name": "50 Touring RS Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Trial Stock Cylinder"
+    },
+    {
+      "name": "Touring Stock Cylinder"
+    },
+    {
+      "name": "SD Stock Cylinder"
+    },
+    {
+      "name": "RS Stock Cylinder"
+    },
+    {
+      "name": "RL Stock Cylinder"
+    },
+    {
+      "name": "RE Stock Cylinder"
+    },
+    {
+      "name": "RA Stock Cylinder"
+    },
+    {
+      "name": "Enduro Stock Cylinder"
+    },
+    {
+      "name": "Eco Stock Cylinder"
+    },
+    {
+      "name": "E-type Stock Cylinder"
+    },
+    {
+      "name": "50 Trial RS Stock Cylinder"
+    },
+    {
+      "name": "50 Touring RS Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "50 Touring RS"
+    },
+    {
+      "name": "50 Trial RS"
+    },
+    {
+      "name": "E-type"
+    },
+    {
+      "name": "Eco"
+    },
+    {
+      "name": "Enduro"
+    },
+    {
+      "name": "RA"
+    },
+    {
+      "name": "RE"
+    },
+    {
+      "name": "RL"
+    },
+    {
+      "name": "RS"
+    },
+    {
+      "name": "SD"
+    },
+    {
+      "name": "Touring"
+    },
+    {
+      "name": "Trial"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

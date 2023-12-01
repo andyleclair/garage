@@ -1,0 +1,77 @@
+{
+  "name": "Motom",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Junior Stock Exhaust"
+    },
+    {
+      "name": "C Stock Exhaust"
+    },
+    {
+      "name": "48 Cross Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Junior Stock Forks"
+    },
+    {
+      "name": "C Stock Forks"
+    },
+    {
+      "name": "48 Cross Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Junior Stock Wheels"
+    },
+    {
+      "name": "C Stock Wheels"
+    },
+    {
+      "name": "48 Cross Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Junior Stock Cylinder"
+    },
+    {
+      "name": "C Stock Cylinder"
+    },
+    {
+      "name": "48 Cross Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "48 Cross"
+    },
+    {
+      "name": "C"
+    },
+    {
+      "name": "Junior"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

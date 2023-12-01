@@ -1,0 +1,302 @@
+{
+  "name": "Solex",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Trotilex Stock Exhaust"
+    },
+    {
+      "name": "Tenor Stock Exhaust"
+    },
+    {
+      "name": "S3800 Stock Exhaust"
+    },
+    {
+      "name": "Pli-Solex Stock Exhaust"
+    },
+    {
+      "name": "Micron Stock Exhaust"
+    },
+    {
+      "name": "Horse Stock Exhaust"
+    },
+    {
+      "name": "Flash 6000 Stock Exhaust"
+    },
+    {
+      "name": "8000 Stock Exhaust"
+    },
+    {
+      "name": "6000 Stock Exhaust"
+    },
+    {
+      "name": "5000 Stock Exhaust"
+    },
+    {
+      "name": "4600 DOT Stock Exhaust"
+    },
+    {
+      "name": "4600 Stock Exhaust"
+    },
+    {
+      "name": "3800 Deluxe Stock Exhaust"
+    },
+    {
+      "name": "3800 Stock Exhaust"
+    },
+    {
+      "name": "3300 Stock Exhaust"
+    },
+    {
+      "name": "3200 Stock Exhaust"
+    },
+    {
+      "name": "2200 Stock Exhaust"
+    },
+    {
+      "name": "1700 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Trotilex Stock Forks"
+    },
+    {
+      "name": "Tenor Stock Forks"
+    },
+    {
+      "name": "S3800 Stock Forks"
+    },
+    {
+      "name": "Pli-Solex Stock Forks"
+    },
+    {
+      "name": "Micron Stock Forks"
+    },
+    {
+      "name": "Horse Stock Forks"
+    },
+    {
+      "name": "Flash 6000 Stock Forks"
+    },
+    {
+      "name": "8000 Stock Forks"
+    },
+    {
+      "name": "6000 Stock Forks"
+    },
+    {
+      "name": "5000 Stock Forks"
+    },
+    {
+      "name": "4600 DOT Stock Forks"
+    },
+    {
+      "name": "4600 Stock Forks"
+    },
+    {
+      "name": "3800 Deluxe Stock Forks"
+    },
+    {
+      "name": "3800 Stock Forks"
+    },
+    {
+      "name": "3300 Stock Forks"
+    },
+    {
+      "name": "3200 Stock Forks"
+    },
+    {
+      "name": "2200 Stock Forks"
+    },
+    {
+      "name": "1700 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Trotilex Stock Wheels"
+    },
+    {
+      "name": "Tenor Stock Wheels"
+    },
+    {
+      "name": "S3800 Stock Wheels"
+    },
+    {
+      "name": "Pli-Solex Stock Wheels"
+    },
+    {
+      "name": "Micron Stock Wheels"
+    },
+    {
+      "name": "Horse Stock Wheels"
+    },
+    {
+      "name": "Flash 6000 Stock Wheels"
+    },
+    {
+      "name": "8000 Stock Wheels"
+    },
+    {
+      "name": "6000 Stock Wheels"
+    },
+    {
+      "name": "5000 Stock Wheels"
+    },
+    {
+      "name": "4600 DOT Stock Wheels"
+    },
+    {
+      "name": "4600 Stock Wheels"
+    },
+    {
+      "name": "3800 Deluxe Stock Wheels"
+    },
+    {
+      "name": "3800 Stock Wheels"
+    },
+    {
+      "name": "3300 Stock Wheels"
+    },
+    {
+      "name": "3200 Stock Wheels"
+    },
+    {
+      "name": "2200 Stock Wheels"
+    },
+    {
+      "name": "1700 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Trotilex Stock Cylinder"
+    },
+    {
+      "name": "Tenor Stock Cylinder"
+    },
+    {
+      "name": "S3800 Stock Cylinder"
+    },
+    {
+      "name": "Pli-Solex Stock Cylinder"
+    },
+    {
+      "name": "Micron Stock Cylinder"
+    },
+    {
+      "name": "Horse Stock Cylinder"
+    },
+    {
+      "name": "Flash 6000 Stock Cylinder"
+    },
+    {
+      "name": "8000 Stock Cylinder"
+    },
+    {
+      "name": "6000 Stock Cylinder"
+    },
+    {
+      "name": "5000 Stock Cylinder"
+    },
+    {
+      "name": "4600 DOT Stock Cylinder"
+    },
+    {
+      "name": "4600 Stock Cylinder"
+    },
+    {
+      "name": "3800 Deluxe Stock Cylinder"
+    },
+    {
+      "name": "3800 Stock Cylinder"
+    },
+    {
+      "name": "3300 Stock Cylinder"
+    },
+    {
+      "name": "3200 Stock Cylinder"
+    },
+    {
+      "name": "2200 Stock Cylinder"
+    },
+    {
+      "name": "1700 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "1700"
+    },
+    {
+      "name": "2200"
+    },
+    {
+      "name": "3200"
+    },
+    {
+      "name": "3300"
+    },
+    {
+      "name": "3800"
+    },
+    {
+      "name": "3800 Deluxe"
+    },
+    {
+      "name": "4600"
+    },
+    {
+      "name": "4600 DOT"
+    },
+    {
+      "name": "5000"
+    },
+    {
+      "name": "6000"
+    },
+    {
+      "name": "8000"
+    },
+    {
+      "name": "Flash 6000"
+    },
+    {
+      "name": "Horse"
+    },
+    {
+      "name": "Micron"
+    },
+    {
+      "name": "Pli-Solex"
+    },
+    {
+      "name": "S3800"
+    },
+    {
+      "name": "Tenor"
+    },
+    {
+      "name": "Trotilex"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

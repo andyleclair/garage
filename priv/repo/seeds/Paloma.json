@@ -1,0 +1,92 @@
+{
+  "name": "Paloma",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Super Strada Flash Stock Exhaust"
+    },
+    {
+      "name": "Pal Stock Exhaust"
+    },
+    {
+      "name": "Minor Stock Exhaust"
+    },
+    {
+      "name": "Dasl Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Super Strada Flash Stock Forks"
+    },
+    {
+      "name": "Pal Stock Forks"
+    },
+    {
+      "name": "Minor Stock Forks"
+    },
+    {
+      "name": "Dasl Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Super Strada Flash Stock Wheels"
+    },
+    {
+      "name": "Pal Stock Wheels"
+    },
+    {
+      "name": "Minor Stock Wheels"
+    },
+    {
+      "name": "Dasl Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Super Strada Flash Stock Cylinder"
+    },
+    {
+      "name": "Pal Stock Cylinder"
+    },
+    {
+      "name": "Minor Stock Cylinder"
+    },
+    {
+      "name": "Dasl Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Dasl"
+    },
+    {
+      "name": "Minor"
+    },
+    {
+      "name": "Pal"
+    },
+    {
+      "name": "Super Strada Flash"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

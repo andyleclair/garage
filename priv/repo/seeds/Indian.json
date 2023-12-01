@@ -1,0 +1,92 @@
+{
+  "name": "Indian",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Mini-Mini Bambino Stock Exhaust"
+    },
+    {
+      "name": "MX-74 Stock Exhaust"
+    },
+    {
+      "name": "MM5A Stock Exhaust"
+    },
+    {
+      "name": "AMI-50 Chief Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Mini-Mini Bambino Stock Forks"
+    },
+    {
+      "name": "MX-74 Stock Forks"
+    },
+    {
+      "name": "MM5A Stock Forks"
+    },
+    {
+      "name": "AMI-50 Chief Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Mini-Mini Bambino Stock Wheels"
+    },
+    {
+      "name": "MX-74 Stock Wheels"
+    },
+    {
+      "name": "MM5A Stock Wheels"
+    },
+    {
+      "name": "AMI-50 Chief Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Mini-Mini Bambino Stock Cylinder"
+    },
+    {
+      "name": "MX-74 Stock Cylinder"
+    },
+    {
+      "name": "MM5A Stock Cylinder"
+    },
+    {
+      "name": "AMI-50 Chief Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "AMI-50 Chief"
+    },
+    {
+      "name": "MM5A"
+    },
+    {
+      "name": "MX-74"
+    },
+    {
+      "name": "Mini-Mini Bambino"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

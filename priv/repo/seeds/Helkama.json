@@ -1,0 +1,137 @@
+{
+  "name": "Helkama",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Tossu Stock Exhaust"
+    },
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "Raisu Stock Exhaust"
+    },
+    {
+      "name": "Mini GT Stock Exhaust"
+    },
+    {
+      "name": "Major S Stock Exhaust"
+    },
+    {
+      "name": "Hopeasauma Stock Exhaust"
+    },
+    {
+      "name": "AX Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Tossu Stock Forks"
+    },
+    {
+      "name": "Sport Stock Forks"
+    },
+    {
+      "name": "Raisu Stock Forks"
+    },
+    {
+      "name": "Mini GT Stock Forks"
+    },
+    {
+      "name": "Major S Stock Forks"
+    },
+    {
+      "name": "Hopeasauma Stock Forks"
+    },
+    {
+      "name": "AX Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Tossu Stock Wheels"
+    },
+    {
+      "name": "Sport Stock Wheels"
+    },
+    {
+      "name": "Raisu Stock Wheels"
+    },
+    {
+      "name": "Mini GT Stock Wheels"
+    },
+    {
+      "name": "Major S Stock Wheels"
+    },
+    {
+      "name": "Hopeasauma Stock Wheels"
+    },
+    {
+      "name": "AX Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Tossu Stock Cylinder"
+    },
+    {
+      "name": "Sport Stock Cylinder"
+    },
+    {
+      "name": "Raisu Stock Cylinder"
+    },
+    {
+      "name": "Mini GT Stock Cylinder"
+    },
+    {
+      "name": "Major S Stock Cylinder"
+    },
+    {
+      "name": "Hopeasauma Stock Cylinder"
+    },
+    {
+      "name": "AX Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "AX"
+    },
+    {
+      "name": "Hopeasauma"
+    },
+    {
+      "name": "Major S"
+    },
+    {
+      "name": "Mini GT"
+    },
+    {
+      "name": "Raisu"
+    },
+    {
+      "name": "Sport"
+    },
+    {
+      "name": "Tossu"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

@@ -1,0 +1,482 @@
+{
+  "name": "Derbi",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Variant Sport R Stock Exhaust"
+    },
+    {
+      "name": "Variant Red Bullet Stock Exhaust"
+    },
+    {
+      "name": "Variant Courier Stock Exhaust"
+    },
+    {
+      "name": "Variant Box Stock Exhaust"
+    },
+    {
+      "name": "Variant Stock Exhaust"
+    },
+    {
+      "name": "Tricampeona Stock Exhaust"
+    },
+    {
+      "name": "TT Stock Exhaust"
+    },
+    {
+      "name": "SLE Stock Exhaust"
+    },
+    {
+      "name": "SL Stock Exhaust"
+    },
+    {
+      "name": "Revolution GS Stock Exhaust"
+    },
+    {
+      "name": "Revolution Stock Exhaust"
+    },
+    {
+      "name": "RD-50 Stock Exhaust"
+    },
+    {
+      "name": "Olimpica Stock Exhaust"
+    },
+    {
+      "name": "N Stock Exhaust"
+    },
+    {
+      "name": "Montreal 4V Stock Exhaust"
+    },
+    {
+      "name": "Laguna Sport Stock Exhaust"
+    },
+    {
+      "name": "Laguna Electric Start Stock Exhaust"
+    },
+    {
+      "name": "Laguna Stock Exhaust"
+    },
+    {
+      "name": "GTS4V Stock Exhaust"
+    },
+    {
+      "name": "GT4V Stock Exhaust"
+    },
+    {
+      "name": "E Stock Exhaust"
+    },
+    {
+      "name": "Diablo Super Stock Exhaust"
+    },
+    {
+      "name": "DS50 Stock Exhaust"
+    },
+    {
+      "name": "Cross Diablo Stock Exhaust"
+    },
+    {
+      "name": "Cross Stock Exhaust"
+    },
+    {
+      "name": "Campeona Stock Exhaust"
+    },
+    {
+      "name": "C-5 Diablo Electric Start Stock Exhaust"
+    },
+    {
+      "name": "C-5 Diablo Stock Exhaust"
+    },
+    {
+      "name": "Antorcha Especial Stock Exhaust"
+    },
+    {
+      "name": "Antorcha Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Variant Sport R Stock Forks"
+    },
+    {
+      "name": "Variant Red Bullet Stock Forks"
+    },
+    {
+      "name": "Variant Courier Stock Forks"
+    },
+    {
+      "name": "Variant Box Stock Forks"
+    },
+    {
+      "name": "Variant Stock Forks"
+    },
+    {
+      "name": "Tricampeona Stock Forks"
+    },
+    {
+      "name": "TT Stock Forks"
+    },
+    {
+      "name": "SLE Stock Forks"
+    },
+    {
+      "name": "SL Stock Forks"
+    },
+    {
+      "name": "Revolution GS Stock Forks"
+    },
+    {
+      "name": "Revolution Stock Forks"
+    },
+    {
+      "name": "RD-50 Stock Forks"
+    },
+    {
+      "name": "Olimpica Stock Forks"
+    },
+    {
+      "name": "N Stock Forks"
+    },
+    {
+      "name": "Montreal 4V Stock Forks"
+    },
+    {
+      "name": "Laguna Sport Stock Forks"
+    },
+    {
+      "name": "Laguna Electric Start Stock Forks"
+    },
+    {
+      "name": "Laguna Stock Forks"
+    },
+    {
+      "name": "GTS4V Stock Forks"
+    },
+    {
+      "name": "GT4V Stock Forks"
+    },
+    {
+      "name": "E Stock Forks"
+    },
+    {
+      "name": "Diablo Super Stock Forks"
+    },
+    {
+      "name": "DS50 Stock Forks"
+    },
+    {
+      "name": "Cross Diablo Stock Forks"
+    },
+    {
+      "name": "Cross Stock Forks"
+    },
+    {
+      "name": "Campeona Stock Forks"
+    },
+    {
+      "name": "C-5 Diablo Electric Start Stock Forks"
+    },
+    {
+      "name": "C-5 Diablo Stock Forks"
+    },
+    {
+      "name": "Antorcha Especial Stock Forks"
+    },
+    {
+      "name": "Antorcha Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Variant Sport R Stock Wheels"
+    },
+    {
+      "name": "Variant Red Bullet Stock Wheels"
+    },
+    {
+      "name": "Variant Courier Stock Wheels"
+    },
+    {
+      "name": "Variant Box Stock Wheels"
+    },
+    {
+      "name": "Variant Stock Wheels"
+    },
+    {
+      "name": "Tricampeona Stock Wheels"
+    },
+    {
+      "name": "TT Stock Wheels"
+    },
+    {
+      "name": "SLE Stock Wheels"
+    },
+    {
+      "name": "SL Stock Wheels"
+    },
+    {
+      "name": "Revolution GS Stock Wheels"
+    },
+    {
+      "name": "Revolution Stock Wheels"
+    },
+    {
+      "name": "RD-50 Stock Wheels"
+    },
+    {
+      "name": "Olimpica Stock Wheels"
+    },
+    {
+      "name": "N Stock Wheels"
+    },
+    {
+      "name": "Montreal 4V Stock Wheels"
+    },
+    {
+      "name": "Laguna Sport Stock Wheels"
+    },
+    {
+      "name": "Laguna Electric Start Stock Wheels"
+    },
+    {
+      "name": "Laguna Stock Wheels"
+    },
+    {
+      "name": "GTS4V Stock Wheels"
+    },
+    {
+      "name": "GT4V Stock Wheels"
+    },
+    {
+      "name": "E Stock Wheels"
+    },
+    {
+      "name": "Diablo Super Stock Wheels"
+    },
+    {
+      "name": "DS50 Stock Wheels"
+    },
+    {
+      "name": "Cross Diablo Stock Wheels"
+    },
+    {
+      "name": "Cross Stock Wheels"
+    },
+    {
+      "name": "Campeona Stock Wheels"
+    },
+    {
+      "name": "C-5 Diablo Electric Start Stock Wheels"
+    },
+    {
+      "name": "C-5 Diablo Stock Wheels"
+    },
+    {
+      "name": "Antorcha Especial Stock Wheels"
+    },
+    {
+      "name": "Antorcha Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Variant Sport R Stock Cylinder"
+    },
+    {
+      "name": "Variant Red Bullet Stock Cylinder"
+    },
+    {
+      "name": "Variant Courier Stock Cylinder"
+    },
+    {
+      "name": "Variant Box Stock Cylinder"
+    },
+    {
+      "name": "Variant Stock Cylinder"
+    },
+    {
+      "name": "Tricampeona Stock Cylinder"
+    },
+    {
+      "name": "TT Stock Cylinder"
+    },
+    {
+      "name": "SLE Stock Cylinder"
+    },
+    {
+      "name": "SL Stock Cylinder"
+    },
+    {
+      "name": "Revolution GS Stock Cylinder"
+    },
+    {
+      "name": "Revolution Stock Cylinder"
+    },
+    {
+      "name": "RD-50 Stock Cylinder"
+    },
+    {
+      "name": "Olimpica Stock Cylinder"
+    },
+    {
+      "name": "N Stock Cylinder"
+    },
+    {
+      "name": "Montreal 4V Stock Cylinder"
+    },
+    {
+      "name": "Laguna Sport Stock Cylinder"
+    },
+    {
+      "name": "Laguna Electric Start Stock Cylinder"
+    },
+    {
+      "name": "Laguna Stock Cylinder"
+    },
+    {
+      "name": "GTS4V Stock Cylinder"
+    },
+    {
+      "name": "GT4V Stock Cylinder"
+    },
+    {
+      "name": "E Stock Cylinder"
+    },
+    {
+      "name": "Diablo Super Stock Cylinder"
+    },
+    {
+      "name": "DS50 Stock Cylinder"
+    },
+    {
+      "name": "Cross Diablo Stock Cylinder"
+    },
+    {
+      "name": "Cross Stock Cylinder"
+    },
+    {
+      "name": "Campeona Stock Cylinder"
+    },
+    {
+      "name": "C-5 Diablo Electric Start Stock Cylinder"
+    },
+    {
+      "name": "C-5 Diablo Stock Cylinder"
+    },
+    {
+      "name": "Antorcha Especial Stock Cylinder"
+    },
+    {
+      "name": "Antorcha Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Antorcha"
+    },
+    {
+      "name": "Antorcha Especial"
+    },
+    {
+      "name": "C-5 Diablo"
+    },
+    {
+      "name": "C-5 Diablo Electric Start"
+    },
+    {
+      "name": "Campeona"
+    },
+    {
+      "name": "Cross"
+    },
+    {
+      "name": "Cross Diablo"
+    },
+    {
+      "name": "DS50"
+    },
+    {
+      "name": "Diablo Super"
+    },
+    {
+      "name": "E"
+    },
+    {
+      "name": "GT4V"
+    },
+    {
+      "name": "GTS4V"
+    },
+    {
+      "name": "Laguna"
+    },
+    {
+      "name": "Laguna Electric Start"
+    },
+    {
+      "name": "Laguna Sport"
+    },
+    {
+      "name": "Montreal 4V"
+    },
+    {
+      "name": "N"
+    },
+    {
+      "name": "Olimpica"
+    },
+    {
+      "name": "RD-50"
+    },
+    {
+      "name": "Revolution"
+    },
+    {
+      "name": "Revolution GS"
+    },
+    {
+      "name": "SL"
+    },
+    {
+      "name": "SLE"
+    },
+    {
+      "name": "TT"
+    },
+    {
+      "name": "Tricampeona"
+    },
+    {
+      "name": "Variant"
+    },
+    {
+      "name": "Variant Box"
+    },
+    {
+      "name": "Variant Courier"
+    },
+    {
+      "name": "Variant Red Bullet"
+    },
+    {
+      "name": "Variant Sport R"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

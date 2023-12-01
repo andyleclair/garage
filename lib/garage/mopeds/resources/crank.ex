@@ -32,7 +32,7 @@ defmodule Garage.Mopeds.Crank do
     attribute :name, :string, allow_nil?: false
     attribute :description, :string, default: ""
     # in mm
-    attribute :stroke, :integer, allow_nil?: false
+    attribute :stroke, :integer
 
     create_timestamp :inserted_at
     update_timestamp :updated_at
@@ -41,7 +41,6 @@ defmodule Garage.Mopeds.Crank do
   relationships do
     belongs_to :engine, Engine do
       attribute_writable? true
-      allow_nil? false
     end
 
     belongs_to :manufacturer, Garage.Mopeds.Manufacturer do

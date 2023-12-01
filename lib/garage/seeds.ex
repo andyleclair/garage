@@ -2,39 +2,86 @@ defmodule Garage.Seeds do
   @moduledoc """
   Module to encapsulate seed logic
   """
+  alias Garage.Mopeds.Manufacturer
   alias Garage.Mopeds
 
   def seeds do
-    manufacturers_and_models =
-      Path.join([:code.priv_dir(:garage), "repo", "makes_and_models.json"])
-      |> File.read!()
-      |> Jason.decode!()
-      |> Enum.map(fn {manufacturer, models} ->
-        models = for model <- models, into: MapSet.new(), do: %{name: model["model"]}
+    root = Path.join([:code.priv_dir(:garage), "repo", "seeds"])
 
-        stock_parts =
-          Enum.reduce(models, %{exhausts: [], forks: [], wheels: []}, fn %{name: model}, acc ->
+    root
+    |> File.ls!()
+    |> Enum.map(fn path ->
+      IO.puts("Reading #{Path.join([root, path])}")
+
+      json =
+        Path.join([root, path])
+        |> File.read!()
+        |> Jason.decode!()
+
+      Ash.Changeset.for_action(Manufacturer, :bulk_create, json)
+      |> Mopeds.create!()
+    end)
+  end
+
+  def generate_seeds do
+    Path.join([:code.priv_dir(:garage), "repo", "makes_and_models.json"])
+    |> File.read!()
+    |> Jason.decode!()
+    |> Enum.map(fn {manufacturer, models} ->
+      outfile = File.open!("priv/repo/seeds/#{manufacturer}.json", [:write, :utf8])
+
+      models = for model <- models, into: MapSet.new(), do: %{name: model["model"]}
+
+      stock_parts =
+        Enum.reduce(
+          models,
+          %{
+            exhausts: [],
+            forks: [],
+            wheels: [],
+            cylinders: []
+          },
+          fn %{
+               name: model
+             },
+             acc ->
             %{
               acc
               | exhausts: [%{name: "#{model} Stock Exhaust"} | acc.exhausts],
                 forks: [%{name: "#{model} Stock Forks"} | acc.forks],
-                wheels: [%{name: "#{model} Stock Wheels"} | acc.wheels]
+                wheels: [%{name: "#{model} Stock Wheels"} | acc.wheels],
+                cylinders: [%{name: "#{model} Stock Cylinder"} | acc.cylinders]
             }
-          end)
+          end
+        )
 
+      data =
         %{
           name: manufacturer,
           models: MapSet.to_list(models),
+          engines: [],
+          clutches: [
+            %{name: "Stock Clutch"}
+          ],
+          cranks: [
+            %{name: "Stock Crank"}
+          ],
+          ignitions: [
+            %{name: "Stock Ignition"}
+          ],
+          pulleys: [],
+          variators: [],
           category: :moped,
           exhausts: stock_parts.exhausts,
           forks: stock_parts.forks,
-          wheels: stock_parts.wheels
+          wheels: stock_parts.wheels,
+          cylinders: stock_parts.cylinders
         }
-      end)
+        |> Jason.encode!()
+        |> Jason.Formatter.pretty_print()
 
-    Mopeds.bulk_create!(manufacturers_and_models, Garage.Mopeds.Manufacturer, :bulk_create,
-      return_errors?: true,
-      stop_on_error?: true
-    )
+      IO.write(outfile, data)
+      File.close(outfile)
+    end)
   end
 end

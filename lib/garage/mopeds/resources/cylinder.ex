@@ -41,7 +41,6 @@ defmodule Garage.Mopeds.Cylinder do
     belongs_to :engine, Engine do
       api Garage.Mopeds
       attribute_writable? true
-      allow_nil? false
     end
 
     belongs_to :manufacturer, Garage.Mopeds.Manufacturer do

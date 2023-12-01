@@ -1,0 +1,62 @@
+{
+  "name": "Yardman",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Mo-Trek Stock Exhaust"
+    },
+    {
+      "name": "Easy Rider Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Mo-Trek Stock Forks"
+    },
+    {
+      "name": "Easy Rider Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Mo-Trek Stock Wheels"
+    },
+    {
+      "name": "Easy Rider Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Mo-Trek Stock Cylinder"
+    },
+    {
+      "name": "Easy Rider Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Easy Rider"
+    },
+    {
+      "name": "Mo-Trek"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Cuyler",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Get-Around C-1 Stock Exhaust"
+    },
+    {
+      "name": "C-1a Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Get-Around C-1 Stock Forks"
+    },
+    {
+      "name": "C-1a Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Get-Around C-1 Stock Wheels"
+    },
+    {
+      "name": "C-1a Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Get-Around C-1 Stock Cylinder"
+    },
+    {
+      "name": "C-1a Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "C-1a"
+    },
+    {
+      "name": "Get-Around C-1"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

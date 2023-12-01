@@ -1,0 +1,137 @@
+{
+  "name": "Gazelle",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Tour Stock Exhaust"
+    },
+    {
+      "name": "Isabella Stock Exhaust"
+    },
+    {
+      "name": "Grant Stock Exhaust"
+    },
+    {
+      "name": "GS50 Stock Exhaust"
+    },
+    {
+      "name": "GA50 Stock Exhaust"
+    },
+    {
+      "name": "Flyte Stock Exhaust"
+    },
+    {
+      "name": "Apollo Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Tour Stock Forks"
+    },
+    {
+      "name": "Isabella Stock Forks"
+    },
+    {
+      "name": "Grant Stock Forks"
+    },
+    {
+      "name": "GS50 Stock Forks"
+    },
+    {
+      "name": "GA50 Stock Forks"
+    },
+    {
+      "name": "Flyte Stock Forks"
+    },
+    {
+      "name": "Apollo Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Tour Stock Wheels"
+    },
+    {
+      "name": "Isabella Stock Wheels"
+    },
+    {
+      "name": "Grant Stock Wheels"
+    },
+    {
+      "name": "GS50 Stock Wheels"
+    },
+    {
+      "name": "GA50 Stock Wheels"
+    },
+    {
+      "name": "Flyte Stock Wheels"
+    },
+    {
+      "name": "Apollo Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Tour Stock Cylinder"
+    },
+    {
+      "name": "Isabella Stock Cylinder"
+    },
+    {
+      "name": "Grant Stock Cylinder"
+    },
+    {
+      "name": "GS50 Stock Cylinder"
+    },
+    {
+      "name": "GA50 Stock Cylinder"
+    },
+    {
+      "name": "Flyte Stock Cylinder"
+    },
+    {
+      "name": "Apollo Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Apollo"
+    },
+    {
+      "name": "Flyte"
+    },
+    {
+      "name": "GA50"
+    },
+    {
+      "name": "GS50"
+    },
+    {
+      "name": "Grant"
+    },
+    {
+      "name": "Isabella"
+    },
+    {
+      "name": "Tour"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

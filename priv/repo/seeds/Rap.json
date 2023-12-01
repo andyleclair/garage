@@ -1,0 +1,137 @@
+{
+  "name": "Rap",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Super Stock Exhaust"
+    },
+    {
+      "name": "Ster Stock Exhaust"
+    },
+    {
+      "name": "Speedo Stock Exhaust"
+    },
+    {
+      "name": "Rocky Stock Exhaust"
+    },
+    {
+      "name": "Matadore Stock Exhaust"
+    },
+    {
+      "name": "Imperial Stock Exhaust"
+    },
+    {
+      "name": "Crown Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Super Stock Forks"
+    },
+    {
+      "name": "Ster Stock Forks"
+    },
+    {
+      "name": "Speedo Stock Forks"
+    },
+    {
+      "name": "Rocky Stock Forks"
+    },
+    {
+      "name": "Matadore Stock Forks"
+    },
+    {
+      "name": "Imperial Stock Forks"
+    },
+    {
+      "name": "Crown Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Super Stock Wheels"
+    },
+    {
+      "name": "Ster Stock Wheels"
+    },
+    {
+      "name": "Speedo Stock Wheels"
+    },
+    {
+      "name": "Rocky Stock Wheels"
+    },
+    {
+      "name": "Matadore Stock Wheels"
+    },
+    {
+      "name": "Imperial Stock Wheels"
+    },
+    {
+      "name": "Crown Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Super Stock Cylinder"
+    },
+    {
+      "name": "Ster Stock Cylinder"
+    },
+    {
+      "name": "Speedo Stock Cylinder"
+    },
+    {
+      "name": "Rocky Stock Cylinder"
+    },
+    {
+      "name": "Matadore Stock Cylinder"
+    },
+    {
+      "name": "Imperial Stock Cylinder"
+    },
+    {
+      "name": "Crown Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Crown"
+    },
+    {
+      "name": "Imperial"
+    },
+    {
+      "name": "Matadore"
+    },
+    {
+      "name": "Rocky"
+    },
+    {
+      "name": "Speedo"
+    },
+    {
+      "name": "Ster"
+    },
+    {
+      "name": "Super"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

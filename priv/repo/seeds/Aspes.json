@@ -1,0 +1,107 @@
+{
+  "name": "Aspes",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Sioux Mini Stock Exhaust"
+    },
+    {
+      "name": "Sioux KSL Stock Exhaust"
+    },
+    {
+      "name": "Sioux KS Stock Exhaust"
+    },
+    {
+      "name": "Sioux 50 Stock Exhaust"
+    },
+    {
+      "name": "Sioux 16 America Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Sioux Mini Stock Forks"
+    },
+    {
+      "name": "Sioux KSL Stock Forks"
+    },
+    {
+      "name": "Sioux KS Stock Forks"
+    },
+    {
+      "name": "Sioux 50 Stock Forks"
+    },
+    {
+      "name": "Sioux 16 America Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Sioux Mini Stock Wheels"
+    },
+    {
+      "name": "Sioux KSL Stock Wheels"
+    },
+    {
+      "name": "Sioux KS Stock Wheels"
+    },
+    {
+      "name": "Sioux 50 Stock Wheels"
+    },
+    {
+      "name": "Sioux 16 America Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Sioux Mini Stock Cylinder"
+    },
+    {
+      "name": "Sioux KSL Stock Cylinder"
+    },
+    {
+      "name": "Sioux KS Stock Cylinder"
+    },
+    {
+      "name": "Sioux 50 Stock Cylinder"
+    },
+    {
+      "name": "Sioux 16 America Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Sioux 16 America"
+    },
+    {
+      "name": "Sioux 50"
+    },
+    {
+      "name": "Sioux KS"
+    },
+    {
+      "name": "Sioux KSL"
+    },
+    {
+      "name": "Sioux Mini"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

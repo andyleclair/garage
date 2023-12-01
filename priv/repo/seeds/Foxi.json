@@ -1,0 +1,212 @@
+{
+  "name": "Foxi",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Super Sport Stock Exhaust"
+    },
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "Silver Foxi Stock Exhaust"
+    },
+    {
+      "name": "Salsburg Stock Exhaust"
+    },
+    {
+      "name": "S Stock Exhaust"
+    },
+    {
+      "name": "Red Foxi Stock Exhaust"
+    },
+    {
+      "name": "GT Sport Stock Exhaust"
+    },
+    {
+      "name": "GT Deluxe Stock Exhaust"
+    },
+    {
+      "name": "GT Stock Exhaust"
+    },
+    {
+      "name": "Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Baron Stock Exhaust"
+    },
+    {
+      "name": "Amigo Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Super Sport Stock Forks"
+    },
+    {
+      "name": "Sport Stock Forks"
+    },
+    {
+      "name": "Silver Foxi Stock Forks"
+    },
+    {
+      "name": "Salsburg Stock Forks"
+    },
+    {
+      "name": "S Stock Forks"
+    },
+    {
+      "name": "Red Foxi Stock Forks"
+    },
+    {
+      "name": "GT Sport Stock Forks"
+    },
+    {
+      "name": "GT Deluxe Stock Forks"
+    },
+    {
+      "name": "GT Stock Forks"
+    },
+    {
+      "name": "Deluxe Stock Forks"
+    },
+    {
+      "name": "Baron Stock Forks"
+    },
+    {
+      "name": "Amigo Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Super Sport Stock Wheels"
+    },
+    {
+      "name": "Sport Stock Wheels"
+    },
+    {
+      "name": "Silver Foxi Stock Wheels"
+    },
+    {
+      "name": "Salsburg Stock Wheels"
+    },
+    {
+      "name": "S Stock Wheels"
+    },
+    {
+      "name": "Red Foxi Stock Wheels"
+    },
+    {
+      "name": "GT Sport Stock Wheels"
+    },
+    {
+      "name": "GT Deluxe Stock Wheels"
+    },
+    {
+      "name": "GT Stock Wheels"
+    },
+    {
+      "name": "Deluxe Stock Wheels"
+    },
+    {
+      "name": "Baron Stock Wheels"
+    },
+    {
+      "name": "Amigo Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Super Sport Stock Cylinder"
+    },
+    {
+      "name": "Sport Stock Cylinder"
+    },
+    {
+      "name": "Silver Foxi Stock Cylinder"
+    },
+    {
+      "name": "Salsburg Stock Cylinder"
+    },
+    {
+      "name": "S Stock Cylinder"
+    },
+    {
+      "name": "Red Foxi Stock Cylinder"
+    },
+    {
+      "name": "GT Sport Stock Cylinder"
+    },
+    {
+      "name": "GT Deluxe Stock Cylinder"
+    },
+    {
+      "name": "GT Stock Cylinder"
+    },
+    {
+      "name": "Deluxe Stock Cylinder"
+    },
+    {
+      "name": "Baron Stock Cylinder"
+    },
+    {
+      "name": "Amigo Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Amigo"
+    },
+    {
+      "name": "Baron"
+    },
+    {
+      "name": "Deluxe"
+    },
+    {
+      "name": "GT"
+    },
+    {
+      "name": "GT Deluxe"
+    },
+    {
+      "name": "GT Sport"
+    },
+    {
+      "name": "Red Foxi"
+    },
+    {
+      "name": "S"
+    },
+    {
+      "name": "Salsburg"
+    },
+    {
+      "name": "Silver Foxi"
+    },
+    {
+      "name": "Sport"
+    },
+    {
+      "name": "Super Sport"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

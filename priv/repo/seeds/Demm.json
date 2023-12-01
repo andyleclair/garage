@@ -1,0 +1,167 @@
+{
+  "name": "Demm",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Smily Stock Exhaust"
+    },
+    {
+      "name": "Scouts Stock Exhaust"
+    },
+    {
+      "name": "RG6 Stock Exhaust"
+    },
+    {
+      "name": "Panther Stock Exhaust"
+    },
+    {
+      "name": "Joy Stock Exhaust"
+    },
+    {
+      "name": "Dove Stock Exhaust"
+    },
+    {
+      "name": "Condor 4 Stock Exhaust"
+    },
+    {
+      "name": "Capri Stock Exhaust"
+    },
+    {
+      "name": "Brio Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Smily Stock Forks"
+    },
+    {
+      "name": "Scouts Stock Forks"
+    },
+    {
+      "name": "RG6 Stock Forks"
+    },
+    {
+      "name": "Panther Stock Forks"
+    },
+    {
+      "name": "Joy Stock Forks"
+    },
+    {
+      "name": "Dove Stock Forks"
+    },
+    {
+      "name": "Condor 4 Stock Forks"
+    },
+    {
+      "name": "Capri Stock Forks"
+    },
+    {
+      "name": "Brio Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Smily Stock Wheels"
+    },
+    {
+      "name": "Scouts Stock Wheels"
+    },
+    {
+      "name": "RG6 Stock Wheels"
+    },
+    {
+      "name": "Panther Stock Wheels"
+    },
+    {
+      "name": "Joy Stock Wheels"
+    },
+    {
+      "name": "Dove Stock Wheels"
+    },
+    {
+      "name": "Condor 4 Stock Wheels"
+    },
+    {
+      "name": "Capri Stock Wheels"
+    },
+    {
+      "name": "Brio Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Smily Stock Cylinder"
+    },
+    {
+      "name": "Scouts Stock Cylinder"
+    },
+    {
+      "name": "RG6 Stock Cylinder"
+    },
+    {
+      "name": "Panther Stock Cylinder"
+    },
+    {
+      "name": "Joy Stock Cylinder"
+    },
+    {
+      "name": "Dove Stock Cylinder"
+    },
+    {
+      "name": "Condor 4 Stock Cylinder"
+    },
+    {
+      "name": "Capri Stock Cylinder"
+    },
+    {
+      "name": "Brio Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Brio"
+    },
+    {
+      "name": "Capri"
+    },
+    {
+      "name": "Condor 4"
+    },
+    {
+      "name": "Dove"
+    },
+    {
+      "name": "Joy"
+    },
+    {
+      "name": "Panther"
+    },
+    {
+      "name": "RG6"
+    },
+    {
+      "name": "Scouts"
+    },
+    {
+      "name": "Smily"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

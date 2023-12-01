@@ -1,0 +1,92 @@
+{
+  "name": "J.C. Penney",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Swinger 2 Stock Exhaust"
+    },
+    {
+      "name": "Swinger Stock Exhaust"
+    },
+    {
+      "name": "Pinto 2 Stock Exhaust"
+    },
+    {
+      "name": "Pinto Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Swinger 2 Stock Forks"
+    },
+    {
+      "name": "Swinger Stock Forks"
+    },
+    {
+      "name": "Pinto 2 Stock Forks"
+    },
+    {
+      "name": "Pinto Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Swinger 2 Stock Wheels"
+    },
+    {
+      "name": "Swinger Stock Wheels"
+    },
+    {
+      "name": "Pinto 2 Stock Wheels"
+    },
+    {
+      "name": "Pinto Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Swinger 2 Stock Cylinder"
+    },
+    {
+      "name": "Swinger Stock Cylinder"
+    },
+    {
+      "name": "Pinto 2 Stock Cylinder"
+    },
+    {
+      "name": "Pinto Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Pinto"
+    },
+    {
+      "name": "Pinto 2"
+    },
+    {
+      "name": "Swinger"
+    },
+    {
+      "name": "Swinger 2"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

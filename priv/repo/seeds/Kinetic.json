@@ -1,0 +1,137 @@
+{
+  "name": "Kinetic",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "TFR Stock Exhaust"
+    },
+    {
+      "name": "Safari V2 Stock Exhaust"
+    },
+    {
+      "name": "Magnum Stock Exhaust"
+    },
+    {
+      "name": "Luna TFR Stock Exhaust"
+    },
+    {
+      "name": "Luna Super Stock Exhaust"
+    },
+    {
+      "name": "Luna Stock Exhaust"
+    },
+    {
+      "name": "K4 100 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "TFR Stock Forks"
+    },
+    {
+      "name": "Safari V2 Stock Forks"
+    },
+    {
+      "name": "Magnum Stock Forks"
+    },
+    {
+      "name": "Luna TFR Stock Forks"
+    },
+    {
+      "name": "Luna Super Stock Forks"
+    },
+    {
+      "name": "Luna Stock Forks"
+    },
+    {
+      "name": "K4 100 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "TFR Stock Wheels"
+    },
+    {
+      "name": "Safari V2 Stock Wheels"
+    },
+    {
+      "name": "Magnum Stock Wheels"
+    },
+    {
+      "name": "Luna TFR Stock Wheels"
+    },
+    {
+      "name": "Luna Super Stock Wheels"
+    },
+    {
+      "name": "Luna Stock Wheels"
+    },
+    {
+      "name": "K4 100 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "TFR Stock Cylinder"
+    },
+    {
+      "name": "Safari V2 Stock Cylinder"
+    },
+    {
+      "name": "Magnum Stock Cylinder"
+    },
+    {
+      "name": "Luna TFR Stock Cylinder"
+    },
+    {
+      "name": "Luna Super Stock Cylinder"
+    },
+    {
+      "name": "Luna Stock Cylinder"
+    },
+    {
+      "name": "K4 100 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "K4 100"
+    },
+    {
+      "name": "Luna"
+    },
+    {
+      "name": "Luna Super"
+    },
+    {
+      "name": "Luna TFR"
+    },
+    {
+      "name": "Magnum"
+    },
+    {
+      "name": "Safari V2"
+    },
+    {
+      "name": "TFR"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

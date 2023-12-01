@@ -1,0 +1,47 @@
+{
+  "name": "KKM",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Mopet Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Mopet Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Mopet Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Mopet Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Mopet"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

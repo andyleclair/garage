@@ -39,6 +39,7 @@
   [x] forks
   [x] wheels
 - [ ] Image flagging
+- [ ] Client-side image upload + auto upload
 - [ ] Tools
   - Gearing calculator
   - blowdown etc.

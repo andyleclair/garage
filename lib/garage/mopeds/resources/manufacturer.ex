@@ -12,32 +12,42 @@ defmodule Garage.Mopeds.Manufacturer do
     end
 
     create :bulk_create do
+      argument :name, :string, allow_nil?: false
+
       argument :models, {:array, :map} do
         allow_nil? false
       end
 
-      argument :exhausts, {:array, :map} do
-        allow_nil? false
-      end
+      argument :engines, {:array, :map}
 
-      argument :forks, {:array, :map} do
-        allow_nil? false
-      end
-
-      argument :wheels, {:array, :map} do
-        allow_nil? false
-      end
+      argument :clutches, {:array, :map}
+      argument :cranks, {:array, :map}
+      argument :ignitions, {:array, :map}
+      argument :pulleys, {:array, :map}
+      argument :variators, {:array, :map}
 
       argument :category, :atom do
         allow_nil? false
       end
 
+      argument :exhausts, {:array, :map}
+      argument :forks, {:array, :map}
+      argument :wheels, {:array, :map}
+      argument :cylinders, {:array, :map}
       change set_attribute(:category, arg(:category))
+      change set_attribute(:name, arg(:name))
       change Garage.Changes.SetSlug
       change manage_relationship(:models, type: :create)
+      change manage_relationship(:engines, type: :create)
+      change manage_relationship(:clutches, type: :create)
+      change manage_relationship(:cranks, type: :create)
+      change manage_relationship(:ignitions, type: :create)
+      change manage_relationship(:pulleys, type: :create)
+      change manage_relationship(:variators, type: :create)
       change manage_relationship(:exhausts, type: :create)
       change manage_relationship(:forks, type: :create)
       change manage_relationship(:wheels, type: :create)
+      change manage_relationship(:cylinders, type: :create)
     end
 
     read :by_id do

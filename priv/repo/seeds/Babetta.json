@@ -1,0 +1,167 @@
+{
+  "name": "Babetta",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "300 Stock Exhaust"
+    },
+    {
+      "name": "215 Stock Exhaust"
+    },
+    {
+      "name": "213 Stock Exhaust"
+    },
+    {
+      "name": "210 Stock Exhaust"
+    },
+    {
+      "name": "207 Stock Exhaust"
+    },
+    {
+      "name": "206 Stock Exhaust"
+    },
+    {
+      "name": "200 Stock Exhaust"
+    },
+    {
+      "name": "134 Stock Exhaust"
+    },
+    {
+      "name": "100 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "300 Stock Forks"
+    },
+    {
+      "name": "215 Stock Forks"
+    },
+    {
+      "name": "213 Stock Forks"
+    },
+    {
+      "name": "210 Stock Forks"
+    },
+    {
+      "name": "207 Stock Forks"
+    },
+    {
+      "name": "206 Stock Forks"
+    },
+    {
+      "name": "200 Stock Forks"
+    },
+    {
+      "name": "134 Stock Forks"
+    },
+    {
+      "name": "100 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "300 Stock Wheels"
+    },
+    {
+      "name": "215 Stock Wheels"
+    },
+    {
+      "name": "213 Stock Wheels"
+    },
+    {
+      "name": "210 Stock Wheels"
+    },
+    {
+      "name": "207 Stock Wheels"
+    },
+    {
+      "name": "206 Stock Wheels"
+    },
+    {
+      "name": "200 Stock Wheels"
+    },
+    {
+      "name": "134 Stock Wheels"
+    },
+    {
+      "name": "100 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "300 Stock Cylinder"
+    },
+    {
+      "name": "215 Stock Cylinder"
+    },
+    {
+      "name": "213 Stock Cylinder"
+    },
+    {
+      "name": "210 Stock Cylinder"
+    },
+    {
+      "name": "207 Stock Cylinder"
+    },
+    {
+      "name": "206 Stock Cylinder"
+    },
+    {
+      "name": "200 Stock Cylinder"
+    },
+    {
+      "name": "134 Stock Cylinder"
+    },
+    {
+      "name": "100 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "100"
+    },
+    {
+      "name": "134"
+    },
+    {
+      "name": "200"
+    },
+    {
+      "name": "206"
+    },
+    {
+      "name": "207"
+    },
+    {
+      "name": "210"
+    },
+    {
+      "name": "213"
+    },
+    {
+      "name": "215"
+    },
+    {
+      "name": "300"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

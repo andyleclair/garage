@@ -1,0 +1,137 @@
+{
+  "name": "Magneet",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Thunderbird Stock Exhaust"
+    },
+    {
+      "name": "Sprintmaster Stock Exhaust"
+    },
+    {
+      "name": "Luxe Stock Exhaust"
+    },
+    {
+      "name": "Globemaster Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Globemaster Stock Exhaust"
+    },
+    {
+      "name": "Commodore Stock Exhaust"
+    },
+    {
+      "name": "Cheetah Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Thunderbird Stock Forks"
+    },
+    {
+      "name": "Sprintmaster Stock Forks"
+    },
+    {
+      "name": "Luxe Stock Forks"
+    },
+    {
+      "name": "Globemaster Deluxe Stock Forks"
+    },
+    {
+      "name": "Globemaster Stock Forks"
+    },
+    {
+      "name": "Commodore Stock Forks"
+    },
+    {
+      "name": "Cheetah Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Thunderbird Stock Wheels"
+    },
+    {
+      "name": "Sprintmaster Stock Wheels"
+    },
+    {
+      "name": "Luxe Stock Wheels"
+    },
+    {
+      "name": "Globemaster Deluxe Stock Wheels"
+    },
+    {
+      "name": "Globemaster Stock Wheels"
+    },
+    {
+      "name": "Commodore Stock Wheels"
+    },
+    {
+      "name": "Cheetah Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Thunderbird Stock Cylinder"
+    },
+    {
+      "name": "Sprintmaster Stock Cylinder"
+    },
+    {
+      "name": "Luxe Stock Cylinder"
+    },
+    {
+      "name": "Globemaster Deluxe Stock Cylinder"
+    },
+    {
+      "name": "Globemaster Stock Cylinder"
+    },
+    {
+      "name": "Commodore Stock Cylinder"
+    },
+    {
+      "name": "Cheetah Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Cheetah"
+    },
+    {
+      "name": "Commodore"
+    },
+    {
+      "name": "Globemaster"
+    },
+    {
+      "name": "Globemaster Deluxe"
+    },
+    {
+      "name": "Luxe"
+    },
+    {
+      "name": "Sprintmaster"
+    },
+    {
+      "name": "Thunderbird"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Triumph",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Knirps Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Knirps Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Knirps Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Knirps Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Knirps"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

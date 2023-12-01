@@ -1,0 +1,317 @@
+{
+  "name": "Malanca",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Zeta Stock Exhaust"
+    },
+    {
+      "name": "Turismo Turbo Stock Exhaust"
+    },
+    {
+      "name": "Tigrotto Stock Exhaust"
+    },
+    {
+      "name": "Tigre Stock Exhaust"
+    },
+    {
+      "name": "Testa Rossa Stock Exhaust"
+    },
+    {
+      "name": "Roxi Stock Exhaust"
+    },
+    {
+      "name": "Minizeta Stock Exhaust"
+    },
+    {
+      "name": "Mascotte B Stock Exhaust"
+    },
+    {
+      "name": "Lord Stock Exhaust"
+    },
+    {
+      "name": "Leoncino Stock Exhaust"
+    },
+    {
+      "name": "Jolly B Stock Exhaust"
+    },
+    {
+      "name": "Jolly 3M Stock Exhaust"
+    },
+    {
+      "name": "Duplimatic Stock Exhaust"
+    },
+    {
+      "name": "Due PIU Stock Exhaust"
+    },
+    {
+      "name": "Cross Stock Exhaust"
+    },
+    {
+      "name": "Country Special Stock Exhaust"
+    },
+    {
+      "name": "Competizione Stock Exhaust"
+    },
+    {
+      "name": "Big Stock Exhaust"
+    },
+    {
+      "name": "Bibi Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Zeta Stock Forks"
+    },
+    {
+      "name": "Turismo Turbo Stock Forks"
+    },
+    {
+      "name": "Tigrotto Stock Forks"
+    },
+    {
+      "name": "Tigre Stock Forks"
+    },
+    {
+      "name": "Testa Rossa Stock Forks"
+    },
+    {
+      "name": "Roxi Stock Forks"
+    },
+    {
+      "name": "Minizeta Stock Forks"
+    },
+    {
+      "name": "Mascotte B Stock Forks"
+    },
+    {
+      "name": "Lord Stock Forks"
+    },
+    {
+      "name": "Leoncino Stock Forks"
+    },
+    {
+      "name": "Jolly B Stock Forks"
+    },
+    {
+      "name": "Jolly 3M Stock Forks"
+    },
+    {
+      "name": "Duplimatic Stock Forks"
+    },
+    {
+      "name": "Due PIU Stock Forks"
+    },
+    {
+      "name": "Cross Stock Forks"
+    },
+    {
+      "name": "Country Special Stock Forks"
+    },
+    {
+      "name": "Competizione Stock Forks"
+    },
+    {
+      "name": "Big Stock Forks"
+    },
+    {
+      "name": "Bibi Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Zeta Stock Wheels"
+    },
+    {
+      "name": "Turismo Turbo Stock Wheels"
+    },
+    {
+      "name": "Tigrotto Stock Wheels"
+    },
+    {
+      "name": "Tigre Stock Wheels"
+    },
+    {
+      "name": "Testa Rossa Stock Wheels"
+    },
+    {
+      "name": "Roxi Stock Wheels"
+    },
+    {
+      "name": "Minizeta Stock Wheels"
+    },
+    {
+      "name": "Mascotte B Stock Wheels"
+    },
+    {
+      "name": "Lord Stock Wheels"
+    },
+    {
+      "name": "Leoncino Stock Wheels"
+    },
+    {
+      "name": "Jolly B Stock Wheels"
+    },
+    {
+      "name": "Jolly 3M Stock Wheels"
+    },
+    {
+      "name": "Duplimatic Stock Wheels"
+    },
+    {
+      "name": "Due PIU Stock Wheels"
+    },
+    {
+      "name": "Cross Stock Wheels"
+    },
+    {
+      "name": "Country Special Stock Wheels"
+    },
+    {
+      "name": "Competizione Stock Wheels"
+    },
+    {
+      "name": "Big Stock Wheels"
+    },
+    {
+      "name": "Bibi Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Zeta Stock Cylinder"
+    },
+    {
+      "name": "Turismo Turbo Stock Cylinder"
+    },
+    {
+      "name": "Tigrotto Stock Cylinder"
+    },
+    {
+      "name": "Tigre Stock Cylinder"
+    },
+    {
+      "name": "Testa Rossa Stock Cylinder"
+    },
+    {
+      "name": "Roxi Stock Cylinder"
+    },
+    {
+      "name": "Minizeta Stock Cylinder"
+    },
+    {
+      "name": "Mascotte B Stock Cylinder"
+    },
+    {
+      "name": "Lord Stock Cylinder"
+    },
+    {
+      "name": "Leoncino Stock Cylinder"
+    },
+    {
+      "name": "Jolly B Stock Cylinder"
+    },
+    {
+      "name": "Jolly 3M Stock Cylinder"
+    },
+    {
+      "name": "Duplimatic Stock Cylinder"
+    },
+    {
+      "name": "Due PIU Stock Cylinder"
+    },
+    {
+      "name": "Cross Stock Cylinder"
+    },
+    {
+      "name": "Country Special Stock Cylinder"
+    },
+    {
+      "name": "Competizione Stock Cylinder"
+    },
+    {
+      "name": "Big Stock Cylinder"
+    },
+    {
+      "name": "Bibi Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Bibi"
+    },
+    {
+      "name": "Big"
+    },
+    {
+      "name": "Competizione"
+    },
+    {
+      "name": "Country Special"
+    },
+    {
+      "name": "Cross"
+    },
+    {
+      "name": "Due PIU"
+    },
+    {
+      "name": "Duplimatic"
+    },
+    {
+      "name": "Jolly 3M"
+    },
+    {
+      "name": "Jolly B"
+    },
+    {
+      "name": "Leoncino"
+    },
+    {
+      "name": "Lord"
+    },
+    {
+      "name": "Mascotte B"
+    },
+    {
+      "name": "Minizeta"
+    },
+    {
+      "name": "Roxi"
+    },
+    {
+      "name": "Testa Rossa"
+    },
+    {
+      "name": "Tigre"
+    },
+    {
+      "name": "Tigrotto"
+    },
+    {
+      "name": "Turismo Turbo"
+    },
+    {
+      "name": "Zeta"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

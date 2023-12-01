@@ -1,0 +1,167 @@
+{
+  "name": "Trac",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Sprint Stock Exhaust"
+    },
+    {
+      "name": "Olympic Stock Exhaust"
+    },
+    {
+      "name": "Metro Stock Exhaust"
+    },
+    {
+      "name": "Liberty Stock Exhaust"
+    },
+    {
+      "name": "Image Stock Exhaust"
+    },
+    {
+      "name": "Hawk Stock Exhaust"
+    },
+    {
+      "name": "Eagle Stock Exhaust"
+    },
+    {
+      "name": "Clipper Stock Exhaust"
+    },
+    {
+      "name": "Blitz Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Sprint Stock Forks"
+    },
+    {
+      "name": "Olympic Stock Forks"
+    },
+    {
+      "name": "Metro Stock Forks"
+    },
+    {
+      "name": "Liberty Stock Forks"
+    },
+    {
+      "name": "Image Stock Forks"
+    },
+    {
+      "name": "Hawk Stock Forks"
+    },
+    {
+      "name": "Eagle Stock Forks"
+    },
+    {
+      "name": "Clipper Stock Forks"
+    },
+    {
+      "name": "Blitz Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Sprint Stock Wheels"
+    },
+    {
+      "name": "Olympic Stock Wheels"
+    },
+    {
+      "name": "Metro Stock Wheels"
+    },
+    {
+      "name": "Liberty Stock Wheels"
+    },
+    {
+      "name": "Image Stock Wheels"
+    },
+    {
+      "name": "Hawk Stock Wheels"
+    },
+    {
+      "name": "Eagle Stock Wheels"
+    },
+    {
+      "name": "Clipper Stock Wheels"
+    },
+    {
+      "name": "Blitz Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Sprint Stock Cylinder"
+    },
+    {
+      "name": "Olympic Stock Cylinder"
+    },
+    {
+      "name": "Metro Stock Cylinder"
+    },
+    {
+      "name": "Liberty Stock Cylinder"
+    },
+    {
+      "name": "Image Stock Cylinder"
+    },
+    {
+      "name": "Hawk Stock Cylinder"
+    },
+    {
+      "name": "Eagle Stock Cylinder"
+    },
+    {
+      "name": "Clipper Stock Cylinder"
+    },
+    {
+      "name": "Blitz Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Blitz"
+    },
+    {
+      "name": "Clipper"
+    },
+    {
+      "name": "Eagle"
+    },
+    {
+      "name": "Hawk"
+    },
+    {
+      "name": "Image"
+    },
+    {
+      "name": "Liberty"
+    },
+    {
+      "name": "Metro"
+    },
+    {
+      "name": "Olympic"
+    },
+    {
+      "name": "Sprint"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

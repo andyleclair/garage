@@ -1,0 +1,707 @@
+{
+  "name": "Batavus",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Bilonet Stock Exhaust"
+    },
+    {
+      "name": "Go-Go V40 Stock Exhaust"
+    },
+    {
+      "name": "Grand Prix Stock Exhaust"
+    },
+    {
+      "name": "HS-50 Stock Exhaust"
+    },
+    {
+      "name": "Tramp Stock Exhaust"
+    },
+    {
+      "name": "Compact Stock Exhaust"
+    },
+    {
+      "name": "FP50 Sport Stock Exhaust"
+    },
+    {
+      "name": "Mondial Deluxe Stock Exhaust"
+    },
+    {
+      "name": "TS49 Stock Exhaust"
+    },
+    {
+      "name": "Bingo Stock Exhaust"
+    },
+    {
+      "name": "Super Sport Stock Exhaust"
+    },
+    {
+      "name": "M56 Stock Exhaust"
+    },
+    {
+      "name": "MK 2 Stock Exhaust"
+    },
+    {
+      "name": "Whippet Stock Exhaust"
+    },
+    {
+      "name": "Starflite VAII Stock Exhaust"
+    },
+    {
+      "name": "Regency VAII Stock Exhaust"
+    },
+    {
+      "name": "Bilonet Combi Sport Stock Exhaust"
+    },
+    {
+      "name": "M48 Stock Exhaust"
+    },
+    {
+      "name": "City Stock Exhaust"
+    },
+    {
+      "name": "Mot'o-Mat Stock Exhaust"
+    },
+    {
+      "name": "Batavette Stock Exhaust"
+    },
+    {
+      "name": "Mobat Stock Exhaust"
+    },
+    {
+      "name": "VA Stock Exhaust"
+    },
+    {
+      "name": "TS50 Stock Exhaust"
+    },
+    {
+      "name": "FP50 Stock Exhaust"
+    },
+    {
+      "name": "HS-60 Stock Exhaust"
+    },
+    {
+      "name": "Mondial I Stock Exhaust"
+    },
+    {
+      "name": "MK 4 S Stock Exhaust"
+    },
+    {
+      "name": "Transport Stock Exhaust"
+    },
+    {
+      "name": "Starflite HS Stock Exhaust"
+    },
+    {
+      "name": "Bilonet Mat-o-mat Stock Exhaust"
+    },
+    {
+      "name": "VA-25 Stock Exhaust"
+    },
+    {
+      "name": "Conforte Stock Exhaust"
+    },
+    {
+      "name": "Bilonet Mk2 Stock Exhaust"
+    },
+    {
+      "name": "Regency HS Stock Exhaust"
+    },
+    {
+      "name": "Mondial II Stock Exhaust"
+    },
+    {
+      "name": "Bilonet Super Sport Stock Exhaust"
+    },
+    {
+      "name": "Intercycle Stock Exhaust"
+    },
+    {
+      "name": "Starflite VAI Stock Exhaust"
+    },
+    {
+      "name": "Rotary Stock Exhaust"
+    },
+    {
+      "name": "Mobat Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Badger Stock Exhaust"
+    },
+    {
+      "name": "Bronco Stock Exhaust"
+    },
+    {
+      "name": "Starflite Stock Exhaust"
+    },
+    {
+      "name": "Regency Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Bilonet Stock Forks"
+    },
+    {
+      "name": "Go-Go V40 Stock Forks"
+    },
+    {
+      "name": "Grand Prix Stock Forks"
+    },
+    {
+      "name": "HS-50 Stock Forks"
+    },
+    {
+      "name": "Tramp Stock Forks"
+    },
+    {
+      "name": "Compact Stock Forks"
+    },
+    {
+      "name": "FP50 Sport Stock Forks"
+    },
+    {
+      "name": "Mondial Deluxe Stock Forks"
+    },
+    {
+      "name": "TS49 Stock Forks"
+    },
+    {
+      "name": "Bingo Stock Forks"
+    },
+    {
+      "name": "Super Sport Stock Forks"
+    },
+    {
+      "name": "M56 Stock Forks"
+    },
+    {
+      "name": "MK 2 Stock Forks"
+    },
+    {
+      "name": "Whippet Stock Forks"
+    },
+    {
+      "name": "Starflite VAII Stock Forks"
+    },
+    {
+      "name": "Regency VAII Stock Forks"
+    },
+    {
+      "name": "Bilonet Combi Sport Stock Forks"
+    },
+    {
+      "name": "M48 Stock Forks"
+    },
+    {
+      "name": "City Stock Forks"
+    },
+    {
+      "name": "Mot'o-Mat Stock Forks"
+    },
+    {
+      "name": "Batavette Stock Forks"
+    },
+    {
+      "name": "Mobat Stock Forks"
+    },
+    {
+      "name": "VA Stock Forks"
+    },
+    {
+      "name": "TS50 Stock Forks"
+    },
+    {
+      "name": "FP50 Stock Forks"
+    },
+    {
+      "name": "HS-60 Stock Forks"
+    },
+    {
+      "name": "Mondial I Stock Forks"
+    },
+    {
+      "name": "MK 4 S Stock Forks"
+    },
+    {
+      "name": "Transport Stock Forks"
+    },
+    {
+      "name": "Starflite HS Stock Forks"
+    },
+    {
+      "name": "Bilonet Mat-o-mat Stock Forks"
+    },
+    {
+      "name": "VA-25 Stock Forks"
+    },
+    {
+      "name": "Conforte Stock Forks"
+    },
+    {
+      "name": "Bilonet Mk2 Stock Forks"
+    },
+    {
+      "name": "Regency HS Stock Forks"
+    },
+    {
+      "name": "Mondial II Stock Forks"
+    },
+    {
+      "name": "Bilonet Super Sport Stock Forks"
+    },
+    {
+      "name": "Intercycle Stock Forks"
+    },
+    {
+      "name": "Starflite VAI Stock Forks"
+    },
+    {
+      "name": "Rotary Stock Forks"
+    },
+    {
+      "name": "Mobat Deluxe Stock Forks"
+    },
+    {
+      "name": "Badger Stock Forks"
+    },
+    {
+      "name": "Bronco Stock Forks"
+    },
+    {
+      "name": "Starflite Stock Forks"
+    },
+    {
+      "name": "Regency Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Bilonet Stock Wheels"
+    },
+    {
+      "name": "Go-Go V40 Stock Wheels"
+    },
+    {
+      "name": "Grand Prix Stock Wheels"
+    },
+    {
+      "name": "HS-50 Stock Wheels"
+    },
+    {
+      "name": "Tramp Stock Wheels"
+    },
+    {
+      "name": "Compact Stock Wheels"
+    },
+    {
+      "name": "FP50 Sport Stock Wheels"
+    },
+    {
+      "name": "Mondial Deluxe Stock Wheels"
+    },
+    {
+      "name": "TS49 Stock Wheels"
+    },
+    {
+      "name": "Bingo Stock Wheels"
+    },
+    {
+      "name": "Super Sport Stock Wheels"
+    },
+    {
+      "name": "M56 Stock Wheels"
+    },
+    {
+      "name": "MK 2 Stock Wheels"
+    },
+    {
+      "name": "Whippet Stock Wheels"
+    },
+    {
+      "name": "Starflite VAII Stock Wheels"
+    },
+    {
+      "name": "Regency VAII Stock Wheels"
+    },
+    {
+      "name": "Bilonet Combi Sport Stock Wheels"
+    },
+    {
+      "name": "M48 Stock Wheels"
+    },
+    {
+      "name": "City Stock Wheels"
+    },
+    {
+      "name": "Mot'o-Mat Stock Wheels"
+    },
+    {
+      "name": "Batavette Stock Wheels"
+    },
+    {
+      "name": "Mobat Stock Wheels"
+    },
+    {
+      "name": "VA Stock Wheels"
+    },
+    {
+      "name": "TS50 Stock Wheels"
+    },
+    {
+      "name": "FP50 Stock Wheels"
+    },
+    {
+      "name": "HS-60 Stock Wheels"
+    },
+    {
+      "name": "Mondial I Stock Wheels"
+    },
+    {
+      "name": "MK 4 S Stock Wheels"
+    },
+    {
+      "name": "Transport Stock Wheels"
+    },
+    {
+      "name": "Starflite HS Stock Wheels"
+    },
+    {
+      "name": "Bilonet Mat-o-mat Stock Wheels"
+    },
+    {
+      "name": "VA-25 Stock Wheels"
+    },
+    {
+      "name": "Conforte Stock Wheels"
+    },
+    {
+      "name": "Bilonet Mk2 Stock Wheels"
+    },
+    {
+      "name": "Regency HS Stock Wheels"
+    },
+    {
+      "name": "Mondial II Stock Wheels"
+    },
+    {
+      "name": "Bilonet Super Sport Stock Wheels"
+    },
+    {
+      "name": "Intercycle Stock Wheels"
+    },
+    {
+      "name": "Starflite VAI Stock Wheels"
+    },
+    {
+      "name": "Rotary Stock Wheels"
+    },
+    {
+      "name": "Mobat Deluxe Stock Wheels"
+    },
+    {
+      "name": "Badger Stock Wheels"
+    },
+    {
+      "name": "Bronco Stock Wheels"
+    },
+    {
+      "name": "Starflite Stock Wheels"
+    },
+    {
+      "name": "Regency Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Bilonet Stock Cylinder"
+    },
+    {
+      "name": "Go-Go V40 Stock Cylinder"
+    },
+    {
+      "name": "Grand Prix Stock Cylinder"
+    },
+    {
+      "name": "HS-50 Stock Cylinder"
+    },
+    {
+      "name": "Tramp Stock Cylinder"
+    },
+    {
+      "name": "Compact Stock Cylinder"
+    },
+    {
+      "name": "FP50 Sport Stock Cylinder"
+    },
+    {
+      "name": "Mondial Deluxe Stock Cylinder"
+    },
+    {
+      "name": "TS49 Stock Cylinder"
+    },
+    {
+      "name": "Bingo Stock Cylinder"
+    },
+    {
+      "name": "Super Sport Stock Cylinder"
+    },
+    {
+      "name": "M56 Stock Cylinder"
+    },
+    {
+      "name": "MK 2 Stock Cylinder"
+    },
+    {
+      "name": "Whippet Stock Cylinder"
+    },
+    {
+      "name": "Starflite VAII Stock Cylinder"
+    },
+    {
+      "name": "Regency VAII Stock Cylinder"
+    },
+    {
+      "name": "Bilonet Combi Sport Stock Cylinder"
+    },
+    {
+      "name": "M48 Stock Cylinder"
+    },
+    {
+      "name": "City Stock Cylinder"
+    },
+    {
+      "name": "Mot'o-Mat Stock Cylinder"
+    },
+    {
+      "name": "Batavette Stock Cylinder"
+    },
+    {
+      "name": "Mobat Stock Cylinder"
+    },
+    {
+      "name": "VA Stock Cylinder"
+    },
+    {
+      "name": "TS50 Stock Cylinder"
+    },
+    {
+      "name": "FP50 Stock Cylinder"
+    },
+    {
+      "name": "HS-60 Stock Cylinder"
+    },
+    {
+      "name": "Mondial I Stock Cylinder"
+    },
+    {
+      "name": "MK 4 S Stock Cylinder"
+    },
+    {
+      "name": "Transport Stock Cylinder"
+    },
+    {
+      "name": "Starflite HS Stock Cylinder"
+    },
+    {
+      "name": "Bilonet Mat-o-mat Stock Cylinder"
+    },
+    {
+      "name": "VA-25 Stock Cylinder"
+    },
+    {
+      "name": "Conforte Stock Cylinder"
+    },
+    {
+      "name": "Bilonet Mk2 Stock Cylinder"
+    },
+    {
+      "name": "Regency HS Stock Cylinder"
+    },
+    {
+      "name": "Mondial II Stock Cylinder"
+    },
+    {
+      "name": "Bilonet Super Sport Stock Cylinder"
+    },
+    {
+      "name": "Intercycle Stock Cylinder"
+    },
+    {
+      "name": "Starflite VAI Stock Cylinder"
+    },
+    {
+      "name": "Rotary Stock Cylinder"
+    },
+    {
+      "name": "Mobat Deluxe Stock Cylinder"
+    },
+    {
+      "name": "Badger Stock Cylinder"
+    },
+    {
+      "name": "Bronco Stock Cylinder"
+    },
+    {
+      "name": "Starflite Stock Cylinder"
+    },
+    {
+      "name": "Regency Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Regency"
+    },
+    {
+      "name": "Starflite"
+    },
+    {
+      "name": "Bronco"
+    },
+    {
+      "name": "Badger"
+    },
+    {
+      "name": "Mobat Deluxe"
+    },
+    {
+      "name": "Rotary"
+    },
+    {
+      "name": "Starflite VAI"
+    },
+    {
+      "name": "Intercycle"
+    },
+    {
+      "name": "Bilonet Super Sport"
+    },
+    {
+      "name": "Mondial II"
+    },
+    {
+      "name": "Regency HS"
+    },
+    {
+      "name": "Bilonet Mk2"
+    },
+    {
+      "name": "Conforte"
+    },
+    {
+      "name": "VA-25"
+    },
+    {
+      "name": "Bilonet Mat-o-mat"
+    },
+    {
+      "name": "Starflite HS"
+    },
+    {
+      "name": "Transport"
+    },
+    {
+      "name": "MK 4 S"
+    },
+    {
+      "name": "Mondial I"
+    },
+    {
+      "name": "HS-60"
+    },
+    {
+      "name": "FP50"
+    },
+    {
+      "name": "TS50"
+    },
+    {
+      "name": "VA"
+    },
+    {
+      "name": "Mobat"
+    },
+    {
+      "name": "Batavette"
+    },
+    {
+      "name": "Mot'o-Mat"
+    },
+    {
+      "name": "City"
+    },
+    {
+      "name": "M48"
+    },
+    {
+      "name": "Bilonet Combi Sport"
+    },
+    {
+      "name": "Regency VAII"
+    },
+    {
+      "name": "Starflite VAII"
+    },
+    {
+      "name": "Whippet"
+    },
+    {
+      "name": "MK 2"
+    },
+    {
+      "name": "M56"
+    },
+    {
+      "name": "Super Sport"
+    },
+    {
+      "name": "Bingo"
+    },
+    {
+      "name": "TS49"
+    },
+    {
+      "name": "Mondial Deluxe"
+    },
+    {
+      "name": "FP50 Sport"
+    },
+    {
+      "name": "Compact"
+    },
+    {
+      "name": "Tramp"
+    },
+    {
+      "name": "HS-50"
+    },
+    {
+      "name": "Grand Prix"
+    },
+    {
+      "name": "Go-Go V40"
+    },
+    {
+      "name": "Bilonet"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

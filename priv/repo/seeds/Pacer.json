@@ -1,0 +1,212 @@
+{
+  "name": "Pacer",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Super Sport P-80 Stock Exhaust"
+    },
+    {
+      "name": "Super Sport Stock Exhaust"
+    },
+    {
+      "name": "Sport P-78 Stock Exhaust"
+    },
+    {
+      "name": "P-280 Stock Exhaust"
+    },
+    {
+      "name": "P-278 Stock Exhaust"
+    },
+    {
+      "name": "P-214 Stock Exhaust"
+    },
+    {
+      "name": "P-14RL Stock Exhaust"
+    },
+    {
+      "name": "P-14 Delux Stock Exhaust"
+    },
+    {
+      "name": "P-14 Stock Exhaust"
+    },
+    {
+      "name": "P-12 Stock Exhaust"
+    },
+    {
+      "name": "P-1 Stock Exhaust"
+    },
+    {
+      "name": "25 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Super Sport P-80 Stock Forks"
+    },
+    {
+      "name": "Super Sport Stock Forks"
+    },
+    {
+      "name": "Sport P-78 Stock Forks"
+    },
+    {
+      "name": "P-280 Stock Forks"
+    },
+    {
+      "name": "P-278 Stock Forks"
+    },
+    {
+      "name": "P-214 Stock Forks"
+    },
+    {
+      "name": "P-14RL Stock Forks"
+    },
+    {
+      "name": "P-14 Delux Stock Forks"
+    },
+    {
+      "name": "P-14 Stock Forks"
+    },
+    {
+      "name": "P-12 Stock Forks"
+    },
+    {
+      "name": "P-1 Stock Forks"
+    },
+    {
+      "name": "25 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Super Sport P-80 Stock Wheels"
+    },
+    {
+      "name": "Super Sport Stock Wheels"
+    },
+    {
+      "name": "Sport P-78 Stock Wheels"
+    },
+    {
+      "name": "P-280 Stock Wheels"
+    },
+    {
+      "name": "P-278 Stock Wheels"
+    },
+    {
+      "name": "P-214 Stock Wheels"
+    },
+    {
+      "name": "P-14RL Stock Wheels"
+    },
+    {
+      "name": "P-14 Delux Stock Wheels"
+    },
+    {
+      "name": "P-14 Stock Wheels"
+    },
+    {
+      "name": "P-12 Stock Wheels"
+    },
+    {
+      "name": "P-1 Stock Wheels"
+    },
+    {
+      "name": "25 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Super Sport P-80 Stock Cylinder"
+    },
+    {
+      "name": "Super Sport Stock Cylinder"
+    },
+    {
+      "name": "Sport P-78 Stock Cylinder"
+    },
+    {
+      "name": "P-280 Stock Cylinder"
+    },
+    {
+      "name": "P-278 Stock Cylinder"
+    },
+    {
+      "name": "P-214 Stock Cylinder"
+    },
+    {
+      "name": "P-14RL Stock Cylinder"
+    },
+    {
+      "name": "P-14 Delux Stock Cylinder"
+    },
+    {
+      "name": "P-14 Stock Cylinder"
+    },
+    {
+      "name": "P-12 Stock Cylinder"
+    },
+    {
+      "name": "P-1 Stock Cylinder"
+    },
+    {
+      "name": "25 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "25"
+    },
+    {
+      "name": "P-1"
+    },
+    {
+      "name": "P-12"
+    },
+    {
+      "name": "P-14"
+    },
+    {
+      "name": "P-14 Delux"
+    },
+    {
+      "name": "P-14RL"
+    },
+    {
+      "name": "P-214"
+    },
+    {
+      "name": "P-278"
+    },
+    {
+      "name": "P-280"
+    },
+    {
+      "name": "Sport P-78"
+    },
+    {
+      "name": "Super Sport"
+    },
+    {
+      "name": "Super Sport P-80"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

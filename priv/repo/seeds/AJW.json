@@ -1,0 +1,62 @@
+{
+  "name": "AJW",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Greyhound Stock Exhaust"
+    },
+    {
+      "name": "Collie Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Greyhound Stock Forks"
+    },
+    {
+      "name": "Collie Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Greyhound Stock Wheels"
+    },
+    {
+      "name": "Collie Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Greyhound Stock Cylinder"
+    },
+    {
+      "name": "Collie Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Collie"
+    },
+    {
+      "name": "Greyhound"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

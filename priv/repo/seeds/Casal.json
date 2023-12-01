@@ -1,0 +1,137 @@
+{
+  "name": "Casal",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "K-196 Stock Exhaust"
+    },
+    {
+      "name": "K-190 Stock Exhaust"
+    },
+    {
+      "name": "K-188 Stock Exhaust"
+    },
+    {
+      "name": "K-184 Stock Exhaust"
+    },
+    {
+      "name": "K-177 Stock Exhaust"
+    },
+    {
+      "name": "K-168 Stock Exhaust"
+    },
+    {
+      "name": "Boss Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "K-196 Stock Forks"
+    },
+    {
+      "name": "K-190 Stock Forks"
+    },
+    {
+      "name": "K-188 Stock Forks"
+    },
+    {
+      "name": "K-184 Stock Forks"
+    },
+    {
+      "name": "K-177 Stock Forks"
+    },
+    {
+      "name": "K-168 Stock Forks"
+    },
+    {
+      "name": "Boss Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "K-196 Stock Wheels"
+    },
+    {
+      "name": "K-190 Stock Wheels"
+    },
+    {
+      "name": "K-188 Stock Wheels"
+    },
+    {
+      "name": "K-184 Stock Wheels"
+    },
+    {
+      "name": "K-177 Stock Wheels"
+    },
+    {
+      "name": "K-168 Stock Wheels"
+    },
+    {
+      "name": "Boss Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "K-196 Stock Cylinder"
+    },
+    {
+      "name": "K-190 Stock Cylinder"
+    },
+    {
+      "name": "K-188 Stock Cylinder"
+    },
+    {
+      "name": "K-184 Stock Cylinder"
+    },
+    {
+      "name": "K-177 Stock Cylinder"
+    },
+    {
+      "name": "K-168 Stock Cylinder"
+    },
+    {
+      "name": "Boss Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Boss"
+    },
+    {
+      "name": "K-168"
+    },
+    {
+      "name": "K-177"
+    },
+    {
+      "name": "K-184"
+    },
+    {
+      "name": "K-188"
+    },
+    {
+      "name": "K-190"
+    },
+    {
+      "name": "K-196"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

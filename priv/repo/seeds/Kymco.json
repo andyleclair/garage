@@ -1,0 +1,167 @@
+{
+  "name": "Kymco",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "ZX-50 Stock Exhaust"
+    },
+    {
+      "name": "Yup 50 Stock Exhaust"
+    },
+    {
+      "name": "TSR 50 Stock Exhaust"
+    },
+    {
+      "name": "Super 9 Stock Exhaust"
+    },
+    {
+      "name": "People 50 Stock Exhaust"
+    },
+    {
+      "name": "Filly 50 Stock Exhaust"
+    },
+    {
+      "name": "Cobra Cross Stock Exhaust"
+    },
+    {
+      "name": "Cobra Stock Exhaust"
+    },
+    {
+      "name": "Agility Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "ZX-50 Stock Forks"
+    },
+    {
+      "name": "Yup 50 Stock Forks"
+    },
+    {
+      "name": "TSR 50 Stock Forks"
+    },
+    {
+      "name": "Super 9 Stock Forks"
+    },
+    {
+      "name": "People 50 Stock Forks"
+    },
+    {
+      "name": "Filly 50 Stock Forks"
+    },
+    {
+      "name": "Cobra Cross Stock Forks"
+    },
+    {
+      "name": "Cobra Stock Forks"
+    },
+    {
+      "name": "Agility Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "ZX-50 Stock Wheels"
+    },
+    {
+      "name": "Yup 50 Stock Wheels"
+    },
+    {
+      "name": "TSR 50 Stock Wheels"
+    },
+    {
+      "name": "Super 9 Stock Wheels"
+    },
+    {
+      "name": "People 50 Stock Wheels"
+    },
+    {
+      "name": "Filly 50 Stock Wheels"
+    },
+    {
+      "name": "Cobra Cross Stock Wheels"
+    },
+    {
+      "name": "Cobra Stock Wheels"
+    },
+    {
+      "name": "Agility Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "ZX-50 Stock Cylinder"
+    },
+    {
+      "name": "Yup 50 Stock Cylinder"
+    },
+    {
+      "name": "TSR 50 Stock Cylinder"
+    },
+    {
+      "name": "Super 9 Stock Cylinder"
+    },
+    {
+      "name": "People 50 Stock Cylinder"
+    },
+    {
+      "name": "Filly 50 Stock Cylinder"
+    },
+    {
+      "name": "Cobra Cross Stock Cylinder"
+    },
+    {
+      "name": "Cobra Stock Cylinder"
+    },
+    {
+      "name": "Agility Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Agility"
+    },
+    {
+      "name": "Cobra"
+    },
+    {
+      "name": "Cobra Cross"
+    },
+    {
+      "name": "Filly 50"
+    },
+    {
+      "name": "People 50"
+    },
+    {
+      "name": "Super 9"
+    },
+    {
+      "name": "TSR 50"
+    },
+    {
+      "name": "Yup 50"
+    },
+    {
+      "name": "ZX-50"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

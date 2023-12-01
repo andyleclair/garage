@@ -1,0 +1,107 @@
+{
+  "name": "Ramzey",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Wolf Stock Exhaust"
+    },
+    {
+      "name": "Prestige Classic Stock Exhaust"
+    },
+    {
+      "name": "Prestige Stock Exhaust"
+    },
+    {
+      "name": "Magnum SAfkan Stock Exhaust"
+    },
+    {
+      "name": "Comfort Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Wolf Stock Forks"
+    },
+    {
+      "name": "Prestige Classic Stock Forks"
+    },
+    {
+      "name": "Prestige Stock Forks"
+    },
+    {
+      "name": "Magnum SAfkan Stock Forks"
+    },
+    {
+      "name": "Comfort Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Wolf Stock Wheels"
+    },
+    {
+      "name": "Prestige Classic Stock Wheels"
+    },
+    {
+      "name": "Prestige Stock Wheels"
+    },
+    {
+      "name": "Magnum SAfkan Stock Wheels"
+    },
+    {
+      "name": "Comfort Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Wolf Stock Cylinder"
+    },
+    {
+      "name": "Prestige Classic Stock Cylinder"
+    },
+    {
+      "name": "Prestige Stock Cylinder"
+    },
+    {
+      "name": "Magnum SAfkan Stock Cylinder"
+    },
+    {
+      "name": "Comfort Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Comfort"
+    },
+    {
+      "name": "Magnum SAfkan"
+    },
+    {
+      "name": "Prestige"
+    },
+    {
+      "name": "Prestige Classic"
+    },
+    {
+      "name": "Wolf"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

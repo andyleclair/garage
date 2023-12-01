@@ -1,0 +1,152 @@
+{
+  "name": "Snark",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Stardust II Stock Exhaust"
+    },
+    {
+      "name": "Stardust I Stock Exhaust"
+    },
+    {
+      "name": "Star II Stock Exhaust"
+    },
+    {
+      "name": "Star I Stock Exhaust"
+    },
+    {
+      "name": "Standard Stock Exhaust"
+    },
+    {
+      "name": "Satellie II Stock Exhaust"
+    },
+    {
+      "name": "Satellie I Stock Exhaust"
+    },
+    {
+      "name": "Deluxe Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Stardust II Stock Forks"
+    },
+    {
+      "name": "Stardust I Stock Forks"
+    },
+    {
+      "name": "Star II Stock Forks"
+    },
+    {
+      "name": "Star I Stock Forks"
+    },
+    {
+      "name": "Standard Stock Forks"
+    },
+    {
+      "name": "Satellie II Stock Forks"
+    },
+    {
+      "name": "Satellie I Stock Forks"
+    },
+    {
+      "name": "Deluxe Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Stardust II Stock Wheels"
+    },
+    {
+      "name": "Stardust I Stock Wheels"
+    },
+    {
+      "name": "Star II Stock Wheels"
+    },
+    {
+      "name": "Star I Stock Wheels"
+    },
+    {
+      "name": "Standard Stock Wheels"
+    },
+    {
+      "name": "Satellie II Stock Wheels"
+    },
+    {
+      "name": "Satellie I Stock Wheels"
+    },
+    {
+      "name": "Deluxe Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Stardust II Stock Cylinder"
+    },
+    {
+      "name": "Stardust I Stock Cylinder"
+    },
+    {
+      "name": "Star II Stock Cylinder"
+    },
+    {
+      "name": "Star I Stock Cylinder"
+    },
+    {
+      "name": "Standard Stock Cylinder"
+    },
+    {
+      "name": "Satellie II Stock Cylinder"
+    },
+    {
+      "name": "Satellie I Stock Cylinder"
+    },
+    {
+      "name": "Deluxe Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Deluxe"
+    },
+    {
+      "name": "Satellie I"
+    },
+    {
+      "name": "Satellie II"
+    },
+    {
+      "name": "Standard"
+    },
+    {
+      "name": "Star I"
+    },
+    {
+      "name": "Star II"
+    },
+    {
+      "name": "Stardust I"
+    },
+    {
+      "name": "Stardust II"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

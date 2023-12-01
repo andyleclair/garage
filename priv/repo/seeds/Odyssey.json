@@ -1,0 +1,197 @@
+{
+  "name": "Odyssey",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "720 Stock Exhaust"
+    },
+    {
+      "name": "40/2-R Stock Exhaust"
+    },
+    {
+      "name": "40/2-2 Stock Exhaust"
+    },
+    {
+      "name": "40/1-R Stock Exhaust"
+    },
+    {
+      "name": "40/1-2 Stock Exhaust"
+    },
+    {
+      "name": "32/1-R Stock Exhaust"
+    },
+    {
+      "name": "32/1-2 Stock Exhaust"
+    },
+    {
+      "name": "284 Stock Exhaust"
+    },
+    {
+      "name": "255 Stock Exhaust"
+    },
+    {
+      "name": "237 Stock Exhaust"
+    },
+    {
+      "name": "236 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "720 Stock Forks"
+    },
+    {
+      "name": "40/2-R Stock Forks"
+    },
+    {
+      "name": "40/2-2 Stock Forks"
+    },
+    {
+      "name": "40/1-R Stock Forks"
+    },
+    {
+      "name": "40/1-2 Stock Forks"
+    },
+    {
+      "name": "32/1-R Stock Forks"
+    },
+    {
+      "name": "32/1-2 Stock Forks"
+    },
+    {
+      "name": "284 Stock Forks"
+    },
+    {
+      "name": "255 Stock Forks"
+    },
+    {
+      "name": "237 Stock Forks"
+    },
+    {
+      "name": "236 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "720 Stock Wheels"
+    },
+    {
+      "name": "40/2-R Stock Wheels"
+    },
+    {
+      "name": "40/2-2 Stock Wheels"
+    },
+    {
+      "name": "40/1-R Stock Wheels"
+    },
+    {
+      "name": "40/1-2 Stock Wheels"
+    },
+    {
+      "name": "32/1-R Stock Wheels"
+    },
+    {
+      "name": "32/1-2 Stock Wheels"
+    },
+    {
+      "name": "284 Stock Wheels"
+    },
+    {
+      "name": "255 Stock Wheels"
+    },
+    {
+      "name": "237 Stock Wheels"
+    },
+    {
+      "name": "236 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "720 Stock Cylinder"
+    },
+    {
+      "name": "40/2-R Stock Cylinder"
+    },
+    {
+      "name": "40/2-2 Stock Cylinder"
+    },
+    {
+      "name": "40/1-R Stock Cylinder"
+    },
+    {
+      "name": "40/1-2 Stock Cylinder"
+    },
+    {
+      "name": "32/1-R Stock Cylinder"
+    },
+    {
+      "name": "32/1-2 Stock Cylinder"
+    },
+    {
+      "name": "284 Stock Cylinder"
+    },
+    {
+      "name": "255 Stock Cylinder"
+    },
+    {
+      "name": "237 Stock Cylinder"
+    },
+    {
+      "name": "236 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "236"
+    },
+    {
+      "name": "237"
+    },
+    {
+      "name": "255"
+    },
+    {
+      "name": "284"
+    },
+    {
+      "name": "32/1-2"
+    },
+    {
+      "name": "32/1-R"
+    },
+    {
+      "name": "40/1-2"
+    },
+    {
+      "name": "40/1-R"
+    },
+    {
+      "name": "40/2-2"
+    },
+    {
+      "name": "40/2-R"
+    },
+    {
+      "name": "720"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

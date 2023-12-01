@@ -1,0 +1,422 @@
+{
+  "name": "Jawa",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "X30 Stock Exhaust"
+    },
+    {
+      "name": "X25 Stock Exhaust"
+    },
+    {
+      "name": "X20 Stock Exhaust"
+    },
+    {
+      "name": "Transistor 40 Stock Exhaust"
+    },
+    {
+      "name": "Supreme 3 Stock Exhaust"
+    },
+    {
+      "name": "Supreme 2 Stock Exhaust"
+    },
+    {
+      "name": "Supreme Stock Exhaust"
+    },
+    {
+      "name": "Stadion Stock Exhaust"
+    },
+    {
+      "name": "Robot Stock Exhaust"
+    },
+    {
+      "name": "Golden Sport Stock Exhaust"
+    },
+    {
+      "name": "Deluxe Stock Exhaust"
+    },
+    {
+      "name": "DL Stock Exhaust"
+    },
+    {
+      "name": "City Bee Stock Exhaust"
+    },
+    {
+      "name": "Babetta Stock Exhaust"
+    },
+    {
+      "name": "550 Stock Exhaust"
+    },
+    {
+      "name": "50 Stock Exhaust"
+    },
+    {
+      "name": "311DL Stock Exhaust"
+    },
+    {
+      "name": "311C Stock Exhaust"
+    },
+    {
+      "name": "300DLX Stock Exhaust"
+    },
+    {
+      "name": "225 Stock Exhaust"
+    },
+    {
+      "name": "210 Sport Stock Exhaust"
+    },
+    {
+      "name": "210 Stock Exhaust"
+    },
+    {
+      "name": "207 Stock Exhaust"
+    },
+    {
+      "name": "120 Automatic Stock Exhaust"
+    },
+    {
+      "name": "120 Stock Exhaust"
+    },
+    {
+      "name": "05 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "X30 Stock Forks"
+    },
+    {
+      "name": "X25 Stock Forks"
+    },
+    {
+      "name": "X20 Stock Forks"
+    },
+    {
+      "name": "Transistor 40 Stock Forks"
+    },
+    {
+      "name": "Supreme 3 Stock Forks"
+    },
+    {
+      "name": "Supreme 2 Stock Forks"
+    },
+    {
+      "name": "Supreme Stock Forks"
+    },
+    {
+      "name": "Stadion Stock Forks"
+    },
+    {
+      "name": "Robot Stock Forks"
+    },
+    {
+      "name": "Golden Sport Stock Forks"
+    },
+    {
+      "name": "Deluxe Stock Forks"
+    },
+    {
+      "name": "DL Stock Forks"
+    },
+    {
+      "name": "City Bee Stock Forks"
+    },
+    {
+      "name": "Babetta Stock Forks"
+    },
+    {
+      "name": "550 Stock Forks"
+    },
+    {
+      "name": "50 Stock Forks"
+    },
+    {
+      "name": "311DL Stock Forks"
+    },
+    {
+      "name": "311C Stock Forks"
+    },
+    {
+      "name": "300DLX Stock Forks"
+    },
+    {
+      "name": "225 Stock Forks"
+    },
+    {
+      "name": "210 Sport Stock Forks"
+    },
+    {
+      "name": "210 Stock Forks"
+    },
+    {
+      "name": "207 Stock Forks"
+    },
+    {
+      "name": "120 Automatic Stock Forks"
+    },
+    {
+      "name": "120 Stock Forks"
+    },
+    {
+      "name": "05 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "X30 Stock Wheels"
+    },
+    {
+      "name": "X25 Stock Wheels"
+    },
+    {
+      "name": "X20 Stock Wheels"
+    },
+    {
+      "name": "Transistor 40 Stock Wheels"
+    },
+    {
+      "name": "Supreme 3 Stock Wheels"
+    },
+    {
+      "name": "Supreme 2 Stock Wheels"
+    },
+    {
+      "name": "Supreme Stock Wheels"
+    },
+    {
+      "name": "Stadion Stock Wheels"
+    },
+    {
+      "name": "Robot Stock Wheels"
+    },
+    {
+      "name": "Golden Sport Stock Wheels"
+    },
+    {
+      "name": "Deluxe Stock Wheels"
+    },
+    {
+      "name": "DL Stock Wheels"
+    },
+    {
+      "name": "City Bee Stock Wheels"
+    },
+    {
+      "name": "Babetta Stock Wheels"
+    },
+    {
+      "name": "550 Stock Wheels"
+    },
+    {
+      "name": "50 Stock Wheels"
+    },
+    {
+      "name": "311DL Stock Wheels"
+    },
+    {
+      "name": "311C Stock Wheels"
+    },
+    {
+      "name": "300DLX Stock Wheels"
+    },
+    {
+      "name": "225 Stock Wheels"
+    },
+    {
+      "name": "210 Sport Stock Wheels"
+    },
+    {
+      "name": "210 Stock Wheels"
+    },
+    {
+      "name": "207 Stock Wheels"
+    },
+    {
+      "name": "120 Automatic Stock Wheels"
+    },
+    {
+      "name": "120 Stock Wheels"
+    },
+    {
+      "name": "05 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "X30 Stock Cylinder"
+    },
+    {
+      "name": "X25 Stock Cylinder"
+    },
+    {
+      "name": "X20 Stock Cylinder"
+    },
+    {
+      "name": "Transistor 40 Stock Cylinder"
+    },
+    {
+      "name": "Supreme 3 Stock Cylinder"
+    },
+    {
+      "name": "Supreme 2 Stock Cylinder"
+    },
+    {
+      "name": "Supreme Stock Cylinder"
+    },
+    {
+      "name": "Stadion Stock Cylinder"
+    },
+    {
+      "name": "Robot Stock Cylinder"
+    },
+    {
+      "name": "Golden Sport Stock Cylinder"
+    },
+    {
+      "name": "Deluxe Stock Cylinder"
+    },
+    {
+      "name": "DL Stock Cylinder"
+    },
+    {
+      "name": "City Bee Stock Cylinder"
+    },
+    {
+      "name": "Babetta Stock Cylinder"
+    },
+    {
+      "name": "550 Stock Cylinder"
+    },
+    {
+      "name": "50 Stock Cylinder"
+    },
+    {
+      "name": "311DL Stock Cylinder"
+    },
+    {
+      "name": "311C Stock Cylinder"
+    },
+    {
+      "name": "300DLX Stock Cylinder"
+    },
+    {
+      "name": "225 Stock Cylinder"
+    },
+    {
+      "name": "210 Sport Stock Cylinder"
+    },
+    {
+      "name": "210 Stock Cylinder"
+    },
+    {
+      "name": "207 Stock Cylinder"
+    },
+    {
+      "name": "120 Automatic Stock Cylinder"
+    },
+    {
+      "name": "120 Stock Cylinder"
+    },
+    {
+      "name": "05 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "05"
+    },
+    {
+      "name": "120"
+    },
+    {
+      "name": "120 Automatic"
+    },
+    {
+      "name": "207"
+    },
+    {
+      "name": "210"
+    },
+    {
+      "name": "210 Sport"
+    },
+    {
+      "name": "225"
+    },
+    {
+      "name": "300DLX"
+    },
+    {
+      "name": "311C"
+    },
+    {
+      "name": "311DL"
+    },
+    {
+      "name": "50"
+    },
+    {
+      "name": "550"
+    },
+    {
+      "name": "Babetta"
+    },
+    {
+      "name": "City Bee"
+    },
+    {
+      "name": "DL"
+    },
+    {
+      "name": "Deluxe"
+    },
+    {
+      "name": "Golden Sport"
+    },
+    {
+      "name": "Robot"
+    },
+    {
+      "name": "Stadion"
+    },
+    {
+      "name": "Supreme"
+    },
+    {
+      "name": "Supreme 2"
+    },
+    {
+      "name": "Supreme 3"
+    },
+    {
+      "name": "Transistor 40"
+    },
+    {
+      "name": "X20"
+    },
+    {
+      "name": "X25"
+    },
+    {
+      "name": "X30"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

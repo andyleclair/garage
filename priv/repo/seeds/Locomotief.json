@@ -1,0 +1,137 @@
+{
+  "name": "Locomotief",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Modesto Stock Exhaust"
+    },
+    {
+      "name": "M23 Stock Exhaust"
+    },
+    {
+      "name": "Loco-matic Stock Exhaust"
+    },
+    {
+      "name": "Kieviet Stock Exhaust"
+    },
+    {
+      "name": "Hifi Stock Exhaust"
+    },
+    {
+      "name": "B7 Stock Exhaust"
+    },
+    {
+      "name": "B5 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Modesto Stock Forks"
+    },
+    {
+      "name": "M23 Stock Forks"
+    },
+    {
+      "name": "Loco-matic Stock Forks"
+    },
+    {
+      "name": "Kieviet Stock Forks"
+    },
+    {
+      "name": "Hifi Stock Forks"
+    },
+    {
+      "name": "B7 Stock Forks"
+    },
+    {
+      "name": "B5 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Modesto Stock Wheels"
+    },
+    {
+      "name": "M23 Stock Wheels"
+    },
+    {
+      "name": "Loco-matic Stock Wheels"
+    },
+    {
+      "name": "Kieviet Stock Wheels"
+    },
+    {
+      "name": "Hifi Stock Wheels"
+    },
+    {
+      "name": "B7 Stock Wheels"
+    },
+    {
+      "name": "B5 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Modesto Stock Cylinder"
+    },
+    {
+      "name": "M23 Stock Cylinder"
+    },
+    {
+      "name": "Loco-matic Stock Cylinder"
+    },
+    {
+      "name": "Kieviet Stock Cylinder"
+    },
+    {
+      "name": "Hifi Stock Cylinder"
+    },
+    {
+      "name": "B7 Stock Cylinder"
+    },
+    {
+      "name": "B5 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "B5"
+    },
+    {
+      "name": "B7"
+    },
+    {
+      "name": "Hifi"
+    },
+    {
+      "name": "Kieviet"
+    },
+    {
+      "name": "Loco-matic"
+    },
+    {
+      "name": "M23"
+    },
+    {
+      "name": "Modesto"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

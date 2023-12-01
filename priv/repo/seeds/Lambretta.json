@@ -1,0 +1,122 @@
+{
+  "name": "Lambretta",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Puma Cross Stock Exhaust"
+    },
+    {
+      "name": "Puma Stock Exhaust"
+    },
+    {
+      "name": "Mark 2 Stock Exhaust"
+    },
+    {
+      "name": "Eagle Stock Exhaust"
+    },
+    {
+      "name": "A 50 Stock Exhaust"
+    },
+    {
+      "name": "48 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Puma Cross Stock Forks"
+    },
+    {
+      "name": "Puma Stock Forks"
+    },
+    {
+      "name": "Mark 2 Stock Forks"
+    },
+    {
+      "name": "Eagle Stock Forks"
+    },
+    {
+      "name": "A 50 Stock Forks"
+    },
+    {
+      "name": "48 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Puma Cross Stock Wheels"
+    },
+    {
+      "name": "Puma Stock Wheels"
+    },
+    {
+      "name": "Mark 2 Stock Wheels"
+    },
+    {
+      "name": "Eagle Stock Wheels"
+    },
+    {
+      "name": "A 50 Stock Wheels"
+    },
+    {
+      "name": "48 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Puma Cross Stock Cylinder"
+    },
+    {
+      "name": "Puma Stock Cylinder"
+    },
+    {
+      "name": "Mark 2 Stock Cylinder"
+    },
+    {
+      "name": "Eagle Stock Cylinder"
+    },
+    {
+      "name": "A 50 Stock Cylinder"
+    },
+    {
+      "name": "48 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "48"
+    },
+    {
+      "name": "A 50"
+    },
+    {
+      "name": "Eagle"
+    },
+    {
+      "name": "Mark 2"
+    },
+    {
+      "name": "Puma"
+    },
+    {
+      "name": "Puma Cross"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

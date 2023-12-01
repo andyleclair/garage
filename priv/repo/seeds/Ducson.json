@@ -1,0 +1,77 @@
+{
+  "name": "Ducson",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "S9 Stock Exhaust"
+    },
+    {
+      "name": "S20 Stock Exhaust"
+    },
+    {
+      "name": "S15 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "S9 Stock Forks"
+    },
+    {
+      "name": "S20 Stock Forks"
+    },
+    {
+      "name": "S15 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "S9 Stock Wheels"
+    },
+    {
+      "name": "S20 Stock Wheels"
+    },
+    {
+      "name": "S15 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "S9 Stock Cylinder"
+    },
+    {
+      "name": "S20 Stock Cylinder"
+    },
+    {
+      "name": "S15 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "S15"
+    },
+    {
+      "name": "S20"
+    },
+    {
+      "name": "S9"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

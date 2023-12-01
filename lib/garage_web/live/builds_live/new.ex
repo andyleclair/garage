@@ -1,20 +1,53 @@
 defmodule GarageWeb.BuildsLive.New do
   use GarageWeb, :live_view
 
+  alias AshPhoenix.Form
+  alias Garage.Builds
   alias Garage.Builds.Build
-  alias GarageWeb.BuildsLive.FormComponent
+  alias Garage.Mopeds.Manufacturer
+  alias Garage.Mopeds.Model
 
   @impl true
   def render(assigns) do
     ~H"""
-    <.live_component
-      module={FormComponent}
-      id={@build.id || :new}
-      title={@page_title}
-      action={@live_action}
-      build={@build}
-      current_user={@current_user}
-    />
+    <div>
+      <.header>
+        New Build
+        <:subtitle>Tell the world about your moped!</:subtitle>
+      </.header>
+
+      <.simple_form for={@form} id="build-form" phx-change="validate" phx-submit="save">
+        <.input field={@form[:name]} type="text" label="Name" />
+        <div class="flex justify-around">
+          <div class="w-1/6">
+            <.input field={@form[:year]} type="select" label="Year" options={@year_options} />
+          </div>
+          <div class="w-1/3">
+            <.live_select
+              field={@form[:manufacturer_id]}
+              phx-focus="set-default"
+              options={@manufacturer_options}
+              label="Make"
+            />
+          </div>
+          <div class="w-1/3">
+            <%= if @model_options do %>
+              <.live_select
+                field={@form[:model_id]}
+                phx-focus="set-default"
+                options={@model_options}
+                label="Model"
+                debounce="250"
+              />
+            <% end %>
+          </div>
+        </div>
+
+        <:actions>
+          <.button phx-disable-with="Saving...">Save Build</.button>
+        </:actions>
+      </.simple_form>
+    </div>
 
     <.back navigate={~p"/builds"}>Back to builds</.back>
     """
@@ -22,9 +55,145 @@ defmodule GarageWeb.BuildsLive.New do
 
   @impl true
   def mount(_params, _session, socket) do
+    form =
+      Form.for_action(Build, :create,
+        api: Builds,
+        actor: socket.assigns.current_user
+      )
+
+    year_options = year_options()
+    manufacturer_options = manufacturer_options()
+
+    # if we already have a manufacturer set, show the model dropdown
+    model_options =
+      if manufacturer_id = form_manufacturer_id(form) do
+        model_options_by_id(manufacturer_id)
+      else
+        nil
+      end
+
     {:ok,
      socket
      |> assign(:page_title, "New Build")
-     |> assign(:build, %Build{image_urls: []})}
+     |> assign(:build, %Build{image_urls: []})
+     |> assign(:manufacturer_options, manufacturer_options)
+     |> assign(:model_options, model_options)
+     |> assign(:year_options, year_options)
+     |> assign_form(form)}
+  end
+
+  @impl true
+  def handle_event(
+        "live_select_change",
+        %{"id" => "form_manufacturer" <> _ = id, "text" => text},
+        socket
+      ) do
+    options = search_options(socket.assigns.manufacturer_options, text)
+    send_update(LiveSelect.Component, options: options, id: id)
+
+    {:noreply, socket}
+  end
+
+  @impl true
+  def handle_event(
+        "live_select_change",
+        %{"id" => "form_model" <> _ = id, "text" => text},
+        socket
+      ) do
+    options = search_options(socket.assigns.model_options, text)
+    send_update(LiveSelect.Component, options: options, id: id)
+    {:noreply, socket}
+  end
+
+  @impl true
+  def handle_event("set-default", %{"id" => "form_manufacturer" <> _ = id}, socket) do
+    send_update(LiveSelect.Component, options: socket.assigns.manufacturer_options, id: id)
+
+    {:noreply, socket}
+  end
+
+  @impl true
+  def handle_event("set-default", %{"id" => "form_model" <> _ = id}, socket) do
+    send_update(LiveSelect.Component, options: socket.assigns.model_options, id: id)
+
+    {:noreply, socket}
+  end
+
+  @impl true
+  def handle_event("validate", %{"form" => params}, socket) do
+    form = Form.validate(socket.assigns.form, params)
+
+    socket =
+      if manufacturer_id = form_manufacturer_id(form) do
+        assign(socket, :model_options, model_options_by_id(manufacturer_id))
+      else
+        socket
+      end
+
+    {:noreply, assign_form(socket, form)}
+  end
+
+  @impl true
+  def handle_event(
+        "save",
+        %{"form" => params},
+        socket
+      ) do
+    case Form.submit(socket.assigns.form, params: params) do
+      {:ok, build} ->
+        {:noreply,
+         socket
+         |> put_flash(:info, "Build created successfully")
+         |> push_navigate(to: ~p"/builds/#{build.slug}/edit")}
+
+      {:error, form} ->
+        {:noreply, assign_form(socket, form)}
+    end
+  end
+
+  defp year_options() do
+    2023..1900 |> Enum.to_list()
+  end
+
+  defp manufacturer_options() do
+    for manufacturer <- Manufacturer.read_all!(),
+        into: [],
+        do: {manufacturer.name, manufacturer.id}
+  end
+
+  defp model_options_by_id(manufacturer_id) do
+    for model <- Model.by_manufacturer_id!(manufacturer_id), into: [], do: {model.name, model.id}
+  end
+
+  defp assign_form(socket, %Form{} = form) do
+    assign(socket, :form, to_form(form))
+  end
+
+  defp assign_form(socket, %Phoenix.HTML.Form{} = form) do
+    assign(socket, :form, form)
+  end
+
+  def search_options(options, text) do
+    if text == "" do
+      options
+    else
+      options
+      |> Enum.filter(fn {option, _id} ->
+        String.downcase(option) |> String.contains?(String.downcase(text))
+      end)
+    end
+  end
+
+  def form_manufacturer_id(form) do
+    case Form.value(form, :manufacturer_id) do
+      "" ->
+        nil
+
+      nil ->
+        nil
+
+      manufacturer_id ->
+        manufacturer_id
+    end
   end
 end

@@ -1,0 +1,467 @@
+{
+  "name": "Sparta",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Typen Stock Exhaust"
+    },
+    {
+      "name": "Tour Stock Exhaust"
+    },
+    {
+      "name": "Super Sport Stock Exhaust"
+    },
+    {
+      "name": "Sport 4 Stock Exhaust"
+    },
+    {
+      "name": "Sport 3V Stock Exhaust"
+    },
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "Spartamatic Stock Exhaust"
+    },
+    {
+      "name": "SE 50 Stock Exhaust"
+    },
+    {
+      "name": "SB 50 Stock Exhaust"
+    },
+    {
+      "name": "Met Tandem Stock Exhaust"
+    },
+    {
+      "name": "Met Stock Exhaust"
+    },
+    {
+      "name": "MB 50 Stock Exhaust"
+    },
+    {
+      "name": "Lucky Stock Exhaust"
+    },
+    {
+      "name": "Happy Mini Stock Exhaust"
+    },
+    {
+      "name": "Happy Stock Exhaust"
+    },
+    {
+      "name": "Grand Sport Stock Exhaust"
+    },
+    {
+      "name": "GS50 Stock Exhaust"
+    },
+    {
+      "name": "GH50 Stock Exhaust"
+    },
+    {
+      "name": "GF50 Stock Exhaust"
+    },
+    {
+      "name": "GE 50 Tour Stock Exhaust"
+    },
+    {
+      "name": "GE 50 Sport Stock Exhaust"
+    },
+    {
+      "name": "GD 50 Stock Exhaust"
+    },
+    {
+      "name": "GC50 Stock Exhaust"
+    },
+    {
+      "name": "GB50 Stock Exhaust"
+    },
+    {
+      "name": "G50 Stock Exhaust"
+    },
+    {
+      "name": "Foxi GT Sport Stock Exhaust"
+    },
+    {
+      "name": "Foxi Stock Exhaust"
+    },
+    {
+      "name": "Buddy Stock Exhaust"
+    },
+    {
+      "name": "2V Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Typen Stock Forks"
+    },
+    {
+      "name": "Tour Stock Forks"
+    },
+    {
+      "name": "Super Sport Stock Forks"
+    },
+    {
+      "name": "Sport 4 Stock Forks"
+    },
+    {
+      "name": "Sport 3V Stock Forks"
+    },
+    {
+      "name": "Sport Stock Forks"
+    },
+    {
+      "name": "Spartamatic Stock Forks"
+    },
+    {
+      "name": "SE 50 Stock Forks"
+    },
+    {
+      "name": "SB 50 Stock Forks"
+    },
+    {
+      "name": "Met Tandem Stock Forks"
+    },
+    {
+      "name": "Met Stock Forks"
+    },
+    {
+      "name": "MB 50 Stock Forks"
+    },
+    {
+      "name": "Lucky Stock Forks"
+    },
+    {
+      "name": "Happy Mini Stock Forks"
+    },
+    {
+      "name": "Happy Stock Forks"
+    },
+    {
+      "name": "Grand Sport Stock Forks"
+    },
+    {
+      "name": "GS50 Stock Forks"
+    },
+    {
+      "name": "GH50 Stock Forks"
+    },
+    {
+      "name": "GF50 Stock Forks"
+    },
+    {
+      "name": "GE 50 Tour Stock Forks"
+    },
+    {
+      "name": "GE 50 Sport Stock Forks"
+    },
+    {
+      "name": "GD 50 Stock Forks"
+    },
+    {
+      "name": "GC50 Stock Forks"
+    },
+    {
+      "name": "GB50 Stock Forks"
+    },
+    {
+      "name": "G50 Stock Forks"
+    },
+    {
+      "name": "Foxi GT Sport Stock Forks"
+    },
+    {
+      "name": "Foxi Stock Forks"
+    },
+    {
+      "name": "Buddy Stock Forks"
+    },
+    {
+      "name": "2V Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Typen Stock Wheels"
+    },
+    {
+      "name": "Tour Stock Wheels"
+    },
+    {
+      "name": "Super Sport Stock Wheels"
+    },
+    {
+      "name": "Sport 4 Stock Wheels"
+    },
+    {
+      "name": "Sport 3V Stock Wheels"
+    },
+    {
+      "name": "Sport Stock Wheels"
+    },
+    {
+      "name": "Spartamatic Stock Wheels"
+    },
+    {
+      "name": "SE 50 Stock Wheels"
+    },
+    {
+      "name": "SB 50 Stock Wheels"
+    },
+    {
+      "name": "Met Tandem Stock Wheels"
+    },
+    {
+      "name": "Met Stock Wheels"
+    },
+    {
+      "name": "MB 50 Stock Wheels"
+    },
+    {
+      "name": "Lucky Stock Wheels"
+    },
+    {
+      "name": "Happy Mini Stock Wheels"
+    },
+    {
+      "name": "Happy Stock Wheels"
+    },
+    {
+      "name": "Grand Sport Stock Wheels"
+    },
+    {
+      "name": "GS50 Stock Wheels"
+    },
+    {
+      "name": "GH50 Stock Wheels"
+    },
+    {
+      "name": "GF50 Stock Wheels"
+    },
+    {
+      "name": "GE 50 Tour Stock Wheels"
+    },
+    {
+      "name": "GE 50 Sport Stock Wheels"
+    },
+    {
+      "name": "GD 50 Stock Wheels"
+    },
+    {
+      "name": "GC50 Stock Wheels"
+    },
+    {
+      "name": "GB50 Stock Wheels"
+    },
+    {
+      "name": "G50 Stock Wheels"
+    },
+    {
+      "name": "Foxi GT Sport Stock Wheels"
+    },
+    {
+      "name": "Foxi Stock Wheels"
+    },
+    {
+      "name": "Buddy Stock Wheels"
+    },
+    {
+      "name": "2V Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Typen Stock Cylinder"
+    },
+    {
+      "name": "Tour Stock Cylinder"
+    },
+    {
+      "name": "Super Sport Stock Cylinder"
+    },
+    {
+      "name": "Sport 4 Stock Cylinder"
+    },
+    {
+      "name": "Sport 3V Stock Cylinder"
+    },
+    {
+      "name": "Sport Stock Cylinder"
+    },
+    {
+      "name": "Spartamatic Stock Cylinder"
+    },
+    {
+      "name": "SE 50 Stock Cylinder"
+    },
+    {
+      "name": "SB 50 Stock Cylinder"
+    },
+    {
+      "name": "Met Tandem Stock Cylinder"
+    },
+    {
+      "name": "Met Stock Cylinder"
+    },
+    {
+      "name": "MB 50 Stock Cylinder"
+    },
+    {
+      "name": "Lucky Stock Cylinder"
+    },
+    {
+      "name": "Happy Mini Stock Cylinder"
+    },
+    {
+      "name": "Happy Stock Cylinder"
+    },
+    {
+      "name": "Grand Sport Stock Cylinder"
+    },
+    {
+      "name": "GS50 Stock Cylinder"
+    },
+    {
+      "name": "GH50 Stock Cylinder"
+    },
+    {
+      "name": "GF50 Stock Cylinder"
+    },
+    {
+      "name": "GE 50 Tour Stock Cylinder"
+    },
+    {
+      "name": "GE 50 Sport Stock Cylinder"
+    },
+    {
+      "name": "GD 50 Stock Cylinder"
+    },
+    {
+      "name": "GC50 Stock Cylinder"
+    },
+    {
+      "name": "GB50 Stock Cylinder"
+    },
+    {
+      "name": "G50 Stock Cylinder"
+    },
+    {
+      "name": "Foxi GT Sport Stock Cylinder"
+    },
+    {
+      "name": "Foxi Stock Cylinder"
+    },
+    {
+      "name": "Buddy Stock Cylinder"
+    },
+    {
+      "name": "2V Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "2V"
+    },
+    {
+      "name": "Buddy"
+    },
+    {
+      "name": "Foxi"
+    },
+    {
+      "name": "Foxi GT Sport"
+    },
+    {
+      "name": "G50"
+    },
+    {
+      "name": "GB50"
+    },
+    {
+      "name": "GC50"
+    },
+    {
+      "name": "GD 50"
+    },
+    {
+      "name": "GE 50 Sport"
+    },
+    {
+      "name": "GE 50 Tour"
+    },
+    {
+      "name": "GF50"
+    },
+    {
+      "name": "GH50"
+    },
+    {
+      "name": "GS50"
+    },
+    {
+      "name": "Grand Sport"
+    },
+    {
+      "name": "Happy"
+    },
+    {
+      "name": "Happy Mini"
+    },
+    {
+      "name": "Lucky"
+    },
+    {
+      "name": "MB 50"
+    },
+    {
+      "name": "Met"
+    },
+    {
+      "name": "Met Tandem"
+    },
+    {
+      "name": "SB 50"
+    },
+    {
+      "name": "SE 50"
+    },
+    {
+      "name": "Spartamatic"
+    },
+    {
+      "name": "Sport"
+    },
+    {
+      "name": "Sport 3V"
+    },
+    {
+      "name": "Sport 4"
+    },
+    {
+      "name": "Super Sport"
+    },
+    {
+      "name": "Tour"
+    },
+    {
+      "name": "Typen"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

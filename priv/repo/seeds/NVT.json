@@ -1,0 +1,167 @@
+{
+  "name": "NVT",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Lance Stock Exhaust"
+    },
+    {
+      "name": "Jubilee Stock Exhaust"
+    },
+    {
+      "name": "Easy Rider Stock Exhaust"
+    },
+    {
+      "name": "ER2SS Stock Exhaust"
+    },
+    {
+      "name": "ER2P Stock Exhaust"
+    },
+    {
+      "name": "ER2L Stock Exhaust"
+    },
+    {
+      "name": "ER2 Stock Exhaust"
+    },
+    {
+      "name": "ER1SS Stock Exhaust"
+    },
+    {
+      "name": "ER1 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Lance Stock Forks"
+    },
+    {
+      "name": "Jubilee Stock Forks"
+    },
+    {
+      "name": "Easy Rider Stock Forks"
+    },
+    {
+      "name": "ER2SS Stock Forks"
+    },
+    {
+      "name": "ER2P Stock Forks"
+    },
+    {
+      "name": "ER2L Stock Forks"
+    },
+    {
+      "name": "ER2 Stock Forks"
+    },
+    {
+      "name": "ER1SS Stock Forks"
+    },
+    {
+      "name": "ER1 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Lance Stock Wheels"
+    },
+    {
+      "name": "Jubilee Stock Wheels"
+    },
+    {
+      "name": "Easy Rider Stock Wheels"
+    },
+    {
+      "name": "ER2SS Stock Wheels"
+    },
+    {
+      "name": "ER2P Stock Wheels"
+    },
+    {
+      "name": "ER2L Stock Wheels"
+    },
+    {
+      "name": "ER2 Stock Wheels"
+    },
+    {
+      "name": "ER1SS Stock Wheels"
+    },
+    {
+      "name": "ER1 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Lance Stock Cylinder"
+    },
+    {
+      "name": "Jubilee Stock Cylinder"
+    },
+    {
+      "name": "Easy Rider Stock Cylinder"
+    },
+    {
+      "name": "ER2SS Stock Cylinder"
+    },
+    {
+      "name": "ER2P Stock Cylinder"
+    },
+    {
+      "name": "ER2L Stock Cylinder"
+    },
+    {
+      "name": "ER2 Stock Cylinder"
+    },
+    {
+      "name": "ER1SS Stock Cylinder"
+    },
+    {
+      "name": "ER1 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "ER1"
+    },
+    {
+      "name": "ER1SS"
+    },
+    {
+      "name": "ER2"
+    },
+    {
+      "name": "ER2L"
+    },
+    {
+      "name": "ER2P"
+    },
+    {
+      "name": "ER2SS"
+    },
+    {
+      "name": "Easy Rider"
+    },
+    {
+      "name": "Jubilee"
+    },
+    {
+      "name": "Lance"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

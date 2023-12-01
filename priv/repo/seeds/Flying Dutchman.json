@@ -1,0 +1,92 @@
+{
+  "name": "Flying Dutchman",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Lucky Stock Exhaust"
+    },
+    {
+      "name": "KML-40 Stock Exhaust"
+    },
+    {
+      "name": "DeLuxe Stock Exhaust"
+    },
+    {
+      "name": "Buddy Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Lucky Stock Forks"
+    },
+    {
+      "name": "KML-40 Stock Forks"
+    },
+    {
+      "name": "DeLuxe Stock Forks"
+    },
+    {
+      "name": "Buddy Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Lucky Stock Wheels"
+    },
+    {
+      "name": "KML-40 Stock Wheels"
+    },
+    {
+      "name": "DeLuxe Stock Wheels"
+    },
+    {
+      "name": "Buddy Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Lucky Stock Cylinder"
+    },
+    {
+      "name": "KML-40 Stock Cylinder"
+    },
+    {
+      "name": "DeLuxe Stock Cylinder"
+    },
+    {
+      "name": "Buddy Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Buddy"
+    },
+    {
+      "name": "DeLuxe"
+    },
+    {
+      "name": "KML-40"
+    },
+    {
+      "name": "Lucky"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

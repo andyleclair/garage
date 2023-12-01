@@ -1,0 +1,47 @@
+{
+  "name": "Macal",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Chip Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Chip Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Chip Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Chip Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Chip"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

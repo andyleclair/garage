@@ -9,6 +9,7 @@ defmodule Garage.MixProject do
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
+      consolidate_protocols: Mix.env() != :dev,
       deps: deps()
     ]
   end

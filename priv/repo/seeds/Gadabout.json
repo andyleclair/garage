@@ -1,0 +1,62 @@
+{
+  "name": "Gadabout",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "MK IV Stock Exhaust"
+    },
+    {
+      "name": "Deluxe 3 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "MK IV Stock Forks"
+    },
+    {
+      "name": "Deluxe 3 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "MK IV Stock Wheels"
+    },
+    {
+      "name": "Deluxe 3 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "MK IV Stock Cylinder"
+    },
+    {
+      "name": "Deluxe 3 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Deluxe 3"
+    },
+    {
+      "name": "MK IV"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

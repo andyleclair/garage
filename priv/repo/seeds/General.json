@@ -1,0 +1,137 @@
+{
+  "name": "General",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Limited Edition Stock Exhaust"
+    },
+    {
+      "name": "Laser Stock Exhaust"
+    },
+    {
+      "name": "C-2 Stock Exhaust"
+    },
+    {
+      "name": "5 Star TE Stock Exhaust"
+    },
+    {
+      "name": "5 Star ST Stock Exhaust"
+    },
+    {
+      "name": "5 Star Stock Exhaust"
+    },
+    {
+      "name": "3 Star Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Limited Edition Stock Forks"
+    },
+    {
+      "name": "Laser Stock Forks"
+    },
+    {
+      "name": "C-2 Stock Forks"
+    },
+    {
+      "name": "5 Star TE Stock Forks"
+    },
+    {
+      "name": "5 Star ST Stock Forks"
+    },
+    {
+      "name": "5 Star Stock Forks"
+    },
+    {
+      "name": "3 Star Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Limited Edition Stock Wheels"
+    },
+    {
+      "name": "Laser Stock Wheels"
+    },
+    {
+      "name": "C-2 Stock Wheels"
+    },
+    {
+      "name": "5 Star TE Stock Wheels"
+    },
+    {
+      "name": "5 Star ST Stock Wheels"
+    },
+    {
+      "name": "5 Star Stock Wheels"
+    },
+    {
+      "name": "3 Star Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Limited Edition Stock Cylinder"
+    },
+    {
+      "name": "Laser Stock Cylinder"
+    },
+    {
+      "name": "C-2 Stock Cylinder"
+    },
+    {
+      "name": "5 Star TE Stock Cylinder"
+    },
+    {
+      "name": "5 Star ST Stock Cylinder"
+    },
+    {
+      "name": "5 Star Stock Cylinder"
+    },
+    {
+      "name": "3 Star Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "3 Star"
+    },
+    {
+      "name": "5 Star"
+    },
+    {
+      "name": "5 Star ST"
+    },
+    {
+      "name": "5 Star TE"
+    },
+    {
+      "name": "C-2"
+    },
+    {
+      "name": "Laser"
+    },
+    {
+      "name": "Limited Edition"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

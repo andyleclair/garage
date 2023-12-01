@@ -1,0 +1,482 @@
+{
+  "name": "Yamaha",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "YSR-50 Stock Exhaust"
+    },
+    {
+      "name": "YB 50 Stock Exhaust"
+    },
+    {
+      "name": "U7E Stock Exhaust"
+    },
+    {
+      "name": "TY50p Stock Exhaust"
+    },
+    {
+      "name": "TY50M Stock Exhaust"
+    },
+    {
+      "name": "SH50ML Stock Exhaust"
+    },
+    {
+      "name": "Rosa Toro Stock Exhaust"
+    },
+    {
+      "name": "RD60 Stock Exhaust"
+    },
+    {
+      "name": "RD50M Stock Exhaust"
+    },
+    {
+      "name": "RD50 Stock Exhaust"
+    },
+    {
+      "name": "QT50L Stock Exhaust"
+    },
+    {
+      "name": "QT50J Stock Exhaust"
+    },
+    {
+      "name": "QT50 Yamahopper Stock Exhaust"
+    },
+    {
+      "name": "QT50 Stock Exhaust"
+    },
+    {
+      "name": "PW-50 Stock Exhaust"
+    },
+    {
+      "name": "Mate 50 Stock Exhaust"
+    },
+    {
+      "name": "MS-50 Stock Exhaust"
+    },
+    {
+      "name": "MJ50 Towny Stock Exhaust"
+    },
+    {
+      "name": "MJ-2 Stock Exhaust"
+    },
+    {
+      "name": "MF3-D Stock Exhaust"
+    },
+    {
+      "name": "MF-2 Stock Exhaust"
+    },
+    {
+      "name": "LB80 Chappy Stock Exhaust"
+    },
+    {
+      "name": "LB50-IIAM Chappy Stock Exhaust"
+    },
+    {
+      "name": "LB-50 Chappy Stock Exhaust"
+    },
+    {
+      "name": "G6SB Stock Exhaust"
+    },
+    {
+      "name": "FS1E Stock Exhaust"
+    },
+    {
+      "name": "FS-1 Stock Exhaust"
+    },
+    {
+      "name": "DT50mx Stock Exhaust"
+    },
+    {
+      "name": "DT Stock Exhaust"
+    },
+    {
+      "name": "Champ Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "YSR-50 Stock Forks"
+    },
+    {
+      "name": "YB 50 Stock Forks"
+    },
+    {
+      "name": "U7E Stock Forks"
+    },
+    {
+      "name": "TY50p Stock Forks"
+    },
+    {
+      "name": "TY50M Stock Forks"
+    },
+    {
+      "name": "SH50ML Stock Forks"
+    },
+    {
+      "name": "Rosa Toro Stock Forks"
+    },
+    {
+      "name": "RD60 Stock Forks"
+    },
+    {
+      "name": "RD50M Stock Forks"
+    },
+    {
+      "name": "RD50 Stock Forks"
+    },
+    {
+      "name": "QT50L Stock Forks"
+    },
+    {
+      "name": "QT50J Stock Forks"
+    },
+    {
+      "name": "QT50 Yamahopper Stock Forks"
+    },
+    {
+      "name": "QT50 Stock Forks"
+    },
+    {
+      "name": "PW-50 Stock Forks"
+    },
+    {
+      "name": "Mate 50 Stock Forks"
+    },
+    {
+      "name": "MS-50 Stock Forks"
+    },
+    {
+      "name": "MJ50 Towny Stock Forks"
+    },
+    {
+      "name": "MJ-2 Stock Forks"
+    },
+    {
+      "name": "MF3-D Stock Forks"
+    },
+    {
+      "name": "MF-2 Stock Forks"
+    },
+    {
+      "name": "LB80 Chappy Stock Forks"
+    },
+    {
+      "name": "LB50-IIAM Chappy Stock Forks"
+    },
+    {
+      "name": "LB-50 Chappy Stock Forks"
+    },
+    {
+      "name": "G6SB Stock Forks"
+    },
+    {
+      "name": "FS1E Stock Forks"
+    },
+    {
+      "name": "FS-1 Stock Forks"
+    },
+    {
+      "name": "DT50mx Stock Forks"
+    },
+    {
+      "name": "DT Stock Forks"
+    },
+    {
+      "name": "Champ Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "YSR-50 Stock Wheels"
+    },
+    {
+      "name": "YB 50 Stock Wheels"
+    },
+    {
+      "name": "U7E Stock Wheels"
+    },
+    {
+      "name": "TY50p Stock Wheels"
+    },
+    {
+      "name": "TY50M Stock Wheels"
+    },
+    {
+      "name": "SH50ML Stock Wheels"
+    },
+    {
+      "name": "Rosa Toro Stock Wheels"
+    },
+    {
+      "name": "RD60 Stock Wheels"
+    },
+    {
+      "name": "RD50M Stock Wheels"
+    },
+    {
+      "name": "RD50 Stock Wheels"
+    },
+    {
+      "name": "QT50L Stock Wheels"
+    },
+    {
+      "name": "QT50J Stock Wheels"
+    },
+    {
+      "name": "QT50 Yamahopper Stock Wheels"
+    },
+    {
+      "name": "QT50 Stock Wheels"
+    },
+    {
+      "name": "PW-50 Stock Wheels"
+    },
+    {
+      "name": "Mate 50 Stock Wheels"
+    },
+    {
+      "name": "MS-50 Stock Wheels"
+    },
+    {
+      "name": "MJ50 Towny Stock Wheels"
+    },
+    {
+      "name": "MJ-2 Stock Wheels"
+    },
+    {
+      "name": "MF3-D Stock Wheels"
+    },
+    {
+      "name": "MF-2 Stock Wheels"
+    },
+    {
+      "name": "LB80 Chappy Stock Wheels"
+    },
+    {
+      "name": "LB50-IIAM Chappy Stock Wheels"
+    },
+    {
+      "name": "LB-50 Chappy Stock Wheels"
+    },
+    {
+      "name": "G6SB Stock Wheels"
+    },
+    {
+      "name": "FS1E Stock Wheels"
+    },
+    {
+      "name": "FS-1 Stock Wheels"
+    },
+    {
+      "name": "DT50mx Stock Wheels"
+    },
+    {
+      "name": "DT Stock Wheels"
+    },
+    {
+      "name": "Champ Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "YSR-50 Stock Cylinder"
+    },
+    {
+      "name": "YB 50 Stock Cylinder"
+    },
+    {
+      "name": "U7E Stock Cylinder"
+    },
+    {
+      "name": "TY50p Stock Cylinder"
+    },
+    {
+      "name": "TY50M Stock Cylinder"
+    },
+    {
+      "name": "SH50ML Stock Cylinder"
+    },
+    {
+      "name": "Rosa Toro Stock Cylinder"
+    },
+    {
+      "name": "RD60 Stock Cylinder"
+    },
+    {
+      "name": "RD50M Stock Cylinder"
+    },
+    {
+      "name": "RD50 Stock Cylinder"
+    },
+    {
+      "name": "QT50L Stock Cylinder"
+    },
+    {
+      "name": "QT50J Stock Cylinder"
+    },
+    {
+      "name": "QT50 Yamahopper Stock Cylinder"
+    },
+    {
+      "name": "QT50 Stock Cylinder"
+    },
+    {
+      "name": "PW-50 Stock Cylinder"
+    },
+    {
+      "name": "Mate 50 Stock Cylinder"
+    },
+    {
+      "name": "MS-50 Stock Cylinder"
+    },
+    {
+      "name": "MJ50 Towny Stock Cylinder"
+    },
+    {
+      "name": "MJ-2 Stock Cylinder"
+    },
+    {
+      "name": "MF3-D Stock Cylinder"
+    },
+    {
+      "name": "MF-2 Stock Cylinder"
+    },
+    {
+      "name": "LB80 Chappy Stock Cylinder"
+    },
+    {
+      "name": "LB50-IIAM Chappy Stock Cylinder"
+    },
+    {
+      "name": "LB-50 Chappy Stock Cylinder"
+    },
+    {
+      "name": "G6SB Stock Cylinder"
+    },
+    {
+      "name": "FS1E Stock Cylinder"
+    },
+    {
+      "name": "FS-1 Stock Cylinder"
+    },
+    {
+      "name": "DT50mx Stock Cylinder"
+    },
+    {
+      "name": "DT Stock Cylinder"
+    },
+    {
+      "name": "Champ Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Champ"
+    },
+    {
+      "name": "DT"
+    },
+    {
+      "name": "DT50mx"
+    },
+    {
+      "name": "FS-1"
+    },
+    {
+      "name": "FS1E"
+    },
+    {
+      "name": "G6SB"
+    },
+    {
+      "name": "LB-50 Chappy"
+    },
+    {
+      "name": "LB50-IIAM Chappy"
+    },
+    {
+      "name": "LB80 Chappy"
+    },
+    {
+      "name": "MF-2"
+    },
+    {
+      "name": "MF3-D"
+    },
+    {
+      "name": "MJ-2"
+    },
+    {
+      "name": "MJ50 Towny"
+    },
+    {
+      "name": "MS-50"
+    },
+    {
+      "name": "Mate 50"
+    },
+    {
+      "name": "PW-50"
+    },
+    {
+      "name": "QT50"
+    },
+    {
+      "name": "QT50 Yamahopper"
+    },
+    {
+      "name": "QT50J"
+    },
+    {
+      "name": "QT50L"
+    },
+    {
+      "name": "RD50"
+    },
+    {
+      "name": "RD50M"
+    },
+    {
+      "name": "RD60"
+    },
+    {
+      "name": "Rosa Toro"
+    },
+    {
+      "name": "SH50ML"
+    },
+    {
+      "name": "TY50M"
+    },
+    {
+      "name": "TY50p"
+    },
+    {
+      "name": "U7E"
+    },
+    {
+      "name": "YB 50"
+    },
+    {
+      "name": "YSR-50"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

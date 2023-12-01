@@ -1,0 +1,317 @@
+{
+  "name": "Benelli",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Turismo Stock Exhaust"
+    },
+    {
+      "name": "Sprint Stock Exhaust"
+    },
+    {
+      "name": "Riverside Stock Exhaust"
+    },
+    {
+      "name": "Pantera Stock Exhaust"
+    },
+    {
+      "name": "Motorella Stock Exhaust"
+    },
+    {
+      "name": "Maserati Stock Exhaust"
+    },
+    {
+      "name": "Magnum 6V Stock Exhaust"
+    },
+    {
+      "name": "Magnum 5V Stock Exhaust"
+    },
+    {
+      "name": "Gentleman-2 Stock Exhaust"
+    },
+    {
+      "name": "G2 Stock Exhaust"
+    },
+    {
+      "name": "Fireball 50 Stock Exhaust"
+    },
+    {
+      "name": "FA Stock Exhaust"
+    },
+    {
+      "name": "Cross Stock Exhaust"
+    },
+    {
+      "name": "Cosmo Colt Stock Exhaust"
+    },
+    {
+      "name": "Cosmo Blazer Stock Exhaust"
+    },
+    {
+      "name": "Caddy Stock Exhaust"
+    },
+    {
+      "name": "Blazar Stock Exhaust"
+    },
+    {
+      "name": "49 Export Stock Exhaust"
+    },
+    {
+      "name": "3VK Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Turismo Stock Forks"
+    },
+    {
+      "name": "Sprint Stock Forks"
+    },
+    {
+      "name": "Riverside Stock Forks"
+    },
+    {
+      "name": "Pantera Stock Forks"
+    },
+    {
+      "name": "Motorella Stock Forks"
+    },
+    {
+      "name": "Maserati Stock Forks"
+    },
+    {
+      "name": "Magnum 6V Stock Forks"
+    },
+    {
+      "name": "Magnum 5V Stock Forks"
+    },
+    {
+      "name": "Gentleman-2 Stock Forks"
+    },
+    {
+      "name": "G2 Stock Forks"
+    },
+    {
+      "name": "Fireball 50 Stock Forks"
+    },
+    {
+      "name": "FA Stock Forks"
+    },
+    {
+      "name": "Cross Stock Forks"
+    },
+    {
+      "name": "Cosmo Colt Stock Forks"
+    },
+    {
+      "name": "Cosmo Blazer Stock Forks"
+    },
+    {
+      "name": "Caddy Stock Forks"
+    },
+    {
+      "name": "Blazar Stock Forks"
+    },
+    {
+      "name": "49 Export Stock Forks"
+    },
+    {
+      "name": "3VK Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Turismo Stock Wheels"
+    },
+    {
+      "name": "Sprint Stock Wheels"
+    },
+    {
+      "name": "Riverside Stock Wheels"
+    },
+    {
+      "name": "Pantera Stock Wheels"
+    },
+    {
+      "name": "Motorella Stock Wheels"
+    },
+    {
+      "name": "Maserati Stock Wheels"
+    },
+    {
+      "name": "Magnum 6V Stock Wheels"
+    },
+    {
+      "name": "Magnum 5V Stock Wheels"
+    },
+    {
+      "name": "Gentleman-2 Stock Wheels"
+    },
+    {
+      "name": "G2 Stock Wheels"
+    },
+    {
+      "name": "Fireball 50 Stock Wheels"
+    },
+    {
+      "name": "FA Stock Wheels"
+    },
+    {
+      "name": "Cross Stock Wheels"
+    },
+    {
+      "name": "Cosmo Colt Stock Wheels"
+    },
+    {
+      "name": "Cosmo Blazer Stock Wheels"
+    },
+    {
+      "name": "Caddy Stock Wheels"
+    },
+    {
+      "name": "Blazar Stock Wheels"
+    },
+    {
+      "name": "49 Export Stock Wheels"
+    },
+    {
+      "name": "3VK Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Turismo Stock Cylinder"
+    },
+    {
+      "name": "Sprint Stock Cylinder"
+    },
+    {
+      "name": "Riverside Stock Cylinder"
+    },
+    {
+      "name": "Pantera Stock Cylinder"
+    },
+    {
+      "name": "Motorella Stock Cylinder"
+    },
+    {
+      "name": "Maserati Stock Cylinder"
+    },
+    {
+      "name": "Magnum 6V Stock Cylinder"
+    },
+    {
+      "name": "Magnum 5V Stock Cylinder"
+    },
+    {
+      "name": "Gentleman-2 Stock Cylinder"
+    },
+    {
+      "name": "G2 Stock Cylinder"
+    },
+    {
+      "name": "Fireball 50 Stock Cylinder"
+    },
+    {
+      "name": "FA Stock Cylinder"
+    },
+    {
+      "name": "Cross Stock Cylinder"
+    },
+    {
+      "name": "Cosmo Colt Stock Cylinder"
+    },
+    {
+      "name": "Cosmo Blazer Stock Cylinder"
+    },
+    {
+      "name": "Caddy Stock Cylinder"
+    },
+    {
+      "name": "Blazar Stock Cylinder"
+    },
+    {
+      "name": "49 Export Stock Cylinder"
+    },
+    {
+      "name": "3VK Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "3VK"
+    },
+    {
+      "name": "49 Export"
+    },
+    {
+      "name": "Blazar"
+    },
+    {
+      "name": "Caddy"
+    },
+    {
+      "name": "Cosmo Blazer"
+    },
+    {
+      "name": "Cosmo Colt"
+    },
+    {
+      "name": "Cross"
+    },
+    {
+      "name": "FA"
+    },
+    {
+      "name": "Fireball 50"
+    },
+    {
+      "name": "G2"
+    },
+    {
+      "name": "Gentleman-2"
+    },
+    {
+      "name": "Magnum 5V"
+    },
+    {
+      "name": "Magnum 6V"
+    },
+    {
+      "name": "Maserati"
+    },
+    {
+      "name": "Motorella"
+    },
+    {
+      "name": "Pantera"
+    },
+    {
+      "name": "Riverside"
+    },
+    {
+      "name": "Sprint"
+    },
+    {
+      "name": "Turismo"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

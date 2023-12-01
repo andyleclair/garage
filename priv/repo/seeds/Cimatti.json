@@ -1,0 +1,242 @@
+{
+  "name": "Cimatti",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Twin Sport Stock Exhaust"
+    },
+    {
+      "name": "Town Bike Stock Exhaust"
+    },
+    {
+      "name": "Piper V1 KS Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Kaiman Super 6m Radial X21 Stock Exhaust"
+    },
+    {
+      "name": "Gran Prix XL Stock Exhaust"
+    },
+    {
+      "name": "Express Stock Exhaust"
+    },
+    {
+      "name": "City Bike Stock Exhaust"
+    },
+    {
+      "name": "Chic Stock Exhaust"
+    },
+    {
+      "name": "C50 Stock Exhaust"
+    },
+    {
+      "name": "Boy Stock Exhaust"
+    },
+    {
+      "name": "Bob Cat Stock Exhaust"
+    },
+    {
+      "name": "Bat Baby Stock Exhaust"
+    },
+    {
+      "name": "86XL Radial 4M Stock Exhaust"
+    },
+    {
+      "name": "4M Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Twin Sport Stock Forks"
+    },
+    {
+      "name": "Town Bike Stock Forks"
+    },
+    {
+      "name": "Piper V1 KS Deluxe Stock Forks"
+    },
+    {
+      "name": "Kaiman Super 6m Radial X21 Stock Forks"
+    },
+    {
+      "name": "Gran Prix XL Stock Forks"
+    },
+    {
+      "name": "Express Stock Forks"
+    },
+    {
+      "name": "City Bike Stock Forks"
+    },
+    {
+      "name": "Chic Stock Forks"
+    },
+    {
+      "name": "C50 Stock Forks"
+    },
+    {
+      "name": "Boy Stock Forks"
+    },
+    {
+      "name": "Bob Cat Stock Forks"
+    },
+    {
+      "name": "Bat Baby Stock Forks"
+    },
+    {
+      "name": "86XL Radial 4M Stock Forks"
+    },
+    {
+      "name": "4M Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Twin Sport Stock Wheels"
+    },
+    {
+      "name": "Town Bike Stock Wheels"
+    },
+    {
+      "name": "Piper V1 KS Deluxe Stock Wheels"
+    },
+    {
+      "name": "Kaiman Super 6m Radial X21 Stock Wheels"
+    },
+    {
+      "name": "Gran Prix XL Stock Wheels"
+    },
+    {
+      "name": "Express Stock Wheels"
+    },
+    {
+      "name": "City Bike Stock Wheels"
+    },
+    {
+      "name": "Chic Stock Wheels"
+    },
+    {
+      "name": "C50 Stock Wheels"
+    },
+    {
+      "name": "Boy Stock Wheels"
+    },
+    {
+      "name": "Bob Cat Stock Wheels"
+    },
+    {
+      "name": "Bat Baby Stock Wheels"
+    },
+    {
+      "name": "86XL Radial 4M Stock Wheels"
+    },
+    {
+      "name": "4M Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Twin Sport Stock Cylinder"
+    },
+    {
+      "name": "Town Bike Stock Cylinder"
+    },
+    {
+      "name": "Piper V1 KS Deluxe Stock Cylinder"
+    },
+    {
+      "name": "Kaiman Super 6m Radial X21 Stock Cylinder"
+    },
+    {
+      "name": "Gran Prix XL Stock Cylinder"
+    },
+    {
+      "name": "Express Stock Cylinder"
+    },
+    {
+      "name": "City Bike Stock Cylinder"
+    },
+    {
+      "name": "Chic Stock Cylinder"
+    },
+    {
+      "name": "C50 Stock Cylinder"
+    },
+    {
+      "name": "Boy Stock Cylinder"
+    },
+    {
+      "name": "Bob Cat Stock Cylinder"
+    },
+    {
+      "name": "Bat Baby Stock Cylinder"
+    },
+    {
+      "name": "86XL Radial 4M Stock Cylinder"
+    },
+    {
+      "name": "4M Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "4M"
+    },
+    {
+      "name": "86XL Radial 4M"
+    },
+    {
+      "name": "Bat Baby"
+    },
+    {
+      "name": "Bob Cat"
+    },
+    {
+      "name": "Boy"
+    },
+    {
+      "name": "C50"
+    },
+    {
+      "name": "Chic"
+    },
+    {
+      "name": "City Bike"
+    },
+    {
+      "name": "Express"
+    },
+    {
+      "name": "Gran Prix XL"
+    },
+    {
+      "name": "Kaiman Super 6m Radial X21"
+    },
+    {
+      "name": "Piper V1 KS Deluxe"
+    },
+    {
+      "name": "Town Bike"
+    },
+    {
+      "name": "Twin Sport"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

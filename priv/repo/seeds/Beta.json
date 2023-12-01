@@ -1,0 +1,137 @@
+{
+  "name": "Beta",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Tour Stock Exhaust"
+    },
+    {
+      "name": "Standard Stock Exhaust"
+    },
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "SL5 Stock Exhaust"
+    },
+    {
+      "name": "Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Camoscio Stock Exhaust"
+    },
+    {
+      "name": "Alpha Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Tour Stock Forks"
+    },
+    {
+      "name": "Standard Stock Forks"
+    },
+    {
+      "name": "Sport Stock Forks"
+    },
+    {
+      "name": "SL5 Stock Forks"
+    },
+    {
+      "name": "Deluxe Stock Forks"
+    },
+    {
+      "name": "Camoscio Stock Forks"
+    },
+    {
+      "name": "Alpha Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Tour Stock Wheels"
+    },
+    {
+      "name": "Standard Stock Wheels"
+    },
+    {
+      "name": "Sport Stock Wheels"
+    },
+    {
+      "name": "SL5 Stock Wheels"
+    },
+    {
+      "name": "Deluxe Stock Wheels"
+    },
+    {
+      "name": "Camoscio Stock Wheels"
+    },
+    {
+      "name": "Alpha Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Tour Stock Cylinder"
+    },
+    {
+      "name": "Standard Stock Cylinder"
+    },
+    {
+      "name": "Sport Stock Cylinder"
+    },
+    {
+      "name": "SL5 Stock Cylinder"
+    },
+    {
+      "name": "Deluxe Stock Cylinder"
+    },
+    {
+      "name": "Camoscio Stock Cylinder"
+    },
+    {
+      "name": "Alpha Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Alpha"
+    },
+    {
+      "name": "Camoscio"
+    },
+    {
+      "name": "Deluxe"
+    },
+    {
+      "name": "SL5"
+    },
+    {
+      "name": "Sport"
+    },
+    {
+      "name": "Standard"
+    },
+    {
+      "name": "Tour"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

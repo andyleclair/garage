@@ -1,0 +1,137 @@
+{
+  "name": "Cosmo",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Stinger Stock Exhaust"
+    },
+    {
+      "name": "Colt IV Stock Exhaust"
+    },
+    {
+      "name": "Colt III Variator Stock Exhaust"
+    },
+    {
+      "name": "Colt III Reed Stock Exhaust"
+    },
+    {
+      "name": "Colt II Stock Exhaust"
+    },
+    {
+      "name": "Colt I Stock Exhaust"
+    },
+    {
+      "name": "Blazer Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Stinger Stock Forks"
+    },
+    {
+      "name": "Colt IV Stock Forks"
+    },
+    {
+      "name": "Colt III Variator Stock Forks"
+    },
+    {
+      "name": "Colt III Reed Stock Forks"
+    },
+    {
+      "name": "Colt II Stock Forks"
+    },
+    {
+      "name": "Colt I Stock Forks"
+    },
+    {
+      "name": "Blazer Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Stinger Stock Wheels"
+    },
+    {
+      "name": "Colt IV Stock Wheels"
+    },
+    {
+      "name": "Colt III Variator Stock Wheels"
+    },
+    {
+      "name": "Colt III Reed Stock Wheels"
+    },
+    {
+      "name": "Colt II Stock Wheels"
+    },
+    {
+      "name": "Colt I Stock Wheels"
+    },
+    {
+      "name": "Blazer Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Stinger Stock Cylinder"
+    },
+    {
+      "name": "Colt IV Stock Cylinder"
+    },
+    {
+      "name": "Colt III Variator Stock Cylinder"
+    },
+    {
+      "name": "Colt III Reed Stock Cylinder"
+    },
+    {
+      "name": "Colt II Stock Cylinder"
+    },
+    {
+      "name": "Colt I Stock Cylinder"
+    },
+    {
+      "name": "Blazer Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Blazer"
+    },
+    {
+      "name": "Colt I"
+    },
+    {
+      "name": "Colt II"
+    },
+    {
+      "name": "Colt III Reed"
+    },
+    {
+      "name": "Colt III Variator"
+    },
+    {
+      "name": "Colt IV"
+    },
+    {
+      "name": "Stinger"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

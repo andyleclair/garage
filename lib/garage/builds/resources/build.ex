@@ -69,49 +69,41 @@ defmodule Garage.Builds.Build do
     belongs_to :ignition, Ignition do
       api Garage.Mopeds
       attribute_writable? true
-      allow_nil? false
     end
 
     belongs_to :carburetor, Carburetor do
       api Garage.Mopeds
       attribute_writable? true
-      allow_nil? false
     end
 
     belongs_to :wheels, Wheels do
       api Garage.Mopeds
       attribute_writable? true
-      allow_nil? false
     end
 
     belongs_to :forks, Forks do
       api Garage.Mopeds
       attribute_writable? true
-      allow_nil? false
     end
 
     belongs_to :cylinder, Cylinder do
       api Garage.Mopeds
       attribute_writable? true
-      allow_nil? false
     end
 
     belongs_to :exhaust, Exhaust do
       api Garage.Mopeds
       attribute_writable? true
-      allow_nil? false
     end
 
     belongs_to :clutch, Clutch do
       api Garage.Mopeds
       attribute_writable? true
-      allow_nil? false
     end
 
     belongs_to :crank, Crank do
       api Garage.Mopeds
       attribute_writable? true
-      allow_nil? false
     end
 
     belongs_to :variator, Variator do
@@ -127,7 +119,6 @@ defmodule Garage.Builds.Build do
     belongs_to :engine, Engine do
       api Garage.Mopeds
       attribute_writable? true
-      allow_nil? false
     end
 
     belongs_to :builder, User do

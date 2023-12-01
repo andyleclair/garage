@@ -1,0 +1,167 @@
+{
+  "name": "Carabela",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Super Sport Stock Exhaust"
+    },
+    {
+      "name": "Sport Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "Moto-Pony 60 Stock Exhaust"
+    },
+    {
+      "name": "Moto-Pedal Stock Exhaust"
+    },
+    {
+      "name": "Moto-Matic Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Moto-Matic Stock Exhaust"
+    },
+    {
+      "name": "Delux Stock Exhaust"
+    },
+    {
+      "name": "Carrera Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Super Sport Stock Forks"
+    },
+    {
+      "name": "Sport Deluxe Stock Forks"
+    },
+    {
+      "name": "Sport Stock Forks"
+    },
+    {
+      "name": "Moto-Pony 60 Stock Forks"
+    },
+    {
+      "name": "Moto-Pedal Stock Forks"
+    },
+    {
+      "name": "Moto-Matic Deluxe Stock Forks"
+    },
+    {
+      "name": "Moto-Matic Stock Forks"
+    },
+    {
+      "name": "Delux Stock Forks"
+    },
+    {
+      "name": "Carrera Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Super Sport Stock Wheels"
+    },
+    {
+      "name": "Sport Deluxe Stock Wheels"
+    },
+    {
+      "name": "Sport Stock Wheels"
+    },
+    {
+      "name": "Moto-Pony 60 Stock Wheels"
+    },
+    {
+      "name": "Moto-Pedal Stock Wheels"
+    },
+    {
+      "name": "Moto-Matic Deluxe Stock Wheels"
+    },
+    {
+      "name": "Moto-Matic Stock Wheels"
+    },
+    {
+      "name": "Delux Stock Wheels"
+    },
+    {
+      "name": "Carrera Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Super Sport Stock Cylinder"
+    },
+    {
+      "name": "Sport Deluxe Stock Cylinder"
+    },
+    {
+      "name": "Sport Stock Cylinder"
+    },
+    {
+      "name": "Moto-Pony 60 Stock Cylinder"
+    },
+    {
+      "name": "Moto-Pedal Stock Cylinder"
+    },
+    {
+      "name": "Moto-Matic Deluxe Stock Cylinder"
+    },
+    {
+      "name": "Moto-Matic Stock Cylinder"
+    },
+    {
+      "name": "Delux Stock Cylinder"
+    },
+    {
+      "name": "Carrera Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Carrera"
+    },
+    {
+      "name": "Delux"
+    },
+    {
+      "name": "Moto-Matic"
+    },
+    {
+      "name": "Moto-Matic Deluxe"
+    },
+    {
+      "name": "Moto-Pedal"
+    },
+    {
+      "name": "Moto-Pony 60"
+    },
+    {
+      "name": "Sport"
+    },
+    {
+      "name": "Sport Deluxe"
+    },
+    {
+      "name": "Super Sport"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

@@ -1,0 +1,77 @@
+{
+  "name": "Monark",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Scooten Stock Exhaust"
+    },
+    {
+      "name": "Monarscoot Stock Exhaust"
+    },
+    {
+      "name": "50ss Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Scooten Stock Forks"
+    },
+    {
+      "name": "Monarscoot Stock Forks"
+    },
+    {
+      "name": "50ss Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Scooten Stock Wheels"
+    },
+    {
+      "name": "Monarscoot Stock Wheels"
+    },
+    {
+      "name": "50ss Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Scooten Stock Cylinder"
+    },
+    {
+      "name": "Monarscoot Stock Cylinder"
+    },
+    {
+      "name": "50ss Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "50ss"
+    },
+    {
+      "name": "Monarscoot"
+    },
+    {
+      "name": "Scooten"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

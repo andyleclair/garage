@@ -1,0 +1,152 @@
+{
+  "name": "Victoria",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Vicky Stock Exhaust"
+    },
+    {
+      "name": "Spoetnik Stock Exhaust"
+    },
+    {
+      "name": "Luxus Stock Exhaust"
+    },
+    {
+      "name": "IVN Stock Exhaust"
+    },
+    {
+      "name": "FM38 L Stock Exhaust"
+    },
+    {
+      "name": "Avanti K Stock Exhaust"
+    },
+    {
+      "name": "111 Stock Exhaust"
+    },
+    {
+      "name": "110 s Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Vicky Stock Forks"
+    },
+    {
+      "name": "Spoetnik Stock Forks"
+    },
+    {
+      "name": "Luxus Stock Forks"
+    },
+    {
+      "name": "IVN Stock Forks"
+    },
+    {
+      "name": "FM38 L Stock Forks"
+    },
+    {
+      "name": "Avanti K Stock Forks"
+    },
+    {
+      "name": "111 Stock Forks"
+    },
+    {
+      "name": "110 s Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Vicky Stock Wheels"
+    },
+    {
+      "name": "Spoetnik Stock Wheels"
+    },
+    {
+      "name": "Luxus Stock Wheels"
+    },
+    {
+      "name": "IVN Stock Wheels"
+    },
+    {
+      "name": "FM38 L Stock Wheels"
+    },
+    {
+      "name": "Avanti K Stock Wheels"
+    },
+    {
+      "name": "111 Stock Wheels"
+    },
+    {
+      "name": "110 s Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Vicky Stock Cylinder"
+    },
+    {
+      "name": "Spoetnik Stock Cylinder"
+    },
+    {
+      "name": "Luxus Stock Cylinder"
+    },
+    {
+      "name": "IVN Stock Cylinder"
+    },
+    {
+      "name": "FM38 L Stock Cylinder"
+    },
+    {
+      "name": "Avanti K Stock Cylinder"
+    },
+    {
+      "name": "111 Stock Cylinder"
+    },
+    {
+      "name": "110 s Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "110 s"
+    },
+    {
+      "name": "111"
+    },
+    {
+      "name": "Avanti K"
+    },
+    {
+      "name": "FM38 L"
+    },
+    {
+      "name": "IVN"
+    },
+    {
+      "name": "Luxus"
+    },
+    {
+      "name": "Spoetnik"
+    },
+    {
+      "name": "Vicky"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

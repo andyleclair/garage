@@ -1,0 +1,92 @@
+{
+  "name": "Wind",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "WMX Cargo Stock Exhaust"
+    },
+    {
+      "name": "WMX 50 Stock Exhaust"
+    },
+    {
+      "name": "Classic Stock Exhaust"
+    },
+    {
+      "name": "City Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "WMX Cargo Stock Forks"
+    },
+    {
+      "name": "WMX 50 Stock Forks"
+    },
+    {
+      "name": "Classic Stock Forks"
+    },
+    {
+      "name": "City Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "WMX Cargo Stock Wheels"
+    },
+    {
+      "name": "WMX 50 Stock Wheels"
+    },
+    {
+      "name": "Classic Stock Wheels"
+    },
+    {
+      "name": "City Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "WMX Cargo Stock Cylinder"
+    },
+    {
+      "name": "WMX 50 Stock Cylinder"
+    },
+    {
+      "name": "Classic Stock Cylinder"
+    },
+    {
+      "name": "City Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "City"
+    },
+    {
+      "name": "Classic"
+    },
+    {
+      "name": "WMX 50"
+    },
+    {
+      "name": "WMX Cargo"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

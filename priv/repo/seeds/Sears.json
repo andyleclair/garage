@@ -1,0 +1,77 @@
+{
+  "name": "Sears",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "VS50L Stock Exhaust"
+    },
+    {
+      "name": "Free Spirit Stock Exhaust"
+    },
+    {
+      "name": "Allstate Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "VS50L Stock Forks"
+    },
+    {
+      "name": "Free Spirit Stock Forks"
+    },
+    {
+      "name": "Allstate Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "VS50L Stock Wheels"
+    },
+    {
+      "name": "Free Spirit Stock Wheels"
+    },
+    {
+      "name": "Allstate Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "VS50L Stock Cylinder"
+    },
+    {
+      "name": "Free Spirit Stock Cylinder"
+    },
+    {
+      "name": "Allstate Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Allstate"
+    },
+    {
+      "name": "Free Spirit"
+    },
+    {
+      "name": "VS50L"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

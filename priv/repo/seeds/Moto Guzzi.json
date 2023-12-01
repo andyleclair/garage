@@ -1,0 +1,122 @@
+{
+  "name": "Moto Guzzi",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Trotter Stock Exhaust"
+    },
+    {
+      "name": "Robin Stock Exhaust"
+    },
+    {
+      "name": "Magnum Stock Exhaust"
+    },
+    {
+      "name": "G2 Stock Exhaust"
+    },
+    {
+      "name": "Dingo Stock Exhaust"
+    },
+    {
+      "name": "Chiu Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Trotter Stock Forks"
+    },
+    {
+      "name": "Robin Stock Forks"
+    },
+    {
+      "name": "Magnum Stock Forks"
+    },
+    {
+      "name": "G2 Stock Forks"
+    },
+    {
+      "name": "Dingo Stock Forks"
+    },
+    {
+      "name": "Chiu Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Trotter Stock Wheels"
+    },
+    {
+      "name": "Robin Stock Wheels"
+    },
+    {
+      "name": "Magnum Stock Wheels"
+    },
+    {
+      "name": "G2 Stock Wheels"
+    },
+    {
+      "name": "Dingo Stock Wheels"
+    },
+    {
+      "name": "Chiu Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Trotter Stock Cylinder"
+    },
+    {
+      "name": "Robin Stock Cylinder"
+    },
+    {
+      "name": "Magnum Stock Cylinder"
+    },
+    {
+      "name": "G2 Stock Cylinder"
+    },
+    {
+      "name": "Dingo Stock Cylinder"
+    },
+    {
+      "name": "Chiu Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Chiu"
+    },
+    {
+      "name": "Dingo"
+    },
+    {
+      "name": "G2"
+    },
+    {
+      "name": "Magnum"
+    },
+    {
+      "name": "Robin"
+    },
+    {
+      "name": "Trotter"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

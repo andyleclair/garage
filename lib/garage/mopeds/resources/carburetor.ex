@@ -29,6 +29,8 @@ defmodule Garage.Mopeds.Carburetor do
     uuid_primary_key :id
     attribute :name, :string, allow_nil?: false
     attribute :description, :string, default: ""
+    # in mm
+    attribute :size, :integer, default: 12
     attribute :jets, {:array, :string}, default: []
 
     create_timestamp :inserted_at

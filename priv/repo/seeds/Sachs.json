@@ -1,0 +1,467 @@
+{
+  "name": "Sachs",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Westlake Stock Exhaust"
+    },
+    {
+      "name": "Taxi Lux Stock Exhaust"
+    },
+    {
+      "name": "Sundowner Stock Exhaust"
+    },
+    {
+      "name": "Sundancer SX Stock Exhaust"
+    },
+    {
+      "name": "Sundancer Stock Exhaust"
+    },
+    {
+      "name": "Suburban Stock Exhaust"
+    },
+    {
+      "name": "Showoff Stock Exhaust"
+    },
+    {
+      "name": "Seville Stock Exhaust"
+    },
+    {
+      "name": "Saxy Stock Exhaust"
+    },
+    {
+      "name": "Prima 5 Stock Exhaust"
+    },
+    {
+      "name": "Prima 4 Stock Exhaust"
+    },
+    {
+      "name": "Prima Stock Exhaust"
+    },
+    {
+      "name": "Optima 50 Stock Exhaust"
+    },
+    {
+      "name": "Mopet Stock Exhaust"
+    },
+    {
+      "name": "Minor Stock Exhaust"
+    },
+    {
+      "name": "MadAss Stock Exhaust"
+    },
+    {
+      "name": "Lover Stock Exhaust"
+    },
+    {
+      "name": "Honey Stock Exhaust"
+    },
+    {
+      "name": "Hercules Prima S 2 speed Stock Exhaust"
+    },
+    {
+      "name": "Hercules P-1 Stock Exhaust"
+    },
+    {
+      "name": "Hercules M-4 Stock Exhaust"
+    },
+    {
+      "name": "Hercules Stock Exhaust"
+    },
+    {
+      "name": "G-4 Stock Exhaust"
+    },
+    {
+      "name": "G-3 Stock Exhaust"
+    },
+    {
+      "name": "Feugo Stock Exhaust"
+    },
+    {
+      "name": "Eagle Stock Exhaust"
+    },
+    {
+      "name": "Carrier II Stock Exhaust"
+    },
+    {
+      "name": "Carrier I Stock Exhaust"
+    },
+    {
+      "name": "Balboa Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Westlake Stock Forks"
+    },
+    {
+      "name": "Taxi Lux Stock Forks"
+    },
+    {
+      "name": "Sundowner Stock Forks"
+    },
+    {
+      "name": "Sundancer SX Stock Forks"
+    },
+    {
+      "name": "Sundancer Stock Forks"
+    },
+    {
+      "name": "Suburban Stock Forks"
+    },
+    {
+      "name": "Showoff Stock Forks"
+    },
+    {
+      "name": "Seville Stock Forks"
+    },
+    {
+      "name": "Saxy Stock Forks"
+    },
+    {
+      "name": "Prima 5 Stock Forks"
+    },
+    {
+      "name": "Prima 4 Stock Forks"
+    },
+    {
+      "name": "Prima Stock Forks"
+    },
+    {
+      "name": "Optima 50 Stock Forks"
+    },
+    {
+      "name": "Mopet Stock Forks"
+    },
+    {
+      "name": "Minor Stock Forks"
+    },
+    {
+      "name": "MadAss Stock Forks"
+    },
+    {
+      "name": "Lover Stock Forks"
+    },
+    {
+      "name": "Honey Stock Forks"
+    },
+    {
+      "name": "Hercules Prima S 2 speed Stock Forks"
+    },
+    {
+      "name": "Hercules P-1 Stock Forks"
+    },
+    {
+      "name": "Hercules M-4 Stock Forks"
+    },
+    {
+      "name": "Hercules Stock Forks"
+    },
+    {
+      "name": "G-4 Stock Forks"
+    },
+    {
+      "name": "G-3 Stock Forks"
+    },
+    {
+      "name": "Feugo Stock Forks"
+    },
+    {
+      "name": "Eagle Stock Forks"
+    },
+    {
+      "name": "Carrier II Stock Forks"
+    },
+    {
+      "name": "Carrier I Stock Forks"
+    },
+    {
+      "name": "Balboa Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Westlake Stock Wheels"
+    },
+    {
+      "name": "Taxi Lux Stock Wheels"
+    },
+    {
+      "name": "Sundowner Stock Wheels"
+    },
+    {
+      "name": "Sundancer SX Stock Wheels"
+    },
+    {
+      "name": "Sundancer Stock Wheels"
+    },
+    {
+      "name": "Suburban Stock Wheels"
+    },
+    {
+      "name": "Showoff Stock Wheels"
+    },
+    {
+      "name": "Seville Stock Wheels"
+    },
+    {
+      "name": "Saxy Stock Wheels"
+    },
+    {
+      "name": "Prima 5 Stock Wheels"
+    },
+    {
+      "name": "Prima 4 Stock Wheels"
+    },
+    {
+      "name": "Prima Stock Wheels"
+    },
+    {
+      "name": "Optima 50 Stock Wheels"
+    },
+    {
+      "name": "Mopet Stock Wheels"
+    },
+    {
+      "name": "Minor Stock Wheels"
+    },
+    {
+      "name": "MadAss Stock Wheels"
+    },
+    {
+      "name": "Lover Stock Wheels"
+    },
+    {
+      "name": "Honey Stock Wheels"
+    },
+    {
+      "name": "Hercules Prima S 2 speed Stock Wheels"
+    },
+    {
+      "name": "Hercules P-1 Stock Wheels"
+    },
+    {
+      "name": "Hercules M-4 Stock Wheels"
+    },
+    {
+      "name": "Hercules Stock Wheels"
+    },
+    {
+      "name": "G-4 Stock Wheels"
+    },
+    {
+      "name": "G-3 Stock Wheels"
+    },
+    {
+      "name": "Feugo Stock Wheels"
+    },
+    {
+      "name": "Eagle Stock Wheels"
+    },
+    {
+      "name": "Carrier II Stock Wheels"
+    },
+    {
+      "name": "Carrier I Stock Wheels"
+    },
+    {
+      "name": "Balboa Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Westlake Stock Cylinder"
+    },
+    {
+      "name": "Taxi Lux Stock Cylinder"
+    },
+    {
+      "name": "Sundowner Stock Cylinder"
+    },
+    {
+      "name": "Sundancer SX Stock Cylinder"
+    },
+    {
+      "name": "Sundancer Stock Cylinder"
+    },
+    {
+      "name": "Suburban Stock Cylinder"
+    },
+    {
+      "name": "Showoff Stock Cylinder"
+    },
+    {
+      "name": "Seville Stock Cylinder"
+    },
+    {
+      "name": "Saxy Stock Cylinder"
+    },
+    {
+      "name": "Prima 5 Stock Cylinder"
+    },
+    {
+      "name": "Prima 4 Stock Cylinder"
+    },
+    {
+      "name": "Prima Stock Cylinder"
+    },
+    {
+      "name": "Optima 50 Stock Cylinder"
+    },
+    {
+      "name": "Mopet Stock Cylinder"
+    },
+    {
+      "name": "Minor Stock Cylinder"
+    },
+    {
+      "name": "MadAss Stock Cylinder"
+    },
+    {
+      "name": "Lover Stock Cylinder"
+    },
+    {
+      "name": "Honey Stock Cylinder"
+    },
+    {
+      "name": "Hercules Prima S 2 speed Stock Cylinder"
+    },
+    {
+      "name": "Hercules P-1 Stock Cylinder"
+    },
+    {
+      "name": "Hercules M-4 Stock Cylinder"
+    },
+    {
+      "name": "Hercules Stock Cylinder"
+    },
+    {
+      "name": "G-4 Stock Cylinder"
+    },
+    {
+      "name": "G-3 Stock Cylinder"
+    },
+    {
+      "name": "Feugo Stock Cylinder"
+    },
+    {
+      "name": "Eagle Stock Cylinder"
+    },
+    {
+      "name": "Carrier II Stock Cylinder"
+    },
+    {
+      "name": "Carrier I Stock Cylinder"
+    },
+    {
+      "name": "Balboa Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Balboa"
+    },
+    {
+      "name": "Carrier I"
+    },
+    {
+      "name": "Carrier II"
+    },
+    {
+      "name": "Eagle"
+    },
+    {
+      "name": "Feugo"
+    },
+    {
+      "name": "G-3"
+    },
+    {
+      "name": "G-4"
+    },
+    {
+      "name": "Hercules"
+    },
+    {
+      "name": "Hercules M-4"
+    },
+    {
+      "name": "Hercules P-1"
+    },
+    {
+      "name": "Hercules Prima S 2 speed"
+    },
+    {
+      "name": "Honey"
+    },
+    {
+      "name": "Lover"
+    },
+    {
+      "name": "MadAss"
+    },
+    {
+      "name": "Minor"
+    },
+    {
+      "name": "Mopet"
+    },
+    {
+      "name": "Optima 50"
+    },
+    {
+      "name": "Prima"
+    },
+    {
+      "name": "Prima 4"
+    },
+    {
+      "name": "Prima 5"
+    },
+    {
+      "name": "Saxy"
+    },
+    {
+      "name": "Seville"
+    },
+    {
+      "name": "Showoff"
+    },
+    {
+      "name": "Suburban"
+    },
+    {
+      "name": "Sundancer"
+    },
+    {
+      "name": "Sundancer SX"
+    },
+    {
+      "name": "Sundowner"
+    },
+    {
+      "name": "Taxi Lux"
+    },
+    {
+      "name": "Westlake"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

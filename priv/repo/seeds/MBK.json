@@ -1,0 +1,257 @@
+{
+  "name": "MBK",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "XPower Stock Exhaust"
+    },
+    {
+      "name": "XLimit Stock Exhaust"
+    },
+    {
+      "name": "Magnum Racing XR Stock Exhaust"
+    },
+    {
+      "name": "Magnum Racing Stock Exhaust"
+    },
+    {
+      "name": "Hard Rock Stock Exhaust"
+    },
+    {
+      "name": "Club VR Stock Exhaust"
+    },
+    {
+      "name": "Club Tex Mex Stock Exhaust"
+    },
+    {
+      "name": "Club Swing Stock Exhaust"
+    },
+    {
+      "name": "Club Stock Exhaust"
+    },
+    {
+      "name": "City Club Stock Exhaust"
+    },
+    {
+      "name": "BMX Stock Exhaust"
+    },
+    {
+      "name": "881 U Stock Exhaust"
+    },
+    {
+      "name": "881 M Stock Exhaust"
+    },
+    {
+      "name": "881 B Stock Exhaust"
+    },
+    {
+      "name": "51 V Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "XPower Stock Forks"
+    },
+    {
+      "name": "XLimit Stock Forks"
+    },
+    {
+      "name": "Magnum Racing XR Stock Forks"
+    },
+    {
+      "name": "Magnum Racing Stock Forks"
+    },
+    {
+      "name": "Hard Rock Stock Forks"
+    },
+    {
+      "name": "Club VR Stock Forks"
+    },
+    {
+      "name": "Club Tex Mex Stock Forks"
+    },
+    {
+      "name": "Club Swing Stock Forks"
+    },
+    {
+      "name": "Club Stock Forks"
+    },
+    {
+      "name": "City Club Stock Forks"
+    },
+    {
+      "name": "BMX Stock Forks"
+    },
+    {
+      "name": "881 U Stock Forks"
+    },
+    {
+      "name": "881 M Stock Forks"
+    },
+    {
+      "name": "881 B Stock Forks"
+    },
+    {
+      "name": "51 V Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "XPower Stock Wheels"
+    },
+    {
+      "name": "XLimit Stock Wheels"
+    },
+    {
+      "name": "Magnum Racing XR Stock Wheels"
+    },
+    {
+      "name": "Magnum Racing Stock Wheels"
+    },
+    {
+      "name": "Hard Rock Stock Wheels"
+    },
+    {
+      "name": "Club VR Stock Wheels"
+    },
+    {
+      "name": "Club Tex Mex Stock Wheels"
+    },
+    {
+      "name": "Club Swing Stock Wheels"
+    },
+    {
+      "name": "Club Stock Wheels"
+    },
+    {
+      "name": "City Club Stock Wheels"
+    },
+    {
+      "name": "BMX Stock Wheels"
+    },
+    {
+      "name": "881 U Stock Wheels"
+    },
+    {
+      "name": "881 M Stock Wheels"
+    },
+    {
+      "name": "881 B Stock Wheels"
+    },
+    {
+      "name": "51 V Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "XPower Stock Cylinder"
+    },
+    {
+      "name": "XLimit Stock Cylinder"
+    },
+    {
+      "name": "Magnum Racing XR Stock Cylinder"
+    },
+    {
+      "name": "Magnum Racing Stock Cylinder"
+    },
+    {
+      "name": "Hard Rock Stock Cylinder"
+    },
+    {
+      "name": "Club VR Stock Cylinder"
+    },
+    {
+      "name": "Club Tex Mex Stock Cylinder"
+    },
+    {
+      "name": "Club Swing Stock Cylinder"
+    },
+    {
+      "name": "Club Stock Cylinder"
+    },
+    {
+      "name": "City Club Stock Cylinder"
+    },
+    {
+      "name": "BMX Stock Cylinder"
+    },
+    {
+      "name": "881 U Stock Cylinder"
+    },
+    {
+      "name": "881 M Stock Cylinder"
+    },
+    {
+      "name": "881 B Stock Cylinder"
+    },
+    {
+      "name": "51 V Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "51 V"
+    },
+    {
+      "name": "881 B"
+    },
+    {
+      "name": "881 M"
+    },
+    {
+      "name": "881 U"
+    },
+    {
+      "name": "BMX"
+    },
+    {
+      "name": "City Club"
+    },
+    {
+      "name": "Club"
+    },
+    {
+      "name": "Club Swing"
+    },
+    {
+      "name": "Club Tex Mex"
+    },
+    {
+      "name": "Club VR"
+    },
+    {
+      "name": "Hard Rock"
+    },
+    {
+      "name": "Magnum Racing"
+    },
+    {
+      "name": "Magnum Racing XR"
+    },
+    {
+      "name": "XLimit"
+    },
+    {
+      "name": "XPower"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

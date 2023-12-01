@@ -1,0 +1,122 @@
+{
+  "name": "Avanti",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Super Sport Stock Exhaust"
+    },
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "Porta Stock Exhaust"
+    },
+    {
+      "name": "Mont Stock Exhaust"
+    },
+    {
+      "name": "Kobra Stock Exhaust"
+    },
+    {
+      "name": "Autopower Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Super Sport Stock Forks"
+    },
+    {
+      "name": "Sport Stock Forks"
+    },
+    {
+      "name": "Porta Stock Forks"
+    },
+    {
+      "name": "Mont Stock Forks"
+    },
+    {
+      "name": "Kobra Stock Forks"
+    },
+    {
+      "name": "Autopower Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Super Sport Stock Wheels"
+    },
+    {
+      "name": "Sport Stock Wheels"
+    },
+    {
+      "name": "Porta Stock Wheels"
+    },
+    {
+      "name": "Mont Stock Wheels"
+    },
+    {
+      "name": "Kobra Stock Wheels"
+    },
+    {
+      "name": "Autopower Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Super Sport Stock Cylinder"
+    },
+    {
+      "name": "Sport Stock Cylinder"
+    },
+    {
+      "name": "Porta Stock Cylinder"
+    },
+    {
+      "name": "Mont Stock Cylinder"
+    },
+    {
+      "name": "Kobra Stock Cylinder"
+    },
+    {
+      "name": "Autopower Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Autopower"
+    },
+    {
+      "name": "Kobra"
+    },
+    {
+      "name": "Mont"
+    },
+    {
+      "name": "Porta"
+    },
+    {
+      "name": "Sport"
+    },
+    {
+      "name": "Super Sport"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

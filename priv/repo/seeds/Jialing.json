@@ -1,0 +1,197 @@
+{
+  "name": "Jialing",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "TN35L Stock Exhaust"
+    },
+    {
+      "name": "NP50T-M Stock Exhaust"
+    },
+    {
+      "name": "NP50-MA Stock Exhaust"
+    },
+    {
+      "name": "NP50-GS Stock Exhaust"
+    },
+    {
+      "name": "NP50-GL Stock Exhaust"
+    },
+    {
+      "name": "NP Passport Stock Exhaust"
+    },
+    {
+      "name": "JL36PL-A Stock Exhaust"
+    },
+    {
+      "name": "JL36PL Stock Exhaust"
+    },
+    {
+      "name": "JH50 Stock Exhaust"
+    },
+    {
+      "name": "CJ50ZC Stock Exhaust"
+    },
+    {
+      "name": "CJ50F Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "TN35L Stock Forks"
+    },
+    {
+      "name": "NP50T-M Stock Forks"
+    },
+    {
+      "name": "NP50-MA Stock Forks"
+    },
+    {
+      "name": "NP50-GS Stock Forks"
+    },
+    {
+      "name": "NP50-GL Stock Forks"
+    },
+    {
+      "name": "NP Passport Stock Forks"
+    },
+    {
+      "name": "JL36PL-A Stock Forks"
+    },
+    {
+      "name": "JL36PL Stock Forks"
+    },
+    {
+      "name": "JH50 Stock Forks"
+    },
+    {
+      "name": "CJ50ZC Stock Forks"
+    },
+    {
+      "name": "CJ50F Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "TN35L Stock Wheels"
+    },
+    {
+      "name": "NP50T-M Stock Wheels"
+    },
+    {
+      "name": "NP50-MA Stock Wheels"
+    },
+    {
+      "name": "NP50-GS Stock Wheels"
+    },
+    {
+      "name": "NP50-GL Stock Wheels"
+    },
+    {
+      "name": "NP Passport Stock Wheels"
+    },
+    {
+      "name": "JL36PL-A Stock Wheels"
+    },
+    {
+      "name": "JL36PL Stock Wheels"
+    },
+    {
+      "name": "JH50 Stock Wheels"
+    },
+    {
+      "name": "CJ50ZC Stock Wheels"
+    },
+    {
+      "name": "CJ50F Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "TN35L Stock Cylinder"
+    },
+    {
+      "name": "NP50T-M Stock Cylinder"
+    },
+    {
+      "name": "NP50-MA Stock Cylinder"
+    },
+    {
+      "name": "NP50-GS Stock Cylinder"
+    },
+    {
+      "name": "NP50-GL Stock Cylinder"
+    },
+    {
+      "name": "NP Passport Stock Cylinder"
+    },
+    {
+      "name": "JL36PL-A Stock Cylinder"
+    },
+    {
+      "name": "JL36PL Stock Cylinder"
+    },
+    {
+      "name": "JH50 Stock Cylinder"
+    },
+    {
+      "name": "CJ50ZC Stock Cylinder"
+    },
+    {
+      "name": "CJ50F Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "CJ50F"
+    },
+    {
+      "name": "CJ50ZC"
+    },
+    {
+      "name": "JH50"
+    },
+    {
+      "name": "JL36PL"
+    },
+    {
+      "name": "JL36PL-A"
+    },
+    {
+      "name": "NP Passport"
+    },
+    {
+      "name": "NP50-GL"
+    },
+    {
+      "name": "NP50-GS"
+    },
+    {
+      "name": "NP50-MA"
+    },
+    {
+      "name": "NP50T-M"
+    },
+    {
+      "name": "TN35L"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

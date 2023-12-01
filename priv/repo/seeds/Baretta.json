@@ -1,0 +1,182 @@
+{
+  "name": "Baretta",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Variator Stock Exhaust"
+    },
+    {
+      "name": "Pistol Stock Exhaust"
+    },
+    {
+      "name": "Piccoli Stock Exhaust"
+    },
+    {
+      "name": "Minisport Stock Exhaust"
+    },
+    {
+      "name": "Magnum Stock Exhaust"
+    },
+    {
+      "name": "45 Stock Exhaust"
+    },
+    {
+      "name": "44 Sport Stock Exhaust"
+    },
+    {
+      "name": "44 Stock Exhaust"
+    },
+    {
+      "name": "38 Stock Exhaust"
+    },
+    {
+      "name": "22 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Variator Stock Forks"
+    },
+    {
+      "name": "Pistol Stock Forks"
+    },
+    {
+      "name": "Piccoli Stock Forks"
+    },
+    {
+      "name": "Minisport Stock Forks"
+    },
+    {
+      "name": "Magnum Stock Forks"
+    },
+    {
+      "name": "45 Stock Forks"
+    },
+    {
+      "name": "44 Sport Stock Forks"
+    },
+    {
+      "name": "44 Stock Forks"
+    },
+    {
+      "name": "38 Stock Forks"
+    },
+    {
+      "name": "22 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Variator Stock Wheels"
+    },
+    {
+      "name": "Pistol Stock Wheels"
+    },
+    {
+      "name": "Piccoli Stock Wheels"
+    },
+    {
+      "name": "Minisport Stock Wheels"
+    },
+    {
+      "name": "Magnum Stock Wheels"
+    },
+    {
+      "name": "45 Stock Wheels"
+    },
+    {
+      "name": "44 Sport Stock Wheels"
+    },
+    {
+      "name": "44 Stock Wheels"
+    },
+    {
+      "name": "38 Stock Wheels"
+    },
+    {
+      "name": "22 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Variator Stock Cylinder"
+    },
+    {
+      "name": "Pistol Stock Cylinder"
+    },
+    {
+      "name": "Piccoli Stock Cylinder"
+    },
+    {
+      "name": "Minisport Stock Cylinder"
+    },
+    {
+      "name": "Magnum Stock Cylinder"
+    },
+    {
+      "name": "45 Stock Cylinder"
+    },
+    {
+      "name": "44 Sport Stock Cylinder"
+    },
+    {
+      "name": "44 Stock Cylinder"
+    },
+    {
+      "name": "38 Stock Cylinder"
+    },
+    {
+      "name": "22 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "22"
+    },
+    {
+      "name": "38"
+    },
+    {
+      "name": "44"
+    },
+    {
+      "name": "44 Sport"
+    },
+    {
+      "name": "45"
+    },
+    {
+      "name": "Magnum"
+    },
+    {
+      "name": "Minisport"
+    },
+    {
+      "name": "Piccoli"
+    },
+    {
+      "name": "Pistol"
+    },
+    {
+      "name": "Variator"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

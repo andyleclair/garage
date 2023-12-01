@@ -1,0 +1,62 @@
+{
+  "name": "Mosquito",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Baby Stock Exhaust"
+    },
+    {
+      "name": "38B Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Baby Stock Forks"
+    },
+    {
+      "name": "38B Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Baby Stock Wheels"
+    },
+    {
+      "name": "38B Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Baby Stock Cylinder"
+    },
+    {
+      "name": "38B Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "38B"
+    },
+    {
+      "name": "Baby"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

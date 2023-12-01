@@ -1,0 +1,227 @@
+{
+  "name": "AMF",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Roadmaster XL Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster XL Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster C140 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster C130 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster C120 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster C110 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster B125 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster B120 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster B115 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster B110 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster A115 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster A110 Stock Exhaust"
+    },
+    {
+      "name": "ALL-PRO Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Roadmaster XL Deluxe Stock Forks"
+    },
+    {
+      "name": "Roadmaster XL Stock Forks"
+    },
+    {
+      "name": "Roadmaster C140 Stock Forks"
+    },
+    {
+      "name": "Roadmaster C130 Stock Forks"
+    },
+    {
+      "name": "Roadmaster C120 Stock Forks"
+    },
+    {
+      "name": "Roadmaster C110 Stock Forks"
+    },
+    {
+      "name": "Roadmaster B125 Stock Forks"
+    },
+    {
+      "name": "Roadmaster B120 Stock Forks"
+    },
+    {
+      "name": "Roadmaster B115 Stock Forks"
+    },
+    {
+      "name": "Roadmaster B110 Stock Forks"
+    },
+    {
+      "name": "Roadmaster A115 Stock Forks"
+    },
+    {
+      "name": "Roadmaster A110 Stock Forks"
+    },
+    {
+      "name": "ALL-PRO Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Roadmaster XL Deluxe Stock Wheels"
+    },
+    {
+      "name": "Roadmaster XL Stock Wheels"
+    },
+    {
+      "name": "Roadmaster C140 Stock Wheels"
+    },
+    {
+      "name": "Roadmaster C130 Stock Wheels"
+    },
+    {
+      "name": "Roadmaster C120 Stock Wheels"
+    },
+    {
+      "name": "Roadmaster C110 Stock Wheels"
+    },
+    {
+      "name": "Roadmaster B125 Stock Wheels"
+    },
+    {
+      "name": "Roadmaster B120 Stock Wheels"
+    },
+    {
+      "name": "Roadmaster B115 Stock Wheels"
+    },
+    {
+      "name": "Roadmaster B110 Stock Wheels"
+    },
+    {
+      "name": "Roadmaster A115 Stock Wheels"
+    },
+    {
+      "name": "Roadmaster A110 Stock Wheels"
+    },
+    {
+      "name": "ALL-PRO Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Roadmaster XL Deluxe Stock Cylinder"
+    },
+    {
+      "name": "Roadmaster XL Stock Cylinder"
+    },
+    {
+      "name": "Roadmaster C140 Stock Cylinder"
+    },
+    {
+      "name": "Roadmaster C130 Stock Cylinder"
+    },
+    {
+      "name": "Roadmaster C120 Stock Cylinder"
+    },
+    {
+      "name": "Roadmaster C110 Stock Cylinder"
+    },
+    {
+      "name": "Roadmaster B125 Stock Cylinder"
+    },
+    {
+      "name": "Roadmaster B120 Stock Cylinder"
+    },
+    {
+      "name": "Roadmaster B115 Stock Cylinder"
+    },
+    {
+      "name": "Roadmaster B110 Stock Cylinder"
+    },
+    {
+      "name": "Roadmaster A115 Stock Cylinder"
+    },
+    {
+      "name": "Roadmaster A110 Stock Cylinder"
+    },
+    {
+      "name": "ALL-PRO Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "ALL-PRO"
+    },
+    {
+      "name": "Roadmaster A110"
+    },
+    {
+      "name": "Roadmaster A115"
+    },
+    {
+      "name": "Roadmaster B110"
+    },
+    {
+      "name": "Roadmaster B115"
+    },
+    {
+      "name": "Roadmaster B120"
+    },
+    {
+      "name": "Roadmaster B125"
+    },
+    {
+      "name": "Roadmaster C110"
+    },
+    {
+      "name": "Roadmaster C120"
+    },
+    {
+      "name": "Roadmaster C130"
+    },
+    {
+      "name": "Roadmaster C140"
+    },
+    {
+      "name": "Roadmaster XL"
+    },
+    {
+      "name": "Roadmaster XL Deluxe"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

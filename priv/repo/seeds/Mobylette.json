@@ -1,0 +1,887 @@
+{
+  "name": "Mobylette",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "AV59 Stock Exhaust"
+    },
+    {
+      "name": "AV76 Stock Exhaust"
+    },
+    {
+      "name": "AV55 Stock Exhaust"
+    },
+    {
+      "name": "AV44 Stock Exhaust"
+    },
+    {
+      "name": "AV79 Stock Exhaust"
+    },
+    {
+      "name": "AV37 Stock Exhaust"
+    },
+    {
+      "name": "Moby Cross Stock Exhaust"
+    },
+    {
+      "name": "AV70 Stock Exhaust"
+    },
+    {
+      "name": "AV31 Stock Exhaust"
+    },
+    {
+      "name": "SPTTE Stock Exhaust"
+    },
+    {
+      "name": "AV87 Stock Exhaust"
+    },
+    {
+      "name": "AV42M Stock Exhaust"
+    },
+    {
+      "name": "MIPR Stock Exhaust"
+    },
+    {
+      "name": "MIP Stock Exhaust"
+    },
+    {
+      "name": "D55 Stock Exhaust"
+    },
+    {
+      "name": "AV43 Stock Exhaust"
+    },
+    {
+      "name": "SP93 Stock Exhaust"
+    },
+    {
+      "name": "SP96 Stock Exhaust"
+    },
+    {
+      "name": "AV85 Stock Exhaust"
+    },
+    {
+      "name": "SP95 Stock Exhaust"
+    },
+    {
+      "name": "AV33 Stock Exhaust"
+    },
+    {
+      "name": "SP94TJ Stock Exhaust"
+    },
+    {
+      "name": "AV56 Stock Exhaust"
+    },
+    {
+      "name": "AV46 Stock Exhaust"
+    },
+    {
+      "name": "AV54 Stock Exhaust"
+    },
+    {
+      "name": "AV88 Stock Exhaust"
+    },
+    {
+      "name": "AV78 Stock Exhaust"
+    },
+    {
+      "name": "SP93TT Stock Exhaust"
+    },
+    {
+      "name": "AV3 Stock Exhaust"
+    },
+    {
+      "name": "AV41 Stock Exhaust"
+    },
+    {
+      "name": "AV48 Stock Exhaust"
+    },
+    {
+      "name": "Moby Club Stock Exhaust"
+    },
+    {
+      "name": "AV65 Stock Exhaust"
+    },
+    {
+      "name": "AV51 Stock Exhaust"
+    },
+    {
+      "name": "AV84 Stock Exhaust"
+    },
+    {
+      "name": "AV89 Stock Exhaust"
+    },
+    {
+      "name": "AV32M Stock Exhaust"
+    },
+    {
+      "name": "SPTT Stock Exhaust"
+    },
+    {
+      "name": "AV50 Stock Exhaust"
+    },
+    {
+      "name": "AV92 Stock Exhaust"
+    },
+    {
+      "name": "AV32E Stock Exhaust"
+    },
+    {
+      "name": "S35b Stock Exhaust"
+    },
+    {
+      "name": "SP94TJE Stock Exhaust"
+    },
+    {
+      "name": "SP50 Stock Exhaust"
+    },
+    {
+      "name": "SP50R Stock Exhaust"
+    },
+    {
+      "name": "AV68 Stock Exhaust"
+    },
+    {
+      "name": "Kaptein Stock Exhaust"
+    },
+    {
+      "name": "AV98 Stock Exhaust"
+    },
+    {
+      "name": "AV98SP Stock Exhaust"
+    },
+    {
+      "name": "S35 Stock Exhaust"
+    },
+    {
+      "name": "AV32S Stock Exhaust"
+    },
+    {
+      "name": "MIPRT Stock Exhaust"
+    },
+    {
+      "name": "AV98E Stock Exhaust"
+    },
+    {
+      "name": "AV42 Stock Exhaust"
+    },
+    {
+      "name": "AV188 Stock Exhaust"
+    },
+    {
+      "name": "D55T Stock Exhaust"
+    },
+    {
+      "name": "AV49 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "AV59 Stock Forks"
+    },
+    {
+      "name": "AV76 Stock Forks"
+    },
+    {
+      "name": "AV55 Stock Forks"
+    },
+    {
+      "name": "AV44 Stock Forks"
+    },
+    {
+      "name": "AV79 Stock Forks"
+    },
+    {
+      "name": "AV37 Stock Forks"
+    },
+    {
+      "name": "Moby Cross Stock Forks"
+    },
+    {
+      "name": "AV70 Stock Forks"
+    },
+    {
+      "name": "AV31 Stock Forks"
+    },
+    {
+      "name": "SPTTE Stock Forks"
+    },
+    {
+      "name": "AV87 Stock Forks"
+    },
+    {
+      "name": "AV42M Stock Forks"
+    },
+    {
+      "name": "MIPR Stock Forks"
+    },
+    {
+      "name": "MIP Stock Forks"
+    },
+    {
+      "name": "D55 Stock Forks"
+    },
+    {
+      "name": "AV43 Stock Forks"
+    },
+    {
+      "name": "SP93 Stock Forks"
+    },
+    {
+      "name": "SP96 Stock Forks"
+    },
+    {
+      "name": "AV85 Stock Forks"
+    },
+    {
+      "name": "SP95 Stock Forks"
+    },
+    {
+      "name": "AV33 Stock Forks"
+    },
+    {
+      "name": "SP94TJ Stock Forks"
+    },
+    {
+      "name": "AV56 Stock Forks"
+    },
+    {
+      "name": "AV46 Stock Forks"
+    },
+    {
+      "name": "AV54 Stock Forks"
+    },
+    {
+      "name": "AV88 Stock Forks"
+    },
+    {
+      "name": "AV78 Stock Forks"
+    },
+    {
+      "name": "SP93TT Stock Forks"
+    },
+    {
+      "name": "AV3 Stock Forks"
+    },
+    {
+      "name": "AV41 Stock Forks"
+    },
+    {
+      "name": "AV48 Stock Forks"
+    },
+    {
+      "name": "Moby Club Stock Forks"
+    },
+    {
+      "name": "AV65 Stock Forks"
+    },
+    {
+      "name": "AV51 Stock Forks"
+    },
+    {
+      "name": "AV84 Stock Forks"
+    },
+    {
+      "name": "AV89 Stock Forks"
+    },
+    {
+      "name": "AV32M Stock Forks"
+    },
+    {
+      "name": "SPTT Stock Forks"
+    },
+    {
+      "name": "AV50 Stock Forks"
+    },
+    {
+      "name": "AV92 Stock Forks"
+    },
+    {
+      "name": "AV32E Stock Forks"
+    },
+    {
+      "name": "S35b Stock Forks"
+    },
+    {
+      "name": "SP94TJE Stock Forks"
+    },
+    {
+      "name": "SP50 Stock Forks"
+    },
+    {
+      "name": "SP50R Stock Forks"
+    },
+    {
+      "name": "AV68 Stock Forks"
+    },
+    {
+      "name": "Kaptein Stock Forks"
+    },
+    {
+      "name": "AV98 Stock Forks"
+    },
+    {
+      "name": "AV98SP Stock Forks"
+    },
+    {
+      "name": "S35 Stock Forks"
+    },
+    {
+      "name": "AV32S Stock Forks"
+    },
+    {
+      "name": "MIPRT Stock Forks"
+    },
+    {
+      "name": "AV98E Stock Forks"
+    },
+    {
+      "name": "AV42 Stock Forks"
+    },
+    {
+      "name": "AV188 Stock Forks"
+    },
+    {
+      "name": "D55T Stock Forks"
+    },
+    {
+      "name": "AV49 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "AV59 Stock Wheels"
+    },
+    {
+      "name": "AV76 Stock Wheels"
+    },
+    {
+      "name": "AV55 Stock Wheels"
+    },
+    {
+      "name": "AV44 Stock Wheels"
+    },
+    {
+      "name": "AV79 Stock Wheels"
+    },
+    {
+      "name": "AV37 Stock Wheels"
+    },
+    {
+      "name": "Moby Cross Stock Wheels"
+    },
+    {
+      "name": "AV70 Stock Wheels"
+    },
+    {
+      "name": "AV31 Stock Wheels"
+    },
+    {
+      "name": "SPTTE Stock Wheels"
+    },
+    {
+      "name": "AV87 Stock Wheels"
+    },
+    {
+      "name": "AV42M Stock Wheels"
+    },
+    {
+      "name": "MIPR Stock Wheels"
+    },
+    {
+      "name": "MIP Stock Wheels"
+    },
+    {
+      "name": "D55 Stock Wheels"
+    },
+    {
+      "name": "AV43 Stock Wheels"
+    },
+    {
+      "name": "SP93 Stock Wheels"
+    },
+    {
+      "name": "SP96 Stock Wheels"
+    },
+    {
+      "name": "AV85 Stock Wheels"
+    },
+    {
+      "name": "SP95 Stock Wheels"
+    },
+    {
+      "name": "AV33 Stock Wheels"
+    },
+    {
+      "name": "SP94TJ Stock Wheels"
+    },
+    {
+      "name": "AV56 Stock Wheels"
+    },
+    {
+      "name": "AV46 Stock Wheels"
+    },
+    {
+      "name": "AV54 Stock Wheels"
+    },
+    {
+      "name": "AV88 Stock Wheels"
+    },
+    {
+      "name": "AV78 Stock Wheels"
+    },
+    {
+      "name": "SP93TT Stock Wheels"
+    },
+    {
+      "name": "AV3 Stock Wheels"
+    },
+    {
+      "name": "AV41 Stock Wheels"
+    },
+    {
+      "name": "AV48 Stock Wheels"
+    },
+    {
+      "name": "Moby Club Stock Wheels"
+    },
+    {
+      "name": "AV65 Stock Wheels"
+    },
+    {
+      "name": "AV51 Stock Wheels"
+    },
+    {
+      "name": "AV84 Stock Wheels"
+    },
+    {
+      "name": "AV89 Stock Wheels"
+    },
+    {
+      "name": "AV32M Stock Wheels"
+    },
+    {
+      "name": "SPTT Stock Wheels"
+    },
+    {
+      "name": "AV50 Stock Wheels"
+    },
+    {
+      "name": "AV92 Stock Wheels"
+    },
+    {
+      "name": "AV32E Stock Wheels"
+    },
+    {
+      "name": "S35b Stock Wheels"
+    },
+    {
+      "name": "SP94TJE Stock Wheels"
+    },
+    {
+      "name": "SP50 Stock Wheels"
+    },
+    {
+      "name": "SP50R Stock Wheels"
+    },
+    {
+      "name": "AV68 Stock Wheels"
+    },
+    {
+      "name": "Kaptein Stock Wheels"
+    },
+    {
+      "name": "AV98 Stock Wheels"
+    },
+    {
+      "name": "AV98SP Stock Wheels"
+    },
+    {
+      "name": "S35 Stock Wheels"
+    },
+    {
+      "name": "AV32S Stock Wheels"
+    },
+    {
+      "name": "MIPRT Stock Wheels"
+    },
+    {
+      "name": "AV98E Stock Wheels"
+    },
+    {
+      "name": "AV42 Stock Wheels"
+    },
+    {
+      "name": "AV188 Stock Wheels"
+    },
+    {
+      "name": "D55T Stock Wheels"
+    },
+    {
+      "name": "AV49 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "AV59 Stock Cylinder"
+    },
+    {
+      "name": "AV76 Stock Cylinder"
+    },
+    {
+      "name": "AV55 Stock Cylinder"
+    },
+    {
+      "name": "AV44 Stock Cylinder"
+    },
+    {
+      "name": "AV79 Stock Cylinder"
+    },
+    {
+      "name": "AV37 Stock Cylinder"
+    },
+    {
+      "name": "Moby Cross Stock Cylinder"
+    },
+    {
+      "name": "AV70 Stock Cylinder"
+    },
+    {
+      "name": "AV31 Stock Cylinder"
+    },
+    {
+      "name": "SPTTE Stock Cylinder"
+    },
+    {
+      "name": "AV87 Stock Cylinder"
+    },
+    {
+      "name": "AV42M Stock Cylinder"
+    },
+    {
+      "name": "MIPR Stock Cylinder"
+    },
+    {
+      "name": "MIP Stock Cylinder"
+    },
+    {
+      "name": "D55 Stock Cylinder"
+    },
+    {
+      "name": "AV43 Stock Cylinder"
+    },
+    {
+      "name": "SP93 Stock Cylinder"
+    },
+    {
+      "name": "SP96 Stock Cylinder"
+    },
+    {
+      "name": "AV85 Stock Cylinder"
+    },
+    {
+      "name": "SP95 Stock Cylinder"
+    },
+    {
+      "name": "AV33 Stock Cylinder"
+    },
+    {
+      "name": "SP94TJ Stock Cylinder"
+    },
+    {
+      "name": "AV56 Stock Cylinder"
+    },
+    {
+      "name": "AV46 Stock Cylinder"
+    },
+    {
+      "name": "AV54 Stock Cylinder"
+    },
+    {
+      "name": "AV88 Stock Cylinder"
+    },
+    {
+      "name": "AV78 Stock Cylinder"
+    },
+    {
+      "name": "SP93TT Stock Cylinder"
+    },
+    {
+      "name": "AV3 Stock Cylinder"
+    },
+    {
+      "name": "AV41 Stock Cylinder"
+    },
+    {
+      "name": "AV48 Stock Cylinder"
+    },
+    {
+      "name": "Moby Club Stock Cylinder"
+    },
+    {
+      "name": "AV65 Stock Cylinder"
+    },
+    {
+      "name": "AV51 Stock Cylinder"
+    },
+    {
+      "name": "AV84 Stock Cylinder"
+    },
+    {
+      "name": "AV89 Stock Cylinder"
+    },
+    {
+      "name": "AV32M Stock Cylinder"
+    },
+    {
+      "name": "SPTT Stock Cylinder"
+    },
+    {
+      "name": "AV50 Stock Cylinder"
+    },
+    {
+      "name": "AV92 Stock Cylinder"
+    },
+    {
+      "name": "AV32E Stock Cylinder"
+    },
+    {
+      "name": "S35b Stock Cylinder"
+    },
+    {
+      "name": "SP94TJE Stock Cylinder"
+    },
+    {
+      "name": "SP50 Stock Cylinder"
+    },
+    {
+      "name": "SP50R Stock Cylinder"
+    },
+    {
+      "name": "AV68 Stock Cylinder"
+    },
+    {
+      "name": "Kaptein Stock Cylinder"
+    },
+    {
+      "name": "AV98 Stock Cylinder"
+    },
+    {
+      "name": "AV98SP Stock Cylinder"
+    },
+    {
+      "name": "S35 Stock Cylinder"
+    },
+    {
+      "name": "AV32S Stock Cylinder"
+    },
+    {
+      "name": "MIPRT Stock Cylinder"
+    },
+    {
+      "name": "AV98E Stock Cylinder"
+    },
+    {
+      "name": "AV42 Stock Cylinder"
+    },
+    {
+      "name": "AV188 Stock Cylinder"
+    },
+    {
+      "name": "D55T Stock Cylinder"
+    },
+    {
+      "name": "AV49 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "AV49"
+    },
+    {
+      "name": "D55T"
+    },
+    {
+      "name": "AV188"
+    },
+    {
+      "name": "AV42"
+    },
+    {
+      "name": "AV98E"
+    },
+    {
+      "name": "MIPRT"
+    },
+    {
+      "name": "AV32S"
+    },
+    {
+      "name": "S35"
+    },
+    {
+      "name": "AV98SP"
+    },
+    {
+      "name": "AV98"
+    },
+    {
+      "name": "Kaptein"
+    },
+    {
+      "name": "AV68"
+    },
+    {
+      "name": "SP50R"
+    },
+    {
+      "name": "SP50"
+    },
+    {
+      "name": "SP94TJE"
+    },
+    {
+      "name": "S35b"
+    },
+    {
+      "name": "AV32E"
+    },
+    {
+      "name": "AV92"
+    },
+    {
+      "name": "AV50"
+    },
+    {
+      "name": "SPTT"
+    },
+    {
+      "name": "AV32M"
+    },
+    {
+      "name": "AV89"
+    },
+    {
+      "name": "AV84"
+    },
+    {
+      "name": "AV51"
+    },
+    {
+      "name": "AV65"
+    },
+    {
+      "name": "Moby Club"
+    },
+    {
+      "name": "AV48"
+    },
+    {
+      "name": "AV41"
+    },
+    {
+      "name": "AV3"
+    },
+    {
+      "name": "SP93TT"
+    },
+    {
+      "name": "AV78"
+    },
+    {
+      "name": "AV88"
+    },
+    {
+      "name": "AV54"
+    },
+    {
+      "name": "AV46"
+    },
+    {
+      "name": "AV56"
+    },
+    {
+      "name": "SP94TJ"
+    },
+    {
+      "name": "AV33"
+    },
+    {
+      "name": "SP95"
+    },
+    {
+      "name": "AV85"
+    },
+    {
+      "name": "SP96"
+    },
+    {
+      "name": "SP93"
+    },
+    {
+      "name": "AV43"
+    },
+    {
+      "name": "D55"
+    },
+    {
+      "name": "MIP"
+    },
+    {
+      "name": "MIPR"
+    },
+    {
+      "name": "AV42M"
+    },
+    {
+      "name": "AV87"
+    },
+    {
+      "name": "SPTTE"
+    },
+    {
+      "name": "AV31"
+    },
+    {
+      "name": "AV70"
+    },
+    {
+      "name": "Moby Cross"
+    },
+    {
+      "name": "AV37"
+    },
+    {
+      "name": "AV79"
+    },
+    {
+      "name": "AV44"
+    },
+    {
+      "name": "AV55"
+    },
+    {
+      "name": "AV76"
+    },
+    {
+      "name": "AV59"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

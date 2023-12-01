@@ -1,0 +1,137 @@
+{
+  "name": "Gloria Intramotor",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Verona Stock Exhaust"
+    },
+    {
+      "name": "Scout Stock Exhaust"
+    },
+    {
+      "name": "Pinto Stock Exhaust"
+    },
+    {
+      "name": "Mini-Kid Stock Exhaust"
+    },
+    {
+      "name": "Kid Stock Exhaust"
+    },
+    {
+      "name": "Dream Stock Exhaust"
+    },
+    {
+      "name": "Blanco Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Verona Stock Forks"
+    },
+    {
+      "name": "Scout Stock Forks"
+    },
+    {
+      "name": "Pinto Stock Forks"
+    },
+    {
+      "name": "Mini-Kid Stock Forks"
+    },
+    {
+      "name": "Kid Stock Forks"
+    },
+    {
+      "name": "Dream Stock Forks"
+    },
+    {
+      "name": "Blanco Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Verona Stock Wheels"
+    },
+    {
+      "name": "Scout Stock Wheels"
+    },
+    {
+      "name": "Pinto Stock Wheels"
+    },
+    {
+      "name": "Mini-Kid Stock Wheels"
+    },
+    {
+      "name": "Kid Stock Wheels"
+    },
+    {
+      "name": "Dream Stock Wheels"
+    },
+    {
+      "name": "Blanco Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Verona Stock Cylinder"
+    },
+    {
+      "name": "Scout Stock Cylinder"
+    },
+    {
+      "name": "Pinto Stock Cylinder"
+    },
+    {
+      "name": "Mini-Kid Stock Cylinder"
+    },
+    {
+      "name": "Kid Stock Cylinder"
+    },
+    {
+      "name": "Dream Stock Cylinder"
+    },
+    {
+      "name": "Blanco Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Blanco"
+    },
+    {
+      "name": "Dream"
+    },
+    {
+      "name": "Kid"
+    },
+    {
+      "name": "Mini-Kid"
+    },
+    {
+      "name": "Pinto"
+    },
+    {
+      "name": "Scout"
+    },
+    {
+      "name": "Verona"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

@@ -1,0 +1,92 @@
+{
+  "name": "Gimson",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Variomatic Stock Exhaust"
+    },
+    {
+      "name": "Skipper Trial Stock Exhaust"
+    },
+    {
+      "name": "Jumper Cross Stock Exhaust"
+    },
+    {
+      "name": "Elite Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Variomatic Stock Forks"
+    },
+    {
+      "name": "Skipper Trial Stock Forks"
+    },
+    {
+      "name": "Jumper Cross Stock Forks"
+    },
+    {
+      "name": "Elite Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Variomatic Stock Wheels"
+    },
+    {
+      "name": "Skipper Trial Stock Wheels"
+    },
+    {
+      "name": "Jumper Cross Stock Wheels"
+    },
+    {
+      "name": "Elite Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Variomatic Stock Cylinder"
+    },
+    {
+      "name": "Skipper Trial Stock Cylinder"
+    },
+    {
+      "name": "Jumper Cross Stock Cylinder"
+    },
+    {
+      "name": "Elite Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Elite"
+    },
+    {
+      "name": "Jumper Cross"
+    },
+    {
+      "name": "Skipper Trial"
+    },
+    {
+      "name": "Variomatic"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

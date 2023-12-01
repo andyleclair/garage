@@ -1,0 +1,137 @@
+{
+  "name": "Ducati",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Rolly Stock Exhaust"
+    },
+    {
+      "name": "Mini 3 Stock Exhaust"
+    },
+    {
+      "name": "Falcon 50 Stock Exhaust"
+    },
+    {
+      "name": "Brisk Stock Exhaust"
+    },
+    {
+      "name": "55e Stock Exhaust"
+    },
+    {
+      "name": "50 Senda Stock Exhaust"
+    },
+    {
+      "name": "50 Pronto Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Rolly Stock Forks"
+    },
+    {
+      "name": "Mini 3 Stock Forks"
+    },
+    {
+      "name": "Falcon 50 Stock Forks"
+    },
+    {
+      "name": "Brisk Stock Forks"
+    },
+    {
+      "name": "55e Stock Forks"
+    },
+    {
+      "name": "50 Senda Stock Forks"
+    },
+    {
+      "name": "50 Pronto Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Rolly Stock Wheels"
+    },
+    {
+      "name": "Mini 3 Stock Wheels"
+    },
+    {
+      "name": "Falcon 50 Stock Wheels"
+    },
+    {
+      "name": "Brisk Stock Wheels"
+    },
+    {
+      "name": "55e Stock Wheels"
+    },
+    {
+      "name": "50 Senda Stock Wheels"
+    },
+    {
+      "name": "50 Pronto Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Rolly Stock Cylinder"
+    },
+    {
+      "name": "Mini 3 Stock Cylinder"
+    },
+    {
+      "name": "Falcon 50 Stock Cylinder"
+    },
+    {
+      "name": "Brisk Stock Cylinder"
+    },
+    {
+      "name": "55e Stock Cylinder"
+    },
+    {
+      "name": "50 Senda Stock Cylinder"
+    },
+    {
+      "name": "50 Pronto Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "50 Pronto"
+    },
+    {
+      "name": "50 Senda"
+    },
+    {
+      "name": "55e"
+    },
+    {
+      "name": "Brisk"
+    },
+    {
+      "name": "Falcon 50"
+    },
+    {
+      "name": "Mini 3"
+    },
+    {
+      "name": "Rolly"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

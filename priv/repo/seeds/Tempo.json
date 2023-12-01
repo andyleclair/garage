@@ -1,0 +1,92 @@
+{
+  "name": "Tempo",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Panter 460 Stock Exhaust"
+    },
+    {
+      "name": "Panter 360 Stock Exhaust"
+    },
+    {
+      "name": "Cross Stock Exhaust"
+    },
+    {
+      "name": "Corvette Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Panter 460 Stock Forks"
+    },
+    {
+      "name": "Panter 360 Stock Forks"
+    },
+    {
+      "name": "Cross Stock Forks"
+    },
+    {
+      "name": "Corvette Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Panter 460 Stock Wheels"
+    },
+    {
+      "name": "Panter 360 Stock Wheels"
+    },
+    {
+      "name": "Cross Stock Wheels"
+    },
+    {
+      "name": "Corvette Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Panter 460 Stock Cylinder"
+    },
+    {
+      "name": "Panter 360 Stock Cylinder"
+    },
+    {
+      "name": "Cross Stock Cylinder"
+    },
+    {
+      "name": "Corvette Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Corvette"
+    },
+    {
+      "name": "Cross"
+    },
+    {
+      "name": "Panter 360"
+    },
+    {
+      "name": "Panter 460"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

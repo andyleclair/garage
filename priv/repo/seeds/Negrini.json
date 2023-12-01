@@ -1,0 +1,92 @@
+{
+  "name": "Negrini",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "MX Sport Stock Exhaust"
+    },
+    {
+      "name": "Leprotto Stock Exhaust"
+    },
+    {
+      "name": "Harvard Stock Exhaust"
+    },
+    {
+      "name": "Gazelle Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "MX Sport Stock Forks"
+    },
+    {
+      "name": "Leprotto Stock Forks"
+    },
+    {
+      "name": "Harvard Stock Forks"
+    },
+    {
+      "name": "Gazelle Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "MX Sport Stock Wheels"
+    },
+    {
+      "name": "Leprotto Stock Wheels"
+    },
+    {
+      "name": "Harvard Stock Wheels"
+    },
+    {
+      "name": "Gazelle Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "MX Sport Stock Cylinder"
+    },
+    {
+      "name": "Leprotto Stock Cylinder"
+    },
+    {
+      "name": "Harvard Stock Cylinder"
+    },
+    {
+      "name": "Gazelle Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Gazelle"
+    },
+    {
+      "name": "Harvard"
+    },
+    {
+      "name": "Leprotto"
+    },
+    {
+      "name": "MX Sport"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

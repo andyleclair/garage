@@ -77,5 +77,17 @@ defmodule Garage.Mopeds.Model do
     has_many :builds, Garage.Builds.Build do
       api Garage.Builds
     end
+
+    belongs_to :stock_carburetor, Garage.Mopeds.Carburetor, attribute_writable?: true
+    belongs_to :stock_clutch, Garage.Mopeds.Clutch, attribute_writable?: true
+    belongs_to :stock_crank, Garage.Mopeds.Crank, attribute_writable?: true
+    belongs_to :stock_cylinder, Garage.Mopeds.Cylinder, attribute_writable?: true
+    belongs_to :stock_engine, Garage.Mopeds.Engine, attribute_writable?: true
+    belongs_to :stock_exhaust, Garage.Mopeds.Exhaust, attribute_writable?: true
+    belongs_to :stock_forks, Garage.Mopeds.Forks, attribute_writable?: true
+    belongs_to :stock_ignition, Garage.Mopeds.Ignition, attribute_writable?: true
+    belongs_to :stock_pulley, Garage.Mopeds.Pulley, attribute_writable?: true
+    belongs_to :stock_variator, Garage.Mopeds.Variator, attribute_writable?: true
+    belongs_to :stock_wheels, Garage.Mopeds.Wheels, attribute_writable?: true
   end
 end

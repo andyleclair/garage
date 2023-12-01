@@ -1,0 +1,47 @@
+{
+  "name": "Karl Amelung",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Flides Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Flides Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Flides Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Flides Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Flides"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

@@ -1,0 +1,197 @@
+{
+  "name": "Malaguti",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Tiger Stock Exhaust"
+    },
+    {
+      "name": "Roxi Stock Exhaust"
+    },
+    {
+      "name": "Quattrotto Stock Exhaust"
+    },
+    {
+      "name": "Quattroto Mono Stock Exhaust"
+    },
+    {
+      "name": "Pilot Stock Exhaust"
+    },
+    {
+      "name": "Olympique Stock Exhaust"
+    },
+    {
+      "name": "Motorik Stock Exhaust"
+    },
+    {
+      "name": "Europino Stock Exhaust"
+    },
+    {
+      "name": "Commuter 20 Stock Exhaust"
+    },
+    {
+      "name": "Commuter 2 Stock Exhaust"
+    },
+    {
+      "name": "Commuter Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Tiger Stock Forks"
+    },
+    {
+      "name": "Roxi Stock Forks"
+    },
+    {
+      "name": "Quattrotto Stock Forks"
+    },
+    {
+      "name": "Quattroto Mono Stock Forks"
+    },
+    {
+      "name": "Pilot Stock Forks"
+    },
+    {
+      "name": "Olympique Stock Forks"
+    },
+    {
+      "name": "Motorik Stock Forks"
+    },
+    {
+      "name": "Europino Stock Forks"
+    },
+    {
+      "name": "Commuter 20 Stock Forks"
+    },
+    {
+      "name": "Commuter 2 Stock Forks"
+    },
+    {
+      "name": "Commuter Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Tiger Stock Wheels"
+    },
+    {
+      "name": "Roxi Stock Wheels"
+    },
+    {
+      "name": "Quattrotto Stock Wheels"
+    },
+    {
+      "name": "Quattroto Mono Stock Wheels"
+    },
+    {
+      "name": "Pilot Stock Wheels"
+    },
+    {
+      "name": "Olympique Stock Wheels"
+    },
+    {
+      "name": "Motorik Stock Wheels"
+    },
+    {
+      "name": "Europino Stock Wheels"
+    },
+    {
+      "name": "Commuter 20 Stock Wheels"
+    },
+    {
+      "name": "Commuter 2 Stock Wheels"
+    },
+    {
+      "name": "Commuter Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Tiger Stock Cylinder"
+    },
+    {
+      "name": "Roxi Stock Cylinder"
+    },
+    {
+      "name": "Quattrotto Stock Cylinder"
+    },
+    {
+      "name": "Quattroto Mono Stock Cylinder"
+    },
+    {
+      "name": "Pilot Stock Cylinder"
+    },
+    {
+      "name": "Olympique Stock Cylinder"
+    },
+    {
+      "name": "Motorik Stock Cylinder"
+    },
+    {
+      "name": "Europino Stock Cylinder"
+    },
+    {
+      "name": "Commuter 20 Stock Cylinder"
+    },
+    {
+      "name": "Commuter 2 Stock Cylinder"
+    },
+    {
+      "name": "Commuter Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Commuter"
+    },
+    {
+      "name": "Commuter 2"
+    },
+    {
+      "name": "Commuter 20"
+    },
+    {
+      "name": "Europino"
+    },
+    {
+      "name": "Motorik"
+    },
+    {
+      "name": "Olympique"
+    },
+    {
+      "name": "Pilot"
+    },
+    {
+      "name": "Quattroto Mono"
+    },
+    {
+      "name": "Quattrotto"
+    },
+    {
+      "name": "Roxi"
+    },
+    {
+      "name": "Tiger"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

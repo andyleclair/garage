@@ -1,0 +1,167 @@
+{
+  "name": "Italjet",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Velocifero Stock Exhaust"
+    },
+    {
+      "name": "S5 Stock Exhaust"
+    },
+    {
+      "name": "Pack-A-Away Stock Exhaust"
+    },
+    {
+      "name": "Pack 2 50 Stock Exhaust"
+    },
+    {
+      "name": "P6 Stock Exhaust"
+    },
+    {
+      "name": "P4 Stock Exhaust"
+    },
+    {
+      "name": "KT Stock Exhaust"
+    },
+    {
+      "name": "KIT KAT 50 Stock Exhaust"
+    },
+    {
+      "name": "K2 Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Velocifero Stock Forks"
+    },
+    {
+      "name": "S5 Stock Forks"
+    },
+    {
+      "name": "Pack-A-Away Stock Forks"
+    },
+    {
+      "name": "Pack 2 50 Stock Forks"
+    },
+    {
+      "name": "P6 Stock Forks"
+    },
+    {
+      "name": "P4 Stock Forks"
+    },
+    {
+      "name": "KT Stock Forks"
+    },
+    {
+      "name": "KIT KAT 50 Stock Forks"
+    },
+    {
+      "name": "K2 Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Velocifero Stock Wheels"
+    },
+    {
+      "name": "S5 Stock Wheels"
+    },
+    {
+      "name": "Pack-A-Away Stock Wheels"
+    },
+    {
+      "name": "Pack 2 50 Stock Wheels"
+    },
+    {
+      "name": "P6 Stock Wheels"
+    },
+    {
+      "name": "P4 Stock Wheels"
+    },
+    {
+      "name": "KT Stock Wheels"
+    },
+    {
+      "name": "KIT KAT 50 Stock Wheels"
+    },
+    {
+      "name": "K2 Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Velocifero Stock Cylinder"
+    },
+    {
+      "name": "S5 Stock Cylinder"
+    },
+    {
+      "name": "Pack-A-Away Stock Cylinder"
+    },
+    {
+      "name": "Pack 2 50 Stock Cylinder"
+    },
+    {
+      "name": "P6 Stock Cylinder"
+    },
+    {
+      "name": "P4 Stock Cylinder"
+    },
+    {
+      "name": "KT Stock Cylinder"
+    },
+    {
+      "name": "KIT KAT 50 Stock Cylinder"
+    },
+    {
+      "name": "K2 Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "K2"
+    },
+    {
+      "name": "KIT KAT 50"
+    },
+    {
+      "name": "KT"
+    },
+    {
+      "name": "P4"
+    },
+    {
+      "name": "P6"
+    },
+    {
+      "name": "Pack 2 50"
+    },
+    {
+      "name": "Pack-A-Away"
+    },
+    {
+      "name": "S5"
+    },
+    {
+      "name": "Velocifero"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

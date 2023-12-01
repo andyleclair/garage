@@ -1,0 +1,47 @@
+{
+  "name": "Gulf",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Seagull Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Seagull Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Seagull Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Seagull Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Seagull"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}

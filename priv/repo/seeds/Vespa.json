@@ -1,0 +1,332 @@
+{
+  "name": "Vespa",
+  "category": "moped",
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Vespino Stock Exhaust"
+    },
+    {
+      "name": "Si Monte Carlo Stock Exhaust"
+    },
+    {
+      "name": "Si Stock Exhaust"
+    },
+    {
+      "name": "Grande Super Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Grande Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Grande Stock Exhaust"
+    },
+    {
+      "name": "Ciao Supreme Stock Exhaust"
+    },
+    {
+      "name": "Ciao Super Stock Exhaust"
+    },
+    {
+      "name": "Ciao Porter Stock Exhaust"
+    },
+    {
+      "name": "Ciao PXV Stock Exhaust"
+    },
+    {
+      "name": "Ciao PX Stock Exhaust"
+    },
+    {
+      "name": "Ciao P Stock Exhaust"
+    },
+    {
+      "name": "Ciao Stock Exhaust"
+    },
+    {
+      "name": "Bravo Super Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Bravo Super Stock Exhaust"
+    },
+    {
+      "name": "Bravo Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Bravo Stock Exhaust"
+    },
+    {
+      "name": "Boxer 2 Stock Exhaust"
+    },
+    {
+      "name": "Boxer Stock Exhaust"
+    },
+    {
+      "name": "Boss Stock Exhaust"
+    }
+  ],
+  "forks": [
+    {
+      "name": "Vespino Stock Forks"
+    },
+    {
+      "name": "Si Monte Carlo Stock Forks"
+    },
+    {
+      "name": "Si Stock Forks"
+    },
+    {
+      "name": "Grande Super Deluxe Stock Forks"
+    },
+    {
+      "name": "Grande Deluxe Stock Forks"
+    },
+    {
+      "name": "Grande Stock Forks"
+    },
+    {
+      "name": "Ciao Supreme Stock Forks"
+    },
+    {
+      "name": "Ciao Super Stock Forks"
+    },
+    {
+      "name": "Ciao Porter Stock Forks"
+    },
+    {
+      "name": "Ciao PXV Stock Forks"
+    },
+    {
+      "name": "Ciao PX Stock Forks"
+    },
+    {
+      "name": "Ciao P Stock Forks"
+    },
+    {
+      "name": "Ciao Stock Forks"
+    },
+    {
+      "name": "Bravo Super Deluxe Stock Forks"
+    },
+    {
+      "name": "Bravo Super Stock Forks"
+    },
+    {
+      "name": "Bravo Deluxe Stock Forks"
+    },
+    {
+      "name": "Bravo Stock Forks"
+    },
+    {
+      "name": "Boxer 2 Stock Forks"
+    },
+    {
+      "name": "Boxer Stock Forks"
+    },
+    {
+      "name": "Boss Stock Forks"
+    }
+  ],
+  "wheels": [
+    {
+      "name": "Vespino Stock Wheels"
+    },
+    {
+      "name": "Si Monte Carlo Stock Wheels"
+    },
+    {
+      "name": "Si Stock Wheels"
+    },
+    {
+      "name": "Grande Super Deluxe Stock Wheels"
+    },
+    {
+      "name": "Grande Deluxe Stock Wheels"
+    },
+    {
+      "name": "Grande Stock Wheels"
+    },
+    {
+      "name": "Ciao Supreme Stock Wheels"
+    },
+    {
+      "name": "Ciao Super Stock Wheels"
+    },
+    {
+      "name": "Ciao Porter Stock Wheels"
+    },
+    {
+      "name": "Ciao PXV Stock Wheels"
+    },
+    {
+      "name": "Ciao PX Stock Wheels"
+    },
+    {
+      "name": "Ciao P Stock Wheels"
+    },
+    {
+      "name": "Ciao Stock Wheels"
+    },
+    {
+      "name": "Bravo Super Deluxe Stock Wheels"
+    },
+    {
+      "name": "Bravo Super Stock Wheels"
+    },
+    {
+      "name": "Bravo Deluxe Stock Wheels"
+    },
+    {
+      "name": "Bravo Stock Wheels"
+    },
+    {
+      "name": "Boxer 2 Stock Wheels"
+    },
+    {
+      "name": "Boxer Stock Wheels"
+    },
+    {
+      "name": "Boss Stock Wheels"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Vespino Stock Cylinder"
+    },
+    {
+      "name": "Si Monte Carlo Stock Cylinder"
+    },
+    {
+      "name": "Si Stock Cylinder"
+    },
+    {
+      "name": "Grande Super Deluxe Stock Cylinder"
+    },
+    {
+      "name": "Grande Deluxe Stock Cylinder"
+    },
+    {
+      "name": "Grande Stock Cylinder"
+    },
+    {
+      "name": "Ciao Supreme Stock Cylinder"
+    },
+    {
+      "name": "Ciao Super Stock Cylinder"
+    },
+    {
+      "name": "Ciao Porter Stock Cylinder"
+    },
+    {
+      "name": "Ciao PXV Stock Cylinder"
+    },
+    {
+      "name": "Ciao PX Stock Cylinder"
+    },
+    {
+      "name": "Ciao P Stock Cylinder"
+    },
+    {
+      "name": "Ciao Stock Cylinder"
+    },
+    {
+      "name": "Bravo Super Deluxe Stock Cylinder"
+    },
+    {
+      "name": "Bravo Super Stock Cylinder"
+    },
+    {
+      "name": "Bravo Deluxe Stock Cylinder"
+    },
+    {
+      "name": "Bravo Stock Cylinder"
+    },
+    {
+      "name": "Boxer 2 Stock Cylinder"
+    },
+    {
+      "name": "Boxer Stock Cylinder"
+    },
+    {
+      "name": "Boss Stock Cylinder"
+    }
+  ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
+  "ignitions": [
+    {
+      "name": "Stock Ignition"
+    }
+  ],
+  "models": [
+    {
+      "name": "Boss"
+    },
+    {
+      "name": "Boxer"
+    },
+    {
+      "name": "Boxer 2"
+    },
+    {
+      "name": "Bravo"
+    },
+    {
+      "name": "Bravo Deluxe"
+    },
+    {
+      "name": "Bravo Super"
+    },
+    {
+      "name": "Bravo Super Deluxe"
+    },
+    {
+      "name": "Ciao"
+    },
+    {
+      "name": "Ciao P"
+    },
+    {
+      "name": "Ciao PX"
+    },
+    {
+      "name": "Ciao PXV"
+    },
+    {
+      "name": "Ciao Porter"
+    },
+    {
+      "name": "Ciao Super"
+    },
+    {
+      "name": "Ciao Supreme"
+    },
+    {
+      "name": "Grande"
+    },
+    {
+      "name": "Grande Deluxe"
+    },
+    {
+      "name": "Grande Super Deluxe"
+    },
+    {
+      "name": "Si"
+    },
+    {
+      "name": "Si Monte Carlo"
+    },
+    {
+      "name": "Vespino"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
+}
