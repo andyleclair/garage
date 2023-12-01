@@ -4,8 +4,7 @@ defmodule GarageWeb.BuildsLive.New do
   alias AshPhoenix.Form
   alias Garage.Builds
   alias Garage.Builds.Build
-  alias Garage.Mopeds.Manufacturer
-  alias Garage.Mopeds.Model
+  import GarageWeb.BuildsLive.Helpers
 
   @impl true
   def render(assigns) do
@@ -148,52 +147,6 @@ defmodule GarageWeb.BuildsLive.New do
 
       {:error, form} ->
         {:noreply, assign_form(socket, form)}
-    end
-  end
-
-  defp year_options() do
-    2023..1900 |> Enum.to_list()
-  end
-
-  defp manufacturer_options() do
-    for manufacturer <- Manufacturer.read_all!(),
-        into: [],
-        do: {manufacturer.name, manufacturer.id}
-  end
-
-  defp model_options_by_id(manufacturer_id) do
-    for model <- Model.by_manufacturer_id!(manufacturer_id), into: [], do: {model.name, model.id}
-  end
-
-  defp assign_form(socket, %Form{} = form) do
-    assign(socket, :form, to_form(form))
-  end
-
-  defp assign_form(socket, %Phoenix.HTML.Form{} = form) do
-    assign(socket, :form, form)
-  end
-
-  def search_options(options, text) do
-    if text == "" do
-      options
-    else
-      options
-      |> Enum.filter(fn {option, _id} ->
-        String.downcase(option) |> String.contains?(String.downcase(text))
-      end)
-    end
-  end
-
-  def form_manufacturer_id(form) do
-    case Form.value(form, :manufacturer_id) do
-      "" ->
-        nil
-
-      nil ->
-        nil
-
-      manufacturer_id ->
-        manufacturer_id
     end
   end
 end

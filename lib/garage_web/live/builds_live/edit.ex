@@ -15,13 +15,7 @@ defmodule GarageWeb.BuildsLive.Edit do
       <:subtitle>Tell the world about your moped!</:subtitle>
     </.header>
 
-    <.simple_form
-      for={@form}
-      id="build-form"
-      phx-target={@myself}
-      phx-change="validate"
-      phx-submit="save"
-    >
+    <.simple_form for={@form} id="build-form" phx-change="validate" phx-submit="save">
       <.input field={@form[:name]} type="text" label="Name" />
       <div class="flex justify-around">
         <div class="w-1/6">
@@ -33,7 +27,6 @@ defmodule GarageWeb.BuildsLive.Edit do
             phx-focus="set-default"
             options={@manufacturer_options}
             label="Make"
-            phx-target={@myself}
           />
         </div>
         <div class="w-1/3">
@@ -43,7 +36,6 @@ defmodule GarageWeb.BuildsLive.Edit do
               phx-focus="set-default"
               options={@model_options}
               label="Model"
-              phx-target={@myself}
               debounce="250"
             />
           <% end %>
@@ -76,7 +68,6 @@ defmodule GarageWeb.BuildsLive.Edit do
                 <div
                   class="absolute top-0 right-0 cursor-pointer z-10 hover:border hover:border-red-500 hover:rounded-lg"
                   phx-click="delete-image"
-                  phx-target={@myself}
                   phx-value-ref={ref}
                   id={"delete_image-#{ref}"}
                 >
@@ -104,7 +95,6 @@ defmodule GarageWeb.BuildsLive.Edit do
                   <div
                     class="absolute top-0 right-0 cursor-pointer z-10 hover:border hover:border-red-500 hover:rounded-lg"
                     phx-click="cancel-upload"
-                    phx-target={@myself}
                     phx-value-ref={entry.ref}
                     id={"close_pic-#{entry.ref}"}
                   >
@@ -226,13 +216,14 @@ defmodule GarageWeb.BuildsLive.Edit do
 
       {:ok,
        socket
-       |> assign(:page_title, "Edit Build")
+       |> assign(:title, "Edit Build")
        |> assign(:build, build)
        |> assign(:manufacturer_options, manufacturer_options)
        |> assign(:images, images)
        |> assign(:images_to_delete, [])
        |> assign(:model_options, model_options)
        |> assign(:year_options, year_options)
+       |> assign_form(form)
        |> allow_upload(:image_urls, accept: ~w(.jpg .jpeg .webp .png), max_entries: 10)}
     else
       {:ok,

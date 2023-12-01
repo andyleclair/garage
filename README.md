@@ -48,6 +48,7 @@
 - [ ] Chat
 - [ ] Better index page 
 - [ ] Logo 
+- [ ] Atomic design
 - [ ] Add signed up users to mailing list
 
 To start the Phoenix server:
