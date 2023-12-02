@@ -45,14 +45,6 @@ defmodule GarageWeb.BuildsLive.Helpers do
     for model <- Model.by_manufacturer_id!(manufacturer_id), into: [], do: {model.name, model.id}
   end
 
-  def assign_form(socket, %Form{} = form) do
-    assign(socket, :form, to_form(form))
-  end
-
-  def assign_form(socket, %Phoenix.HTML.Form{} = form) do
-    assign(socket, :form, form)
-  end
-
   def error_to_string(:too_large), do: "Too large"
   def error_to_string(:too_many_files), do: "You have selected too many files"
   def error_to_string(:not_accepted), do: "You have selected an unacceptable file type"

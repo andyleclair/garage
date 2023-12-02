@@ -1,4 +1,5 @@
 defmodule GarageWeb.BuildsLive.Edit do
+  alias Garage.Mopeds.Carburetor
   alias Garage.Builds.Build
   use GarageWeb, :live_view
 
@@ -41,6 +42,14 @@ defmodule GarageWeb.BuildsLive.Edit do
           <% end %>
         </div>
       </div>
+      <.live_component
+        module={GarageWeb.Components.LiveSelectPlus}
+        label="Carburetor"
+        id="carburetor-select"
+        debounce="250"
+        field={@form[:carburetor_id]}
+        search_fn={&search_carburetors/1}
+      />
       <.input field={@form[:description]} type="hidden" label="Description" id="trix-editor" />
       <div id="rich-text" phx-update="ignore">
         <trix-editor class="trix-content" input="trix-editor"></trix-editor>
@@ -358,5 +367,9 @@ defmodule GarageWeb.BuildsLive.Edit do
       {:error, form} ->
         {:noreply, assign_form(socket, form)}
     end
+  end
+
+  def search_carburetors(search) do
+    Carburetor.search(search)
   end
 end

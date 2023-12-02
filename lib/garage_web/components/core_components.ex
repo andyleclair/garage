@@ -727,4 +727,15 @@ defmodule GarageWeb.CoreComponents do
   def translate_errors(errors, field) when is_list(errors) do
     for {^field, {msg, opts}} <- errors, do: translate_error({msg, opts})
   end
+
+  @doc """
+  Handle assigning either an ash form or phoenix form to a socket
+  """
+  def assign_form(socket, %AshPhoenix.Form{} = form) do
+    assign(socket, :form, to_form(form))
+  end
+
+  def assign_form(socket, %Phoenix.HTML.Form{} = form) do
+    assign(socket, :form, form)
+  end
 end

@@ -1,0 +1,38 @@
+{
+  "name": "Dell'orto",
+  "category": "carburetor",
+  "carburetors": [
+    {
+      "name": "PHBG",
+      "size": 19
+    },
+    {
+      "name": "PHBG",
+      "size": 21
+    },
+    {
+      "name": "PHVA",
+      "size": 17
+    },
+    {
+      "name": "SHA",
+      "size": 15
+    },
+    {
+      "name": "SHA",
+      "size": 16
+    },
+    {
+      "name": "SHA",
+      "size": 14
+    },
+    {
+      "name": "SHA",
+      "size": 13
+    },
+    {
+      "name": "SHA",
+      "size": 12
+    }
+  ]
+}

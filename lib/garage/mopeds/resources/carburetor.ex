@@ -15,6 +15,12 @@ defmodule Garage.Mopeds.Carburetor do
       # against the `id` of each element in the resource
       filter expr(id == ^arg(:id))
     end
+
+    read :search do
+      argument :query, :string, allow_nil?: false
+
+      filter expr(fragment("? like '%?%'", :name, ^arg(:query)))
+    end
   end
 
   code_interface do
@@ -23,6 +29,7 @@ defmodule Garage.Mopeds.Carburetor do
     define :update, action: :update
     define :destroy, action: :destroy
     define :get_by_id, args: [:id], action: :by_id
+    define :search, args: [:query], action: :search
   end
 
   attributes do

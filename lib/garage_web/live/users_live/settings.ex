@@ -242,14 +242,6 @@ defmodule GarageWeb.UsersLive.Settings do
     end
   end
 
-  defp assign_form(socket, %Form{} = form) do
-    assign(socket, :form, to_form(form))
-  end
-
-  defp assign_form(socket, %Phoenix.HTML.Form{} = form) do
-    assign(socket, :form, form)
-  end
-
   defp error_to_string(:too_large), do: "Too large"
   defp error_to_string(:too_many_files), do: "You have selected too many files"
   defp error_to_string(:not_accepted), do: "You have selected an unacceptable file type"
