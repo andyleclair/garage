@@ -40,7 +40,7 @@ defmodule Garage.MixProject do
       {:phoenix_html, "~> 3.3"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_view, "~> 0.20.1", override: true},
-      {:floki, ">= 0.30.0", only: :test},
+      {:floki, ">= 0.30.0"},
       {:phoenix_live_dashboard, "~> 0.8.2"},
       {:esbuild, "~> 0.7", runtime: Mix.env() == :dev},
       {:tailwind, "~> 0.2.0", runtime: Mix.env() == :dev},
@@ -55,13 +55,15 @@ defmodule Garage.MixProject do
       {:ash, "~> 2.0"},
       {:ash_postgres, "~> 1.3"},
       {:ash_phoenix, "~> 1.2"},
-      {:ash_authentication, "~> 3.11.15"},
+      {:ash_authentication, "~> 3.12"},
       {:ash_authentication_phoenix, "~> 1.8"},
-      {:live_select, "~> 1.2.1"},
+      {:live_select, "~> 1.3"},
       {:ex_aws, "~> 2.0"},
       {:ex_aws_s3, "~> 2.0"},
       {:sweet_xml, "~> 0.6"},
-      {:timex, "~> 3.0"}
+      {:timex, "~> 3.0"},
+      {:crawly, "~> 0.16.0"},
+      {:req, "~> 0.4"}
     ]
   end
 

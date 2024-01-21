@@ -5,7 +5,6 @@ defmodule GarageWeb.BuildsLive.Helpers do
   alias AshPhoenix.Form
   alias Garage.Mopeds.Manufacturer
   alias Garage.Mopeds.Model
-  import Phoenix.Component, only: [assign: 3, to_form: 1]
 
   def search_options(options, text) do
     if text == "" do

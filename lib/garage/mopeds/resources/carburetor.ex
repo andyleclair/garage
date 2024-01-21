@@ -37,7 +37,7 @@ defmodule Garage.Mopeds.Carburetor do
     attribute :name, :string, allow_nil?: false
     attribute :description, :string, default: ""
     # in mm
-    attribute :size, :integer, default: 12
+    attribute :size, :string
     attribute :jets, {:array, :string}, default: []
 
     create_timestamp :inserted_at
