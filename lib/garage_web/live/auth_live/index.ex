@@ -1,7 +1,6 @@
 defmodule GarageWeb.AuthLive.Index do
   use GarageWeb, :live_view
 
-  use Phoenix.HTML
   alias Garage.Accounts
   alias Garage.Accounts.User
   alias AshPhoenix.Form
