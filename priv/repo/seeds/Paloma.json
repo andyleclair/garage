@@ -1,20 +1,8 @@
 {
   "name": "Paloma",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Super Strada Flash Stock Exhaust"
-    },
-    {
-      "name": "Pal Stock Exhaust"
-    },
-    {
-      "name": "Minor Stock Exhaust"
-    },
-    {
-      "name": "Dasl Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -44,6 +32,16 @@
       "name": "Dasl Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Super Strada Flash Stock Cylinder"
@@ -58,14 +56,18 @@
       "name": "Dasl Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Super Strada Flash Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Pal Stock Exhaust"
+    },
+    {
+      "name": "Minor Stock Exhaust"
+    },
+    {
+      "name": "Dasl Stock Exhaust"
     }
   ],
   "ignitions": [

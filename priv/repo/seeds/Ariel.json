@@ -1,14 +1,8 @@
 {
   "name": "Ariel",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Zizer Stock Exhaust"
-    },
-    {
-      "name": "3 Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -26,14 +20,6 @@
       "name": "3 Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "Zizer Stock Cylinder"
-    },
-    {
-      "name": "3 Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -42,6 +28,22 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Zizer Stock Cylinder"
+    },
+    {
+      "name": "3 Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "Zizer Stock Exhaust"
+    },
+    {
+      "name": "3 Stock Exhaust"
     }
   ],
   "ignitions": [

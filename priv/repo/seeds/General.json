@@ -1,29 +1,8 @@
 {
   "name": "General",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Limited Edition Stock Exhaust"
-    },
-    {
-      "name": "Laser Stock Exhaust"
-    },
-    {
-      "name": "C-2 Stock Exhaust"
-    },
-    {
-      "name": "5 Star TE Stock Exhaust"
-    },
-    {
-      "name": "5 Star ST Stock Exhaust"
-    },
-    {
-      "name": "5 Star Stock Exhaust"
-    },
-    {
-      "name": "3 Star Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -71,6 +50,16 @@
       "name": "3 Star Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Limited Edition Stock Cylinder"
@@ -94,14 +83,27 @@
       "name": "3 Star Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Limited Edition Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Laser Stock Exhaust"
+    },
+    {
+      "name": "C-2 Stock Exhaust"
+    },
+    {
+      "name": "5 Star TE Stock Exhaust"
+    },
+    {
+      "name": "5 Star ST Stock Exhaust"
+    },
+    {
+      "name": "5 Star Stock Exhaust"
+    },
+    {
+      "name": "3 Star Stock Exhaust"
     }
   ],
   "ignitions": [

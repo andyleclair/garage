@@ -1,26 +1,8 @@
 {
   "name": "Bermuda",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Somerset 147FVA Stock Exhaust"
-    },
-    {
-      "name": "Pembroke 147AFA Stock Exhaust"
-    },
-    {
-      "name": "Hampton 147FA Stock Exhaust"
-    },
-    {
-      "name": "Flandria Stock Exhaust"
-    },
-    {
-      "name": "147FA Stock Exhaust"
-    },
-    {
-      "name": "147F Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -62,6 +44,16 @@
       "name": "147F Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Somerset 147FVA Stock Cylinder"
@@ -82,14 +74,24 @@
       "name": "147F Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Somerset 147FVA Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Pembroke 147AFA Stock Exhaust"
+    },
+    {
+      "name": "Hampton 147FA Stock Exhaust"
+    },
+    {
+      "name": "Flandria Stock Exhaust"
+    },
+    {
+      "name": "147FA Stock Exhaust"
+    },
+    {
+      "name": "147F Stock Exhaust"
     }
   ],
   "ignitions": [

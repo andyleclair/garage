@@ -263,38 +263,27 @@ defmodule GarageWeb.BuildsLive.Edit do
   end
 
   @impl true
-  def handle_event(
-        "live_select_change",
-        %{"id" => "form_manufacturer" <> _ = id, "text" => text},
-        socket
-      ) do
-    options = search_options(socket.assigns.manufacturer_options, text)
+  def handle_event("live_select_change", %{"id" => id, "text" => text, "field" => field}, socket) do
+    options =
+      case field do
+        "form_manufacturer_id" -> search_options(socket.assigns.manufacturer_options, text)
+        "form_model_id" -> search_options(socket.assigns.model_options, text)
+      end
+
     send_update(LiveSelect.Component, options: options, id: id)
 
     {:noreply, socket}
   end
 
   @impl true
-  def handle_event(
-        "live_select_change",
-        %{"id" => "form_model" <> _ = id, "text" => text},
-        socket
-      ) do
-    options = search_options(socket.assigns.model_options, text)
-    send_update(LiveSelect.Component, options: options, id: id)
-    {:noreply, socket}
-  end
+  def handle_event("set-default", %{"id" => id, "field" => field}, socket) do
+    case field do
+      "form_manufacturer_id" ->
+        send_update(LiveSelect.Component, options: socket.assigns.manufacturer_options, id: id)
 
-  @impl true
-  def handle_event("set-default", %{"id" => "form_manufacturer" <> _ = id}, socket) do
-    send_update(LiveSelect.Component, options: socket.assigns.manufacturer_options, id: id)
-
-    {:noreply, socket}
-  end
-
-  @impl true
-  def handle_event("set-default", %{"id" => "form_model" <> _ = id}, socket) do
-    send_update(LiveSelect.Component, options: socket.assigns.model_options, id: id)
+      "form_model_id" ->
+        send_update(LiveSelect.Component, options: socket.assigns.model_options, id: id)
+    end
 
     {:noreply, socket}
   end

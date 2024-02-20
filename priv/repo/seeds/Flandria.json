@@ -1,68 +1,8 @@
 {
   "name": "Flandria",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "SP 747 Stock Exhaust"
-    },
-    {
-      "name": "SP 547 Stock Exhaust"
-    },
-    {
-      "name": "SP 537 Stock Exhaust"
-    },
-    {
-      "name": "SP 527 Stock Exhaust"
-    },
-    {
-      "name": "SP 337 Stock Exhaust"
-    },
-    {
-      "name": "SP 237 Stock Exhaust"
-    },
-    {
-      "name": "Record Stock Exhaust"
-    },
-    {
-      "name": "Monomatix Stock Exhaust"
-    },
-    {
-      "name": "Kingline Stock Exhaust"
-    },
-    {
-      "name": "Imola4 Stock Exhaust"
-    },
-    {
-      "name": "Commet Stock Exhaust"
-    },
-    {
-      "name": "Bermuda Stock Exhaust"
-    },
-    {
-      "name": "Apollo AF-A Stock Exhaust"
-    },
-    {
-      "name": "Apollo AF Stock Exhaust"
-    },
-    {
-      "name": "Anker Laura Stock Exhaust"
-    },
-    {
-      "name": "5CV Stock Exhaust"
-    },
-    {
-      "name": "4.3CV Stock Exhaust"
-    },
-    {
-      "name": "104 Stock Exhaust"
-    },
-    {
-      "name": "102 Stock Exhaust"
-    },
-    {
-      "name": "101 Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -188,6 +128,16 @@
       "name": "101 Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "SP 747 Stock Cylinder"
@@ -250,14 +200,66 @@
       "name": "101 Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "SP 747 Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "SP 547 Stock Exhaust"
+    },
+    {
+      "name": "SP 537 Stock Exhaust"
+    },
+    {
+      "name": "SP 527 Stock Exhaust"
+    },
+    {
+      "name": "SP 337 Stock Exhaust"
+    },
+    {
+      "name": "SP 237 Stock Exhaust"
+    },
+    {
+      "name": "Record Stock Exhaust"
+    },
+    {
+      "name": "Monomatix Stock Exhaust"
+    },
+    {
+      "name": "Kingline Stock Exhaust"
+    },
+    {
+      "name": "Imola4 Stock Exhaust"
+    },
+    {
+      "name": "Commet Stock Exhaust"
+    },
+    {
+      "name": "Bermuda Stock Exhaust"
+    },
+    {
+      "name": "Apollo AF-A Stock Exhaust"
+    },
+    {
+      "name": "Apollo AF Stock Exhaust"
+    },
+    {
+      "name": "Anker Laura Stock Exhaust"
+    },
+    {
+      "name": "5CV Stock Exhaust"
+    },
+    {
+      "name": "4.3CV Stock Exhaust"
+    },
+    {
+      "name": "104 Stock Exhaust"
+    },
+    {
+      "name": "102 Stock Exhaust"
+    },
+    {
+      "name": "101 Stock Exhaust"
     }
   ],
   "ignitions": [

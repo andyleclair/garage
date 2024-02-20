@@ -1,86 +1,8 @@
 {
   "name": "Jawa",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "X30 Stock Exhaust"
-    },
-    {
-      "name": "X25 Stock Exhaust"
-    },
-    {
-      "name": "X20 Stock Exhaust"
-    },
-    {
-      "name": "Transistor 40 Stock Exhaust"
-    },
-    {
-      "name": "Supreme 3 Stock Exhaust"
-    },
-    {
-      "name": "Supreme 2 Stock Exhaust"
-    },
-    {
-      "name": "Supreme Stock Exhaust"
-    },
-    {
-      "name": "Stadion Stock Exhaust"
-    },
-    {
-      "name": "Robot Stock Exhaust"
-    },
-    {
-      "name": "Golden Sport Stock Exhaust"
-    },
-    {
-      "name": "Deluxe Stock Exhaust"
-    },
-    {
-      "name": "DL Stock Exhaust"
-    },
-    {
-      "name": "City Bee Stock Exhaust"
-    },
-    {
-      "name": "Babetta Stock Exhaust"
-    },
-    {
-      "name": "550 Stock Exhaust"
-    },
-    {
-      "name": "50 Stock Exhaust"
-    },
-    {
-      "name": "311DL Stock Exhaust"
-    },
-    {
-      "name": "311C Stock Exhaust"
-    },
-    {
-      "name": "300DLX Stock Exhaust"
-    },
-    {
-      "name": "225 Stock Exhaust"
-    },
-    {
-      "name": "210 Sport Stock Exhaust"
-    },
-    {
-      "name": "210 Stock Exhaust"
-    },
-    {
-      "name": "207 Stock Exhaust"
-    },
-    {
-      "name": "120 Automatic Stock Exhaust"
-    },
-    {
-      "name": "120 Stock Exhaust"
-    },
-    {
-      "name": "05 Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -242,6 +164,16 @@
       "name": "05 Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "X30 Stock Cylinder"
@@ -322,14 +254,84 @@
       "name": "05 Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "X30 Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "X25 Stock Exhaust"
+    },
+    {
+      "name": "X20 Stock Exhaust"
+    },
+    {
+      "name": "Transistor 40 Stock Exhaust"
+    },
+    {
+      "name": "Supreme 3 Stock Exhaust"
+    },
+    {
+      "name": "Supreme 2 Stock Exhaust"
+    },
+    {
+      "name": "Supreme Stock Exhaust"
+    },
+    {
+      "name": "Stadion Stock Exhaust"
+    },
+    {
+      "name": "Robot Stock Exhaust"
+    },
+    {
+      "name": "Golden Sport Stock Exhaust"
+    },
+    {
+      "name": "Deluxe Stock Exhaust"
+    },
+    {
+      "name": "DL Stock Exhaust"
+    },
+    {
+      "name": "City Bee Stock Exhaust"
+    },
+    {
+      "name": "Babetta Stock Exhaust"
+    },
+    {
+      "name": "550 Stock Exhaust"
+    },
+    {
+      "name": "50 Stock Exhaust"
+    },
+    {
+      "name": "311DL Stock Exhaust"
+    },
+    {
+      "name": "311C Stock Exhaust"
+    },
+    {
+      "name": "300DLX Stock Exhaust"
+    },
+    {
+      "name": "225 Stock Exhaust"
+    },
+    {
+      "name": "210 Sport Stock Exhaust"
+    },
+    {
+      "name": "210 Stock Exhaust"
+    },
+    {
+      "name": "207 Stock Exhaust"
+    },
+    {
+      "name": "120 Automatic Stock Exhaust"
+    },
+    {
+      "name": "120 Stock Exhaust"
+    },
+    {
+      "name": "05 Stock Exhaust"
     }
   ],
   "ignitions": [

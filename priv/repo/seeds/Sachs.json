@@ -1,95 +1,8 @@
 {
   "name": "Sachs",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Westlake Stock Exhaust"
-    },
-    {
-      "name": "Taxi Lux Stock Exhaust"
-    },
-    {
-      "name": "Sundowner Stock Exhaust"
-    },
-    {
-      "name": "Sundancer SX Stock Exhaust"
-    },
-    {
-      "name": "Sundancer Stock Exhaust"
-    },
-    {
-      "name": "Suburban Stock Exhaust"
-    },
-    {
-      "name": "Showoff Stock Exhaust"
-    },
-    {
-      "name": "Seville Stock Exhaust"
-    },
-    {
-      "name": "Saxy Stock Exhaust"
-    },
-    {
-      "name": "Prima 5 Stock Exhaust"
-    },
-    {
-      "name": "Prima 4 Stock Exhaust"
-    },
-    {
-      "name": "Prima Stock Exhaust"
-    },
-    {
-      "name": "Optima 50 Stock Exhaust"
-    },
-    {
-      "name": "Mopet Stock Exhaust"
-    },
-    {
-      "name": "Minor Stock Exhaust"
-    },
-    {
-      "name": "MadAss Stock Exhaust"
-    },
-    {
-      "name": "Lover Stock Exhaust"
-    },
-    {
-      "name": "Honey Stock Exhaust"
-    },
-    {
-      "name": "Hercules Prima S 2 speed Stock Exhaust"
-    },
-    {
-      "name": "Hercules P-1 Stock Exhaust"
-    },
-    {
-      "name": "Hercules M-4 Stock Exhaust"
-    },
-    {
-      "name": "Hercules Stock Exhaust"
-    },
-    {
-      "name": "G-4 Stock Exhaust"
-    },
-    {
-      "name": "G-3 Stock Exhaust"
-    },
-    {
-      "name": "Feugo Stock Exhaust"
-    },
-    {
-      "name": "Eagle Stock Exhaust"
-    },
-    {
-      "name": "Carrier II Stock Exhaust"
-    },
-    {
-      "name": "Carrier I Stock Exhaust"
-    },
-    {
-      "name": "Balboa Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -269,6 +182,16 @@
       "name": "Balboa Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Westlake Stock Cylinder"
@@ -358,14 +281,93 @@
       "name": "Balboa Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Westlake Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Taxi Lux Stock Exhaust"
+    },
+    {
+      "name": "Sundowner Stock Exhaust"
+    },
+    {
+      "name": "Sundancer SX Stock Exhaust"
+    },
+    {
+      "name": "Sundancer Stock Exhaust"
+    },
+    {
+      "name": "Suburban Stock Exhaust"
+    },
+    {
+      "name": "Showoff Stock Exhaust"
+    },
+    {
+      "name": "Seville Stock Exhaust"
+    },
+    {
+      "name": "Saxy Stock Exhaust"
+    },
+    {
+      "name": "Prima 5 Stock Exhaust"
+    },
+    {
+      "name": "Prima 4 Stock Exhaust"
+    },
+    {
+      "name": "Prima Stock Exhaust"
+    },
+    {
+      "name": "Optima 50 Stock Exhaust"
+    },
+    {
+      "name": "Mopet Stock Exhaust"
+    },
+    {
+      "name": "Minor Stock Exhaust"
+    },
+    {
+      "name": "MadAss Stock Exhaust"
+    },
+    {
+      "name": "Lover Stock Exhaust"
+    },
+    {
+      "name": "Honey Stock Exhaust"
+    },
+    {
+      "name": "Hercules Prima S 2 speed Stock Exhaust"
+    },
+    {
+      "name": "Hercules P-1 Stock Exhaust"
+    },
+    {
+      "name": "Hercules M-4 Stock Exhaust"
+    },
+    {
+      "name": "Hercules Stock Exhaust"
+    },
+    {
+      "name": "G-4 Stock Exhaust"
+    },
+    {
+      "name": "G-3 Stock Exhaust"
+    },
+    {
+      "name": "Feugo Stock Exhaust"
+    },
+    {
+      "name": "Eagle Stock Exhaust"
+    },
+    {
+      "name": "Carrier II Stock Exhaust"
+    },
+    {
+      "name": "Carrier I Stock Exhaust"
+    },
+    {
+      "name": "Balboa Stock Exhaust"
     }
   ],
   "ignitions": [

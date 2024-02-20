@@ -1,89 +1,8 @@
 {
   "name": "Zündapp",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "ZX 25 Stock Exhaust"
-    },
-    {
-      "name": "ZS 25 Stock Exhaust"
-    },
-    {
-      "name": "ZL 25 Stock Exhaust"
-    },
-    {
-      "name": "ZD50 Stock Exhaust"
-    },
-    {
-      "name": "ZD40 Stock Exhaust"
-    },
-    {
-      "name": "ZA 40 Stock Exhaust"
-    },
-    {
-      "name": "Super Combinette De Luxe Stock Exhaust"
-    },
-    {
-      "name": "Super Combinette Stock Exhaust"
-    },
-    {
-      "name": "RZ 20 Stock Exhaust"
-    },
-    {
-      "name": "R50 Stock Exhaust"
-    },
-    {
-      "name": "Moped M-50 Stock Exhaust"
-    },
-    {
-      "name": "Mokick Stock Exhaust"
-    },
-    {
-      "name": "Mofa Star 2 Stock Exhaust"
-    },
-    {
-      "name": "Mofa 25 Stock Exhaust"
-    },
-    {
-      "name": "Mamba Stock Exhaust"
-    },
-    {
-      "name": "M50 Stock Exhaust"
-    },
-    {
-      "name": "KS-50LC Stock Exhaust"
-    },
-    {
-      "name": "KS 80 Stock Exhaust"
-    },
-    {
-      "name": "KS 50 Super Sport Stock Exhaust"
-    },
-    {
-      "name": "GTS50 Stock Exhaust"
-    },
-    {
-      "name": "Falconette Stock Exhaust"
-    },
-    {
-      "name": "Combinette Stock Exhaust"
-    },
-    {
-      "name": "CS50 Stock Exhaust"
-    },
-    {
-      "name": "C50 Super Stock Exhaust"
-    },
-    {
-      "name": "C50 Sport Stock Exhaust"
-    },
-    {
-      "name": "Automatic Moped Stock Exhaust"
-    },
-    {
-      "name": "Automatic Mofa Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -251,6 +170,16 @@
       "name": "Automatic Mofa Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "ZX 25 Stock Cylinder"
@@ -334,14 +263,87 @@
       "name": "Automatic Mofa Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "ZX 25 Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "ZS 25 Stock Exhaust"
+    },
+    {
+      "name": "ZL 25 Stock Exhaust"
+    },
+    {
+      "name": "ZD50 Stock Exhaust"
+    },
+    {
+      "name": "ZD40 Stock Exhaust"
+    },
+    {
+      "name": "ZA 40 Stock Exhaust"
+    },
+    {
+      "name": "Super Combinette De Luxe Stock Exhaust"
+    },
+    {
+      "name": "Super Combinette Stock Exhaust"
+    },
+    {
+      "name": "RZ 20 Stock Exhaust"
+    },
+    {
+      "name": "R50 Stock Exhaust"
+    },
+    {
+      "name": "Moped M-50 Stock Exhaust"
+    },
+    {
+      "name": "Mokick Stock Exhaust"
+    },
+    {
+      "name": "Mofa Star 2 Stock Exhaust"
+    },
+    {
+      "name": "Mofa 25 Stock Exhaust"
+    },
+    {
+      "name": "Mamba Stock Exhaust"
+    },
+    {
+      "name": "M50 Stock Exhaust"
+    },
+    {
+      "name": "KS-50LC Stock Exhaust"
+    },
+    {
+      "name": "KS 80 Stock Exhaust"
+    },
+    {
+      "name": "KS 50 Super Sport Stock Exhaust"
+    },
+    {
+      "name": "GTS50 Stock Exhaust"
+    },
+    {
+      "name": "Falconette Stock Exhaust"
+    },
+    {
+      "name": "Combinette Stock Exhaust"
+    },
+    {
+      "name": "CS50 Stock Exhaust"
+    },
+    {
+      "name": "C50 Super Stock Exhaust"
+    },
+    {
+      "name": "C50 Sport Stock Exhaust"
+    },
+    {
+      "name": "Automatic Moped Stock Exhaust"
+    },
+    {
+      "name": "Automatic Mofa Stock Exhaust"
     }
   ],
   "ignitions": [

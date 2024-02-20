@@ -1,53 +1,8 @@
 {
   "name": "MBK",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "XPower Stock Exhaust"
-    },
-    {
-      "name": "XLimit Stock Exhaust"
-    },
-    {
-      "name": "Magnum Racing XR Stock Exhaust"
-    },
-    {
-      "name": "Magnum Racing Stock Exhaust"
-    },
-    {
-      "name": "Hard Rock Stock Exhaust"
-    },
-    {
-      "name": "Club VR Stock Exhaust"
-    },
-    {
-      "name": "Club Tex Mex Stock Exhaust"
-    },
-    {
-      "name": "Club Swing Stock Exhaust"
-    },
-    {
-      "name": "Club Stock Exhaust"
-    },
-    {
-      "name": "City Club Stock Exhaust"
-    },
-    {
-      "name": "BMX Stock Exhaust"
-    },
-    {
-      "name": "881 U Stock Exhaust"
-    },
-    {
-      "name": "881 M Stock Exhaust"
-    },
-    {
-      "name": "881 B Stock Exhaust"
-    },
-    {
-      "name": "51 V Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -143,6 +98,16 @@
       "name": "51 V Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "XPower Stock Cylinder"
@@ -190,14 +155,51 @@
       "name": "51 V Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "XPower Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "XLimit Stock Exhaust"
+    },
+    {
+      "name": "Magnum Racing XR Stock Exhaust"
+    },
+    {
+      "name": "Magnum Racing Stock Exhaust"
+    },
+    {
+      "name": "Hard Rock Stock Exhaust"
+    },
+    {
+      "name": "Club VR Stock Exhaust"
+    },
+    {
+      "name": "Club Tex Mex Stock Exhaust"
+    },
+    {
+      "name": "Club Swing Stock Exhaust"
+    },
+    {
+      "name": "Club Stock Exhaust"
+    },
+    {
+      "name": "City Club Stock Exhaust"
+    },
+    {
+      "name": "BMX Stock Exhaust"
+    },
+    {
+      "name": "881 U Stock Exhaust"
+    },
+    {
+      "name": "881 M Stock Exhaust"
+    },
+    {
+      "name": "881 B Stock Exhaust"
+    },
+    {
+      "name": "51 V Stock Exhaust"
     }
   ],
   "ignitions": [

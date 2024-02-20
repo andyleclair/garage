@@ -1,29 +1,8 @@
 {
   "name": "DKW-Zweirad Union",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Model PI Stock Exhaust"
-    },
-    {
-      "name": "Hummel Super Stock Exhaust"
-    },
-    {
-      "name": "Hummel 3 Gang Stock Exhaust"
-    },
-    {
-      "name": "Hummel 2 Gang Stock Exhaust"
-    },
-    {
-      "name": "Hummel Stock Exhaust"
-    },
-    {
-      "name": "503 Stock Exhaust"
-    },
-    {
-      "name": "111 BJ Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -71,6 +50,16 @@
       "name": "111 BJ Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Model PI Stock Cylinder"
@@ -94,14 +83,27 @@
       "name": "111 BJ Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Model PI Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Hummel Super Stock Exhaust"
+    },
+    {
+      "name": "Hummel 3 Gang Stock Exhaust"
+    },
+    {
+      "name": "Hummel 2 Gang Stock Exhaust"
+    },
+    {
+      "name": "Hummel Stock Exhaust"
+    },
+    {
+      "name": "503 Stock Exhaust"
+    },
+    {
+      "name": "111 BJ Stock Exhaust"
     }
   ],
   "ignitions": [

@@ -1,65 +1,8 @@
 {
   "name": "Benelli",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Turismo Stock Exhaust"
-    },
-    {
-      "name": "Sprint Stock Exhaust"
-    },
-    {
-      "name": "Riverside Stock Exhaust"
-    },
-    {
-      "name": "Pantera Stock Exhaust"
-    },
-    {
-      "name": "Motorella Stock Exhaust"
-    },
-    {
-      "name": "Maserati Stock Exhaust"
-    },
-    {
-      "name": "Magnum 6V Stock Exhaust"
-    },
-    {
-      "name": "Magnum 5V Stock Exhaust"
-    },
-    {
-      "name": "Gentleman-2 Stock Exhaust"
-    },
-    {
-      "name": "G2 Stock Exhaust"
-    },
-    {
-      "name": "Fireball 50 Stock Exhaust"
-    },
-    {
-      "name": "FA Stock Exhaust"
-    },
-    {
-      "name": "Cross Stock Exhaust"
-    },
-    {
-      "name": "Cosmo Colt Stock Exhaust"
-    },
-    {
-      "name": "Cosmo Blazer Stock Exhaust"
-    },
-    {
-      "name": "Caddy Stock Exhaust"
-    },
-    {
-      "name": "Blazar Stock Exhaust"
-    },
-    {
-      "name": "49 Export Stock Exhaust"
-    },
-    {
-      "name": "3VK Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -179,6 +122,16 @@
       "name": "3VK Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Turismo Stock Cylinder"
@@ -238,14 +191,63 @@
       "name": "3VK Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Turismo Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Sprint Stock Exhaust"
+    },
+    {
+      "name": "Riverside Stock Exhaust"
+    },
+    {
+      "name": "Pantera Stock Exhaust"
+    },
+    {
+      "name": "Motorella Stock Exhaust"
+    },
+    {
+      "name": "Maserati Stock Exhaust"
+    },
+    {
+      "name": "Magnum 6V Stock Exhaust"
+    },
+    {
+      "name": "Magnum 5V Stock Exhaust"
+    },
+    {
+      "name": "Gentleman-2 Stock Exhaust"
+    },
+    {
+      "name": "G2 Stock Exhaust"
+    },
+    {
+      "name": "Fireball 50 Stock Exhaust"
+    },
+    {
+      "name": "FA Stock Exhaust"
+    },
+    {
+      "name": "Cross Stock Exhaust"
+    },
+    {
+      "name": "Cosmo Colt Stock Exhaust"
+    },
+    {
+      "name": "Cosmo Blazer Stock Exhaust"
+    },
+    {
+      "name": "Caddy Stock Exhaust"
+    },
+    {
+      "name": "Blazar Stock Exhaust"
+    },
+    {
+      "name": "49 Export Stock Exhaust"
+    },
+    {
+      "name": "3VK Stock Exhaust"
     }
   ],
   "ignitions": [

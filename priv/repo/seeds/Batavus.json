@@ -1,143 +1,8 @@
 {
   "name": "Batavus",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Bilonet Stock Exhaust"
-    },
-    {
-      "name": "Go-Go V40 Stock Exhaust"
-    },
-    {
-      "name": "Grand Prix Stock Exhaust"
-    },
-    {
-      "name": "HS-50 Stock Exhaust"
-    },
-    {
-      "name": "Tramp Stock Exhaust"
-    },
-    {
-      "name": "Compact Stock Exhaust"
-    },
-    {
-      "name": "FP50 Sport Stock Exhaust"
-    },
-    {
-      "name": "Mondial Deluxe Stock Exhaust"
-    },
-    {
-      "name": "TS49 Stock Exhaust"
-    },
-    {
-      "name": "Bingo Stock Exhaust"
-    },
-    {
-      "name": "Super Sport Stock Exhaust"
-    },
-    {
-      "name": "M56 Stock Exhaust"
-    },
-    {
-      "name": "MK 2 Stock Exhaust"
-    },
-    {
-      "name": "Whippet Stock Exhaust"
-    },
-    {
-      "name": "Starflite VAII Stock Exhaust"
-    },
-    {
-      "name": "Regency VAII Stock Exhaust"
-    },
-    {
-      "name": "Bilonet Combi Sport Stock Exhaust"
-    },
-    {
-      "name": "M48 Stock Exhaust"
-    },
-    {
-      "name": "City Stock Exhaust"
-    },
-    {
-      "name": "Mot'o-Mat Stock Exhaust"
-    },
-    {
-      "name": "Batavette Stock Exhaust"
-    },
-    {
-      "name": "Mobat Stock Exhaust"
-    },
-    {
-      "name": "VA Stock Exhaust"
-    },
-    {
-      "name": "TS50 Stock Exhaust"
-    },
-    {
-      "name": "FP50 Stock Exhaust"
-    },
-    {
-      "name": "HS-60 Stock Exhaust"
-    },
-    {
-      "name": "Mondial I Stock Exhaust"
-    },
-    {
-      "name": "MK 4 S Stock Exhaust"
-    },
-    {
-      "name": "Transport Stock Exhaust"
-    },
-    {
-      "name": "Starflite HS Stock Exhaust"
-    },
-    {
-      "name": "Bilonet Mat-o-mat Stock Exhaust"
-    },
-    {
-      "name": "VA-25 Stock Exhaust"
-    },
-    {
-      "name": "Conforte Stock Exhaust"
-    },
-    {
-      "name": "Bilonet Mk2 Stock Exhaust"
-    },
-    {
-      "name": "Regency HS Stock Exhaust"
-    },
-    {
-      "name": "Mondial II Stock Exhaust"
-    },
-    {
-      "name": "Bilonet Super Sport Stock Exhaust"
-    },
-    {
-      "name": "Intercycle Stock Exhaust"
-    },
-    {
-      "name": "Starflite VAI Stock Exhaust"
-    },
-    {
-      "name": "Rotary Stock Exhaust"
-    },
-    {
-      "name": "Mobat Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Badger Stock Exhaust"
-    },
-    {
-      "name": "Bronco Stock Exhaust"
-    },
-    {
-      "name": "Starflite Stock Exhaust"
-    },
-    {
-      "name": "Regency Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -413,6 +278,16 @@
       "name": "Regency Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Bilonet Stock Cylinder"
@@ -550,14 +425,141 @@
       "name": "Regency Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Bilonet Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Go-Go V40 Stock Exhaust"
+    },
+    {
+      "name": "Grand Prix Stock Exhaust"
+    },
+    {
+      "name": "HS-50 Stock Exhaust"
+    },
+    {
+      "name": "Tramp Stock Exhaust"
+    },
+    {
+      "name": "Compact Stock Exhaust"
+    },
+    {
+      "name": "FP50 Sport Stock Exhaust"
+    },
+    {
+      "name": "Mondial Deluxe Stock Exhaust"
+    },
+    {
+      "name": "TS49 Stock Exhaust"
+    },
+    {
+      "name": "Bingo Stock Exhaust"
+    },
+    {
+      "name": "Super Sport Stock Exhaust"
+    },
+    {
+      "name": "M56 Stock Exhaust"
+    },
+    {
+      "name": "MK 2 Stock Exhaust"
+    },
+    {
+      "name": "Whippet Stock Exhaust"
+    },
+    {
+      "name": "Starflite VAII Stock Exhaust"
+    },
+    {
+      "name": "Regency VAII Stock Exhaust"
+    },
+    {
+      "name": "Bilonet Combi Sport Stock Exhaust"
+    },
+    {
+      "name": "M48 Stock Exhaust"
+    },
+    {
+      "name": "City Stock Exhaust"
+    },
+    {
+      "name": "Mot'o-Mat Stock Exhaust"
+    },
+    {
+      "name": "Batavette Stock Exhaust"
+    },
+    {
+      "name": "Mobat Stock Exhaust"
+    },
+    {
+      "name": "VA Stock Exhaust"
+    },
+    {
+      "name": "TS50 Stock Exhaust"
+    },
+    {
+      "name": "FP50 Stock Exhaust"
+    },
+    {
+      "name": "HS-60 Stock Exhaust"
+    },
+    {
+      "name": "Mondial I Stock Exhaust"
+    },
+    {
+      "name": "MK 4 S Stock Exhaust"
+    },
+    {
+      "name": "Transport Stock Exhaust"
+    },
+    {
+      "name": "Starflite HS Stock Exhaust"
+    },
+    {
+      "name": "Bilonet Mat-o-mat Stock Exhaust"
+    },
+    {
+      "name": "VA-25 Stock Exhaust"
+    },
+    {
+      "name": "Conforte Stock Exhaust"
+    },
+    {
+      "name": "Bilonet Mk2 Stock Exhaust"
+    },
+    {
+      "name": "Regency HS Stock Exhaust"
+    },
+    {
+      "name": "Mondial II Stock Exhaust"
+    },
+    {
+      "name": "Bilonet Super Sport Stock Exhaust"
+    },
+    {
+      "name": "Intercycle Stock Exhaust"
+    },
+    {
+      "name": "Starflite VAI Stock Exhaust"
+    },
+    {
+      "name": "Rotary Stock Exhaust"
+    },
+    {
+      "name": "Mobat Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Badger Stock Exhaust"
+    },
+    {
+      "name": "Bronco Stock Exhaust"
+    },
+    {
+      "name": "Starflite Stock Exhaust"
+    },
+    {
+      "name": "Regency Stock Exhaust"
     }
   ],
   "ignitions": [

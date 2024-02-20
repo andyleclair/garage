@@ -19,14 +19,13 @@ defmodule Garage.Mopeds.Manufacturer do
       end
 
       argument :engines, {:array, :map}
-
       argument :clutches, {:array, :map}
       argument :cranks, {:array, :map}
       argument :ignitions, {:array, :map}
       argument :pulleys, {:array, :map}
       argument :variators, {:array, :map}
 
-      argument :category, :atom do
+      argument :categories, {:array, :atom} do
         allow_nil? false
       end
 
@@ -34,7 +33,7 @@ defmodule Garage.Mopeds.Manufacturer do
       argument :forks, {:array, :map}
       argument :wheels, {:array, :map}
       argument :cylinders, {:array, :map}
-      change set_attribute(:category, arg(:category))
+      change set_attribute(:categories, arg(:categories))
       change set_attribute(:name, arg(:name))
       change Garage.Changes.SetSlug
       change manage_relationship(:models, type: :create)
@@ -69,7 +68,7 @@ defmodule Garage.Mopeds.Manufacturer do
     read :by_category do
       argument :category, :atom, allow_nil?: false
       get? true
-      filter expr(category == ^arg(:category))
+      filter expr(^arg(:category) in categories)
     end
   end
 
@@ -84,13 +83,13 @@ defmodule Garage.Mopeds.Manufacturer do
     define :by_category, args: [:category], action: :by_category
   end
 
+  @categories ~w(carburetor clutch crank cylinder engine exhaust forks ignition moped pulley variator wheels)a
   attributes do
     uuid_primary_key :id
     attribute :name, :string, allow_nil?: false
 
-    attribute :category, :atom do
-      constraints one_of:
-                    ~w(carburetor clutch crank cylinder engine exhaust forks ignition moped pulley variator wheels)a
+    attribute :categories, {:array, :atom} do
+      constraints items: [one_of: @categories]
     end
 
     attribute :description, :string, default: ""

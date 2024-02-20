@@ -1,20 +1,8 @@
 {
   "name": "Tempo",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Panter 460 Stock Exhaust"
-    },
-    {
-      "name": "Panter 360 Stock Exhaust"
-    },
-    {
-      "name": "Cross Stock Exhaust"
-    },
-    {
-      "name": "Corvette Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -44,6 +32,16 @@
       "name": "Corvette Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Panter 460 Stock Cylinder"
@@ -58,14 +56,18 @@
       "name": "Corvette Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Panter 460 Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Panter 360 Stock Exhaust"
+    },
+    {
+      "name": "Cross Stock Exhaust"
+    },
+    {
+      "name": "Corvette Stock Exhaust"
     }
   ],
   "ignitions": [

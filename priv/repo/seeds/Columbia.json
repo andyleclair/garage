@@ -1,56 +1,8 @@
 {
   "name": "Columbia",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Western Flyer Stock Exhaust"
-    },
-    {
-      "name": "Traveller I Stock Exhaust"
-    },
-    {
-      "name": "Open Road Stock Exhaust"
-    },
-    {
-      "name": "Motrek Stock Exhaust"
-    },
-    {
-      "name": "Mediallion 2281 Stock Exhaust"
-    },
-    {
-      "name": "Medallion 2280 Stock Exhaust"
-    },
-    {
-      "name": "Medallion 2271 Stock Exhaust"
-    },
-    {
-      "name": "Imperial Stock Exhaust"
-    },
-    {
-      "name": "Commuter I Stock Exhaust"
-    },
-    {
-      "name": "Commuter 2250 Stock Exhaust"
-    },
-    {
-      "name": "Commuter 2240 Stock Exhaust"
-    },
-    {
-      "name": "Commuter 2220 Stock Exhaust"
-    },
-    {
-      "name": "Commuter Stock Exhaust"
-    },
-    {
-      "name": "57062 Stock Exhaust"
-    },
-    {
-      "name": "2251 Stock Exhaust"
-    },
-    {
-      "name": "2241 Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -152,6 +104,16 @@
       "name": "2241 Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Western Flyer Stock Cylinder"
@@ -202,14 +164,54 @@
       "name": "2241 Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Western Flyer Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Traveller I Stock Exhaust"
+    },
+    {
+      "name": "Open Road Stock Exhaust"
+    },
+    {
+      "name": "Motrek Stock Exhaust"
+    },
+    {
+      "name": "Mediallion 2281 Stock Exhaust"
+    },
+    {
+      "name": "Medallion 2280 Stock Exhaust"
+    },
+    {
+      "name": "Medallion 2271 Stock Exhaust"
+    },
+    {
+      "name": "Imperial Stock Exhaust"
+    },
+    {
+      "name": "Commuter I Stock Exhaust"
+    },
+    {
+      "name": "Commuter 2250 Stock Exhaust"
+    },
+    {
+      "name": "Commuter 2240 Stock Exhaust"
+    },
+    {
+      "name": "Commuter 2220 Stock Exhaust"
+    },
+    {
+      "name": "Commuter Stock Exhaust"
+    },
+    {
+      "name": "57062 Stock Exhaust"
+    },
+    {
+      "name": "2251 Stock Exhaust"
+    },
+    {
+      "name": "2241 Stock Exhaust"
     }
   ],
   "ignitions": [

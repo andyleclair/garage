@@ -1,32 +1,8 @@
 {
   "name": "Testi",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Weekend Cross Stock Exhaust"
-    },
-    {
-      "name": "Mini Cricket Stock Exhaust"
-    },
-    {
-      "name": "Grand Prix Stock Exhaust"
-    },
-    {
-      "name": "Cricket Stock Exhaust"
-    },
-    {
-      "name": "Comfort Stock Exhaust"
-    },
-    {
-      "name": "Champion Stock Exhaust"
-    },
-    {
-      "name": "Cal Jet Stock Exhaust"
-    },
-    {
-      "name": "Amico Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -80,6 +56,16 @@
       "name": "Amico Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Weekend Cross Stock Cylinder"
@@ -106,14 +92,30 @@
       "name": "Amico Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Weekend Cross Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Mini Cricket Stock Exhaust"
+    },
+    {
+      "name": "Grand Prix Stock Exhaust"
+    },
+    {
+      "name": "Cricket Stock Exhaust"
+    },
+    {
+      "name": "Comfort Stock Exhaust"
+    },
+    {
+      "name": "Champion Stock Exhaust"
+    },
+    {
+      "name": "Cal Jet Stock Exhaust"
+    },
+    {
+      "name": "Amico Stock Exhaust"
     }
   ],
   "ignitions": [

@@ -1,29 +1,8 @@
 {
   "name": "Gazelle",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Tour Stock Exhaust"
-    },
-    {
-      "name": "Isabella Stock Exhaust"
-    },
-    {
-      "name": "Grant Stock Exhaust"
-    },
-    {
-      "name": "GS50 Stock Exhaust"
-    },
-    {
-      "name": "GA50 Stock Exhaust"
-    },
-    {
-      "name": "Flyte Stock Exhaust"
-    },
-    {
-      "name": "Apollo Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -71,6 +50,16 @@
       "name": "Apollo Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Tour Stock Cylinder"
@@ -94,14 +83,27 @@
       "name": "Apollo Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Tour Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Isabella Stock Exhaust"
+    },
+    {
+      "name": "Grant Stock Exhaust"
+    },
+    {
+      "name": "GS50 Stock Exhaust"
+    },
+    {
+      "name": "GA50 Stock Exhaust"
+    },
+    {
+      "name": "Flyte Stock Exhaust"
+    },
+    {
+      "name": "Apollo Stock Exhaust"
     }
   ],
   "ignitions": [

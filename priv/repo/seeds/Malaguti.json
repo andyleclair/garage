@@ -1,41 +1,8 @@
 {
   "name": "Malaguti",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Tiger Stock Exhaust"
-    },
-    {
-      "name": "Roxi Stock Exhaust"
-    },
-    {
-      "name": "Quattrotto Stock Exhaust"
-    },
-    {
-      "name": "Quattroto Mono Stock Exhaust"
-    },
-    {
-      "name": "Pilot Stock Exhaust"
-    },
-    {
-      "name": "Olympique Stock Exhaust"
-    },
-    {
-      "name": "Motorik Stock Exhaust"
-    },
-    {
-      "name": "Europino Stock Exhaust"
-    },
-    {
-      "name": "Commuter 20 Stock Exhaust"
-    },
-    {
-      "name": "Commuter 2 Stock Exhaust"
-    },
-    {
-      "name": "Commuter Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -107,6 +74,16 @@
       "name": "Commuter Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Tiger Stock Cylinder"
@@ -142,14 +119,39 @@
       "name": "Commuter Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Tiger Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Roxi Stock Exhaust"
+    },
+    {
+      "name": "Quattrotto Stock Exhaust"
+    },
+    {
+      "name": "Quattroto Mono Stock Exhaust"
+    },
+    {
+      "name": "Pilot Stock Exhaust"
+    },
+    {
+      "name": "Olympique Stock Exhaust"
+    },
+    {
+      "name": "Motorik Stock Exhaust"
+    },
+    {
+      "name": "Europino Stock Exhaust"
+    },
+    {
+      "name": "Commuter 20 Stock Exhaust"
+    },
+    {
+      "name": "Commuter 2 Stock Exhaust"
+    },
+    {
+      "name": "Commuter Stock Exhaust"
     }
   ],
   "ignitions": [

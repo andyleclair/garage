@@ -1,11 +1,8 @@
 {
   "name": "Görike-Diva",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Luxus Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -17,11 +14,6 @@
       "name": "Luxus Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "Luxus Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -30,6 +22,16 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Luxus Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "Luxus Stock Exhaust"
     }
   ],
   "ignitions": [

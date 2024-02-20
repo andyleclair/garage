@@ -1,14 +1,8 @@
 {
   "name": "ITOM",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Sport Stock Exhaust"
-    },
-    {
-      "name": "Junior Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -26,14 +20,6 @@
       "name": "Junior Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "Sport Stock Cylinder"
-    },
-    {
-      "name": "Junior Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -42,6 +28,22 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Sport Stock Cylinder"
+    },
+    {
+      "name": "Junior Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "Junior Stock Exhaust"
     }
   ],
   "ignitions": [

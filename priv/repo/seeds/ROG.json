@@ -1,11 +1,8 @@
 {
   "name": "ROG",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Pony Express Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -17,11 +14,6 @@
       "name": "Pony Express Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "Pony Express Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -30,6 +22,16 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Pony Express Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "Pony Express Stock Exhaust"
     }
   ],
   "ignitions": [

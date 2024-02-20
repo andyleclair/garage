@@ -6,15 +6,14 @@ defmodule Garage.Seeds do
   alias Garage.Mopeds
 
   def seeds do
-    root = Path.join([:code.priv_dir(:garage), "repo", "seeds"])
-
-    root
-    |> File.ls!()
+    [:code.priv_dir(:garage), "repo", "seeds", "*.json"]
+    |> Path.join()
+    |> Path.wildcard()
     |> Enum.map(fn path ->
-      IO.puts("Reading #{Path.join([root, path])}")
+      IO.puts("Reading path #{path}")
 
       json =
-        Path.join([root, path])
+        path
         |> File.read!()
         |> Jason.decode!()
 
@@ -71,7 +70,7 @@ defmodule Garage.Seeds do
           ],
           pulleys: [],
           variators: [],
-          category: :moped,
+          categories: [:moped],
           exhausts: stock_parts.exhausts,
           forks: stock_parts.forks,
           wheels: stock_parts.wheels,

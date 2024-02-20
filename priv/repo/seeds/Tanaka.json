@@ -1,11 +1,8 @@
 {
   "name": "Tanaka",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Bike Bug Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -17,11 +14,6 @@
       "name": "Bike Bug Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "Bike Bug Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -30,6 +22,16 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Bike Bug Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "Bike Bug Stock Exhaust"
     }
   ],
   "ignitions": [

@@ -1,41 +1,8 @@
 {
   "name": "Odyssey",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "720 Stock Exhaust"
-    },
-    {
-      "name": "40/2-R Stock Exhaust"
-    },
-    {
-      "name": "40/2-2 Stock Exhaust"
-    },
-    {
-      "name": "40/1-R Stock Exhaust"
-    },
-    {
-      "name": "40/1-2 Stock Exhaust"
-    },
-    {
-      "name": "32/1-R Stock Exhaust"
-    },
-    {
-      "name": "32/1-2 Stock Exhaust"
-    },
-    {
-      "name": "284 Stock Exhaust"
-    },
-    {
-      "name": "255 Stock Exhaust"
-    },
-    {
-      "name": "237 Stock Exhaust"
-    },
-    {
-      "name": "236 Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -107,6 +74,16 @@
       "name": "236 Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "720 Stock Cylinder"
@@ -142,14 +119,39 @@
       "name": "236 Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "720 Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "40/2-R Stock Exhaust"
+    },
+    {
+      "name": "40/2-2 Stock Exhaust"
+    },
+    {
+      "name": "40/1-R Stock Exhaust"
+    },
+    {
+      "name": "40/1-2 Stock Exhaust"
+    },
+    {
+      "name": "32/1-R Stock Exhaust"
+    },
+    {
+      "name": "32/1-2 Stock Exhaust"
+    },
+    {
+      "name": "284 Stock Exhaust"
+    },
+    {
+      "name": "255 Stock Exhaust"
+    },
+    {
+      "name": "237 Stock Exhaust"
+    },
+    {
+      "name": "236 Stock Exhaust"
     }
   ],
   "ignitions": [

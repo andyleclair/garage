@@ -1,35 +1,8 @@
 {
   "name": "Kymco",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "ZX-50 Stock Exhaust"
-    },
-    {
-      "name": "Yup 50 Stock Exhaust"
-    },
-    {
-      "name": "TSR 50 Stock Exhaust"
-    },
-    {
-      "name": "Super 9 Stock Exhaust"
-    },
-    {
-      "name": "People 50 Stock Exhaust"
-    },
-    {
-      "name": "Filly 50 Stock Exhaust"
-    },
-    {
-      "name": "Cobra Cross Stock Exhaust"
-    },
-    {
-      "name": "Cobra Stock Exhaust"
-    },
-    {
-      "name": "Agility Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -89,6 +62,16 @@
       "name": "Agility Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "ZX-50 Stock Cylinder"
@@ -118,14 +101,33 @@
       "name": "Agility Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "ZX-50 Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Yup 50 Stock Exhaust"
+    },
+    {
+      "name": "TSR 50 Stock Exhaust"
+    },
+    {
+      "name": "Super 9 Stock Exhaust"
+    },
+    {
+      "name": "People 50 Stock Exhaust"
+    },
+    {
+      "name": "Filly 50 Stock Exhaust"
+    },
+    {
+      "name": "Cobra Cross Stock Exhaust"
+    },
+    {
+      "name": "Cobra Stock Exhaust"
+    },
+    {
+      "name": "Agility Stock Exhaust"
     }
   ],
   "ignitions": [

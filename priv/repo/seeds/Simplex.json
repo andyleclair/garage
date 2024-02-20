@@ -1,14 +1,8 @@
 {
   "name": "Simplex",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "S7 Stock Exhaust"
-    },
-    {
-      "name": "Egg Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -26,14 +20,6 @@
       "name": "Egg Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "S7 Stock Cylinder"
-    },
-    {
-      "name": "Egg Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -42,6 +28,22 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "S7 Stock Cylinder"
+    },
+    {
+      "name": "Egg Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "S7 Stock Exhaust"
+    },
+    {
+      "name": "Egg Stock Exhaust"
     }
   ],
   "ignitions": [

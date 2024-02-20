@@ -1,20 +1,8 @@
 {
   "name": "Gimson",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Variomatic Stock Exhaust"
-    },
-    {
-      "name": "Skipper Trial Stock Exhaust"
-    },
-    {
-      "name": "Jumper Cross Stock Exhaust"
-    },
-    {
-      "name": "Elite Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -44,6 +32,16 @@
       "name": "Elite Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Variomatic Stock Cylinder"
@@ -58,14 +56,18 @@
       "name": "Elite Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Variomatic Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Skipper Trial Stock Exhaust"
+    },
+    {
+      "name": "Jumper Cross Stock Exhaust"
+    },
+    {
+      "name": "Elite Stock Exhaust"
     }
   ],
   "ignitions": [

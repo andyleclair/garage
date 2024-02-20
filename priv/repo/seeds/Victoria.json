@@ -1,32 +1,8 @@
 {
   "name": "Victoria",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Vicky Stock Exhaust"
-    },
-    {
-      "name": "Spoetnik Stock Exhaust"
-    },
-    {
-      "name": "Luxus Stock Exhaust"
-    },
-    {
-      "name": "IVN Stock Exhaust"
-    },
-    {
-      "name": "FM38 L Stock Exhaust"
-    },
-    {
-      "name": "Avanti K Stock Exhaust"
-    },
-    {
-      "name": "111 Stock Exhaust"
-    },
-    {
-      "name": "110 s Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -80,6 +56,16 @@
       "name": "110 s Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Vicky Stock Cylinder"
@@ -106,14 +92,30 @@
       "name": "110 s Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Vicky Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Spoetnik Stock Exhaust"
+    },
+    {
+      "name": "Luxus Stock Exhaust"
+    },
+    {
+      "name": "IVN Stock Exhaust"
+    },
+    {
+      "name": "FM38 L Stock Exhaust"
+    },
+    {
+      "name": "Avanti K Stock Exhaust"
+    },
+    {
+      "name": "111 Stock Exhaust"
+    },
+    {
+      "name": "110 s Stock Exhaust"
     }
   ],
   "ignitions": [

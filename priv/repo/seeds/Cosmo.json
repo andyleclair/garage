@@ -1,29 +1,8 @@
 {
   "name": "Cosmo",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Stinger Stock Exhaust"
-    },
-    {
-      "name": "Colt IV Stock Exhaust"
-    },
-    {
-      "name": "Colt III Variator Stock Exhaust"
-    },
-    {
-      "name": "Colt III Reed Stock Exhaust"
-    },
-    {
-      "name": "Colt II Stock Exhaust"
-    },
-    {
-      "name": "Colt I Stock Exhaust"
-    },
-    {
-      "name": "Blazer Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -71,6 +50,16 @@
       "name": "Blazer Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Stinger Stock Cylinder"
@@ -94,14 +83,27 @@
       "name": "Blazer Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Stinger Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Colt IV Stock Exhaust"
+    },
+    {
+      "name": "Colt III Variator Stock Exhaust"
+    },
+    {
+      "name": "Colt III Reed Stock Exhaust"
+    },
+    {
+      "name": "Colt II Stock Exhaust"
+    },
+    {
+      "name": "Colt I Stock Exhaust"
+    },
+    {
+      "name": "Blazer Stock Exhaust"
     }
   ],
   "ignitions": [

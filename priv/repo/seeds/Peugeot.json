@@ -1,197 +1,8 @@
 {
   "name": "Peugeot",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "101SP Stock Exhaust"
-    },
-    {
-      "name": "103 Stock Exhaust"
-    },
-    {
-      "name": "103L2-U1 Stock Exhaust"
-    },
-    {
-      "name": "T1-RS Stock Exhaust"
-    },
-    {
-      "name": "102SP U3 Stock Exhaust"
-    },
-    {
-      "name": "TV-RS Stock Exhaust"
-    },
-    {
-      "name": "Sport Stock Exhaust"
-    },
-    {
-      "name": "101-MT Stock Exhaust"
-    },
-    {
-      "name": "103 Sport U3 Stock Exhaust"
-    },
-    {
-      "name": "TSM U2 Stock Exhaust"
-    },
-    {
-      "name": "103LSM Stock Exhaust"
-    },
-    {
-      "name": "103SPR Stock Exhaust"
-    },
-    {
-      "name": "101KSM Stock Exhaust"
-    },
-    {
-      "name": "103L2-U3 Stock Exhaust"
-    },
-    {
-      "name": "103LVS-U3 Stock Exhaust"
-    },
-    {
-      "name": "103 Sport U2 Stock Exhaust"
-    },
-    {
-      "name": "103LVS-U2 Stock Exhaust"
-    },
-    {
-      "name": "Super Sport Stock Exhaust"
-    },
-    {
-      "name": "Vogue Stock Exhaust"
-    },
-    {
-      "name": "La Poste Stock Exhaust"
-    },
-    {
-      "name": "TS Rallye Stock Exhaust"
-    },
-    {
-      "name": "BB C Stock Exhaust"
-    },
-    {
-      "name": "103LS-U1 Stock Exhaust"
-    },
-    {
-      "name": "103Z Stock Exhaust"
-    },
-    {
-      "name": "103 MXR Stock Exhaust"
-    },
-    {
-      "name": "TM-3 Stock Exhaust"
-    },
-    {
-      "name": "105DM Stock Exhaust"
-    },
-    {
-      "name": "SX5 Stock Exhaust"
-    },
-    {
-      "name": "103 B-D Stock Exhaust"
-    },
-    {
-      "name": "BB VCT Stock Exhaust"
-    },
-    {
-      "name": "Angel Stock Exhaust"
-    },
-    {
-      "name": "BB CT Stock Exhaust"
-    },
-    {
-      "name": "103 MVL Vogue Stock Exhaust"
-    },
-    {
-      "name": "SPX Stock Exhaust"
-    },
-    {
-      "name": "102 MS Stock Exhaust"
-    },
-    {
-      "name": "Country Stock Exhaust"
-    },
-    {
-      "name": "Centri Stock Exhaust"
-    },
-    {
-      "name": "103SPB U2 Stock Exhaust"
-    },
-    {
-      "name": "101-B2 Stock Exhaust"
-    },
-    {
-      "name": "102SP Stock Exhaust"
-    },
-    {
-      "name": "Postman Stock Exhaust"
-    },
-    {
-      "name": "101-MS Stock Exhaust"
-    },
-    {
-      "name": "101 Stock Exhaust"
-    },
-    {
-      "name": "103LS Stock Exhaust"
-    },
-    {
-      "name": "102 Stock Exhaust"
-    },
-    {
-      "name": "103L2-U2 Stock Exhaust"
-    },
-    {
-      "name": "TSMR-D Stock Exhaust"
-    },
-    {
-      "name": "103SP Stock Exhaust"
-    },
-    {
-      "name": "GT10 Stock Exhaust"
-    },
-    {
-      "name": "TSM U3 Stock Exhaust"
-    },
-    {
-      "name": "GT10F3 Stock Exhaust"
-    },
-    {
-      "name": "102SPB U3 Stock Exhaust"
-    },
-    {
-      "name": "Vogue SP Stock Exhaust"
-    },
-    {
-      "name": "101-MR Stock Exhaust"
-    },
-    {
-      "name": "103LBS Stock Exhaust"
-    },
-    {
-      "name": "Sport V-SP Stock Exhaust"
-    },
-    {
-      "name": "Fox Stock Exhaust"
-    },
-    {
-      "name": "TSM Stock Exhaust"
-    },
-    {
-      "name": "GL10 Stock Exhaust"
-    },
-    {
-      "name": "104 Stock Exhaust"
-    },
-    {
-      "name": "Vogue SX Stock Exhaust"
-    },
-    {
-      "name": "TSE Stock Exhaust"
-    },
-    {
-      "name": "TSA Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -575,6 +386,16 @@
       "name": "TSA Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "101SP Stock Cylinder"
@@ -766,14 +587,195 @@
       "name": "TSA Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "101SP Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "103 Stock Exhaust"
+    },
+    {
+      "name": "103L2-U1 Stock Exhaust"
+    },
+    {
+      "name": "T1-RS Stock Exhaust"
+    },
+    {
+      "name": "102SP U3 Stock Exhaust"
+    },
+    {
+      "name": "TV-RS Stock Exhaust"
+    },
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "101-MT Stock Exhaust"
+    },
+    {
+      "name": "103 Sport U3 Stock Exhaust"
+    },
+    {
+      "name": "TSM U2 Stock Exhaust"
+    },
+    {
+      "name": "103LSM Stock Exhaust"
+    },
+    {
+      "name": "103SPR Stock Exhaust"
+    },
+    {
+      "name": "101KSM Stock Exhaust"
+    },
+    {
+      "name": "103L2-U3 Stock Exhaust"
+    },
+    {
+      "name": "103LVS-U3 Stock Exhaust"
+    },
+    {
+      "name": "103 Sport U2 Stock Exhaust"
+    },
+    {
+      "name": "103LVS-U2 Stock Exhaust"
+    },
+    {
+      "name": "Super Sport Stock Exhaust"
+    },
+    {
+      "name": "Vogue Stock Exhaust"
+    },
+    {
+      "name": "La Poste Stock Exhaust"
+    },
+    {
+      "name": "TS Rallye Stock Exhaust"
+    },
+    {
+      "name": "BB C Stock Exhaust"
+    },
+    {
+      "name": "103LS-U1 Stock Exhaust"
+    },
+    {
+      "name": "103Z Stock Exhaust"
+    },
+    {
+      "name": "103 MXR Stock Exhaust"
+    },
+    {
+      "name": "TM-3 Stock Exhaust"
+    },
+    {
+      "name": "105DM Stock Exhaust"
+    },
+    {
+      "name": "SX5 Stock Exhaust"
+    },
+    {
+      "name": "103 B-D Stock Exhaust"
+    },
+    {
+      "name": "BB VCT Stock Exhaust"
+    },
+    {
+      "name": "Angel Stock Exhaust"
+    },
+    {
+      "name": "BB CT Stock Exhaust"
+    },
+    {
+      "name": "103 MVL Vogue Stock Exhaust"
+    },
+    {
+      "name": "SPX Stock Exhaust"
+    },
+    {
+      "name": "102 MS Stock Exhaust"
+    },
+    {
+      "name": "Country Stock Exhaust"
+    },
+    {
+      "name": "Centri Stock Exhaust"
+    },
+    {
+      "name": "103SPB U2 Stock Exhaust"
+    },
+    {
+      "name": "101-B2 Stock Exhaust"
+    },
+    {
+      "name": "102SP Stock Exhaust"
+    },
+    {
+      "name": "Postman Stock Exhaust"
+    },
+    {
+      "name": "101-MS Stock Exhaust"
+    },
+    {
+      "name": "101 Stock Exhaust"
+    },
+    {
+      "name": "103LS Stock Exhaust"
+    },
+    {
+      "name": "102 Stock Exhaust"
+    },
+    {
+      "name": "103L2-U2 Stock Exhaust"
+    },
+    {
+      "name": "TSMR-D Stock Exhaust"
+    },
+    {
+      "name": "103SP Stock Exhaust"
+    },
+    {
+      "name": "GT10 Stock Exhaust"
+    },
+    {
+      "name": "TSM U3 Stock Exhaust"
+    },
+    {
+      "name": "GT10F3 Stock Exhaust"
+    },
+    {
+      "name": "102SPB U3 Stock Exhaust"
+    },
+    {
+      "name": "Vogue SP Stock Exhaust"
+    },
+    {
+      "name": "101-MR Stock Exhaust"
+    },
+    {
+      "name": "103LBS Stock Exhaust"
+    },
+    {
+      "name": "Sport V-SP Stock Exhaust"
+    },
+    {
+      "name": "Fox Stock Exhaust"
+    },
+    {
+      "name": "TSM Stock Exhaust"
+    },
+    {
+      "name": "GL10 Stock Exhaust"
+    },
+    {
+      "name": "104 Stock Exhaust"
+    },
+    {
+      "name": "Vogue SX Stock Exhaust"
+    },
+    {
+      "name": "TSE Stock Exhaust"
+    },
+    {
+      "name": "TSA Stock Exhaust"
     }
   ],
   "ignitions": [

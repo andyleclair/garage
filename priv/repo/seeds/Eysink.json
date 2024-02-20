@@ -1,26 +1,8 @@
 {
   "name": "Eysink",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Sunny Stock Exhaust"
-    },
-    {
-      "name": "Record Stock Exhaust"
-    },
-    {
-      "name": "Mini 2 Stock Exhaust"
-    },
-    {
-      "name": "Mini 1 Stock Exhaust"
-    },
-    {
-      "name": "Kampioen Stock Exhaust"
-    },
-    {
-      "name": "Credette Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -62,6 +44,16 @@
       "name": "Credette Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Sunny Stock Cylinder"
@@ -82,14 +74,24 @@
       "name": "Credette Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Sunny Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Record Stock Exhaust"
+    },
+    {
+      "name": "Mini 2 Stock Exhaust"
+    },
+    {
+      "name": "Mini 1 Stock Exhaust"
+    },
+    {
+      "name": "Kampioen Stock Exhaust"
+    },
+    {
+      "name": "Credette Stock Exhaust"
     }
   ],
   "ignitions": [

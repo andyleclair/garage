@@ -1,68 +1,8 @@
 {
   "name": "Kreidler",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "RS Cockpit Stock Exhaust"
-    },
-    {
-      "name": "MP-9 Stock Exhaust"
-    },
-    {
-      "name": "MP-3 Stock Exhaust"
-    },
-    {
-      "name": "MP-2 Stock Exhaust"
-    },
-    {
-      "name": "MP-19 Stock Exhaust"
-    },
-    {
-      "name": "MG2C Stock Exhaust"
-    },
-    {
-      "name": "MF4 Stock Exhaust"
-    },
-    {
-      "name": "MF2CL Stock Exhaust"
-    },
-    {
-      "name": "MF2 Stock Exhaust"
-    },
-    {
-      "name": "Junior Stock Exhaust"
-    },
-    {
-      "name": "Flott Stock Exhaust"
-    },
-    {
-      "name": "Flory Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Flory 23 Stock Exhaust"
-    },
-    {
-      "name": "Flory 13 Stock Exhaust"
-    },
-    {
-      "name": "Flory 12 Stock Exhaust"
-    },
-    {
-      "name": "Florett TM Stock Exhaust"
-    },
-    {
-      "name": "Florett RSH Stock Exhaust"
-    },
-    {
-      "name": "Florett RS Stock Exhaust"
-    },
-    {
-      "name": "Florett RMC Stock Exhaust"
-    },
-    {
-      "name": "Florett Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -188,6 +128,16 @@
       "name": "Florett Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "RS Cockpit Stock Cylinder"
@@ -250,14 +200,66 @@
       "name": "Florett Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "RS Cockpit Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "MP-9 Stock Exhaust"
+    },
+    {
+      "name": "MP-3 Stock Exhaust"
+    },
+    {
+      "name": "MP-2 Stock Exhaust"
+    },
+    {
+      "name": "MP-19 Stock Exhaust"
+    },
+    {
+      "name": "MG2C Stock Exhaust"
+    },
+    {
+      "name": "MF4 Stock Exhaust"
+    },
+    {
+      "name": "MF2CL Stock Exhaust"
+    },
+    {
+      "name": "MF2 Stock Exhaust"
+    },
+    {
+      "name": "Junior Stock Exhaust"
+    },
+    {
+      "name": "Flott Stock Exhaust"
+    },
+    {
+      "name": "Flory Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Flory 23 Stock Exhaust"
+    },
+    {
+      "name": "Flory 13 Stock Exhaust"
+    },
+    {
+      "name": "Flory 12 Stock Exhaust"
+    },
+    {
+      "name": "Florett TM Stock Exhaust"
+    },
+    {
+      "name": "Florett RSH Stock Exhaust"
+    },
+    {
+      "name": "Florett RS Stock Exhaust"
+    },
+    {
+      "name": "Florett RMC Stock Exhaust"
+    },
+    {
+      "name": "Florett Stock Exhaust"
     }
   ],
   "ignitions": [

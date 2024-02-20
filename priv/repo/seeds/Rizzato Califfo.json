@@ -1,44 +1,8 @@
 {
   "name": "Rizzato Califfo",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Zum 3 Stock Exhaust"
-    },
-    {
-      "name": "Ringo Turismo Stock Exhaust"
-    },
-    {
-      "name": "Mini Califfo K Stock Exhaust"
-    },
-    {
-      "name": "Cross 6V Stock Exhaust"
-    },
-    {
-      "name": "Cross 4V Stock Exhaust"
-    },
-    {
-      "name": "Califfone Daytona Stock Exhaust"
-    },
-    {
-      "name": "Califfo Super Stock Exhaust"
-    },
-    {
-      "name": "Califfo Matic Stock Exhaust"
-    },
-    {
-      "name": "Califfo Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Califfo 3-Wheeler Stock Exhaust"
-    },
-    {
-      "name": "Califfo 2-Speed Stock Exhaust"
-    },
-    {
-      "name": "Califfo Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -116,6 +80,16 @@
       "name": "Califfo Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Zum 3 Stock Cylinder"
@@ -154,14 +128,42 @@
       "name": "Califfo Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Zum 3 Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Ringo Turismo Stock Exhaust"
+    },
+    {
+      "name": "Mini Califfo K Stock Exhaust"
+    },
+    {
+      "name": "Cross 6V Stock Exhaust"
+    },
+    {
+      "name": "Cross 4V Stock Exhaust"
+    },
+    {
+      "name": "Califfone Daytona Stock Exhaust"
+    },
+    {
+      "name": "Califfo Super Stock Exhaust"
+    },
+    {
+      "name": "Califfo Matic Stock Exhaust"
+    },
+    {
+      "name": "Califfo Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Califfo 3-Wheeler Stock Exhaust"
+    },
+    {
+      "name": "Califfo 2-Speed Stock Exhaust"
+    },
+    {
+      "name": "Califfo Stock Exhaust"
     }
   ],
   "ignitions": [

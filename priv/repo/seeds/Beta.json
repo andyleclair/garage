@@ -1,29 +1,8 @@
 {
   "name": "Beta",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Tour Stock Exhaust"
-    },
-    {
-      "name": "Standard Stock Exhaust"
-    },
-    {
-      "name": "Sport Stock Exhaust"
-    },
-    {
-      "name": "SL5 Stock Exhaust"
-    },
-    {
-      "name": "Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Camoscio Stock Exhaust"
-    },
-    {
-      "name": "Alpha Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -71,6 +50,16 @@
       "name": "Alpha Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Tour Stock Cylinder"
@@ -94,14 +83,27 @@
       "name": "Alpha Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Tour Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Standard Stock Exhaust"
+    },
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "SL5 Stock Exhaust"
+    },
+    {
+      "name": "Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Camoscio Stock Exhaust"
+    },
+    {
+      "name": "Alpha Stock Exhaust"
     }
   ],
   "ignitions": [

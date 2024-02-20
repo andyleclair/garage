@@ -1,29 +1,8 @@
 {
   "name": "Safari",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Variomatic deLux Stock Exhaust"
-    },
-    {
-      "name": "SuperExtra Stock Exhaust"
-    },
-    {
-      "name": "MZV Stock Exhaust"
-    },
-    {
-      "name": "MT400 Stock Exhaust"
-    },
-    {
-      "name": "Commando Stock Exhaust"
-    },
-    {
-      "name": "Cobra Stock Exhaust"
-    },
-    {
-      "name": "300MT Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -71,6 +50,16 @@
       "name": "300MT Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Variomatic deLux Stock Cylinder"
@@ -94,14 +83,27 @@
       "name": "300MT Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Variomatic deLux Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "SuperExtra Stock Exhaust"
+    },
+    {
+      "name": "MZV Stock Exhaust"
+    },
+    {
+      "name": "MT400 Stock Exhaust"
+    },
+    {
+      "name": "Commando Stock Exhaust"
+    },
+    {
+      "name": "Cobra Stock Exhaust"
+    },
+    {
+      "name": "300MT Stock Exhaust"
     }
   ],
   "ignitions": [

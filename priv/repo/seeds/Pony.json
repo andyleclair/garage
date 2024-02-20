@@ -1,11 +1,8 @@
 {
   "name": "Pony",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Yunior Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -17,11 +14,6 @@
       "name": "Yunior Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "Yunior Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -30,6 +22,16 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Yunior Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "Yunior Stock Exhaust"
     }
   ],
   "ignitions": [

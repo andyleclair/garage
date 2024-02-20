@@ -1,17 +1,8 @@
 {
   "name": "Scorpion",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "SC-2X Stock Exhaust"
-    },
-    {
-      "name": "SC-2 Stock Exhaust"
-    },
-    {
-      "name": "SC-1 Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -35,6 +26,16 @@
       "name": "SC-1 Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "SC-2X Stock Cylinder"
@@ -46,14 +47,15 @@
       "name": "SC-1 Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "SC-2X Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "SC-2 Stock Exhaust"
+    },
+    {
+      "name": "SC-1 Stock Exhaust"
     }
   ],
   "ignitions": [

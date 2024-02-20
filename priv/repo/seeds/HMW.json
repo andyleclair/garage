@@ -1,11 +1,8 @@
 {
   "name": "HMW",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "50SH Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -17,11 +14,6 @@
       "name": "50SH Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "50SH Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -30,6 +22,16 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "50SH Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "50SH Stock Exhaust"
     }
   ],
   "ignitions": [

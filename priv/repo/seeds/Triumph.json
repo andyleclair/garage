@@ -1,11 +1,8 @@
 {
   "name": "Triumph",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Knirps Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -17,11 +14,6 @@
       "name": "Knirps Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "Knirps Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -30,6 +22,16 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Knirps Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "Knirps Stock Exhaust"
     }
   ],
   "ignitions": [

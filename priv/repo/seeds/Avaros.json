@@ -1,26 +1,8 @@
 {
   "name": "Avaros",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Super 7 Stock Exhaust"
-    },
-    {
-      "name": "Record Stock Exhaust"
-    },
-    {
-      "name": "Primus Stock Exhaust"
-    },
-    {
-      "name": "Kingline Stock Exhaust"
-    },
-    {
-      "name": "Kickmonomatic Stock Exhaust"
-    },
-    {
-      "name": "Ideal Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -62,6 +44,16 @@
       "name": "Ideal Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Super 7 Stock Cylinder"
@@ -82,14 +74,24 @@
       "name": "Ideal Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Super 7 Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Record Stock Exhaust"
+    },
+    {
+      "name": "Primus Stock Exhaust"
+    },
+    {
+      "name": "Kingline Stock Exhaust"
+    },
+    {
+      "name": "Kickmonomatic Stock Exhaust"
+    },
+    {
+      "name": "Ideal Stock Exhaust"
     }
   ],
   "ignitions": [

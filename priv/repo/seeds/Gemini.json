@@ -1,11 +1,8 @@
 {
   "name": "Gemini",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Camander Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -17,11 +14,6 @@
       "name": "Camander Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "Camander Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -30,6 +22,16 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Camander Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "Camander Stock Exhaust"
     }
   ],
   "ignitions": [

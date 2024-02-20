@@ -1,17 +1,8 @@
 {
   "name": "Motom",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Junior Stock Exhaust"
-    },
-    {
-      "name": "C Stock Exhaust"
-    },
-    {
-      "name": "48 Cross Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -35,6 +26,16 @@
       "name": "48 Cross Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Junior Stock Cylinder"
@@ -46,14 +47,15 @@
       "name": "48 Cross Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Junior Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "C Stock Exhaust"
+    },
+    {
+      "name": "48 Cross Stock Exhaust"
     }
   ],
   "ignitions": [

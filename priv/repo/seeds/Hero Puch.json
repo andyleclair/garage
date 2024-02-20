@@ -1,14 +1,8 @@
 {
   "name": "Hero Puch",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Turbo Sport Stock Exhaust"
-    },
-    {
-      "name": "Automatic Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -26,14 +20,6 @@
       "name": "Automatic Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "Turbo Sport Stock Cylinder"
-    },
-    {
-      "name": "Automatic Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -42,6 +28,22 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Turbo Sport Stock Cylinder"
+    },
+    {
+      "name": "Automatic Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "Turbo Sport Stock Exhaust"
+    },
+    {
+      "name": "Automatic Stock Exhaust"
     }
   ],
   "ignitions": [

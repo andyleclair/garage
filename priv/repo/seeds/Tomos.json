@@ -1,200 +1,8 @@
 {
   "name": "Tomos",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Automatic NT Stock Exhaust"
-    },
-    {
-      "name": "Streetmate Stock Exhaust"
-    },
-    {
-      "name": "ATX 50C Stock Exhaust"
-    },
-    {
-      "name": "Cross 50 Junior Stock Exhaust"
-    },
-    {
-      "name": "Sprint Stock Exhaust"
-    },
-    {
-      "name": "25 Luxe Stock Exhaust"
-    },
-    {
-      "name": "Colibri Stock Exhaust"
-    },
-    {
-      "name": "Minibike Stock Exhaust"
-    },
-    {
-      "name": "Bullet Stock Exhaust"
-    },
-    {
-      "name": "Limited Stock Exhaust"
-    },
-    {
-      "name": "Sport Stock Exhaust"
-    },
-    {
-      "name": "Silver Bullet SL Stock Exhaust"
-    },
-    {
-      "name": "A3MS Stock Exhaust"
-    },
-    {
-      "name": "ST Stock Exhaust"
-    },
-    {
-      "name": "15SLC Stock Exhaust"
-    },
-    {
-      "name": "3 Stock Exhaust"
-    },
-    {
-      "name": "MC36 Stock Exhaust"
-    },
-    {
-      "name": "A-3 Golden Bullet Stock Exhaust"
-    },
-    {
-      "name": "Targa Stock Exhaust"
-    },
-    {
-      "name": "Silver Bullet Stock Exhaust"
-    },
-    {
-      "name": "MC50 Stock Exhaust"
-    },
-    {
-      "name": "VT50KS Stock Exhaust"
-    },
-    {
-      "name": "Classic I Stock Exhaust"
-    },
-    {
-      "name": "15SL Stock Exhaust"
-    },
-    {
-      "name": "Silver Bullet GM Stock Exhaust"
-    },
-    {
-      "name": "A3SP Stock Exhaust"
-    },
-    {
-      "name": "A-3 Golden Bullet TT-LX Stock Exhaust"
-    },
-    {
-      "name": "A3ML Stock Exhaust"
-    },
-    {
-      "name": "APN4 Stock Exhaust"
-    },
-    {
-      "name": "LX Stock Exhaust"
-    },
-    {
-      "name": "15 Sprint Stock Exhaust"
-    },
-    {
-      "name": "Classic II Stock Exhaust"
-    },
-    {
-      "name": "A-3 Bullet TT Stock Exhaust"
-    },
-    {
-      "name": "BT 50N Stock Exhaust"
-    },
-    {
-      "name": "Targa TTLX Stock Exhaust"
-    },
-    {
-      "name": "Blue Bullet Stock Exhaust"
-    },
-    {
-      "name": "Red Bullet Stock Exhaust"
-    },
-    {
-      "name": "Cross 50 Senior Stock Exhaust"
-    },
-    {
-      "name": "A-3 Bullet TS Stock Exhaust"
-    },
-    {
-      "name": "4L Stock Exhaust"
-    },
-    {
-      "name": "APN 6S Stock Exhaust"
-    },
-    {
-      "name": "A-3 Bullet Stock Exhaust"
-    },
-    {
-      "name": "GP Stock Exhaust"
-    },
-    {
-      "name": "Targa LX Stock Exhaust"
-    },
-    {
-      "name": "Alpino Stock Exhaust"
-    },
-    {
-      "name": "Youngster Stock Exhaust"
-    },
-    {
-      "name": "Automatic Stock Exhaust"
-    },
-    {
-      "name": "4H Stock Exhaust"
-    },
-    {
-      "name": "Revival Stock Exhaust"
-    },
-    {
-      "name": "14TLC Stock Exhaust"
-    },
-    {
-      "name": "Arrow Stock Exhaust"
-    },
-    {
-      "name": "3K Stock Exhaust"
-    },
-    {
-      "name": "Bullet TT Stock Exhaust"
-    },
-    {
-      "name": "Quadro Stock Exhaust"
-    },
-    {
-      "name": "Mini Stock Exhaust"
-    },
-    {
-      "name": "Classic Stock Exhaust"
-    },
-    {
-      "name": "MC50 Junior Stock Exhaust"
-    },
-    {
-      "name": "TX 50 Stock Exhaust"
-    },
-    {
-      "name": "Flexer Stock Exhaust"
-    },
-    {
-      "name": "MC50 Senior Stock Exhaust"
-    },
-    {
-      "name": "Streetmate R Stock Exhaust"
-    },
-    {
-      "name": "Revival TS Stock Exhaust"
-    },
-    {
-      "name": "A3SL Stock Exhaust"
-    },
-    {
-      "name": "TLS Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -584,6 +392,16 @@
       "name": "TLS Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Automatic NT Stock Cylinder"
@@ -778,14 +596,198 @@
       "name": "TLS Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Automatic NT Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Streetmate Stock Exhaust"
+    },
+    {
+      "name": "ATX 50C Stock Exhaust"
+    },
+    {
+      "name": "Cross 50 Junior Stock Exhaust"
+    },
+    {
+      "name": "Sprint Stock Exhaust"
+    },
+    {
+      "name": "25 Luxe Stock Exhaust"
+    },
+    {
+      "name": "Colibri Stock Exhaust"
+    },
+    {
+      "name": "Minibike Stock Exhaust"
+    },
+    {
+      "name": "Bullet Stock Exhaust"
+    },
+    {
+      "name": "Limited Stock Exhaust"
+    },
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "Silver Bullet SL Stock Exhaust"
+    },
+    {
+      "name": "A3MS Stock Exhaust"
+    },
+    {
+      "name": "ST Stock Exhaust"
+    },
+    {
+      "name": "15SLC Stock Exhaust"
+    },
+    {
+      "name": "3 Stock Exhaust"
+    },
+    {
+      "name": "MC36 Stock Exhaust"
+    },
+    {
+      "name": "A-3 Golden Bullet Stock Exhaust"
+    },
+    {
+      "name": "Targa Stock Exhaust"
+    },
+    {
+      "name": "Silver Bullet Stock Exhaust"
+    },
+    {
+      "name": "MC50 Stock Exhaust"
+    },
+    {
+      "name": "VT50KS Stock Exhaust"
+    },
+    {
+      "name": "Classic I Stock Exhaust"
+    },
+    {
+      "name": "15SL Stock Exhaust"
+    },
+    {
+      "name": "Silver Bullet GM Stock Exhaust"
+    },
+    {
+      "name": "A3SP Stock Exhaust"
+    },
+    {
+      "name": "A-3 Golden Bullet TT-LX Stock Exhaust"
+    },
+    {
+      "name": "A3ML Stock Exhaust"
+    },
+    {
+      "name": "APN4 Stock Exhaust"
+    },
+    {
+      "name": "LX Stock Exhaust"
+    },
+    {
+      "name": "15 Sprint Stock Exhaust"
+    },
+    {
+      "name": "Classic II Stock Exhaust"
+    },
+    {
+      "name": "A-3 Bullet TT Stock Exhaust"
+    },
+    {
+      "name": "BT 50N Stock Exhaust"
+    },
+    {
+      "name": "Targa TTLX Stock Exhaust"
+    },
+    {
+      "name": "Blue Bullet Stock Exhaust"
+    },
+    {
+      "name": "Red Bullet Stock Exhaust"
+    },
+    {
+      "name": "Cross 50 Senior Stock Exhaust"
+    },
+    {
+      "name": "A-3 Bullet TS Stock Exhaust"
+    },
+    {
+      "name": "4L Stock Exhaust"
+    },
+    {
+      "name": "APN 6S Stock Exhaust"
+    },
+    {
+      "name": "A-3 Bullet Stock Exhaust"
+    },
+    {
+      "name": "GP Stock Exhaust"
+    },
+    {
+      "name": "Targa LX Stock Exhaust"
+    },
+    {
+      "name": "Alpino Stock Exhaust"
+    },
+    {
+      "name": "Youngster Stock Exhaust"
+    },
+    {
+      "name": "Automatic Stock Exhaust"
+    },
+    {
+      "name": "4H Stock Exhaust"
+    },
+    {
+      "name": "Revival Stock Exhaust"
+    },
+    {
+      "name": "14TLC Stock Exhaust"
+    },
+    {
+      "name": "Arrow Stock Exhaust"
+    },
+    {
+      "name": "3K Stock Exhaust"
+    },
+    {
+      "name": "Bullet TT Stock Exhaust"
+    },
+    {
+      "name": "Quadro Stock Exhaust"
+    },
+    {
+      "name": "Mini Stock Exhaust"
+    },
+    {
+      "name": "Classic Stock Exhaust"
+    },
+    {
+      "name": "MC50 Junior Stock Exhaust"
+    },
+    {
+      "name": "TX 50 Stock Exhaust"
+    },
+    {
+      "name": "Flexer Stock Exhaust"
+    },
+    {
+      "name": "MC50 Senior Stock Exhaust"
+    },
+    {
+      "name": "Streetmate R Stock Exhaust"
+    },
+    {
+      "name": "Revival TS Stock Exhaust"
+    },
+    {
+      "name": "A3SL Stock Exhaust"
+    },
+    {
+      "name": "TLS Stock Exhaust"
     }
   ],
   "ignitions": [

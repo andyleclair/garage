@@ -1,14 +1,8 @@
 {
   "name": "DBS",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Sport Stock Exhaust"
-    },
-    {
-      "name": "Saxonette Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -26,14 +20,6 @@
       "name": "Saxonette Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "Sport Stock Cylinder"
-    },
-    {
-      "name": "Saxonette Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -42,6 +28,22 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Sport Stock Cylinder"
+    },
+    {
+      "name": "Saxonette Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "Saxonette Stock Exhaust"
     }
   ],
   "ignitions": [

@@ -1,20 +1,8 @@
 {
   "name": "Zanella",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "V3 Due Stock Exhaust"
-    },
-    {
-      "name": "Rally Stock Exhaust"
-    },
-    {
-      "name": "Pocket Stock Exhaust"
-    },
-    {
-      "name": "Due Sol Fire Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -44,6 +32,16 @@
       "name": "Due Sol Fire Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "V3 Due Stock Cylinder"
@@ -58,14 +56,18 @@
       "name": "Due Sol Fire Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "V3 Due Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Rally Stock Exhaust"
+    },
+    {
+      "name": "Pocket Stock Exhaust"
+    },
+    {
+      "name": "Due Sol Fire Stock Exhaust"
     }
   ],
   "ignitions": [

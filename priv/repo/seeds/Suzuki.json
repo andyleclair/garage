@@ -1,53 +1,8 @@
 {
   "name": "Suzuki",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "ZR50SP Stock Exhaust"
-    },
-    {
-      "name": "ZR50 Stock Exhaust"
-    },
-    {
-      "name": "U50 Stock Exhaust"
-    },
-    {
-      "name": "TS50X Stock Exhaust"
-    },
-    {
-      "name": "S1-90 Stock Exhaust"
-    },
-    {
-      "name": "RV50 Stock Exhaust"
-    },
-    {
-      "name": "M15 Stock Exhaust"
-    },
-    {
-      "name": "M12 Stock Exhaust"
-    },
-    {
-      "name": "K50 DN Stock Exhaust"
-    },
-    {
-      "name": "FZ-50 Rascal Stock Exhaust"
-    },
-    {
-      "name": "FS50 Stock Exhaust"
-    },
-    {
-      "name": "FA50 Shuttle Stock Exhaust"
-    },
-    {
-      "name": "FA50 Stock Exhaust"
-    },
-    {
-      "name": "AP50 Stock Exhaust"
-    },
-    {
-      "name": "A50P Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -143,6 +98,16 @@
       "name": "A50P Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "ZR50SP Stock Cylinder"
@@ -190,14 +155,51 @@
       "name": "A50P Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "ZR50SP Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "ZR50 Stock Exhaust"
+    },
+    {
+      "name": "U50 Stock Exhaust"
+    },
+    {
+      "name": "TS50X Stock Exhaust"
+    },
+    {
+      "name": "S1-90 Stock Exhaust"
+    },
+    {
+      "name": "RV50 Stock Exhaust"
+    },
+    {
+      "name": "M15 Stock Exhaust"
+    },
+    {
+      "name": "M12 Stock Exhaust"
+    },
+    {
+      "name": "K50 DN Stock Exhaust"
+    },
+    {
+      "name": "FZ-50 Rascal Stock Exhaust"
+    },
+    {
+      "name": "FS50 Stock Exhaust"
+    },
+    {
+      "name": "FA50 Shuttle Stock Exhaust"
+    },
+    {
+      "name": "FA50 Stock Exhaust"
+    },
+    {
+      "name": "AP50 Stock Exhaust"
+    },
+    {
+      "name": "A50P Stock Exhaust"
     }
   ],
   "ignitions": [

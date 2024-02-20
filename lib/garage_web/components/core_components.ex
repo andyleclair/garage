@@ -738,4 +738,18 @@ defmodule GarageWeb.CoreComponents do
   def assign_form(socket, %Phoenix.HTML.Form{} = form) do
     assign(socket, :form, form)
   end
+
+  @doc """
+  Search options for live_select input
+  """
+  def search_options(options, text) do
+    if text == "" do
+      options
+    else
+      options
+      |> Enum.filter(fn {option, _id} ->
+        String.downcase(option) |> String.contains?(String.downcase(text))
+      end)
+    end
+  end
 end

@@ -1,26 +1,8 @@
 {
   "name": "Concord",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "XTC Stock Exhaust"
-    },
-    {
-      "name": "XKE25 Stock Exhaust"
-    },
-    {
-      "name": "XKE20 Stock Exhaust"
-    },
-    {
-      "name": "XKE Stock Exhaust"
-    },
-    {
-      "name": "Shadow Stock Exhaust"
-    },
-    {
-      "name": "Invader Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -62,6 +44,16 @@
       "name": "Invader Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "XTC Stock Cylinder"
@@ -82,14 +74,24 @@
       "name": "Invader Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "XTC Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "XKE25 Stock Exhaust"
+    },
+    {
+      "name": "XKE20 Stock Exhaust"
+    },
+    {
+      "name": "XKE Stock Exhaust"
+    },
+    {
+      "name": "Shadow Stock Exhaust"
+    },
+    {
+      "name": "Invader Stock Exhaust"
     }
   ],
   "ignitions": [

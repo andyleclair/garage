@@ -1,47 +1,8 @@
 {
   "name": "NSU",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Supermax Stock Exhaust"
-    },
-    {
-      "name": "Quickly TT Stock Exhaust"
-    },
-    {
-      "name": "Quickly T Stock Exhaust"
-    },
-    {
-      "name": "Quickly S Stock Exhaust"
-    },
-    {
-      "name": "Quickly N Stock Exhaust"
-    },
-    {
-      "name": "Quickly L Stock Exhaust"
-    },
-    {
-      "name": "Quickley Stock Exhaust"
-    },
-    {
-      "name": "Prima V Stock Exhaust"
-    },
-    {
-      "name": "Prima IIIK Stock Exhaust"
-    },
-    {
-      "name": "Prima III Stock Exhaust"
-    },
-    {
-      "name": "Maxi Stock Exhaust"
-    },
-    {
-      "name": "Cavalio Stock Exhaust"
-    },
-    {
-      "name": "1053 Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -125,6 +86,16 @@
       "name": "1053 Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Supermax Stock Cylinder"
@@ -166,14 +137,45 @@
       "name": "1053 Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Supermax Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Quickly TT Stock Exhaust"
+    },
+    {
+      "name": "Quickly T Stock Exhaust"
+    },
+    {
+      "name": "Quickly S Stock Exhaust"
+    },
+    {
+      "name": "Quickly N Stock Exhaust"
+    },
+    {
+      "name": "Quickly L Stock Exhaust"
+    },
+    {
+      "name": "Quickley Stock Exhaust"
+    },
+    {
+      "name": "Prima V Stock Exhaust"
+    },
+    {
+      "name": "Prima IIIK Stock Exhaust"
+    },
+    {
+      "name": "Prima III Stock Exhaust"
+    },
+    {
+      "name": "Maxi Stock Exhaust"
+    },
+    {
+      "name": "Cavalio Stock Exhaust"
+    },
+    {
+      "name": "1053 Stock Exhaust"
     }
   ],
   "ignitions": [

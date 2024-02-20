@@ -1,11 +1,8 @@
 {
   "name": "Fox",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Sundowner Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -17,11 +14,6 @@
       "name": "Sundowner Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "Sundowner Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -30,6 +22,16 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Sundowner Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "Sundowner Stock Exhaust"
     }
   ],
   "ignitions": [

@@ -1,98 +1,8 @@
 {
   "name": "Yamaha",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "YSR-50 Stock Exhaust"
-    },
-    {
-      "name": "YB 50 Stock Exhaust"
-    },
-    {
-      "name": "U7E Stock Exhaust"
-    },
-    {
-      "name": "TY50p Stock Exhaust"
-    },
-    {
-      "name": "TY50M Stock Exhaust"
-    },
-    {
-      "name": "SH50ML Stock Exhaust"
-    },
-    {
-      "name": "Rosa Toro Stock Exhaust"
-    },
-    {
-      "name": "RD60 Stock Exhaust"
-    },
-    {
-      "name": "RD50M Stock Exhaust"
-    },
-    {
-      "name": "RD50 Stock Exhaust"
-    },
-    {
-      "name": "QT50L Stock Exhaust"
-    },
-    {
-      "name": "QT50J Stock Exhaust"
-    },
-    {
-      "name": "QT50 Yamahopper Stock Exhaust"
-    },
-    {
-      "name": "QT50 Stock Exhaust"
-    },
-    {
-      "name": "PW-50 Stock Exhaust"
-    },
-    {
-      "name": "Mate 50 Stock Exhaust"
-    },
-    {
-      "name": "MS-50 Stock Exhaust"
-    },
-    {
-      "name": "MJ50 Towny Stock Exhaust"
-    },
-    {
-      "name": "MJ-2 Stock Exhaust"
-    },
-    {
-      "name": "MF3-D Stock Exhaust"
-    },
-    {
-      "name": "MF-2 Stock Exhaust"
-    },
-    {
-      "name": "LB80 Chappy Stock Exhaust"
-    },
-    {
-      "name": "LB50-IIAM Chappy Stock Exhaust"
-    },
-    {
-      "name": "LB-50 Chappy Stock Exhaust"
-    },
-    {
-      "name": "G6SB Stock Exhaust"
-    },
-    {
-      "name": "FS1E Stock Exhaust"
-    },
-    {
-      "name": "FS-1 Stock Exhaust"
-    },
-    {
-      "name": "DT50mx Stock Exhaust"
-    },
-    {
-      "name": "DT Stock Exhaust"
-    },
-    {
-      "name": "Champ Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -278,6 +188,16 @@
       "name": "Champ Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "YSR-50 Stock Cylinder"
@@ -370,14 +290,96 @@
       "name": "Champ Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "YSR-50 Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "YB 50 Stock Exhaust"
+    },
+    {
+      "name": "U7E Stock Exhaust"
+    },
+    {
+      "name": "TY50p Stock Exhaust"
+    },
+    {
+      "name": "TY50M Stock Exhaust"
+    },
+    {
+      "name": "SH50ML Stock Exhaust"
+    },
+    {
+      "name": "Rosa Toro Stock Exhaust"
+    },
+    {
+      "name": "RD60 Stock Exhaust"
+    },
+    {
+      "name": "RD50M Stock Exhaust"
+    },
+    {
+      "name": "RD50 Stock Exhaust"
+    },
+    {
+      "name": "QT50L Stock Exhaust"
+    },
+    {
+      "name": "QT50J Stock Exhaust"
+    },
+    {
+      "name": "QT50 Yamahopper Stock Exhaust"
+    },
+    {
+      "name": "QT50 Stock Exhaust"
+    },
+    {
+      "name": "PW-50 Stock Exhaust"
+    },
+    {
+      "name": "Mate 50 Stock Exhaust"
+    },
+    {
+      "name": "MS-50 Stock Exhaust"
+    },
+    {
+      "name": "MJ50 Towny Stock Exhaust"
+    },
+    {
+      "name": "MJ-2 Stock Exhaust"
+    },
+    {
+      "name": "MF3-D Stock Exhaust"
+    },
+    {
+      "name": "MF-2 Stock Exhaust"
+    },
+    {
+      "name": "LB80 Chappy Stock Exhaust"
+    },
+    {
+      "name": "LB50-IIAM Chappy Stock Exhaust"
+    },
+    {
+      "name": "LB-50 Chappy Stock Exhaust"
+    },
+    {
+      "name": "G6SB Stock Exhaust"
+    },
+    {
+      "name": "FS1E Stock Exhaust"
+    },
+    {
+      "name": "FS-1 Stock Exhaust"
+    },
+    {
+      "name": "DT50mx Stock Exhaust"
+    },
+    {
+      "name": "DT Stock Exhaust"
+    },
+    {
+      "name": "Champ Stock Exhaust"
     }
   ],
   "ignitions": [

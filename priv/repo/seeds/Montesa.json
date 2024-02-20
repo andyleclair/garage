@@ -1,11 +1,8 @@
 {
   "name": "Montesa",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Mini Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -17,11 +14,6 @@
       "name": "Mini Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "Mini Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -30,6 +22,16 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Mini Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "Mini Stock Exhaust"
     }
   ],
   "ignitions": [

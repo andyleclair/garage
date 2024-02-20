@@ -1,11 +1,8 @@
 {
   "name": "Moto-Matic",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Sapporo Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -17,11 +14,6 @@
       "name": "Sapporo Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "Sapporo Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -30,6 +22,16 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Sapporo Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "Sapporo Stock Exhaust"
     }
   ],
   "ignitions": [

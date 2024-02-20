@@ -1,185 +1,8 @@
 {
   "name": "Honda",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "MB-8 Stock Exhaust"
-    },
-    {
-      "name": "PA50 II Stock Exhaust"
-    },
-    {
-      "name": "Novio Stock Exhaust"
-    },
-    {
-      "name": "Express II NA50 Stock Exhaust"
-    },
-    {
-      "name": "Melody Stock Exhaust"
-    },
-    {
-      "name": "Hobbit Stock Exhaust"
-    },
-    {
-      "name": "PA50L Stock Exhaust"
-    },
-    {
-      "name": "SH50 City Express Stock Exhaust"
-    },
-    {
-      "name": "P25 Stock Exhaust"
-    },
-    {
-      "name": "PC50 Stock Exhaust"
-    },
-    {
-      "name": "Express NC50 Stock Exhaust"
-    },
-    {
-      "name": "C110 Sport Stock Exhaust"
-    },
-    {
-      "name": "MT-5 Stock Exhaust"
-    },
-    {
-      "name": "SS50ZE Stock Exhaust"
-    },
-    {
-      "name": "Z50k2 Stock Exhaust"
-    },
-    {
-      "name": "Camino Stock Exhaust"
-    },
-    {
-      "name": "Cub Stock Exhaust"
-    },
-    {
-      "name": "NU50MC Runaway Stock Exhaust"
-    },
-    {
-      "name": "ST50 Stock Exhaust"
-    },
-    {
-      "name": "NX50M Stock Exhaust"
-    },
-    {
-      "name": "PM50 Canguro Stock Exhaust"
-    },
-    {
-      "name": "NF75 Stock Exhaust"
-    },
-    {
-      "name": "NC50I Stock Exhaust"
-    },
-    {
-      "name": "P50 Stock Exhaust"
-    },
-    {
-      "name": "Z50 Stock Exhaust"
-    },
-    {
-      "name": "Urban Express Stock Exhaust"
-    },
-    {
-      "name": "CB50 Stock Exhaust"
-    },
-    {
-      "name": "Express Stock Exhaust"
-    },
-    {
-      "name": "Super Cub Stock Exhaust"
-    },
-    {
-      "name": "Spree Stock Exhaust"
-    },
-    {
-      "name": "Minitrail 50 Stock Exhaust"
-    },
-    {
-      "name": "PX50 Stock Exhaust"
-    },
-    {
-      "name": "PA50 VL Stock Exhaust"
-    },
-    {
-      "name": "PA50 DXVL Stock Exhaust"
-    },
-    {
-      "name": "Amigo Stock Exhaust"
-    },
-    {
-      "name": "Passport Stock Exhaust"
-    },
-    {
-      "name": "PA50 Stock Exhaust"
-    },
-    {
-      "name": "CA102 Stock Exhaust"
-    },
-    {
-      "name": "Z50J Stock Exhaust"
-    },
-    {
-      "name": "Melody Deluxe Stock Exhaust"
-    },
-    {
-      "name": "SS50 Stock Exhaust"
-    },
-    {
-      "name": "Z50k1 Stock Exhaust"
-    },
-    {
-      "name": "ZB50 Stock Exhaust"
-    },
-    {
-      "name": "Gyro Stock Exhaust"
-    },
-    {
-      "name": "Urban Express NU50 Stock Exhaust"
-    },
-    {
-      "name": "C50 Stock Exhaust"
-    },
-    {
-      "name": "MT Stock Exhaust"
-    },
-    {
-      "name": "CA100 Stock Exhaust"
-    },
-    {
-      "name": "MB-5 Stock Exhaust"
-    },
-    {
-      "name": "MT-8 Stock Exhaust"
-    },
-    {
-      "name": "SS50 M Stock Exhaust"
-    },
-    {
-      "name": "CD50 Stock Exhaust"
-    },
-    {
-      "name": "Urban Express Deluxe NU50M Stock Exhaust"
-    },
-    {
-      "name": "CM91 Stock Exhaust"
-    },
-    {
-      "name": "PXR50 Stock Exhaust"
-    },
-    {
-      "name": "Express SR NX-50M Stock Exhaust"
-    },
-    {
-      "name": "PF50 Stock Exhaust"
-    },
-    {
-      "name": "PS50 Stock Exhaust"
-    },
-    {
-      "name": "NC50 Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -539,6 +362,16 @@
       "name": "NC50 Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "MB-8 Stock Cylinder"
@@ -718,14 +551,183 @@
       "name": "NC50 Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "MB-8 Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "PA50 II Stock Exhaust"
+    },
+    {
+      "name": "Novio Stock Exhaust"
+    },
+    {
+      "name": "Express II NA50 Stock Exhaust"
+    },
+    {
+      "name": "Melody Stock Exhaust"
+    },
+    {
+      "name": "Hobbit Stock Exhaust"
+    },
+    {
+      "name": "PA50L Stock Exhaust"
+    },
+    {
+      "name": "SH50 City Express Stock Exhaust"
+    },
+    {
+      "name": "P25 Stock Exhaust"
+    },
+    {
+      "name": "PC50 Stock Exhaust"
+    },
+    {
+      "name": "Express NC50 Stock Exhaust"
+    },
+    {
+      "name": "C110 Sport Stock Exhaust"
+    },
+    {
+      "name": "MT-5 Stock Exhaust"
+    },
+    {
+      "name": "SS50ZE Stock Exhaust"
+    },
+    {
+      "name": "Z50k2 Stock Exhaust"
+    },
+    {
+      "name": "Camino Stock Exhaust"
+    },
+    {
+      "name": "Cub Stock Exhaust"
+    },
+    {
+      "name": "NU50MC Runaway Stock Exhaust"
+    },
+    {
+      "name": "ST50 Stock Exhaust"
+    },
+    {
+      "name": "NX50M Stock Exhaust"
+    },
+    {
+      "name": "PM50 Canguro Stock Exhaust"
+    },
+    {
+      "name": "NF75 Stock Exhaust"
+    },
+    {
+      "name": "NC50I Stock Exhaust"
+    },
+    {
+      "name": "P50 Stock Exhaust"
+    },
+    {
+      "name": "Z50 Stock Exhaust"
+    },
+    {
+      "name": "Urban Express Stock Exhaust"
+    },
+    {
+      "name": "CB50 Stock Exhaust"
+    },
+    {
+      "name": "Express Stock Exhaust"
+    },
+    {
+      "name": "Super Cub Stock Exhaust"
+    },
+    {
+      "name": "Spree Stock Exhaust"
+    },
+    {
+      "name": "Minitrail 50 Stock Exhaust"
+    },
+    {
+      "name": "PX50 Stock Exhaust"
+    },
+    {
+      "name": "PA50 VL Stock Exhaust"
+    },
+    {
+      "name": "PA50 DXVL Stock Exhaust"
+    },
+    {
+      "name": "Amigo Stock Exhaust"
+    },
+    {
+      "name": "Passport Stock Exhaust"
+    },
+    {
+      "name": "PA50 Stock Exhaust"
+    },
+    {
+      "name": "CA102 Stock Exhaust"
+    },
+    {
+      "name": "Z50J Stock Exhaust"
+    },
+    {
+      "name": "Melody Deluxe Stock Exhaust"
+    },
+    {
+      "name": "SS50 Stock Exhaust"
+    },
+    {
+      "name": "Z50k1 Stock Exhaust"
+    },
+    {
+      "name": "ZB50 Stock Exhaust"
+    },
+    {
+      "name": "Gyro Stock Exhaust"
+    },
+    {
+      "name": "Urban Express NU50 Stock Exhaust"
+    },
+    {
+      "name": "C50 Stock Exhaust"
+    },
+    {
+      "name": "MT Stock Exhaust"
+    },
+    {
+      "name": "CA100 Stock Exhaust"
+    },
+    {
+      "name": "MB-5 Stock Exhaust"
+    },
+    {
+      "name": "MT-8 Stock Exhaust"
+    },
+    {
+      "name": "SS50 M Stock Exhaust"
+    },
+    {
+      "name": "CD50 Stock Exhaust"
+    },
+    {
+      "name": "Urban Express Deluxe NU50M Stock Exhaust"
+    },
+    {
+      "name": "CM91 Stock Exhaust"
+    },
+    {
+      "name": "PXR50 Stock Exhaust"
+    },
+    {
+      "name": "Express SR NX-50M Stock Exhaust"
+    },
+    {
+      "name": "PF50 Stock Exhaust"
+    },
+    {
+      "name": "PS50 Stock Exhaust"
+    },
+    {
+      "name": "NC50 Stock Exhaust"
     }
   ],
   "ignitions": [

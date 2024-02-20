@@ -1,11 +1,8 @@
 {
   "name": "Werya",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Sport Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -17,11 +14,6 @@
       "name": "Sport Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "Sport Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -30,6 +22,16 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Sport Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "Sport Stock Exhaust"
     }
   ],
   "ignitions": [

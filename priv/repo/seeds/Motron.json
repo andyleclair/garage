@@ -1,23 +1,8 @@
 {
   "name": "Motron",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Sprint Stock Exhaust"
-    },
-    {
-      "name": "Medalist Stock Exhaust"
-    },
-    {
-      "name": "Fairway Stock Exhaust"
-    },
-    {
-      "name": "Classic Stock Exhaust"
-    },
-    {
-      "name": "3-Wheeler Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -53,6 +38,16 @@
       "name": "3-Wheeler Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Sprint Stock Cylinder"
@@ -70,14 +65,21 @@
       "name": "3-Wheeler Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Sprint Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Medalist Stock Exhaust"
+    },
+    {
+      "name": "Fairway Stock Exhaust"
+    },
+    {
+      "name": "Classic Stock Exhaust"
+    },
+    {
+      "name": "3-Wheeler Stock Exhaust"
     }
   ],
   "ignitions": [

@@ -1,20 +1,8 @@
 {
   "name": "Soni Kinetic",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Excalibur Stock Exhaust"
-    },
-    {
-      "name": "Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Classic Stock Exhaust"
-    },
-    {
-      "name": "Basic Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -44,6 +32,16 @@
       "name": "Basic Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Excalibur Stock Cylinder"
@@ -58,14 +56,18 @@
       "name": "Basic Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Excalibur Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Classic Stock Exhaust"
+    },
+    {
+      "name": "Basic Stock Exhaust"
     }
   ],
   "ignitions": [

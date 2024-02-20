@@ -1,29 +1,8 @@
 {
   "name": "Locomotief",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Modesto Stock Exhaust"
-    },
-    {
-      "name": "M23 Stock Exhaust"
-    },
-    {
-      "name": "Loco-matic Stock Exhaust"
-    },
-    {
-      "name": "Kieviet Stock Exhaust"
-    },
-    {
-      "name": "Hifi Stock Exhaust"
-    },
-    {
-      "name": "B7 Stock Exhaust"
-    },
-    {
-      "name": "B5 Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -71,6 +50,16 @@
       "name": "B5 Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Modesto Stock Cylinder"
@@ -94,14 +83,27 @@
       "name": "B5 Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Modesto Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "M23 Stock Exhaust"
+    },
+    {
+      "name": "Loco-matic Stock Exhaust"
+    },
+    {
+      "name": "Kieviet Stock Exhaust"
+    },
+    {
+      "name": "Hifi Stock Exhaust"
+    },
+    {
+      "name": "B7 Stock Exhaust"
+    },
+    {
+      "name": "B5 Stock Exhaust"
     }
   ],
   "ignitions": [

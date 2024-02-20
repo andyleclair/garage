@@ -1,23 +1,8 @@
 {
   "name": "Gitane",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "OKS Stock Exhaust"
-    },
-    {
-      "name": "Jeans Stock Exhaust"
-    },
-    {
-      "name": "Cricket Stock Exhaust"
-    },
-    {
-      "name": "Confort Stock Exhaust"
-    },
-    {
-      "name": "CL-200 Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -53,6 +38,16 @@
       "name": "CL-200 Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "OKS Stock Cylinder"
@@ -70,14 +65,21 @@
       "name": "CL-200 Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "OKS Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Jeans Stock Exhaust"
+    },
+    {
+      "name": "Cricket Stock Exhaust"
+    },
+    {
+      "name": "Confort Stock Exhaust"
+    },
+    {
+      "name": "CL-200 Stock Exhaust"
     }
   ],
   "ignitions": [

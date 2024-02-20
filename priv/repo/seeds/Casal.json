@@ -1,29 +1,8 @@
 {
   "name": "Casal",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "K-196 Stock Exhaust"
-    },
-    {
-      "name": "K-190 Stock Exhaust"
-    },
-    {
-      "name": "K-188 Stock Exhaust"
-    },
-    {
-      "name": "K-184 Stock Exhaust"
-    },
-    {
-      "name": "K-177 Stock Exhaust"
-    },
-    {
-      "name": "K-168 Stock Exhaust"
-    },
-    {
-      "name": "Boss Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -71,6 +50,16 @@
       "name": "Boss Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "K-196 Stock Cylinder"
@@ -94,14 +83,27 @@
       "name": "Boss Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "K-196 Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "K-190 Stock Exhaust"
+    },
+    {
+      "name": "K-188 Stock Exhaust"
+    },
+    {
+      "name": "K-184 Stock Exhaust"
+    },
+    {
+      "name": "K-177 Stock Exhaust"
+    },
+    {
+      "name": "K-168 Stock Exhaust"
+    },
+    {
+      "name": "Boss Stock Exhaust"
     }
   ],
   "ignitions": [

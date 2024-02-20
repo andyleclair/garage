@@ -1,50 +1,8 @@
 {
   "name": "Cimatti",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Twin Sport Stock Exhaust"
-    },
-    {
-      "name": "Town Bike Stock Exhaust"
-    },
-    {
-      "name": "Piper V1 KS Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Kaiman Super 6m Radial X21 Stock Exhaust"
-    },
-    {
-      "name": "Gran Prix XL Stock Exhaust"
-    },
-    {
-      "name": "Express Stock Exhaust"
-    },
-    {
-      "name": "City Bike Stock Exhaust"
-    },
-    {
-      "name": "Chic Stock Exhaust"
-    },
-    {
-      "name": "C50 Stock Exhaust"
-    },
-    {
-      "name": "Boy Stock Exhaust"
-    },
-    {
-      "name": "Bob Cat Stock Exhaust"
-    },
-    {
-      "name": "Bat Baby Stock Exhaust"
-    },
-    {
-      "name": "86XL Radial 4M Stock Exhaust"
-    },
-    {
-      "name": "4M Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -134,6 +92,16 @@
       "name": "4M Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Twin Sport Stock Cylinder"
@@ -178,14 +146,48 @@
       "name": "4M Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Twin Sport Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Town Bike Stock Exhaust"
+    },
+    {
+      "name": "Piper V1 KS Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Kaiman Super 6m Radial X21 Stock Exhaust"
+    },
+    {
+      "name": "Gran Prix XL Stock Exhaust"
+    },
+    {
+      "name": "Express Stock Exhaust"
+    },
+    {
+      "name": "City Bike Stock Exhaust"
+    },
+    {
+      "name": "Chic Stock Exhaust"
+    },
+    {
+      "name": "C50 Stock Exhaust"
+    },
+    {
+      "name": "Boy Stock Exhaust"
+    },
+    {
+      "name": "Bob Cat Stock Exhaust"
+    },
+    {
+      "name": "Bat Baby Stock Exhaust"
+    },
+    {
+      "name": "86XL Radial 4M Stock Exhaust"
+    },
+    {
+      "name": "4M Stock Exhaust"
     }
   ],
   "ignitions": [

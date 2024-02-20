@@ -1,11 +1,8 @@
 {
   "name": "Cazenave",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "421 Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -17,11 +14,6 @@
       "name": "421 Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "421 Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -30,6 +22,16 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "421 Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "421 Stock Exhaust"
     }
   ],
   "ignitions": [

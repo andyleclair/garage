@@ -1,62 +1,8 @@
 {
   "name": "Fantic Motor Concord",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "XKE Stock Exhaust"
-    },
-    {
-      "name": "TX300 Stock Exhaust"
-    },
-    {
-      "name": "Super T Stock Exhaust"
-    },
-    {
-      "name": "Super Lei Stock Exhaust"
-    },
-    {
-      "name": "Shadow Stock Exhaust"
-    },
-    {
-      "name": "Lei Stock Exhaust"
-    },
-    {
-      "name": "Issimo Stock Exhaust"
-    },
-    {
-      "name": "Invader Stock Exhaust"
-    },
-    {
-      "name": "Freedom Stock Exhaust"
-    },
-    {
-      "name": "Concord KE20 Stock Exhaust"
-    },
-    {
-      "name": "Concord 30 Stock Exhaust"
-    },
-    {
-      "name": "Concord 25 Stock Exhaust"
-    },
-    {
-      "name": "Colt II Stock Exhaust"
-    },
-    {
-      "name": "Colt I Stock Exhaust"
-    },
-    {
-      "name": "Chopper 50 Stock Exhaust"
-    },
-    {
-      "name": "Broncco Stock Exhaust"
-    },
-    {
-      "name": "Blazar II Stock Exhaust"
-    },
-    {
-      "name": "Blazar I Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -170,6 +116,16 @@
       "name": "Blazar I Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "XKE Stock Cylinder"
@@ -226,14 +182,60 @@
       "name": "Blazar I Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "XKE Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "TX300 Stock Exhaust"
+    },
+    {
+      "name": "Super T Stock Exhaust"
+    },
+    {
+      "name": "Super Lei Stock Exhaust"
+    },
+    {
+      "name": "Shadow Stock Exhaust"
+    },
+    {
+      "name": "Lei Stock Exhaust"
+    },
+    {
+      "name": "Issimo Stock Exhaust"
+    },
+    {
+      "name": "Invader Stock Exhaust"
+    },
+    {
+      "name": "Freedom Stock Exhaust"
+    },
+    {
+      "name": "Concord KE20 Stock Exhaust"
+    },
+    {
+      "name": "Concord 30 Stock Exhaust"
+    },
+    {
+      "name": "Concord 25 Stock Exhaust"
+    },
+    {
+      "name": "Colt II Stock Exhaust"
+    },
+    {
+      "name": "Colt I Stock Exhaust"
+    },
+    {
+      "name": "Chopper 50 Stock Exhaust"
+    },
+    {
+      "name": "Broncco Stock Exhaust"
+    },
+    {
+      "name": "Blazar II Stock Exhaust"
+    },
+    {
+      "name": "Blazar I Stock Exhaust"
     }
   ],
   "ignitions": [

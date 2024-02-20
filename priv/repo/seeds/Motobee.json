@@ -1,11 +1,8 @@
 {
   "name": "Motobee",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "RS 100 Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -17,11 +14,6 @@
       "name": "RS 100 Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "RS 100 Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -30,6 +22,16 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "RS 100 Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "RS 100 Stock Exhaust"
     }
   ],
   "ignitions": [

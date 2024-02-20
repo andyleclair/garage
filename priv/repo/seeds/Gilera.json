@@ -1,44 +1,8 @@
 {
   "name": "Gilera",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Trial Stock Exhaust"
-    },
-    {
-      "name": "Touring Stock Exhaust"
-    },
-    {
-      "name": "SD Stock Exhaust"
-    },
-    {
-      "name": "RS Stock Exhaust"
-    },
-    {
-      "name": "RL Stock Exhaust"
-    },
-    {
-      "name": "RE Stock Exhaust"
-    },
-    {
-      "name": "RA Stock Exhaust"
-    },
-    {
-      "name": "Enduro Stock Exhaust"
-    },
-    {
-      "name": "Eco Stock Exhaust"
-    },
-    {
-      "name": "E-type Stock Exhaust"
-    },
-    {
-      "name": "50 Trial RS Stock Exhaust"
-    },
-    {
-      "name": "50 Touring RS Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -116,6 +80,16 @@
       "name": "50 Touring RS Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Trial Stock Cylinder"
@@ -154,14 +128,42 @@
       "name": "50 Touring RS Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Trial Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Touring Stock Exhaust"
+    },
+    {
+      "name": "SD Stock Exhaust"
+    },
+    {
+      "name": "RS Stock Exhaust"
+    },
+    {
+      "name": "RL Stock Exhaust"
+    },
+    {
+      "name": "RE Stock Exhaust"
+    },
+    {
+      "name": "RA Stock Exhaust"
+    },
+    {
+      "name": "Enduro Stock Exhaust"
+    },
+    {
+      "name": "Eco Stock Exhaust"
+    },
+    {
+      "name": "E-type Stock Exhaust"
+    },
+    {
+      "name": "50 Trial RS Stock Exhaust"
+    },
+    {
+      "name": "50 Touring RS Stock Exhaust"
     }
   ],
   "ignitions": [

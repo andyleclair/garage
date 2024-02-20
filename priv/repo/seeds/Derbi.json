@@ -1,98 +1,8 @@
 {
   "name": "Derbi",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Variant Sport R Stock Exhaust"
-    },
-    {
-      "name": "Variant Red Bullet Stock Exhaust"
-    },
-    {
-      "name": "Variant Courier Stock Exhaust"
-    },
-    {
-      "name": "Variant Box Stock Exhaust"
-    },
-    {
-      "name": "Variant Stock Exhaust"
-    },
-    {
-      "name": "Tricampeona Stock Exhaust"
-    },
-    {
-      "name": "TT Stock Exhaust"
-    },
-    {
-      "name": "SLE Stock Exhaust"
-    },
-    {
-      "name": "SL Stock Exhaust"
-    },
-    {
-      "name": "Revolution GS Stock Exhaust"
-    },
-    {
-      "name": "Revolution Stock Exhaust"
-    },
-    {
-      "name": "RD-50 Stock Exhaust"
-    },
-    {
-      "name": "Olimpica Stock Exhaust"
-    },
-    {
-      "name": "N Stock Exhaust"
-    },
-    {
-      "name": "Montreal 4V Stock Exhaust"
-    },
-    {
-      "name": "Laguna Sport Stock Exhaust"
-    },
-    {
-      "name": "Laguna Electric Start Stock Exhaust"
-    },
-    {
-      "name": "Laguna Stock Exhaust"
-    },
-    {
-      "name": "GTS4V Stock Exhaust"
-    },
-    {
-      "name": "GT4V Stock Exhaust"
-    },
-    {
-      "name": "E Stock Exhaust"
-    },
-    {
-      "name": "Diablo Super Stock Exhaust"
-    },
-    {
-      "name": "DS50 Stock Exhaust"
-    },
-    {
-      "name": "Cross Diablo Stock Exhaust"
-    },
-    {
-      "name": "Cross Stock Exhaust"
-    },
-    {
-      "name": "Campeona Stock Exhaust"
-    },
-    {
-      "name": "C-5 Diablo Electric Start Stock Exhaust"
-    },
-    {
-      "name": "C-5 Diablo Stock Exhaust"
-    },
-    {
-      "name": "Antorcha Especial Stock Exhaust"
-    },
-    {
-      "name": "Antorcha Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -278,6 +188,16 @@
       "name": "Antorcha Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Variant Sport R Stock Cylinder"
@@ -370,14 +290,96 @@
       "name": "Antorcha Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Variant Sport R Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Variant Red Bullet Stock Exhaust"
+    },
+    {
+      "name": "Variant Courier Stock Exhaust"
+    },
+    {
+      "name": "Variant Box Stock Exhaust"
+    },
+    {
+      "name": "Variant Stock Exhaust"
+    },
+    {
+      "name": "Tricampeona Stock Exhaust"
+    },
+    {
+      "name": "TT Stock Exhaust"
+    },
+    {
+      "name": "SLE Stock Exhaust"
+    },
+    {
+      "name": "SL Stock Exhaust"
+    },
+    {
+      "name": "Revolution GS Stock Exhaust"
+    },
+    {
+      "name": "Revolution Stock Exhaust"
+    },
+    {
+      "name": "RD-50 Stock Exhaust"
+    },
+    {
+      "name": "Olimpica Stock Exhaust"
+    },
+    {
+      "name": "N Stock Exhaust"
+    },
+    {
+      "name": "Montreal 4V Stock Exhaust"
+    },
+    {
+      "name": "Laguna Sport Stock Exhaust"
+    },
+    {
+      "name": "Laguna Electric Start Stock Exhaust"
+    },
+    {
+      "name": "Laguna Stock Exhaust"
+    },
+    {
+      "name": "GTS4V Stock Exhaust"
+    },
+    {
+      "name": "GT4V Stock Exhaust"
+    },
+    {
+      "name": "E Stock Exhaust"
+    },
+    {
+      "name": "Diablo Super Stock Exhaust"
+    },
+    {
+      "name": "DS50 Stock Exhaust"
+    },
+    {
+      "name": "Cross Diablo Stock Exhaust"
+    },
+    {
+      "name": "Cross Stock Exhaust"
+    },
+    {
+      "name": "Campeona Stock Exhaust"
+    },
+    {
+      "name": "C-5 Diablo Electric Start Stock Exhaust"
+    },
+    {
+      "name": "C-5 Diablo Stock Exhaust"
+    },
+    {
+      "name": "Antorcha Especial Stock Exhaust"
+    },
+    {
+      "name": "Antorcha Stock Exhaust"
     }
   ],
   "ignitions": [

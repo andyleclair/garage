@@ -1,11 +1,8 @@
 {
   "name": "Bicimoto",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Pumita Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -17,11 +14,6 @@
       "name": "Pumita Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "Pumita Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -30,6 +22,16 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "Pumita Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "Pumita Stock Exhaust"
     }
   ],
   "ignitions": [

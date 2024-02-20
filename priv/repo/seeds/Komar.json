@@ -1,14 +1,8 @@
 {
   "name": "Komar",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "MR-S-1 Stock Exhaust"
-    },
-    {
-      "name": "MR-232 Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -26,14 +20,6 @@
       "name": "MR-232 Stock Wheels"
     }
   ],
-  "cylinders": [
-    {
-      "name": "MR-S-1 Stock Cylinder"
-    },
-    {
-      "name": "MR-232 Stock Cylinder"
-    }
-  ],
   "clutches": [
     {
       "name": "Stock Clutch"
@@ -42,6 +28,22 @@
   "cranks": [
     {
       "name": "Stock Crank"
+    }
+  ],
+  "cylinders": [
+    {
+      "name": "MR-S-1 Stock Cylinder"
+    },
+    {
+      "name": "MR-232 Stock Cylinder"
+    }
+  ],
+  "exhausts": [
+    {
+      "name": "MR-S-1 Stock Exhaust"
+    },
+    {
+      "name": "MR-232 Stock Exhaust"
     }
   ],
   "ignitions": [

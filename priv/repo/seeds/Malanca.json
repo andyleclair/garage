@@ -1,65 +1,8 @@
 {
   "name": "Malanca",
-  "category": "moped",
   "engines": [],
-  "exhausts": [
-    {
-      "name": "Zeta Stock Exhaust"
-    },
-    {
-      "name": "Turismo Turbo Stock Exhaust"
-    },
-    {
-      "name": "Tigrotto Stock Exhaust"
-    },
-    {
-      "name": "Tigre Stock Exhaust"
-    },
-    {
-      "name": "Testa Rossa Stock Exhaust"
-    },
-    {
-      "name": "Roxi Stock Exhaust"
-    },
-    {
-      "name": "Minizeta Stock Exhaust"
-    },
-    {
-      "name": "Mascotte B Stock Exhaust"
-    },
-    {
-      "name": "Lord Stock Exhaust"
-    },
-    {
-      "name": "Leoncino Stock Exhaust"
-    },
-    {
-      "name": "Jolly B Stock Exhaust"
-    },
-    {
-      "name": "Jolly 3M Stock Exhaust"
-    },
-    {
-      "name": "Duplimatic Stock Exhaust"
-    },
-    {
-      "name": "Due PIU Stock Exhaust"
-    },
-    {
-      "name": "Cross Stock Exhaust"
-    },
-    {
-      "name": "Country Special Stock Exhaust"
-    },
-    {
-      "name": "Competizione Stock Exhaust"
-    },
-    {
-      "name": "Big Stock Exhaust"
-    },
-    {
-      "name": "Bibi Stock Exhaust"
-    }
+  "categories": [
+    "moped"
   ],
   "forks": [
     {
@@ -179,6 +122,16 @@
       "name": "Bibi Stock Wheels"
     }
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "name": "Zeta Stock Cylinder"
@@ -238,14 +191,63 @@
       "name": "Bibi Stock Cylinder"
     }
   ],
-  "clutches": [
+  "exhausts": [
     {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
+      "name": "Zeta Stock Exhaust"
+    },
     {
-      "name": "Stock Crank"
+      "name": "Turismo Turbo Stock Exhaust"
+    },
+    {
+      "name": "Tigrotto Stock Exhaust"
+    },
+    {
+      "name": "Tigre Stock Exhaust"
+    },
+    {
+      "name": "Testa Rossa Stock Exhaust"
+    },
+    {
+      "name": "Roxi Stock Exhaust"
+    },
+    {
+      "name": "Minizeta Stock Exhaust"
+    },
+    {
+      "name": "Mascotte B Stock Exhaust"
+    },
+    {
+      "name": "Lord Stock Exhaust"
+    },
+    {
+      "name": "Leoncino Stock Exhaust"
+    },
+    {
+      "name": "Jolly B Stock Exhaust"
+    },
+    {
+      "name": "Jolly 3M Stock Exhaust"
+    },
+    {
+      "name": "Duplimatic Stock Exhaust"
+    },
+    {
+      "name": "Due PIU Stock Exhaust"
+    },
+    {
+      "name": "Cross Stock Exhaust"
+    },
+    {
+      "name": "Country Special Stock Exhaust"
+    },
+    {
+      "name": "Competizione Stock Exhaust"
+    },
+    {
+      "name": "Big Stock Exhaust"
+    },
+    {
+      "name": "Bibi Stock Exhaust"
     }
   ],
   "ignitions": [

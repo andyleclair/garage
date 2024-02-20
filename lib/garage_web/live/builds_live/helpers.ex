@@ -6,17 +6,6 @@ defmodule GarageWeb.BuildsLive.Helpers do
   alias Garage.Mopeds.Manufacturer
   alias Garage.Mopeds.Model
 
-  def search_options(options, text) do
-    if text == "" do
-      options
-    else
-      options
-      |> Enum.filter(fn {option, _id} ->
-        String.downcase(option) |> String.contains?(String.downcase(text))
-      end)
-    end
-  end
-
   def form_manufacturer_id(form) do
     case Form.value(form, :manufacturer_id) do
       "" ->
