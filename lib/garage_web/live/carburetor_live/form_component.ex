@@ -1,5 +1,6 @@
 defmodule GarageWeb.CarburetorLive.FormComponent do
   use GarageWeb, :live_component
+  alias Garage.Mopeds.Manufacturer
 
   @impl true
   def render(assigns) do
@@ -27,7 +28,13 @@ defmodule GarageWeb.CarburetorLive.FormComponent do
           label="Jets"
           options={[{"Main", "main"}, {"Starter", "starter"}, {"Idle", "idle"}, {"Power", "power"}]}
         />
-        <.input field={@form[:manufacturer_id]} type="text" label="Manufacturer" />
+        <.live_select
+          field={@form[:manufacturer_id]}
+          phx-focus="set-default"
+          options={@manufacturer_options}
+          phx-target={@myself}
+          label="Make"
+        />
 
         <:actions>
           <.button phx-disable-with="Saving...">Save Carburetor</.button>
@@ -39,10 +46,29 @@ defmodule GarageWeb.CarburetorLive.FormComponent do
 
   @impl true
   def update(assigns, socket) do
+    manufacturer_options = manufacturer_options()
+
     {:ok,
      socket
      |> assign(assigns)
+     |> assign(:manufacturer_options, manufacturer_options)
      |> assign_form()}
+  end
+
+  @impl true
+  def handle_event("live_select_change", %{"id" => id, "text" => text}, socket) do
+    options = search_options(socket.assigns.manufacturer_options, text)
+
+    send_update(LiveSelect.Component, options: options, id: id)
+
+    {:noreply, socket}
+  end
+
+  @impl true
+  def handle_event("set-default", %{"id" => id}, socket) do
+    send_update(LiveSelect.Component, options: socket.assigns.manufacturer_options, id: id)
+
+    {:noreply, socket}
   end
 
   @impl true
@@ -87,5 +113,11 @@ defmodule GarageWeb.CarburetorLive.FormComponent do
       end
 
     assign(socket, form: to_form(form))
+  end
+
+  def manufacturer_options() do
+    for manufacturer <- Manufacturer.by_category!(:carburetor),
+        into: [],
+        do: {manufacturer.name, manufacturer.id}
   end
 end

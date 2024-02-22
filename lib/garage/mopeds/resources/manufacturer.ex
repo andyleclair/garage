@@ -1,4 +1,5 @@
 defmodule Garage.Mopeds.Manufacturer do
+  @derive {Phoenix.Param, key: :slug}
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
     api: Garage.Mopeds
@@ -67,7 +68,6 @@ defmodule Garage.Mopeds.Manufacturer do
 
     read :by_category do
       argument :category, :atom, allow_nil?: false
-      get? true
       filter expr(^arg(:category) in categories)
     end
   end

@@ -653,6 +653,17 @@ defmodule GarageWeb.CoreComponents do
     """
   end
 
+  @doc """
+  Render a nice little badge guy
+  """
+  def badge(assigns) do
+    ~H"""
+    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
+      <%= render_slot(@inner_block) %>
+    </span>
+    """
+  end
+
   ## JS Commands
 
   def show(js \\ %JS{}, selector) do

@@ -5,7 +5,7 @@ defmodule GarageWeb.ManufacturerLive.Show do
   def render(assigns) do
     ~H"""
     <.header>
-      Manufacturer <%= @manufacturer.id %>
+      <%= @manufacturer.name %>
       <:subtitle>This is a manufacturer record from your database.</:subtitle>
 
       <:actions>
@@ -20,7 +20,11 @@ defmodule GarageWeb.ManufacturerLive.Show do
 
       <:item title="Name"><%= @manufacturer.name %></:item>
 
-      <:item title="Category"><%= @manufacturer.category %></:item>
+      <:item title="Categories">
+        <.badge :for={category <- @manufacturer.categories}>
+          <%= category %>
+        </.badge>
+      </:item>
 
       <:item title="Description"><%= @manufacturer.description %></:item>
 
@@ -60,7 +64,10 @@ defmodule GarageWeb.ManufacturerLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :manufacturer,
-       Garage.Mopeds.get!(Garage.Mopeds.Manufacturer, id, actor: socket.assigns.current_user)
+       Garage.Mopeds.get!(Garage.Mopeds.Manufacturer,
+         slug: id,
+         actor: socket.assigns.current_user
+       )
      )}
   end
 

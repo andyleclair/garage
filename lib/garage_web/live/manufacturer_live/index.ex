@@ -18,11 +18,13 @@ defmodule GarageWeb.ManufacturerLive.Index do
       rows={@streams.manufacturers}
       row_click={fn {_id, manufacturer} -> JS.navigate(~p"/manufacturers/#{manufacturer}") end}
     >
-      <:col :let={{_id, manufacturer}} label="Id"><%= manufacturer.id %></:col>
-
       <:col :let={{_id, manufacturer}} label="Name"><%= manufacturer.name %></:col>
 
-      <:col :let={{_id, manufacturer}} label="Category"><%= manufacturer.category %></:col>
+      <:col :let={{_id, manufacturer}} label="Categories">
+        <.badge :for={category <- manufacturer.categories}>
+          <%= category %>
+        </.badge>
+      </:col>
 
       <:col :let={{_id, manufacturer}} label="Description"><%= manufacturer.description %></:col>
 

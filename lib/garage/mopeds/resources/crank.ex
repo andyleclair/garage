@@ -33,6 +33,8 @@ defmodule Garage.Mopeds.Crank do
     attribute :description, :string, default: ""
     # in mm
     attribute :stroke, :integer
+    attribute :conn_rod_length, :integer
+    attribute :small_end_bearing_diameter, :integer
 
     create_timestamp :inserted_at
     update_timestamp :updated_at

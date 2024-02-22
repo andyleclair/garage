@@ -18,15 +18,15 @@ defmodule GarageWeb.CarburetorLive.Index do
       rows={@streams.carburetors}
       row_click={fn {_id, carburetor} -> JS.navigate(~p"/carburetors/#{carburetor}") end}
     >
-      <:col :let={{_id, carburetor}} label="Id"><%= carburetor.id %></:col>
-
       <:col :let={{_id, carburetor}} label="Name"><%= carburetor.name %></:col>
 
       <:col :let={{_id, carburetor}} label="Description"><%= carburetor.description %></:col>
 
       <:col :let={{_id, carburetor}} label="Size"><%= carburetor.size %></:col>
 
-      <:col :let={{_id, carburetor}} label="Jets"><%= carburetor.jets %></:col>
+      <:col :let={{_id, carburetor}} label="Jets">
+        <.badge :for={jet <- carburetor.jets}><%= jet %></.badge>
+      </:col>
 
       <:col :let={{_id, carburetor}} label="Manufacturer"><%= carburetor.manufacturer_id %></:col>
 

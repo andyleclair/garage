@@ -45,7 +45,7 @@ defmodule Garage.Mopeds.Carburetor do
   end
 
   preparations do
-    prepare build(sort: [:name])
+    prepare build(sort: [:name], load: [:manufacturer])
   end
 
   relationships do

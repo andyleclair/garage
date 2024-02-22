@@ -5,7 +5,7 @@ defmodule GarageWeb.CarburetorLive.Show do
   def render(assigns) do
     ~H"""
     <.header>
-      Carburetor <%= @carburetor.id %>
+      <%= @carburetor.manufacturer.name %> <%= @carburetor.name %>
       <:subtitle>This is a carburetor record from your database.</:subtitle>
 
       <:actions>
@@ -24,9 +24,17 @@ defmodule GarageWeb.CarburetorLive.Show do
 
       <:item title="Size"><%= @carburetor.size %></:item>
 
-      <:item title="Jets"><%= @carburetor.jets %></:item>
+      <:item title="Jets">
+        <.badge :for={jet <- @carburetor.jets}>
+          <%= jet %>
+        </.badge>
+      </:item>
 
-      <:item title="Manufacturer"><%= @carburetor.manufacturer_id %></:item>
+      <:item title="Manufacturer">
+        <.link navigate={~p"/manufacturers/#{@carburetor.manufacturer}"}>
+          <%= @carburetor.manufacturer.name %>
+        </.link>
+      </:item>
     </.list>
 
     <.back navigate={~p"/carburetors"}>Back to carburetors</.back>

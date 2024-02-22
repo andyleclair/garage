@@ -1,5 +1,6 @@
 defmodule GarageWeb.ManufacturerLive.FormComponent do
   use GarageWeb, :live_component
+  alias Garage.Mopeds.Manufacturer
 
   @impl true
   def render(assigns) do
@@ -19,13 +20,13 @@ defmodule GarageWeb.ManufacturerLive.FormComponent do
       >
         <.input field={@form[:name]} type="text" label="Name" />
         <.live_select
-          field={@form[:category]}
+          field={@form[:categories]}
           phx-target={@myself}
-          label="Category"
+          label="Categories"
           update_min_len={0}
           phx-focus="set-default"
           mode={:tags}
-          options={@manufacturer_options}
+          options={@categories}
         />
         <.input field={@form[:description]} type="text" label="Description" />
 
@@ -39,26 +40,26 @@ defmodule GarageWeb.ManufacturerLive.FormComponent do
 
   @impl true
   def update(assigns, socket) do
+    categories =
+      Ash.Resource.Info.attribute(Manufacturer, :categories).constraints[:items][:one_of]
+
     {:ok,
      socket
      |> assign(assigns)
-     |> assign(
-       :manufacturer_options,
-       Ash.Resource.Info.attribute(Garage.Mopeds.Manufacturer, :category).constraints[:one_of]
-     )
+     |> assign(:categories, categories)
      |> assign_form()}
   end
 
   @impl true
   def handle_event("set-default", %{"id" => id}, socket) do
-    send_update(LiveSelect.Component, options: socket.assigns.manufacturer_options, id: id)
+    send_update(LiveSelect.Component, options: socket.assigns.categories, id: id)
 
     {:noreply, socket}
   end
 
   @impl true
   def handle_event("live_select_change", %{"id" => id, "text" => text}, socket) do
-    options = search_options(socket.assigns.manufacturer_options, text)
+    options = search_options(socket.assigns.categories, text)
     send_update(LiveSelect.Component, options: options, id: id)
 
     {:noreply, socket}
