@@ -43,18 +43,25 @@ defmodule GarageWeb.Router do
       live "/", HomeLive.Index, :index
       live "/builds", BuildsLive.Index, :index
       live "/builds/:build", BuildsLive.Show, :show
+
       live "/manufacturers", ManufacturerLive.Index, :index
       live "/manufacturers/new", ManufacturerLive.Index, :new
       live "/manufacturers/:id/edit", ManufacturerLive.Index, :edit
-
       live "/manufacturers/:id", ManufacturerLive.Show, :show
       live "/manufacturers/:id/show/edit", ManufacturerLive.Show, :edit
+
       live "/carburetors", CarburetorLive.Index, :index
       live "/carburetors/new", CarburetorLive.Index, :new
       live "/carburetors/:id/edit", CarburetorLive.Index, :edit
-
       live "/carburetors/:id", CarburetorLive.Show, :show
       live "/carburetors/:id/show/edit", CarburetorLive.Show, :edit
+
+      live "/models", ModelLive.Index, :index
+      live "/models/new", ModelLive.Index, :new
+      live "/models/:id/edit", ModelLive.Index, :edit
+
+      live "/models/:id", ModelLive.Show, :show
+      live "/models/:id/show/edit", ModelLive.Show, :edit
 
       # This one _needs_ to be last
       live "/:username", UsersLive.Show, :show

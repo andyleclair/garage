@@ -54,6 +54,8 @@ defmodule GarageWeb do
       use Phoenix.LiveView,
         layout: {GarageWeb.Layouts, :app}
 
+      import GarageWeb.Components.Pagination
+
       unquote(html_helpers())
     end
   end
@@ -93,7 +95,7 @@ defmodule GarageWeb do
       import Phoenix.HTML
       # Core UI components and translation
       import GarageWeb.CoreComponents
-      # import GarageWeb.CoreComponents
+
       import GarageWeb.Gettext
 
       import GarageWeb.TimeHelpers

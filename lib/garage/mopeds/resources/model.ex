@@ -33,12 +33,19 @@ defmodule Garage.Mopeds.Model do
       get? true
       filter expr(slug == ^arg(:slug))
     end
+
+    read :all_models do
+      pagination do
+        default_limit 30
+        offset? true
+      end
+    end
   end
 
   code_interface do
     define_for Garage.Mopeds
     define :create_model, action: :create
-    define :all_models, action: :read
+    define :all_models, action: :all_models
     define :by_manufacturer_id, args: [:manufacturer_id], action: :by_manufacturer_id
     define :get_by_slug, args: [:slug], action: :by_slug
   end
@@ -61,6 +68,10 @@ defmodule Garage.Mopeds.Model do
 
   identities do
     identity :slug, [:manufacturer_id, :slug]
+  end
+
+  preparations do
+    prepare build(sort: [:name], load: [:manufacturer])
   end
 
   postgres do
