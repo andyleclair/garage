@@ -1,0 +1,13 @@
+{
+  "name": "Malossi",
+  "categories": [
+    "carburetor",
+    "engine",
+    "cylinder"
+  ],
+  "engines": [
+    "Puegeot 103",
+    "Vespa"
+  ],
+  "cylinders": []
+}

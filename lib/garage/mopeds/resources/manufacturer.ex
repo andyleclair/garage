@@ -20,6 +20,7 @@ defmodule Garage.Mopeds.Manufacturer do
       end
 
       argument :engines, {:array, :map}
+      argument :carburetors, {:array, :map}
       argument :clutches, {:array, :map}
       argument :cranks, {:array, :map}
       argument :ignitions, {:array, :map}
@@ -39,6 +40,7 @@ defmodule Garage.Mopeds.Manufacturer do
       change Garage.Changes.SetSlug
       change manage_relationship(:models, type: :create)
       change manage_relationship(:engines, type: :create)
+      change manage_relationship(:carburetors, type: :create)
       change manage_relationship(:clutches, type: :create)
       change manage_relationship(:cranks, type: :create)
       change manage_relationship(:ignitions, type: :create)

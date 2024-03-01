@@ -1,0 +1,40 @@
+{
+  "name": "Dell'orto",
+  "categories": [
+    "carburetor"
+  ],
+  "carburetors": [
+    {
+      "size": 12,
+      "name": "12.12 SHA"
+    },
+    {
+      "size": 14,
+      "name": "14.12 SHA"
+    },
+    {
+      "size": 14,
+      "name": "14.14 SHA"
+    },
+    {
+      "size": 15,
+      "name": "15.15 SHA"
+    },
+    {
+      "size": 16,
+      "name": "16.16 SHA"
+    },
+    {
+      "size": 17,
+      "name": "17mm PHVA"
+    },
+    {
+      "size": 19,
+      "name": "19mm PHBG"
+    },
+    {
+      "size": 21,
+      "name": "21mm PHBG"
+    }
+  ]
+}

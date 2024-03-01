@@ -83,4 +83,41 @@ defmodule Garage.Seeds do
       File.close(outfile)
     end)
   end
+
+  def generate_carb_seeds() do
+    Path.join([:code.priv_dir(:garage), "repo", "seeds", "spider_output", "carburetors.json"])
+    |> File.read!()
+    |> Jason.decode!()
+    |> Enum.map(fn {manufacturer, models} ->
+      outfile = File.open!("priv/repo/seeds/#{manufacturer}.json", [:write, :utf8])
+
+      data =
+        %{
+          name: manufacturer,
+          models: MapSet.to_list(models),
+          engines: [],
+          clutches: [
+            %{name: "Stock Clutch"}
+          ],
+          cranks: [
+            %{name: "Stock Crank"}
+          ],
+          ignitions: [
+            %{name: "Stock Ignition"}
+          ],
+          pulleys: [],
+          variators: [],
+          categories: [:moped],
+          exhausts: stock_parts.exhausts,
+          forks: stock_parts.forks,
+          wheels: stock_parts.wheels,
+          cylinders: stock_parts.cylinders
+        }
+        |> Jason.encode!()
+        |> Jason.Formatter.pretty_print()
+
+      IO.write(outfile, data)
+      File.close(outfile)
+    end)
+  end
 end

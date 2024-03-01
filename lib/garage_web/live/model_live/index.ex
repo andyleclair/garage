@@ -5,7 +5,7 @@ defmodule GarageWeb.ModelLive.Index do
   def render(assigns) do
     ~H"""
     <.header>
-      Listing Models
+      All Moped Models
       <:actions>
         <.link patch={~p"/models/new"}>
           <.button>New Model</.button>
@@ -18,31 +18,7 @@ defmodule GarageWeb.ModelLive.Index do
 
       <:col :let={model} label="Description"><%= model.description %></:col>
 
-      <:col :let={model} label="Slug"><%= model.slug %></:col>
-
       <:col :let={model} label="Manufacturer"><%= model.manufacturer.name %></:col>
-
-      <:col :let={model} label="Stock carburetor"><%= model.stock_carburetor_id %></:col>
-
-      <:col :let={model} label="Stock clutch"><%= model.stock_clutch_id %></:col>
-
-      <:col :let={model} label="Stock crank"><%= model.stock_crank_id %></:col>
-
-      <:col :let={model} label="Stock cylinder"><%= model.stock_cylinder_id %></:col>
-
-      <:col :let={model} label="Stock engine"><%= model.stock_engine_id %></:col>
-
-      <:col :let={model} label="Stock exhaust"><%= model.stock_exhaust_id %></:col>
-
-      <:col :let={model} label="Stock forks"><%= model.stock_forks_id %></:col>
-
-      <:col :let={model} label="Stock ignition"><%= model.stock_ignition_id %></:col>
-
-      <:col :let={model} label="Stock pulley"><%= model.stock_pulley_id %></:col>
-
-      <:col :let={model} label="Stock variator"><%= model.stock_variator_id %></:col>
-
-      <:col :let={model} label="Stock wheels"><%= model.stock_wheels_id %></:col>
 
       <:action :let={model}>
         <div class="sr-only">

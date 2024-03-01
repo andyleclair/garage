@@ -1,0 +1,24 @@
+{
+  "name": "Bing",
+  "categories": [
+    "carburetor"
+  ],
+  "carburetors": [
+    {
+      "size": 12,
+      "name": "12mm Bing"
+    },
+    {
+      "size": 14,
+      "name": "14mm Bing"
+    },
+    {
+      "size": 15,
+      "name": "15mm Bing"
+    },
+    {
+      "size": 17,
+      "name": "16mm Bing"
+    }
+  ]
+}

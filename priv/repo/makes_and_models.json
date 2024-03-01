@@ -1,1 +1,6948 @@
-{"AerMacchi":[{"model":"M65 Leggero","id":"1605"}],"AJW":[{"model":"Collie","id":"1511"},{"model":"Greyhound","id":"1588"}],"AMF":[{"model":"Roadmaster C110","id":"10"},{"model":"Roadmaster C120","id":"11"},{"model":"Roadmaster C130","id":"384"},{"model":"Roadmaster C140","id":"385"},{"model":"Roadmaster XL Deluxe","id":"469"},{"model":"Roadmaster A110","id":"554"},{"model":"Roadmaster A115","id":"555"},{"model":"Roadmaster B110","id":"556"},{"model":"Roadmaster B115","id":"557"},{"model":"Roadmaster B120","id":"558"},{"model":"Roadmaster B125","id":"559"},{"model":"ALL-PRO","id":"1487"},{"model":"Roadmaster XL","id":"1597"}],"AMS":[{"model":"Seirra 50","id":"13"},{"model":"Tahoe G1","id":"14"},{"model":"Tahoe G2","id":"15"}],"Andiamo":[{"model":"L-1","id":"560"},{"model":"L-2","id":"561"},{"model":"E-1","id":"562"},{"model":"E-2","id":"563"}],"Angel":[{"model":"AP48","id":"16"}],"Apollo":[{"model":"Apell","id":"487"},{"model":"Pacific","id":"488"},{"model":"Bel Rock","id":"489"},{"model":"Carrier","id":"1460"}],"Arco":[{"model":"E-Z Rider","id":"564"}],"Ariel":[{"model":"3","id":"963"},{"model":"Zizer","id":"964"}],"Aspes":[{"model":"Sioux 16 America","id":"565"},{"model":"Sioux 50","id":"566"},{"model":"Sioux KSL","id":"567"},{"model":"Sioux KS","id":"568"},{"model":"Sioux Mini","id":"569"}],"Avanti":[{"model":"Mont","id":"233"},{"model":"Autopower","id":"234"},{"model":"Kobra","id":"235"},{"model":"Porta","id":"240"},{"model":"Super Sport","id":"241"},{"model":"Sport","id":"1035"}],"Avaros":[{"model":"Primus","id":"1402"},{"model":"Kingline","id":"1403"},{"model":"Record","id":"1415"},{"model":"Kickmonomatic","id":"1417"},{"model":"Ideal","id":"1435"},{"model":"Super 7","id":"1459"}],"Babetta":[{"model":"207","id":"451"},{"model":"100","id":"452"},{"model":"200","id":"453"},{"model":"300","id":"454"},{"model":"206","id":"455"},{"model":"213","id":"456"},{"model":"210","id":"457"},{"model":"215","id":"458"},{"model":"134","id":"459"}],"Baretta":[{"model":"45","id":"382"},{"model":"Magnum","id":"570"},{"model":"22","id":"571"},{"model":"38","id":"572"},{"model":"44","id":"573"},{"model":"Variator","id":"574"},{"model":"44 Sport","id":"575"},{"model":"Minisport","id":"576"},{"model":"Pistol","id":"577"},{"model":"Piccoli","id":"1122"}],"Baron":[{"model":"Lazer","id":"1557"}],"Batavus":[{"model":"Starflite","id":"17"},{"model":"Mondial I","id":"18"},{"model":"Mondial II","id":"19"},{"model":"Mondial Deluxe","id":"20"},{"model":"Regency","id":"21"},{"model":"Grand Prix","id":"22"},{"model":"Mobat","id":"23"},{"model":"Bronco","id":"186"},{"model":"VA","id":"224"},{"model":"HS-50","id":"245"},{"model":"Batavette","id":"295"},{"model":"Bilonet Super Sport","id":"296"},{"model":"Bilonet Combi Sport","id":"297"},{"model":"Bilonet Mat-o-mat","id":"298"},{"model":"Bilonet Mk2","id":"299"},{"model":"Conforte","id":"300"},{"model":"Go-Go V40","id":"301"},{"model":"Mobat Deluxe","id":"302"},{"model":"Mot'o-Mat","id":"303"},{"model":"Whippet","id":"304"},{"model":"Compact","id":"371"},{"model":"Bingo","id":"476"},{"model":"Regency HS","id":"578"},{"model":"Regency VAII","id":"579"},{"model":"Starflite HS","id":"580"},{"model":"Starflite VAI","id":"581"},{"model":"Starflite VAII","id":"582"},{"model":"Badger","id":"583"},{"model":"Intercycle","id":"965"},{"model":"City","id":"1253"},{"model":"M48","id":"1254"},{"model":"MK 2","id":"1264"},{"model":"TS50","id":"1271"},{"model":"Rotary","id":"1286"},{"model":"Bilonet","id":"1292"},{"model":"FP50 Sport","id":"1345"},{"model":"M56","id":"1372"},{"model":"Tramp","id":"1386"},{"model":"Transport","id":"1392"},{"model":"FP50","id":"1450"},{"model":"HS-60","id":"1509"},{"model":"VA-25","id":"1519"},{"model":"TS49","id":"1542"},{"model":"Super Sport","id":"1546"},{"model":"MK 4 S","id":"1555"}],"Benelli":[{"model":"G2","id":"24"},{"model":"Pantera","id":"25"},{"model":"Maserati","id":"26"},{"model":"Blazar","id":"75"},{"model":"Riverside","id":"465"},{"model":"Fireball 50","id":"477"},{"model":"49 Export","id":"490"},{"model":"Cosmo Blazer","id":"584"},{"model":"Cosmo Colt","id":"585"},{"model":"Gentleman-2","id":"586"},{"model":"Magnum 5V","id":"587"},{"model":"Magnum 6V","id":"588"},{"model":"Caddy","id":"589"},{"model":"Motorella","id":"590"},{"model":"Cross","id":"591"},{"model":"Turismo","id":"592"},{"model":"Sprint","id":"593"},{"model":"3VK","id":"594"},{"model":"FA","id":"595"}],"Berini":[{"model":"M21","id":"531"},{"model":"M13","id":"1203"},{"model":"M19","id":"1206"},{"model":"M31","id":"1287"},{"model":"M23","id":"1288"},{"model":"Eko","id":"1321"},{"model":"F55","id":"1338"},{"model":"Berinette","id":"1347"},{"model":"Miniped","id":"1357"},{"model":"M48","id":"1364"},{"model":"Corona","id":"1369"},{"model":"M35","id":"1419"},{"model":"Jeunesse","id":"1445"},{"model":"M21 Sport","id":"1455"}],"Bermuda":[{"model":"147F","id":"76"},{"model":"147FA","id":"77"},{"model":"Flandria","id":"372"},{"model":"Hampton 147FA","id":"596"},{"model":"Pembroke 147AFA","id":"597"},{"model":"Somerset 147FVA","id":"598"}],"Beta":[{"model":"Alpha","id":"599"},{"model":"Standard","id":"600"},{"model":"Deluxe","id":"601"},{"model":"SL5","id":"602"},{"model":"Sport","id":"1120"},{"model":"Camoscio","id":"1198"},{"model":"Tour","id":"1408"}],"Bianchi":[{"model":"Snark Eagle Deluxe","id":"206"},{"model":"Snark Eagle Standard","id":"207"},{"model":"Bianchimatic","id":"208"},{"model":"Snark Satelite","id":"209"},{"model":"Snark Stardust","id":"210"},{"model":"Laser","id":"966"},{"model":"Snark","id":"1010"},{"model":"Aquilotto","id":"1266"},{"model":"Falco","id":"1529"}],"Bicimoto":[{"model":"Pumita","id":"1592"}],"Bridgestone":[{"model":"Surfrider","id":"967"},{"model":"7","id":"1550"}],"Bumble Bike":[{"model":"Bike Motor (Roper)","id":"603"}],"Carabela":[{"model":"Carrera","id":"1"},{"model":"Moto-Matic Deluxe","id":"2"},{"model":"Sport","id":"3"},{"model":"Delux","id":"4"},{"model":"Super Sport","id":"9"},{"model":"Moto-Pony 60","id":"74"},{"model":"Sport Deluxe","id":"607"},{"model":"Moto-Matic","id":"608"},{"model":"Moto-Pedal","id":"609"}],"Carnielli":[{"model":"Moto-G","id":"968"}],"Casal":[{"model":"K-177","id":"27"},{"model":"K-168","id":"28"},{"model":"K-196","id":"29"},{"model":"K-188","id":"610"},{"model":"Boss","id":"611"},{"model":"K-190","id":"1220"},{"model":"K-184","id":"1505"}],"Cayuna":[{"model":"Scorpion","id":"969"}],"Cazenave":[{"model":"421","id":"1500"}],"Cimatti":[{"model":"City Bike","id":"30"},{"model":"Town Bike","id":"31"},{"model":"Twin Sport","id":"32"},{"model":"86XL Radial 4M","id":"33"},{"model":"Piper V1 KS Deluxe","id":"34"},{"model":"Kaiman Super 6m Radial X21","id":"35"},{"model":"Bat Baby","id":"180"},{"model":"Boy","id":"181"},{"model":"Bob Cat","id":"182"},{"model":"4M","id":"183"},{"model":"C50","id":"184"},{"model":"Chic","id":"185"},{"model":"Gran Prix XL","id":"612"},{"model":"Express","id":"1031"}],"Clinton":[{"model":"50-A","id":"36"}],"Columbia":[{"model":"Commuter 2250","id":"5"},{"model":"Commuter 2240","id":"6"},{"model":"Commuter 2220","id":"7"},{"model":"Medallion 2280","id":"8"},{"model":"Imperial","id":"78"},{"model":"Medallion 2271","id":"79"},{"model":"Mediallion 2281","id":"80"},{"model":"57062","id":"81"},{"model":"2251","id":"82"},{"model":"2241","id":"83"},{"model":"Motrek","id":"84"},{"model":"Western Flyer","id":"85"},{"model":"Commuter","id":"373"},{"model":"Traveller I","id":"613"},{"model":"Commuter I","id":"614"},{"model":"Open Road","id":"1437"}],"Concord":[{"model":"XKE","id":"464"},{"model":"XKE20","id":"615"},{"model":"XKE25","id":"616"},{"model":"XTC","id":"1032"},{"model":"Invader","id":"1107"},{"model":"Shadow","id":"1207"}],"Condor":[{"model":"729","id":"225"}],"Cosmo":[{"model":"Colt I","id":"40"},{"model":"Colt II","id":"41"},{"model":"Colt III Reed","id":"42"},{"model":"Colt III Variator","id":"43"},{"model":"Blazer","id":"617"},{"model":"Stinger","id":"1069"},{"model":"Colt IV","id":"1211"}],"Crescent":[{"model":"2000","id":"553"},{"model":"1151","id":"1493"},{"model":"1269","id":"1591"}],"Cuyler":[{"model":"C-1a","id":"44"},{"model":"Get-Around C-1","id":"618"}],"Cyrus":[{"model":"Carrier","id":"1290"},{"model":"Cyriette","id":"1326"},{"model":"Transporter","id":"1328"},{"model":"Speciaal Sport","id":"1436"},{"model":"Cyrusette","id":"1484"}],"DBS":[{"model":"Saxonette","id":"1541"},{"model":"Sport","id":"1585"}],"Delta":[{"model":"RMR-24","id":"466"}],"Demm":[{"model":"Smily","id":"280"},{"model":"Dove","id":"281"},{"model":"Brio","id":"619"},{"model":"Joy","id":"620"},{"model":"Panther","id":"621"},{"model":"Condor 4","id":"622"},{"model":"RG6","id":"623"},{"model":"Scouts","id":"1453"},{"model":"Capri","id":"1454"}],"Derbi":[{"model":"TT","id":"45"},{"model":"SL","id":"46"},{"model":"SLE","id":"47"},{"model":"C-5 Diablo","id":"48"},{"model":"Laguna","id":"49"},{"model":"Laguna Electric Start","id":"50"},{"model":"C-5 Diablo Electric Start","id":"51"},{"model":"Laguna Sport","id":"91"},{"model":"Variant","id":"443"},{"model":"E","id":"624"},{"model":"N","id":"625"},{"model":"Antorcha","id":"626"},{"model":"Antorcha Especial","id":"627"},{"model":"Campeona","id":"628"},{"model":"Tricampeona","id":"629"},{"model":"Olimpica","id":"630"},{"model":"Montreal 4V","id":"631"},{"model":"Cross","id":"632"},{"model":"Cross Diablo","id":"633"},{"model":"Diablo Super","id":"634"},{"model":"GT4V","id":"635"},{"model":"GTS4V","id":"636"},{"model":"Revolution GS","id":"970"},{"model":"Revolution","id":"971"},{"model":"Variant Red Bullet","id":"972"},{"model":"Variant Courier","id":"973"},{"model":"Variant Sport R","id":"974"},{"model":"Variant Box","id":"975"},{"model":"DS50","id":"1070"},{"model":"RD-50","id":"1563"}],"Dialex":[{"model":"E-Z Rider","id":"52"}],"DiBlasi":[{"model":"R7","id":"1244"},{"model":"R2","id":"1251"}],"DKW-Zweirad Union":[{"model":"Hummel","id":"437"},{"model":"Hummel Super","id":"482"},{"model":"Hummel 3 Gang","id":"483"},{"model":"Hummel 2 Gang","id":"484"},{"model":"Model PI","id":"637"},{"model":"111 BJ","id":"1077"},{"model":"503","id":"1508"}],"Ducati":[{"model":"Falcon 50","id":"442"},{"model":"55e","id":"463"},{"model":"Mini 3","id":"638"},{"model":"50 Senda","id":"639"},{"model":"50 Pronto","id":"640"},{"model":"Brisk","id":"1076"},{"model":"Rolly","id":"1384"}],"Ducson":[{"model":"S9","id":"641"},{"model":"S15","id":"642"},{"model":"S20","id":"643"}],"Eagle":[{"model":"1","id":"92"},{"model":"2","id":"93"},{"model":"3","id":"94"}],"Eysink":[{"model":"Credette","id":"532"},{"model":"Mini 2","id":"1263"},{"model":"Sunny","id":"1395"},{"model":"Record","id":"1413"},{"model":"Kampioen","id":"1414"},{"model":"Mini 1","id":"1461"}],"Fantic Motor Concord":[{"model":"Invader","id":"37"},{"model":"Freedom","id":"38"},{"model":"Shadow","id":"39"},{"model":"XKE","id":"86"},{"model":"Blazar I","id":"87"},{"model":"Blazar II","id":"88"},{"model":"Colt I","id":"89"},{"model":"Colt II","id":"90"},{"model":"Chopper 50","id":"435"},{"model":"Issimo","id":"644"},{"model":"Concord KE20","id":"645"},{"model":"Concord 25","id":"646"},{"model":"Concord 30","id":"647"},{"model":"TX300","id":"648"},{"model":"Lei","id":"649"},{"model":"Super Lei","id":"650"},{"model":"Super T","id":"1074"},{"model":"Broncco","id":"1150"}],"Flandria":[{"model":"101","id":"95"},{"model":"102","id":"96"},{"model":"104","id":"651"},{"model":"Monomatix","id":"652"},{"model":"4.3CV","id":"653"},{"model":"5CV","id":"654"},{"model":"Apollo AF","id":"1085"},{"model":"Apollo AF-A","id":"1088"},{"model":"SP 547","id":"1114"},{"model":"SP 237","id":"1115"},{"model":"SP 537","id":"1116"},{"model":"SP 337","id":"1117"},{"model":"SP 527","id":"1118"},{"model":"Bermuda","id":"1123"},{"model":"SP 747","id":"1197"},{"model":"Imola4","id":"1269"},{"model":"Kingline","id":"1333"},{"model":"Record","id":"1336"},{"model":"Commet","id":"1354"},{"model":"Anker Laura","id":"1383"}],"Flying Dutchman":[{"model":"KML-40","id":"655"},{"model":"DeLuxe","id":"656"},{"model":"Buddy","id":"657"},{"model":"Lucky","id":"658"}],"Fongers":[{"model":"Tandem","id":"1394"}],"Fox":[{"model":"Sundowner","id":"659"}],"Foxi":[{"model":"GT Sport","id":"433"},{"model":"Amigo","id":"660"},{"model":"S","id":"661"},{"model":"Baron","id":"662"},{"model":"GT","id":"663"},{"model":"GT Deluxe","id":"664"},{"model":"Red Foxi","id":"665"},{"model":"Silver Foxi","id":"666"},{"model":"Sport","id":"667"},{"model":"Super Sport","id":"668"},{"model":"Deluxe","id":"669"},{"model":"Salsburg","id":"670"}],"Fram":[{"model":"NR50","id":"1311"},{"model":"NR51","id":"1312"},{"model":"NR52","id":"1313"},{"model":"NR65","id":"1314"},{"model":"NR66","id":"1315"}],"Francis-Barnett":[{"model":"J50 Powerbike","id":"1158"}],"Fuki Planning":[{"model":"LA-2","id":"1582"},{"model":"FK310","id":"1583"}],"Gadabout":[{"model":"MK IV","id":"1086"},{"model":"Deluxe 3","id":"1087"}],"Garelli":[{"model":"Sport","id":"53"},{"model":"Rally Sport","id":"54"},{"model":"Rally Sport LTD","id":"55"},{"model":"Super Sport XL","id":"56"},{"model":"Super Sport XL LTD","id":"57"},{"model":"Basic","id":"97"},{"model":"Tiger Cross","id":"351"},{"model":"Rally SL","id":"352"},{"model":"Gran Sport","id":"353"},{"model":"Special GT","id":"354"},{"model":"Bonanza","id":"671"},{"model":"Mokik","id":"672"},{"model":"Katia","id":"673"},{"model":"Standard","id":"674"},{"model":"Deluxe","id":"675"},{"model":"Cicione Matic","id":"676"},{"model":"Noi Lusso","id":"677"},{"model":"Noi SL","id":"678"},{"model":"Cicione 5V","id":"679"},{"model":"Eureka Sport","id":"680"},{"model":"Eureka","id":"681"},{"model":"Gran","id":"682"},{"model":"Super Sport","id":"683"},{"model":"RGS50","id":"684"},{"model":"KL505V","id":"685"},{"model":"Gran Turismo","id":"686"},{"model":"Rekord KL100E5V","id":"687"},{"model":"Eureka Flex","id":"688"},{"model":"Eureka Matic","id":"689"},{"model":"Eureka K","id":"690"},{"model":"Eureka M","id":"691"},{"model":"Mini 25","id":"692"},{"model":"VIP 4V","id":"693"},{"model":"VIP 3V","id":"694"},{"model":"VIP 2V","id":"695"},{"model":"VIP 1V","id":"696"},{"model":"Monza GT","id":"976"},{"model":"Rally","id":"977"},{"model":"Cross","id":"1075"},{"model":"Baby Moskito","id":"1078"},{"model":"Sport 40 S","id":"1081"},{"model":"Sahel 50","id":"1092"},{"model":"Gulp","id":"1093"},{"model":"Junior","id":"1119"},{"model":"Super Ciclone","id":"1137"},{"model":"Gary Uno","id":"1161"},{"model":"Grand Prix 50","id":"1165"},{"model":"Rekord 50","id":"1166"},{"model":"Europed Brianza","id":"1167"},{"model":"Bronco","id":"1168"},{"model":"Europed","id":"1169"},{"model":"Mosquito","id":"1170"},{"model":"Junior Turismo","id":"1171"},{"model":"Junior Sport","id":"1172"},{"model":"Motorino","id":"1173"},{"model":"Katia 25","id":"1174"},{"model":"Noi Junior Bimatic","id":"1175"},{"model":"Team Bimatic ES","id":"1176"},{"model":"Formuno Raid 4V","id":"1177"},{"model":"Team Matic","id":"1178"},{"model":"Formuno 4V","id":"1179"},{"model":"Noi Matic","id":"1180"},{"model":"Noi TL","id":"1181"},{"model":"SuperVIP 4V","id":"1182"},{"model":"Noi Primo","id":"1183"},{"model":"Gary Due","id":"1190"},{"model":"Team 3V","id":"1191"},{"model":"Minibat","id":"1192"},{"model":"Tiger Junior Cross","id":"1193"},{"model":"Monza 50","id":"1194"},{"model":"Bimatic","id":"1196"},{"model":"Gran Sport LTD","id":"1452"},{"model":"M50","id":"1465"}],"Gazelle":[{"model":"Flyte","id":"1228"},{"model":"Apollo","id":"1324"},{"model":"Isabella","id":"1331"},{"model":"GA50","id":"1335"},{"model":"Grant","id":"1358"},{"model":"Tour","id":"1434"},{"model":"GS50","id":"1492"}],"Gemini":[{"model":"Camander","id":"475"}],"General":[{"model":"5 Star ST","id":"59"},{"model":"5 Star","id":"60"},{"model":"C-2","id":"61"},{"model":"Limited Edition","id":"62"},{"model":"Laser","id":"383"},{"model":"3 Star","id":"1108"},{"model":"5 Star TE","id":"1635"}],"Germaan":[{"model":"Florence De Luxe","id":"1441"}],"Gilera":[{"model":"50 Touring RS","id":"412"},{"model":"50 Trial RS","id":"413"},{"model":"Enduro","id":"414"},{"model":"Touring","id":"415"},{"model":"Trial","id":"416"},{"model":"E-type","id":"417"},{"model":"SD","id":"549"},{"model":"RA","id":"812"},{"model":"RE","id":"813"},{"model":"RL","id":"814"},{"model":"RS","id":"815"},{"model":"Eco","id":"1520"}],"Gimson":[{"model":"Variomatic","id":"58"},{"model":"Elite","id":"697"},{"model":"Skipper Trial","id":"698"},{"model":"Jumper Cross","id":"699"}],"Gitane":[{"model":"OKS","id":"700"},{"model":"Jeans","id":"701"},{"model":"Cricket","id":"702"},{"model":"Confort","id":"703"},{"model":"CL-200","id":"704"}],"Glockner":[{"model":"Standard","id":"1387"}],"Gloria Intramotor":[{"model":"Blanco","id":"98"},{"model":"Pinto","id":"99"},{"model":"Scout","id":"100"},{"model":"Verona","id":"471"},{"model":"Dream","id":"711"},{"model":"Kid","id":"712"},{"model":"Mini-Kid","id":"713"}],"Goebel":[{"model":"Avus Sport","id":"1154"},{"model":"Grand Sport","id":"1412"}],"G\u00f6rike-Diva":[{"model":"Luxus","id":"462"}],"Grycner":[{"model":"Floozie","id":"63"},{"model":"Desert Classic","id":"64"},{"model":"Palm Springs","id":"705"},{"model":"LaJolla","id":"706"}],"Gulf":[{"model":"Seagull","id":"707"}],"Harley Davidson":[{"model":"M-65","id":"481"},{"model":"M-50","id":"1489"}],"Heinkel":[{"model":"Perle","id":"1390"}],"Helkama":[{"model":"Hopeasauma","id":"1424"},{"model":"Tossu","id":"1425"},{"model":"Sport","id":"1426"},{"model":"Major S","id":"1427"},{"model":"AX","id":"1428"},{"model":"Raisu","id":"1429"},{"model":"Mini GT","id":"1537"}],"Hercules":[{"model":"P-1","id":"101"},{"model":"M-5","id":"102"},{"model":"Citybike C-3","id":"282"},{"model":"M-1","id":"283"},{"model":"M-2","id":"284"},{"model":"M-4","id":"285"},{"model":"Hobbyrider","id":"286"},{"model":"Accubike E-1","id":"287"},{"model":"P-3","id":"288"},{"model":"MP-4","id":"289"},{"model":"MP-2","id":"344"},{"model":"5 SL","id":"345"},{"model":"218","id":"366"},{"model":"K50","id":"421"},{"model":"Prima 5","id":"467"},{"model":"HR-2","id":"708"},{"model":"504-1A","id":"709"},{"model":"504-1B","id":"710"},{"model":"SAXONETTE","id":"1073"},{"model":"L50","id":"1079"},{"model":"MX-1","id":"1082"},{"model":"Prima 4","id":"1127"},{"model":"Supra 4 Enduro","id":"1129"},{"model":"220","id":"1362"},{"model":"Lastboy","id":"1528"}],"Hero Honda":[{"model":"Panther","id":"243"},{"model":"Gizmo","id":"244"},{"model":"Street 100","id":"991"}],"Hero Majestic":[{"model":"Ankur","id":"114"},{"model":"Pacer","id":"115"},{"model":"Panther","id":"116"},{"model":"Gizmo","id":"1363"}],"Hero Puch":[{"model":"Turbo Sport","id":"419"},{"model":"Automatic","id":"992"}],"Hervo":[{"model":"Hervo-Matic","id":"1416"}],"Hirano":[{"model":"Popet","id":"1559"}],"HMW":[{"model":"50SH","id":"1491"}],"Honda":[{"model":"PA50","id":"65"},{"model":"PA50 II","id":"66"},{"model":"Hobbit","id":"67"},{"model":"Express II NA50","id":"192"},{"model":"NC50","id":"193"},{"model":"PC50","id":"197"},{"model":"PS50","id":"198"},{"model":"Z50k1","id":"199"},{"model":"Z50k2","id":"200"},{"model":"Minitrail 50","id":"201"},{"model":"Express SR NX-50M","id":"203"},{"model":"Express NC50","id":"213"},{"model":"P50","id":"214"},{"model":"Spree","id":"219"},{"model":"MB-8","id":"220"},{"model":"Urban Express","id":"221"},{"model":"SS50 M","id":"294"},{"model":"Gyro","id":"355"},{"model":"PF50","id":"356"},{"model":"SH50 City Express","id":"357"},{"model":"Express","id":"358"},{"model":"Passport","id":"359"},{"model":"MB-5","id":"360"},{"model":"Camino","id":"361"},{"model":"SS50","id":"362"},{"model":"ZB50","id":"363"},{"model":"MT-5","id":"364"},{"model":"P50","id":"365"},{"model":"Z50","id":"394"},{"model":"PA50L","id":"403"},{"model":"PA50 VL","id":"404"},{"model":"PA50 DXVL","id":"405"},{"model":"NU50MC Runaway","id":"430"},{"model":"Super Cub","id":"436"},{"model":"CD50","id":"438"},{"model":"SS50ZE","id":"439"},{"model":"ST50","id":"441"},{"model":"CA102","id":"444"},{"model":"C110 Sport","id":"551"},{"model":"MT-8","id":"959"},{"model":"Cub","id":"978"},{"model":"MT","id":"979"},{"model":"Melody Deluxe","id":"980"},{"model":"Melody","id":"981"},{"model":"Z50J","id":"982"},{"model":"Amigo","id":"983"},{"model":"Urban Express NU50","id":"984"},{"model":"Urban Express Deluxe NU50M","id":"985"},{"model":"NX50M","id":"986"},{"model":"PXR50","id":"1128"},{"model":"Novio","id":"1133"},{"model":"PX50","id":"1153"},{"model":"CA100","id":"1216"},{"model":"CM91","id":"1352"},{"model":"P25","id":"1469"},{"model":"C50","id":"1564"},{"model":"NC50I","id":"1565"},{"model":"PS50","id":"1566"},{"model":"NF75","id":"1576"},{"model":"PM50 Canguro","id":"1600"},{"model":"CB50","id":"1604"}],"Indian":[{"model":"AMI-50 Chief","id":"68"},{"model":"Mini-Mini Bambino","id":"370"},{"model":"MM5A","id":"1538"},{"model":"MX-74","id":"1615"}],"Indigan":[{"model":"Trail","id":"1638"}],"Italjet":[{"model":"Pack-A-Away","id":"69"},{"model":"KIT KAT 50","id":"251"},{"model":"Pack 2 50","id":"252"},{"model":"S5","id":"714"},{"model":"KT","id":"715"},{"model":"K2","id":"716"},{"model":"P4","id":"717"},{"model":"P6","id":"718"},{"model":"Velocifero","id":"987"}],"Italtelai":[{"model":"Pacer","id":"1442"}],"Italvelo":[{"model":"I-78","id":"719"},{"model":"I-80","id":"720"}],"ITOM":[{"model":"Junior","id":"1131"},{"model":"Sport","id":"1294"}],"J.C. Penney":[{"model":"Pinto","id":"103"},{"model":"Swinger","id":"104"},{"model":"Pinto 2","id":"1036"},{"model":"Swinger 2","id":"1037"}],"James":[{"model":"Superlux","id":"1532"}],"Jawa":[{"model":"X20","id":"70"},{"model":"X25","id":"71"},{"model":"210 Sport","id":"72"},{"model":"Babetta","id":"73"},{"model":"120 Automatic","id":"105"},{"model":"120","id":"106"},{"model":"210","id":"107"},{"model":"Transistor 40","id":"108"},{"model":"Supreme 2","id":"109"},{"model":"207","id":"390"},{"model":"311C","id":"391"},{"model":"311DL","id":"392"},{"model":"300DLX","id":"393"},{"model":"225","id":"395"},{"model":"City Bee","id":"721"},{"model":"Deluxe","id":"722"},{"model":"DL","id":"723"},{"model":"Supreme 3","id":"1033"},{"model":"Supreme","id":"1034"},{"model":"50","id":"1111"},{"model":"X30","id":"1113"},{"model":"05","id":"1132"},{"model":"Robot","id":"1458"},{"model":"550","id":"1485"},{"model":"Stadion","id":"1594"},{"model":"Golden Sport","id":"1601"}],"Jialing":[{"model":"NP50T-M","id":"1222"},{"model":"NP50-GL","id":"1295"},{"model":"CJ50F","id":"1299"},{"model":"JH50","id":"1300"},{"model":"TN35L","id":"1301"},{"model":"JL36PL","id":"1302"},{"model":"JL36PL-A","id":"1303"},{"model":"CJ50F","id":"1304"},{"model":"CJ50ZC","id":"1305"},{"model":"NP Passport","id":"1371"},{"model":"NP50-MA","id":"1373"},{"model":"NP50-GS","id":"1375"}],"Juili":[{"model":"Honey 50","id":"1471"}],"Kanuni":[{"model":"Power GXL","id":"1501"},{"model":"Turbo Sport GXL","id":"1510"}],"Karl Amelung":[{"model":"Flides","id":"1540"}],"Kinetic":[{"model":"Safari V2","id":"236"},{"model":"Luna","id":"237"},{"model":"TFR","id":"387"},{"model":"Magnum","id":"431"},{"model":"Luna Super","id":"988"},{"model":"Luna TFR","id":"989"},{"model":"K4 100","id":"990"}],"Kingda":[{"model":"Sport","id":"1479"}],"KKM":[{"model":"Mopet","id":"110"}],"Komar":[{"model":"MR-232","id":"1044"},{"model":"MR-S-1","id":"1164"}],"Kreidler":[{"model":"MP-19","id":"112"},{"model":"Florett","id":"196"},{"model":"Flory Deluxe","id":"223"},{"model":"Flory 12","id":"724"},{"model":"Flory 13","id":"725"},{"model":"Florett TM","id":"726"},{"model":"Florett RS","id":"727"},{"model":"Florett RSH","id":"728"},{"model":"RS Cockpit","id":"729"},{"model":"MF2","id":"730"},{"model":"MF2CL","id":"731"},{"model":"MG2C","id":"732"},{"model":"MP-9","id":"733"},{"model":"MP-2","id":"735"},{"model":"MP-3","id":"736"},{"model":"Florett RMC","id":"1080"},{"model":"Flory 23","id":"1106"},{"model":"MF4","id":"1130"},{"model":"Junior","id":"1344"},{"model":"Flott","id":"1388"}],"KTM":[{"model":"Foxi","id":"1449"},{"model":"Comet Racer","id":"1496"},{"model":"Comet Cross","id":"1533"}],"Kymco":[{"model":"People 50","id":"993"},{"model":"ZX-50","id":"1094"},{"model":"Cobra","id":"1095"},{"model":"Cobra Cross","id":"1096"},{"model":"Yup 50","id":"1097"},{"model":"Filly 50","id":"1098"},{"model":"Super 9","id":"1099"},{"model":"TSR 50","id":"1101"},{"model":"Agility","id":"1586"}],"Lambretta":[{"model":"Puma Cross","id":"111"},{"model":"Eagle","id":"113"},{"model":"A 50","id":"434"},{"model":"Puma","id":"734"},{"model":"48","id":"1062"},{"model":"Mark 2","id":"1187"}],"Lazer":[{"model":"Sport 50","id":"737"},{"model":"Sport 50 ST","id":"738"},{"model":"Riviera","id":"739"},{"model":"Sprint 50","id":"1160"}],"Legnano":[{"model":"Super Sport","id":"1562"},{"model":"Mini Mars","id":"1571"}],"Lem":[{"model":"Practical","id":"740"}],"Locomotief":[{"model":"Hifi","id":"1396"},{"model":"Modesto","id":"1397"},{"model":"B7","id":"1398"},{"model":"Loco-matic","id":"1399"},{"model":"Kieviet","id":"1400"},{"model":"M23","id":"1422"},{"model":"B5","id":"1488"}],"Macal":[{"model":"Chip","id":"1514"}],"Magneet":[{"model":"Commodore","id":"994"},{"model":"Globemaster","id":"1185"},{"model":"Globemaster Deluxe","id":"1332"},{"model":"Sprintmaster","id":"1359"},{"model":"Luxe","id":"1360"},{"model":"Thunderbird","id":"1420"},{"model":"Cheetah","id":"1503"}],"Maico":[{"model":"MPI","id":"741"}],"Malaguti":[{"model":"Commuter 20","id":"117"},{"model":"Roxi","id":"118"},{"model":"Tiger","id":"119"},{"model":"Olympique","id":"461"},{"model":"Commuter","id":"742"},{"model":"Commuter 2","id":"743"},{"model":"Quattrotto","id":"744"},{"model":"Europino","id":"1543"},{"model":"Motorik","id":"1544"},{"model":"Quattroto Mono","id":"1545"},{"model":"Pilot","id":"1598"}],"Malanca":[{"model":"Tigrotto","id":"478"},{"model":"Zeta","id":"745"},{"model":"Minizeta","id":"746"},{"model":"Bibi","id":"747"},{"model":"Roxi","id":"748"},{"model":"Duplimatic","id":"749"},{"model":"Mascotte B","id":"750"},{"model":"Jolly B","id":"751"},{"model":"Jolly 3M","id":"752"},{"model":"Turismo Turbo","id":"753"},{"model":"Leoncino","id":"754"},{"model":"Cross","id":"755"},{"model":"Big","id":"756"},{"model":"Competizione","id":"757"},{"model":"Testa Rossa","id":"758"},{"model":"Tigre","id":"759"},{"model":"Lord","id":"760"},{"model":"Due PIU","id":"761"},{"model":"Country Special","id":"762"}],"Marina Mobilia":[{"model":"Montomarina","id":"120"}],"Maserati":[{"model":"T2\/U","id":"1410"},{"model":"T2\/D","id":"1411"}],"MBK":[{"model":"Club","id":"535"},{"model":"City Club","id":"536"},{"model":"Club VR","id":"537"},{"model":"Club Tex Mex","id":"538"},{"model":"Club Swing","id":"539"},{"model":"51 V","id":"540"},{"model":"Hard Rock","id":"541"},{"model":"Magnum Racing","id":"542"},{"model":"Magnum Racing XR","id":"543"},{"model":"881 U","id":"544"},{"model":"881 B","id":"545"},{"model":"881 M","id":"546"},{"model":"XLimit","id":"547"},{"model":"XPower","id":"548"},{"model":"BMX","id":"1548"}],"Metrorider":[{"model":"Basic","id":"1577"}],"Miele":[{"model":"K-52","id":"486"},{"model":"K50S","id":"1350"}],"Milani":[{"model":"Tris","id":"1467"}],"Mobylette":[{"model":"AV32E","id":"491"},{"model":"AV32M","id":"492"},{"model":"AV32S","id":"493"},{"model":"AV33","id":"494"},{"model":"AV41","id":"495"},{"model":"AV46","id":"496"},{"model":"AV43","id":"497"},{"model":"AV44","id":"498"},{"model":"AV48","id":"499"},{"model":"AV49","id":"500"},{"model":"AV51","id":"501"},{"model":"AV56","id":"502"},{"model":"AV54","id":"503"},{"model":"AV59","id":"504"},{"model":"AV68","id":"505"},{"model":"AV76","id":"506"},{"model":"AV78","id":"507"},{"model":"AV79","id":"508"},{"model":"AV85","id":"509"},{"model":"AV87","id":"510"},{"model":"AV88","id":"511"},{"model":"AV89","id":"512"},{"model":"AV98","id":"513"},{"model":"AV42","id":"514"},{"model":"AV98E","id":"515"},{"model":"AV98SP","id":"516"},{"model":"AV42M","id":"517"},{"model":"AV65","id":"518"},{"model":"AV70","id":"519"},{"model":"MIP","id":"520"},{"model":"MIPR","id":"521"},{"model":"MIPRT","id":"522"},{"model":"SP50","id":"523"},{"model":"SP50R","id":"524"},{"model":"SP93","id":"525"},{"model":"SP93TT","id":"526"},{"model":"SP94TJ","id":"527"},{"model":"SP94TJE","id":"528"},{"model":"SPTT","id":"529"},{"model":"SPTTE","id":"530"},{"model":"D55","id":"763"},{"model":"D55T","id":"764"},{"model":"SP95","id":"765"},{"model":"SP96","id":"766"},{"model":"AV188","id":"767"},{"model":"Moby Cross","id":"768"},{"model":"AV31","id":"1159"},{"model":"AV55","id":"1223"},{"model":"AV50","id":"1262"},{"model":"Moby Club","id":"1265"},{"model":"Kaptein","id":"1277"},{"model":"AV3","id":"1351"},{"model":"AV92","id":"1431"},{"model":"AV84","id":"1468"},{"model":"S35","id":"1477"},{"model":"S35b","id":"1478"},{"model":"AV37","id":"1589"}],"Monark":[{"model":"Scooten","id":"1155"},{"model":"50ss","id":"1481"},{"model":"Monarscoot","id":"1522"}],"Montesa":[{"model":"Mini","id":"769"}],"Montgomery Wards":[{"model":"Riverside Moped","id":"195"}],"Mosquito":[{"model":"Baby","id":"1381"},{"model":"38B","id":"1567"}],"Moto Guzzi":[{"model":"Robin","id":"121"},{"model":"Dingo","id":"809"},{"model":"Chiu","id":"810"},{"model":"Magnum","id":"811"},{"model":"G2","id":"1226"},{"model":"Trotter","id":"1327"}],"Moto Morini":[{"model":"Corsarino","id":"1214"}],"Moto-Matic":[{"model":"Sapporo","id":"1607"}],"Motobecane":[{"model":"Sebring","id":"216"},{"model":"50V","id":"226"},{"model":"7","id":"227"},{"model":"50VLC","id":"228"},{"model":"M1","id":"229"},{"model":"40","id":"230"},{"model":"50","id":"231"},{"model":"50VL","id":"264"},{"model":"N140 TL","id":"265"},{"model":"Mini Moby M1 PRTS","id":"267"},{"model":"Mini Moby M1 PRTD","id":"268"},{"model":"Traveler","id":"291"},{"model":"Speciale 50","id":"305"},{"model":"Cady","id":"306"},{"model":"Commuter","id":"307"},{"model":"Duamatic","id":"308"},{"model":"Luxamatic","id":"309"},{"model":"Majorette","id":"310"},{"model":"Majormatic","id":"311"},{"model":"Mastermatic","id":"312"},{"model":"Minor Major","id":"313"},{"model":"Moby X","id":"314"},{"model":"Mono 50","id":"315"},{"model":"Sport 50 MK 2","id":"316"},{"model":"Sport Special","id":"317"},{"model":"Monty","id":"318"},{"model":"Velosolex","id":"319"},{"model":"TM 4 (Mokick)","id":"320"},{"model":"Monty SP","id":"321"},{"model":"M11","id":"322"},{"model":"50VLX","id":"338"},{"model":"50L","id":"339"},{"model":"50VLA","id":"340"},{"model":"Mobylette","id":"341"},{"model":"Le Moped","id":"342"},{"model":"Moby","id":"343"},{"model":"Poney 50","id":"550"},{"model":"40TL","id":"770"},{"model":"40TS","id":"771"},{"model":"H40S","id":"772"},{"model":"H40TL","id":"773"},{"model":"TLS","id":"774"},{"model":"H40","id":"775"},{"model":"H40TS","id":"776"},{"model":"H40VLC","id":"777"},{"model":"H50VLC","id":"778"},{"model":"50S","id":"779"},{"model":"H50S","id":"780"},{"model":"H50LS","id":"781"},{"model":"M1PR","id":"782"},{"model":"85L","id":"783"},{"model":"88L","id":"784"},{"model":"88LC","id":"785"},{"model":"51","id":"786"},{"model":"51V","id":"787"},{"model":"AV51","id":"788"},{"model":"X7L","id":"789"},{"model":"4600 (Solex)","id":"790"},{"model":"X1","id":"791"},{"model":"X1L","id":"792"},{"model":"X7S","id":"793"},{"model":"X7AVL","id":"794"},{"model":"X7VX","id":"795"},{"model":"M3PRT","id":"796"},{"model":"M3PRTS","id":"797"},{"model":"92GT","id":"798"},{"model":"92DL","id":"799"},{"model":"L92N","id":"800"},{"model":"93DL","id":"801"},{"model":"L93E","id":"802"},{"model":"L94TTE","id":"803"},{"model":"L99E","id":"804"},{"model":"L99EF","id":"805"},{"model":"99Z","id":"806"},{"model":"D55","id":"807"},{"model":"AV89MB","id":"808"},{"model":"Moby X1","id":"1138"},{"model":"D52","id":"1141"},{"model":"Mobymatic","id":"1162"},{"model":"50VA","id":"1217"},{"model":"Ranger 7","id":"1316"},{"model":"40T","id":"1353"},{"model":"881","id":"1355"},{"model":"M50ev","id":"1377"},{"model":"151","id":"1423"},{"model":"Romp","id":"1438"},{"model":"AU 42 A Bonnie","id":"1464"},{"model":"41V","id":"1535"},{"model":"SP50","id":"1568"},{"model":"SP94","id":"1612"}],"Motobee":[{"model":"RS 100","id":"996"}],"Motobi":[{"model":"48 Sport","id":"1267"}],"Motobimm":[{"model":"Bilo","id":"1139"}],"Motom":[{"model":"Junior","id":"1063"},{"model":"C","id":"1125"},{"model":"48 Cross","id":"1225"}],"Motomarina":[{"model":"Raven","id":"997"},{"model":"Sebring","id":"998"}],"Motron":[{"model":"Medalist","id":"122"},{"model":"Sprint","id":"817"},{"model":"Classic","id":"818"},{"model":"Fairway","id":"819"},{"model":"3-Wheeler","id":"820"}],"Mustang":[{"model":"Cobra 2000","id":"1628"}],"MZW":[{"model":"Cambridge","id":"1570"}],"Negrini":[{"model":"Gazelle","id":"123"},{"model":"Harvard","id":"124"},{"model":"MX Sport","id":"125"},{"model":"Leprotto","id":"821"}],"Norman":[{"model":"Nippy Deluxe","id":"1064"}],"NSU":[{"model":"Quickley","id":"202"},{"model":"Quickly N","id":"271"},{"model":"Quickly TT","id":"272"},{"model":"Prima III","id":"273"},{"model":"Prima V","id":"274"},{"model":"Prima IIIK","id":"275"},{"model":"Supermax","id":"276"},{"model":"Maxi","id":"277"},{"model":"Quickly S","id":"278"},{"model":"Quickly T","id":"279"},{"model":"1053","id":"368"},{"model":"Cavalio","id":"1279"},{"model":"Quickly L","id":"1463"}],"NVT":[{"model":"ER1","id":"406"},{"model":"ER2","id":"407"},{"model":"ER2P","id":"408"},{"model":"ER1SS","id":"409"},{"model":"ER2L","id":"410"},{"model":"ER2SS","id":"411"},{"model":"Easy Rider","id":"822"},{"model":"Jubilee","id":"880"},{"model":"Lance","id":"1581"}],"Odyssey":[{"model":"32\/1-R","id":"823"},{"model":"32\/1-2","id":"824"},{"model":"40\/1-R","id":"825"},{"model":"40\/1-2","id":"826"},{"model":"40\/2-R","id":"827"},{"model":"40\/2-2","id":"828"},{"model":"236","id":"829"},{"model":"237","id":"830"},{"model":"255","id":"831"},{"model":"284","id":"832"},{"model":"720","id":"999"}],"Oltenia":[{"model":"Alpa","id":"1616"}],"Pacer":[{"model":"P-1","id":"833"},{"model":"P-12","id":"834"},{"model":"P-214","id":"835"},{"model":"P-14RL","id":"836"},{"model":"P-278","id":"837"},{"model":"P-280","id":"838"},{"model":"Sport P-78","id":"839"},{"model":"Super Sport P-80","id":"840"},{"model":"P-14","id":"841"},{"model":"P-14 Delux","id":"842"},{"model":"Super Sport","id":"1530"},{"model":"25","id":"1587"}],"Paloma":[{"model":"Pal","id":"1393"},{"model":"Dasl","id":"1404"},{"model":"Minor","id":"1405"},{"model":"Super Strada Flash","id":"1457"}],"Pedler":[{"model":"Pedler's Choice","id":"843"},{"model":"Pedler's Choice Deluxe","id":"844"}],"Pepi":[{"model":"Delux","id":"1202"},{"model":"Sport","id":"1221"}],"Peripoli":[{"model":"Giulietta","id":"1494"}],"Peugeot":[{"model":"TV-RS","id":"189"},{"model":"Sport V-SP","id":"190"},{"model":"T1-RS","id":"191"},{"model":"103","id":"205"},{"model":"102SP","id":"211"},{"model":"TSM","id":"246"},{"model":"103SPR","id":"247"},{"model":"103LBS","id":"248"},{"model":"GT10","id":"460"},{"model":"Angel","id":"479"},{"model":"GT10F3","id":"845"},{"model":"SX5","id":"846"},{"model":"TSA","id":"847"},{"model":"101","id":"848"},{"model":"102","id":"849"},{"model":"104","id":"850"},{"model":"103LS-U1","id":"851"},{"model":"103LVS-U2","id":"852"},{"model":"103LVS-U3","id":"853"},{"model":"103L2-U1","id":"854"},{"model":"103L2-U2","id":"855"},{"model":"103L2-U3","id":"856"},{"model":"103 Sport U2","id":"857"},{"model":"103 Sport U3","id":"858"},{"model":"103SPB U2","id":"859"},{"model":"102SPB U3","id":"860"},{"model":"TSM U2","id":"861"},{"model":"TSM U3","id":"862"},{"model":"Fox","id":"1000"},{"model":"103SP","id":"1001"},{"model":"103 MVL Vogue","id":"1002"},{"model":"TM-3","id":"1003"},{"model":"103 MXR","id":"1186"},{"model":"GL10","id":"1208"},{"model":"102SP U3","id":"1218"},{"model":"103 B-D","id":"1227"},{"model":"Vogue","id":"1232"},{"model":"Postman","id":"1233"},{"model":"101SP","id":"1245"},{"model":"103LSM","id":"1246"},{"model":"105DM","id":"1247"},{"model":"TSMR-D","id":"1248"},{"model":"101KSM","id":"1249"},{"model":"101-B2","id":"1257"},{"model":"101-MS","id":"1258"},{"model":"101-MT","id":"1259"},{"model":"101-MR","id":"1260"},{"model":"Sport","id":"1280"},{"model":"Super Sport","id":"1281"},{"model":"Centri","id":"1285"},{"model":"Vogue SP","id":"1306"},{"model":"Vogue SX","id":"1307"},{"model":"La Poste","id":"1308"},{"model":"102 MS","id":"1391"},{"model":"TSE","id":"1421"},{"model":"103Z","id":"1486"},{"model":"TS Rallye","id":"1497"},{"model":"Country","id":"1525"},{"model":"103LS","id":"1536"},{"model":"BB CT","id":"1578"},{"model":"BB C","id":"1579"},{"model":"BB VCT","id":"1580"},{"model":"SPX","id":"1637"}],"Phoenix":[{"model":"Saxonette","id":"1409"}],"Pony":[{"model":"Yunior","id":"1329"}],"Puch":[{"model":"Astro Daimler","id":"126"},{"model":"Astro Daimler Two-Speed","id":"127"},{"model":"Beta","id":"128"},{"model":"Cobra","id":"129"},{"model":"Dart","id":"130"},{"model":"Magnum II","id":"131"},{"model":"Magnum Limited LTD","id":"132"},{"model":"Magnum MK II","id":"133"},{"model":"Magnum XK","id":"134"},{"model":"Maxi","id":"135"},{"model":"Maxi II","id":"136"},{"model":"Maxi GN","id":"137"},{"model":"Maxi Luxe","id":"138"},{"model":"Maxi N","id":"139"},{"model":"Maxi Plus","id":"140"},{"model":"Maxi S","id":"141"},{"model":"Maxi Sport","id":"142"},{"model":"Maxi Sport LS","id":"143"},{"model":"Maxi Sport LS-2 Speed","id":"144"},{"model":"Newport","id":"145"},{"model":"Newport L","id":"146"},{"model":"Nostalgia","id":"147"},{"model":"Sport I","id":"148"},{"model":"Sport MKII","id":"149"},{"model":"Mini Maxi","id":"187"},{"model":"X30","id":"253"},{"model":"Magnum X","id":"254"},{"model":"MR50","id":"255"},{"model":"P1","id":"258"},{"model":"Tri Rad","id":"290"},{"model":"MS50V","id":"292"},{"model":"M50 Grand Prix","id":"293"},{"model":"Velux 30","id":"327"},{"model":"Maxi Bombardier","id":"328"},{"model":"Super Maxi","id":"329"},{"model":"Korado","id":"330"},{"model":"Kromag","id":"331"},{"model":"MC 50-3","id":"333"},{"model":"M50 Sport","id":"334"},{"model":"Dakota 3000","id":"336"},{"model":"VS50D","id":"398"},{"model":"MS50D","id":"399"},{"model":"MS50V Deluxe","id":"400"},{"model":"M2","id":"401"},{"model":"M3","id":"402"},{"model":"MF25","id":"428"},{"model":"MV50","id":"448"},{"model":"MS50","id":"534"},{"model":"Monza 4SL","id":"863"},{"model":"X20","id":"864"},{"model":"Newport II","id":"1005"},{"model":"Magnum","id":"1006"},{"model":"VS50K","id":"1039"},{"model":"VS50DK","id":"1040"},{"model":"DS50","id":"1041"},{"model":"MS50 Deluxe","id":"1042"},{"model":"Maxi Sport MKII","id":"1043"},{"model":"Maxi N2","id":"1045"},{"model":"Maxi S2","id":"1046"},{"model":"Maxi Super","id":"1047"},{"model":"Maxi Super D","id":"1048"},{"model":"Maxi Super DK","id":"1049"},{"model":"Maxi SKW","id":"1050"},{"model":"Maxi Super Executive SKX","id":"1051"},{"model":"Maxi Executive SKA","id":"1052"},{"model":"Maxi Super Sport KA","id":"1053"},{"model":"Maxi N Quickly","id":"1054"},{"model":"Maxi SKX GL Super Executive","id":"1055"},{"model":"Maxi Auto Executive","id":"1056"},{"model":"Maxi Zippy","id":"1057"},{"model":"Maxi Free Spirit","id":"1058"},{"model":"MX40","id":"1071"},{"model":" X50-3","id":"1072"},{"model":"X40","id":"1083"},{"model":"MS50L","id":"1102"},{"model":"X50","id":"1103"},{"model":"MiniCross","id":"1110"},{"model":"VZ 50","id":"1135"},{"model":"VS50L","id":"1136"},{"model":"Maxi GS","id":"1149"},{"model":"Dakota","id":"1195"},{"model":"MS50","id":"1209"},{"model":"Monza","id":"1252"},{"model":"Grand Prix Special","id":"1268"},{"model":"M50 Racing (Skylark)","id":"1378"},{"model":"Skyhawk","id":"1440"},{"model":"VS50M","id":"1443"},{"model":"MC50","id":"1444"},{"model":"Series B","id":"1473"},{"model":"Campus 50","id":"1490"},{"model":"DS50V","id":"1495"},{"model":"MV","id":"1556"},{"model":"MS25","id":"1595"},{"model":"Magnum MK II -UPS","id":"1621"},{"model":"MOTOVI","id":"1629"},{"model":"Murray","id":"1636"}],"Rabeneick":[{"model":"Binetta III","id":"1121"}],"Raleigh":[{"model":"Wisp","id":"480"},{"model":"Ultramatic","id":"485"},{"model":"Super 50","id":"1007"},{"model":"RM5","id":"1199"},{"model":"RM4","id":"1482"}],"Ramzey":[{"model":"Magnum SAfkan","id":"1229"},{"model":"Wolf","id":"1230"},{"model":"Prestige Classic","id":"1231"},{"model":"Comfort","id":"1234"},{"model":"Prestige","id":"1235"}],"Rap":[{"model":"Crown","id":"1330"},{"model":"Speedo","id":"1340"},{"model":"Matadore","id":"1343"},{"model":"Rocky","id":"1348"},{"model":"Imperial","id":"1349"},{"model":"Ster","id":"1407"},{"model":"Super","id":"1527"}],"Rex":[{"model":"Monaco","id":"1380"}],"Riga":[{"model":"22","id":"958"},{"model":"V-501M","id":"1008"},{"model":"R-12","id":"1201"},{"model":"4","id":"1212"},{"model":"5","id":"1213"},{"model":"Gauja-1","id":"1215"},{"model":"Mini","id":"1382"},{"model":"15-S","id":"1483"}],"Riteloc":[{"model":"Roxi","id":"604"}],"Riviera":[{"model":"ST-100","id":"865"}],"Rixe":[{"model":"V3","id":"1282"}],"Rizzato Califfo":[{"model":"Califfo Deluxe","id":"188"},{"model":"Califfo 3-Wheeler","id":"605"},{"model":"Califfo 2-Speed","id":"606"},{"model":"Califfo","id":"866"},{"model":"Califfo Super","id":"867"},{"model":"Califfo Matic","id":"869"},{"model":"Califfone Daytona","id":"870"},{"model":"Zum 3","id":"871"},{"model":"Mini Califfo K","id":"872"},{"model":"Cross 4V","id":"873"},{"model":"Ringo Turismo","id":"874"},{"model":"Cross 6V","id":"875"}],"ROG":[{"model":"Pony Express","id":"1596"}],"Romeo":[{"model":"Thunderhawk","id":"1472"}],"Romet":[{"model":"Kadet M-780","id":"1205"},{"model":"50 T1","id":"1317"},{"model":"Pony 50","id":"1367"}],"Royal Nord":[{"model":"GT","id":"1432"},{"model":"Super Vedette","id":"1433"},{"model":"Polaris","id":"1456"}],"Sachs":[{"model":"Balboa","id":"150"},{"model":"Westlake","id":"151"},{"model":"Seville","id":"152"},{"model":"Suburban","id":"153"},{"model":"Sundancer","id":"154"},{"model":"Saxy","id":"155"},{"model":"Mopet","id":"156"},{"model":"Minor","id":"157"},{"model":"G-4","id":"158"},{"model":"G-3","id":"159"},{"model":"Feugo","id":"160"},{"model":"Carrier II","id":"161"},{"model":"Carrier I","id":"162"},{"model":"Hercules Prima S 2 speed","id":"257"},{"model":"Optima 50","id":"266"},{"model":"Prima 4","id":"269"},{"model":"Prima 5","id":"270"},{"model":"Lover","id":"346"},{"model":"Hercules","id":"367"},{"model":"Sundowner","id":"386"},{"model":"Prima","id":"868"},{"model":"Sundancer SX","id":"876"},{"model":"Showoff","id":"877"},{"model":"Hercules M-4","id":"878"},{"model":"Hercules P-1","id":"879"},{"model":"Eagle","id":"1100"},{"model":"MadAss","id":"1210"},{"model":"Taxi Lux","id":"1376"},{"model":"Honey","id":"1474"}],"Safari":[{"model":"MZV","id":"470"},{"model":"300MT","id":"1009"},{"model":"MT400","id":"1513"},{"model":"SuperExtra","id":"1572"},{"model":"Commando","id":"1573"},{"model":"Variomatic deLux","id":"1574"},{"model":"Cobra","id":"1575"}],"SCO":[{"model":"Minor Grand","id":"1539"},{"model":"Sprint GS","id":"1584"}],"Scorpion":[{"model":"SC-1","id":"881"},{"model":"SC-2","id":"882"},{"model":"SC-2X","id":"883"}],"Sears":[{"model":"VS50L","id":"325"},{"model":"Free Spirit","id":"335"},{"model":"Allstate","id":"337"}],"Seaworth":[{"model":"100","id":"884"}],"Simplex":[{"model":"Egg","id":"1342"},{"model":"S7","id":"1447"}],"Simson":[{"model":"SR2","id":"204"},{"model":"Mofa 1","id":"256"},{"model":"S51","id":"449"},{"model":"Scwalbe","id":"450"},{"model":"SR50","id":"1084"},{"model":"SL1S","id":"1151"},{"model":"S50 B1","id":"1506"},{"model":"S50","id":"1507"},{"model":"Sperber","id":"1521"},{"model":"SR1","id":"1551"},{"model":"S53 Alpha","id":"1552"},{"model":"SR 4-1","id":"1561"},{"model":"SL1","id":"1590"}],"Smythe":[{"model":"Misty","id":"885"}],"Snark":[{"model":"Standard","id":"886"},{"model":"Deluxe","id":"887"},{"model":"Satellie I","id":"888"},{"model":"Satellie II","id":"889"},{"model":"Stardust II","id":"890"},{"model":"Stardust I","id":"891"},{"model":"Star I","id":"892"},{"model":"Star II","id":"893"}],"Solex":[{"model":"3800","id":"934"},{"model":"4600","id":"935"},{"model":"4600 DOT","id":"936"},{"model":"Flash 6000","id":"937"},{"model":"5000","id":"938"},{"model":"Tenor","id":"939"},{"model":"8000","id":"940"},{"model":"1700","id":"960"},{"model":"2200","id":"961"},{"model":"3300","id":"962"},{"model":"3200","id":"1011"},{"model":"S3800","id":"1012"},{"model":"3800 Deluxe","id":"1024"},{"model":"Horse","id":"1059"},{"model":"Trotilex","id":"1066"},{"model":"Micron","id":"1067"},{"model":"6000","id":"1089"},{"model":"Pli-Solex","id":"1406"}],"Solifer":[{"model":"SM","id":"349"},{"model":"Speed","id":"1112"},{"model":"Export","id":"1124"}],"Solo":[{"model":"Odyssey","id":"261"},{"model":"710","id":"262"},{"model":"711","id":"263"},{"model":"712","id":"429"},{"model":"713","id":"1142"},{"model":"715","id":"1143"},{"model":"716","id":"1144"},{"model":"715B","id":"1145"},{"model":"Electra","id":"1146"},{"model":"725","id":"1147"},{"model":"726","id":"1148"},{"model":"Mini","id":"1448"},{"model":"722","id":"1602"}],"Soni Kinetic":[{"model":"Basic","id":"894"},{"model":"Deluxe","id":"895"},{"model":"Excalibur","id":"896"},{"model":"Classic","id":"897"}],"Sparta":[{"model":"Foxi","id":"218"},{"model":"SE 50","id":"422"},{"model":"SB 50","id":"423"},{"model":"Typen","id":"424"},{"model":"GE 50 Tour","id":"425"},{"model":"GE 50 Sport","id":"426"},{"model":"Foxi GT Sport","id":"474"},{"model":"Sport 3V","id":"898"},{"model":"Buddy","id":"1013"},{"model":"MB 50","id":"1200"},{"model":"Met","id":"1237"},{"model":"Met Tandem","id":"1238"},{"model":"Lucky","id":"1250"},{"model":"Happy","id":"1255"},{"model":"2V","id":"1261"},{"model":"Spartamatic","id":"1270"},{"model":"GC50","id":"1273"},{"model":"Tour","id":"1274"},{"model":"Sport","id":"1275"},{"model":"GS50","id":"1276"},{"model":"GB50","id":"1289"},{"model":"Super Sport","id":"1293"},{"model":"Happy Mini","id":"1322"},{"model":"Sport 4","id":"1325"},{"model":"G50","id":"1361"},{"model":"Grand Sport","id":"1466"},{"model":"GH50","id":"1476"},{"model":"GF50","id":"1523"},{"model":"GD 50","id":"1534"}],"Sunny":[{"model":"200","id":"899"}],"Suvega":[{"model":"Tiger T-3","id":"900"},{"model":"Samrat","id":"901"}],"Suzuki":[{"model":"FA50 Shuttle","id":"12"},{"model":"FZ-50 Rascal","id":"212"},{"model":"A50P","id":"473"},{"model":"AP50","id":"1014"},{"model":"ZR50SP","id":"1015"},{"model":"FA50","id":"1016"},{"model":"ZR50","id":"1017"},{"model":"TS50X","id":"1018"},{"model":"S1-90","id":"1060"},{"model":"K50 DN","id":"1219"},{"model":"RV50","id":"1502"},{"model":"U50","id":"1515"},{"model":"FS50","id":"1558"},{"model":"M12","id":"1593"},{"model":"M15","id":"1634"}],"Tanaka":[{"model":"Bike Bug","id":"1547"}],"Tempo":[{"model":"Corvette","id":"1061"},{"model":"Panter 460","id":"1296"},{"model":"Cross","id":"1297"},{"model":"Panter 360","id":"1298"}],"Testi":[{"model":"Amico","id":"902"},{"model":"Cal Jet","id":"1156"},{"model":"Cricket","id":"1318"},{"model":"Mini Cricket","id":"1319"},{"model":"Comfort","id":"1320"},{"model":"Champion","id":"1346"},{"model":"Weekend Cross","id":"1446"},{"model":"Grand Prix","id":"1512"}],"Tokaido":[{"model":"RC 25","id":"1091"}],"Tomos":[{"model":"A3SL","id":"163"},{"model":"A-3 Bullet","id":"164"},{"model":"A-3 Bullet TT","id":"165"},{"model":"A-3 Golden Bullet","id":"166"},{"model":"A-3 Golden Bullet TT-LX","id":"167"},{"model":"Silver Bullet SL","id":"168"},{"model":"Colibri","id":"169"},{"model":"Sprint","id":"217"},{"model":"Targa LX","id":"222"},{"model":"Targa","id":"232"},{"model":"Classic","id":"348"},{"model":"A-3 Bullet TS","id":"350"},{"model":"Revival","id":"374"},{"model":"25 Luxe","id":"375"},{"model":"Flexer","id":"376"},{"model":"TX 50","id":"377"},{"model":"ATX 50C","id":"378"},{"model":"APN 6S","id":"379"},{"model":"Alpino","id":"380"},{"model":"BT 50N","id":"381"},{"model":"GP","id":"420"},{"model":"Sport","id":"903"},{"model":"14TLC","id":"904"},{"model":"TLS","id":"905"},{"model":"Automatic","id":"906"},{"model":"A3SP","id":"907"},{"model":"Silver Bullet","id":"908"},{"model":"Red Bullet","id":"909"},{"model":"Blue Bullet","id":"910"},{"model":"APN4","id":"911"},{"model":"4H","id":"912"},{"model":"Automatic NT","id":"913"},{"model":"3","id":"914"},{"model":"3K","id":"915"},{"model":"15SL","id":"916"},{"model":"15SLC","id":"917"},{"model":"15 Sprint","id":"918"},{"model":"Cross 50 Junior","id":"919"},{"model":"Quadro","id":"995"},{"model":"Targa TTLX","id":"1019"},{"model":"Bullet TT","id":"1020"},{"model":"Bullet","id":"1021"},{"model":"Silver Bullet GM","id":"1022"},{"model":"4L","id":"1105"},{"model":"Streetmate","id":"1157"},{"model":"Limited","id":"1236"},{"model":"Minibike","id":"1256"},{"model":"Classic I","id":"1309"},{"model":"Classic II","id":"1310"},{"model":"Revival TS","id":"1365"},{"model":"Arrow","id":"1366"},{"model":"Youngster","id":"1370"},{"model":"Mini","id":"1374"},{"model":"VT50KS","id":"1418"},{"model":"ST","id":"1470"},{"model":"Streetmate R","id":"1475"},{"model":"A3ML","id":"1499"},{"model":"A3MS","id":"1531"},{"model":"Cross 50 Senior","id":"1554"},{"model":"LX","id":"1606"},{"model":"MC36","id":"1608"},{"model":"MC50","id":"1609"},{"model":"MC50 Junior","id":"1610"},{"model":"MC50 Senior","id":"1611"}],"Torrot":[{"model":"City Lujo","id":"920"},{"model":"City TT","id":"921"},{"model":"City","id":"922"},{"model":"Mini","id":"923"},{"model":"Maxi","id":"924"},{"model":"Turismo","id":"925"},{"model":"Panther","id":"926"},{"model":"Trial","id":"927"},{"model":"Gran Cross","id":"928"},{"model":"Mustang","id":"929"},{"model":"Sport 4V","id":"930"},{"model":"TT50","id":"931"},{"model":"Tiburon","id":"1224"}],"Trac":[{"model":"Blitz","id":"170"},{"model":"Clipper","id":"171"},{"model":"Eagle","id":"172"},{"model":"Hawk","id":"173"},{"model":"Olympic","id":"174"},{"model":"Sprint","id":"175"},{"model":"Liberty","id":"1023"},{"model":"Metro","id":"1068"},{"model":"Image","id":"1560"}],"Tri-Ped":[{"model":"Standard","id":"932"},{"model":"Sport","id":"933"}],"Triumph":[{"model":"Knirps","id":"1524"}],"Tunturi":[{"model":"Tiger","id":"445"},{"model":"Pappa","id":"446"},{"model":"Maxi","id":"447"},{"model":"Supersport","id":"472"}],"TVS":[{"model":"Super Champ","id":"238"},{"model":"50XL","id":"239"}],"Typhoon":[{"model":"Blits","id":"1272"},{"model":"Sport","id":"1291"}],"Union Holland":[{"model":"Union Pantalette","id":"1283"},{"model":"Union Super Sport","id":"1284"},{"model":"Tourist","id":"1334"},{"model":"Boomerang","id":"1337"},{"model":"Sport-o-Matic","id":"1339"},{"model":"Roulette","id":"1368"},{"model":"Polaris","id":"1401"}],"Vespa":[{"model":"Bravo","id":"176"},{"model":"Ciao","id":"177"},{"model":"Grande","id":"178"},{"model":"Si","id":"179"},{"model":"Si Monte Carlo","id":"347"},{"model":"Boxer","id":"396"},{"model":"Ciao Super","id":"941"},{"model":"Ciao Supreme","id":"942"},{"model":"Ciao Porter","id":"943"},{"model":"Bravo Deluxe","id":"944"},{"model":"Bravo Super Deluxe","id":"945"},{"model":"Grande Super Deluxe","id":"946"},{"model":"Grande Deluxe","id":"1004"},{"model":"Bravo Super","id":"1038"},{"model":"Boxer 2","id":"1152"},{"model":"Ciao P","id":"1239"},{"model":"Ciao PX","id":"1240"},{"model":"Ciao PXV","id":"1241"},{"model":"Vespino","id":"1356"},{"model":"Boss","id":"1517"}],"Viberti":[{"model":"Vivi","id":"1462"}],"Victoria":[{"model":"110 s","id":"259"},{"model":"111","id":"260"},{"model":"Vicky","id":"369"},{"model":"IVN","id":"418"},{"model":"Avanti K","id":"432"},{"model":"FM38 L","id":"1204"},{"model":"Spoetnik","id":"1278"},{"model":"Luxus","id":"1341"}],"Werya":[{"model":"Sport","id":"1498"}],"Whizzer":[{"model":"Cyclone","id":"215"},{"model":"Pacemaker","id":"388"},{"model":"NE-5","id":"1569"}],"Wildfire":[{"model":"WF110-M1","id":"1549"}],"Wilma":[{"model":"Mosquito","id":"1163"}],"Wind":[{"model":"WMX 50","id":"1630"},{"model":"WMX Cargo","id":"1631"},{"model":"City","id":"1632"},{"model":"Classic","id":"1633"}],"Yamaha":[{"model":"QT50","id":"194"},{"model":"Rosa Toro","id":"242"},{"model":"MF-2","id":"249"},{"model":"MJ-2","id":"250"},{"model":"YB 50","id":"323"},{"model":"FS-1","id":"324"},{"model":"LB-50 Chappy","id":"326"},{"model":"Mate 50","id":"332"},{"model":"PW-50","id":"389"},{"model":"YSR-50","id":"440"},{"model":"MF3-D","id":"552"},{"model":"QT50 Yamahopper","id":"947"},{"model":"DT","id":"1025"},{"model":"QT50L","id":"1026"},{"model":"RD50","id":"1027"},{"model":"QT50J","id":"1028"},{"model":"SH50ML","id":"1029"},{"model":"LB50-IIAM Chappy","id":"1030"},{"model":"DT50mx","id":"1109"},{"model":"LB80 Chappy","id":"1126"},{"model":"MJ50 Towny","id":"1184"},{"model":"MS-50","id":"1379"},{"model":"U7E","id":"1451"},{"model":"TY50p","id":"1480"},{"model":"Champ","id":"1504"},{"model":"TY50M","id":"1518"},{"model":"RD50M","id":"1526"},{"model":"FS1E","id":"1553"},{"model":"RD60","id":"1603"},{"model":"G6SB","id":"1613"}],"Yardman":[{"model":"Easy Rider","id":"816"},{"model":"Mo-Trek","id":"1140"}],"Yumbo":[{"model":"Free","id":"1189"}],"Zanella":[{"model":"Due Sol Fire","id":"1625"},{"model":"V3 Due","id":"1624"},{"model":"Rally","id":"1626"},{"model":"Pocket","id":"1627"}],"Zanetti":[{"model":"Bicizeta","id":"1430"}],"Z\u00fcndapp":[{"model":"M50","id":"397"},{"model":"Super Combinette De Luxe","id":"427"},{"model":"ZS 25","id":"468"},{"model":"KS-50LC","id":"533"},{"model":"Automatic Mofa","id":"948"},{"model":"Mofa 25","id":"949"},{"model":"Automatic Moped","id":"950"},{"model":"Moped M-50","id":"951"},{"model":"C50 Super","id":"952"},{"model":"C50 Sport","id":"953"},{"model":"GTS50","id":"954"},{"model":"R50","id":"955"},{"model":"Mokick","id":"956"},{"model":"CS50","id":"957"},{"model":"Super Combinette","id":"1065"},{"model":"ZL 25","id":"1090"},{"model":"Combinette","id":"1104"},{"model":"RZ 20","id":"1134"},{"model":"Mamba","id":"1188"},{"model":"ZA 40","id":"1242"},{"model":"ZX 25","id":"1243"},{"model":"ZD40","id":"1323"},{"model":"KS 80","id":"1385"},{"model":"ZD50","id":"1389"},{"model":"Mofa Star 2","id":"1439"},{"model":"KS 50 Super Sport","id":"1516"},{"model":"Falconette","id":"1599"}]}
+{
+  "AerMacchi": [
+    {
+      "model": "M65 Leggero",
+      "id": "1605"
+    }
+  ],
+  "AJW": [
+    {
+      "model": "Collie",
+      "id": "1511"
+    },
+    {
+      "model": "Greyhound",
+      "id": "1588"
+    }
+  ],
+  "AMF": [
+    {
+      "model": "Roadmaster C110",
+      "id": "10"
+    },
+    {
+      "model": "Roadmaster C120",
+      "id": "11"
+    },
+    {
+      "model": "Roadmaster C130",
+      "id": "384"
+    },
+    {
+      "model": "Roadmaster C140",
+      "id": "385"
+    },
+    {
+      "model": "Roadmaster XL Deluxe",
+      "id": "469"
+    },
+    {
+      "model": "Roadmaster A110",
+      "id": "554"
+    },
+    {
+      "model": "Roadmaster A115",
+      "id": "555"
+    },
+    {
+      "model": "Roadmaster B110",
+      "id": "556"
+    },
+    {
+      "model": "Roadmaster B115",
+      "id": "557"
+    },
+    {
+      "model": "Roadmaster B120",
+      "id": "558"
+    },
+    {
+      "model": "Roadmaster B125",
+      "id": "559"
+    },
+    {
+      "model": "ALL-PRO",
+      "id": "1487"
+    },
+    {
+      "model": "Roadmaster XL",
+      "id": "1597"
+    }
+  ],
+  "AMS": [
+    {
+      "model": "Seirra 50",
+      "id": "13"
+    },
+    {
+      "model": "Tahoe G1",
+      "id": "14"
+    },
+    {
+      "model": "Tahoe G2",
+      "id": "15"
+    }
+  ],
+  "Andiamo": [
+    {
+      "model": "L-1",
+      "id": "560"
+    },
+    {
+      "model": "L-2",
+      "id": "561"
+    },
+    {
+      "model": "E-1",
+      "id": "562"
+    },
+    {
+      "model": "E-2",
+      "id": "563"
+    }
+  ],
+  "Angel": [
+    {
+      "model": "AP48",
+      "id": "16"
+    }
+  ],
+  "Apollo": [
+    {
+      "model": "Apell",
+      "id": "487"
+    },
+    {
+      "model": "Pacific",
+      "id": "488"
+    },
+    {
+      "model": "Bel Rock",
+      "id": "489"
+    },
+    {
+      "model": "Carrier",
+      "id": "1460"
+    }
+  ],
+  "Arco": [
+    {
+      "model": "E-Z Rider",
+      "id": "564"
+    }
+  ],
+  "Ariel": [
+    {
+      "model": "3",
+      "id": "963"
+    },
+    {
+      "model": "Zizer",
+      "id": "964"
+    }
+  ],
+  "Aspes": [
+    {
+      "model": "Sioux 16 America",
+      "id": "565"
+    },
+    {
+      "model": "Sioux 50",
+      "id": "566"
+    },
+    {
+      "model": "Sioux KSL",
+      "id": "567"
+    },
+    {
+      "model": "Sioux KS",
+      "id": "568"
+    },
+    {
+      "model": "Sioux Mini",
+      "id": "569"
+    }
+  ],
+  "Avanti": [
+    {
+      "model": "Mont",
+      "id": "233"
+    },
+    {
+      "model": "Autopower",
+      "id": "234"
+    },
+    {
+      "model": "Kobra",
+      "id": "235"
+    },
+    {
+      "model": "Porta",
+      "id": "240"
+    },
+    {
+      "model": "Super Sport",
+      "id": "241"
+    },
+    {
+      "model": "Sport",
+      "id": "1035"
+    }
+  ],
+  "Avaros": [
+    {
+      "model": "Primus",
+      "id": "1402"
+    },
+    {
+      "model": "Kingline",
+      "id": "1403"
+    },
+    {
+      "model": "Record",
+      "id": "1415"
+    },
+    {
+      "model": "Kickmonomatic",
+      "id": "1417"
+    },
+    {
+      "model": "Ideal",
+      "id": "1435"
+    },
+    {
+      "model": "Super 7",
+      "id": "1459"
+    }
+  ],
+  "Babetta": [
+    {
+      "model": "207",
+      "id": "451"
+    },
+    {
+      "model": "100",
+      "id": "452"
+    },
+    {
+      "model": "200",
+      "id": "453"
+    },
+    {
+      "model": "300",
+      "id": "454"
+    },
+    {
+      "model": "206",
+      "id": "455"
+    },
+    {
+      "model": "213",
+      "id": "456"
+    },
+    {
+      "model": "210",
+      "id": "457"
+    },
+    {
+      "model": "215",
+      "id": "458"
+    },
+    {
+      "model": "134",
+      "id": "459"
+    }
+  ],
+  "Baretta": [
+    {
+      "model": "45",
+      "id": "382"
+    },
+    {
+      "model": "Magnum",
+      "id": "570"
+    },
+    {
+      "model": "22",
+      "id": "571"
+    },
+    {
+      "model": "38",
+      "id": "572"
+    },
+    {
+      "model": "44",
+      "id": "573"
+    },
+    {
+      "model": "Variator",
+      "id": "574"
+    },
+    {
+      "model": "44 Sport",
+      "id": "575"
+    },
+    {
+      "model": "Minisport",
+      "id": "576"
+    },
+    {
+      "model": "Pistol",
+      "id": "577"
+    },
+    {
+      "model": "Piccoli",
+      "id": "1122"
+    }
+  ],
+  "Baron": [
+    {
+      "model": "Lazer",
+      "id": "1557"
+    }
+  ],
+  "Batavus": [
+    {
+      "model": "Starflite",
+      "id": "17"
+    },
+    {
+      "model": "Mondial I",
+      "id": "18"
+    },
+    {
+      "model": "Mondial II",
+      "id": "19"
+    },
+    {
+      "model": "Mondial Deluxe",
+      "id": "20"
+    },
+    {
+      "model": "Regency",
+      "id": "21"
+    },
+    {
+      "model": "Grand Prix",
+      "id": "22"
+    },
+    {
+      "model": "Mobat",
+      "id": "23"
+    },
+    {
+      "model": "Bronco",
+      "id": "186"
+    },
+    {
+      "model": "VA",
+      "id": "224"
+    },
+    {
+      "model": "HS-50",
+      "id": "245"
+    },
+    {
+      "model": "Batavette",
+      "id": "295"
+    },
+    {
+      "model": "Bilonet Super Sport",
+      "id": "296"
+    },
+    {
+      "model": "Bilonet Combi Sport",
+      "id": "297"
+    },
+    {
+      "model": "Bilonet Mat-o-mat",
+      "id": "298"
+    },
+    {
+      "model": "Bilonet Mk2",
+      "id": "299"
+    },
+    {
+      "model": "Conforte",
+      "id": "300"
+    },
+    {
+      "model": "Go-Go V40",
+      "id": "301"
+    },
+    {
+      "model": "Mobat Deluxe",
+      "id": "302"
+    },
+    {
+      "model": "Mot'o-Mat",
+      "id": "303"
+    },
+    {
+      "model": "Whippet",
+      "id": "304"
+    },
+    {
+      "model": "Compact",
+      "id": "371"
+    },
+    {
+      "model": "Bingo",
+      "id": "476"
+    },
+    {
+      "model": "Regency HS",
+      "id": "578"
+    },
+    {
+      "model": "Regency VAII",
+      "id": "579"
+    },
+    {
+      "model": "Starflite HS",
+      "id": "580"
+    },
+    {
+      "model": "Starflite VAI",
+      "id": "581"
+    },
+    {
+      "model": "Starflite VAII",
+      "id": "582"
+    },
+    {
+      "model": "Badger",
+      "id": "583"
+    },
+    {
+      "model": "Intercycle",
+      "id": "965"
+    },
+    {
+      "model": "City",
+      "id": "1253"
+    },
+    {
+      "model": "M48",
+      "id": "1254"
+    },
+    {
+      "model": "MK 2",
+      "id": "1264"
+    },
+    {
+      "model": "TS50",
+      "id": "1271"
+    },
+    {
+      "model": "Rotary",
+      "id": "1286"
+    },
+    {
+      "model": "Bilonet",
+      "id": "1292"
+    },
+    {
+      "model": "FP50 Sport",
+      "id": "1345"
+    },
+    {
+      "model": "M56",
+      "id": "1372"
+    },
+    {
+      "model": "Tramp",
+      "id": "1386"
+    },
+    {
+      "model": "Transport",
+      "id": "1392"
+    },
+    {
+      "model": "FP50",
+      "id": "1450"
+    },
+    {
+      "model": "HS-60",
+      "id": "1509"
+    },
+    {
+      "model": "VA-25",
+      "id": "1519"
+    },
+    {
+      "model": "TS49",
+      "id": "1542"
+    },
+    {
+      "model": "Super Sport",
+      "id": "1546"
+    },
+    {
+      "model": "MK 4 S",
+      "id": "1555"
+    }
+  ],
+  "Benelli": [
+    {
+      "model": "G2",
+      "id": "24"
+    },
+    {
+      "model": "Pantera",
+      "id": "25"
+    },
+    {
+      "model": "Maserati",
+      "id": "26"
+    },
+    {
+      "model": "Blazar",
+      "id": "75"
+    },
+    {
+      "model": "Riverside",
+      "id": "465"
+    },
+    {
+      "model": "Fireball 50",
+      "id": "477"
+    },
+    {
+      "model": "49 Export",
+      "id": "490"
+    },
+    {
+      "model": "Cosmo Blazer",
+      "id": "584"
+    },
+    {
+      "model": "Cosmo Colt",
+      "id": "585"
+    },
+    {
+      "model": "Gentleman-2",
+      "id": "586"
+    },
+    {
+      "model": "Magnum 5V",
+      "id": "587"
+    },
+    {
+      "model": "Magnum 6V",
+      "id": "588"
+    },
+    {
+      "model": "Caddy",
+      "id": "589"
+    },
+    {
+      "model": "Motorella",
+      "id": "590"
+    },
+    {
+      "model": "Cross",
+      "id": "591"
+    },
+    {
+      "model": "Turismo",
+      "id": "592"
+    },
+    {
+      "model": "Sprint",
+      "id": "593"
+    },
+    {
+      "model": "3VK",
+      "id": "594"
+    },
+    {
+      "model": "FA",
+      "id": "595"
+    }
+  ],
+  "Berini": [
+    {
+      "model": "M21",
+      "id": "531"
+    },
+    {
+      "model": "M13",
+      "id": "1203"
+    },
+    {
+      "model": "M19",
+      "id": "1206"
+    },
+    {
+      "model": "M31",
+      "id": "1287"
+    },
+    {
+      "model": "M23",
+      "id": "1288"
+    },
+    {
+      "model": "Eko",
+      "id": "1321"
+    },
+    {
+      "model": "F55",
+      "id": "1338"
+    },
+    {
+      "model": "Berinette",
+      "id": "1347"
+    },
+    {
+      "model": "Miniped",
+      "id": "1357"
+    },
+    {
+      "model": "M48",
+      "id": "1364"
+    },
+    {
+      "model": "Corona",
+      "id": "1369"
+    },
+    {
+      "model": "M35",
+      "id": "1419"
+    },
+    {
+      "model": "Jeunesse",
+      "id": "1445"
+    },
+    {
+      "model": "M21 Sport",
+      "id": "1455"
+    }
+  ],
+  "Bermuda": [
+    {
+      "model": "147F",
+      "id": "76"
+    },
+    {
+      "model": "147FA",
+      "id": "77"
+    },
+    {
+      "model": "Flandria",
+      "id": "372"
+    },
+    {
+      "model": "Hampton 147FA",
+      "id": "596"
+    },
+    {
+      "model": "Pembroke 147AFA",
+      "id": "597"
+    },
+    {
+      "model": "Somerset 147FVA",
+      "id": "598"
+    }
+  ],
+  "Beta": [
+    {
+      "model": "Alpha",
+      "id": "599"
+    },
+    {
+      "model": "Standard",
+      "id": "600"
+    },
+    {
+      "model": "Deluxe",
+      "id": "601"
+    },
+    {
+      "model": "SL5",
+      "id": "602"
+    },
+    {
+      "model": "Sport",
+      "id": "1120"
+    },
+    {
+      "model": "Camoscio",
+      "id": "1198"
+    },
+    {
+      "model": "Tour",
+      "id": "1408"
+    }
+  ],
+  "Bianchi": [
+    {
+      "model": "Snark Eagle Deluxe",
+      "id": "206"
+    },
+    {
+      "model": "Snark Eagle Standard",
+      "id": "207"
+    },
+    {
+      "model": "Bianchimatic",
+      "id": "208"
+    },
+    {
+      "model": "Snark Satelite",
+      "id": "209"
+    },
+    {
+      "model": "Snark Stardust",
+      "id": "210"
+    },
+    {
+      "model": "Laser",
+      "id": "966"
+    },
+    {
+      "model": "Snark",
+      "id": "1010"
+    },
+    {
+      "model": "Aquilotto",
+      "id": "1266"
+    },
+    {
+      "model": "Falco",
+      "id": "1529"
+    }
+  ],
+  "Bicimoto": [
+    {
+      "model": "Pumita",
+      "id": "1592"
+    }
+  ],
+  "Bridgestone": [
+    {
+      "model": "Surfrider",
+      "id": "967"
+    },
+    {
+      "model": "7",
+      "id": "1550"
+    }
+  ],
+  "Bumble Bike": [
+    {
+      "model": "Bike Motor (Roper)",
+      "id": "603"
+    }
+  ],
+  "Carabela": [
+    {
+      "model": "Carrera",
+      "id": "1"
+    },
+    {
+      "model": "Moto-Matic Deluxe",
+      "id": "2"
+    },
+    {
+      "model": "Sport",
+      "id": "3"
+    },
+    {
+      "model": "Delux",
+      "id": "4"
+    },
+    {
+      "model": "Super Sport",
+      "id": "9"
+    },
+    {
+      "model": "Moto-Pony 60",
+      "id": "74"
+    },
+    {
+      "model": "Sport Deluxe",
+      "id": "607"
+    },
+    {
+      "model": "Moto-Matic",
+      "id": "608"
+    },
+    {
+      "model": "Moto-Pedal",
+      "id": "609"
+    }
+  ],
+  "Carnielli": [
+    {
+      "model": "Moto-G",
+      "id": "968"
+    }
+  ],
+  "Casal": [
+    {
+      "model": "K-177",
+      "id": "27"
+    },
+    {
+      "model": "K-168",
+      "id": "28"
+    },
+    {
+      "model": "K-196",
+      "id": "29"
+    },
+    {
+      "model": "K-188",
+      "id": "610"
+    },
+    {
+      "model": "Boss",
+      "id": "611"
+    },
+    {
+      "model": "K-190",
+      "id": "1220"
+    },
+    {
+      "model": "K-184",
+      "id": "1505"
+    }
+  ],
+  "Cayuna": [
+    {
+      "model": "Scorpion",
+      "id": "969"
+    }
+  ],
+  "Cazenave": [
+    {
+      "model": "421",
+      "id": "1500"
+    }
+  ],
+  "Cimatti": [
+    {
+      "model": "City Bike",
+      "id": "30"
+    },
+    {
+      "model": "Town Bike",
+      "id": "31"
+    },
+    {
+      "model": "Twin Sport",
+      "id": "32"
+    },
+    {
+      "model": "86XL Radial 4M",
+      "id": "33"
+    },
+    {
+      "model": "Piper V1 KS Deluxe",
+      "id": "34"
+    },
+    {
+      "model": "Kaiman Super 6m Radial X21",
+      "id": "35"
+    },
+    {
+      "model": "Bat Baby",
+      "id": "180"
+    },
+    {
+      "model": "Boy",
+      "id": "181"
+    },
+    {
+      "model": "Bob Cat",
+      "id": "182"
+    },
+    {
+      "model": "4M",
+      "id": "183"
+    },
+    {
+      "model": "C50",
+      "id": "184"
+    },
+    {
+      "model": "Chic",
+      "id": "185"
+    },
+    {
+      "model": "Gran Prix XL",
+      "id": "612"
+    },
+    {
+      "model": "Express",
+      "id": "1031"
+    }
+  ],
+  "Clinton": [
+    {
+      "model": "50-A",
+      "id": "36"
+    }
+  ],
+  "Columbia": [
+    {
+      "model": "Commuter 2250",
+      "id": "5"
+    },
+    {
+      "model": "Commuter 2240",
+      "id": "6"
+    },
+    {
+      "model": "Commuter 2220",
+      "id": "7"
+    },
+    {
+      "model": "Medallion 2280",
+      "id": "8"
+    },
+    {
+      "model": "Imperial",
+      "id": "78"
+    },
+    {
+      "model": "Medallion 2271",
+      "id": "79"
+    },
+    {
+      "model": "Mediallion 2281",
+      "id": "80"
+    },
+    {
+      "model": "57062",
+      "id": "81"
+    },
+    {
+      "model": "2251",
+      "id": "82"
+    },
+    {
+      "model": "2241",
+      "id": "83"
+    },
+    {
+      "model": "Motrek",
+      "id": "84"
+    },
+    {
+      "model": "Western Flyer",
+      "id": "85"
+    },
+    {
+      "model": "Commuter",
+      "id": "373"
+    },
+    {
+      "model": "Traveller I",
+      "id": "613"
+    },
+    {
+      "model": "Commuter I",
+      "id": "614"
+    },
+    {
+      "model": "Open Road",
+      "id": "1437"
+    }
+  ],
+  "Concord": [
+    {
+      "model": "XKE",
+      "id": "464"
+    },
+    {
+      "model": "XKE20",
+      "id": "615"
+    },
+    {
+      "model": "XKE25",
+      "id": "616"
+    },
+    {
+      "model": "XTC",
+      "id": "1032"
+    },
+    {
+      "model": "Invader",
+      "id": "1107"
+    },
+    {
+      "model": "Shadow",
+      "id": "1207"
+    }
+  ],
+  "Condor": [
+    {
+      "model": "729",
+      "id": "225"
+    }
+  ],
+  "Cosmo": [
+    {
+      "model": "Colt I",
+      "id": "40"
+    },
+    {
+      "model": "Colt II",
+      "id": "41"
+    },
+    {
+      "model": "Colt III Reed",
+      "id": "42"
+    },
+    {
+      "model": "Colt III Variator",
+      "id": "43"
+    },
+    {
+      "model": "Blazer",
+      "id": "617"
+    },
+    {
+      "model": "Stinger",
+      "id": "1069"
+    },
+    {
+      "model": "Colt IV",
+      "id": "1211"
+    }
+  ],
+  "Crescent": [
+    {
+      "model": "2000",
+      "id": "553"
+    },
+    {
+      "model": "1151",
+      "id": "1493"
+    },
+    {
+      "model": "1269",
+      "id": "1591"
+    }
+  ],
+  "Cuyler": [
+    {
+      "model": "C-1a",
+      "id": "44"
+    },
+    {
+      "model": "Get-Around C-1",
+      "id": "618"
+    }
+  ],
+  "Cyrus": [
+    {
+      "model": "Carrier",
+      "id": "1290"
+    },
+    {
+      "model": "Cyriette",
+      "id": "1326"
+    },
+    {
+      "model": "Transporter",
+      "id": "1328"
+    },
+    {
+      "model": "Speciaal Sport",
+      "id": "1436"
+    },
+    {
+      "model": "Cyrusette",
+      "id": "1484"
+    }
+  ],
+  "DBS": [
+    {
+      "model": "Saxonette",
+      "id": "1541"
+    },
+    {
+      "model": "Sport",
+      "id": "1585"
+    }
+  ],
+  "Delta": [
+    {
+      "model": "RMR-24",
+      "id": "466"
+    }
+  ],
+  "Demm": [
+    {
+      "model": "Smily",
+      "id": "280"
+    },
+    {
+      "model": "Dove",
+      "id": "281"
+    },
+    {
+      "model": "Brio",
+      "id": "619"
+    },
+    {
+      "model": "Joy",
+      "id": "620"
+    },
+    {
+      "model": "Panther",
+      "id": "621"
+    },
+    {
+      "model": "Condor 4",
+      "id": "622"
+    },
+    {
+      "model": "RG6",
+      "id": "623"
+    },
+    {
+      "model": "Scouts",
+      "id": "1453"
+    },
+    {
+      "model": "Capri",
+      "id": "1454"
+    }
+  ],
+  "Derbi": [
+    {
+      "model": "TT",
+      "id": "45"
+    },
+    {
+      "model": "SL",
+      "id": "46"
+    },
+    {
+      "model": "SLE",
+      "id": "47"
+    },
+    {
+      "model": "C-5 Diablo",
+      "id": "48"
+    },
+    {
+      "model": "Laguna",
+      "id": "49"
+    },
+    {
+      "model": "Laguna Electric Start",
+      "id": "50"
+    },
+    {
+      "model": "C-5 Diablo Electric Start",
+      "id": "51"
+    },
+    {
+      "model": "Laguna Sport",
+      "id": "91"
+    },
+    {
+      "model": "Variant",
+      "id": "443"
+    },
+    {
+      "model": "E",
+      "id": "624"
+    },
+    {
+      "model": "N",
+      "id": "625"
+    },
+    {
+      "model": "Antorcha",
+      "id": "626"
+    },
+    {
+      "model": "Antorcha Especial",
+      "id": "627"
+    },
+    {
+      "model": "Campeona",
+      "id": "628"
+    },
+    {
+      "model": "Tricampeona",
+      "id": "629"
+    },
+    {
+      "model": "Olimpica",
+      "id": "630"
+    },
+    {
+      "model": "Montreal 4V",
+      "id": "631"
+    },
+    {
+      "model": "Cross",
+      "id": "632"
+    },
+    {
+      "model": "Cross Diablo",
+      "id": "633"
+    },
+    {
+      "model": "Diablo Super",
+      "id": "634"
+    },
+    {
+      "model": "GT4V",
+      "id": "635"
+    },
+    {
+      "model": "GTS4V",
+      "id": "636"
+    },
+    {
+      "model": "Revolution GS",
+      "id": "970"
+    },
+    {
+      "model": "Revolution",
+      "id": "971"
+    },
+    {
+      "model": "Variant Red Bullet",
+      "id": "972"
+    },
+    {
+      "model": "Variant Courier",
+      "id": "973"
+    },
+    {
+      "model": "Variant Sport R",
+      "id": "974"
+    },
+    {
+      "model": "Variant Box",
+      "id": "975"
+    },
+    {
+      "model": "DS50",
+      "id": "1070"
+    },
+    {
+      "model": "RD-50",
+      "id": "1563"
+    }
+  ],
+  "Dialex": [
+    {
+      "model": "E-Z Rider",
+      "id": "52"
+    }
+  ],
+  "DiBlasi": [
+    {
+      "model": "R7",
+      "id": "1244"
+    },
+    {
+      "model": "R2",
+      "id": "1251"
+    }
+  ],
+  "DKW-Zweirad Union": [
+    {
+      "model": "Hummel",
+      "id": "437"
+    },
+    {
+      "model": "Hummel Super",
+      "id": "482"
+    },
+    {
+      "model": "Hummel 3 Gang",
+      "id": "483"
+    },
+    {
+      "model": "Hummel 2 Gang",
+      "id": "484"
+    },
+    {
+      "model": "Model PI",
+      "id": "637"
+    },
+    {
+      "model": "111 BJ",
+      "id": "1077"
+    },
+    {
+      "model": "503",
+      "id": "1508"
+    }
+  ],
+  "Ducati": [
+    {
+      "model": "Falcon 50",
+      "id": "442"
+    },
+    {
+      "model": "55e",
+      "id": "463"
+    },
+    {
+      "model": "Mini 3",
+      "id": "638"
+    },
+    {
+      "model": "50 Senda",
+      "id": "639"
+    },
+    {
+      "model": "50 Pronto",
+      "id": "640"
+    },
+    {
+      "model": "Brisk",
+      "id": "1076"
+    },
+    {
+      "model": "Rolly",
+      "id": "1384"
+    }
+  ],
+  "Ducson": [
+    {
+      "model": "S9",
+      "id": "641"
+    },
+    {
+      "model": "S15",
+      "id": "642"
+    },
+    {
+      "model": "S20",
+      "id": "643"
+    }
+  ],
+  "Eagle": [
+    {
+      "model": "1",
+      "id": "92"
+    },
+    {
+      "model": "2",
+      "id": "93"
+    },
+    {
+      "model": "3",
+      "id": "94"
+    }
+  ],
+  "Eysink": [
+    {
+      "model": "Credette",
+      "id": "532"
+    },
+    {
+      "model": "Mini 2",
+      "id": "1263"
+    },
+    {
+      "model": "Sunny",
+      "id": "1395"
+    },
+    {
+      "model": "Record",
+      "id": "1413"
+    },
+    {
+      "model": "Kampioen",
+      "id": "1414"
+    },
+    {
+      "model": "Mini 1",
+      "id": "1461"
+    }
+  ],
+  "Fantic Motor Concord": [
+    {
+      "model": "Invader",
+      "id": "37"
+    },
+    {
+      "model": "Freedom",
+      "id": "38"
+    },
+    {
+      "model": "Shadow",
+      "id": "39"
+    },
+    {
+      "model": "XKE",
+      "id": "86"
+    },
+    {
+      "model": "Blazar I",
+      "id": "87"
+    },
+    {
+      "model": "Blazar II",
+      "id": "88"
+    },
+    {
+      "model": "Colt I",
+      "id": "89"
+    },
+    {
+      "model": "Colt II",
+      "id": "90"
+    },
+    {
+      "model": "Chopper 50",
+      "id": "435"
+    },
+    {
+      "model": "Issimo",
+      "id": "644"
+    },
+    {
+      "model": "Concord KE20",
+      "id": "645"
+    },
+    {
+      "model": "Concord 25",
+      "id": "646"
+    },
+    {
+      "model": "Concord 30",
+      "id": "647"
+    },
+    {
+      "model": "TX300",
+      "id": "648"
+    },
+    {
+      "model": "Lei",
+      "id": "649"
+    },
+    {
+      "model": "Super Lei",
+      "id": "650"
+    },
+    {
+      "model": "Super T",
+      "id": "1074"
+    },
+    {
+      "model": "Broncco",
+      "id": "1150"
+    }
+  ],
+  "Flandria": [
+    {
+      "model": "101",
+      "id": "95"
+    },
+    {
+      "model": "102",
+      "id": "96"
+    },
+    {
+      "model": "104",
+      "id": "651"
+    },
+    {
+      "model": "Monomatix",
+      "id": "652"
+    },
+    {
+      "model": "4.3CV",
+      "id": "653"
+    },
+    {
+      "model": "5CV",
+      "id": "654"
+    },
+    {
+      "model": "Apollo AF",
+      "id": "1085"
+    },
+    {
+      "model": "Apollo AF-A",
+      "id": "1088"
+    },
+    {
+      "model": "SP 547",
+      "id": "1114"
+    },
+    {
+      "model": "SP 237",
+      "id": "1115"
+    },
+    {
+      "model": "SP 537",
+      "id": "1116"
+    },
+    {
+      "model": "SP 337",
+      "id": "1117"
+    },
+    {
+      "model": "SP 527",
+      "id": "1118"
+    },
+    {
+      "model": "Bermuda",
+      "id": "1123"
+    },
+    {
+      "model": "SP 747",
+      "id": "1197"
+    },
+    {
+      "model": "Imola4",
+      "id": "1269"
+    },
+    {
+      "model": "Kingline",
+      "id": "1333"
+    },
+    {
+      "model": "Record",
+      "id": "1336"
+    },
+    {
+      "model": "Commet",
+      "id": "1354"
+    },
+    {
+      "model": "Anker Laura",
+      "id": "1383"
+    }
+  ],
+  "Flying Dutchman": [
+    {
+      "model": "KML-40",
+      "id": "655"
+    },
+    {
+      "model": "DeLuxe",
+      "id": "656"
+    },
+    {
+      "model": "Buddy",
+      "id": "657"
+    },
+    {
+      "model": "Lucky",
+      "id": "658"
+    }
+  ],
+  "Fongers": [
+    {
+      "model": "Tandem",
+      "id": "1394"
+    }
+  ],
+  "Fox": [
+    {
+      "model": "Sundowner",
+      "id": "659"
+    }
+  ],
+  "Foxi": [
+    {
+      "model": "GT Sport",
+      "id": "433"
+    },
+    {
+      "model": "Amigo",
+      "id": "660"
+    },
+    {
+      "model": "S",
+      "id": "661"
+    },
+    {
+      "model": "Baron",
+      "id": "662"
+    },
+    {
+      "model": "GT",
+      "id": "663"
+    },
+    {
+      "model": "GT Deluxe",
+      "id": "664"
+    },
+    {
+      "model": "Red Foxi",
+      "id": "665"
+    },
+    {
+      "model": "Silver Foxi",
+      "id": "666"
+    },
+    {
+      "model": "Sport",
+      "id": "667"
+    },
+    {
+      "model": "Super Sport",
+      "id": "668"
+    },
+    {
+      "model": "Deluxe",
+      "id": "669"
+    },
+    {
+      "model": "Salsburg",
+      "id": "670"
+    }
+  ],
+  "Fram": [
+    {
+      "model": "NR50",
+      "id": "1311"
+    },
+    {
+      "model": "NR51",
+      "id": "1312"
+    },
+    {
+      "model": "NR52",
+      "id": "1313"
+    },
+    {
+      "model": "NR65",
+      "id": "1314"
+    },
+    {
+      "model": "NR66",
+      "id": "1315"
+    }
+  ],
+  "Francis-Barnett": [
+    {
+      "model": "J50 Powerbike",
+      "id": "1158"
+    }
+  ],
+  "Fuki Planning": [
+    {
+      "model": "LA-2",
+      "id": "1582"
+    },
+    {
+      "model": "FK310",
+      "id": "1583"
+    }
+  ],
+  "Gadabout": [
+    {
+      "model": "MK IV",
+      "id": "1086"
+    },
+    {
+      "model": "Deluxe 3",
+      "id": "1087"
+    }
+  ],
+  "Garelli": [
+    {
+      "model": "Sport",
+      "id": "53"
+    },
+    {
+      "model": "Rally Sport",
+      "id": "54"
+    },
+    {
+      "model": "Rally Sport LTD",
+      "id": "55"
+    },
+    {
+      "model": "Super Sport XL",
+      "id": "56"
+    },
+    {
+      "model": "Super Sport XL LTD",
+      "id": "57"
+    },
+    {
+      "model": "Basic",
+      "id": "97"
+    },
+    {
+      "model": "Tiger Cross",
+      "id": "351"
+    },
+    {
+      "model": "Rally SL",
+      "id": "352"
+    },
+    {
+      "model": "Gran Sport",
+      "id": "353"
+    },
+    {
+      "model": "Special GT",
+      "id": "354"
+    },
+    {
+      "model": "Bonanza",
+      "id": "671"
+    },
+    {
+      "model": "Mokik",
+      "id": "672"
+    },
+    {
+      "model": "Katia",
+      "id": "673"
+    },
+    {
+      "model": "Standard",
+      "id": "674"
+    },
+    {
+      "model": "Deluxe",
+      "id": "675"
+    },
+    {
+      "model": "Cicione Matic",
+      "id": "676"
+    },
+    {
+      "model": "Noi Lusso",
+      "id": "677"
+    },
+    {
+      "model": "Noi SL",
+      "id": "678"
+    },
+    {
+      "model": "Cicione 5V",
+      "id": "679"
+    },
+    {
+      "model": "Eureka Sport",
+      "id": "680"
+    },
+    {
+      "model": "Eureka",
+      "id": "681"
+    },
+    {
+      "model": "Gran",
+      "id": "682"
+    },
+    {
+      "model": "Super Sport",
+      "id": "683"
+    },
+    {
+      "model": "RGS50",
+      "id": "684"
+    },
+    {
+      "model": "KL505V",
+      "id": "685"
+    },
+    {
+      "model": "Gran Turismo",
+      "id": "686"
+    },
+    {
+      "model": "Rekord KL100E5V",
+      "id": "687"
+    },
+    {
+      "model": "Eureka Flex",
+      "id": "688"
+    },
+    {
+      "model": "Eureka Matic",
+      "id": "689"
+    },
+    {
+      "model": "Eureka K",
+      "id": "690"
+    },
+    {
+      "model": "Eureka M",
+      "id": "691"
+    },
+    {
+      "model": "Mini 25",
+      "id": "692"
+    },
+    {
+      "model": "VIP 4V",
+      "id": "693"
+    },
+    {
+      "model": "VIP 3V",
+      "id": "694"
+    },
+    {
+      "model": "VIP 2V",
+      "id": "695"
+    },
+    {
+      "model": "VIP 1V",
+      "id": "696"
+    },
+    {
+      "model": "Monza GT",
+      "id": "976"
+    },
+    {
+      "model": "Rally",
+      "id": "977"
+    },
+    {
+      "model": "Cross",
+      "id": "1075"
+    },
+    {
+      "model": "Baby Moskito",
+      "id": "1078"
+    },
+    {
+      "model": "Sport 40 S",
+      "id": "1081"
+    },
+    {
+      "model": "Sahel 50",
+      "id": "1092"
+    },
+    {
+      "model": "Gulp",
+      "id": "1093"
+    },
+    {
+      "model": "Junior",
+      "id": "1119"
+    },
+    {
+      "model": "Super Ciclone",
+      "id": "1137"
+    },
+    {
+      "model": "Gary Uno",
+      "id": "1161"
+    },
+    {
+      "model": "Grand Prix 50",
+      "id": "1165"
+    },
+    {
+      "model": "Rekord 50",
+      "id": "1166"
+    },
+    {
+      "model": "Europed Brianza",
+      "id": "1167"
+    },
+    {
+      "model": "Bronco",
+      "id": "1168"
+    },
+    {
+      "model": "Europed",
+      "id": "1169"
+    },
+    {
+      "model": "Mosquito",
+      "id": "1170"
+    },
+    {
+      "model": "Junior Turismo",
+      "id": "1171"
+    },
+    {
+      "model": "Junior Sport",
+      "id": "1172"
+    },
+    {
+      "model": "Motorino",
+      "id": "1173"
+    },
+    {
+      "model": "Katia 25",
+      "id": "1174"
+    },
+    {
+      "model": "Noi Junior Bimatic",
+      "id": "1175"
+    },
+    {
+      "model": "Team Bimatic ES",
+      "id": "1176"
+    },
+    {
+      "model": "Formuno Raid 4V",
+      "id": "1177"
+    },
+    {
+      "model": "Team Matic",
+      "id": "1178"
+    },
+    {
+      "model": "Formuno 4V",
+      "id": "1179"
+    },
+    {
+      "model": "Noi Matic",
+      "id": "1180"
+    },
+    {
+      "model": "Noi TL",
+      "id": "1181"
+    },
+    {
+      "model": "SuperVIP 4V",
+      "id": "1182"
+    },
+    {
+      "model": "Noi Primo",
+      "id": "1183"
+    },
+    {
+      "model": "Gary Due",
+      "id": "1190"
+    },
+    {
+      "model": "Team 3V",
+      "id": "1191"
+    },
+    {
+      "model": "Minibat",
+      "id": "1192"
+    },
+    {
+      "model": "Tiger Junior Cross",
+      "id": "1193"
+    },
+    {
+      "model": "Monza 50",
+      "id": "1194"
+    },
+    {
+      "model": "Bimatic",
+      "id": "1196"
+    },
+    {
+      "model": "Gran Sport LTD",
+      "id": "1452"
+    },
+    {
+      "model": "M50",
+      "id": "1465"
+    }
+  ],
+  "Gazelle": [
+    {
+      "model": "Flyte",
+      "id": "1228"
+    },
+    {
+      "model": "Apollo",
+      "id": "1324"
+    },
+    {
+      "model": "Isabella",
+      "id": "1331"
+    },
+    {
+      "model": "GA50",
+      "id": "1335"
+    },
+    {
+      "model": "Grant",
+      "id": "1358"
+    },
+    {
+      "model": "Tour",
+      "id": "1434"
+    },
+    {
+      "model": "GS50",
+      "id": "1492"
+    }
+  ],
+  "Gemini": [
+    {
+      "model": "Camander",
+      "id": "475"
+    }
+  ],
+  "General": [
+    {
+      "model": "5 Star ST",
+      "id": "59"
+    },
+    {
+      "model": "5 Star",
+      "id": "60"
+    },
+    {
+      "model": "C-2",
+      "id": "61"
+    },
+    {
+      "model": "Limited Edition",
+      "id": "62"
+    },
+    {
+      "model": "Laser",
+      "id": "383"
+    },
+    {
+      "model": "3 Star",
+      "id": "1108"
+    },
+    {
+      "model": "5 Star TE",
+      "id": "1635"
+    }
+  ],
+  "Germaan": [
+    {
+      "model": "Florence De Luxe",
+      "id": "1441"
+    }
+  ],
+  "Gilera": [
+    {
+      "model": "50 Touring RS",
+      "id": "412"
+    },
+    {
+      "model": "50 Trial RS",
+      "id": "413"
+    },
+    {
+      "model": "Enduro",
+      "id": "414"
+    },
+    {
+      "model": "Touring",
+      "id": "415"
+    },
+    {
+      "model": "Trial",
+      "id": "416"
+    },
+    {
+      "model": "E-type",
+      "id": "417"
+    },
+    {
+      "model": "SD",
+      "id": "549"
+    },
+    {
+      "model": "RA",
+      "id": "812"
+    },
+    {
+      "model": "RE",
+      "id": "813"
+    },
+    {
+      "model": "RL",
+      "id": "814"
+    },
+    {
+      "model": "RS",
+      "id": "815"
+    },
+    {
+      "model": "Eco",
+      "id": "1520"
+    }
+  ],
+  "Gimson": [
+    {
+      "model": "Variomatic",
+      "id": "58"
+    },
+    {
+      "model": "Elite",
+      "id": "697"
+    },
+    {
+      "model": "Skipper Trial",
+      "id": "698"
+    },
+    {
+      "model": "Jumper Cross",
+      "id": "699"
+    }
+  ],
+  "Gitane": [
+    {
+      "model": "OKS",
+      "id": "700"
+    },
+    {
+      "model": "Jeans",
+      "id": "701"
+    },
+    {
+      "model": "Cricket",
+      "id": "702"
+    },
+    {
+      "model": "Confort",
+      "id": "703"
+    },
+    {
+      "model": "CL-200",
+      "id": "704"
+    }
+  ],
+  "Glockner": [
+    {
+      "model": "Standard",
+      "id": "1387"
+    }
+  ],
+  "Gloria Intramotor": [
+    {
+      "model": "Blanco",
+      "id": "98"
+    },
+    {
+      "model": "Pinto",
+      "id": "99"
+    },
+    {
+      "model": "Scout",
+      "id": "100"
+    },
+    {
+      "model": "Verona",
+      "id": "471"
+    },
+    {
+      "model": "Dream",
+      "id": "711"
+    },
+    {
+      "model": "Kid",
+      "id": "712"
+    },
+    {
+      "model": "Mini-Kid",
+      "id": "713"
+    }
+  ],
+  "Goebel": [
+    {
+      "model": "Avus Sport",
+      "id": "1154"
+    },
+    {
+      "model": "Grand Sport",
+      "id": "1412"
+    }
+  ],
+  "G\u00f6rike-Diva": [
+    {
+      "model": "Luxus",
+      "id": "462"
+    }
+  ],
+  "Grycner": [
+    {
+      "model": "Floozie",
+      "id": "63"
+    },
+    {
+      "model": "Desert Classic",
+      "id": "64"
+    },
+    {
+      "model": "Palm Springs",
+      "id": "705"
+    },
+    {
+      "model": "LaJolla",
+      "id": "706"
+    }
+  ],
+  "Gulf": [
+    {
+      "model": "Seagull",
+      "id": "707"
+    }
+  ],
+  "Harley Davidson": [
+    {
+      "model": "M-65",
+      "id": "481"
+    },
+    {
+      "model": "M-50",
+      "id": "1489"
+    }
+  ],
+  "Heinkel": [
+    {
+      "model": "Perle",
+      "id": "1390"
+    }
+  ],
+  "Helkama": [
+    {
+      "model": "Hopeasauma",
+      "id": "1424"
+    },
+    {
+      "model": "Tossu",
+      "id": "1425"
+    },
+    {
+      "model": "Sport",
+      "id": "1426"
+    },
+    {
+      "model": "Major S",
+      "id": "1427"
+    },
+    {
+      "model": "AX",
+      "id": "1428"
+    },
+    {
+      "model": "Raisu",
+      "id": "1429"
+    },
+    {
+      "model": "Mini GT",
+      "id": "1537"
+    }
+  ],
+  "Hercules": [
+    {
+      "model": "P-1",
+      "id": "101"
+    },
+    {
+      "model": "M-5",
+      "id": "102"
+    },
+    {
+      "model": "Citybike C-3",
+      "id": "282"
+    },
+    {
+      "model": "M-1",
+      "id": "283"
+    },
+    {
+      "model": "M-2",
+      "id": "284"
+    },
+    {
+      "model": "M-4",
+      "id": "285"
+    },
+    {
+      "model": "Hobbyrider",
+      "id": "286"
+    },
+    {
+      "model": "Accubike E-1",
+      "id": "287"
+    },
+    {
+      "model": "P-3",
+      "id": "288"
+    },
+    {
+      "model": "MP-4",
+      "id": "289"
+    },
+    {
+      "model": "MP-2",
+      "id": "344"
+    },
+    {
+      "model": "5 SL",
+      "id": "345"
+    },
+    {
+      "model": "218",
+      "id": "366"
+    },
+    {
+      "model": "K50",
+      "id": "421"
+    },
+    {
+      "model": "Prima 5",
+      "id": "467"
+    },
+    {
+      "model": "HR-2",
+      "id": "708"
+    },
+    {
+      "model": "504-1A",
+      "id": "709"
+    },
+    {
+      "model": "504-1B",
+      "id": "710"
+    },
+    {
+      "model": "SAXONETTE",
+      "id": "1073"
+    },
+    {
+      "model": "L50",
+      "id": "1079"
+    },
+    {
+      "model": "MX-1",
+      "id": "1082"
+    },
+    {
+      "model": "Prima 4",
+      "id": "1127"
+    },
+    {
+      "model": "Supra 4 Enduro",
+      "id": "1129"
+    },
+    {
+      "model": "220",
+      "id": "1362"
+    },
+    {
+      "model": "Lastboy",
+      "id": "1528"
+    }
+  ],
+  "Hero Honda": [
+    {
+      "model": "Panther",
+      "id": "243"
+    },
+    {
+      "model": "Gizmo",
+      "id": "244"
+    },
+    {
+      "model": "Street 100",
+      "id": "991"
+    }
+  ],
+  "Hero Majestic": [
+    {
+      "model": "Ankur",
+      "id": "114"
+    },
+    {
+      "model": "Pacer",
+      "id": "115"
+    },
+    {
+      "model": "Panther",
+      "id": "116"
+    },
+    {
+      "model": "Gizmo",
+      "id": "1363"
+    }
+  ],
+  "Hero Puch": [
+    {
+      "model": "Turbo Sport",
+      "id": "419"
+    },
+    {
+      "model": "Automatic",
+      "id": "992"
+    }
+  ],
+  "Hervo": [
+    {
+      "model": "Hervo-Matic",
+      "id": "1416"
+    }
+  ],
+  "Hirano": [
+    {
+      "model": "Popet",
+      "id": "1559"
+    }
+  ],
+  "HMW": [
+    {
+      "model": "50SH",
+      "id": "1491"
+    }
+  ],
+  "Honda": [
+    {
+      "model": "PA50",
+      "id": "65"
+    },
+    {
+      "model": "PA50 II",
+      "id": "66"
+    },
+    {
+      "model": "Hobbit",
+      "id": "67"
+    },
+    {
+      "model": "Express II NA50",
+      "id": "192"
+    },
+    {
+      "model": "NC50",
+      "id": "193"
+    },
+    {
+      "model": "PC50",
+      "id": "197"
+    },
+    {
+      "model": "PS50",
+      "id": "198"
+    },
+    {
+      "model": "Z50k1",
+      "id": "199"
+    },
+    {
+      "model": "Z50k2",
+      "id": "200"
+    },
+    {
+      "model": "Minitrail 50",
+      "id": "201"
+    },
+    {
+      "model": "Express SR NX-50M",
+      "id": "203"
+    },
+    {
+      "model": "Express NC50",
+      "id": "213"
+    },
+    {
+      "model": "P50",
+      "id": "214"
+    },
+    {
+      "model": "Spree",
+      "id": "219"
+    },
+    {
+      "model": "MB-8",
+      "id": "220"
+    },
+    {
+      "model": "Urban Express",
+      "id": "221"
+    },
+    {
+      "model": "SS50 M",
+      "id": "294"
+    },
+    {
+      "model": "Gyro",
+      "id": "355"
+    },
+    {
+      "model": "PF50",
+      "id": "356"
+    },
+    {
+      "model": "SH50 City Express",
+      "id": "357"
+    },
+    {
+      "model": "Express",
+      "id": "358"
+    },
+    {
+      "model": "Passport",
+      "id": "359"
+    },
+    {
+      "model": "MB-5",
+      "id": "360"
+    },
+    {
+      "model": "Camino",
+      "id": "361"
+    },
+    {
+      "model": "SS50",
+      "id": "362"
+    },
+    {
+      "model": "ZB50",
+      "id": "363"
+    },
+    {
+      "model": "MT-5",
+      "id": "364"
+    },
+    {
+      "model": "P50",
+      "id": "365"
+    },
+    {
+      "model": "Z50",
+      "id": "394"
+    },
+    {
+      "model": "PA50L",
+      "id": "403"
+    },
+    {
+      "model": "PA50 VL",
+      "id": "404"
+    },
+    {
+      "model": "PA50 DXVL",
+      "id": "405"
+    },
+    {
+      "model": "NU50MC Runaway",
+      "id": "430"
+    },
+    {
+      "model": "Super Cub",
+      "id": "436"
+    },
+    {
+      "model": "CD50",
+      "id": "438"
+    },
+    {
+      "model": "SS50ZE",
+      "id": "439"
+    },
+    {
+      "model": "ST50",
+      "id": "441"
+    },
+    {
+      "model": "CA102",
+      "id": "444"
+    },
+    {
+      "model": "C110 Sport",
+      "id": "551"
+    },
+    {
+      "model": "MT-8",
+      "id": "959"
+    },
+    {
+      "model": "Cub",
+      "id": "978"
+    },
+    {
+      "model": "MT",
+      "id": "979"
+    },
+    {
+      "model": "Melody Deluxe",
+      "id": "980"
+    },
+    {
+      "model": "Melody",
+      "id": "981"
+    },
+    {
+      "model": "Z50J",
+      "id": "982"
+    },
+    {
+      "model": "Amigo",
+      "id": "983"
+    },
+    {
+      "model": "Urban Express NU50",
+      "id": "984"
+    },
+    {
+      "model": "Urban Express Deluxe NU50M",
+      "id": "985"
+    },
+    {
+      "model": "NX50M",
+      "id": "986"
+    },
+    {
+      "model": "PXR50",
+      "id": "1128"
+    },
+    {
+      "model": "Novio",
+      "id": "1133"
+    },
+    {
+      "model": "PX50",
+      "id": "1153"
+    },
+    {
+      "model": "CA100",
+      "id": "1216"
+    },
+    {
+      "model": "CM91",
+      "id": "1352"
+    },
+    {
+      "model": "P25",
+      "id": "1469"
+    },
+    {
+      "model": "C50",
+      "id": "1564"
+    },
+    {
+      "model": "NC50I",
+      "id": "1565"
+    },
+    {
+      "model": "PS50",
+      "id": "1566"
+    },
+    {
+      "model": "NF75",
+      "id": "1576"
+    },
+    {
+      "model": "PM50 Canguro",
+      "id": "1600"
+    },
+    {
+      "model": "CB50",
+      "id": "1604"
+    }
+  ],
+  "Indian": [
+    {
+      "model": "AMI-50 Chief",
+      "id": "68"
+    },
+    {
+      "model": "Mini-Mini Bambino",
+      "id": "370"
+    },
+    {
+      "model": "MM5A",
+      "id": "1538"
+    },
+    {
+      "model": "MX-74",
+      "id": "1615"
+    }
+  ],
+  "Indigan": [
+    {
+      "model": "Trail",
+      "id": "1638"
+    }
+  ],
+  "Italjet": [
+    {
+      "model": "Pack-A-Away",
+      "id": "69"
+    },
+    {
+      "model": "KIT KAT 50",
+      "id": "251"
+    },
+    {
+      "model": "Pack 2 50",
+      "id": "252"
+    },
+    {
+      "model": "S5",
+      "id": "714"
+    },
+    {
+      "model": "KT",
+      "id": "715"
+    },
+    {
+      "model": "K2",
+      "id": "716"
+    },
+    {
+      "model": "P4",
+      "id": "717"
+    },
+    {
+      "model": "P6",
+      "id": "718"
+    },
+    {
+      "model": "Velocifero",
+      "id": "987"
+    }
+  ],
+  "Italtelai": [
+    {
+      "model": "Pacer",
+      "id": "1442"
+    }
+  ],
+  "Italvelo": [
+    {
+      "model": "I-78",
+      "id": "719"
+    },
+    {
+      "model": "I-80",
+      "id": "720"
+    }
+  ],
+  "ITOM": [
+    {
+      "model": "Junior",
+      "id": "1131"
+    },
+    {
+      "model": "Sport",
+      "id": "1294"
+    }
+  ],
+  "J.C. Penney": [
+    {
+      "model": "Pinto",
+      "id": "103"
+    },
+    {
+      "model": "Swinger",
+      "id": "104"
+    },
+    {
+      "model": "Pinto 2",
+      "id": "1036"
+    },
+    {
+      "model": "Swinger 2",
+      "id": "1037"
+    }
+  ],
+  "James": [
+    {
+      "model": "Superlux",
+      "id": "1532"
+    }
+  ],
+  "Jawa": [
+    {
+      "model": "X20",
+      "id": "70"
+    },
+    {
+      "model": "X25",
+      "id": "71"
+    },
+    {
+      "model": "210 Sport",
+      "id": "72"
+    },
+    {
+      "model": "Babetta",
+      "id": "73"
+    },
+    {
+      "model": "120 Automatic",
+      "id": "105"
+    },
+    {
+      "model": "120",
+      "id": "106"
+    },
+    {
+      "model": "210",
+      "id": "107"
+    },
+    {
+      "model": "Transistor 40",
+      "id": "108"
+    },
+    {
+      "model": "Supreme 2",
+      "id": "109"
+    },
+    {
+      "model": "207",
+      "id": "390"
+    },
+    {
+      "model": "311C",
+      "id": "391"
+    },
+    {
+      "model": "311DL",
+      "id": "392"
+    },
+    {
+      "model": "300DLX",
+      "id": "393"
+    },
+    {
+      "model": "225",
+      "id": "395"
+    },
+    {
+      "model": "City Bee",
+      "id": "721"
+    },
+    {
+      "model": "Deluxe",
+      "id": "722"
+    },
+    {
+      "model": "DL",
+      "id": "723"
+    },
+    {
+      "model": "Supreme 3",
+      "id": "1033"
+    },
+    {
+      "model": "Supreme",
+      "id": "1034"
+    },
+    {
+      "model": "50",
+      "id": "1111"
+    },
+    {
+      "model": "X30",
+      "id": "1113"
+    },
+    {
+      "model": "05",
+      "id": "1132"
+    },
+    {
+      "model": "Robot",
+      "id": "1458"
+    },
+    {
+      "model": "550",
+      "id": "1485"
+    },
+    {
+      "model": "Stadion",
+      "id": "1594"
+    },
+    {
+      "model": "Golden Sport",
+      "id": "1601"
+    }
+  ],
+  "Jialing": [
+    {
+      "model": "NP50T-M",
+      "id": "1222"
+    },
+    {
+      "model": "NP50-GL",
+      "id": "1295"
+    },
+    {
+      "model": "CJ50F",
+      "id": "1299"
+    },
+    {
+      "model": "JH50",
+      "id": "1300"
+    },
+    {
+      "model": "TN35L",
+      "id": "1301"
+    },
+    {
+      "model": "JL36PL",
+      "id": "1302"
+    },
+    {
+      "model": "JL36PL-A",
+      "id": "1303"
+    },
+    {
+      "model": "CJ50F",
+      "id": "1304"
+    },
+    {
+      "model": "CJ50ZC",
+      "id": "1305"
+    },
+    {
+      "model": "NP Passport",
+      "id": "1371"
+    },
+    {
+      "model": "NP50-MA",
+      "id": "1373"
+    },
+    {
+      "model": "NP50-GS",
+      "id": "1375"
+    }
+  ],
+  "Juili": [
+    {
+      "model": "Honey 50",
+      "id": "1471"
+    }
+  ],
+  "Kanuni": [
+    {
+      "model": "Power GXL",
+      "id": "1501"
+    },
+    {
+      "model": "Turbo Sport GXL",
+      "id": "1510"
+    }
+  ],
+  "Karl Amelung": [
+    {
+      "model": "Flides",
+      "id": "1540"
+    }
+  ],
+  "Kinetic": [
+    {
+      "model": "Safari V2",
+      "id": "236"
+    },
+    {
+      "model": "Luna",
+      "id": "237"
+    },
+    {
+      "model": "TFR",
+      "id": "387"
+    },
+    {
+      "model": "Magnum",
+      "id": "431"
+    },
+    {
+      "model": "Luna Super",
+      "id": "988"
+    },
+    {
+      "model": "Luna TFR",
+      "id": "989"
+    },
+    {
+      "model": "K4 100",
+      "id": "990"
+    }
+  ],
+  "Kingda": [
+    {
+      "model": "Sport",
+      "id": "1479"
+    }
+  ],
+  "KKM": [
+    {
+      "model": "Mopet",
+      "id": "110"
+    }
+  ],
+  "Komar": [
+    {
+      "model": "MR-232",
+      "id": "1044"
+    },
+    {
+      "model": "MR-S-1",
+      "id": "1164"
+    }
+  ],
+  "Kreidler": [
+    {
+      "model": "MP-19",
+      "id": "112"
+    },
+    {
+      "model": "Florett",
+      "id": "196"
+    },
+    {
+      "model": "Flory Deluxe",
+      "id": "223"
+    },
+    {
+      "model": "Flory 12",
+      "id": "724"
+    },
+    {
+      "model": "Flory 13",
+      "id": "725"
+    },
+    {
+      "model": "Florett TM",
+      "id": "726"
+    },
+    {
+      "model": "Florett RS",
+      "id": "727"
+    },
+    {
+      "model": "Florett RSH",
+      "id": "728"
+    },
+    {
+      "model": "RS Cockpit",
+      "id": "729"
+    },
+    {
+      "model": "MF2",
+      "id": "730"
+    },
+    {
+      "model": "MF2CL",
+      "id": "731"
+    },
+    {
+      "model": "MG2C",
+      "id": "732"
+    },
+    {
+      "model": "MP-9",
+      "id": "733"
+    },
+    {
+      "model": "MP-2",
+      "id": "735"
+    },
+    {
+      "model": "MP-3",
+      "id": "736"
+    },
+    {
+      "model": "Florett RMC",
+      "id": "1080"
+    },
+    {
+      "model": "Flory 23",
+      "id": "1106"
+    },
+    {
+      "model": "MF4",
+      "id": "1130"
+    },
+    {
+      "model": "Junior",
+      "id": "1344"
+    },
+    {
+      "model": "Flott",
+      "id": "1388"
+    }
+  ],
+  "KTM": [
+    {
+      "model": "Foxi",
+      "id": "1449"
+    },
+    {
+      "model": "Comet Racer",
+      "id": "1496"
+    },
+    {
+      "model": "Comet Cross",
+      "id": "1533"
+    }
+  ],
+  "Kymco": [
+    {
+      "model": "People 50",
+      "id": "993"
+    },
+    {
+      "model": "ZX-50",
+      "id": "1094"
+    },
+    {
+      "model": "Cobra",
+      "id": "1095"
+    },
+    {
+      "model": "Cobra Cross",
+      "id": "1096"
+    },
+    {
+      "model": "Yup 50",
+      "id": "1097"
+    },
+    {
+      "model": "Filly 50",
+      "id": "1098"
+    },
+    {
+      "model": "Super 9",
+      "id": "1099"
+    },
+    {
+      "model": "TSR 50",
+      "id": "1101"
+    },
+    {
+      "model": "Agility",
+      "id": "1586"
+    }
+  ],
+  "Lambretta": [
+    {
+      "model": "Puma Cross",
+      "id": "111"
+    },
+    {
+      "model": "Eagle",
+      "id": "113"
+    },
+    {
+      "model": "A 50",
+      "id": "434"
+    },
+    {
+      "model": "Puma",
+      "id": "734"
+    },
+    {
+      "model": "48",
+      "id": "1062"
+    },
+    {
+      "model": "Mark 2",
+      "id": "1187"
+    }
+  ],
+  "Lazer": [
+    {
+      "model": "Sport 50",
+      "id": "737"
+    },
+    {
+      "model": "Sport 50 ST",
+      "id": "738"
+    },
+    {
+      "model": "Riviera",
+      "id": "739"
+    },
+    {
+      "model": "Sprint 50",
+      "id": "1160"
+    }
+  ],
+  "Legnano": [
+    {
+      "model": "Super Sport",
+      "id": "1562"
+    },
+    {
+      "model": "Mini Mars",
+      "id": "1571"
+    }
+  ],
+  "Lem": [
+    {
+      "model": "Practical",
+      "id": "740"
+    }
+  ],
+  "Locomotief": [
+    {
+      "model": "Hifi",
+      "id": "1396"
+    },
+    {
+      "model": "Modesto",
+      "id": "1397"
+    },
+    {
+      "model": "B7",
+      "id": "1398"
+    },
+    {
+      "model": "Loco-matic",
+      "id": "1399"
+    },
+    {
+      "model": "Kieviet",
+      "id": "1400"
+    },
+    {
+      "model": "M23",
+      "id": "1422"
+    },
+    {
+      "model": "B5",
+      "id": "1488"
+    }
+  ],
+  "Macal": [
+    {
+      "model": "Chip",
+      "id": "1514"
+    }
+  ],
+  "Magneet": [
+    {
+      "model": "Commodore",
+      "id": "994"
+    },
+    {
+      "model": "Globemaster",
+      "id": "1185"
+    },
+    {
+      "model": "Globemaster Deluxe",
+      "id": "1332"
+    },
+    {
+      "model": "Sprintmaster",
+      "id": "1359"
+    },
+    {
+      "model": "Luxe",
+      "id": "1360"
+    },
+    {
+      "model": "Thunderbird",
+      "id": "1420"
+    },
+    {
+      "model": "Cheetah",
+      "id": "1503"
+    }
+  ],
+  "Maico": [
+    {
+      "model": "MPI",
+      "id": "741"
+    }
+  ],
+  "Malaguti": [
+    {
+      "model": "Commuter 20",
+      "id": "117"
+    },
+    {
+      "model": "Roxi",
+      "id": "118"
+    },
+    {
+      "model": "Tiger",
+      "id": "119"
+    },
+    {
+      "model": "Olympique",
+      "id": "461"
+    },
+    {
+      "model": "Commuter",
+      "id": "742"
+    },
+    {
+      "model": "Commuter 2",
+      "id": "743"
+    },
+    {
+      "model": "Quattrotto",
+      "id": "744"
+    },
+    {
+      "model": "Europino",
+      "id": "1543"
+    },
+    {
+      "model": "Motorik",
+      "id": "1544"
+    },
+    {
+      "model": "Quattroto Mono",
+      "id": "1545"
+    },
+    {
+      "model": "Pilot",
+      "id": "1598"
+    }
+  ],
+  "Malanca": [
+    {
+      "model": "Tigrotto",
+      "id": "478"
+    },
+    {
+      "model": "Zeta",
+      "id": "745"
+    },
+    {
+      "model": "Minizeta",
+      "id": "746"
+    },
+    {
+      "model": "Bibi",
+      "id": "747"
+    },
+    {
+      "model": "Roxi",
+      "id": "748"
+    },
+    {
+      "model": "Duplimatic",
+      "id": "749"
+    },
+    {
+      "model": "Mascotte B",
+      "id": "750"
+    },
+    {
+      "model": "Jolly B",
+      "id": "751"
+    },
+    {
+      "model": "Jolly 3M",
+      "id": "752"
+    },
+    {
+      "model": "Turismo Turbo",
+      "id": "753"
+    },
+    {
+      "model": "Leoncino",
+      "id": "754"
+    },
+    {
+      "model": "Cross",
+      "id": "755"
+    },
+    {
+      "model": "Big",
+      "id": "756"
+    },
+    {
+      "model": "Competizione",
+      "id": "757"
+    },
+    {
+      "model": "Testa Rossa",
+      "id": "758"
+    },
+    {
+      "model": "Tigre",
+      "id": "759"
+    },
+    {
+      "model": "Lord",
+      "id": "760"
+    },
+    {
+      "model": "Due PIU",
+      "id": "761"
+    },
+    {
+      "model": "Country Special",
+      "id": "762"
+    }
+  ],
+  "Marina Mobilia": [
+    {
+      "model": "Montomarina",
+      "id": "120"
+    }
+  ],
+  "Maserati": [
+    {
+      "model": "T2\/U",
+      "id": "1410"
+    },
+    {
+      "model": "T2\/D",
+      "id": "1411"
+    }
+  ],
+  "MBK": [
+    {
+      "model": "Club",
+      "id": "535"
+    },
+    {
+      "model": "City Club",
+      "id": "536"
+    },
+    {
+      "model": "Club VR",
+      "id": "537"
+    },
+    {
+      "model": "Club Tex Mex",
+      "id": "538"
+    },
+    {
+      "model": "Club Swing",
+      "id": "539"
+    },
+    {
+      "model": "51 V",
+      "id": "540"
+    },
+    {
+      "model": "Hard Rock",
+      "id": "541"
+    },
+    {
+      "model": "Magnum Racing",
+      "id": "542"
+    },
+    {
+      "model": "Magnum Racing XR",
+      "id": "543"
+    },
+    {
+      "model": "881 U",
+      "id": "544"
+    },
+    {
+      "model": "881 B",
+      "id": "545"
+    },
+    {
+      "model": "881 M",
+      "id": "546"
+    },
+    {
+      "model": "XLimit",
+      "id": "547"
+    },
+    {
+      "model": "XPower",
+      "id": "548"
+    },
+    {
+      "model": "BMX",
+      "id": "1548"
+    }
+  ],
+  "Metrorider": [
+    {
+      "model": "Basic",
+      "id": "1577"
+    }
+  ],
+  "Miele": [
+    {
+      "model": "K-52",
+      "id": "486"
+    },
+    {
+      "model": "K50S",
+      "id": "1350"
+    }
+  ],
+  "Milani": [
+    {
+      "model": "Tris",
+      "id": "1467"
+    }
+  ],
+  "Mobylette": [
+    {
+      "model": "AV32E",
+      "id": "491"
+    },
+    {
+      "model": "AV32M",
+      "id": "492"
+    },
+    {
+      "model": "AV32S",
+      "id": "493"
+    },
+    {
+      "model": "AV33",
+      "id": "494"
+    },
+    {
+      "model": "AV41",
+      "id": "495"
+    },
+    {
+      "model": "AV46",
+      "id": "496"
+    },
+    {
+      "model": "AV43",
+      "id": "497"
+    },
+    {
+      "model": "AV44",
+      "id": "498"
+    },
+    {
+      "model": "AV48",
+      "id": "499"
+    },
+    {
+      "model": "AV49",
+      "id": "500"
+    },
+    {
+      "model": "AV51",
+      "id": "501"
+    },
+    {
+      "model": "AV56",
+      "id": "502"
+    },
+    {
+      "model": "AV54",
+      "id": "503"
+    },
+    {
+      "model": "AV59",
+      "id": "504"
+    },
+    {
+      "model": "AV68",
+      "id": "505"
+    },
+    {
+      "model": "AV76",
+      "id": "506"
+    },
+    {
+      "model": "AV78",
+      "id": "507"
+    },
+    {
+      "model": "AV79",
+      "id": "508"
+    },
+    {
+      "model": "AV85",
+      "id": "509"
+    },
+    {
+      "model": "AV87",
+      "id": "510"
+    },
+    {
+      "model": "AV88",
+      "id": "511"
+    },
+    {
+      "model": "AV89",
+      "id": "512"
+    },
+    {
+      "model": "AV98",
+      "id": "513"
+    },
+    {
+      "model": "AV42",
+      "id": "514"
+    },
+    {
+      "model": "AV98E",
+      "id": "515"
+    },
+    {
+      "model": "AV98SP",
+      "id": "516"
+    },
+    {
+      "model": "AV42M",
+      "id": "517"
+    },
+    {
+      "model": "AV65",
+      "id": "518"
+    },
+    {
+      "model": "AV70",
+      "id": "519"
+    },
+    {
+      "model": "MIP",
+      "id": "520"
+    },
+    {
+      "model": "MIPR",
+      "id": "521"
+    },
+    {
+      "model": "MIPRT",
+      "id": "522"
+    },
+    {
+      "model": "SP50",
+      "id": "523"
+    },
+    {
+      "model": "SP50R",
+      "id": "524"
+    },
+    {
+      "model": "SP93",
+      "id": "525"
+    },
+    {
+      "model": "SP93TT",
+      "id": "526"
+    },
+    {
+      "model": "SP94TJ",
+      "id": "527"
+    },
+    {
+      "model": "SP94TJE",
+      "id": "528"
+    },
+    {
+      "model": "SPTT",
+      "id": "529"
+    },
+    {
+      "model": "SPTTE",
+      "id": "530"
+    },
+    {
+      "model": "D55",
+      "id": "763"
+    },
+    {
+      "model": "D55T",
+      "id": "764"
+    },
+    {
+      "model": "SP95",
+      "id": "765"
+    },
+    {
+      "model": "SP96",
+      "id": "766"
+    },
+    {
+      "model": "AV188",
+      "id": "767"
+    },
+    {
+      "model": "Moby Cross",
+      "id": "768"
+    },
+    {
+      "model": "AV31",
+      "id": "1159"
+    },
+    {
+      "model": "AV55",
+      "id": "1223"
+    },
+    {
+      "model": "AV50",
+      "id": "1262"
+    },
+    {
+      "model": "Moby Club",
+      "id": "1265"
+    },
+    {
+      "model": "Kaptein",
+      "id": "1277"
+    },
+    {
+      "model": "AV3",
+      "id": "1351"
+    },
+    {
+      "model": "AV92",
+      "id": "1431"
+    },
+    {
+      "model": "AV84",
+      "id": "1468"
+    },
+    {
+      "model": "S35",
+      "id": "1477"
+    },
+    {
+      "model": "S35b",
+      "id": "1478"
+    },
+    {
+      "model": "AV37",
+      "id": "1589"
+    }
+  ],
+  "Monark": [
+    {
+      "model": "Scooten",
+      "id": "1155"
+    },
+    {
+      "model": "50ss",
+      "id": "1481"
+    },
+    {
+      "model": "Monarscoot",
+      "id": "1522"
+    }
+  ],
+  "Montesa": [
+    {
+      "model": "Mini",
+      "id": "769"
+    }
+  ],
+  "Montgomery Wards": [
+    {
+      "model": "Riverside Moped",
+      "id": "195"
+    }
+  ],
+  "Mosquito": [
+    {
+      "model": "Baby",
+      "id": "1381"
+    },
+    {
+      "model": "38B",
+      "id": "1567"
+    }
+  ],
+  "Moto Guzzi": [
+    {
+      "model": "Robin",
+      "id": "121"
+    },
+    {
+      "model": "Dingo",
+      "id": "809"
+    },
+    {
+      "model": "Chiu",
+      "id": "810"
+    },
+    {
+      "model": "Magnum",
+      "id": "811"
+    },
+    {
+      "model": "G2",
+      "id": "1226"
+    },
+    {
+      "model": "Trotter",
+      "id": "1327"
+    }
+  ],
+  "Moto Morini": [
+    {
+      "model": "Corsarino",
+      "id": "1214"
+    }
+  ],
+  "Moto-Matic": [
+    {
+      "model": "Sapporo",
+      "id": "1607"
+    }
+  ],
+  "Motobecane": [
+    {
+      "model": "Sebring",
+      "id": "216"
+    },
+    {
+      "model": "50V",
+      "id": "226"
+    },
+    {
+      "model": "7",
+      "id": "227"
+    },
+    {
+      "model": "50VLC",
+      "id": "228"
+    },
+    {
+      "model": "M1",
+      "id": "229"
+    },
+    {
+      "model": "40",
+      "id": "230"
+    },
+    {
+      "model": "50",
+      "id": "231"
+    },
+    {
+      "model": "50VL",
+      "id": "264"
+    },
+    {
+      "model": "N140 TL",
+      "id": "265"
+    },
+    {
+      "model": "Mini Moby M1 PRTS",
+      "id": "267"
+    },
+    {
+      "model": "Mini Moby M1 PRTD",
+      "id": "268"
+    },
+    {
+      "model": "Traveler",
+      "id": "291"
+    },
+    {
+      "model": "Speciale 50",
+      "id": "305"
+    },
+    {
+      "model": "Cady",
+      "id": "306"
+    },
+    {
+      "model": "Commuter",
+      "id": "307"
+    },
+    {
+      "model": "Duamatic",
+      "id": "308"
+    },
+    {
+      "model": "Luxamatic",
+      "id": "309"
+    },
+    {
+      "model": "Majorette",
+      "id": "310"
+    },
+    {
+      "model": "Majormatic",
+      "id": "311"
+    },
+    {
+      "model": "Mastermatic",
+      "id": "312"
+    },
+    {
+      "model": "Minor Major",
+      "id": "313"
+    },
+    {
+      "model": "Moby X",
+      "id": "314"
+    },
+    {
+      "model": "Mono 50",
+      "id": "315"
+    },
+    {
+      "model": "Sport 50 MK 2",
+      "id": "316"
+    },
+    {
+      "model": "Sport Special",
+      "id": "317"
+    },
+    {
+      "model": "Monty",
+      "id": "318"
+    },
+    {
+      "model": "Velosolex",
+      "id": "319"
+    },
+    {
+      "model": "TM 4 (Mokick)",
+      "id": "320"
+    },
+    {
+      "model": "Monty SP",
+      "id": "321"
+    },
+    {
+      "model": "M11",
+      "id": "322"
+    },
+    {
+      "model": "50VLX",
+      "id": "338"
+    },
+    {
+      "model": "50L",
+      "id": "339"
+    },
+    {
+      "model": "50VLA",
+      "id": "340"
+    },
+    {
+      "model": "Mobylette",
+      "id": "341"
+    },
+    {
+      "model": "Le Moped",
+      "id": "342"
+    },
+    {
+      "model": "Moby",
+      "id": "343"
+    },
+    {
+      "model": "Poney 50",
+      "id": "550"
+    },
+    {
+      "model": "40TL",
+      "id": "770"
+    },
+    {
+      "model": "40TS",
+      "id": "771"
+    },
+    {
+      "model": "H40S",
+      "id": "772"
+    },
+    {
+      "model": "H40TL",
+      "id": "773"
+    },
+    {
+      "model": "TLS",
+      "id": "774"
+    },
+    {
+      "model": "H40",
+      "id": "775"
+    },
+    {
+      "model": "H40TS",
+      "id": "776"
+    },
+    {
+      "model": "H40VLC",
+      "id": "777"
+    },
+    {
+      "model": "H50VLC",
+      "id": "778"
+    },
+    {
+      "model": "50S",
+      "id": "779"
+    },
+    {
+      "model": "H50S",
+      "id": "780"
+    },
+    {
+      "model": "H50LS",
+      "id": "781"
+    },
+    {
+      "model": "M1PR",
+      "id": "782"
+    },
+    {
+      "model": "85L",
+      "id": "783"
+    },
+    {
+      "model": "88L",
+      "id": "784"
+    },
+    {
+      "model": "88LC",
+      "id": "785"
+    },
+    {
+      "model": "51",
+      "id": "786"
+    },
+    {
+      "model": "51V",
+      "id": "787"
+    },
+    {
+      "model": "AV51",
+      "id": "788"
+    },
+    {
+      "model": "X7L",
+      "id": "789"
+    },
+    {
+      "model": "4600 (Solex)",
+      "id": "790"
+    },
+    {
+      "model": "X1",
+      "id": "791"
+    },
+    {
+      "model": "X1L",
+      "id": "792"
+    },
+    {
+      "model": "X7S",
+      "id": "793"
+    },
+    {
+      "model": "X7AVL",
+      "id": "794"
+    },
+    {
+      "model": "X7VX",
+      "id": "795"
+    },
+    {
+      "model": "M3PRT",
+      "id": "796"
+    },
+    {
+      "model": "M3PRTS",
+      "id": "797"
+    },
+    {
+      "model": "92GT",
+      "id": "798"
+    },
+    {
+      "model": "92DL",
+      "id": "799"
+    },
+    {
+      "model": "L92N",
+      "id": "800"
+    },
+    {
+      "model": "93DL",
+      "id": "801"
+    },
+    {
+      "model": "L93E",
+      "id": "802"
+    },
+    {
+      "model": "L94TTE",
+      "id": "803"
+    },
+    {
+      "model": "L99E",
+      "id": "804"
+    },
+    {
+      "model": "L99EF",
+      "id": "805"
+    },
+    {
+      "model": "99Z",
+      "id": "806"
+    },
+    {
+      "model": "D55",
+      "id": "807"
+    },
+    {
+      "model": "AV89MB",
+      "id": "808"
+    },
+    {
+      "model": "Moby X1",
+      "id": "1138"
+    },
+    {
+      "model": "D52",
+      "id": "1141"
+    },
+    {
+      "model": "Mobymatic",
+      "id": "1162"
+    },
+    {
+      "model": "50VA",
+      "id": "1217"
+    },
+    {
+      "model": "Ranger 7",
+      "id": "1316"
+    },
+    {
+      "model": "40T",
+      "id": "1353"
+    },
+    {
+      "model": "881",
+      "id": "1355"
+    },
+    {
+      "model": "M50ev",
+      "id": "1377"
+    },
+    {
+      "model": "151",
+      "id": "1423"
+    },
+    {
+      "model": "Romp",
+      "id": "1438"
+    },
+    {
+      "model": "AU 42 A Bonnie",
+      "id": "1464"
+    },
+    {
+      "model": "41V",
+      "id": "1535"
+    },
+    {
+      "model": "SP50",
+      "id": "1568"
+    },
+    {
+      "model": "SP94",
+      "id": "1612"
+    }
+  ],
+  "Motobee": [
+    {
+      "model": "RS 100",
+      "id": "996"
+    }
+  ],
+  "Motobi": [
+    {
+      "model": "48 Sport",
+      "id": "1267"
+    }
+  ],
+  "Motobimm": [
+    {
+      "model": "Bilo",
+      "id": "1139"
+    }
+  ],
+  "Motom": [
+    {
+      "model": "Junior",
+      "id": "1063"
+    },
+    {
+      "model": "C",
+      "id": "1125"
+    },
+    {
+      "model": "48 Cross",
+      "id": "1225"
+    }
+  ],
+  "Motomarina": [
+    {
+      "model": "Raven",
+      "id": "997"
+    },
+    {
+      "model": "Sebring",
+      "id": "998"
+    }
+  ],
+  "Motron": [
+    {
+      "model": "Medalist",
+      "id": "122"
+    },
+    {
+      "model": "Sprint",
+      "id": "817"
+    },
+    {
+      "model": "Classic",
+      "id": "818"
+    },
+    {
+      "model": "Fairway",
+      "id": "819"
+    },
+    {
+      "model": "3-Wheeler",
+      "id": "820"
+    }
+  ],
+  "Mustang": [
+    {
+      "model": "Cobra 2000",
+      "id": "1628"
+    }
+  ],
+  "MZW": [
+    {
+      "model": "Cambridge",
+      "id": "1570"
+    }
+  ],
+  "Negrini": [
+    {
+      "model": "Gazelle",
+      "id": "123"
+    },
+    {
+      "model": "Harvard",
+      "id": "124"
+    },
+    {
+      "model": "MX Sport",
+      "id": "125"
+    },
+    {
+      "model": "Leprotto",
+      "id": "821"
+    }
+  ],
+  "Norman": [
+    {
+      "model": "Nippy Deluxe",
+      "id": "1064"
+    }
+  ],
+  "NSU": [
+    {
+      "model": "Quickley",
+      "id": "202"
+    },
+    {
+      "model": "Quickly N",
+      "id": "271"
+    },
+    {
+      "model": "Quickly TT",
+      "id": "272"
+    },
+    {
+      "model": "Prima III",
+      "id": "273"
+    },
+    {
+      "model": "Prima V",
+      "id": "274"
+    },
+    {
+      "model": "Prima IIIK",
+      "id": "275"
+    },
+    {
+      "model": "Supermax",
+      "id": "276"
+    },
+    {
+      "model": "Maxi",
+      "id": "277"
+    },
+    {
+      "model": "Quickly S",
+      "id": "278"
+    },
+    {
+      "model": "Quickly T",
+      "id": "279"
+    },
+    {
+      "model": "1053",
+      "id": "368"
+    },
+    {
+      "model": "Cavalio",
+      "id": "1279"
+    },
+    {
+      "model": "Quickly L",
+      "id": "1463"
+    }
+  ],
+  "NVT": [
+    {
+      "model": "ER1",
+      "id": "406"
+    },
+    {
+      "model": "ER2",
+      "id": "407"
+    },
+    {
+      "model": "ER2P",
+      "id": "408"
+    },
+    {
+      "model": "ER1SS",
+      "id": "409"
+    },
+    {
+      "model": "ER2L",
+      "id": "410"
+    },
+    {
+      "model": "ER2SS",
+      "id": "411"
+    },
+    {
+      "model": "Easy Rider",
+      "id": "822"
+    },
+    {
+      "model": "Jubilee",
+      "id": "880"
+    },
+    {
+      "model": "Lance",
+      "id": "1581"
+    }
+  ],
+  "Odyssey": [
+    {
+      "model": "32\/1-R",
+      "id": "823"
+    },
+    {
+      "model": "32\/1-2",
+      "id": "824"
+    },
+    {
+      "model": "40\/1-R",
+      "id": "825"
+    },
+    {
+      "model": "40\/1-2",
+      "id": "826"
+    },
+    {
+      "model": "40\/2-R",
+      "id": "827"
+    },
+    {
+      "model": "40\/2-2",
+      "id": "828"
+    },
+    {
+      "model": "236",
+      "id": "829"
+    },
+    {
+      "model": "237",
+      "id": "830"
+    },
+    {
+      "model": "255",
+      "id": "831"
+    },
+    {
+      "model": "284",
+      "id": "832"
+    },
+    {
+      "model": "720",
+      "id": "999"
+    }
+  ],
+  "Oltenia": [
+    {
+      "model": "Alpa",
+      "id": "1616"
+    }
+  ],
+  "Pacer": [
+    {
+      "model": "P-1",
+      "id": "833"
+    },
+    {
+      "model": "P-12",
+      "id": "834"
+    },
+    {
+      "model": "P-214",
+      "id": "835"
+    },
+    {
+      "model": "P-14RL",
+      "id": "836"
+    },
+    {
+      "model": "P-278",
+      "id": "837"
+    },
+    {
+      "model": "P-280",
+      "id": "838"
+    },
+    {
+      "model": "Sport P-78",
+      "id": "839"
+    },
+    {
+      "model": "Super Sport P-80",
+      "id": "840"
+    },
+    {
+      "model": "P-14",
+      "id": "841"
+    },
+    {
+      "model": "P-14 Delux",
+      "id": "842"
+    },
+    {
+      "model": "Super Sport",
+      "id": "1530"
+    },
+    {
+      "model": "25",
+      "id": "1587"
+    }
+  ],
+  "Paloma": [
+    {
+      "model": "Pal",
+      "id": "1393"
+    },
+    {
+      "model": "Dasl",
+      "id": "1404"
+    },
+    {
+      "model": "Minor",
+      "id": "1405"
+    },
+    {
+      "model": "Super Strada Flash",
+      "id": "1457"
+    }
+  ],
+  "Pedler": [
+    {
+      "model": "Pedler's Choice",
+      "id": "843"
+    },
+    {
+      "model": "Pedler's Choice Deluxe",
+      "id": "844"
+    }
+  ],
+  "Pepi": [
+    {
+      "model": "Delux",
+      "id": "1202"
+    },
+    {
+      "model": "Sport",
+      "id": "1221"
+    }
+  ],
+  "Peripoli": [
+    {
+      "model": "Giulietta",
+      "id": "1494"
+    }
+  ],
+  "Peugeot": [
+    {
+      "model": "TV-RS",
+      "id": "189"
+    },
+    {
+      "model": "Sport V-SP",
+      "id": "190"
+    },
+    {
+      "model": "T1-RS",
+      "id": "191"
+    },
+    {
+      "model": "103",
+      "id": "205"
+    },
+    {
+      "model": "102SP",
+      "id": "211"
+    },
+    {
+      "model": "TSM",
+      "id": "246"
+    },
+    {
+      "model": "103SPR",
+      "id": "247"
+    },
+    {
+      "model": "103LBS",
+      "id": "248"
+    },
+    {
+      "model": "GT10",
+      "id": "460"
+    },
+    {
+      "model": "Angel",
+      "id": "479"
+    },
+    {
+      "model": "GT10F3",
+      "id": "845"
+    },
+    {
+      "model": "SX5",
+      "id": "846"
+    },
+    {
+      "model": "TSA",
+      "id": "847"
+    },
+    {
+      "model": "101",
+      "id": "848"
+    },
+    {
+      "model": "102",
+      "id": "849"
+    },
+    {
+      "model": "104",
+      "id": "850"
+    },
+    {
+      "model": "103LS-U1",
+      "id": "851"
+    },
+    {
+      "model": "103LVS-U2",
+      "id": "852"
+    },
+    {
+      "model": "103LVS-U3",
+      "id": "853"
+    },
+    {
+      "model": "103L2-U1",
+      "id": "854"
+    },
+    {
+      "model": "103L2-U2",
+      "id": "855"
+    },
+    {
+      "model": "103L2-U3",
+      "id": "856"
+    },
+    {
+      "model": "103 Sport U2",
+      "id": "857"
+    },
+    {
+      "model": "103 Sport U3",
+      "id": "858"
+    },
+    {
+      "model": "103SPB U2",
+      "id": "859"
+    },
+    {
+      "model": "102SPB U3",
+      "id": "860"
+    },
+    {
+      "model": "TSM U2",
+      "id": "861"
+    },
+    {
+      "model": "TSM U3",
+      "id": "862"
+    },
+    {
+      "model": "Fox",
+      "id": "1000"
+    },
+    {
+      "model": "103SP",
+      "id": "1001"
+    },
+    {
+      "model": "103 MVL Vogue",
+      "id": "1002"
+    },
+    {
+      "model": "TM-3",
+      "id": "1003"
+    },
+    {
+      "model": "103 MXR",
+      "id": "1186"
+    },
+    {
+      "model": "GL10",
+      "id": "1208"
+    },
+    {
+      "model": "102SP U3",
+      "id": "1218"
+    },
+    {
+      "model": "103 B-D",
+      "id": "1227"
+    },
+    {
+      "model": "Vogue",
+      "id": "1232"
+    },
+    {
+      "model": "Postman",
+      "id": "1233"
+    },
+    {
+      "model": "101SP",
+      "id": "1245"
+    },
+    {
+      "model": "103LSM",
+      "id": "1246"
+    },
+    {
+      "model": "105DM",
+      "id": "1247"
+    },
+    {
+      "model": "TSMR-D",
+      "id": "1248"
+    },
+    {
+      "model": "101KSM",
+      "id": "1249"
+    },
+    {
+      "model": "101-B2",
+      "id": "1257"
+    },
+    {
+      "model": "101-MS",
+      "id": "1258"
+    },
+    {
+      "model": "101-MT",
+      "id": "1259"
+    },
+    {
+      "model": "101-MR",
+      "id": "1260"
+    },
+    {
+      "model": "Sport",
+      "id": "1280"
+    },
+    {
+      "model": "Super Sport",
+      "id": "1281"
+    },
+    {
+      "model": "Centri",
+      "id": "1285"
+    },
+    {
+      "model": "Vogue SP",
+      "id": "1306"
+    },
+    {
+      "model": "Vogue SX",
+      "id": "1307"
+    },
+    {
+      "model": "La Poste",
+      "id": "1308"
+    },
+    {
+      "model": "102 MS",
+      "id": "1391"
+    },
+    {
+      "model": "TSE",
+      "id": "1421"
+    },
+    {
+      "model": "103Z",
+      "id": "1486"
+    },
+    {
+      "model": "TS Rallye",
+      "id": "1497"
+    },
+    {
+      "model": "Country",
+      "id": "1525"
+    },
+    {
+      "model": "103LS",
+      "id": "1536"
+    },
+    {
+      "model": "BB CT",
+      "id": "1578"
+    },
+    {
+      "model": "BB C",
+      "id": "1579"
+    },
+    {
+      "model": "BB VCT",
+      "id": "1580"
+    },
+    {
+      "model": "SPX",
+      "id": "1637"
+    }
+  ],
+  "Phoenix": [
+    {
+      "model": "Saxonette",
+      "id": "1409"
+    }
+  ],
+  "Pony": [
+    {
+      "model": "Yunior",
+      "id": "1329"
+    }
+  ],
+  "Puch": [
+    {
+      "model": "Astro Daimler",
+      "id": "126"
+    },
+    {
+      "model": "Astro Daimler Two-Speed",
+      "id": "127"
+    },
+    {
+      "model": "Beta",
+      "id": "128"
+    },
+    {
+      "model": "Cobra",
+      "id": "129"
+    },
+    {
+      "model": "Dart",
+      "id": "130"
+    },
+    {
+      "model": "Magnum II",
+      "id": "131"
+    },
+    {
+      "model": "Magnum Limited LTD",
+      "id": "132"
+    },
+    {
+      "model": "Magnum MK II",
+      "id": "133"
+    },
+    {
+      "model": "Magnum XK",
+      "id": "134"
+    },
+    {
+      "model": "Maxi",
+      "id": "135"
+    },
+    {
+      "model": "Maxi II",
+      "id": "136"
+    },
+    {
+      "model": "Maxi GN",
+      "id": "137"
+    },
+    {
+      "model": "Maxi Luxe",
+      "id": "138"
+    },
+    {
+      "model": "Maxi N",
+      "id": "139"
+    },
+    {
+      "model": "Maxi Plus",
+      "id": "140"
+    },
+    {
+      "model": "Maxi S",
+      "id": "141"
+    },
+    {
+      "model": "Maxi Sport",
+      "id": "142"
+    },
+    {
+      "model": "Maxi Sport LS",
+      "id": "143"
+    },
+    {
+      "model": "Maxi Sport LS-2 Speed",
+      "id": "144"
+    },
+    {
+      "model": "Newport",
+      "id": "145"
+    },
+    {
+      "model": "Newport L",
+      "id": "146"
+    },
+    {
+      "model": "Nostalgia",
+      "id": "147"
+    },
+    {
+      "model": "Sport I",
+      "id": "148"
+    },
+    {
+      "model": "Sport MKII",
+      "id": "149"
+    },
+    {
+      "model": "Mini Maxi",
+      "id": "187"
+    },
+    {
+      "model": "X30",
+      "id": "253"
+    },
+    {
+      "model": "Magnum X",
+      "id": "254"
+    },
+    {
+      "model": "MR50",
+      "id": "255"
+    },
+    {
+      "model": "P1",
+      "id": "258"
+    },
+    {
+      "model": "Tri Rad",
+      "id": "290"
+    },
+    {
+      "model": "MS50V",
+      "id": "292"
+    },
+    {
+      "model": "M50 Grand Prix",
+      "id": "293"
+    },
+    {
+      "model": "Velux 30",
+      "id": "327"
+    },
+    {
+      "model": "Maxi Bombardier",
+      "id": "328"
+    },
+    {
+      "model": "Super Maxi",
+      "id": "329"
+    },
+    {
+      "model": "Korado",
+      "id": "330"
+    },
+    {
+      "model": "Kromag",
+      "id": "331"
+    },
+    {
+      "model": "MC 50-3",
+      "id": "333"
+    },
+    {
+      "model": "M50 Sport",
+      "id": "334"
+    },
+    {
+      "model": "Dakota 3000",
+      "id": "336"
+    },
+    {
+      "model": "VS50D",
+      "id": "398"
+    },
+    {
+      "model": "MS50D",
+      "id": "399"
+    },
+    {
+      "model": "MS50V Deluxe",
+      "id": "400"
+    },
+    {
+      "model": "M2",
+      "id": "401"
+    },
+    {
+      "model": "M3",
+      "id": "402"
+    },
+    {
+      "model": "MF25",
+      "id": "428"
+    },
+    {
+      "model": "MV50",
+      "id": "448"
+    },
+    {
+      "model": "MS50",
+      "id": "534"
+    },
+    {
+      "model": "Monza 4SL",
+      "id": "863"
+    },
+    {
+      "model": "X20",
+      "id": "864"
+    },
+    {
+      "model": "Newport II",
+      "id": "1005"
+    },
+    {
+      "model": "Magnum",
+      "id": "1006"
+    },
+    {
+      "model": "VS50K",
+      "id": "1039"
+    },
+    {
+      "model": "VS50DK",
+      "id": "1040"
+    },
+    {
+      "model": "DS50",
+      "id": "1041"
+    },
+    {
+      "model": "MS50 Deluxe",
+      "id": "1042"
+    },
+    {
+      "model": "Maxi Sport MKII",
+      "id": "1043"
+    },
+    {
+      "model": "Maxi N2",
+      "id": "1045"
+    },
+    {
+      "model": "Maxi S2",
+      "id": "1046"
+    },
+    {
+      "model": "Maxi Super",
+      "id": "1047"
+    },
+    {
+      "model": "Maxi Super D",
+      "id": "1048"
+    },
+    {
+      "model": "Maxi Super DK",
+      "id": "1049"
+    },
+    {
+      "model": "Maxi SKW",
+      "id": "1050"
+    },
+    {
+      "model": "Maxi Super Executive SKX",
+      "id": "1051"
+    },
+    {
+      "model": "Maxi Executive SKA",
+      "id": "1052"
+    },
+    {
+      "model": "Maxi Super Sport KA",
+      "id": "1053"
+    },
+    {
+      "model": "Maxi N Quickly",
+      "id": "1054"
+    },
+    {
+      "model": "Maxi SKX GL Super Executive",
+      "id": "1055"
+    },
+    {
+      "model": "Maxi Auto Executive",
+      "id": "1056"
+    },
+    {
+      "model": "Maxi Zippy",
+      "id": "1057"
+    },
+    {
+      "model": "Maxi Free Spirit",
+      "id": "1058"
+    },
+    {
+      "model": "MX40",
+      "id": "1071"
+    },
+    {
+      "model": " X50-3",
+      "id": "1072"
+    },
+    {
+      "model": "X40",
+      "id": "1083"
+    },
+    {
+      "model": "MS50L",
+      "id": "1102"
+    },
+    {
+      "model": "X50",
+      "id": "1103"
+    },
+    {
+      "model": "MiniCross",
+      "id": "1110"
+    },
+    {
+      "model": "VZ 50",
+      "id": "1135"
+    },
+    {
+      "model": "VS50L",
+      "id": "1136"
+    },
+    {
+      "model": "Maxi GS",
+      "id": "1149"
+    },
+    {
+      "model": "Dakota",
+      "id": "1195"
+    },
+    {
+      "model": "MS50",
+      "id": "1209"
+    },
+    {
+      "model": "Monza",
+      "id": "1252"
+    },
+    {
+      "model": "Grand Prix Special",
+      "id": "1268"
+    },
+    {
+      "model": "M50 Racing (Skylark)",
+      "id": "1378"
+    },
+    {
+      "model": "Skyhawk",
+      "id": "1440"
+    },
+    {
+      "model": "VS50M",
+      "id": "1443"
+    },
+    {
+      "model": "MC50",
+      "id": "1444"
+    },
+    {
+      "model": "Series B",
+      "id": "1473"
+    },
+    {
+      "model": "Campus 50",
+      "id": "1490"
+    },
+    {
+      "model": "DS50V",
+      "id": "1495"
+    },
+    {
+      "model": "MV",
+      "id": "1556"
+    },
+    {
+      "model": "MS25",
+      "id": "1595"
+    },
+    {
+      "model": "Magnum MK II -UPS",
+      "id": "1621"
+    },
+    {
+      "model": "MOTOVI",
+      "id": "1629"
+    },
+    {
+      "model": "Murray",
+      "id": "1636"
+    }
+  ],
+  "Rabeneick": [
+    {
+      "model": "Binetta III",
+      "id": "1121"
+    }
+  ],
+  "Raleigh": [
+    {
+      "model": "Wisp",
+      "id": "480"
+    },
+    {
+      "model": "Ultramatic",
+      "id": "485"
+    },
+    {
+      "model": "Super 50",
+      "id": "1007"
+    },
+    {
+      "model": "RM5",
+      "id": "1199"
+    },
+    {
+      "model": "RM4",
+      "id": "1482"
+    }
+  ],
+  "Ramzey": [
+    {
+      "model": "Magnum SAfkan",
+      "id": "1229"
+    },
+    {
+      "model": "Wolf",
+      "id": "1230"
+    },
+    {
+      "model": "Prestige Classic",
+      "id": "1231"
+    },
+    {
+      "model": "Comfort",
+      "id": "1234"
+    },
+    {
+      "model": "Prestige",
+      "id": "1235"
+    }
+  ],
+  "Rap": [
+    {
+      "model": "Crown",
+      "id": "1330"
+    },
+    {
+      "model": "Speedo",
+      "id": "1340"
+    },
+    {
+      "model": "Matadore",
+      "id": "1343"
+    },
+    {
+      "model": "Rocky",
+      "id": "1348"
+    },
+    {
+      "model": "Imperial",
+      "id": "1349"
+    },
+    {
+      "model": "Ster",
+      "id": "1407"
+    },
+    {
+      "model": "Super",
+      "id": "1527"
+    }
+  ],
+  "Rex": [
+    {
+      "model": "Monaco",
+      "id": "1380"
+    }
+  ],
+  "Riga": [
+    {
+      "model": "22",
+      "id": "958"
+    },
+    {
+      "model": "V-501M",
+      "id": "1008"
+    },
+    {
+      "model": "R-12",
+      "id": "1201"
+    },
+    {
+      "model": "4",
+      "id": "1212"
+    },
+    {
+      "model": "5",
+      "id": "1213"
+    },
+    {
+      "model": "Gauja-1",
+      "id": "1215"
+    },
+    {
+      "model": "Mini",
+      "id": "1382"
+    },
+    {
+      "model": "15-S",
+      "id": "1483"
+    }
+  ],
+  "Riteloc": [
+    {
+      "model": "Roxi",
+      "id": "604"
+    }
+  ],
+  "Riviera": [
+    {
+      "model": "ST-100",
+      "id": "865"
+    }
+  ],
+  "Rixe": [
+    {
+      "model": "V3",
+      "id": "1282"
+    }
+  ],
+  "Rizzato Califfo": [
+    {
+      "model": "Califfo Deluxe",
+      "id": "188"
+    },
+    {
+      "model": "Califfo 3-Wheeler",
+      "id": "605"
+    },
+    {
+      "model": "Califfo 2-Speed",
+      "id": "606"
+    },
+    {
+      "model": "Califfo",
+      "id": "866"
+    },
+    {
+      "model": "Califfo Super",
+      "id": "867"
+    },
+    {
+      "model": "Califfo Matic",
+      "id": "869"
+    },
+    {
+      "model": "Califfone Daytona",
+      "id": "870"
+    },
+    {
+      "model": "Zum 3",
+      "id": "871"
+    },
+    {
+      "model": "Mini Califfo K",
+      "id": "872"
+    },
+    {
+      "model": "Cross 4V",
+      "id": "873"
+    },
+    {
+      "model": "Ringo Turismo",
+      "id": "874"
+    },
+    {
+      "model": "Cross 6V",
+      "id": "875"
+    }
+  ],
+  "ROG": [
+    {
+      "model": "Pony Express",
+      "id": "1596"
+    }
+  ],
+  "Romeo": [
+    {
+      "model": "Thunderhawk",
+      "id": "1472"
+    }
+  ],
+  "Romet": [
+    {
+      "model": "Kadet M-780",
+      "id": "1205"
+    },
+    {
+      "model": "50 T1",
+      "id": "1317"
+    },
+    {
+      "model": "Pony 50",
+      "id": "1367"
+    }
+  ],
+  "Royal Nord": [
+    {
+      "model": "GT",
+      "id": "1432"
+    },
+    {
+      "model": "Super Vedette",
+      "id": "1433"
+    },
+    {
+      "model": "Polaris",
+      "id": "1456"
+    }
+  ],
+  "Sachs": [
+    {
+      "model": "Balboa",
+      "id": "150"
+    },
+    {
+      "model": "Westlake",
+      "id": "151"
+    },
+    {
+      "model": "Seville",
+      "id": "152"
+    },
+    {
+      "model": "Suburban",
+      "id": "153"
+    },
+    {
+      "model": "Sundancer",
+      "id": "154"
+    },
+    {
+      "model": "Saxy",
+      "id": "155"
+    },
+    {
+      "model": "Mopet",
+      "id": "156"
+    },
+    {
+      "model": "Minor",
+      "id": "157"
+    },
+    {
+      "model": "G-4",
+      "id": "158"
+    },
+    {
+      "model": "G-3",
+      "id": "159"
+    },
+    {
+      "model": "Feugo",
+      "id": "160"
+    },
+    {
+      "model": "Carrier II",
+      "id": "161"
+    },
+    {
+      "model": "Carrier I",
+      "id": "162"
+    },
+    {
+      "model": "Hercules Prima S 2 speed",
+      "id": "257"
+    },
+    {
+      "model": "Optima 50",
+      "id": "266"
+    },
+    {
+      "model": "Prima 4",
+      "id": "269"
+    },
+    {
+      "model": "Prima 5",
+      "id": "270"
+    },
+    {
+      "model": "Lover",
+      "id": "346"
+    },
+    {
+      "model": "Hercules",
+      "id": "367"
+    },
+    {
+      "model": "Sundowner",
+      "id": "386"
+    },
+    {
+      "model": "Prima",
+      "id": "868"
+    },
+    {
+      "model": "Sundancer SX",
+      "id": "876"
+    },
+    {
+      "model": "Showoff",
+      "id": "877"
+    },
+    {
+      "model": "Hercules M-4",
+      "id": "878"
+    },
+    {
+      "model": "Hercules P-1",
+      "id": "879"
+    },
+    {
+      "model": "Eagle",
+      "id": "1100"
+    },
+    {
+      "model": "MadAss",
+      "id": "1210"
+    },
+    {
+      "model": "Taxi Lux",
+      "id": "1376"
+    },
+    {
+      "model": "Honey",
+      "id": "1474"
+    }
+  ],
+  "Safari": [
+    {
+      "model": "MZV",
+      "id": "470"
+    },
+    {
+      "model": "300MT",
+      "id": "1009"
+    },
+    {
+      "model": "MT400",
+      "id": "1513"
+    },
+    {
+      "model": "SuperExtra",
+      "id": "1572"
+    },
+    {
+      "model": "Commando",
+      "id": "1573"
+    },
+    {
+      "model": "Variomatic deLux",
+      "id": "1574"
+    },
+    {
+      "model": "Cobra",
+      "id": "1575"
+    }
+  ],
+  "SCO": [
+    {
+      "model": "Minor Grand",
+      "id": "1539"
+    },
+    {
+      "model": "Sprint GS",
+      "id": "1584"
+    }
+  ],
+  "Scorpion": [
+    {
+      "model": "SC-1",
+      "id": "881"
+    },
+    {
+      "model": "SC-2",
+      "id": "882"
+    },
+    {
+      "model": "SC-2X",
+      "id": "883"
+    }
+  ],
+  "Sears": [
+    {
+      "model": "VS50L",
+      "id": "325"
+    },
+    {
+      "model": "Free Spirit",
+      "id": "335"
+    },
+    {
+      "model": "Allstate",
+      "id": "337"
+    }
+  ],
+  "Seaworth": [
+    {
+      "model": "100",
+      "id": "884"
+    }
+  ],
+  "Simplex": [
+    {
+      "model": "Egg",
+      "id": "1342"
+    },
+    {
+      "model": "S7",
+      "id": "1447"
+    }
+  ],
+  "Simson": [
+    {
+      "model": "SR2",
+      "id": "204"
+    },
+    {
+      "model": "Mofa 1",
+      "id": "256"
+    },
+    {
+      "model": "S51",
+      "id": "449"
+    },
+    {
+      "model": "Scwalbe",
+      "id": "450"
+    },
+    {
+      "model": "SR50",
+      "id": "1084"
+    },
+    {
+      "model": "SL1S",
+      "id": "1151"
+    },
+    {
+      "model": "S50 B1",
+      "id": "1506"
+    },
+    {
+      "model": "S50",
+      "id": "1507"
+    },
+    {
+      "model": "Sperber",
+      "id": "1521"
+    },
+    {
+      "model": "SR1",
+      "id": "1551"
+    },
+    {
+      "model": "S53 Alpha",
+      "id": "1552"
+    },
+    {
+      "model": "SR 4-1",
+      "id": "1561"
+    },
+    {
+      "model": "SL1",
+      "id": "1590"
+    }
+  ],
+  "Smythe": [
+    {
+      "model": "Misty",
+      "id": "885"
+    }
+  ],
+  "Snark": [
+    {
+      "model": "Standard",
+      "id": "886"
+    },
+    {
+      "model": "Deluxe",
+      "id": "887"
+    },
+    {
+      "model": "Satellie I",
+      "id": "888"
+    },
+    {
+      "model": "Satellie II",
+      "id": "889"
+    },
+    {
+      "model": "Stardust II",
+      "id": "890"
+    },
+    {
+      "model": "Stardust I",
+      "id": "891"
+    },
+    {
+      "model": "Star I",
+      "id": "892"
+    },
+    {
+      "model": "Star II",
+      "id": "893"
+    }
+  ],
+  "Solex": [
+    {
+      "model": "3800",
+      "id": "934"
+    },
+    {
+      "model": "4600",
+      "id": "935"
+    },
+    {
+      "model": "4600 DOT",
+      "id": "936"
+    },
+    {
+      "model": "Flash 6000",
+      "id": "937"
+    },
+    {
+      "model": "5000",
+      "id": "938"
+    },
+    {
+      "model": "Tenor",
+      "id": "939"
+    },
+    {
+      "model": "8000",
+      "id": "940"
+    },
+    {
+      "model": "1700",
+      "id": "960"
+    },
+    {
+      "model": "2200",
+      "id": "961"
+    },
+    {
+      "model": "3300",
+      "id": "962"
+    },
+    {
+      "model": "3200",
+      "id": "1011"
+    },
+    {
+      "model": "S3800",
+      "id": "1012"
+    },
+    {
+      "model": "3800 Deluxe",
+      "id": "1024"
+    },
+    {
+      "model": "Horse",
+      "id": "1059"
+    },
+    {
+      "model": "Trotilex",
+      "id": "1066"
+    },
+    {
+      "model": "Micron",
+      "id": "1067"
+    },
+    {
+      "model": "6000",
+      "id": "1089"
+    },
+    {
+      "model": "Pli-Solex",
+      "id": "1406"
+    }
+  ],
+  "Solifer": [
+    {
+      "model": "SM",
+      "id": "349"
+    },
+    {
+      "model": "Speed",
+      "id": "1112"
+    },
+    {
+      "model": "Export",
+      "id": "1124"
+    }
+  ],
+  "Solo": [
+    {
+      "model": "Odyssey",
+      "id": "261"
+    },
+    {
+      "model": "710",
+      "id": "262"
+    },
+    {
+      "model": "711",
+      "id": "263"
+    },
+    {
+      "model": "712",
+      "id": "429"
+    },
+    {
+      "model": "713",
+      "id": "1142"
+    },
+    {
+      "model": "715",
+      "id": "1143"
+    },
+    {
+      "model": "716",
+      "id": "1144"
+    },
+    {
+      "model": "715B",
+      "id": "1145"
+    },
+    {
+      "model": "Electra",
+      "id": "1146"
+    },
+    {
+      "model": "725",
+      "id": "1147"
+    },
+    {
+      "model": "726",
+      "id": "1148"
+    },
+    {
+      "model": "Mini",
+      "id": "1448"
+    },
+    {
+      "model": "722",
+      "id": "1602"
+    }
+  ],
+  "Soni Kinetic": [
+    {
+      "model": "Basic",
+      "id": "894"
+    },
+    {
+      "model": "Deluxe",
+      "id": "895"
+    },
+    {
+      "model": "Excalibur",
+      "id": "896"
+    },
+    {
+      "model": "Classic",
+      "id": "897"
+    }
+  ],
+  "Sparta": [
+    {
+      "model": "Foxi",
+      "id": "218"
+    },
+    {
+      "model": "SE 50",
+      "id": "422"
+    },
+    {
+      "model": "SB 50",
+      "id": "423"
+    },
+    {
+      "model": "Typen",
+      "id": "424"
+    },
+    {
+      "model": "GE 50 Tour",
+      "id": "425"
+    },
+    {
+      "model": "GE 50 Sport",
+      "id": "426"
+    },
+    {
+      "model": "Foxi GT Sport",
+      "id": "474"
+    },
+    {
+      "model": "Sport 3V",
+      "id": "898"
+    },
+    {
+      "model": "Buddy",
+      "id": "1013"
+    },
+    {
+      "model": "MB 50",
+      "id": "1200"
+    },
+    {
+      "model": "Met",
+      "id": "1237"
+    },
+    {
+      "model": "Met Tandem",
+      "id": "1238"
+    },
+    {
+      "model": "Lucky",
+      "id": "1250"
+    },
+    {
+      "model": "Happy",
+      "id": "1255"
+    },
+    {
+      "model": "2V",
+      "id": "1261"
+    },
+    {
+      "model": "Spartamatic",
+      "id": "1270"
+    },
+    {
+      "model": "GC50",
+      "id": "1273"
+    },
+    {
+      "model": "Tour",
+      "id": "1274"
+    },
+    {
+      "model": "Sport",
+      "id": "1275"
+    },
+    {
+      "model": "GS50",
+      "id": "1276"
+    },
+    {
+      "model": "GB50",
+      "id": "1289"
+    },
+    {
+      "model": "Super Sport",
+      "id": "1293"
+    },
+    {
+      "model": "Happy Mini",
+      "id": "1322"
+    },
+    {
+      "model": "Sport 4",
+      "id": "1325"
+    },
+    {
+      "model": "G50",
+      "id": "1361"
+    },
+    {
+      "model": "Grand Sport",
+      "id": "1466"
+    },
+    {
+      "model": "GH50",
+      "id": "1476"
+    },
+    {
+      "model": "GF50",
+      "id": "1523"
+    },
+    {
+      "model": "GD 50",
+      "id": "1534"
+    }
+  ],
+  "Sunny": [
+    {
+      "model": "200",
+      "id": "899"
+    }
+  ],
+  "Suvega": [
+    {
+      "model": "Tiger T-3",
+      "id": "900"
+    },
+    {
+      "model": "Samrat",
+      "id": "901"
+    }
+  ],
+  "Suzuki": [
+    {
+      "model": "FA50 Shuttle",
+      "id": "12"
+    },
+    {
+      "model": "FZ-50 Rascal",
+      "id": "212"
+    },
+    {
+      "model": "A50P",
+      "id": "473"
+    },
+    {
+      "model": "AP50",
+      "id": "1014"
+    },
+    {
+      "model": "ZR50SP",
+      "id": "1015"
+    },
+    {
+      "model": "FA50",
+      "id": "1016"
+    },
+    {
+      "model": "ZR50",
+      "id": "1017"
+    },
+    {
+      "model": "TS50X",
+      "id": "1018"
+    },
+    {
+      "model": "S1-90",
+      "id": "1060"
+    },
+    {
+      "model": "K50 DN",
+      "id": "1219"
+    },
+    {
+      "model": "RV50",
+      "id": "1502"
+    },
+    {
+      "model": "U50",
+      "id": "1515"
+    },
+    {
+      "model": "FS50",
+      "id": "1558"
+    },
+    {
+      "model": "M12",
+      "id": "1593"
+    },
+    {
+      "model": "M15",
+      "id": "1634"
+    }
+  ],
+  "Tanaka": [
+    {
+      "model": "Bike Bug",
+      "id": "1547"
+    }
+  ],
+  "Tempo": [
+    {
+      "model": "Corvette",
+      "id": "1061"
+    },
+    {
+      "model": "Panter 460",
+      "id": "1296"
+    },
+    {
+      "model": "Cross",
+      "id": "1297"
+    },
+    {
+      "model": "Panter 360",
+      "id": "1298"
+    }
+  ],
+  "Testi": [
+    {
+      "model": "Amico",
+      "id": "902"
+    },
+    {
+      "model": "Cal Jet",
+      "id": "1156"
+    },
+    {
+      "model": "Cricket",
+      "id": "1318"
+    },
+    {
+      "model": "Mini Cricket",
+      "id": "1319"
+    },
+    {
+      "model": "Comfort",
+      "id": "1320"
+    },
+    {
+      "model": "Champion",
+      "id": "1346"
+    },
+    {
+      "model": "Weekend Cross",
+      "id": "1446"
+    },
+    {
+      "model": "Grand Prix",
+      "id": "1512"
+    }
+  ],
+  "Tokaido": [
+    {
+      "model": "RC 25",
+      "id": "1091"
+    }
+  ],
+  "Tomos": [
+    {
+      "model": "A3SL",
+      "id": "163"
+    },
+    {
+      "model": "A-3 Bullet",
+      "id": "164"
+    },
+    {
+      "model": "A-3 Bullet TT",
+      "id": "165"
+    },
+    {
+      "model": "A-3 Golden Bullet",
+      "id": "166"
+    },
+    {
+      "model": "A-3 Golden Bullet TT-LX",
+      "id": "167"
+    },
+    {
+      "model": "Silver Bullet SL",
+      "id": "168"
+    },
+    {
+      "model": "Colibri",
+      "id": "169"
+    },
+    {
+      "model": "Sprint",
+      "id": "217"
+    },
+    {
+      "model": "Targa LX",
+      "id": "222"
+    },
+    {
+      "model": "Targa",
+      "id": "232"
+    },
+    {
+      "model": "Classic",
+      "id": "348"
+    },
+    {
+      "model": "A-3 Bullet TS",
+      "id": "350"
+    },
+    {
+      "model": "Revival",
+      "id": "374"
+    },
+    {
+      "model": "25 Luxe",
+      "id": "375"
+    },
+    {
+      "model": "Flexer",
+      "id": "376"
+    },
+    {
+      "model": "TX 50",
+      "id": "377"
+    },
+    {
+      "model": "ATX 50C",
+      "id": "378"
+    },
+    {
+      "model": "APN 6S",
+      "id": "379"
+    },
+    {
+      "model": "Alpino",
+      "id": "380"
+    },
+    {
+      "model": "BT 50N",
+      "id": "381"
+    },
+    {
+      "model": "GP",
+      "id": "420"
+    },
+    {
+      "model": "Sport",
+      "id": "903"
+    },
+    {
+      "model": "14TLC",
+      "id": "904"
+    },
+    {
+      "model": "TLS",
+      "id": "905"
+    },
+    {
+      "model": "Automatic",
+      "id": "906"
+    },
+    {
+      "model": "A3SP",
+      "id": "907"
+    },
+    {
+      "model": "Silver Bullet",
+      "id": "908"
+    },
+    {
+      "model": "Red Bullet",
+      "id": "909"
+    },
+    {
+      "model": "Blue Bullet",
+      "id": "910"
+    },
+    {
+      "model": "APN4",
+      "id": "911"
+    },
+    {
+      "model": "4H",
+      "id": "912"
+    },
+    {
+      "model": "Automatic NT",
+      "id": "913"
+    },
+    {
+      "model": "3",
+      "id": "914"
+    },
+    {
+      "model": "3K",
+      "id": "915"
+    },
+    {
+      "model": "15SL",
+      "id": "916"
+    },
+    {
+      "model": "15SLC",
+      "id": "917"
+    },
+    {
+      "model": "15 Sprint",
+      "id": "918"
+    },
+    {
+      "model": "Cross 50 Junior",
+      "id": "919"
+    },
+    {
+      "model": "Quadro",
+      "id": "995"
+    },
+    {
+      "model": "Targa TTLX",
+      "id": "1019"
+    },
+    {
+      "model": "Bullet TT",
+      "id": "1020"
+    },
+    {
+      "model": "Bullet",
+      "id": "1021"
+    },
+    {
+      "model": "Silver Bullet GM",
+      "id": "1022"
+    },
+    {
+      "model": "4L",
+      "id": "1105"
+    },
+    {
+      "model": "Streetmate",
+      "id": "1157"
+    },
+    {
+      "model": "Limited",
+      "id": "1236"
+    },
+    {
+      "model": "Minibike",
+      "id": "1256"
+    },
+    {
+      "model": "Classic I",
+      "id": "1309"
+    },
+    {
+      "model": "Classic II",
+      "id": "1310"
+    },
+    {
+      "model": "Revival TS",
+      "id": "1365"
+    },
+    {
+      "model": "Arrow",
+      "id": "1366"
+    },
+    {
+      "model": "Youngster",
+      "id": "1370"
+    },
+    {
+      "model": "Mini",
+      "id": "1374"
+    },
+    {
+      "model": "VT50KS",
+      "id": "1418"
+    },
+    {
+      "model": "ST",
+      "id": "1470"
+    },
+    {
+      "model": "Streetmate R",
+      "id": "1475"
+    },
+    {
+      "model": "A3ML",
+      "id": "1499"
+    },
+    {
+      "model": "A3MS",
+      "id": "1531"
+    },
+    {
+      "model": "Cross 50 Senior",
+      "id": "1554"
+    },
+    {
+      "model": "LX",
+      "id": "1606"
+    },
+    {
+      "model": "MC36",
+      "id": "1608"
+    },
+    {
+      "model": "MC50",
+      "id": "1609"
+    },
+    {
+      "model": "MC50 Junior",
+      "id": "1610"
+    },
+    {
+      "model": "MC50 Senior",
+      "id": "1611"
+    }
+  ],
+  "Torrot": [
+    {
+      "model": "City Lujo",
+      "id": "920"
+    },
+    {
+      "model": "City TT",
+      "id": "921"
+    },
+    {
+      "model": "City",
+      "id": "922"
+    },
+    {
+      "model": "Mini",
+      "id": "923"
+    },
+    {
+      "model": "Maxi",
+      "id": "924"
+    },
+    {
+      "model": "Turismo",
+      "id": "925"
+    },
+    {
+      "model": "Panther",
+      "id": "926"
+    },
+    {
+      "model": "Trial",
+      "id": "927"
+    },
+    {
+      "model": "Gran Cross",
+      "id": "928"
+    },
+    {
+      "model": "Mustang",
+      "id": "929"
+    },
+    {
+      "model": "Sport 4V",
+      "id": "930"
+    },
+    {
+      "model": "TT50",
+      "id": "931"
+    },
+    {
+      "model": "Tiburon",
+      "id": "1224"
+    }
+  ],
+  "Trac": [
+    {
+      "model": "Blitz",
+      "id": "170"
+    },
+    {
+      "model": "Clipper",
+      "id": "171"
+    },
+    {
+      "model": "Eagle",
+      "id": "172"
+    },
+    {
+      "model": "Hawk",
+      "id": "173"
+    },
+    {
+      "model": "Olympic",
+      "id": "174"
+    },
+    {
+      "model": "Sprint",
+      "id": "175"
+    },
+    {
+      "model": "Liberty",
+      "id": "1023"
+    },
+    {
+      "model": "Metro",
+      "id": "1068"
+    },
+    {
+      "model": "Image",
+      "id": "1560"
+    }
+  ],
+  "Tri-Ped": [
+    {
+      "model": "Standard",
+      "id": "932"
+    },
+    {
+      "model": "Sport",
+      "id": "933"
+    }
+  ],
+  "Triumph": [
+    {
+      "model": "Knirps",
+      "id": "1524"
+    }
+  ],
+  "Tunturi": [
+    {
+      "model": "Tiger",
+      "id": "445"
+    },
+    {
+      "model": "Pappa",
+      "id": "446"
+    },
+    {
+      "model": "Maxi",
+      "id": "447"
+    },
+    {
+      "model": "Supersport",
+      "id": "472"
+    }
+  ],
+  "TVS": [
+    {
+      "model": "Super Champ",
+      "id": "238"
+    },
+    {
+      "model": "50XL",
+      "id": "239"
+    }
+  ],
+  "Typhoon": [
+    {
+      "model": "Blits",
+      "id": "1272"
+    },
+    {
+      "model": "Sport",
+      "id": "1291"
+    }
+  ],
+  "Union Holland": [
+    {
+      "model": "Union Pantalette",
+      "id": "1283"
+    },
+    {
+      "model": "Union Super Sport",
+      "id": "1284"
+    },
+    {
+      "model": "Tourist",
+      "id": "1334"
+    },
+    {
+      "model": "Boomerang",
+      "id": "1337"
+    },
+    {
+      "model": "Sport-o-Matic",
+      "id": "1339"
+    },
+    {
+      "model": "Roulette",
+      "id": "1368"
+    },
+    {
+      "model": "Polaris",
+      "id": "1401"
+    }
+  ],
+  "Vespa": [
+    {
+      "model": "Bravo",
+      "id": "176"
+    },
+    {
+      "model": "Ciao",
+      "id": "177"
+    },
+    {
+      "model": "Grande",
+      "id": "178"
+    },
+    {
+      "model": "Si",
+      "id": "179"
+    },
+    {
+      "model": "Si Monte Carlo",
+      "id": "347"
+    },
+    {
+      "model": "Boxer",
+      "id": "396"
+    },
+    {
+      "model": "Ciao Super",
+      "id": "941"
+    },
+    {
+      "model": "Ciao Supreme",
+      "id": "942"
+    },
+    {
+      "model": "Ciao Porter",
+      "id": "943"
+    },
+    {
+      "model": "Bravo Deluxe",
+      "id": "944"
+    },
+    {
+      "model": "Bravo Super Deluxe",
+      "id": "945"
+    },
+    {
+      "model": "Grande Super Deluxe",
+      "id": "946"
+    },
+    {
+      "model": "Grande Deluxe",
+      "id": "1004"
+    },
+    {
+      "model": "Bravo Super",
+      "id": "1038"
+    },
+    {
+      "model": "Boxer 2",
+      "id": "1152"
+    },
+    {
+      "model": "Ciao P",
+      "id": "1239"
+    },
+    {
+      "model": "Ciao PX",
+      "id": "1240"
+    },
+    {
+      "model": "Ciao PXV",
+      "id": "1241"
+    },
+    {
+      "model": "Vespino",
+      "id": "1356"
+    },
+    {
+      "model": "Boss",
+      "id": "1517"
+    }
+  ],
+  "Viberti": [
+    {
+      "model": "Vivi",
+      "id": "1462"
+    }
+  ],
+  "Victoria": [
+    {
+      "model": "110 s",
+      "id": "259"
+    },
+    {
+      "model": "111",
+      "id": "260"
+    },
+    {
+      "model": "Vicky",
+      "id": "369"
+    },
+    {
+      "model": "IVN",
+      "id": "418"
+    },
+    {
+      "model": "Avanti K",
+      "id": "432"
+    },
+    {
+      "model": "FM38 L",
+      "id": "1204"
+    },
+    {
+      "model": "Spoetnik",
+      "id": "1278"
+    },
+    {
+      "model": "Luxus",
+      "id": "1341"
+    }
+  ],
+  "Werya": [
+    {
+      "model": "Sport",
+      "id": "1498"
+    }
+  ],
+  "Whizzer": [
+    {
+      "model": "Cyclone",
+      "id": "215"
+    },
+    {
+      "model": "Pacemaker",
+      "id": "388"
+    },
+    {
+      "model": "NE-5",
+      "id": "1569"
+    }
+  ],
+  "Wildfire": [
+    {
+      "model": "WF110-M1",
+      "id": "1549"
+    }
+  ],
+  "Wilma": [
+    {
+      "model": "Mosquito",
+      "id": "1163"
+    }
+  ],
+  "Wind": [
+    {
+      "model": "WMX 50",
+      "id": "1630"
+    },
+    {
+      "model": "WMX Cargo",
+      "id": "1631"
+    },
+    {
+      "model": "City",
+      "id": "1632"
+    },
+    {
+      "model": "Classic",
+      "id": "1633"
+    }
+  ],
+  "Yamaha": [
+    {
+      "model": "QT50",
+      "id": "194"
+    },
+    {
+      "model": "Rosa Toro",
+      "id": "242"
+    },
+    {
+      "model": "MF-2",
+      "id": "249"
+    },
+    {
+      "model": "MJ-2",
+      "id": "250"
+    },
+    {
+      "model": "YB 50",
+      "id": "323"
+    },
+    {
+      "model": "FS-1",
+      "id": "324"
+    },
+    {
+      "model": "LB-50 Chappy",
+      "id": "326"
+    },
+    {
+      "model": "Mate 50",
+      "id": "332"
+    },
+    {
+      "model": "PW-50",
+      "id": "389"
+    },
+    {
+      "model": "YSR-50",
+      "id": "440"
+    },
+    {
+      "model": "MF3-D",
+      "id": "552"
+    },
+    {
+      "model": "QT50 Yamahopper",
+      "id": "947"
+    },
+    {
+      "model": "DT",
+      "id": "1025"
+    },
+    {
+      "model": "QT50L",
+      "id": "1026"
+    },
+    {
+      "model": "RD50",
+      "id": "1027"
+    },
+    {
+      "model": "QT50J",
+      "id": "1028"
+    },
+    {
+      "model": "SH50ML",
+      "id": "1029"
+    },
+    {
+      "model": "LB50-IIAM Chappy",
+      "id": "1030"
+    },
+    {
+      "model": "DT50mx",
+      "id": "1109"
+    },
+    {
+      "model": "LB80 Chappy",
+      "id": "1126"
+    },
+    {
+      "model": "MJ50 Towny",
+      "id": "1184"
+    },
+    {
+      "model": "MS-50",
+      "id": "1379"
+    },
+    {
+      "model": "U7E",
+      "id": "1451"
+    },
+    {
+      "model": "TY50p",
+      "id": "1480"
+    },
+    {
+      "model": "Champ",
+      "id": "1504"
+    },
+    {
+      "model": "TY50M",
+      "id": "1518"
+    },
+    {
+      "model": "RD50M",
+      "id": "1526"
+    },
+    {
+      "model": "FS1E",
+      "id": "1553"
+    },
+    {
+      "model": "RD60",
+      "id": "1603"
+    },
+    {
+      "model": "G6SB",
+      "id": "1613"
+    }
+  ],
+  "Yardman": [
+    {
+      "model": "Easy Rider",
+      "id": "816"
+    },
+    {
+      "model": "Mo-Trek",
+      "id": "1140"
+    }
+  ],
+  "Yumbo": [
+    {
+      "model": "Free",
+      "id": "1189"
+    }
+  ],
+  "Zanella": [
+    {
+      "model": "Due Sol Fire",
+      "id": "1625"
+    },
+    {
+      "model": "V3 Due",
+      "id": "1624"
+    },
+    {
+      "model": "Rally",
+      "id": "1626"
+    },
+    {
+      "model": "Pocket",
+      "id": "1627"
+    }
+  ],
+  "Zanetti": [
+    {
+      "model": "Bicizeta",
+      "id": "1430"
+    }
+  ],
+  "Z\u00fcndapp": [
+    {
+      "model": "M50",
+      "id": "397"
+    },
+    {
+      "model": "Super Combinette De Luxe",
+      "id": "427"
+    },
+    {
+      "model": "ZS 25",
+      "id": "468"
+    },
+    {
+      "model": "KS-50LC",
+      "id": "533"
+    },
+    {
+      "model": "Automatic Mofa",
+      "id": "948"
+    },
+    {
+      "model": "Mofa 25",
+      "id": "949"
+    },
+    {
+      "model": "Automatic Moped",
+      "id": "950"
+    },
+    {
+      "model": "Moped M-50",
+      "id": "951"
+    },
+    {
+      "model": "C50 Super",
+      "id": "952"
+    },
+    {
+      "model": "C50 Sport",
+      "id": "953"
+    },
+    {
+      "model": "GTS50",
+      "id": "954"
+    },
+    {
+      "model": "R50",
+      "id": "955"
+    },
+    {
+      "model": "Mokick",
+      "id": "956"
+    },
+    {
+      "model": "CS50",
+      "id": "957"
+    },
+    {
+      "model": "Super Combinette",
+      "id": "1065"
+    },
+    {
+      "model": "ZL 25",
+      "id": "1090"
+    },
+    {
+      "model": "Combinette",
+      "id": "1104"
+    },
+    {
+      "model": "RZ 20",
+      "id": "1134"
+    },
+    {
+      "model": "Mamba",
+      "id": "1188"
+    },
+    {
+      "model": "ZA 40",
+      "id": "1242"
+    },
+    {
+      "model": "ZX 25",
+      "id": "1243"
+    },
+    {
+      "model": "ZD40",
+      "id": "1323"
+    },
+    {
+      "model": "KS 80",
+      "id": "1385"
+    },
+    {
+      "model": "ZD50",
+      "id": "1389"
+    },
+    {
+      "model": "Mofa Star 2",
+      "id": "1439"
+    },
+    {
+      "model": "KS 50 Super Sport",
+      "id": "1516"
+    },
+    {
+      "model": "Falconette",
+      "id": "1599"
+    }
+  ]
+}
