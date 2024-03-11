@@ -52,9 +52,9 @@ defmodule Garage.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.0-pre"},
-      {:ash, "~> 2.0"},
+      {:ash, "~> 2.20", override: true},
       {:ash_postgres, "~> 1.3"},
-      {:ash_phoenix, "~> 1.3"},
+      {:ash_phoenix, "~> 1.3.2"},
       {:ash_authentication, "~> 3.12"},
       {:ash_authentication_phoenix, "~> 1.9.2"},
       {:live_select, "~> 1.3.2"},
@@ -62,8 +62,8 @@ defmodule Garage.MixProject do
       {:ex_aws_s3, "~> 2.0"},
       {:sweet_xml, "~> 0.6"},
       {:timex, "~> 3.0"},
-      {:crawly, "~> 0.16.0"},
       {:req, "~> 0.4"}
+      # {:crawly, "~> 0.16.0"},
     ]
   end
 
