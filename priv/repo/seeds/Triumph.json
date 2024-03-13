@@ -6,6 +6,12 @@
       "name": "Knirps"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Knirps Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Knirps Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Knirps Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Knirps Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

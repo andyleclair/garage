@@ -27,6 +27,33 @@
       "name": "Vicky"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Vicky Stock Exhaust"
+    },
+    {
+      "name": "Spoetnik Stock Exhaust"
+    },
+    {
+      "name": "Luxus Stock Exhaust"
+    },
+    {
+      "name": "IVN Stock Exhaust"
+    },
+    {
+      "name": "FM38 L Stock Exhaust"
+    },
+    {
+      "name": "Avanti K Stock Exhaust"
+    },
+    {
+      "name": "111 Stock Exhaust"
+    },
+    {
+      "name": "110 s Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Vicky Stock Forks"
@@ -79,39 +106,12 @@
       "name": "110 s Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Vicky Stock Exhaust"
-    },
-    {
-      "name": "Spoetnik Stock Exhaust"
-    },
-    {
-      "name": "Luxus Stock Exhaust"
-    },
-    {
-      "name": "IVN Stock Exhaust"
-    },
-    {
-      "name": "FM38 L Stock Exhaust"
-    },
-    {
-      "name": "Avanti K Stock Exhaust"
-    },
-    {
-      "name": "111 Stock Exhaust"
-    },
-    {
-      "name": "110 s Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

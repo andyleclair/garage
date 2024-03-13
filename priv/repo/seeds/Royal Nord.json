@@ -12,6 +12,18 @@
       "name": "Super Vedette"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Super Vedette Stock Exhaust"
+    },
+    {
+      "name": "Polaris Stock Exhaust"
+    },
+    {
+      "name": "GT Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Super Vedette Stock Forks"
@@ -34,24 +46,12 @@
       "name": "GT Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Super Vedette Stock Exhaust"
-    },
-    {
-      "name": "Polaris Stock Exhaust"
-    },
-    {
-      "name": "GT Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

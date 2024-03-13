@@ -6,6 +6,12 @@
       "name": "Trail"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Trail Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Trail Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Trail Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Trail Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

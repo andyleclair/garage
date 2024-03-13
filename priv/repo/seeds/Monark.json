@@ -12,6 +12,18 @@
       "name": "Scooten"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Scooten Stock Exhaust"
+    },
+    {
+      "name": "Monarscoot Stock Exhaust"
+    },
+    {
+      "name": "50ss Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Scooten Stock Forks"
@@ -34,24 +46,12 @@
       "name": "50ss Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Scooten Stock Exhaust"
-    },
-    {
-      "name": "Monarscoot Stock Exhaust"
-    },
-    {
-      "name": "50ss Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -6,6 +6,12 @@
       "name": "Saxonette"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Saxonette Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Saxonette Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Saxonette Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Saxonette Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

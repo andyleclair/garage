@@ -6,6 +6,12 @@
       "name": "Superlux"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Superlux Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Superlux Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Superlux Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Superlux Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

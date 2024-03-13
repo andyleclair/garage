@@ -24,6 +24,30 @@
       "name": "TFR"
     }
   ],
+  "exhausts": [
+    {
+      "name": "TFR Stock Exhaust"
+    },
+    {
+      "name": "Safari V2 Stock Exhaust"
+    },
+    {
+      "name": "Magnum Stock Exhaust"
+    },
+    {
+      "name": "Luna TFR Stock Exhaust"
+    },
+    {
+      "name": "Luna Super Stock Exhaust"
+    },
+    {
+      "name": "Luna Stock Exhaust"
+    },
+    {
+      "name": "K4 100 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "TFR Stock Forks"
@@ -70,36 +94,12 @@
       "name": "K4 100 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "TFR Stock Exhaust"
-    },
-    {
-      "name": "Safari V2 Stock Exhaust"
-    },
-    {
-      "name": "Magnum Stock Exhaust"
-    },
-    {
-      "name": "Luna TFR Stock Exhaust"
-    },
-    {
-      "name": "Luna Super Stock Exhaust"
-    },
-    {
-      "name": "Luna Stock Exhaust"
-    },
-    {
-      "name": "K4 100 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

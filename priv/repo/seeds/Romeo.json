@@ -6,6 +6,12 @@
       "name": "Thunderhawk"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Thunderhawk Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Thunderhawk Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Thunderhawk Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Thunderhawk Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

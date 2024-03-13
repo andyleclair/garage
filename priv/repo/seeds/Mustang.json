@@ -6,6 +6,12 @@
       "name": "Cobra 2000"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Cobra 2000 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Cobra 2000 Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Cobra 2000 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Cobra 2000 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

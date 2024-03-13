@@ -6,6 +6,12 @@
       "name": "Nippy Deluxe"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Nippy Deluxe Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Nippy Deluxe Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Nippy Deluxe Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Nippy Deluxe Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

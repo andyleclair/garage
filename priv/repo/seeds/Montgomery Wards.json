@@ -6,6 +6,12 @@
       "name": "Riverside Moped"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Riverside Moped Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Riverside Moped Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Riverside Moped Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Riverside Moped Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

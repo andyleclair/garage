@@ -6,6 +6,12 @@
       "name": "Basic"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Basic Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Basic Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Basic Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Basic Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

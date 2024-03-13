@@ -6,6 +6,12 @@
       "name": "Vivi"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Vivi Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Vivi Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Vivi Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Vivi Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

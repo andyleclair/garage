@@ -6,6 +6,12 @@
       "name": "Mopet"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Mopet Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Mopet Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Mopet Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Mopet Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

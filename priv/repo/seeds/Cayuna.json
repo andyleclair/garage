@@ -6,6 +6,12 @@
       "name": "Scorpion"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Scorpion Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Scorpion Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Scorpion Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Scorpion Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -24,6 +24,30 @@
       "name": "Variomatic deLux"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Variomatic deLux Stock Exhaust"
+    },
+    {
+      "name": "SuperExtra Stock Exhaust"
+    },
+    {
+      "name": "MZV Stock Exhaust"
+    },
+    {
+      "name": "MT400 Stock Exhaust"
+    },
+    {
+      "name": "Commando Stock Exhaust"
+    },
+    {
+      "name": "Cobra Stock Exhaust"
+    },
+    {
+      "name": "300MT Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Variomatic deLux Stock Forks"
@@ -70,36 +94,12 @@
       "name": "300MT Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Variomatic deLux Stock Exhaust"
-    },
-    {
-      "name": "SuperExtra Stock Exhaust"
-    },
-    {
-      "name": "MZV Stock Exhaust"
-    },
-    {
-      "name": "MT400 Stock Exhaust"
-    },
-    {
-      "name": "Commando Stock Exhaust"
-    },
-    {
-      "name": "Cobra Stock Exhaust"
-    },
-    {
-      "name": "300MT Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

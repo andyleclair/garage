@@ -6,6 +6,12 @@
       "name": "MPI"
     }
   ],
+  "exhausts": [
+    {
+      "name": "MPI Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "MPI Stock Forks"
@@ -16,18 +22,12 @@
       "name": "MPI Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "MPI Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

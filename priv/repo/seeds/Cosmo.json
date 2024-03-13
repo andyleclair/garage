@@ -24,6 +24,30 @@
       "name": "Stinger"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Stinger Stock Exhaust"
+    },
+    {
+      "name": "Colt IV Stock Exhaust"
+    },
+    {
+      "name": "Colt III Variator Stock Exhaust"
+    },
+    {
+      "name": "Colt III Reed Stock Exhaust"
+    },
+    {
+      "name": "Colt II Stock Exhaust"
+    },
+    {
+      "name": "Colt I Stock Exhaust"
+    },
+    {
+      "name": "Blazer Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Stinger Stock Forks"
@@ -70,36 +94,12 @@
       "name": "Blazer Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Stinger Stock Exhaust"
-    },
-    {
-      "name": "Colt IV Stock Exhaust"
-    },
-    {
-      "name": "Colt III Variator Stock Exhaust"
-    },
-    {
-      "name": "Colt III Reed Stock Exhaust"
-    },
-    {
-      "name": "Colt II Stock Exhaust"
-    },
-    {
-      "name": "Colt I Stock Exhaust"
-    },
-    {
-      "name": "Blazer Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

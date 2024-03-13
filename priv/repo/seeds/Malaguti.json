@@ -36,6 +36,42 @@
       "name": "Tiger"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Tiger Stock Exhaust"
+    },
+    {
+      "name": "Roxi Stock Exhaust"
+    },
+    {
+      "name": "Quattrotto Stock Exhaust"
+    },
+    {
+      "name": "Quattroto Mono Stock Exhaust"
+    },
+    {
+      "name": "Pilot Stock Exhaust"
+    },
+    {
+      "name": "Olympique Stock Exhaust"
+    },
+    {
+      "name": "Motorik Stock Exhaust"
+    },
+    {
+      "name": "Europino Stock Exhaust"
+    },
+    {
+      "name": "Commuter 20 Stock Exhaust"
+    },
+    {
+      "name": "Commuter 2 Stock Exhaust"
+    },
+    {
+      "name": "Commuter Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Tiger Stock Forks"
@@ -106,48 +142,12 @@
       "name": "Commuter Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Tiger Stock Exhaust"
-    },
-    {
-      "name": "Roxi Stock Exhaust"
-    },
-    {
-      "name": "Quattrotto Stock Exhaust"
-    },
-    {
-      "name": "Quattroto Mono Stock Exhaust"
-    },
-    {
-      "name": "Pilot Stock Exhaust"
-    },
-    {
-      "name": "Olympique Stock Exhaust"
-    },
-    {
-      "name": "Motorik Stock Exhaust"
-    },
-    {
-      "name": "Europino Stock Exhaust"
-    },
-    {
-      "name": "Commuter 20 Stock Exhaust"
-    },
-    {
-      "name": "Commuter 2 Stock Exhaust"
-    },
-    {
-      "name": "Commuter Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

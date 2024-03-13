@@ -6,6 +6,12 @@
       "name": "Flides"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Flides Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Flides Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Flides Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Flides Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

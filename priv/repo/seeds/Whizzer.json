@@ -12,6 +12,18 @@
       "name": "Pacemaker"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Pacemaker Stock Exhaust"
+    },
+    {
+      "name": "NE-5 Stock Exhaust"
+    },
+    {
+      "name": "Cyclone Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Pacemaker Stock Forks"
@@ -34,24 +46,12 @@
       "name": "Cyclone Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Pacemaker Stock Exhaust"
-    },
-    {
-      "name": "NE-5 Stock Exhaust"
-    },
-    {
-      "name": "Cyclone Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

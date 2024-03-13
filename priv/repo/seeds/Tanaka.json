@@ -6,6 +6,12 @@
       "name": "Bike Bug"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Bike Bug Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Bike Bug Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Bike Bug Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Bike Bug Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

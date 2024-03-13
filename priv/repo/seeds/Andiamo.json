@@ -15,6 +15,21 @@
       "name": "L-2"
     }
   ],
+  "exhausts": [
+    {
+      "name": "L-2 Stock Exhaust"
+    },
+    {
+      "name": "L-1 Stock Exhaust"
+    },
+    {
+      "name": "E-2 Stock Exhaust"
+    },
+    {
+      "name": "E-1 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "L-2 Stock Forks"
@@ -43,27 +58,12 @@
       "name": "E-1 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "L-2 Stock Exhaust"
-    },
-    {
-      "name": "L-1 Stock Exhaust"
-    },
-    {
-      "name": "E-2 Stock Exhaust"
-    },
-    {
-      "name": "E-1 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

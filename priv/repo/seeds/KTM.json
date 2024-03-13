@@ -12,6 +12,18 @@
       "name": "Foxi"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Foxi Stock Exhaust"
+    },
+    {
+      "name": "Comet Racer Stock Exhaust"
+    },
+    {
+      "name": "Comet Cross Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Foxi Stock Forks"
@@ -34,24 +46,12 @@
       "name": "Comet Cross Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Foxi Stock Exhaust"
-    },
-    {
-      "name": "Comet Racer Stock Exhaust"
-    },
-    {
-      "name": "Comet Cross Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

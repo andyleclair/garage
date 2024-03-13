@@ -51,6 +51,57 @@
       "name": "Western Flyer"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Western Flyer Stock Exhaust"
+    },
+    {
+      "name": "Traveller I Stock Exhaust"
+    },
+    {
+      "name": "Open Road Stock Exhaust"
+    },
+    {
+      "name": "Motrek Stock Exhaust"
+    },
+    {
+      "name": "Mediallion 2281 Stock Exhaust"
+    },
+    {
+      "name": "Medallion 2280 Stock Exhaust"
+    },
+    {
+      "name": "Medallion 2271 Stock Exhaust"
+    },
+    {
+      "name": "Imperial Stock Exhaust"
+    },
+    {
+      "name": "Commuter I Stock Exhaust"
+    },
+    {
+      "name": "Commuter 2250 Stock Exhaust"
+    },
+    {
+      "name": "Commuter 2240 Stock Exhaust"
+    },
+    {
+      "name": "Commuter 2220 Stock Exhaust"
+    },
+    {
+      "name": "Commuter Stock Exhaust"
+    },
+    {
+      "name": "57062 Stock Exhaust"
+    },
+    {
+      "name": "2251 Stock Exhaust"
+    },
+    {
+      "name": "2241 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Western Flyer Stock Forks"
@@ -151,63 +202,12 @@
       "name": "2241 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Western Flyer Stock Exhaust"
-    },
-    {
-      "name": "Traveller I Stock Exhaust"
-    },
-    {
-      "name": "Open Road Stock Exhaust"
-    },
-    {
-      "name": "Motrek Stock Exhaust"
-    },
-    {
-      "name": "Mediallion 2281 Stock Exhaust"
-    },
-    {
-      "name": "Medallion 2280 Stock Exhaust"
-    },
-    {
-      "name": "Medallion 2271 Stock Exhaust"
-    },
-    {
-      "name": "Imperial Stock Exhaust"
-    },
-    {
-      "name": "Commuter I Stock Exhaust"
-    },
-    {
-      "name": "Commuter 2250 Stock Exhaust"
-    },
-    {
-      "name": "Commuter 2240 Stock Exhaust"
-    },
-    {
-      "name": "Commuter 2220 Stock Exhaust"
-    },
-    {
-      "name": "Commuter Stock Exhaust"
-    },
-    {
-      "name": "57062 Stock Exhaust"
-    },
-    {
-      "name": "2251 Stock Exhaust"
-    },
-    {
-      "name": "2241 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

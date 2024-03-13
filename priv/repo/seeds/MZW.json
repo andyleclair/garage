@@ -6,6 +6,12 @@
       "name": "Cambridge"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Cambridge Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Cambridge Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Cambridge Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Cambridge Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

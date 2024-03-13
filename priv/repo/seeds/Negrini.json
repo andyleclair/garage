@@ -15,6 +15,21 @@
       "name": "MX Sport"
     }
   ],
+  "exhausts": [
+    {
+      "name": "MX Sport Stock Exhaust"
+    },
+    {
+      "name": "Leprotto Stock Exhaust"
+    },
+    {
+      "name": "Harvard Stock Exhaust"
+    },
+    {
+      "name": "Gazelle Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "MX Sport Stock Forks"
@@ -43,27 +58,12 @@
       "name": "Gazelle Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "MX Sport Stock Exhaust"
-    },
-    {
-      "name": "Leprotto Stock Exhaust"
-    },
-    {
-      "name": "Harvard Stock Exhaust"
-    },
-    {
-      "name": "Gazelle Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

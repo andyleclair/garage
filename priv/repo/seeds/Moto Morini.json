@@ -6,6 +6,12 @@
       "name": "Corsarino"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Corsarino Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Corsarino Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Corsarino Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Corsarino Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

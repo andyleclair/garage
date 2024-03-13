@@ -9,6 +9,15 @@
       "name": "Tiger T-3"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Tiger T-3 Stock Exhaust"
+    },
+    {
+      "name": "Samrat Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Tiger T-3 Stock Forks"
@@ -25,21 +34,12 @@
       "name": "Samrat Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Tiger T-3 Stock Exhaust"
-    },
-    {
-      "name": "Samrat Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

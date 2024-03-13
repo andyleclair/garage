@@ -12,6 +12,18 @@
       "name": "Tahoe G2"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Tahoe G2 Stock Exhaust"
+    },
+    {
+      "name": "Tahoe G1 Stock Exhaust"
+    },
+    {
+      "name": "Seirra 50 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Tahoe G2 Stock Forks"
@@ -34,24 +46,12 @@
       "name": "Seirra 50 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Tahoe G2 Stock Exhaust"
-    },
-    {
-      "name": "Tahoe G1 Stock Exhaust"
-    },
-    {
-      "name": "Seirra 50 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

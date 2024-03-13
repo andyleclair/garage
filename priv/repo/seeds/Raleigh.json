@@ -18,6 +18,24 @@
       "name": "Wisp"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Wisp Stock Exhaust"
+    },
+    {
+      "name": "Ultramatic Stock Exhaust"
+    },
+    {
+      "name": "Super 50 Stock Exhaust"
+    },
+    {
+      "name": "RM5 Stock Exhaust"
+    },
+    {
+      "name": "RM4 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Wisp Stock Forks"
@@ -52,30 +70,12 @@
       "name": "RM4 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Wisp Stock Exhaust"
-    },
-    {
-      "name": "Ultramatic Stock Exhaust"
-    },
-    {
-      "name": "Super 50 Stock Exhaust"
-    },
-    {
-      "name": "RM5 Stock Exhaust"
-    },
-    {
-      "name": "RM4 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

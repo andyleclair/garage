@@ -6,6 +6,12 @@
       "name": "Free"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Free Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Free Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Free Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Free Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

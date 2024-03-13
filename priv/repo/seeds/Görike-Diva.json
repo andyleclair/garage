@@ -6,6 +6,12 @@
       "name": "Luxus"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Luxus Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Luxus Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Luxus Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Luxus Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

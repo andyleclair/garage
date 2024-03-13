@@ -24,6 +24,30 @@
       "name": "Rolly"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Rolly Stock Exhaust"
+    },
+    {
+      "name": "Mini 3 Stock Exhaust"
+    },
+    {
+      "name": "Falcon 50 Stock Exhaust"
+    },
+    {
+      "name": "Brisk Stock Exhaust"
+    },
+    {
+      "name": "55e Stock Exhaust"
+    },
+    {
+      "name": "50 Senda Stock Exhaust"
+    },
+    {
+      "name": "50 Pronto Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Rolly Stock Forks"
@@ -70,36 +94,12 @@
       "name": "50 Pronto Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Rolly Stock Exhaust"
-    },
-    {
-      "name": "Mini 3 Stock Exhaust"
-    },
-    {
-      "name": "Falcon 50 Stock Exhaust"
-    },
-    {
-      "name": "Brisk Stock Exhaust"
-    },
-    {
-      "name": "55e Stock Exhaust"
-    },
-    {
-      "name": "50 Senda Stock Exhaust"
-    },
-    {
-      "name": "50 Pronto Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

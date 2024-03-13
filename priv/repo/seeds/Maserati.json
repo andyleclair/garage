@@ -9,6 +9,15 @@
       "name": "T2/U"
     }
   ],
+  "exhausts": [
+    {
+      "name": "T2/U Stock Exhaust"
+    },
+    {
+      "name": "T2/D Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "T2/U Stock Forks"
@@ -25,21 +34,12 @@
       "name": "T2/D Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "T2/U Stock Exhaust"
-    },
-    {
-      "name": "T2/D Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -33,6 +33,39 @@
       "name": "Variator"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Variator Stock Exhaust"
+    },
+    {
+      "name": "Pistol Stock Exhaust"
+    },
+    {
+      "name": "Piccoli Stock Exhaust"
+    },
+    {
+      "name": "Minisport Stock Exhaust"
+    },
+    {
+      "name": "Magnum Stock Exhaust"
+    },
+    {
+      "name": "45 Stock Exhaust"
+    },
+    {
+      "name": "44 Sport Stock Exhaust"
+    },
+    {
+      "name": "44 Stock Exhaust"
+    },
+    {
+      "name": "38 Stock Exhaust"
+    },
+    {
+      "name": "22 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Variator Stock Forks"
@@ -97,45 +130,12 @@
       "name": "22 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Variator Stock Exhaust"
-    },
-    {
-      "name": "Pistol Stock Exhaust"
-    },
-    {
-      "name": "Piccoli Stock Exhaust"
-    },
-    {
-      "name": "Minisport Stock Exhaust"
-    },
-    {
-      "name": "Magnum Stock Exhaust"
-    },
-    {
-      "name": "45 Stock Exhaust"
-    },
-    {
-      "name": "44 Sport Stock Exhaust"
-    },
-    {
-      "name": "44 Stock Exhaust"
-    },
-    {
-      "name": "38 Stock Exhaust"
-    },
-    {
-      "name": "22 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

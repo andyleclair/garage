@@ -6,6 +6,12 @@
       "name": "RC 25"
     }
   ],
+  "exhausts": [
+    {
+      "name": "RC 25 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "RC 25 Stock Forks"
@@ -16,18 +22,12 @@
       "name": "RC 25 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "RC 25 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

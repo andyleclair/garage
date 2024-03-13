@@ -6,6 +6,12 @@
       "name": "Alpa"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Alpa Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Alpa Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Alpa Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Alpa Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

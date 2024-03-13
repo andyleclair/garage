@@ -6,6 +6,12 @@
       "name": "729"
     }
   ],
+  "exhausts": [
+    {
+      "name": "729 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "729 Stock Forks"
@@ -16,18 +22,12 @@
       "name": "729 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "729 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

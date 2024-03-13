@@ -6,6 +6,12 @@
       "name": "Practical"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Practical Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Practical Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Practical Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Practical Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

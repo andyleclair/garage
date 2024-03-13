@@ -6,6 +6,12 @@
       "name": "Mini"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Mini Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Mini Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Mini Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Mini Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

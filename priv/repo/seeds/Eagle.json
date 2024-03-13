@@ -12,6 +12,18 @@
       "name": "3"
     }
   ],
+  "exhausts": [
+    {
+      "name": "3 Stock Exhaust"
+    },
+    {
+      "name": "2 Stock Exhaust"
+    },
+    {
+      "name": "1 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "3 Stock Forks"
@@ -34,24 +46,12 @@
       "name": "1 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "3 Stock Exhaust"
-    },
-    {
-      "name": "2 Stock Exhaust"
-    },
-    {
-      "name": "1 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

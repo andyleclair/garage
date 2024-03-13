@@ -21,6 +21,27 @@
       "name": "Super 7"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Super 7 Stock Exhaust"
+    },
+    {
+      "name": "Record Stock Exhaust"
+    },
+    {
+      "name": "Primus Stock Exhaust"
+    },
+    {
+      "name": "Kingline Stock Exhaust"
+    },
+    {
+      "name": "Kickmonomatic Stock Exhaust"
+    },
+    {
+      "name": "Ideal Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Super 7 Stock Forks"
@@ -61,33 +82,12 @@
       "name": "Ideal Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Super 7 Stock Exhaust"
-    },
-    {
-      "name": "Record Stock Exhaust"
-    },
-    {
-      "name": "Primus Stock Exhaust"
-    },
-    {
-      "name": "Kingline Stock Exhaust"
-    },
-    {
-      "name": "Kickmonomatic Stock Exhaust"
-    },
-    {
-      "name": "Ideal Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

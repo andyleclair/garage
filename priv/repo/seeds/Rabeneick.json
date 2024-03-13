@@ -6,6 +6,12 @@
       "name": "Binetta III"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Binetta III Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Binetta III Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Binetta III Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Binetta III Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

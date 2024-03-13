@@ -21,6 +21,27 @@
       "name": "Trotter"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Trotter Stock Exhaust"
+    },
+    {
+      "name": "Robin Stock Exhaust"
+    },
+    {
+      "name": "Magnum Stock Exhaust"
+    },
+    {
+      "name": "G2 Stock Exhaust"
+    },
+    {
+      "name": "Dingo Stock Exhaust"
+    },
+    {
+      "name": "Chiu Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Trotter Stock Forks"
@@ -61,33 +82,12 @@
       "name": "Chiu Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Trotter Stock Exhaust"
-    },
-    {
-      "name": "Robin Stock Exhaust"
-    },
-    {
-      "name": "Magnum Stock Exhaust"
-    },
-    {
-      "name": "G2 Stock Exhaust"
-    },
-    {
-      "name": "Dingo Stock Exhaust"
-    },
-    {
-      "name": "Chiu Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

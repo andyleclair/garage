@@ -9,6 +9,15 @@
       "name": "Greyhound"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Greyhound Stock Exhaust"
+    },
+    {
+      "name": "Collie Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Greyhound Stock Forks"
@@ -25,21 +34,12 @@
       "name": "Collie Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Greyhound Stock Exhaust"
-    },
-    {
-      "name": "Collie Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

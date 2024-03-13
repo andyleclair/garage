@@ -6,6 +6,12 @@
       "name": "Moto-G"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Moto-G Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Moto-G Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Moto-G Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Moto-G Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

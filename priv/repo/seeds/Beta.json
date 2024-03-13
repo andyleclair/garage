@@ -24,6 +24,30 @@
       "name": "Tour"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Tour Stock Exhaust"
+    },
+    {
+      "name": "Standard Stock Exhaust"
+    },
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "SL5 Stock Exhaust"
+    },
+    {
+      "name": "Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Camoscio Stock Exhaust"
+    },
+    {
+      "name": "Alpha Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Tour Stock Forks"
@@ -70,36 +94,12 @@
       "name": "Alpha Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Tour Stock Exhaust"
-    },
-    {
-      "name": "Standard Stock Exhaust"
-    },
-    {
-      "name": "Sport Stock Exhaust"
-    },
-    {
-      "name": "SL5 Stock Exhaust"
-    },
-    {
-      "name": "Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Camoscio Stock Exhaust"
-    },
-    {
-      "name": "Alpha Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

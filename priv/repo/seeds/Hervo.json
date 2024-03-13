@@ -6,6 +6,12 @@
       "name": "Hervo-Matic"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Hervo-Matic Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Hervo-Matic Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Hervo-Matic Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Hervo-Matic Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

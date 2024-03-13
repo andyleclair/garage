@@ -15,6 +15,21 @@
       "name": "Super Strada Flash"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Super Strada Flash Stock Exhaust"
+    },
+    {
+      "name": "Pal Stock Exhaust"
+    },
+    {
+      "name": "Minor Stock Exhaust"
+    },
+    {
+      "name": "Dasl Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Super Strada Flash Stock Forks"
@@ -43,27 +58,12 @@
       "name": "Dasl Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Super Strada Flash Stock Exhaust"
-    },
-    {
-      "name": "Pal Stock Exhaust"
-    },
-    {
-      "name": "Minor Stock Exhaust"
-    },
-    {
-      "name": "Dasl Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

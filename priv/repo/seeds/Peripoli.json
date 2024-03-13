@@ -6,6 +6,12 @@
       "name": "Giulietta"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Giulietta Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Giulietta Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Giulietta Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Giulietta Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

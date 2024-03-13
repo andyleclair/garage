@@ -39,6 +39,45 @@
       "name": "Super Sport"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Super Sport Stock Exhaust"
+    },
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "Silver Foxi Stock Exhaust"
+    },
+    {
+      "name": "Salsburg Stock Exhaust"
+    },
+    {
+      "name": "S Stock Exhaust"
+    },
+    {
+      "name": "Red Foxi Stock Exhaust"
+    },
+    {
+      "name": "GT Sport Stock Exhaust"
+    },
+    {
+      "name": "GT Deluxe Stock Exhaust"
+    },
+    {
+      "name": "GT Stock Exhaust"
+    },
+    {
+      "name": "Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Baron Stock Exhaust"
+    },
+    {
+      "name": "Amigo Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Super Sport Stock Forks"
@@ -115,51 +154,12 @@
       "name": "Amigo Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Super Sport Stock Exhaust"
-    },
-    {
-      "name": "Sport Stock Exhaust"
-    },
-    {
-      "name": "Silver Foxi Stock Exhaust"
-    },
-    {
-      "name": "Salsburg Stock Exhaust"
-    },
-    {
-      "name": "S Stock Exhaust"
-    },
-    {
-      "name": "Red Foxi Stock Exhaust"
-    },
-    {
-      "name": "GT Sport Stock Exhaust"
-    },
-    {
-      "name": "GT Deluxe Stock Exhaust"
-    },
-    {
-      "name": "GT Stock Exhaust"
-    },
-    {
-      "name": "Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Baron Stock Exhaust"
-    },
-    {
-      "name": "Amigo Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

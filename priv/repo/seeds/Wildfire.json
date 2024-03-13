@@ -6,6 +6,12 @@
       "name": "WF110-M1"
     }
   ],
+  "exhausts": [
+    {
+      "name": "WF110-M1 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "WF110-M1 Stock Forks"
@@ -16,18 +22,12 @@
       "name": "WF110-M1 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "WF110-M1 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -6,6 +6,12 @@
       "name": "Seagull"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Seagull Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Seagull Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Seagull Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Seagull Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

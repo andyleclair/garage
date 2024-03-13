@@ -39,6 +39,45 @@
       "name": "Trial"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Trial Stock Exhaust"
+    },
+    {
+      "name": "Touring Stock Exhaust"
+    },
+    {
+      "name": "SD Stock Exhaust"
+    },
+    {
+      "name": "RS Stock Exhaust"
+    },
+    {
+      "name": "RL Stock Exhaust"
+    },
+    {
+      "name": "RE Stock Exhaust"
+    },
+    {
+      "name": "RA Stock Exhaust"
+    },
+    {
+      "name": "Enduro Stock Exhaust"
+    },
+    {
+      "name": "Eco Stock Exhaust"
+    },
+    {
+      "name": "E-type Stock Exhaust"
+    },
+    {
+      "name": "50 Trial RS Stock Exhaust"
+    },
+    {
+      "name": "50 Touring RS Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Trial Stock Forks"
@@ -115,51 +154,12 @@
       "name": "50 Touring RS Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Trial Stock Exhaust"
-    },
-    {
-      "name": "Touring Stock Exhaust"
-    },
-    {
-      "name": "SD Stock Exhaust"
-    },
-    {
-      "name": "RS Stock Exhaust"
-    },
-    {
-      "name": "RL Stock Exhaust"
-    },
-    {
-      "name": "RE Stock Exhaust"
-    },
-    {
-      "name": "RA Stock Exhaust"
-    },
-    {
-      "name": "Enduro Stock Exhaust"
-    },
-    {
-      "name": "Eco Stock Exhaust"
-    },
-    {
-      "name": "E-type Stock Exhaust"
-    },
-    {
-      "name": "50 Trial RS Stock Exhaust"
-    },
-    {
-      "name": "50 Touring RS Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

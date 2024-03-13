@@ -27,6 +27,33 @@
       "name": "V-501M"
     }
   ],
+  "exhausts": [
+    {
+      "name": "V-501M Stock Exhaust"
+    },
+    {
+      "name": "R-12 Stock Exhaust"
+    },
+    {
+      "name": "Mini Stock Exhaust"
+    },
+    {
+      "name": "Gauja-1 Stock Exhaust"
+    },
+    {
+      "name": "5 Stock Exhaust"
+    },
+    {
+      "name": "4 Stock Exhaust"
+    },
+    {
+      "name": "22 Stock Exhaust"
+    },
+    {
+      "name": "15-S Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "V-501M Stock Forks"
@@ -79,39 +106,12 @@
       "name": "15-S Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "V-501M Stock Exhaust"
-    },
-    {
-      "name": "R-12 Stock Exhaust"
-    },
-    {
-      "name": "Mini Stock Exhaust"
-    },
-    {
-      "name": "Gauja-1 Stock Exhaust"
-    },
-    {
-      "name": "5 Stock Exhaust"
-    },
-    {
-      "name": "4 Stock Exhaust"
-    },
-    {
-      "name": "22 Stock Exhaust"
-    },
-    {
-      "name": "15-S Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

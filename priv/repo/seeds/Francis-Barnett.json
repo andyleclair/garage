@@ -6,6 +6,12 @@
       "name": "J50 Powerbike"
     }
   ],
+  "exhausts": [
+    {
+      "name": "J50 Powerbike Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "J50 Powerbike Stock Forks"
@@ -16,18 +22,12 @@
       "name": "J50 Powerbike Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "J50 Powerbike Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -12,6 +12,18 @@
       "name": "VS50L"
     }
   ],
+  "exhausts": [
+    {
+      "name": "VS50L Stock Exhaust"
+    },
+    {
+      "name": "Free Spirit Stock Exhaust"
+    },
+    {
+      "name": "Allstate Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "VS50L Stock Forks"
@@ -34,24 +46,12 @@
       "name": "Allstate Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "VS50L Stock Exhaust"
-    },
-    {
-      "name": "Free Spirit Stock Exhaust"
-    },
-    {
-      "name": "Allstate Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

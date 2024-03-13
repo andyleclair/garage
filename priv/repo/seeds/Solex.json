@@ -57,6 +57,63 @@
       "name": "Trotilex"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Trotilex Stock Exhaust"
+    },
+    {
+      "name": "Tenor Stock Exhaust"
+    },
+    {
+      "name": "S3800 Stock Exhaust"
+    },
+    {
+      "name": "Pli-Solex Stock Exhaust"
+    },
+    {
+      "name": "Micron Stock Exhaust"
+    },
+    {
+      "name": "Horse Stock Exhaust"
+    },
+    {
+      "name": "Flash 6000 Stock Exhaust"
+    },
+    {
+      "name": "8000 Stock Exhaust"
+    },
+    {
+      "name": "6000 Stock Exhaust"
+    },
+    {
+      "name": "5000 Stock Exhaust"
+    },
+    {
+      "name": "4600 DOT Stock Exhaust"
+    },
+    {
+      "name": "4600 Stock Exhaust"
+    },
+    {
+      "name": "3800 Deluxe Stock Exhaust"
+    },
+    {
+      "name": "3800 Stock Exhaust"
+    },
+    {
+      "name": "3300 Stock Exhaust"
+    },
+    {
+      "name": "3200 Stock Exhaust"
+    },
+    {
+      "name": "2200 Stock Exhaust"
+    },
+    {
+      "name": "1700 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Trotilex Stock Forks"
@@ -169,69 +226,12 @@
       "name": "1700 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Trotilex Stock Exhaust"
-    },
-    {
-      "name": "Tenor Stock Exhaust"
-    },
-    {
-      "name": "S3800 Stock Exhaust"
-    },
-    {
-      "name": "Pli-Solex Stock Exhaust"
-    },
-    {
-      "name": "Micron Stock Exhaust"
-    },
-    {
-      "name": "Horse Stock Exhaust"
-    },
-    {
-      "name": "Flash 6000 Stock Exhaust"
-    },
-    {
-      "name": "8000 Stock Exhaust"
-    },
-    {
-      "name": "6000 Stock Exhaust"
-    },
-    {
-      "name": "5000 Stock Exhaust"
-    },
-    {
-      "name": "4600 DOT Stock Exhaust"
-    },
-    {
-      "name": "4600 Stock Exhaust"
-    },
-    {
-      "name": "3800 Deluxe Stock Exhaust"
-    },
-    {
-      "name": "3800 Stock Exhaust"
-    },
-    {
-      "name": "3300 Stock Exhaust"
-    },
-    {
-      "name": "3200 Stock Exhaust"
-    },
-    {
-      "name": "2200 Stock Exhaust"
-    },
-    {
-      "name": "1700 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

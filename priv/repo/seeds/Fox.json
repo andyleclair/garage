@@ -6,6 +6,12 @@
       "name": "Sundowner"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Sundowner Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Sundowner Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Sundowner Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Sundowner Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -12,6 +12,18 @@
       "name": "2000"
     }
   ],
+  "exhausts": [
+    {
+      "name": "2000 Stock Exhaust"
+    },
+    {
+      "name": "1269 Stock Exhaust"
+    },
+    {
+      "name": "1151 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "2000 Stock Forks"
@@ -34,24 +46,12 @@
       "name": "1151 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "2000 Stock Exhaust"
-    },
-    {
-      "name": "1269 Stock Exhaust"
-    },
-    {
-      "name": "1151 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

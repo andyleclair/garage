@@ -6,6 +6,12 @@
       "name": "Misty"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Misty Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Misty Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Misty Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Misty Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

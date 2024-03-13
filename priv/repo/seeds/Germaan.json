@@ -6,6 +6,12 @@
       "name": "Florence De Luxe"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Florence De Luxe Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Florence De Luxe Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Florence De Luxe Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Florence De Luxe Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

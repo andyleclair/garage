@@ -30,6 +30,36 @@
       "name": "Lance"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Lance Stock Exhaust"
+    },
+    {
+      "name": "Jubilee Stock Exhaust"
+    },
+    {
+      "name": "Easy Rider Stock Exhaust"
+    },
+    {
+      "name": "ER2SS Stock Exhaust"
+    },
+    {
+      "name": "ER2P Stock Exhaust"
+    },
+    {
+      "name": "ER2L Stock Exhaust"
+    },
+    {
+      "name": "ER2 Stock Exhaust"
+    },
+    {
+      "name": "ER1SS Stock Exhaust"
+    },
+    {
+      "name": "ER1 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Lance Stock Forks"
@@ -88,42 +118,12 @@
       "name": "ER1 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Lance Stock Exhaust"
-    },
-    {
-      "name": "Jubilee Stock Exhaust"
-    },
-    {
-      "name": "Easy Rider Stock Exhaust"
-    },
-    {
-      "name": "ER2SS Stock Exhaust"
-    },
-    {
-      "name": "ER2P Stock Exhaust"
-    },
-    {
-      "name": "ER2L Stock Exhaust"
-    },
-    {
-      "name": "ER2 Stock Exhaust"
-    },
-    {
-      "name": "ER1SS Stock Exhaust"
-    },
-    {
-      "name": "ER1 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -9,6 +9,15 @@
       "name": "Surfrider"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Surfrider Stock Exhaust"
+    },
+    {
+      "name": "7 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Surfrider Stock Forks"
@@ -25,21 +34,12 @@
       "name": "7 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Surfrider Stock Exhaust"
-    },
-    {
-      "name": "7 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

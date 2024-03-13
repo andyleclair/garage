@@ -9,6 +9,15 @@
       "name": "Sprint GS"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Sprint GS Stock Exhaust"
+    },
+    {
+      "name": "Minor Grand Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Sprint GS Stock Forks"
@@ -25,21 +34,12 @@
       "name": "Minor Grand Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Sprint GS Stock Exhaust"
-    },
-    {
-      "name": "Minor Grand Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

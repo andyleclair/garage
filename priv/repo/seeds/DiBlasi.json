@@ -9,6 +9,15 @@
       "name": "R7"
     }
   ],
+  "exhausts": [
+    {
+      "name": "R7 Stock Exhaust"
+    },
+    {
+      "name": "R2 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "R7 Stock Forks"
@@ -25,21 +34,12 @@
       "name": "R2 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "R7 Stock Exhaust"
-    },
-    {
-      "name": "R2 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

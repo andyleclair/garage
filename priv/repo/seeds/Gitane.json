@@ -18,6 +18,24 @@
       "name": "OKS"
     }
   ],
+  "exhausts": [
+    {
+      "name": "OKS Stock Exhaust"
+    },
+    {
+      "name": "Jeans Stock Exhaust"
+    },
+    {
+      "name": "Cricket Stock Exhaust"
+    },
+    {
+      "name": "Confort Stock Exhaust"
+    },
+    {
+      "name": "CL-200 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "OKS Stock Forks"
@@ -52,30 +70,12 @@
       "name": "CL-200 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "OKS Stock Exhaust"
-    },
-    {
-      "name": "Jeans Stock Exhaust"
-    },
-    {
-      "name": "Cricket Stock Exhaust"
-    },
-    {
-      "name": "Confort Stock Exhaust"
-    },
-    {
-      "name": "CL-200 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

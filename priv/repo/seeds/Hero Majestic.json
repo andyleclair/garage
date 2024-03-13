@@ -15,6 +15,21 @@
       "name": "Panther"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Panther Stock Exhaust"
+    },
+    {
+      "name": "Pacer Stock Exhaust"
+    },
+    {
+      "name": "Gizmo Stock Exhaust"
+    },
+    {
+      "name": "Ankur Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Panther Stock Forks"
@@ -43,27 +58,12 @@
       "name": "Ankur Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Panther Stock Exhaust"
-    },
-    {
-      "name": "Pacer Stock Exhaust"
-    },
-    {
-      "name": "Gizmo Stock Exhaust"
-    },
-    {
-      "name": "Ankur Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

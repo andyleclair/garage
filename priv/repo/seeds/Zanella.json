@@ -15,6 +15,21 @@
       "name": "V3 Due"
     }
   ],
+  "exhausts": [
+    {
+      "name": "V3 Due Stock Exhaust"
+    },
+    {
+      "name": "Rally Stock Exhaust"
+    },
+    {
+      "name": "Pocket Stock Exhaust"
+    },
+    {
+      "name": "Due Sol Fire Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "V3 Due Stock Forks"
@@ -43,27 +58,12 @@
       "name": "Due Sol Fire Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "V3 Due Stock Exhaust"
-    },
-    {
-      "name": "Rally Stock Exhaust"
-    },
-    {
-      "name": "Pocket Stock Exhaust"
-    },
-    {
-      "name": "Due Sol Fire Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

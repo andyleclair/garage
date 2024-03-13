@@ -18,6 +18,24 @@
       "name": "Sioux Mini"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Sioux Mini Stock Exhaust"
+    },
+    {
+      "name": "Sioux KSL Stock Exhaust"
+    },
+    {
+      "name": "Sioux KS Stock Exhaust"
+    },
+    {
+      "name": "Sioux 50 Stock Exhaust"
+    },
+    {
+      "name": "Sioux 16 America Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Sioux Mini Stock Forks"
@@ -52,30 +70,12 @@
       "name": "Sioux 16 America Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Sioux Mini Stock Exhaust"
-    },
-    {
-      "name": "Sioux KSL Stock Exhaust"
-    },
-    {
-      "name": "Sioux KS Stock Exhaust"
-    },
-    {
-      "name": "Sioux 50 Stock Exhaust"
-    },
-    {
-      "name": "Sioux 16 America Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

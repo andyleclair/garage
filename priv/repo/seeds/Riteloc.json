@@ -6,6 +6,12 @@
       "name": "Roxi"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Roxi Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Roxi Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Roxi Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Roxi Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -42,6 +42,48 @@
       "name": "Turismo"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Turismo Stock Exhaust"
+    },
+    {
+      "name": "Trial Stock Exhaust"
+    },
+    {
+      "name": "Tiburon Stock Exhaust"
+    },
+    {
+      "name": "TT50 Stock Exhaust"
+    },
+    {
+      "name": "Sport 4V Stock Exhaust"
+    },
+    {
+      "name": "Panther Stock Exhaust"
+    },
+    {
+      "name": "Mustang Stock Exhaust"
+    },
+    {
+      "name": "Mini Stock Exhaust"
+    },
+    {
+      "name": "Maxi Stock Exhaust"
+    },
+    {
+      "name": "Gran Cross Stock Exhaust"
+    },
+    {
+      "name": "City TT Stock Exhaust"
+    },
+    {
+      "name": "City Lujo Stock Exhaust"
+    },
+    {
+      "name": "City Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Turismo Stock Forks"
@@ -124,54 +166,12 @@
       "name": "City Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Turismo Stock Exhaust"
-    },
-    {
-      "name": "Trial Stock Exhaust"
-    },
-    {
-      "name": "Tiburon Stock Exhaust"
-    },
-    {
-      "name": "TT50 Stock Exhaust"
-    },
-    {
-      "name": "Sport 4V Stock Exhaust"
-    },
-    {
-      "name": "Panther Stock Exhaust"
-    },
-    {
-      "name": "Mustang Stock Exhaust"
-    },
-    {
-      "name": "Mini Stock Exhaust"
-    },
-    {
-      "name": "Maxi Stock Exhaust"
-    },
-    {
-      "name": "Gran Cross Stock Exhaust"
-    },
-    {
-      "name": "City TT Stock Exhaust"
-    },
-    {
-      "name": "City Lujo Stock Exhaust"
-    },
-    {
-      "name": "City Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -2,10 +2,10 @@
   "carburetors": [],
   "categories": [
     "engines",
+    "cylinders",
     "clutches",
     "cranks",
-    "ignitions",
-    "cylinders"
+    "ignitions"
   ],
   "cylinders": [
     {

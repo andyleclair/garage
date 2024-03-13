@@ -27,6 +27,33 @@
       "name": "Weekend Cross"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Weekend Cross Stock Exhaust"
+    },
+    {
+      "name": "Mini Cricket Stock Exhaust"
+    },
+    {
+      "name": "Grand Prix Stock Exhaust"
+    },
+    {
+      "name": "Cricket Stock Exhaust"
+    },
+    {
+      "name": "Comfort Stock Exhaust"
+    },
+    {
+      "name": "Champion Stock Exhaust"
+    },
+    {
+      "name": "Cal Jet Stock Exhaust"
+    },
+    {
+      "name": "Amico Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Weekend Cross Stock Forks"
@@ -79,39 +106,12 @@
       "name": "Amico Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Weekend Cross Stock Exhaust"
-    },
-    {
-      "name": "Mini Cricket Stock Exhaust"
-    },
-    {
-      "name": "Grand Prix Stock Exhaust"
-    },
-    {
-      "name": "Cricket Stock Exhaust"
-    },
-    {
-      "name": "Comfort Stock Exhaust"
-    },
-    {
-      "name": "Champion Stock Exhaust"
-    },
-    {
-      "name": "Cal Jet Stock Exhaust"
-    },
-    {
-      "name": "Amico Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

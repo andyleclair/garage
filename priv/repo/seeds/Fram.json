@@ -18,6 +18,24 @@
       "name": "NR66"
     }
   ],
+  "exhausts": [
+    {
+      "name": "NR66 Stock Exhaust"
+    },
+    {
+      "name": "NR65 Stock Exhaust"
+    },
+    {
+      "name": "NR52 Stock Exhaust"
+    },
+    {
+      "name": "NR51 Stock Exhaust"
+    },
+    {
+      "name": "NR50 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "NR66 Stock Forks"
@@ -52,30 +70,12 @@
       "name": "NR50 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "NR66 Stock Exhaust"
-    },
-    {
-      "name": "NR65 Stock Exhaust"
-    },
-    {
-      "name": "NR52 Stock Exhaust"
-    },
-    {
-      "name": "NR51 Stock Exhaust"
-    },
-    {
-      "name": "NR50 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -6,6 +6,12 @@
       "name": "Perle"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Perle Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Perle Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Perle Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Perle Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

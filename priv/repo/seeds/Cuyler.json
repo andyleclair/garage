@@ -9,6 +9,15 @@
       "name": "Get-Around C-1"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Get-Around C-1 Stock Exhaust"
+    },
+    {
+      "name": "C-1a Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Get-Around C-1 Stock Forks"
@@ -25,21 +34,12 @@
       "name": "C-1a Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Get-Around C-1 Stock Exhaust"
-    },
-    {
-      "name": "C-1a Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

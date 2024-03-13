@@ -24,6 +24,30 @@
       "name": "Tossu"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Tossu Stock Exhaust"
+    },
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "Raisu Stock Exhaust"
+    },
+    {
+      "name": "Mini GT Stock Exhaust"
+    },
+    {
+      "name": "Major S Stock Exhaust"
+    },
+    {
+      "name": "Hopeasauma Stock Exhaust"
+    },
+    {
+      "name": "AX Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Tossu Stock Forks"
@@ -70,36 +94,12 @@
       "name": "AX Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Tossu Stock Exhaust"
-    },
-    {
-      "name": "Sport Stock Exhaust"
-    },
-    {
-      "name": "Raisu Stock Exhaust"
-    },
-    {
-      "name": "Mini GT Stock Exhaust"
-    },
-    {
-      "name": "Major S Stock Exhaust"
-    },
-    {
-      "name": "Hopeasauma Stock Exhaust"
-    },
-    {
-      "name": "AX Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -6,6 +6,12 @@
       "name": "Lazer"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Lazer Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Lazer Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Lazer Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Lazer Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

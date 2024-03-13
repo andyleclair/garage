@@ -6,6 +6,12 @@
       "name": "200"
     }
   ],
+  "exhausts": [
+    {
+      "name": "200 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "200 Stock Forks"
@@ -16,18 +22,12 @@
       "name": "200 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "200 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

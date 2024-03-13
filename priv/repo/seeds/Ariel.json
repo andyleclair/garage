@@ -9,6 +9,15 @@
       "name": "Zizer"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Zizer Stock Exhaust"
+    },
+    {
+      "name": "3 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Zizer Stock Forks"
@@ -25,21 +34,12 @@
       "name": "3 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Zizer Stock Exhaust"
-    },
-    {
-      "name": "3 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

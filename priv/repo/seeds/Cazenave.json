@@ -6,6 +6,12 @@
       "name": "421"
     }
   ],
+  "exhausts": [
+    {
+      "name": "421 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "421 Stock Forks"
@@ -16,18 +22,12 @@
       "name": "421 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "421 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

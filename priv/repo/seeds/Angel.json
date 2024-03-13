@@ -6,6 +6,12 @@
       "name": "AP48"
     }
   ],
+  "exhausts": [
+    {
+      "name": "AP48 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "AP48 Stock Forks"
@@ -16,18 +22,12 @@
       "name": "AP48 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "AP48 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

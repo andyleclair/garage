@@ -6,6 +6,12 @@
       "name": "Mosquito"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Mosquito Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Mosquito Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Mosquito Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Mosquito Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

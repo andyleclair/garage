@@ -12,6 +12,18 @@
       "name": "SC-2X"
     }
   ],
+  "exhausts": [
+    {
+      "name": "SC-2X Stock Exhaust"
+    },
+    {
+      "name": "SC-2 Stock Exhaust"
+    },
+    {
+      "name": "SC-1 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "SC-2X Stock Forks"
@@ -34,24 +46,12 @@
       "name": "SC-1 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "SC-2X Stock Exhaust"
-    },
-    {
-      "name": "SC-2 Stock Exhaust"
-    },
-    {
-      "name": "SC-1 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

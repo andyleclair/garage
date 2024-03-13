@@ -9,6 +9,15 @@
       "name": "Super Champ"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Super Champ Stock Exhaust"
+    },
+    {
+      "name": "50XL Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Super Champ Stock Forks"
@@ -25,21 +34,12 @@
       "name": "50XL Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Super Champ Stock Exhaust"
-    },
-    {
-      "name": "50XL Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

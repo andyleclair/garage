@@ -6,6 +6,12 @@
       "name": "Camander"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Camander Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Camander Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Camander Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Camander Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

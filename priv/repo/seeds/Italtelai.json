@@ -6,6 +6,12 @@
       "name": "Pacer"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Pacer Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Pacer Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Pacer Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Pacer Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

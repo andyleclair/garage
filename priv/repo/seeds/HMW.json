@@ -6,6 +6,12 @@
       "name": "50SH"
     }
   ],
+  "exhausts": [
+    {
+      "name": "50SH Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "50SH Stock Forks"
@@ -16,18 +22,12 @@
       "name": "50SH Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "50SH Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

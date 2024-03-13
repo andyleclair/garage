@@ -24,6 +24,30 @@
       "name": "Thunderbird"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Thunderbird Stock Exhaust"
+    },
+    {
+      "name": "Sprintmaster Stock Exhaust"
+    },
+    {
+      "name": "Luxe Stock Exhaust"
+    },
+    {
+      "name": "Globemaster Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Globemaster Stock Exhaust"
+    },
+    {
+      "name": "Commodore Stock Exhaust"
+    },
+    {
+      "name": "Cheetah Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Thunderbird Stock Forks"
@@ -70,36 +94,12 @@
       "name": "Cheetah Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Thunderbird Stock Exhaust"
-    },
-    {
-      "name": "Sprintmaster Stock Exhaust"
-    },
-    {
-      "name": "Luxe Stock Exhaust"
-    },
-    {
-      "name": "Globemaster Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Globemaster Stock Exhaust"
-    },
-    {
-      "name": "Commodore Stock Exhaust"
-    },
-    {
-      "name": "Cheetah Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

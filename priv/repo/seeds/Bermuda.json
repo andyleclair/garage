@@ -21,6 +21,27 @@
       "name": "Somerset 147FVA"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Somerset 147FVA Stock Exhaust"
+    },
+    {
+      "name": "Pembroke 147AFA Stock Exhaust"
+    },
+    {
+      "name": "Hampton 147FA Stock Exhaust"
+    },
+    {
+      "name": "Flandria Stock Exhaust"
+    },
+    {
+      "name": "147FA Stock Exhaust"
+    },
+    {
+      "name": "147F Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Somerset 147FVA Stock Forks"
@@ -61,33 +82,12 @@
       "name": "147F Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Somerset 147FVA Stock Exhaust"
-    },
-    {
-      "name": "Pembroke 147AFA Stock Exhaust"
-    },
-    {
-      "name": "Hampton 147FA Stock Exhaust"
-    },
-    {
-      "name": "Flandria Stock Exhaust"
-    },
-    {
-      "name": "147FA Stock Exhaust"
-    },
-    {
-      "name": "147F Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

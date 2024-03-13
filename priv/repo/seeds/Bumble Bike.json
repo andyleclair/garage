@@ -6,6 +6,12 @@
       "name": "Bike Motor (Roper)"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Bike Motor (Roper) Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Bike Motor (Roper) Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Bike Motor (Roper) Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Bike Motor (Roper) Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

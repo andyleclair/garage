@@ -6,6 +6,12 @@
       "name": "Pumita"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Pumita Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Pumita Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Pumita Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Pumita Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

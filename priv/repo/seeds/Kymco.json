@@ -30,6 +30,36 @@
       "name": "ZX-50"
     }
   ],
+  "exhausts": [
+    {
+      "name": "ZX-50 Stock Exhaust"
+    },
+    {
+      "name": "Yup 50 Stock Exhaust"
+    },
+    {
+      "name": "TSR 50 Stock Exhaust"
+    },
+    {
+      "name": "Super 9 Stock Exhaust"
+    },
+    {
+      "name": "People 50 Stock Exhaust"
+    },
+    {
+      "name": "Filly 50 Stock Exhaust"
+    },
+    {
+      "name": "Cobra Cross Stock Exhaust"
+    },
+    {
+      "name": "Cobra Stock Exhaust"
+    },
+    {
+      "name": "Agility Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "ZX-50 Stock Forks"
@@ -88,42 +118,12 @@
       "name": "Agility Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "ZX-50 Stock Exhaust"
-    },
-    {
-      "name": "Yup 50 Stock Exhaust"
-    },
-    {
-      "name": "TSR 50 Stock Exhaust"
-    },
-    {
-      "name": "Super 9 Stock Exhaust"
-    },
-    {
-      "name": "People 50 Stock Exhaust"
-    },
-    {
-      "name": "Filly 50 Stock Exhaust"
-    },
-    {
-      "name": "Cobra Cross Stock Exhaust"
-    },
-    {
-      "name": "Cobra Stock Exhaust"
-    },
-    {
-      "name": "Agility Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

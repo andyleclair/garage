@@ -24,6 +24,30 @@
       "name": "Verona"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Verona Stock Exhaust"
+    },
+    {
+      "name": "Scout Stock Exhaust"
+    },
+    {
+      "name": "Pinto Stock Exhaust"
+    },
+    {
+      "name": "Mini-Kid Stock Exhaust"
+    },
+    {
+      "name": "Kid Stock Exhaust"
+    },
+    {
+      "name": "Dream Stock Exhaust"
+    },
+    {
+      "name": "Blanco Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Verona Stock Forks"
@@ -70,36 +94,12 @@
       "name": "Blanco Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Verona Stock Exhaust"
-    },
-    {
-      "name": "Scout Stock Exhaust"
-    },
-    {
-      "name": "Pinto Stock Exhaust"
-    },
-    {
-      "name": "Mini-Kid Stock Exhaust"
-    },
-    {
-      "name": "Kid Stock Exhaust"
-    },
-    {
-      "name": "Dream Stock Exhaust"
-    },
-    {
-      "name": "Blanco Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

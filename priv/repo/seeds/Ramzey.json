@@ -18,6 +18,24 @@
       "name": "Wolf"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Wolf Stock Exhaust"
+    },
+    {
+      "name": "Prestige Classic Stock Exhaust"
+    },
+    {
+      "name": "Prestige Stock Exhaust"
+    },
+    {
+      "name": "Magnum SAfkan Stock Exhaust"
+    },
+    {
+      "name": "Comfort Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Wolf Stock Forks"
@@ -52,30 +70,12 @@
       "name": "Comfort Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Wolf Stock Exhaust"
-    },
-    {
-      "name": "Prestige Classic Stock Exhaust"
-    },
-    {
-      "name": "Prestige Stock Exhaust"
-    },
-    {
-      "name": "Magnum SAfkan Stock Exhaust"
-    },
-    {
-      "name": "Comfort Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -18,6 +18,24 @@
       "name": "Sprint"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Sprint Stock Exhaust"
+    },
+    {
+      "name": "Medalist Stock Exhaust"
+    },
+    {
+      "name": "Fairway Stock Exhaust"
+    },
+    {
+      "name": "Classic Stock Exhaust"
+    },
+    {
+      "name": "3-Wheeler Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Sprint Stock Forks"
@@ -52,30 +70,12 @@
       "name": "3-Wheeler Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Sprint Stock Exhaust"
-    },
-    {
-      "name": "Medalist Stock Exhaust"
-    },
-    {
-      "name": "Fairway Stock Exhaust"
-    },
-    {
-      "name": "Classic Stock Exhaust"
-    },
-    {
-      "name": "3-Wheeler Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

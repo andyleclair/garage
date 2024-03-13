@@ -9,6 +9,15 @@
       "name": "K50S"
     }
   ],
+  "exhausts": [
+    {
+      "name": "K50S Stock Exhaust"
+    },
+    {
+      "name": "K-52 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "K50S Stock Forks"
@@ -25,21 +34,12 @@
       "name": "K-52 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "K50S Stock Exhaust"
-    },
-    {
-      "name": "K-52 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

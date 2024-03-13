@@ -6,6 +6,12 @@
       "name": "RS 100"
     }
   ],
+  "exhausts": [
+    {
+      "name": "RS 100 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "RS 100 Stock Forks"
@@ -16,18 +22,12 @@
       "name": "RS 100 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "RS 100 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

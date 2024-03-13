@@ -6,6 +6,12 @@
       "name": "Bicizeta"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Bicizeta Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Bicizeta Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Bicizeta Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Bicizeta Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

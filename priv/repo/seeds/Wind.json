@@ -15,6 +15,21 @@
       "name": "WMX Cargo"
     }
   ],
+  "exhausts": [
+    {
+      "name": "WMX Cargo Stock Exhaust"
+    },
+    {
+      "name": "WMX 50 Stock Exhaust"
+    },
+    {
+      "name": "Classic Stock Exhaust"
+    },
+    {
+      "name": "City Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "WMX Cargo Stock Forks"
@@ -43,27 +58,12 @@
       "name": "City Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "WMX Cargo Stock Exhaust"
-    },
-    {
-      "name": "WMX 50 Stock Exhaust"
-    },
-    {
-      "name": "Classic Stock Exhaust"
-    },
-    {
-      "name": "City Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

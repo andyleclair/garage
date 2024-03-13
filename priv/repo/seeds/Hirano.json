@@ -6,6 +6,12 @@
       "name": "Popet"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Popet Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Popet Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Popet Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Popet Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

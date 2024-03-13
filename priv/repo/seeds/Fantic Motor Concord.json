@@ -57,6 +57,63 @@
       "name": "XKE"
     }
   ],
+  "exhausts": [
+    {
+      "name": "XKE Stock Exhaust"
+    },
+    {
+      "name": "TX300 Stock Exhaust"
+    },
+    {
+      "name": "Super T Stock Exhaust"
+    },
+    {
+      "name": "Super Lei Stock Exhaust"
+    },
+    {
+      "name": "Shadow Stock Exhaust"
+    },
+    {
+      "name": "Lei Stock Exhaust"
+    },
+    {
+      "name": "Issimo Stock Exhaust"
+    },
+    {
+      "name": "Invader Stock Exhaust"
+    },
+    {
+      "name": "Freedom Stock Exhaust"
+    },
+    {
+      "name": "Concord KE20 Stock Exhaust"
+    },
+    {
+      "name": "Concord 30 Stock Exhaust"
+    },
+    {
+      "name": "Concord 25 Stock Exhaust"
+    },
+    {
+      "name": "Colt II Stock Exhaust"
+    },
+    {
+      "name": "Colt I Stock Exhaust"
+    },
+    {
+      "name": "Chopper 50 Stock Exhaust"
+    },
+    {
+      "name": "Broncco Stock Exhaust"
+    },
+    {
+      "name": "Blazar II Stock Exhaust"
+    },
+    {
+      "name": "Blazar I Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "XKE Stock Forks"
@@ -169,69 +226,12 @@
       "name": "Blazar I Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "XKE Stock Exhaust"
-    },
-    {
-      "name": "TX300 Stock Exhaust"
-    },
-    {
-      "name": "Super T Stock Exhaust"
-    },
-    {
-      "name": "Super Lei Stock Exhaust"
-    },
-    {
-      "name": "Shadow Stock Exhaust"
-    },
-    {
-      "name": "Lei Stock Exhaust"
-    },
-    {
-      "name": "Issimo Stock Exhaust"
-    },
-    {
-      "name": "Invader Stock Exhaust"
-    },
-    {
-      "name": "Freedom Stock Exhaust"
-    },
-    {
-      "name": "Concord KE20 Stock Exhaust"
-    },
-    {
-      "name": "Concord 30 Stock Exhaust"
-    },
-    {
-      "name": "Concord 25 Stock Exhaust"
-    },
-    {
-      "name": "Colt II Stock Exhaust"
-    },
-    {
-      "name": "Colt I Stock Exhaust"
-    },
-    {
-      "name": "Chopper 50 Stock Exhaust"
-    },
-    {
-      "name": "Broncco Stock Exhaust"
-    },
-    {
-      "name": "Blazar II Stock Exhaust"
-    },
-    {
-      "name": "Blazar I Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

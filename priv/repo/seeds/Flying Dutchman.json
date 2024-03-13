@@ -15,6 +15,21 @@
       "name": "Lucky"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Lucky Stock Exhaust"
+    },
+    {
+      "name": "KML-40 Stock Exhaust"
+    },
+    {
+      "name": "DeLuxe Stock Exhaust"
+    },
+    {
+      "name": "Buddy Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Lucky Stock Forks"
@@ -43,27 +58,12 @@
       "name": "Buddy Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Lucky Stock Exhaust"
-    },
-    {
-      "name": "KML-40 Stock Exhaust"
-    },
-    {
-      "name": "DeLuxe Stock Exhaust"
-    },
-    {
-      "name": "Buddy Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -15,6 +15,21 @@
       "name": "Palm Springs"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Palm Springs Stock Exhaust"
+    },
+    {
+      "name": "LaJolla Stock Exhaust"
+    },
+    {
+      "name": "Floozie Stock Exhaust"
+    },
+    {
+      "name": "Desert Classic Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Palm Springs Stock Forks"
@@ -43,27 +58,12 @@
       "name": "Desert Classic Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Palm Springs Stock Exhaust"
-    },
-    {
-      "name": "LaJolla Stock Exhaust"
-    },
-    {
-      "name": "Floozie Stock Exhaust"
-    },
-    {
-      "name": "Desert Classic Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

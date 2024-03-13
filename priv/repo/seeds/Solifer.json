@@ -12,6 +12,18 @@
       "name": "Speed"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Speed Stock Exhaust"
+    },
+    {
+      "name": "SM Stock Exhaust"
+    },
+    {
+      "name": "Export Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Speed Stock Forks"
@@ -34,24 +46,12 @@
       "name": "Export Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Speed Stock Exhaust"
-    },
-    {
-      "name": "SM Stock Exhaust"
-    },
-    {
-      "name": "Export Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

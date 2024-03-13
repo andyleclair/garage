@@ -6,6 +6,12 @@
       "name": "Pony Express"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Pony Express Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Pony Express Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Pony Express Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Pony Express Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -9,6 +9,15 @@
       "name": "Super Sport"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Super Sport Stock Exhaust"
+    },
+    {
+      "name": "Mini Mars Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Super Sport Stock Forks"
@@ -25,21 +34,12 @@
       "name": "Mini Mars Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Super Sport Stock Exhaust"
-    },
-    {
-      "name": "Mini Mars Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

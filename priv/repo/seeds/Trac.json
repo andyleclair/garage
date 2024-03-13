@@ -30,6 +30,36 @@
       "name": "Sprint"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Sprint Stock Exhaust"
+    },
+    {
+      "name": "Olympic Stock Exhaust"
+    },
+    {
+      "name": "Metro Stock Exhaust"
+    },
+    {
+      "name": "Liberty Stock Exhaust"
+    },
+    {
+      "name": "Image Stock Exhaust"
+    },
+    {
+      "name": "Hawk Stock Exhaust"
+    },
+    {
+      "name": "Eagle Stock Exhaust"
+    },
+    {
+      "name": "Clipper Stock Exhaust"
+    },
+    {
+      "name": "Blitz Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Sprint Stock Forks"
@@ -88,42 +118,12 @@
       "name": "Blitz Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Sprint Stock Exhaust"
-    },
-    {
-      "name": "Olympic Stock Exhaust"
-    },
-    {
-      "name": "Metro Stock Exhaust"
-    },
-    {
-      "name": "Liberty Stock Exhaust"
-    },
-    {
-      "name": "Image Stock Exhaust"
-    },
-    {
-      "name": "Hawk Stock Exhaust"
-    },
-    {
-      "name": "Eagle Stock Exhaust"
-    },
-    {
-      "name": "Clipper Stock Exhaust"
-    },
-    {
-      "name": "Blitz Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

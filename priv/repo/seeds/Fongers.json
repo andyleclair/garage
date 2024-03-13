@@ -6,6 +6,12 @@
       "name": "Tandem"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Tandem Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Tandem Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Tandem Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Tandem Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

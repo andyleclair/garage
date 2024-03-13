@@ -9,6 +9,15 @@
       "name": "Sebring"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Sebring Stock Exhaust"
+    },
+    {
+      "name": "Raven Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Sebring Stock Forks"
@@ -25,21 +34,12 @@
       "name": "Raven Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Sebring Stock Exhaust"
-    },
-    {
-      "name": "Raven Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -42,6 +42,48 @@
       "name": "Roadmaster XL Deluxe"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Roadmaster XL Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster XL Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster C140 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster C130 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster C120 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster C110 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster B125 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster B120 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster B115 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster B110 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster A115 Stock Exhaust"
+    },
+    {
+      "name": "Roadmaster A110 Stock Exhaust"
+    },
+    {
+      "name": "ALL-PRO Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Roadmaster XL Deluxe Stock Forks"
@@ -124,54 +166,12 @@
       "name": "ALL-PRO Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Roadmaster XL Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Roadmaster XL Stock Exhaust"
-    },
-    {
-      "name": "Roadmaster C140 Stock Exhaust"
-    },
-    {
-      "name": "Roadmaster C130 Stock Exhaust"
-    },
-    {
-      "name": "Roadmaster C120 Stock Exhaust"
-    },
-    {
-      "name": "Roadmaster C110 Stock Exhaust"
-    },
-    {
-      "name": "Roadmaster B125 Stock Exhaust"
-    },
-    {
-      "name": "Roadmaster B120 Stock Exhaust"
-    },
-    {
-      "name": "Roadmaster B115 Stock Exhaust"
-    },
-    {
-      "name": "Roadmaster B110 Stock Exhaust"
-    },
-    {
-      "name": "Roadmaster A115 Stock Exhaust"
-    },
-    {
-      "name": "Roadmaster A110 Stock Exhaust"
-    },
-    {
-      "name": "ALL-PRO Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

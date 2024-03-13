@@ -6,6 +6,12 @@
       "name": "Chip"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Chip Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Chip Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Chip Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Chip Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

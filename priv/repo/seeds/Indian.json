@@ -15,6 +15,21 @@
       "name": "Mini-Mini Bambino"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Mini-Mini Bambino Stock Exhaust"
+    },
+    {
+      "name": "MX-74 Stock Exhaust"
+    },
+    {
+      "name": "MM5A Stock Exhaust"
+    },
+    {
+      "name": "AMI-50 Chief Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Mini-Mini Bambino Stock Forks"
@@ -43,27 +58,12 @@
       "name": "AMI-50 Chief Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Mini-Mini Bambino Stock Exhaust"
-    },
-    {
-      "name": "MX-74 Stock Exhaust"
-    },
-    {
-      "name": "MM5A Stock Exhaust"
-    },
-    {
-      "name": "AMI-50 Chief Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

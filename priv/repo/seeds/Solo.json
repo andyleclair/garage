@@ -42,6 +42,48 @@
       "name": "Odyssey"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Odyssey Stock Exhaust"
+    },
+    {
+      "name": "Mini Stock Exhaust"
+    },
+    {
+      "name": "Electra Stock Exhaust"
+    },
+    {
+      "name": "726 Stock Exhaust"
+    },
+    {
+      "name": "725 Stock Exhaust"
+    },
+    {
+      "name": "722 Stock Exhaust"
+    },
+    {
+      "name": "716 Stock Exhaust"
+    },
+    {
+      "name": "715B Stock Exhaust"
+    },
+    {
+      "name": "715 Stock Exhaust"
+    },
+    {
+      "name": "713 Stock Exhaust"
+    },
+    {
+      "name": "712 Stock Exhaust"
+    },
+    {
+      "name": "711 Stock Exhaust"
+    },
+    {
+      "name": "710 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Odyssey Stock Forks"
@@ -124,54 +166,12 @@
       "name": "710 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Odyssey Stock Exhaust"
-    },
-    {
-      "name": "Mini Stock Exhaust"
-    },
-    {
-      "name": "Electra Stock Exhaust"
-    },
-    {
-      "name": "726 Stock Exhaust"
-    },
-    {
-      "name": "725 Stock Exhaust"
-    },
-    {
-      "name": "722 Stock Exhaust"
-    },
-    {
-      "name": "716 Stock Exhaust"
-    },
-    {
-      "name": "715B Stock Exhaust"
-    },
-    {
-      "name": "715 Stock Exhaust"
-    },
-    {
-      "name": "713 Stock Exhaust"
-    },
-    {
-      "name": "712 Stock Exhaust"
-    },
-    {
-      "name": "711 Stock Exhaust"
-    },
-    {
-      "name": "710 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

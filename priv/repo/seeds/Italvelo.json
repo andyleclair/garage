@@ -9,6 +9,15 @@
       "name": "I-80"
     }
   ],
+  "exhausts": [
+    {
+      "name": "I-80 Stock Exhaust"
+    },
+    {
+      "name": "I-78 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "I-80 Stock Forks"
@@ -25,21 +34,12 @@
       "name": "I-78 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "I-80 Stock Exhaust"
-    },
-    {
-      "name": "I-78 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

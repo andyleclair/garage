@@ -9,6 +9,15 @@
       "name": "LA-2"
     }
   ],
+  "exhausts": [
+    {
+      "name": "LA-2 Stock Exhaust"
+    },
+    {
+      "name": "FK310 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "LA-2 Stock Forks"
@@ -25,21 +34,12 @@
       "name": "FK310 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "LA-2 Stock Exhaust"
-    },
-    {
-      "name": "FK310 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

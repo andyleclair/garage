@@ -24,6 +24,30 @@
       "name": "Super"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Super Stock Exhaust"
+    },
+    {
+      "name": "Ster Stock Exhaust"
+    },
+    {
+      "name": "Speedo Stock Exhaust"
+    },
+    {
+      "name": "Rocky Stock Exhaust"
+    },
+    {
+      "name": "Matadore Stock Exhaust"
+    },
+    {
+      "name": "Imperial Stock Exhaust"
+    },
+    {
+      "name": "Crown Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Super Stock Forks"
@@ -70,36 +94,12 @@
       "name": "Crown Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Super Stock Exhaust"
-    },
-    {
-      "name": "Ster Stock Exhaust"
-    },
-    {
-      "name": "Speedo Stock Exhaust"
-    },
-    {
-      "name": "Rocky Stock Exhaust"
-    },
-    {
-      "name": "Matadore Stock Exhaust"
-    },
-    {
-      "name": "Imperial Stock Exhaust"
-    },
-    {
-      "name": "Crown Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

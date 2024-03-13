@@ -6,6 +6,12 @@
       "name": "E-Z Rider"
     }
   ],
+  "exhausts": [
+    {
+      "name": "E-Z Rider Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "E-Z Rider Stock Forks"
@@ -16,18 +22,12 @@
       "name": "E-Z Rider Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "E-Z Rider Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

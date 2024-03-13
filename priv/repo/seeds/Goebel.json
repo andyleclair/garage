@@ -9,6 +9,15 @@
       "name": "Grand Sport"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Grand Sport Stock Exhaust"
+    },
+    {
+      "name": "Avus Sport Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Grand Sport Stock Forks"
@@ -25,21 +34,12 @@
       "name": "Avus Sport Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Grand Sport Stock Exhaust"
-    },
-    {
-      "name": "Avus Sport Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

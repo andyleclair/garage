@@ -9,6 +9,15 @@
       "name": "MR-S-1"
     }
   ],
+  "exhausts": [
+    {
+      "name": "MR-S-1 Stock Exhaust"
+    },
+    {
+      "name": "MR-232 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "MR-S-1 Stock Forks"
@@ -25,21 +34,12 @@
       "name": "MR-232 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "MR-S-1 Stock Exhaust"
-    },
-    {
-      "name": "MR-232 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

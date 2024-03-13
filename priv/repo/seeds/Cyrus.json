@@ -18,6 +18,24 @@
       "name": "Transporter"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Transporter Stock Exhaust"
+    },
+    {
+      "name": "Speciaal Sport Stock Exhaust"
+    },
+    {
+      "name": "Cyrusette Stock Exhaust"
+    },
+    {
+      "name": "Cyriette Stock Exhaust"
+    },
+    {
+      "name": "Carrier Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Transporter Stock Forks"
@@ -52,30 +70,12 @@
       "name": "Carrier Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Transporter Stock Exhaust"
-    },
-    {
-      "name": "Speciaal Sport Stock Exhaust"
-    },
-    {
-      "name": "Cyrusette Stock Exhaust"
-    },
-    {
-      "name": "Cyriette Stock Exhaust"
-    },
-    {
-      "name": "Carrier Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

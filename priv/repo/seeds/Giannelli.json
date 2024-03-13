@@ -7,13 +7,31 @@
   "engines": [],
   "exhausts": [
     {
+      "name": "for Sachs"
+    },
+    {
+      "name": "Vogue for Peugeot"
+    },
+    {
       "name": "Super Rock Sport for Peugeot"
     },
     {
       "name": "Super Rock Black Gun for Peugeot"
     },
     {
+      "name": "Peugeot"
+    },
+    {
       "name": "Super Rock Sport for Motobecane"
+    },
+    {
+      "name": "Super Rock for Motobecane"
+    },
+    {
+      "name": "Honda NSR"
+    },
+    {
+      "name": "HiBoy Reverse for Derbi Flat Reed"
     }
   ],
   "name": "Giannelli"

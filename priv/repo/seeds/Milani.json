@@ -6,6 +6,12 @@
       "name": "Tris"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Tris Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Tris Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Tris Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Tris Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -6,6 +6,12 @@
       "name": "Monaco"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Monaco Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Monaco Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Monaco Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Monaco Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

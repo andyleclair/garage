@@ -24,6 +24,30 @@
       "name": "Model PI"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Model PI Stock Exhaust"
+    },
+    {
+      "name": "Hummel Super Stock Exhaust"
+    },
+    {
+      "name": "Hummel 3 Gang Stock Exhaust"
+    },
+    {
+      "name": "Hummel 2 Gang Stock Exhaust"
+    },
+    {
+      "name": "Hummel Stock Exhaust"
+    },
+    {
+      "name": "503 Stock Exhaust"
+    },
+    {
+      "name": "111 BJ Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Model PI Stock Forks"
@@ -70,36 +94,12 @@
       "name": "111 BJ Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Model PI Stock Exhaust"
-    },
-    {
-      "name": "Hummel Super Stock Exhaust"
-    },
-    {
-      "name": "Hummel 3 Gang Stock Exhaust"
-    },
-    {
-      "name": "Hummel 2 Gang Stock Exhaust"
-    },
-    {
-      "name": "Hummel Stock Exhaust"
-    },
-    {
-      "name": "503 Stock Exhaust"
-    },
-    {
-      "name": "111 BJ Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

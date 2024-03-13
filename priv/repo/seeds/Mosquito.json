@@ -9,6 +9,15 @@
       "name": "Baby"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Baby Stock Exhaust"
+    },
+    {
+      "name": "38B Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Baby Stock Forks"
@@ -25,21 +34,12 @@
       "name": "38B Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Baby Stock Exhaust"
-    },
-    {
-      "name": "38B Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -15,6 +15,21 @@
       "name": "Sprint 50"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Sprint 50 Stock Exhaust"
+    },
+    {
+      "name": "Sport 50 ST Stock Exhaust"
+    },
+    {
+      "name": "Sport 50 Stock Exhaust"
+    },
+    {
+      "name": "Riviera Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Sprint 50 Stock Forks"
@@ -43,27 +58,12 @@
       "name": "Riviera Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Sprint 50 Stock Exhaust"
-    },
-    {
-      "name": "Sport 50 ST Stock Exhaust"
-    },
-    {
-      "name": "Sport 50 Stock Exhaust"
-    },
-    {
-      "name": "Riviera Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

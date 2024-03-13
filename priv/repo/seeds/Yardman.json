@@ -9,6 +9,15 @@
       "name": "Mo-Trek"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Mo-Trek Stock Exhaust"
+    },
+    {
+      "name": "Easy Rider Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Mo-Trek Stock Forks"
@@ -25,21 +34,12 @@
       "name": "Easy Rider Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Mo-Trek Stock Exhaust"
-    },
-    {
-      "name": "Easy Rider Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

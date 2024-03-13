@@ -30,6 +30,36 @@
       "name": "Snark Stardust"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Snark Stardust Stock Exhaust"
+    },
+    {
+      "name": "Snark Satelite Stock Exhaust"
+    },
+    {
+      "name": "Snark Eagle Standard Stock Exhaust"
+    },
+    {
+      "name": "Snark Eagle Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Snark Stock Exhaust"
+    },
+    {
+      "name": "Laser Stock Exhaust"
+    },
+    {
+      "name": "Falco Stock Exhaust"
+    },
+    {
+      "name": "Bianchimatic Stock Exhaust"
+    },
+    {
+      "name": "Aquilotto Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Snark Stardust Stock Forks"
@@ -88,42 +118,12 @@
       "name": "Aquilotto Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Snark Stardust Stock Exhaust"
-    },
-    {
-      "name": "Snark Satelite Stock Exhaust"
-    },
-    {
-      "name": "Snark Eagle Standard Stock Exhaust"
-    },
-    {
-      "name": "Snark Eagle Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Snark Stock Exhaust"
-    },
-    {
-      "name": "Laser Stock Exhaust"
-    },
-    {
-      "name": "Falco Stock Exhaust"
-    },
-    {
-      "name": "Bianchimatic Stock Exhaust"
-    },
-    {
-      "name": "Aquilotto Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

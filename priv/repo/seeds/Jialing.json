@@ -36,6 +36,42 @@
       "name": "TN35L"
     }
   ],
+  "exhausts": [
+    {
+      "name": "TN35L Stock Exhaust"
+    },
+    {
+      "name": "NP50T-M Stock Exhaust"
+    },
+    {
+      "name": "NP50-MA Stock Exhaust"
+    },
+    {
+      "name": "NP50-GS Stock Exhaust"
+    },
+    {
+      "name": "NP50-GL Stock Exhaust"
+    },
+    {
+      "name": "NP Passport Stock Exhaust"
+    },
+    {
+      "name": "JL36PL-A Stock Exhaust"
+    },
+    {
+      "name": "JL36PL Stock Exhaust"
+    },
+    {
+      "name": "JH50 Stock Exhaust"
+    },
+    {
+      "name": "CJ50ZC Stock Exhaust"
+    },
+    {
+      "name": "CJ50F Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "TN35L Stock Forks"
@@ -106,48 +142,12 @@
       "name": "CJ50F Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "TN35L Stock Exhaust"
-    },
-    {
-      "name": "NP50T-M Stock Exhaust"
-    },
-    {
-      "name": "NP50-MA Stock Exhaust"
-    },
-    {
-      "name": "NP50-GS Stock Exhaust"
-    },
-    {
-      "name": "NP50-GL Stock Exhaust"
-    },
-    {
-      "name": "NP Passport Stock Exhaust"
-    },
-    {
-      "name": "JL36PL-A Stock Exhaust"
-    },
-    {
-      "name": "JL36PL Stock Exhaust"
-    },
-    {
-      "name": "JH50 Stock Exhaust"
-    },
-    {
-      "name": "CJ50ZC Stock Exhaust"
-    },
-    {
-      "name": "CJ50F Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -6,6 +6,12 @@
       "name": "M65 Leggero"
     }
   ],
+  "exhausts": [
+    {
+      "name": "M65 Leggero Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "M65 Leggero Stock Forks"
@@ -16,18 +22,12 @@
       "name": "M65 Leggero Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "M65 Leggero Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

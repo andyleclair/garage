@@ -42,6 +42,48 @@
       "name": "Supermax"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Supermax Stock Exhaust"
+    },
+    {
+      "name": "Quickly TT Stock Exhaust"
+    },
+    {
+      "name": "Quickly T Stock Exhaust"
+    },
+    {
+      "name": "Quickly S Stock Exhaust"
+    },
+    {
+      "name": "Quickly N Stock Exhaust"
+    },
+    {
+      "name": "Quickly L Stock Exhaust"
+    },
+    {
+      "name": "Quickley Stock Exhaust"
+    },
+    {
+      "name": "Prima V Stock Exhaust"
+    },
+    {
+      "name": "Prima IIIK Stock Exhaust"
+    },
+    {
+      "name": "Prima III Stock Exhaust"
+    },
+    {
+      "name": "Maxi Stock Exhaust"
+    },
+    {
+      "name": "Cavalio Stock Exhaust"
+    },
+    {
+      "name": "1053 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Supermax Stock Forks"
@@ -124,54 +166,12 @@
       "name": "1053 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Supermax Stock Exhaust"
-    },
-    {
-      "name": "Quickly TT Stock Exhaust"
-    },
-    {
-      "name": "Quickly T Stock Exhaust"
-    },
-    {
-      "name": "Quickly S Stock Exhaust"
-    },
-    {
-      "name": "Quickly N Stock Exhaust"
-    },
-    {
-      "name": "Quickly L Stock Exhaust"
-    },
-    {
-      "name": "Quickley Stock Exhaust"
-    },
-    {
-      "name": "Prima V Stock Exhaust"
-    },
-    {
-      "name": "Prima IIIK Stock Exhaust"
-    },
-    {
-      "name": "Prima III Stock Exhaust"
-    },
-    {
-      "name": "Maxi Stock Exhaust"
-    },
-    {
-      "name": "Cavalio Stock Exhaust"
-    },
-    {
-      "name": "1053 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

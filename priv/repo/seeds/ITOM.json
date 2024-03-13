@@ -9,6 +9,15 @@
       "name": "Sport"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "Junior Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Sport Stock Forks"
@@ -25,21 +34,12 @@
       "name": "Junior Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Sport Stock Exhaust"
-    },
-    {
-      "name": "Junior Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

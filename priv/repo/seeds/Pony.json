@@ -6,6 +6,12 @@
       "name": "Yunior"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Yunior Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Yunior Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Yunior Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Yunior Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

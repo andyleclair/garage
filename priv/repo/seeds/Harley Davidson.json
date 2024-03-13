@@ -9,6 +9,15 @@
       "name": "M-65"
     }
   ],
+  "exhausts": [
+    {
+      "name": "M-65 Stock Exhaust"
+    },
+    {
+      "name": "M-50 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "M-65 Stock Forks"
@@ -25,21 +34,12 @@
       "name": "M-50 Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "M-65 Stock Exhaust"
-    },
-    {
-      "name": "M-50 Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

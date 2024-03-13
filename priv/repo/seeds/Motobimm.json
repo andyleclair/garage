@@ -6,6 +6,12 @@
       "name": "Bilo"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Bilo Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Bilo Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Bilo Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Bilo Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

@@ -9,6 +9,15 @@
       "name": "Turbo Sport GXL"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Turbo Sport GXL Stock Exhaust"
+    },
+    {
+      "name": "Power GXL Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Turbo Sport GXL Stock Forks"
@@ -25,21 +34,12 @@
       "name": "Power GXL Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Turbo Sport GXL Stock Exhaust"
-    },
-    {
-      "name": "Power GXL Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

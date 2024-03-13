@@ -12,6 +12,18 @@
       "name": "Street 100"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Street 100 Stock Exhaust"
+    },
+    {
+      "name": "Panther Stock Exhaust"
+    },
+    {
+      "name": "Gizmo Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Street 100 Stock Forks"
@@ -34,24 +46,12 @@
       "name": "Gizmo Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Street 100 Stock Exhaust"
-    },
-    {
-      "name": "Panther Stock Exhaust"
-    },
-    {
-      "name": "Gizmo Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }

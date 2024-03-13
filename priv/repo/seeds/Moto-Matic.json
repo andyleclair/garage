@@ -6,6 +6,12 @@
       "name": "Sapporo"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Sapporo Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
   "forks": [
     {
       "name": "Sapporo Stock Forks"
@@ -16,18 +22,12 @@
       "name": "Sapporo Stock Wheels"
     }
   ],
-  "exhausts": [
-    {
-      "name": "Sapporo Stock Exhaust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],
-  "variators": [],
-  "categories": [
-    "mopeds"
-  ],
-  "cylinders": []
+  "variators": []
 }
