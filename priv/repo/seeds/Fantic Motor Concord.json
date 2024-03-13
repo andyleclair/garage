@@ -1,8 +1,61 @@
 {
   "name": "Fantic Motor Concord",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Blazar I"
+    },
+    {
+      "name": "Blazar II"
+    },
+    {
+      "name": "Broncco"
+    },
+    {
+      "name": "Chopper 50"
+    },
+    {
+      "name": "Colt I"
+    },
+    {
+      "name": "Colt II"
+    },
+    {
+      "name": "Concord 25"
+    },
+    {
+      "name": "Concord 30"
+    },
+    {
+      "name": "Concord KE20"
+    },
+    {
+      "name": "Freedom"
+    },
+    {
+      "name": "Invader"
+    },
+    {
+      "name": "Issimo"
+    },
+    {
+      "name": "Lei"
+    },
+    {
+      "name": "Shadow"
+    },
+    {
+      "name": "Super Lei"
+    },
+    {
+      "name": "Super T"
+    },
+    {
+      "name": "TX300"
+    },
+    {
+      "name": "XKE"
+    }
   ],
   "forks": [
     {
@@ -116,72 +169,6 @@
       "name": "Blazar I Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "XKE Stock Cylinder"
-    },
-    {
-      "name": "TX300 Stock Cylinder"
-    },
-    {
-      "name": "Super T Stock Cylinder"
-    },
-    {
-      "name": "Super Lei Stock Cylinder"
-    },
-    {
-      "name": "Shadow Stock Cylinder"
-    },
-    {
-      "name": "Lei Stock Cylinder"
-    },
-    {
-      "name": "Issimo Stock Cylinder"
-    },
-    {
-      "name": "Invader Stock Cylinder"
-    },
-    {
-      "name": "Freedom Stock Cylinder"
-    },
-    {
-      "name": "Concord KE20 Stock Cylinder"
-    },
-    {
-      "name": "Concord 30 Stock Cylinder"
-    },
-    {
-      "name": "Concord 25 Stock Cylinder"
-    },
-    {
-      "name": "Colt II Stock Cylinder"
-    },
-    {
-      "name": "Colt I Stock Cylinder"
-    },
-    {
-      "name": "Chopper 50 Stock Cylinder"
-    },
-    {
-      "name": "Broncco Stock Cylinder"
-    },
-    {
-      "name": "Blazar II Stock Cylinder"
-    },
-    {
-      "name": "Blazar I Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "XKE Stock Exhaust"
@@ -238,67 +225,13 @@
       "name": "Blazar I Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Blazar I"
-    },
-    {
-      "name": "Blazar II"
-    },
-    {
-      "name": "Broncco"
-    },
-    {
-      "name": "Chopper 50"
-    },
-    {
-      "name": "Colt I"
-    },
-    {
-      "name": "Colt II"
-    },
-    {
-      "name": "Concord 25"
-    },
-    {
-      "name": "Concord 30"
-    },
-    {
-      "name": "Concord KE20"
-    },
-    {
-      "name": "Freedom"
-    },
-    {
-      "name": "Invader"
-    },
-    {
-      "name": "Issimo"
-    },
-    {
-      "name": "Lei"
-    },
-    {
-      "name": "Shadow"
-    },
-    {
-      "name": "Super Lei"
-    },
-    {
-      "name": "Super T"
-    },
-    {
-      "name": "TX300"
-    },
-    {
-      "name": "XKE"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

@@ -1,8 +1,22 @@
 {
   "name": "Motron",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "3-Wheeler"
+    },
+    {
+      "name": "Classic"
+    },
+    {
+      "name": "Fairway"
+    },
+    {
+      "name": "Medalist"
+    },
+    {
+      "name": "Sprint"
+    }
   ],
   "forks": [
     {
@@ -38,33 +52,6 @@
       "name": "3-Wheeler Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Sprint Stock Cylinder"
-    },
-    {
-      "name": "Medalist Stock Cylinder"
-    },
-    {
-      "name": "Fairway Stock Cylinder"
-    },
-    {
-      "name": "Classic Stock Cylinder"
-    },
-    {
-      "name": "3-Wheeler Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Sprint Stock Exhaust"
@@ -82,28 +69,13 @@
       "name": "3-Wheeler Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "3-Wheeler"
-    },
-    {
-      "name": "Classic"
-    },
-    {
-      "name": "Fairway"
-    },
-    {
-      "name": "Medalist"
-    },
-    {
-      "name": "Sprint"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

@@ -1,0 +1,29 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "for Sachs"
+    },
+    {
+      "name": "Vogue for Peugeot"
+    },
+    {
+      "name": "Peugeot"
+    },
+    {
+      "name": "Super Rock for Motobecane"
+    },
+    {
+      "name": "Honda NSR"
+    },
+    {
+      "name": "HiBoy Reverse for Derbi Flat Reed"
+    }
+  ],
+  "name": "Gianelli"
+}

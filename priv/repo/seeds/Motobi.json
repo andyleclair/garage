@@ -1,8 +1,10 @@
 {
   "name": "Motobi",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "48 Sport"
+    }
   ],
   "forks": [
     {
@@ -14,36 +16,18 @@
       "name": "48 Sport Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "48 Sport Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "48 Sport Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "48 Sport"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

@@ -1,0 +1,17 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "G3 for Peugeot"
+    },
+    {
+      "name": "G2 for Peugeot"
+    }
+  ],
+  "name": "Samurai"
+}

@@ -1,0 +1,32 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "4p for Tomos"
+    },
+    {
+      "name": "8P for Puch"
+    },
+    {
+      "name": "6P for Puch"
+    },
+    {
+      "name": "4P for Puch"
+    },
+    {
+      "name": "70cc Honda NSR"
+    },
+    {
+      "name": "70cc Honda MB5 70cc"
+    },
+    {
+      "name": "50cc Honda MB5"
+    }
+  ],
+  "name": "Homoet"
+}

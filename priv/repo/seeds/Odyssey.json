@@ -1,8 +1,40 @@
 {
   "name": "Odyssey",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "236"
+    },
+    {
+      "name": "237"
+    },
+    {
+      "name": "255"
+    },
+    {
+      "name": "284"
+    },
+    {
+      "name": "32/1-2"
+    },
+    {
+      "name": "32/1-R"
+    },
+    {
+      "name": "40/1-2"
+    },
+    {
+      "name": "40/1-R"
+    },
+    {
+      "name": "40/2-2"
+    },
+    {
+      "name": "40/2-R"
+    },
+    {
+      "name": "720"
+    }
   ],
   "forks": [
     {
@@ -74,51 +106,6 @@
       "name": "236 Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "720 Stock Cylinder"
-    },
-    {
-      "name": "40/2-R Stock Cylinder"
-    },
-    {
-      "name": "40/2-2 Stock Cylinder"
-    },
-    {
-      "name": "40/1-R Stock Cylinder"
-    },
-    {
-      "name": "40/1-2 Stock Cylinder"
-    },
-    {
-      "name": "32/1-R Stock Cylinder"
-    },
-    {
-      "name": "32/1-2 Stock Cylinder"
-    },
-    {
-      "name": "284 Stock Cylinder"
-    },
-    {
-      "name": "255 Stock Cylinder"
-    },
-    {
-      "name": "237 Stock Cylinder"
-    },
-    {
-      "name": "236 Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "720 Stock Exhaust"
@@ -154,46 +141,13 @@
       "name": "236 Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "236"
-    },
-    {
-      "name": "237"
-    },
-    {
-      "name": "255"
-    },
-    {
-      "name": "284"
-    },
-    {
-      "name": "32/1-2"
-    },
-    {
-      "name": "32/1-R"
-    },
-    {
-      "name": "40/1-2"
-    },
-    {
-      "name": "40/1-R"
-    },
-    {
-      "name": "40/2-2"
-    },
-    {
-      "name": "40/2-R"
-    },
-    {
-      "name": "720"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

@@ -1,0 +1,17 @@
+{
+  "carburetors": [],
+  "categories": [
+    "engines"
+  ],
+  "cylinders": [],
+  "engines": [
+    {
+      "name": "125 Semi-Auto"
+    },
+    {
+      "name": "110cc"
+    }
+  ],
+  "exhausts": [],
+  "name": "Lifan"
+}

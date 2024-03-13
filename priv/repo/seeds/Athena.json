@@ -1,0 +1,35 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 80,
+      "name": "Sachs 80cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Sachs 70cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Puch 70cc AJH Reed"
+    },
+    {
+      "displacement": 70,
+      "name": "Puch 70cc"
+    },
+    {
+      "displacement": 60,
+      "name": "Puch 60cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Honda 70cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "Athena"
+}

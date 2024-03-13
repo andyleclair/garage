@@ -1,8 +1,25 @@
 {
   "name": "Bermuda",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "147F"
+    },
+    {
+      "name": "147FA"
+    },
+    {
+      "name": "Flandria"
+    },
+    {
+      "name": "Hampton 147FA"
+    },
+    {
+      "name": "Pembroke 147AFA"
+    },
+    {
+      "name": "Somerset 147FVA"
+    }
   ],
   "forks": [
     {
@@ -44,36 +61,6 @@
       "name": "147F Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Somerset 147FVA Stock Cylinder"
-    },
-    {
-      "name": "Pembroke 147AFA Stock Cylinder"
-    },
-    {
-      "name": "Hampton 147FA Stock Cylinder"
-    },
-    {
-      "name": "Flandria Stock Cylinder"
-    },
-    {
-      "name": "147FA Stock Cylinder"
-    },
-    {
-      "name": "147F Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Somerset 147FVA Stock Exhaust"
@@ -94,31 +81,13 @@
       "name": "147F Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "147F"
-    },
-    {
-      "name": "147FA"
-    },
-    {
-      "name": "Flandria"
-    },
-    {
-      "name": "Hampton 147FA"
-    },
-    {
-      "name": "Pembroke 147AFA"
-    },
-    {
-      "name": "Somerset 147FVA"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

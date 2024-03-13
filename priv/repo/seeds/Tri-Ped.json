@@ -1,8 +1,13 @@
 {
   "name": "Tri-Ped",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Sport"
+    },
+    {
+      "name": "Standard"
+    }
   ],
   "forks": [
     {
@@ -20,24 +25,6 @@
       "name": "Sport Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Standard Stock Cylinder"
-    },
-    {
-      "name": "Sport Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Standard Stock Exhaust"
@@ -46,19 +33,13 @@
       "name": "Sport Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Sport"
-    },
-    {
-      "name": "Standard"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

@@ -1,9 +1,20 @@
 {
-  "name": "Casal",
-  "engines": [],
+  "carburetors": [],
   "categories": [
-    "moped"
+    "engines",
+    "forks",
+    "mopeds",
+    "wheels"
   ],
+  "clutches": [],
+  "cranks": [],
+  "cylinders": [],
+  "engines": [
+    {
+      "name": "1 Speed"
+    }
+  ],
+  "exhausts": [],
   "forks": [
     {
       "name": "K-196 Stock Forks"
@@ -27,90 +38,7 @@
       "name": "Boss Stock Forks"
     }
   ],
-  "wheels": [
-    {
-      "name": "K-196 Stock Wheels"
-    },
-    {
-      "name": "K-190 Stock Wheels"
-    },
-    {
-      "name": "K-188 Stock Wheels"
-    },
-    {
-      "name": "K-184 Stock Wheels"
-    },
-    {
-      "name": "K-177 Stock Wheels"
-    },
-    {
-      "name": "K-168 Stock Wheels"
-    },
-    {
-      "name": "Boss Stock Wheels"
-    }
-  ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "K-196 Stock Cylinder"
-    },
-    {
-      "name": "K-190 Stock Cylinder"
-    },
-    {
-      "name": "K-188 Stock Cylinder"
-    },
-    {
-      "name": "K-184 Stock Cylinder"
-    },
-    {
-      "name": "K-177 Stock Cylinder"
-    },
-    {
-      "name": "K-168 Stock Cylinder"
-    },
-    {
-      "name": "Boss Stock Cylinder"
-    }
-  ],
-  "exhausts": [
-    {
-      "name": "K-196 Stock Exhaust"
-    },
-    {
-      "name": "K-190 Stock Exhaust"
-    },
-    {
-      "name": "K-188 Stock Exhaust"
-    },
-    {
-      "name": "K-184 Stock Exhaust"
-    },
-    {
-      "name": "K-177 Stock Exhaust"
-    },
-    {
-      "name": "K-168 Stock Exhaust"
-    },
-    {
-      "name": "Boss Stock Exhaust"
-    }
-  ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
+  "ignitions": [],
   "models": [
     {
       "name": "Boss"
@@ -134,6 +62,30 @@
       "name": "K-196"
     }
   ],
+  "name": "Casal",
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "wheels": [
+    {
+      "name": "K-196 Stock Wheels"
+    },
+    {
+      "name": "K-190 Stock Wheels"
+    },
+    {
+      "name": "K-188 Stock Wheels"
+    },
+    {
+      "name": "K-184 Stock Wheels"
+    },
+    {
+      "name": "K-177 Stock Wheels"
+    },
+    {
+      "name": "K-168 Stock Wheels"
+    },
+    {
+      "name": "Boss Stock Wheels"
+    }
+  ]
 }

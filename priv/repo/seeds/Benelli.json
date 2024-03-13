@@ -1,9 +1,20 @@
 {
-  "name": "Benelli",
-  "engines": [],
+  "carburetors": [],
   "categories": [
-    "moped"
+    "engines",
+    "forks",
+    "mopeds",
+    "wheels"
   ],
+  "clutches": [],
+  "cranks": [],
+  "cylinders": [],
+  "engines": [
+    {
+      "name": "G2"
+    }
+  ],
+  "exhausts": [],
   "forks": [
     {
       "name": "Turismo Stock Forks"
@@ -63,198 +74,7 @@
       "name": "3VK Stock Forks"
     }
   ],
-  "wheels": [
-    {
-      "name": "Turismo Stock Wheels"
-    },
-    {
-      "name": "Sprint Stock Wheels"
-    },
-    {
-      "name": "Riverside Stock Wheels"
-    },
-    {
-      "name": "Pantera Stock Wheels"
-    },
-    {
-      "name": "Motorella Stock Wheels"
-    },
-    {
-      "name": "Maserati Stock Wheels"
-    },
-    {
-      "name": "Magnum 6V Stock Wheels"
-    },
-    {
-      "name": "Magnum 5V Stock Wheels"
-    },
-    {
-      "name": "Gentleman-2 Stock Wheels"
-    },
-    {
-      "name": "G2 Stock Wheels"
-    },
-    {
-      "name": "Fireball 50 Stock Wheels"
-    },
-    {
-      "name": "FA Stock Wheels"
-    },
-    {
-      "name": "Cross Stock Wheels"
-    },
-    {
-      "name": "Cosmo Colt Stock Wheels"
-    },
-    {
-      "name": "Cosmo Blazer Stock Wheels"
-    },
-    {
-      "name": "Caddy Stock Wheels"
-    },
-    {
-      "name": "Blazar Stock Wheels"
-    },
-    {
-      "name": "49 Export Stock Wheels"
-    },
-    {
-      "name": "3VK Stock Wheels"
-    }
-  ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Turismo Stock Cylinder"
-    },
-    {
-      "name": "Sprint Stock Cylinder"
-    },
-    {
-      "name": "Riverside Stock Cylinder"
-    },
-    {
-      "name": "Pantera Stock Cylinder"
-    },
-    {
-      "name": "Motorella Stock Cylinder"
-    },
-    {
-      "name": "Maserati Stock Cylinder"
-    },
-    {
-      "name": "Magnum 6V Stock Cylinder"
-    },
-    {
-      "name": "Magnum 5V Stock Cylinder"
-    },
-    {
-      "name": "Gentleman-2 Stock Cylinder"
-    },
-    {
-      "name": "G2 Stock Cylinder"
-    },
-    {
-      "name": "Fireball 50 Stock Cylinder"
-    },
-    {
-      "name": "FA Stock Cylinder"
-    },
-    {
-      "name": "Cross Stock Cylinder"
-    },
-    {
-      "name": "Cosmo Colt Stock Cylinder"
-    },
-    {
-      "name": "Cosmo Blazer Stock Cylinder"
-    },
-    {
-      "name": "Caddy Stock Cylinder"
-    },
-    {
-      "name": "Blazar Stock Cylinder"
-    },
-    {
-      "name": "49 Export Stock Cylinder"
-    },
-    {
-      "name": "3VK Stock Cylinder"
-    }
-  ],
-  "exhausts": [
-    {
-      "name": "Turismo Stock Exhaust"
-    },
-    {
-      "name": "Sprint Stock Exhaust"
-    },
-    {
-      "name": "Riverside Stock Exhaust"
-    },
-    {
-      "name": "Pantera Stock Exhaust"
-    },
-    {
-      "name": "Motorella Stock Exhaust"
-    },
-    {
-      "name": "Maserati Stock Exhaust"
-    },
-    {
-      "name": "Magnum 6V Stock Exhaust"
-    },
-    {
-      "name": "Magnum 5V Stock Exhaust"
-    },
-    {
-      "name": "Gentleman-2 Stock Exhaust"
-    },
-    {
-      "name": "G2 Stock Exhaust"
-    },
-    {
-      "name": "Fireball 50 Stock Exhaust"
-    },
-    {
-      "name": "FA Stock Exhaust"
-    },
-    {
-      "name": "Cross Stock Exhaust"
-    },
-    {
-      "name": "Cosmo Colt Stock Exhaust"
-    },
-    {
-      "name": "Cosmo Blazer Stock Exhaust"
-    },
-    {
-      "name": "Caddy Stock Exhaust"
-    },
-    {
-      "name": "Blazar Stock Exhaust"
-    },
-    {
-      "name": "49 Export Stock Exhaust"
-    },
-    {
-      "name": "3VK Stock Exhaust"
-    }
-  ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
+  "ignitions": [],
   "models": [
     {
       "name": "3VK"
@@ -314,6 +134,66 @@
       "name": "Turismo"
     }
   ],
+  "name": "Benelli",
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "wheels": [
+    {
+      "name": "Turismo Stock Wheels"
+    },
+    {
+      "name": "Sprint Stock Wheels"
+    },
+    {
+      "name": "Riverside Stock Wheels"
+    },
+    {
+      "name": "Pantera Stock Wheels"
+    },
+    {
+      "name": "Motorella Stock Wheels"
+    },
+    {
+      "name": "Maserati Stock Wheels"
+    },
+    {
+      "name": "Magnum 6V Stock Wheels"
+    },
+    {
+      "name": "Magnum 5V Stock Wheels"
+    },
+    {
+      "name": "Gentleman-2 Stock Wheels"
+    },
+    {
+      "name": "G2 Stock Wheels"
+    },
+    {
+      "name": "Fireball 50 Stock Wheels"
+    },
+    {
+      "name": "FA Stock Wheels"
+    },
+    {
+      "name": "Cross Stock Wheels"
+    },
+    {
+      "name": "Cosmo Colt Stock Wheels"
+    },
+    {
+      "name": "Cosmo Blazer Stock Wheels"
+    },
+    {
+      "name": "Caddy Stock Wheels"
+    },
+    {
+      "name": "Blazar Stock Wheels"
+    },
+    {
+      "name": "49 Export Stock Wheels"
+    },
+    {
+      "name": "3VK Stock Wheels"
+    }
+  ]
 }

@@ -22,7 +22,8 @@ defmodule Garage.Seeds do
     end)
   end
 
-  def generate_seeds do
+  # Run me first
+  def generate_make_and_model_seeds do
     Path.join([:code.priv_dir(:garage), "repo", "makes_and_models.json"])
     |> File.read!()
     |> Jason.decode!()
@@ -35,21 +36,16 @@ defmodule Garage.Seeds do
         Enum.reduce(
           models,
           %{
-            exhausts: [],
             forks: [],
             wheels: [],
-            cylinders: []
+            exhausts: []
           },
-          fn %{
-               name: model
-             },
-             acc ->
+          fn %{name: model}, acc ->
             %{
               acc
-              | exhausts: [%{name: "#{model} Stock Exhaust"} | acc.exhausts],
-                forks: [%{name: "#{model} Stock Forks"} | acc.forks],
-                wheels: [%{name: "#{model} Stock Wheels"} | acc.wheels],
-                cylinders: [%{name: "#{model} Stock Cylinder"} | acc.cylinders]
+              | forks: [%{name: "#{model} Stock Forks"} | acc.forks],
+                exhausts: [%{name: "#{model} Stock Exhaust"} | acc.exhausts],
+                wheels: [%{name: "#{model} Stock Wheels"} | acc.wheels]
             }
           end
         )
@@ -59,22 +55,16 @@ defmodule Garage.Seeds do
           name: manufacturer,
           models: MapSet.to_list(models),
           engines: [],
-          clutches: [
-            %{name: "Stock Clutch"}
-          ],
-          cranks: [
-            %{name: "Stock Crank"}
-          ],
-          ignitions: [
-            %{name: "Stock Ignition"}
-          ],
+          clutches: [],
+          cranks: [],
+          ignitions: [],
           pulleys: [],
           variators: [],
-          categories: [:moped],
+          categories: [:mopeds],
           exhausts: stock_parts.exhausts,
           forks: stock_parts.forks,
           wheels: stock_parts.wheels,
-          cylinders: stock_parts.cylinders
+          cylinders: []
         }
         |> Jason.encode!()
         |> Jason.Formatter.pretty_print()
@@ -84,19 +74,8 @@ defmodule Garage.Seeds do
     end)
   end
 
-  # 0 ?
-  # 1 engines'
-  # 2 carburetors
-  # 3 cylinders 
-  # 4 exhausts
-  # 5 ignitions 
-  # 6 cranks 
-  # 7 clutches 
-  #
-  # desired state: 
-  # %{"manufacturer name" => %{engines: [...], carburetors: [...] ...} }
-  #
-  def generate_carb_seeds() do
+  # Run me next
+  def generate_part_seeds() do
     mapping = %{
       "1" => :engines,
       "2" => :carburetors,
@@ -112,14 +91,46 @@ defmodule Garage.Seeds do
 
     parts_by_manufacturer =
       Enum.reduce(json, %{}, fn {idx, records}, acc ->
-        parts_by_manufacturer =
-          Enum.reduce(records, %{}, fn %{"name" => name}, parts_by_manufacturer ->
-            [manufacturer, name] = String.split(name, " ", parts: 2)
-
-            Map.update(parts_by_manufacturer, manufacturer, [name], fn names -> [name | names] end)
-          end)
-
         part_type = mapping[idx]
+
+        parts_by_manufacturer =
+          Enum.reduce(records, %{}, fn %{"name" => original_name}, parts_by_manufacturer ->
+            {manufacturer, item} =
+              case part_type do
+                :cylinders ->
+                  # i made sure the real manufacturer is last
+                  {real_manufacturer, rest} = String.split(original_name, " ") |> List.pop_at(-1)
+                  name = Enum.join(rest, " ")
+
+                  displacement =
+                    Enum.find(rest, fn i -> String.ends_with?(i, "cc") end)
+                    |> then(fn str ->
+                      Regex.run(~r/\d\d/, str) |> List.first() |> String.to_integer()
+                    end)
+
+                  {real_manufacturer, %{"name" => name, "displacement" => displacement}}
+
+                :exhausts ->
+                  if String.starts_with?(original_name, "EV Racing") do
+                    # spesh case for the special pipes
+                    name =
+                      String.split(original_name, " ")
+                      |> then(fn list -> Enum.slice(list, 2..length(list)) end)
+                      |> Enum.join(" ")
+
+                    {"EV Racing", %{"name" => name}}
+                  else
+                    [manufacturer, name] = String.split(original_name, " ", parts: 2)
+                    {manufacturer, %{"name" => name}}
+                  end
+
+                _ ->
+                  [manufacturer, name] = String.split(original_name, " ", parts: 2)
+                  {manufacturer, %{"name" => name}}
+              end
+
+            Map.update(parts_by_manufacturer, manufacturer, [item], fn items -> [item | items] end)
+          end)
 
         Enum.reduce(parts_by_manufacturer, acc, fn {manufacturer_name, parts}, inner_acc ->
           Map.update(inner_acc, manufacturer_name, %{part_type => parts}, fn manufacturer_rec ->
@@ -137,18 +148,22 @@ defmodule Garage.Seeds do
           |> File.read!()
           |> Jason.decode!()
           |> Map.merge(%{
-            engines: Map.get(parts, :engines, []),
-            carburetors: Map.get(parts, :carburetors, [])
+            "engines" => Map.get(parts, :engines, []),
+            "carburetors" => Map.get(parts, :carburetors, []),
+            "exhausts" => Map.get(parts, :exhausts, []),
+            "cylinders" => Map.get(parts, :cylinders, [])
           })
           |> then(fn rec ->
-            Map.put(rec, :categories, record_to_categories(rec))
+            Map.put(rec, "categories", record_to_categories(rec))
           end)
         else
           %{
-            name: name,
-            engines: Map.get(parts, :engines, []),
-            carburetors: Map.get(parts, :carburetors, []),
-            categories: record_to_categories(parts)
+            "name" => name,
+            "engines" => Map.get(parts, :engines, []),
+            "carburetors" => Map.get(parts, :carburetors, []),
+            "exhausts" => Map.get(parts, :exhausts, []),
+            "cylinders" => Map.get(parts, :cylinders, []),
+            "categories" => record_to_categories(parts)
           }
         end
         |> Jason.encode!()
@@ -159,8 +174,8 @@ defmodule Garage.Seeds do
   end
 
   defp record_to_categories(rec) do
-    for {part, parts} when parts != [] <- rec do
-      part
+    for {part, parts} when parts != [] and part not in ~w(name categories) <- rec do
+      if part in [:models, "models"], do: :mopeds, else: part
     end
   end
 end

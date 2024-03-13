@@ -1,9 +1,38 @@
 {
-  "name": "Puch",
-  "engines": [],
+  "carburetors": [],
   "categories": [
-    "moped"
+    "cylinders",
+    "engines",
+    "forks",
+    "mopeds",
+    "wheels"
   ],
+  "clutches": [],
+  "cranks": [],
+  "cylinders": [
+    {
+      "displacement": 50,
+      "name": "Stock 50cc"
+    }
+  ],
+  "engines": [
+    {
+      "name": "ZA50"
+    },
+    {
+      "name": "Z50"
+    },
+    {
+      "name": "Korado"
+    },
+    {
+      "name": "E50 Kickstart"
+    },
+    {
+      "name": "E50"
+    }
+  ],
+  "exhausts": [],
   "forks": [
     {
       "name": "MF25 Stock Forks"
@@ -291,882 +320,7 @@
       "name": "VS50L Stock Forks"
     }
   ],
-  "wheels": [
-    {
-      "name": "MF25 Stock Wheels"
-    },
-    {
-      "name": "Magnum MK II -UPS Stock Wheels"
-    },
-    {
-      "name": "Monza 4SL Stock Wheels"
-    },
-    {
-      "name": "Maxi GS Stock Wheels"
-    },
-    {
-      "name": "Magnum MK II Stock Wheels"
-    },
-    {
-      "name": "VS50M Stock Wheels"
-    },
-    {
-      "name": "Maxi Sport LS Stock Wheels"
-    },
-    {
-      "name": "Maxi Bombardier Stock Wheels"
-    },
-    {
-      "name": "Series B Stock Wheels"
-    },
-    {
-      "name": "MS50D Stock Wheels"
-    },
-    {
-      "name": "MiniCross Stock Wheels"
-    },
-    {
-      "name": "Newport II Stock Wheels"
-    },
-    {
-      "name": "Maxi Zippy Stock Wheels"
-    },
-    {
-      "name": "Maxi Super Executive SKX Stock Wheels"
-    },
-    {
-      "name": "X20 Stock Wheels"
-    },
-    {
-      "name": "VS50D Stock Wheels"
-    },
-    {
-      "name": "Astro Daimler Stock Wheels"
-    },
-    {
-      "name": "Maxi Sport LS-2 Speed Stock Wheels"
-    },
-    {
-      "name": "MS50 Stock Wheels"
-    },
-    {
-      "name": "DS50V Stock Wheels"
-    },
-    {
-      "name": "Super Maxi Stock Wheels"
-    },
-    {
-      "name": "Maxi N Stock Wheels"
-    },
-    {
-      "name": "Sport I Stock Wheels"
-    },
-    {
-      "name": "Maxi SKW Stock Wheels"
-    },
-    {
-      "name": "Maxi II Stock Wheels"
-    },
-    {
-      "name": " X50-3 Stock Wheels"
-    },
-    {
-      "name": "MC 50-3 Stock Wheels"
-    },
-    {
-      "name": "Maxi Plus Stock Wheels"
-    },
-    {
-      "name": "MS25 Stock Wheels"
-    },
-    {
-      "name": "Maxi Free Spirit Stock Wheels"
-    },
-    {
-      "name": "MC50 Stock Wheels"
-    },
-    {
-      "name": "Maxi Sport MKII Stock Wheels"
-    },
-    {
-      "name": "Beta Stock Wheels"
-    },
-    {
-      "name": "M2 Stock Wheels"
-    },
-    {
-      "name": "MX40 Stock Wheels"
-    },
-    {
-      "name": "Tri Rad Stock Wheels"
-    },
-    {
-      "name": "Murray Stock Wheels"
-    },
-    {
-      "name": "VS50DK Stock Wheels"
-    },
-    {
-      "name": "Mini Maxi Stock Wheels"
-    },
-    {
-      "name": "Maxi Executive SKA Stock Wheels"
-    },
-    {
-      "name": "Maxi N Quickly Stock Wheels"
-    },
-    {
-      "name": "Maxi S Stock Wheels"
-    },
-    {
-      "name": "M50 Racing (Skylark) Stock Wheels"
-    },
-    {
-      "name": "MS50L Stock Wheels"
-    },
-    {
-      "name": "DS50 Stock Wheels"
-    },
-    {
-      "name": "Maxi N2 Stock Wheels"
-    },
-    {
-      "name": "Korado Stock Wheels"
-    },
-    {
-      "name": "X50 Stock Wheels"
-    },
-    {
-      "name": "Magnum X Stock Wheels"
-    },
-    {
-      "name": "X40 Stock Wheels"
-    },
-    {
-      "name": "Nostalgia Stock Wheels"
-    },
-    {
-      "name": "Maxi Super DK Stock Wheels"
-    },
-    {
-      "name": "Astro Daimler Two-Speed Stock Wheels"
-    },
-    {
-      "name": "Magnum Stock Wheels"
-    },
-    {
-      "name": "X30 Stock Wheels"
-    },
-    {
-      "name": "VS50K Stock Wheels"
-    },
-    {
-      "name": "VZ 50 Stock Wheels"
-    },
-    {
-      "name": "Dakota 3000 Stock Wheels"
-    },
-    {
-      "name": "MOTOVI Stock Wheels"
-    },
-    {
-      "name": "Maxi Super D Stock Wheels"
-    },
-    {
-      "name": "Newport L Stock Wheels"
-    },
-    {
-      "name": "MR50 Stock Wheels"
-    },
-    {
-      "name": "MS50V Deluxe Stock Wheels"
-    },
-    {
-      "name": "M50 Sport Stock Wheels"
-    },
-    {
-      "name": "Velux 30 Stock Wheels"
-    },
-    {
-      "name": "Magnum Limited LTD Stock Wheels"
-    },
-    {
-      "name": "Maxi GN Stock Wheels"
-    },
-    {
-      "name": "Maxi Super Stock Wheels"
-    },
-    {
-      "name": "Maxi Luxe Stock Wheels"
-    },
-    {
-      "name": "Maxi Sport Stock Wheels"
-    },
-    {
-      "name": "Monza Stock Wheels"
-    },
-    {
-      "name": "MV50 Stock Wheels"
-    },
-    {
-      "name": "Dart Stock Wheels"
-    },
-    {
-      "name": "Magnum II Stock Wheels"
-    },
-    {
-      "name": "MS50 Deluxe Stock Wheels"
-    },
-    {
-      "name": "Magnum XK Stock Wheels"
-    },
-    {
-      "name": "Maxi Stock Wheels"
-    },
-    {
-      "name": "Skyhawk Stock Wheels"
-    },
-    {
-      "name": "M3 Stock Wheels"
-    },
-    {
-      "name": "Dakota Stock Wheels"
-    },
-    {
-      "name": "Grand Prix Special Stock Wheels"
-    },
-    {
-      "name": "Maxi Super Sport KA Stock Wheels"
-    },
-    {
-      "name": "M50 Grand Prix Stock Wheels"
-    },
-    {
-      "name": "Maxi Auto Executive Stock Wheels"
-    },
-    {
-      "name": "Newport Stock Wheels"
-    },
-    {
-      "name": "MV Stock Wheels"
-    },
-    {
-      "name": "Maxi S2 Stock Wheels"
-    },
-    {
-      "name": "P1 Stock Wheels"
-    },
-    {
-      "name": "Campus 50 Stock Wheels"
-    },
-    {
-      "name": "Cobra Stock Wheels"
-    },
-    {
-      "name": "Sport MKII Stock Wheels"
-    },
-    {
-      "name": "Maxi SKX GL Super Executive Stock Wheels"
-    },
-    {
-      "name": "MS50V Stock Wheels"
-    },
-    {
-      "name": "Kromag Stock Wheels"
-    },
-    {
-      "name": "VS50L Stock Wheels"
-    }
-  ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "MF25 Stock Cylinder"
-    },
-    {
-      "name": "Magnum MK II -UPS Stock Cylinder"
-    },
-    {
-      "name": "Monza 4SL Stock Cylinder"
-    },
-    {
-      "name": "Maxi GS Stock Cylinder"
-    },
-    {
-      "name": "Magnum MK II Stock Cylinder"
-    },
-    {
-      "name": "VS50M Stock Cylinder"
-    },
-    {
-      "name": "Maxi Sport LS Stock Cylinder"
-    },
-    {
-      "name": "Maxi Bombardier Stock Cylinder"
-    },
-    {
-      "name": "Series B Stock Cylinder"
-    },
-    {
-      "name": "MS50D Stock Cylinder"
-    },
-    {
-      "name": "MiniCross Stock Cylinder"
-    },
-    {
-      "name": "Newport II Stock Cylinder"
-    },
-    {
-      "name": "Maxi Zippy Stock Cylinder"
-    },
-    {
-      "name": "Maxi Super Executive SKX Stock Cylinder"
-    },
-    {
-      "name": "X20 Stock Cylinder"
-    },
-    {
-      "name": "VS50D Stock Cylinder"
-    },
-    {
-      "name": "Astro Daimler Stock Cylinder"
-    },
-    {
-      "name": "Maxi Sport LS-2 Speed Stock Cylinder"
-    },
-    {
-      "name": "MS50 Stock Cylinder"
-    },
-    {
-      "name": "DS50V Stock Cylinder"
-    },
-    {
-      "name": "Super Maxi Stock Cylinder"
-    },
-    {
-      "name": "Maxi N Stock Cylinder"
-    },
-    {
-      "name": "Sport I Stock Cylinder"
-    },
-    {
-      "name": "Maxi SKW Stock Cylinder"
-    },
-    {
-      "name": "Maxi II Stock Cylinder"
-    },
-    {
-      "name": " X50-3 Stock Cylinder"
-    },
-    {
-      "name": "MC 50-3 Stock Cylinder"
-    },
-    {
-      "name": "Maxi Plus Stock Cylinder"
-    },
-    {
-      "name": "MS25 Stock Cylinder"
-    },
-    {
-      "name": "Maxi Free Spirit Stock Cylinder"
-    },
-    {
-      "name": "MC50 Stock Cylinder"
-    },
-    {
-      "name": "Maxi Sport MKII Stock Cylinder"
-    },
-    {
-      "name": "Beta Stock Cylinder"
-    },
-    {
-      "name": "M2 Stock Cylinder"
-    },
-    {
-      "name": "MX40 Stock Cylinder"
-    },
-    {
-      "name": "Tri Rad Stock Cylinder"
-    },
-    {
-      "name": "Murray Stock Cylinder"
-    },
-    {
-      "name": "VS50DK Stock Cylinder"
-    },
-    {
-      "name": "Mini Maxi Stock Cylinder"
-    },
-    {
-      "name": "Maxi Executive SKA Stock Cylinder"
-    },
-    {
-      "name": "Maxi N Quickly Stock Cylinder"
-    },
-    {
-      "name": "Maxi S Stock Cylinder"
-    },
-    {
-      "name": "M50 Racing (Skylark) Stock Cylinder"
-    },
-    {
-      "name": "MS50L Stock Cylinder"
-    },
-    {
-      "name": "DS50 Stock Cylinder"
-    },
-    {
-      "name": "Maxi N2 Stock Cylinder"
-    },
-    {
-      "name": "Korado Stock Cylinder"
-    },
-    {
-      "name": "X50 Stock Cylinder"
-    },
-    {
-      "name": "Magnum X Stock Cylinder"
-    },
-    {
-      "name": "X40 Stock Cylinder"
-    },
-    {
-      "name": "Nostalgia Stock Cylinder"
-    },
-    {
-      "name": "Maxi Super DK Stock Cylinder"
-    },
-    {
-      "name": "Astro Daimler Two-Speed Stock Cylinder"
-    },
-    {
-      "name": "Magnum Stock Cylinder"
-    },
-    {
-      "name": "X30 Stock Cylinder"
-    },
-    {
-      "name": "VS50K Stock Cylinder"
-    },
-    {
-      "name": "VZ 50 Stock Cylinder"
-    },
-    {
-      "name": "Dakota 3000 Stock Cylinder"
-    },
-    {
-      "name": "MOTOVI Stock Cylinder"
-    },
-    {
-      "name": "Maxi Super D Stock Cylinder"
-    },
-    {
-      "name": "Newport L Stock Cylinder"
-    },
-    {
-      "name": "MR50 Stock Cylinder"
-    },
-    {
-      "name": "MS50V Deluxe Stock Cylinder"
-    },
-    {
-      "name": "M50 Sport Stock Cylinder"
-    },
-    {
-      "name": "Velux 30 Stock Cylinder"
-    },
-    {
-      "name": "Magnum Limited LTD Stock Cylinder"
-    },
-    {
-      "name": "Maxi GN Stock Cylinder"
-    },
-    {
-      "name": "Maxi Super Stock Cylinder"
-    },
-    {
-      "name": "Maxi Luxe Stock Cylinder"
-    },
-    {
-      "name": "Maxi Sport Stock Cylinder"
-    },
-    {
-      "name": "Monza Stock Cylinder"
-    },
-    {
-      "name": "MV50 Stock Cylinder"
-    },
-    {
-      "name": "Dart Stock Cylinder"
-    },
-    {
-      "name": "Magnum II Stock Cylinder"
-    },
-    {
-      "name": "MS50 Deluxe Stock Cylinder"
-    },
-    {
-      "name": "Magnum XK Stock Cylinder"
-    },
-    {
-      "name": "Maxi Stock Cylinder"
-    },
-    {
-      "name": "Skyhawk Stock Cylinder"
-    },
-    {
-      "name": "M3 Stock Cylinder"
-    },
-    {
-      "name": "Dakota Stock Cylinder"
-    },
-    {
-      "name": "Grand Prix Special Stock Cylinder"
-    },
-    {
-      "name": "Maxi Super Sport KA Stock Cylinder"
-    },
-    {
-      "name": "M50 Grand Prix Stock Cylinder"
-    },
-    {
-      "name": "Maxi Auto Executive Stock Cylinder"
-    },
-    {
-      "name": "Newport Stock Cylinder"
-    },
-    {
-      "name": "MV Stock Cylinder"
-    },
-    {
-      "name": "Maxi S2 Stock Cylinder"
-    },
-    {
-      "name": "P1 Stock Cylinder"
-    },
-    {
-      "name": "Campus 50 Stock Cylinder"
-    },
-    {
-      "name": "Cobra Stock Cylinder"
-    },
-    {
-      "name": "Sport MKII Stock Cylinder"
-    },
-    {
-      "name": "Maxi SKX GL Super Executive Stock Cylinder"
-    },
-    {
-      "name": "MS50V Stock Cylinder"
-    },
-    {
-      "name": "Kromag Stock Cylinder"
-    },
-    {
-      "name": "VS50L Stock Cylinder"
-    }
-  ],
-  "exhausts": [
-    {
-      "name": "MF25 Stock Exhaust"
-    },
-    {
-      "name": "Magnum MK II -UPS Stock Exhaust"
-    },
-    {
-      "name": "Monza 4SL Stock Exhaust"
-    },
-    {
-      "name": "Maxi GS Stock Exhaust"
-    },
-    {
-      "name": "Magnum MK II Stock Exhaust"
-    },
-    {
-      "name": "VS50M Stock Exhaust"
-    },
-    {
-      "name": "Maxi Sport LS Stock Exhaust"
-    },
-    {
-      "name": "Maxi Bombardier Stock Exhaust"
-    },
-    {
-      "name": "Series B Stock Exhaust"
-    },
-    {
-      "name": "MS50D Stock Exhaust"
-    },
-    {
-      "name": "MiniCross Stock Exhaust"
-    },
-    {
-      "name": "Newport II Stock Exhaust"
-    },
-    {
-      "name": "Maxi Zippy Stock Exhaust"
-    },
-    {
-      "name": "Maxi Super Executive SKX Stock Exhaust"
-    },
-    {
-      "name": "X20 Stock Exhaust"
-    },
-    {
-      "name": "VS50D Stock Exhaust"
-    },
-    {
-      "name": "Astro Daimler Stock Exhaust"
-    },
-    {
-      "name": "Maxi Sport LS-2 Speed Stock Exhaust"
-    },
-    {
-      "name": "MS50 Stock Exhaust"
-    },
-    {
-      "name": "DS50V Stock Exhaust"
-    },
-    {
-      "name": "Super Maxi Stock Exhaust"
-    },
-    {
-      "name": "Maxi N Stock Exhaust"
-    },
-    {
-      "name": "Sport I Stock Exhaust"
-    },
-    {
-      "name": "Maxi SKW Stock Exhaust"
-    },
-    {
-      "name": "Maxi II Stock Exhaust"
-    },
-    {
-      "name": " X50-3 Stock Exhaust"
-    },
-    {
-      "name": "MC 50-3 Stock Exhaust"
-    },
-    {
-      "name": "Maxi Plus Stock Exhaust"
-    },
-    {
-      "name": "MS25 Stock Exhaust"
-    },
-    {
-      "name": "Maxi Free Spirit Stock Exhaust"
-    },
-    {
-      "name": "MC50 Stock Exhaust"
-    },
-    {
-      "name": "Maxi Sport MKII Stock Exhaust"
-    },
-    {
-      "name": "Beta Stock Exhaust"
-    },
-    {
-      "name": "M2 Stock Exhaust"
-    },
-    {
-      "name": "MX40 Stock Exhaust"
-    },
-    {
-      "name": "Tri Rad Stock Exhaust"
-    },
-    {
-      "name": "Murray Stock Exhaust"
-    },
-    {
-      "name": "VS50DK Stock Exhaust"
-    },
-    {
-      "name": "Mini Maxi Stock Exhaust"
-    },
-    {
-      "name": "Maxi Executive SKA Stock Exhaust"
-    },
-    {
-      "name": "Maxi N Quickly Stock Exhaust"
-    },
-    {
-      "name": "Maxi S Stock Exhaust"
-    },
-    {
-      "name": "M50 Racing (Skylark) Stock Exhaust"
-    },
-    {
-      "name": "MS50L Stock Exhaust"
-    },
-    {
-      "name": "DS50 Stock Exhaust"
-    },
-    {
-      "name": "Maxi N2 Stock Exhaust"
-    },
-    {
-      "name": "Korado Stock Exhaust"
-    },
-    {
-      "name": "X50 Stock Exhaust"
-    },
-    {
-      "name": "Magnum X Stock Exhaust"
-    },
-    {
-      "name": "X40 Stock Exhaust"
-    },
-    {
-      "name": "Nostalgia Stock Exhaust"
-    },
-    {
-      "name": "Maxi Super DK Stock Exhaust"
-    },
-    {
-      "name": "Astro Daimler Two-Speed Stock Exhaust"
-    },
-    {
-      "name": "Magnum Stock Exhaust"
-    },
-    {
-      "name": "X30 Stock Exhaust"
-    },
-    {
-      "name": "VS50K Stock Exhaust"
-    },
-    {
-      "name": "VZ 50 Stock Exhaust"
-    },
-    {
-      "name": "Dakota 3000 Stock Exhaust"
-    },
-    {
-      "name": "MOTOVI Stock Exhaust"
-    },
-    {
-      "name": "Maxi Super D Stock Exhaust"
-    },
-    {
-      "name": "Newport L Stock Exhaust"
-    },
-    {
-      "name": "MR50 Stock Exhaust"
-    },
-    {
-      "name": "MS50V Deluxe Stock Exhaust"
-    },
-    {
-      "name": "M50 Sport Stock Exhaust"
-    },
-    {
-      "name": "Velux 30 Stock Exhaust"
-    },
-    {
-      "name": "Magnum Limited LTD Stock Exhaust"
-    },
-    {
-      "name": "Maxi GN Stock Exhaust"
-    },
-    {
-      "name": "Maxi Super Stock Exhaust"
-    },
-    {
-      "name": "Maxi Luxe Stock Exhaust"
-    },
-    {
-      "name": "Maxi Sport Stock Exhaust"
-    },
-    {
-      "name": "Monza Stock Exhaust"
-    },
-    {
-      "name": "MV50 Stock Exhaust"
-    },
-    {
-      "name": "Dart Stock Exhaust"
-    },
-    {
-      "name": "Magnum II Stock Exhaust"
-    },
-    {
-      "name": "MS50 Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Magnum XK Stock Exhaust"
-    },
-    {
-      "name": "Maxi Stock Exhaust"
-    },
-    {
-      "name": "Skyhawk Stock Exhaust"
-    },
-    {
-      "name": "M3 Stock Exhaust"
-    },
-    {
-      "name": "Dakota Stock Exhaust"
-    },
-    {
-      "name": "Grand Prix Special Stock Exhaust"
-    },
-    {
-      "name": "Maxi Super Sport KA Stock Exhaust"
-    },
-    {
-      "name": "M50 Grand Prix Stock Exhaust"
-    },
-    {
-      "name": "Maxi Auto Executive Stock Exhaust"
-    },
-    {
-      "name": "Newport Stock Exhaust"
-    },
-    {
-      "name": "MV Stock Exhaust"
-    },
-    {
-      "name": "Maxi S2 Stock Exhaust"
-    },
-    {
-      "name": "P1 Stock Exhaust"
-    },
-    {
-      "name": "Campus 50 Stock Exhaust"
-    },
-    {
-      "name": "Cobra Stock Exhaust"
-    },
-    {
-      "name": "Sport MKII Stock Exhaust"
-    },
-    {
-      "name": "Maxi SKX GL Super Executive Stock Exhaust"
-    },
-    {
-      "name": "MS50V Stock Exhaust"
-    },
-    {
-      "name": "Kromag Stock Exhaust"
-    },
-    {
-      "name": "VS50L Stock Exhaust"
-    }
-  ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
+  "ignitions": [],
   "models": [
     {
       "name": "VS50L"
@@ -1454,6 +608,294 @@
       "name": "MF25"
     }
   ],
+  "name": "Puch",
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "wheels": [
+    {
+      "name": "MF25 Stock Wheels"
+    },
+    {
+      "name": "Magnum MK II -UPS Stock Wheels"
+    },
+    {
+      "name": "Monza 4SL Stock Wheels"
+    },
+    {
+      "name": "Maxi GS Stock Wheels"
+    },
+    {
+      "name": "Magnum MK II Stock Wheels"
+    },
+    {
+      "name": "VS50M Stock Wheels"
+    },
+    {
+      "name": "Maxi Sport LS Stock Wheels"
+    },
+    {
+      "name": "Maxi Bombardier Stock Wheels"
+    },
+    {
+      "name": "Series B Stock Wheels"
+    },
+    {
+      "name": "MS50D Stock Wheels"
+    },
+    {
+      "name": "MiniCross Stock Wheels"
+    },
+    {
+      "name": "Newport II Stock Wheels"
+    },
+    {
+      "name": "Maxi Zippy Stock Wheels"
+    },
+    {
+      "name": "Maxi Super Executive SKX Stock Wheels"
+    },
+    {
+      "name": "X20 Stock Wheels"
+    },
+    {
+      "name": "VS50D Stock Wheels"
+    },
+    {
+      "name": "Astro Daimler Stock Wheels"
+    },
+    {
+      "name": "Maxi Sport LS-2 Speed Stock Wheels"
+    },
+    {
+      "name": "MS50 Stock Wheels"
+    },
+    {
+      "name": "DS50V Stock Wheels"
+    },
+    {
+      "name": "Super Maxi Stock Wheels"
+    },
+    {
+      "name": "Maxi N Stock Wheels"
+    },
+    {
+      "name": "Sport I Stock Wheels"
+    },
+    {
+      "name": "Maxi SKW Stock Wheels"
+    },
+    {
+      "name": "Maxi II Stock Wheels"
+    },
+    {
+      "name": " X50-3 Stock Wheels"
+    },
+    {
+      "name": "MC 50-3 Stock Wheels"
+    },
+    {
+      "name": "Maxi Plus Stock Wheels"
+    },
+    {
+      "name": "MS25 Stock Wheels"
+    },
+    {
+      "name": "Maxi Free Spirit Stock Wheels"
+    },
+    {
+      "name": "MC50 Stock Wheels"
+    },
+    {
+      "name": "Maxi Sport MKII Stock Wheels"
+    },
+    {
+      "name": "Beta Stock Wheels"
+    },
+    {
+      "name": "M2 Stock Wheels"
+    },
+    {
+      "name": "MX40 Stock Wheels"
+    },
+    {
+      "name": "Tri Rad Stock Wheels"
+    },
+    {
+      "name": "Murray Stock Wheels"
+    },
+    {
+      "name": "VS50DK Stock Wheels"
+    },
+    {
+      "name": "Mini Maxi Stock Wheels"
+    },
+    {
+      "name": "Maxi Executive SKA Stock Wheels"
+    },
+    {
+      "name": "Maxi N Quickly Stock Wheels"
+    },
+    {
+      "name": "Maxi S Stock Wheels"
+    },
+    {
+      "name": "M50 Racing (Skylark) Stock Wheels"
+    },
+    {
+      "name": "MS50L Stock Wheels"
+    },
+    {
+      "name": "DS50 Stock Wheels"
+    },
+    {
+      "name": "Maxi N2 Stock Wheels"
+    },
+    {
+      "name": "Korado Stock Wheels"
+    },
+    {
+      "name": "X50 Stock Wheels"
+    },
+    {
+      "name": "Magnum X Stock Wheels"
+    },
+    {
+      "name": "X40 Stock Wheels"
+    },
+    {
+      "name": "Nostalgia Stock Wheels"
+    },
+    {
+      "name": "Maxi Super DK Stock Wheels"
+    },
+    {
+      "name": "Astro Daimler Two-Speed Stock Wheels"
+    },
+    {
+      "name": "Magnum Stock Wheels"
+    },
+    {
+      "name": "X30 Stock Wheels"
+    },
+    {
+      "name": "VS50K Stock Wheels"
+    },
+    {
+      "name": "VZ 50 Stock Wheels"
+    },
+    {
+      "name": "Dakota 3000 Stock Wheels"
+    },
+    {
+      "name": "MOTOVI Stock Wheels"
+    },
+    {
+      "name": "Maxi Super D Stock Wheels"
+    },
+    {
+      "name": "Newport L Stock Wheels"
+    },
+    {
+      "name": "MR50 Stock Wheels"
+    },
+    {
+      "name": "MS50V Deluxe Stock Wheels"
+    },
+    {
+      "name": "M50 Sport Stock Wheels"
+    },
+    {
+      "name": "Velux 30 Stock Wheels"
+    },
+    {
+      "name": "Magnum Limited LTD Stock Wheels"
+    },
+    {
+      "name": "Maxi GN Stock Wheels"
+    },
+    {
+      "name": "Maxi Super Stock Wheels"
+    },
+    {
+      "name": "Maxi Luxe Stock Wheels"
+    },
+    {
+      "name": "Maxi Sport Stock Wheels"
+    },
+    {
+      "name": "Monza Stock Wheels"
+    },
+    {
+      "name": "MV50 Stock Wheels"
+    },
+    {
+      "name": "Dart Stock Wheels"
+    },
+    {
+      "name": "Magnum II Stock Wheels"
+    },
+    {
+      "name": "MS50 Deluxe Stock Wheels"
+    },
+    {
+      "name": "Magnum XK Stock Wheels"
+    },
+    {
+      "name": "Maxi Stock Wheels"
+    },
+    {
+      "name": "Skyhawk Stock Wheels"
+    },
+    {
+      "name": "M3 Stock Wheels"
+    },
+    {
+      "name": "Dakota Stock Wheels"
+    },
+    {
+      "name": "Grand Prix Special Stock Wheels"
+    },
+    {
+      "name": "Maxi Super Sport KA Stock Wheels"
+    },
+    {
+      "name": "M50 Grand Prix Stock Wheels"
+    },
+    {
+      "name": "Maxi Auto Executive Stock Wheels"
+    },
+    {
+      "name": "Newport Stock Wheels"
+    },
+    {
+      "name": "MV Stock Wheels"
+    },
+    {
+      "name": "Maxi S2 Stock Wheels"
+    },
+    {
+      "name": "P1 Stock Wheels"
+    },
+    {
+      "name": "Campus 50 Stock Wheels"
+    },
+    {
+      "name": "Cobra Stock Wheels"
+    },
+    {
+      "name": "Sport MKII Stock Wheels"
+    },
+    {
+      "name": "Maxi SKX GL Super Executive Stock Wheels"
+    },
+    {
+      "name": "MS50V Stock Wheels"
+    },
+    {
+      "name": "Kromag Stock Wheels"
+    },
+    {
+      "name": "VS50L Stock Wheels"
+    }
+  ]
 }

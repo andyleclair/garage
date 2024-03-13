@@ -1,8 +1,46 @@
 {
   "name": "Torrot",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "City"
+    },
+    {
+      "name": "City Lujo"
+    },
+    {
+      "name": "City TT"
+    },
+    {
+      "name": "Gran Cross"
+    },
+    {
+      "name": "Maxi"
+    },
+    {
+      "name": "Mini"
+    },
+    {
+      "name": "Mustang"
+    },
+    {
+      "name": "Panther"
+    },
+    {
+      "name": "Sport 4V"
+    },
+    {
+      "name": "TT50"
+    },
+    {
+      "name": "Tiburon"
+    },
+    {
+      "name": "Trial"
+    },
+    {
+      "name": "Turismo"
+    }
   ],
   "forks": [
     {
@@ -86,57 +124,6 @@
       "name": "City Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Turismo Stock Cylinder"
-    },
-    {
-      "name": "Trial Stock Cylinder"
-    },
-    {
-      "name": "Tiburon Stock Cylinder"
-    },
-    {
-      "name": "TT50 Stock Cylinder"
-    },
-    {
-      "name": "Sport 4V Stock Cylinder"
-    },
-    {
-      "name": "Panther Stock Cylinder"
-    },
-    {
-      "name": "Mustang Stock Cylinder"
-    },
-    {
-      "name": "Mini Stock Cylinder"
-    },
-    {
-      "name": "Maxi Stock Cylinder"
-    },
-    {
-      "name": "Gran Cross Stock Cylinder"
-    },
-    {
-      "name": "City TT Stock Cylinder"
-    },
-    {
-      "name": "City Lujo Stock Cylinder"
-    },
-    {
-      "name": "City Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Turismo Stock Exhaust"
@@ -178,52 +165,13 @@
       "name": "City Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "City"
-    },
-    {
-      "name": "City Lujo"
-    },
-    {
-      "name": "City TT"
-    },
-    {
-      "name": "Gran Cross"
-    },
-    {
-      "name": "Maxi"
-    },
-    {
-      "name": "Mini"
-    },
-    {
-      "name": "Mustang"
-    },
-    {
-      "name": "Panther"
-    },
-    {
-      "name": "Sport 4V"
-    },
-    {
-      "name": "TT50"
-    },
-    {
-      "name": "Tiburon"
-    },
-    {
-      "name": "Trial"
-    },
-    {
-      "name": "Turismo"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

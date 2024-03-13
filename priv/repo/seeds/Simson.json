@@ -1,8 +1,46 @@
 {
   "name": "Simson",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Mofa 1"
+    },
+    {
+      "name": "S50"
+    },
+    {
+      "name": "S50 B1"
+    },
+    {
+      "name": "S51"
+    },
+    {
+      "name": "S53 Alpha"
+    },
+    {
+      "name": "SL1"
+    },
+    {
+      "name": "SL1S"
+    },
+    {
+      "name": "SR 4-1"
+    },
+    {
+      "name": "SR1"
+    },
+    {
+      "name": "SR2"
+    },
+    {
+      "name": "SR50"
+    },
+    {
+      "name": "Scwalbe"
+    },
+    {
+      "name": "Sperber"
+    }
   ],
   "forks": [
     {
@@ -86,57 +124,6 @@
       "name": "Mofa 1 Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Sperber Stock Cylinder"
-    },
-    {
-      "name": "Scwalbe Stock Cylinder"
-    },
-    {
-      "name": "SR50 Stock Cylinder"
-    },
-    {
-      "name": "SR2 Stock Cylinder"
-    },
-    {
-      "name": "SR1 Stock Cylinder"
-    },
-    {
-      "name": "SR 4-1 Stock Cylinder"
-    },
-    {
-      "name": "SL1S Stock Cylinder"
-    },
-    {
-      "name": "SL1 Stock Cylinder"
-    },
-    {
-      "name": "S53 Alpha Stock Cylinder"
-    },
-    {
-      "name": "S51 Stock Cylinder"
-    },
-    {
-      "name": "S50 B1 Stock Cylinder"
-    },
-    {
-      "name": "S50 Stock Cylinder"
-    },
-    {
-      "name": "Mofa 1 Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Sperber Stock Exhaust"
@@ -178,52 +165,13 @@
       "name": "Mofa 1 Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Mofa 1"
-    },
-    {
-      "name": "S50"
-    },
-    {
-      "name": "S50 B1"
-    },
-    {
-      "name": "S51"
-    },
-    {
-      "name": "S53 Alpha"
-    },
-    {
-      "name": "SL1"
-    },
-    {
-      "name": "SL1S"
-    },
-    {
-      "name": "SR 4-1"
-    },
-    {
-      "name": "SR1"
-    },
-    {
-      "name": "SR2"
-    },
-    {
-      "name": "SR50"
-    },
-    {
-      "name": "Scwalbe"
-    },
-    {
-      "name": "Sperber"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

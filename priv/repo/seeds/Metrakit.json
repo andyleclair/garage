@@ -1,0 +1,43 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts",
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 80,
+      "name": "Puch 80cc Small Port"
+    },
+    {
+      "displacement": 80,
+      "name": "Puch 80cc Large Port"
+    },
+    {
+      "displacement": 65,
+      "name": "Puch 65cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Derbi 70cc"
+    },
+    {
+      "displacement": 60,
+      "name": "Derbi 60cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Aprillia SR50 70cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "MK3 for Franco Morini"
+    },
+    {
+      "name": "Derbi RK Pipe"
+    }
+  ],
+  "name": "Metrakit"
+}

@@ -81,6 +81,9 @@ defmodule Garage.MixProject do
         "ash_postgres.migrate",
         "run priv/repo/seeds.exs"
       ],
+      generate_seeds: [
+        "run priv/repo/generate_seeds.exs"
+      ],
       "ash_postgres.reset": ["ash_postgres.drop", "ash_postgres.setup"],
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"],
       "assets.setup": ["tailwind.install --if-missing", "esbuild.install --if-missing"],

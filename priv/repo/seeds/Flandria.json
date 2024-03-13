@@ -1,8 +1,67 @@
 {
   "name": "Flandria",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "101"
+    },
+    {
+      "name": "102"
+    },
+    {
+      "name": "104"
+    },
+    {
+      "name": "4.3CV"
+    },
+    {
+      "name": "5CV"
+    },
+    {
+      "name": "Anker Laura"
+    },
+    {
+      "name": "Apollo AF"
+    },
+    {
+      "name": "Apollo AF-A"
+    },
+    {
+      "name": "Bermuda"
+    },
+    {
+      "name": "Commet"
+    },
+    {
+      "name": "Imola4"
+    },
+    {
+      "name": "Kingline"
+    },
+    {
+      "name": "Monomatix"
+    },
+    {
+      "name": "Record"
+    },
+    {
+      "name": "SP 237"
+    },
+    {
+      "name": "SP 337"
+    },
+    {
+      "name": "SP 527"
+    },
+    {
+      "name": "SP 537"
+    },
+    {
+      "name": "SP 547"
+    },
+    {
+      "name": "SP 747"
+    }
   ],
   "forks": [
     {
@@ -128,78 +187,6 @@
       "name": "101 Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "SP 747 Stock Cylinder"
-    },
-    {
-      "name": "SP 547 Stock Cylinder"
-    },
-    {
-      "name": "SP 537 Stock Cylinder"
-    },
-    {
-      "name": "SP 527 Stock Cylinder"
-    },
-    {
-      "name": "SP 337 Stock Cylinder"
-    },
-    {
-      "name": "SP 237 Stock Cylinder"
-    },
-    {
-      "name": "Record Stock Cylinder"
-    },
-    {
-      "name": "Monomatix Stock Cylinder"
-    },
-    {
-      "name": "Kingline Stock Cylinder"
-    },
-    {
-      "name": "Imola4 Stock Cylinder"
-    },
-    {
-      "name": "Commet Stock Cylinder"
-    },
-    {
-      "name": "Bermuda Stock Cylinder"
-    },
-    {
-      "name": "Apollo AF-A Stock Cylinder"
-    },
-    {
-      "name": "Apollo AF Stock Cylinder"
-    },
-    {
-      "name": "Anker Laura Stock Cylinder"
-    },
-    {
-      "name": "5CV Stock Cylinder"
-    },
-    {
-      "name": "4.3CV Stock Cylinder"
-    },
-    {
-      "name": "104 Stock Cylinder"
-    },
-    {
-      "name": "102 Stock Cylinder"
-    },
-    {
-      "name": "101 Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "SP 747 Stock Exhaust"
@@ -262,73 +249,13 @@
       "name": "101 Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "101"
-    },
-    {
-      "name": "102"
-    },
-    {
-      "name": "104"
-    },
-    {
-      "name": "4.3CV"
-    },
-    {
-      "name": "5CV"
-    },
-    {
-      "name": "Anker Laura"
-    },
-    {
-      "name": "Apollo AF"
-    },
-    {
-      "name": "Apollo AF-A"
-    },
-    {
-      "name": "Bermuda"
-    },
-    {
-      "name": "Commet"
-    },
-    {
-      "name": "Imola4"
-    },
-    {
-      "name": "Kingline"
-    },
-    {
-      "name": "Monomatix"
-    },
-    {
-      "name": "Record"
-    },
-    {
-      "name": "SP 237"
-    },
-    {
-      "name": "SP 337"
-    },
-    {
-      "name": "SP 527"
-    },
-    {
-      "name": "SP 537"
-    },
-    {
-      "name": "SP 547"
-    },
-    {
-      "name": "SP 747"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

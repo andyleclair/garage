@@ -1,8 +1,19 @@
 {
   "name": "Lazer",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Riviera"
+    },
+    {
+      "name": "Sport 50"
+    },
+    {
+      "name": "Sport 50 ST"
+    },
+    {
+      "name": "Sprint 50"
+    }
   ],
   "forks": [
     {
@@ -32,30 +43,6 @@
       "name": "Riviera Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Sprint 50 Stock Cylinder"
-    },
-    {
-      "name": "Sport 50 ST Stock Cylinder"
-    },
-    {
-      "name": "Sport 50 Stock Cylinder"
-    },
-    {
-      "name": "Riviera Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Sprint 50 Stock Exhaust"
@@ -70,25 +57,13 @@
       "name": "Riviera Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Riviera"
-    },
-    {
-      "name": "Sport 50"
-    },
-    {
-      "name": "Sport 50 ST"
-    },
-    {
-      "name": "Sprint 50"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

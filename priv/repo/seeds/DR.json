@@ -1,0 +1,23 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 65,
+      "name": "Vespa 65cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Motobecane AV10 70cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Honda 70cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "DR"
+}

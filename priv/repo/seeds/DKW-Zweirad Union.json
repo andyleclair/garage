@@ -1,8 +1,28 @@
 {
   "name": "DKW-Zweirad Union",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "111 BJ"
+    },
+    {
+      "name": "503"
+    },
+    {
+      "name": "Hummel"
+    },
+    {
+      "name": "Hummel 2 Gang"
+    },
+    {
+      "name": "Hummel 3 Gang"
+    },
+    {
+      "name": "Hummel Super"
+    },
+    {
+      "name": "Model PI"
+    }
   ],
   "forks": [
     {
@@ -50,39 +70,6 @@
       "name": "111 BJ Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Model PI Stock Cylinder"
-    },
-    {
-      "name": "Hummel Super Stock Cylinder"
-    },
-    {
-      "name": "Hummel 3 Gang Stock Cylinder"
-    },
-    {
-      "name": "Hummel 2 Gang Stock Cylinder"
-    },
-    {
-      "name": "Hummel Stock Cylinder"
-    },
-    {
-      "name": "503 Stock Cylinder"
-    },
-    {
-      "name": "111 BJ Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Model PI Stock Exhaust"
@@ -106,34 +93,13 @@
       "name": "111 BJ Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "111 BJ"
-    },
-    {
-      "name": "503"
-    },
-    {
-      "name": "Hummel"
-    },
-    {
-      "name": "Hummel 2 Gang"
-    },
-    {
-      "name": "Hummel 3 Gang"
-    },
-    {
-      "name": "Hummel Super"
-    },
-    {
-      "name": "Model PI"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

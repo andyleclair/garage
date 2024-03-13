@@ -1,8 +1,10 @@
 {
   "name": "Mustang",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Cobra 2000"
+    }
   ],
   "forks": [
     {
@@ -14,36 +16,18 @@
       "name": "Cobra 2000 Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Cobra 2000 Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Cobra 2000 Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Cobra 2000"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

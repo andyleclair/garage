@@ -1,8 +1,34 @@
 {
   "name": "Bianchi",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Aquilotto"
+    },
+    {
+      "name": "Bianchimatic"
+    },
+    {
+      "name": "Falco"
+    },
+    {
+      "name": "Laser"
+    },
+    {
+      "name": "Snark"
+    },
+    {
+      "name": "Snark Eagle Deluxe"
+    },
+    {
+      "name": "Snark Eagle Standard"
+    },
+    {
+      "name": "Snark Satelite"
+    },
+    {
+      "name": "Snark Stardust"
+    }
   ],
   "forks": [
     {
@@ -62,45 +88,6 @@
       "name": "Aquilotto Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Snark Stardust Stock Cylinder"
-    },
-    {
-      "name": "Snark Satelite Stock Cylinder"
-    },
-    {
-      "name": "Snark Eagle Standard Stock Cylinder"
-    },
-    {
-      "name": "Snark Eagle Deluxe Stock Cylinder"
-    },
-    {
-      "name": "Snark Stock Cylinder"
-    },
-    {
-      "name": "Laser Stock Cylinder"
-    },
-    {
-      "name": "Falco Stock Cylinder"
-    },
-    {
-      "name": "Bianchimatic Stock Cylinder"
-    },
-    {
-      "name": "Aquilotto Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Snark Stardust Stock Exhaust"
@@ -130,40 +117,13 @@
       "name": "Aquilotto Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Aquilotto"
-    },
-    {
-      "name": "Bianchimatic"
-    },
-    {
-      "name": "Falco"
-    },
-    {
-      "name": "Laser"
-    },
-    {
-      "name": "Snark"
-    },
-    {
-      "name": "Snark Eagle Deluxe"
-    },
-    {
-      "name": "Snark Eagle Standard"
-    },
-    {
-      "name": "Snark Satelite"
-    },
-    {
-      "name": "Snark Stardust"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

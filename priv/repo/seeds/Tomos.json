@@ -1,9 +1,40 @@
 {
-  "name": "Tomos",
-  "engines": [],
+  "carburetors": [],
   "categories": [
-    "moped"
+    "cylinders",
+    "engines",
+    "forks",
+    "mopeds",
+    "wheels"
   ],
+  "clutches": [],
+  "cranks": [],
+  "cylinders": [
+    {
+      "displacement": 50,
+      "name": "Stock A55 50cc"
+    },
+    {
+      "displacement": 50,
+      "name": "Stock A35 50cc"
+    },
+    {
+      "displacement": 50,
+      "name": "Stock A3 50cc"
+    }
+  ],
+  "engines": [
+    {
+      "name": "A55"
+    },
+    {
+      "name": "A35"
+    },
+    {
+      "name": "A3"
+    }
+  ],
+  "exhausts": [],
   "forks": [
     {
       "name": "Automatic NT Stock Forks"
@@ -198,603 +229,7 @@
       "name": "TLS Stock Forks"
     }
   ],
-  "wheels": [
-    {
-      "name": "Automatic NT Stock Wheels"
-    },
-    {
-      "name": "Streetmate Stock Wheels"
-    },
-    {
-      "name": "ATX 50C Stock Wheels"
-    },
-    {
-      "name": "Cross 50 Junior Stock Wheels"
-    },
-    {
-      "name": "Sprint Stock Wheels"
-    },
-    {
-      "name": "25 Luxe Stock Wheels"
-    },
-    {
-      "name": "Colibri Stock Wheels"
-    },
-    {
-      "name": "Minibike Stock Wheels"
-    },
-    {
-      "name": "Bullet Stock Wheels"
-    },
-    {
-      "name": "Limited Stock Wheels"
-    },
-    {
-      "name": "Sport Stock Wheels"
-    },
-    {
-      "name": "Silver Bullet SL Stock Wheels"
-    },
-    {
-      "name": "A3MS Stock Wheels"
-    },
-    {
-      "name": "ST Stock Wheels"
-    },
-    {
-      "name": "15SLC Stock Wheels"
-    },
-    {
-      "name": "3 Stock Wheels"
-    },
-    {
-      "name": "MC36 Stock Wheels"
-    },
-    {
-      "name": "A-3 Golden Bullet Stock Wheels"
-    },
-    {
-      "name": "Targa Stock Wheels"
-    },
-    {
-      "name": "Silver Bullet Stock Wheels"
-    },
-    {
-      "name": "MC50 Stock Wheels"
-    },
-    {
-      "name": "VT50KS Stock Wheels"
-    },
-    {
-      "name": "Classic I Stock Wheels"
-    },
-    {
-      "name": "15SL Stock Wheels"
-    },
-    {
-      "name": "Silver Bullet GM Stock Wheels"
-    },
-    {
-      "name": "A3SP Stock Wheels"
-    },
-    {
-      "name": "A-3 Golden Bullet TT-LX Stock Wheels"
-    },
-    {
-      "name": "A3ML Stock Wheels"
-    },
-    {
-      "name": "APN4 Stock Wheels"
-    },
-    {
-      "name": "LX Stock Wheels"
-    },
-    {
-      "name": "15 Sprint Stock Wheels"
-    },
-    {
-      "name": "Classic II Stock Wheels"
-    },
-    {
-      "name": "A-3 Bullet TT Stock Wheels"
-    },
-    {
-      "name": "BT 50N Stock Wheels"
-    },
-    {
-      "name": "Targa TTLX Stock Wheels"
-    },
-    {
-      "name": "Blue Bullet Stock Wheels"
-    },
-    {
-      "name": "Red Bullet Stock Wheels"
-    },
-    {
-      "name": "Cross 50 Senior Stock Wheels"
-    },
-    {
-      "name": "A-3 Bullet TS Stock Wheels"
-    },
-    {
-      "name": "4L Stock Wheels"
-    },
-    {
-      "name": "APN 6S Stock Wheels"
-    },
-    {
-      "name": "A-3 Bullet Stock Wheels"
-    },
-    {
-      "name": "GP Stock Wheels"
-    },
-    {
-      "name": "Targa LX Stock Wheels"
-    },
-    {
-      "name": "Alpino Stock Wheels"
-    },
-    {
-      "name": "Youngster Stock Wheels"
-    },
-    {
-      "name": "Automatic Stock Wheels"
-    },
-    {
-      "name": "4H Stock Wheels"
-    },
-    {
-      "name": "Revival Stock Wheels"
-    },
-    {
-      "name": "14TLC Stock Wheels"
-    },
-    {
-      "name": "Arrow Stock Wheels"
-    },
-    {
-      "name": "3K Stock Wheels"
-    },
-    {
-      "name": "Bullet TT Stock Wheels"
-    },
-    {
-      "name": "Quadro Stock Wheels"
-    },
-    {
-      "name": "Mini Stock Wheels"
-    },
-    {
-      "name": "Classic Stock Wheels"
-    },
-    {
-      "name": "MC50 Junior Stock Wheels"
-    },
-    {
-      "name": "TX 50 Stock Wheels"
-    },
-    {
-      "name": "Flexer Stock Wheels"
-    },
-    {
-      "name": "MC50 Senior Stock Wheels"
-    },
-    {
-      "name": "Streetmate R Stock Wheels"
-    },
-    {
-      "name": "Revival TS Stock Wheels"
-    },
-    {
-      "name": "A3SL Stock Wheels"
-    },
-    {
-      "name": "TLS Stock Wheels"
-    }
-  ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Automatic NT Stock Cylinder"
-    },
-    {
-      "name": "Streetmate Stock Cylinder"
-    },
-    {
-      "name": "ATX 50C Stock Cylinder"
-    },
-    {
-      "name": "Cross 50 Junior Stock Cylinder"
-    },
-    {
-      "name": "Sprint Stock Cylinder"
-    },
-    {
-      "name": "25 Luxe Stock Cylinder"
-    },
-    {
-      "name": "Colibri Stock Cylinder"
-    },
-    {
-      "name": "Minibike Stock Cylinder"
-    },
-    {
-      "name": "Bullet Stock Cylinder"
-    },
-    {
-      "name": "Limited Stock Cylinder"
-    },
-    {
-      "name": "Sport Stock Cylinder"
-    },
-    {
-      "name": "Silver Bullet SL Stock Cylinder"
-    },
-    {
-      "name": "A3MS Stock Cylinder"
-    },
-    {
-      "name": "ST Stock Cylinder"
-    },
-    {
-      "name": "15SLC Stock Cylinder"
-    },
-    {
-      "name": "3 Stock Cylinder"
-    },
-    {
-      "name": "MC36 Stock Cylinder"
-    },
-    {
-      "name": "A-3 Golden Bullet Stock Cylinder"
-    },
-    {
-      "name": "Targa Stock Cylinder"
-    },
-    {
-      "name": "Silver Bullet Stock Cylinder"
-    },
-    {
-      "name": "MC50 Stock Cylinder"
-    },
-    {
-      "name": "VT50KS Stock Cylinder"
-    },
-    {
-      "name": "Classic I Stock Cylinder"
-    },
-    {
-      "name": "15SL Stock Cylinder"
-    },
-    {
-      "name": "Silver Bullet GM Stock Cylinder"
-    },
-    {
-      "name": "A3SP Stock Cylinder"
-    },
-    {
-      "name": "A-3 Golden Bullet TT-LX Stock Cylinder"
-    },
-    {
-      "name": "A3ML Stock Cylinder"
-    },
-    {
-      "name": "APN4 Stock Cylinder"
-    },
-    {
-      "name": "LX Stock Cylinder"
-    },
-    {
-      "name": "15 Sprint Stock Cylinder"
-    },
-    {
-      "name": "Classic II Stock Cylinder"
-    },
-    {
-      "name": "A-3 Bullet TT Stock Cylinder"
-    },
-    {
-      "name": "BT 50N Stock Cylinder"
-    },
-    {
-      "name": "Targa TTLX Stock Cylinder"
-    },
-    {
-      "name": "Blue Bullet Stock Cylinder"
-    },
-    {
-      "name": "Red Bullet Stock Cylinder"
-    },
-    {
-      "name": "Cross 50 Senior Stock Cylinder"
-    },
-    {
-      "name": "A-3 Bullet TS Stock Cylinder"
-    },
-    {
-      "name": "4L Stock Cylinder"
-    },
-    {
-      "name": "APN 6S Stock Cylinder"
-    },
-    {
-      "name": "A-3 Bullet Stock Cylinder"
-    },
-    {
-      "name": "GP Stock Cylinder"
-    },
-    {
-      "name": "Targa LX Stock Cylinder"
-    },
-    {
-      "name": "Alpino Stock Cylinder"
-    },
-    {
-      "name": "Youngster Stock Cylinder"
-    },
-    {
-      "name": "Automatic Stock Cylinder"
-    },
-    {
-      "name": "4H Stock Cylinder"
-    },
-    {
-      "name": "Revival Stock Cylinder"
-    },
-    {
-      "name": "14TLC Stock Cylinder"
-    },
-    {
-      "name": "Arrow Stock Cylinder"
-    },
-    {
-      "name": "3K Stock Cylinder"
-    },
-    {
-      "name": "Bullet TT Stock Cylinder"
-    },
-    {
-      "name": "Quadro Stock Cylinder"
-    },
-    {
-      "name": "Mini Stock Cylinder"
-    },
-    {
-      "name": "Classic Stock Cylinder"
-    },
-    {
-      "name": "MC50 Junior Stock Cylinder"
-    },
-    {
-      "name": "TX 50 Stock Cylinder"
-    },
-    {
-      "name": "Flexer Stock Cylinder"
-    },
-    {
-      "name": "MC50 Senior Stock Cylinder"
-    },
-    {
-      "name": "Streetmate R Stock Cylinder"
-    },
-    {
-      "name": "Revival TS Stock Cylinder"
-    },
-    {
-      "name": "A3SL Stock Cylinder"
-    },
-    {
-      "name": "TLS Stock Cylinder"
-    }
-  ],
-  "exhausts": [
-    {
-      "name": "Automatic NT Stock Exhaust"
-    },
-    {
-      "name": "Streetmate Stock Exhaust"
-    },
-    {
-      "name": "ATX 50C Stock Exhaust"
-    },
-    {
-      "name": "Cross 50 Junior Stock Exhaust"
-    },
-    {
-      "name": "Sprint Stock Exhaust"
-    },
-    {
-      "name": "25 Luxe Stock Exhaust"
-    },
-    {
-      "name": "Colibri Stock Exhaust"
-    },
-    {
-      "name": "Minibike Stock Exhaust"
-    },
-    {
-      "name": "Bullet Stock Exhaust"
-    },
-    {
-      "name": "Limited Stock Exhaust"
-    },
-    {
-      "name": "Sport Stock Exhaust"
-    },
-    {
-      "name": "Silver Bullet SL Stock Exhaust"
-    },
-    {
-      "name": "A3MS Stock Exhaust"
-    },
-    {
-      "name": "ST Stock Exhaust"
-    },
-    {
-      "name": "15SLC Stock Exhaust"
-    },
-    {
-      "name": "3 Stock Exhaust"
-    },
-    {
-      "name": "MC36 Stock Exhaust"
-    },
-    {
-      "name": "A-3 Golden Bullet Stock Exhaust"
-    },
-    {
-      "name": "Targa Stock Exhaust"
-    },
-    {
-      "name": "Silver Bullet Stock Exhaust"
-    },
-    {
-      "name": "MC50 Stock Exhaust"
-    },
-    {
-      "name": "VT50KS Stock Exhaust"
-    },
-    {
-      "name": "Classic I Stock Exhaust"
-    },
-    {
-      "name": "15SL Stock Exhaust"
-    },
-    {
-      "name": "Silver Bullet GM Stock Exhaust"
-    },
-    {
-      "name": "A3SP Stock Exhaust"
-    },
-    {
-      "name": "A-3 Golden Bullet TT-LX Stock Exhaust"
-    },
-    {
-      "name": "A3ML Stock Exhaust"
-    },
-    {
-      "name": "APN4 Stock Exhaust"
-    },
-    {
-      "name": "LX Stock Exhaust"
-    },
-    {
-      "name": "15 Sprint Stock Exhaust"
-    },
-    {
-      "name": "Classic II Stock Exhaust"
-    },
-    {
-      "name": "A-3 Bullet TT Stock Exhaust"
-    },
-    {
-      "name": "BT 50N Stock Exhaust"
-    },
-    {
-      "name": "Targa TTLX Stock Exhaust"
-    },
-    {
-      "name": "Blue Bullet Stock Exhaust"
-    },
-    {
-      "name": "Red Bullet Stock Exhaust"
-    },
-    {
-      "name": "Cross 50 Senior Stock Exhaust"
-    },
-    {
-      "name": "A-3 Bullet TS Stock Exhaust"
-    },
-    {
-      "name": "4L Stock Exhaust"
-    },
-    {
-      "name": "APN 6S Stock Exhaust"
-    },
-    {
-      "name": "A-3 Bullet Stock Exhaust"
-    },
-    {
-      "name": "GP Stock Exhaust"
-    },
-    {
-      "name": "Targa LX Stock Exhaust"
-    },
-    {
-      "name": "Alpino Stock Exhaust"
-    },
-    {
-      "name": "Youngster Stock Exhaust"
-    },
-    {
-      "name": "Automatic Stock Exhaust"
-    },
-    {
-      "name": "4H Stock Exhaust"
-    },
-    {
-      "name": "Revival Stock Exhaust"
-    },
-    {
-      "name": "14TLC Stock Exhaust"
-    },
-    {
-      "name": "Arrow Stock Exhaust"
-    },
-    {
-      "name": "3K Stock Exhaust"
-    },
-    {
-      "name": "Bullet TT Stock Exhaust"
-    },
-    {
-      "name": "Quadro Stock Exhaust"
-    },
-    {
-      "name": "Mini Stock Exhaust"
-    },
-    {
-      "name": "Classic Stock Exhaust"
-    },
-    {
-      "name": "MC50 Junior Stock Exhaust"
-    },
-    {
-      "name": "TX 50 Stock Exhaust"
-    },
-    {
-      "name": "Flexer Stock Exhaust"
-    },
-    {
-      "name": "MC50 Senior Stock Exhaust"
-    },
-    {
-      "name": "Streetmate R Stock Exhaust"
-    },
-    {
-      "name": "Revival TS Stock Exhaust"
-    },
-    {
-      "name": "A3SL Stock Exhaust"
-    },
-    {
-      "name": "TLS Stock Exhaust"
-    }
-  ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
+  "ignitions": [],
   "models": [
     {
       "name": "TLS"
@@ -989,6 +424,201 @@
       "name": "Automatic NT"
     }
   ],
+  "name": "Tomos",
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "wheels": [
+    {
+      "name": "Automatic NT Stock Wheels"
+    },
+    {
+      "name": "Streetmate Stock Wheels"
+    },
+    {
+      "name": "ATX 50C Stock Wheels"
+    },
+    {
+      "name": "Cross 50 Junior Stock Wheels"
+    },
+    {
+      "name": "Sprint Stock Wheels"
+    },
+    {
+      "name": "25 Luxe Stock Wheels"
+    },
+    {
+      "name": "Colibri Stock Wheels"
+    },
+    {
+      "name": "Minibike Stock Wheels"
+    },
+    {
+      "name": "Bullet Stock Wheels"
+    },
+    {
+      "name": "Limited Stock Wheels"
+    },
+    {
+      "name": "Sport Stock Wheels"
+    },
+    {
+      "name": "Silver Bullet SL Stock Wheels"
+    },
+    {
+      "name": "A3MS Stock Wheels"
+    },
+    {
+      "name": "ST Stock Wheels"
+    },
+    {
+      "name": "15SLC Stock Wheels"
+    },
+    {
+      "name": "3 Stock Wheels"
+    },
+    {
+      "name": "MC36 Stock Wheels"
+    },
+    {
+      "name": "A-3 Golden Bullet Stock Wheels"
+    },
+    {
+      "name": "Targa Stock Wheels"
+    },
+    {
+      "name": "Silver Bullet Stock Wheels"
+    },
+    {
+      "name": "MC50 Stock Wheels"
+    },
+    {
+      "name": "VT50KS Stock Wheels"
+    },
+    {
+      "name": "Classic I Stock Wheels"
+    },
+    {
+      "name": "15SL Stock Wheels"
+    },
+    {
+      "name": "Silver Bullet GM Stock Wheels"
+    },
+    {
+      "name": "A3SP Stock Wheels"
+    },
+    {
+      "name": "A-3 Golden Bullet TT-LX Stock Wheels"
+    },
+    {
+      "name": "A3ML Stock Wheels"
+    },
+    {
+      "name": "APN4 Stock Wheels"
+    },
+    {
+      "name": "LX Stock Wheels"
+    },
+    {
+      "name": "15 Sprint Stock Wheels"
+    },
+    {
+      "name": "Classic II Stock Wheels"
+    },
+    {
+      "name": "A-3 Bullet TT Stock Wheels"
+    },
+    {
+      "name": "BT 50N Stock Wheels"
+    },
+    {
+      "name": "Targa TTLX Stock Wheels"
+    },
+    {
+      "name": "Blue Bullet Stock Wheels"
+    },
+    {
+      "name": "Red Bullet Stock Wheels"
+    },
+    {
+      "name": "Cross 50 Senior Stock Wheels"
+    },
+    {
+      "name": "A-3 Bullet TS Stock Wheels"
+    },
+    {
+      "name": "4L Stock Wheels"
+    },
+    {
+      "name": "APN 6S Stock Wheels"
+    },
+    {
+      "name": "A-3 Bullet Stock Wheels"
+    },
+    {
+      "name": "GP Stock Wheels"
+    },
+    {
+      "name": "Targa LX Stock Wheels"
+    },
+    {
+      "name": "Alpino Stock Wheels"
+    },
+    {
+      "name": "Youngster Stock Wheels"
+    },
+    {
+      "name": "Automatic Stock Wheels"
+    },
+    {
+      "name": "4H Stock Wheels"
+    },
+    {
+      "name": "Revival Stock Wheels"
+    },
+    {
+      "name": "14TLC Stock Wheels"
+    },
+    {
+      "name": "Arrow Stock Wheels"
+    },
+    {
+      "name": "3K Stock Wheels"
+    },
+    {
+      "name": "Bullet TT Stock Wheels"
+    },
+    {
+      "name": "Quadro Stock Wheels"
+    },
+    {
+      "name": "Mini Stock Wheels"
+    },
+    {
+      "name": "Classic Stock Wheels"
+    },
+    {
+      "name": "MC50 Junior Stock Wheels"
+    },
+    {
+      "name": "TX 50 Stock Wheels"
+    },
+    {
+      "name": "Flexer Stock Wheels"
+    },
+    {
+      "name": "MC50 Senior Stock Wheels"
+    },
+    {
+      "name": "Streetmate R Stock Wheels"
+    },
+    {
+      "name": "Revival TS Stock Wheels"
+    },
+    {
+      "name": "A3SL Stock Wheels"
+    },
+    {
+      "name": "TLS Stock Wheels"
+    }
+  ]
 }

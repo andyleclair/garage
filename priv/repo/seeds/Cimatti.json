@@ -1,8 +1,49 @@
 {
   "name": "Cimatti",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "4M"
+    },
+    {
+      "name": "86XL Radial 4M"
+    },
+    {
+      "name": "Bat Baby"
+    },
+    {
+      "name": "Bob Cat"
+    },
+    {
+      "name": "Boy"
+    },
+    {
+      "name": "C50"
+    },
+    {
+      "name": "Chic"
+    },
+    {
+      "name": "City Bike"
+    },
+    {
+      "name": "Express"
+    },
+    {
+      "name": "Gran Prix XL"
+    },
+    {
+      "name": "Kaiman Super 6m Radial X21"
+    },
+    {
+      "name": "Piper V1 KS Deluxe"
+    },
+    {
+      "name": "Town Bike"
+    },
+    {
+      "name": "Twin Sport"
+    }
   ],
   "forks": [
     {
@@ -92,60 +133,6 @@
       "name": "4M Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Twin Sport Stock Cylinder"
-    },
-    {
-      "name": "Town Bike Stock Cylinder"
-    },
-    {
-      "name": "Piper V1 KS Deluxe Stock Cylinder"
-    },
-    {
-      "name": "Kaiman Super 6m Radial X21 Stock Cylinder"
-    },
-    {
-      "name": "Gran Prix XL Stock Cylinder"
-    },
-    {
-      "name": "Express Stock Cylinder"
-    },
-    {
-      "name": "City Bike Stock Cylinder"
-    },
-    {
-      "name": "Chic Stock Cylinder"
-    },
-    {
-      "name": "C50 Stock Cylinder"
-    },
-    {
-      "name": "Boy Stock Cylinder"
-    },
-    {
-      "name": "Bob Cat Stock Cylinder"
-    },
-    {
-      "name": "Bat Baby Stock Cylinder"
-    },
-    {
-      "name": "86XL Radial 4M Stock Cylinder"
-    },
-    {
-      "name": "4M Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Twin Sport Stock Exhaust"
@@ -190,55 +177,13 @@
       "name": "4M Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "4M"
-    },
-    {
-      "name": "86XL Radial 4M"
-    },
-    {
-      "name": "Bat Baby"
-    },
-    {
-      "name": "Bob Cat"
-    },
-    {
-      "name": "Boy"
-    },
-    {
-      "name": "C50"
-    },
-    {
-      "name": "Chic"
-    },
-    {
-      "name": "City Bike"
-    },
-    {
-      "name": "Express"
-    },
-    {
-      "name": "Gran Prix XL"
-    },
-    {
-      "name": "Kaiman Super 6m Radial X21"
-    },
-    {
-      "name": "Piper V1 KS Deluxe"
-    },
-    {
-      "name": "Town Bike"
-    },
-    {
-      "name": "Twin Sport"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

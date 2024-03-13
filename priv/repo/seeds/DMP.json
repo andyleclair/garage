@@ -1,0 +1,32 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts",
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 60,
+      "name": "Vespa 60cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Tomos A35 70cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Puch 70cc"
+    },
+    {
+      "displacement": 50,
+      "name": "Puch 50cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Racing for Puch - Carbon Tip"
+    }
+  ],
+  "name": "DMP"
+}

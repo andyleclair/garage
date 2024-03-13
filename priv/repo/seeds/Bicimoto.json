@@ -1,8 +1,10 @@
 {
   "name": "Bicimoto",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Pumita"
+    }
   ],
   "forks": [
     {
@@ -14,36 +16,18 @@
       "name": "Pumita Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Pumita Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Pumita Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Pumita"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

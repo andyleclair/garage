@@ -1,8 +1,43 @@
 {
   "name": "Rizzato Califfo",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Califfo"
+    },
+    {
+      "name": "Califfo 2-Speed"
+    },
+    {
+      "name": "Califfo 3-Wheeler"
+    },
+    {
+      "name": "Califfo Deluxe"
+    },
+    {
+      "name": "Califfo Matic"
+    },
+    {
+      "name": "Califfo Super"
+    },
+    {
+      "name": "Califfone Daytona"
+    },
+    {
+      "name": "Cross 4V"
+    },
+    {
+      "name": "Cross 6V"
+    },
+    {
+      "name": "Mini Califfo K"
+    },
+    {
+      "name": "Ringo Turismo"
+    },
+    {
+      "name": "Zum 3"
+    }
   ],
   "forks": [
     {
@@ -80,54 +115,6 @@
       "name": "Califfo Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Zum 3 Stock Cylinder"
-    },
-    {
-      "name": "Ringo Turismo Stock Cylinder"
-    },
-    {
-      "name": "Mini Califfo K Stock Cylinder"
-    },
-    {
-      "name": "Cross 6V Stock Cylinder"
-    },
-    {
-      "name": "Cross 4V Stock Cylinder"
-    },
-    {
-      "name": "Califfone Daytona Stock Cylinder"
-    },
-    {
-      "name": "Califfo Super Stock Cylinder"
-    },
-    {
-      "name": "Califfo Matic Stock Cylinder"
-    },
-    {
-      "name": "Califfo Deluxe Stock Cylinder"
-    },
-    {
-      "name": "Califfo 3-Wheeler Stock Cylinder"
-    },
-    {
-      "name": "Califfo 2-Speed Stock Cylinder"
-    },
-    {
-      "name": "Califfo Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Zum 3 Stock Exhaust"
@@ -166,49 +153,13 @@
       "name": "Califfo Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Califfo"
-    },
-    {
-      "name": "Califfo 2-Speed"
-    },
-    {
-      "name": "Califfo 3-Wheeler"
-    },
-    {
-      "name": "Califfo Deluxe"
-    },
-    {
-      "name": "Califfo Matic"
-    },
-    {
-      "name": "Califfo Super"
-    },
-    {
-      "name": "Califfone Daytona"
-    },
-    {
-      "name": "Cross 4V"
-    },
-    {
-      "name": "Cross 6V"
-    },
-    {
-      "name": "Mini Califfo K"
-    },
-    {
-      "name": "Ringo Turismo"
-    },
-    {
-      "name": "Zum 3"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

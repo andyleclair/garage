@@ -1,8 +1,22 @@
 {
   "name": "Cyrus",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Carrier"
+    },
+    {
+      "name": "Cyriette"
+    },
+    {
+      "name": "Cyrusette"
+    },
+    {
+      "name": "Speciaal Sport"
+    },
+    {
+      "name": "Transporter"
+    }
   ],
   "forks": [
     {
@@ -38,33 +52,6 @@
       "name": "Carrier Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Transporter Stock Cylinder"
-    },
-    {
-      "name": "Speciaal Sport Stock Cylinder"
-    },
-    {
-      "name": "Cyrusette Stock Cylinder"
-    },
-    {
-      "name": "Cyriette Stock Cylinder"
-    },
-    {
-      "name": "Carrier Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Transporter Stock Exhaust"
@@ -82,28 +69,13 @@
       "name": "Carrier Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Carrier"
-    },
-    {
-      "name": "Cyriette"
-    },
-    {
-      "name": "Cyrusette"
-    },
-    {
-      "name": "Speciaal Sport"
-    },
-    {
-      "name": "Transporter"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

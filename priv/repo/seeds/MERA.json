@@ -1,0 +1,15 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 86,
+      "name": "Minarelli V1 86cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "MERA"
+}

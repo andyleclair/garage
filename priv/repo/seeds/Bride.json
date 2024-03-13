@@ -1,0 +1,15 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 70,
+      "name": "Peugeot 70cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "Bride"
+}

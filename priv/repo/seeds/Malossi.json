@@ -1,13 +1,59 @@
 {
-  "name": "Malossi",
+  "carburetors": [],
   "categories": [
-    "carburetor",
-    "engine",
-    "cylinder"
+    "cylinders"
   ],
-  "engines": [
-    "Puegeot 103",
-    "Vespa"
+  "cylinders": [
+    {
+      "displacement": 70,
+      "name": "Yamaha QT50 70cc"
+    },
+    {
+      "displacement": 65,
+      "name": "Vespa Ciao 65cc -10mm Pin"
+    },
+    {
+      "displacement": 65,
+      "name": "Vespa Bravo 65cc"
+    },
+    {
+      "displacement": 75,
+      "name": "Vespa 75cc"
+    },
+    {
+      "displacement": 62,
+      "name": "Puch 62cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Peugeot 70cc"
+    },
+    {
+      "displacement": 50,
+      "name": "Peugeot 50cc H20 -Old Style"
+    },
+    {
+      "displacement": 50,
+      "name": "Peugeot 50cc 50cc -8 Port"
+    },
+    {
+      "displacement": 70,
+      "name": "Motobecane AV7 70cc"
+    },
+    {
+      "displacement": 65,
+      "name": "Motobecane AV7 65cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Motobecane AV10 70cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Honda 70cc"
+    }
   ],
-  "cylinders": []
+  "engines": [],
+  "exhausts": [],
+  "name": "Malossi"
 }

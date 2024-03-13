@@ -1,0 +1,23 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 65,
+      "name": "Morini M1 65cc"
+    },
+    {
+      "displacement": 90,
+      "name": "Minarelli V1 90cc"
+    },
+    {
+      "displacement": 80,
+      "name": "Minarelli V1 80cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "BRN"
+}

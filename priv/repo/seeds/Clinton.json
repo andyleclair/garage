@@ -1,8 +1,10 @@
 {
   "name": "Clinton",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "50-A"
+    }
   ],
   "forks": [
     {
@@ -14,36 +16,18 @@
       "name": "50-A Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "50-A Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "50-A Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "50-A"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

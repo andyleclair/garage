@@ -1,9 +1,23 @@
 {
-  "name": "Suzuki",
-  "engines": [],
+  "carburetors": [],
   "categories": [
-    "moped"
+    "engines",
+    "forks",
+    "mopeds",
+    "wheels"
   ],
+  "clutches": [],
+  "cranks": [],
+  "cylinders": [],
+  "engines": [
+    {
+      "name": "M15"
+    },
+    {
+      "name": "FA50"
+    }
+  ],
+  "exhausts": [],
   "forks": [
     {
       "name": "ZR50SP Stock Forks"
@@ -51,162 +65,7 @@
       "name": "A50P Stock Forks"
     }
   ],
-  "wheels": [
-    {
-      "name": "ZR50SP Stock Wheels"
-    },
-    {
-      "name": "ZR50 Stock Wheels"
-    },
-    {
-      "name": "U50 Stock Wheels"
-    },
-    {
-      "name": "TS50X Stock Wheels"
-    },
-    {
-      "name": "S1-90 Stock Wheels"
-    },
-    {
-      "name": "RV50 Stock Wheels"
-    },
-    {
-      "name": "M15 Stock Wheels"
-    },
-    {
-      "name": "M12 Stock Wheels"
-    },
-    {
-      "name": "K50 DN Stock Wheels"
-    },
-    {
-      "name": "FZ-50 Rascal Stock Wheels"
-    },
-    {
-      "name": "FS50 Stock Wheels"
-    },
-    {
-      "name": "FA50 Shuttle Stock Wheels"
-    },
-    {
-      "name": "FA50 Stock Wheels"
-    },
-    {
-      "name": "AP50 Stock Wheels"
-    },
-    {
-      "name": "A50P Stock Wheels"
-    }
-  ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "ZR50SP Stock Cylinder"
-    },
-    {
-      "name": "ZR50 Stock Cylinder"
-    },
-    {
-      "name": "U50 Stock Cylinder"
-    },
-    {
-      "name": "TS50X Stock Cylinder"
-    },
-    {
-      "name": "S1-90 Stock Cylinder"
-    },
-    {
-      "name": "RV50 Stock Cylinder"
-    },
-    {
-      "name": "M15 Stock Cylinder"
-    },
-    {
-      "name": "M12 Stock Cylinder"
-    },
-    {
-      "name": "K50 DN Stock Cylinder"
-    },
-    {
-      "name": "FZ-50 Rascal Stock Cylinder"
-    },
-    {
-      "name": "FS50 Stock Cylinder"
-    },
-    {
-      "name": "FA50 Shuttle Stock Cylinder"
-    },
-    {
-      "name": "FA50 Stock Cylinder"
-    },
-    {
-      "name": "AP50 Stock Cylinder"
-    },
-    {
-      "name": "A50P Stock Cylinder"
-    }
-  ],
-  "exhausts": [
-    {
-      "name": "ZR50SP Stock Exhaust"
-    },
-    {
-      "name": "ZR50 Stock Exhaust"
-    },
-    {
-      "name": "U50 Stock Exhaust"
-    },
-    {
-      "name": "TS50X Stock Exhaust"
-    },
-    {
-      "name": "S1-90 Stock Exhaust"
-    },
-    {
-      "name": "RV50 Stock Exhaust"
-    },
-    {
-      "name": "M15 Stock Exhaust"
-    },
-    {
-      "name": "M12 Stock Exhaust"
-    },
-    {
-      "name": "K50 DN Stock Exhaust"
-    },
-    {
-      "name": "FZ-50 Rascal Stock Exhaust"
-    },
-    {
-      "name": "FS50 Stock Exhaust"
-    },
-    {
-      "name": "FA50 Shuttle Stock Exhaust"
-    },
-    {
-      "name": "FA50 Stock Exhaust"
-    },
-    {
-      "name": "AP50 Stock Exhaust"
-    },
-    {
-      "name": "A50P Stock Exhaust"
-    }
-  ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
+  "ignitions": [],
   "models": [
     {
       "name": "A50P"
@@ -254,6 +113,54 @@
       "name": "ZR50SP"
     }
   ],
+  "name": "Suzuki",
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "wheels": [
+    {
+      "name": "ZR50SP Stock Wheels"
+    },
+    {
+      "name": "ZR50 Stock Wheels"
+    },
+    {
+      "name": "U50 Stock Wheels"
+    },
+    {
+      "name": "TS50X Stock Wheels"
+    },
+    {
+      "name": "S1-90 Stock Wheels"
+    },
+    {
+      "name": "RV50 Stock Wheels"
+    },
+    {
+      "name": "M15 Stock Wheels"
+    },
+    {
+      "name": "M12 Stock Wheels"
+    },
+    {
+      "name": "K50 DN Stock Wheels"
+    },
+    {
+      "name": "FZ-50 Rascal Stock Wheels"
+    },
+    {
+      "name": "FS50 Stock Wheels"
+    },
+    {
+      "name": "FA50 Shuttle Stock Wheels"
+    },
+    {
+      "name": "FA50 Stock Wheels"
+    },
+    {
+      "name": "AP50 Stock Wheels"
+    },
+    {
+      "name": "A50P Stock Wheels"
+    }
+  ]
 }

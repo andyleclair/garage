@@ -1,0 +1,17 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Quich for Peugeot SPX"
+    },
+    {
+      "name": "Quich for Motobecane"
+    }
+  ],
+  "name": "Alsil"
+}

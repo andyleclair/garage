@@ -1,0 +1,20 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Super Rock Sport for Peugeot"
+    },
+    {
+      "name": "Super Rock Black Gun for Peugeot"
+    },
+    {
+      "name": "Super Rock Sport for Motobecane"
+    }
+  ],
+  "name": "Giannelli"
+}

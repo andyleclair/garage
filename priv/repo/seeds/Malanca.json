@@ -1,8 +1,64 @@
 {
   "name": "Malanca",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Bibi"
+    },
+    {
+      "name": "Big"
+    },
+    {
+      "name": "Competizione"
+    },
+    {
+      "name": "Country Special"
+    },
+    {
+      "name": "Cross"
+    },
+    {
+      "name": "Due PIU"
+    },
+    {
+      "name": "Duplimatic"
+    },
+    {
+      "name": "Jolly 3M"
+    },
+    {
+      "name": "Jolly B"
+    },
+    {
+      "name": "Leoncino"
+    },
+    {
+      "name": "Lord"
+    },
+    {
+      "name": "Mascotte B"
+    },
+    {
+      "name": "Minizeta"
+    },
+    {
+      "name": "Roxi"
+    },
+    {
+      "name": "Testa Rossa"
+    },
+    {
+      "name": "Tigre"
+    },
+    {
+      "name": "Tigrotto"
+    },
+    {
+      "name": "Turismo Turbo"
+    },
+    {
+      "name": "Zeta"
+    }
   ],
   "forks": [
     {
@@ -122,75 +178,6 @@
       "name": "Bibi Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Zeta Stock Cylinder"
-    },
-    {
-      "name": "Turismo Turbo Stock Cylinder"
-    },
-    {
-      "name": "Tigrotto Stock Cylinder"
-    },
-    {
-      "name": "Tigre Stock Cylinder"
-    },
-    {
-      "name": "Testa Rossa Stock Cylinder"
-    },
-    {
-      "name": "Roxi Stock Cylinder"
-    },
-    {
-      "name": "Minizeta Stock Cylinder"
-    },
-    {
-      "name": "Mascotte B Stock Cylinder"
-    },
-    {
-      "name": "Lord Stock Cylinder"
-    },
-    {
-      "name": "Leoncino Stock Cylinder"
-    },
-    {
-      "name": "Jolly B Stock Cylinder"
-    },
-    {
-      "name": "Jolly 3M Stock Cylinder"
-    },
-    {
-      "name": "Duplimatic Stock Cylinder"
-    },
-    {
-      "name": "Due PIU Stock Cylinder"
-    },
-    {
-      "name": "Cross Stock Cylinder"
-    },
-    {
-      "name": "Country Special Stock Cylinder"
-    },
-    {
-      "name": "Competizione Stock Cylinder"
-    },
-    {
-      "name": "Big Stock Cylinder"
-    },
-    {
-      "name": "Bibi Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Zeta Stock Exhaust"
@@ -250,70 +237,13 @@
       "name": "Bibi Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Bibi"
-    },
-    {
-      "name": "Big"
-    },
-    {
-      "name": "Competizione"
-    },
-    {
-      "name": "Country Special"
-    },
-    {
-      "name": "Cross"
-    },
-    {
-      "name": "Due PIU"
-    },
-    {
-      "name": "Duplimatic"
-    },
-    {
-      "name": "Jolly 3M"
-    },
-    {
-      "name": "Jolly B"
-    },
-    {
-      "name": "Leoncino"
-    },
-    {
-      "name": "Lord"
-    },
-    {
-      "name": "Mascotte B"
-    },
-    {
-      "name": "Minizeta"
-    },
-    {
-      "name": "Roxi"
-    },
-    {
-      "name": "Testa Rossa"
-    },
-    {
-      "name": "Tigre"
-    },
-    {
-      "name": "Tigrotto"
-    },
-    {
-      "name": "Turismo Turbo"
-    },
-    {
-      "name": "Zeta"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

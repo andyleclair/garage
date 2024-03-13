@@ -1,0 +1,103 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 60,
+      "name": "Yamaha FS1 60cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Yamaha DT50 70cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Vespa Ciao 70cc"
+    },
+    {
+      "displacement": 60,
+      "name": "Vespa Ciao 60cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Tomos A35 70cc"
+    },
+    {
+      "displacement": 65,
+      "name": "Tomos A35 65cc"
+    },
+    {
+      "displacement": 60,
+      "name": "Suzuki FA50 FZ50 FY50 FS50 60cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Puch 70cc Athena Style Reed"
+    },
+    {
+      "displacement": 70,
+      "name": "Puch 70cc Reed"
+    },
+    {
+      "displacement": 70,
+      "name": "Puch 70cc -Cheapo"
+    },
+    {
+      "displacement": 50,
+      "name": "Puch 50cc -Hi Rev"
+    },
+    {
+      "displacement": 70,
+      "name": "Peugeot W-Port ALU 70cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Peugeot Speedfight 70cc"
+    },
+    {
+      "displacement": 75,
+      "name": "Peugeot 75cc -USA"
+    },
+    {
+      "displacement": 70,
+      "name": "Peugeot 70cc -Cast Iron"
+    },
+    {
+      "displacement": 70,
+      "name": "Motobecane AV7 70cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Motobecane AV10 70cc Hi-Rev"
+    },
+    {
+      "displacement": 70,
+      "name": "Motobecane AV10 70cc"
+    },
+    {
+      "displacement": 80,
+      "name": "Minarelli AM6 80cc"
+    },
+    {
+      "displacement": 90,
+      "name": "Kawasaki AR50 90cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Honda MB5 70cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Honda 70cc Cast Iron"
+    },
+    {
+      "displacement": 70,
+      "name": "Honda 70cc ALU"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "77"
+}

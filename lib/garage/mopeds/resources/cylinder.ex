@@ -3,7 +3,25 @@ defmodule Garage.Mopeds.Cylinder do
     data_layer: AshPostgres.DataLayer,
     api: Garage.Mopeds
 
-  alias Garage.Mopeds.Engine
+  attributes do
+    uuid_primary_key :id
+    attribute :name, :string, allow_nil?: false
+    attribute :description, :string, default: ""
+    # in cc
+    attribute :displacement, :integer, default: 50
+    # in mm
+    attribute :bore, :integer
+
+    create_timestamp :inserted_at
+    update_timestamp :updated_at
+  end
+
+  relationships do
+    belongs_to :manufacturer, Garage.Mopeds.Manufacturer do
+      attribute_writable? true
+      allow_nil? false
+    end
+  end
 
   actions do
     defaults [:create, :read, :update, :destroy]
@@ -25,28 +43,6 @@ defmodule Garage.Mopeds.Cylinder do
     define :update, action: :update
     define :destroy, action: :destroy
     define :get_by_id, args: [:id], action: :by_id
-  end
-
-  attributes do
-    uuid_primary_key :id
-    attribute :name, :string, allow_nil?: false
-    attribute :description, :string, default: ""
-    attribute :displacement, :integer, default: 50
-
-    create_timestamp :inserted_at
-    update_timestamp :updated_at
-  end
-
-  relationships do
-    belongs_to :engine, Engine do
-      api Garage.Mopeds
-      attribute_writable? true
-    end
-
-    belongs_to :manufacturer, Garage.Mopeds.Manufacturer do
-      attribute_writable? true
-      allow_nil? false
-    end
   end
 
   preparations do

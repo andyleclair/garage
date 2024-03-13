@@ -1,8 +1,82 @@
 {
   "name": "Hercules",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "218"
+    },
+    {
+      "name": "220"
+    },
+    {
+      "name": "5 SL"
+    },
+    {
+      "name": "504-1A"
+    },
+    {
+      "name": "504-1B"
+    },
+    {
+      "name": "Accubike E-1"
+    },
+    {
+      "name": "Citybike C-3"
+    },
+    {
+      "name": "HR-2"
+    },
+    {
+      "name": "Hobbyrider"
+    },
+    {
+      "name": "K50"
+    },
+    {
+      "name": "L50"
+    },
+    {
+      "name": "Lastboy"
+    },
+    {
+      "name": "M-1"
+    },
+    {
+      "name": "M-2"
+    },
+    {
+      "name": "M-4"
+    },
+    {
+      "name": "M-5"
+    },
+    {
+      "name": "MP-2"
+    },
+    {
+      "name": "MP-4"
+    },
+    {
+      "name": "MX-1"
+    },
+    {
+      "name": "P-1"
+    },
+    {
+      "name": "P-3"
+    },
+    {
+      "name": "Prima 4"
+    },
+    {
+      "name": "Prima 5"
+    },
+    {
+      "name": "SAXONETTE"
+    },
+    {
+      "name": "Supra 4 Enduro"
+    }
   ],
   "forks": [
     {
@@ -158,93 +232,6 @@
       "name": "218 Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Supra 4 Enduro Stock Cylinder"
-    },
-    {
-      "name": "SAXONETTE Stock Cylinder"
-    },
-    {
-      "name": "Prima 5 Stock Cylinder"
-    },
-    {
-      "name": "Prima 4 Stock Cylinder"
-    },
-    {
-      "name": "P-3 Stock Cylinder"
-    },
-    {
-      "name": "P-1 Stock Cylinder"
-    },
-    {
-      "name": "MX-1 Stock Cylinder"
-    },
-    {
-      "name": "MP-4 Stock Cylinder"
-    },
-    {
-      "name": "MP-2 Stock Cylinder"
-    },
-    {
-      "name": "M-5 Stock Cylinder"
-    },
-    {
-      "name": "M-4 Stock Cylinder"
-    },
-    {
-      "name": "M-2 Stock Cylinder"
-    },
-    {
-      "name": "M-1 Stock Cylinder"
-    },
-    {
-      "name": "Lastboy Stock Cylinder"
-    },
-    {
-      "name": "L50 Stock Cylinder"
-    },
-    {
-      "name": "K50 Stock Cylinder"
-    },
-    {
-      "name": "Hobbyrider Stock Cylinder"
-    },
-    {
-      "name": "HR-2 Stock Cylinder"
-    },
-    {
-      "name": "Citybike C-3 Stock Cylinder"
-    },
-    {
-      "name": "Accubike E-1 Stock Cylinder"
-    },
-    {
-      "name": "504-1B Stock Cylinder"
-    },
-    {
-      "name": "504-1A Stock Cylinder"
-    },
-    {
-      "name": "5 SL Stock Cylinder"
-    },
-    {
-      "name": "220 Stock Cylinder"
-    },
-    {
-      "name": "218 Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Supra 4 Enduro Stock Exhaust"
@@ -322,88 +309,13 @@
       "name": "218 Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "218"
-    },
-    {
-      "name": "220"
-    },
-    {
-      "name": "5 SL"
-    },
-    {
-      "name": "504-1A"
-    },
-    {
-      "name": "504-1B"
-    },
-    {
-      "name": "Accubike E-1"
-    },
-    {
-      "name": "Citybike C-3"
-    },
-    {
-      "name": "HR-2"
-    },
-    {
-      "name": "Hobbyrider"
-    },
-    {
-      "name": "K50"
-    },
-    {
-      "name": "L50"
-    },
-    {
-      "name": "Lastboy"
-    },
-    {
-      "name": "M-1"
-    },
-    {
-      "name": "M-2"
-    },
-    {
-      "name": "M-4"
-    },
-    {
-      "name": "M-5"
-    },
-    {
-      "name": "MP-2"
-    },
-    {
-      "name": "MP-4"
-    },
-    {
-      "name": "MX-1"
-    },
-    {
-      "name": "P-1"
-    },
-    {
-      "name": "P-3"
-    },
-    {
-      "name": "Prima 4"
-    },
-    {
-      "name": "Prima 5"
-    },
-    {
-      "name": "SAXONETTE"
-    },
-    {
-      "name": "Supra 4 Enduro"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

@@ -1,0 +1,44 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Turbo for Minarelli"
+    },
+    {
+      "name": "TriTurbo for Minarelli"
+    },
+    {
+      "name": "Standard for Minarelli"
+    },
+    {
+      "name": "Mamba for Minarelli"
+    },
+    {
+      "name": "Honda Hobbit/Camino"
+    },
+    {
+      "name": "Turbo for Garelli"
+    },
+    {
+      "name": "Standard for Garelli"
+    },
+    {
+      "name": "Mamba for Garelli"
+    },
+    {
+      "name": "Turbo for Franco Morini"
+    },
+    {
+      "name": "Mamba for Franco Morini"
+    },
+    {
+      "name": "for Franco Morini"
+    }
+  ],
+  "name": "EV Racing"
+}

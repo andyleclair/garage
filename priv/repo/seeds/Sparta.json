@@ -1,8 +1,94 @@
 {
   "name": "Sparta",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "2V"
+    },
+    {
+      "name": "Buddy"
+    },
+    {
+      "name": "Foxi"
+    },
+    {
+      "name": "Foxi GT Sport"
+    },
+    {
+      "name": "G50"
+    },
+    {
+      "name": "GB50"
+    },
+    {
+      "name": "GC50"
+    },
+    {
+      "name": "GD 50"
+    },
+    {
+      "name": "GE 50 Sport"
+    },
+    {
+      "name": "GE 50 Tour"
+    },
+    {
+      "name": "GF50"
+    },
+    {
+      "name": "GH50"
+    },
+    {
+      "name": "GS50"
+    },
+    {
+      "name": "Grand Sport"
+    },
+    {
+      "name": "Happy"
+    },
+    {
+      "name": "Happy Mini"
+    },
+    {
+      "name": "Lucky"
+    },
+    {
+      "name": "MB 50"
+    },
+    {
+      "name": "Met"
+    },
+    {
+      "name": "Met Tandem"
+    },
+    {
+      "name": "SB 50"
+    },
+    {
+      "name": "SE 50"
+    },
+    {
+      "name": "Spartamatic"
+    },
+    {
+      "name": "Sport"
+    },
+    {
+      "name": "Sport 3V"
+    },
+    {
+      "name": "Sport 4"
+    },
+    {
+      "name": "Super Sport"
+    },
+    {
+      "name": "Tour"
+    },
+    {
+      "name": "Typen"
+    }
   ],
   "forks": [
     {
@@ -182,105 +268,6 @@
       "name": "2V Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Typen Stock Cylinder"
-    },
-    {
-      "name": "Tour Stock Cylinder"
-    },
-    {
-      "name": "Super Sport Stock Cylinder"
-    },
-    {
-      "name": "Sport 4 Stock Cylinder"
-    },
-    {
-      "name": "Sport 3V Stock Cylinder"
-    },
-    {
-      "name": "Sport Stock Cylinder"
-    },
-    {
-      "name": "Spartamatic Stock Cylinder"
-    },
-    {
-      "name": "SE 50 Stock Cylinder"
-    },
-    {
-      "name": "SB 50 Stock Cylinder"
-    },
-    {
-      "name": "Met Tandem Stock Cylinder"
-    },
-    {
-      "name": "Met Stock Cylinder"
-    },
-    {
-      "name": "MB 50 Stock Cylinder"
-    },
-    {
-      "name": "Lucky Stock Cylinder"
-    },
-    {
-      "name": "Happy Mini Stock Cylinder"
-    },
-    {
-      "name": "Happy Stock Cylinder"
-    },
-    {
-      "name": "Grand Sport Stock Cylinder"
-    },
-    {
-      "name": "GS50 Stock Cylinder"
-    },
-    {
-      "name": "GH50 Stock Cylinder"
-    },
-    {
-      "name": "GF50 Stock Cylinder"
-    },
-    {
-      "name": "GE 50 Tour Stock Cylinder"
-    },
-    {
-      "name": "GE 50 Sport Stock Cylinder"
-    },
-    {
-      "name": "GD 50 Stock Cylinder"
-    },
-    {
-      "name": "GC50 Stock Cylinder"
-    },
-    {
-      "name": "GB50 Stock Cylinder"
-    },
-    {
-      "name": "G50 Stock Cylinder"
-    },
-    {
-      "name": "Foxi GT Sport Stock Cylinder"
-    },
-    {
-      "name": "Foxi Stock Cylinder"
-    },
-    {
-      "name": "Buddy Stock Cylinder"
-    },
-    {
-      "name": "2V Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Typen Stock Exhaust"
@@ -370,100 +357,13 @@
       "name": "2V Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "2V"
-    },
-    {
-      "name": "Buddy"
-    },
-    {
-      "name": "Foxi"
-    },
-    {
-      "name": "Foxi GT Sport"
-    },
-    {
-      "name": "G50"
-    },
-    {
-      "name": "GB50"
-    },
-    {
-      "name": "GC50"
-    },
-    {
-      "name": "GD 50"
-    },
-    {
-      "name": "GE 50 Sport"
-    },
-    {
-      "name": "GE 50 Tour"
-    },
-    {
-      "name": "GF50"
-    },
-    {
-      "name": "GH50"
-    },
-    {
-      "name": "GS50"
-    },
-    {
-      "name": "Grand Sport"
-    },
-    {
-      "name": "Happy"
-    },
-    {
-      "name": "Happy Mini"
-    },
-    {
-      "name": "Lucky"
-    },
-    {
-      "name": "MB 50"
-    },
-    {
-      "name": "Met"
-    },
-    {
-      "name": "Met Tandem"
-    },
-    {
-      "name": "SB 50"
-    },
-    {
-      "name": "SE 50"
-    },
-    {
-      "name": "Spartamatic"
-    },
-    {
-      "name": "Sport"
-    },
-    {
-      "name": "Sport 3V"
-    },
-    {
-      "name": "Sport 4"
-    },
-    {
-      "name": "Super Sport"
-    },
-    {
-      "name": "Tour"
-    },
-    {
-      "name": "Typen"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

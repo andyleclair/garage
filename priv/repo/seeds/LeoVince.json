@@ -1,0 +1,32 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Circuit for Puch"
+    },
+    {
+      "name": "Circuit for Piaggio"
+    },
+    {
+      "name": "Evasion for Peugeot"
+    },
+    {
+      "name": "Circuit for Peugeot"
+    },
+    {
+      "name": "Evasion for Motobecane"
+    },
+    {
+      "name": "Circuit for Motobecane"
+    },
+    {
+      "name": "Circuit for Honda Hobbit/Camino"
+    }
+  ],
+  "name": "LeoVince"
+}

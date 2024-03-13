@@ -1,8 +1,28 @@
 {
   "name": "Rap",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Crown"
+    },
+    {
+      "name": "Imperial"
+    },
+    {
+      "name": "Matadore"
+    },
+    {
+      "name": "Rocky"
+    },
+    {
+      "name": "Speedo"
+    },
+    {
+      "name": "Ster"
+    },
+    {
+      "name": "Super"
+    }
   ],
   "forks": [
     {
@@ -50,39 +70,6 @@
       "name": "Crown Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Super Stock Cylinder"
-    },
-    {
-      "name": "Ster Stock Cylinder"
-    },
-    {
-      "name": "Speedo Stock Cylinder"
-    },
-    {
-      "name": "Rocky Stock Cylinder"
-    },
-    {
-      "name": "Matadore Stock Cylinder"
-    },
-    {
-      "name": "Imperial Stock Cylinder"
-    },
-    {
-      "name": "Crown Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Super Stock Exhaust"
@@ -106,34 +93,13 @@
       "name": "Crown Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Crown"
-    },
-    {
-      "name": "Imperial"
-    },
-    {
-      "name": "Matadore"
-    },
-    {
-      "name": "Rocky"
-    },
-    {
-      "name": "Speedo"
-    },
-    {
-      "name": "Ster"
-    },
-    {
-      "name": "Super"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

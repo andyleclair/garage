@@ -1,0 +1,15 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 50,
+      "name": "Honda 50cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "Italkit"
+}

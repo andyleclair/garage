@@ -31,6 +31,18 @@ defmodule Garage.Mopeds.Engine do
     attribute :name, :string, allow_nil?: false
     attribute :description, :string, default: ""
 
+    attribute :transmission, :atom do
+      constraints one_of: [
+                    :single_speed,
+                    :two_speed_manual,
+                    :two_speed_automatic,
+                    :single_variated,
+                    :dual_variated,
+                    :hand_shift,
+                    :foot_shift
+                  ]
+    end
+
     create_timestamp :inserted_at
     update_timestamp :updated_at
   end
@@ -40,9 +52,6 @@ defmodule Garage.Mopeds.Engine do
       attribute_writable? true
       allow_nil? false
     end
-
-    has_many :cylinder, Garage.Mopeds.Cylinder
-    has_many :crank, Garage.Mopeds.Crank
 
     has_many :builds, Garage.Builds.Build do
       api Garage.Builds

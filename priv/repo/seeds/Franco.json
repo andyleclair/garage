@@ -1,0 +1,32 @@
+{
+  "carburetors": [],
+  "categories": [
+    "engines"
+  ],
+  "cylinders": [],
+  "engines": [
+    {
+      "name": "Morini S5K2"
+    },
+    {
+      "name": "Morini P4S"
+    },
+    {
+      "name": "Morini MO2"
+    },
+    {
+      "name": "Morini MO1"
+    },
+    {
+      "name": "Morini MK1"
+    },
+    {
+      "name": "Morini M101"
+    },
+    {
+      "name": "Morini M1"
+    }
+  ],
+  "exhausts": [],
+  "name": "Franco"
+}

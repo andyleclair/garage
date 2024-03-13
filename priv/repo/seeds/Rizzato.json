@@ -1,0 +1,17 @@
+{
+  "carburetors": [],
+  "categories": [
+    "engines"
+  ],
+  "cylinders": [],
+  "engines": [
+    {
+      "name": "Califfo 2 Speed"
+    },
+    {
+      "name": "Califfo 1 Speed"
+    }
+  ],
+  "exhausts": [],
+  "name": "Rizzato"
+}

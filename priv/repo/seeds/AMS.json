@@ -1,8 +1,16 @@
 {
   "name": "AMS",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Seirra 50"
+    },
+    {
+      "name": "Tahoe G1"
+    },
+    {
+      "name": "Tahoe G2"
+    }
   ],
   "forks": [
     {
@@ -26,27 +34,6 @@
       "name": "Seirra 50 Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Tahoe G2 Stock Cylinder"
-    },
-    {
-      "name": "Tahoe G1 Stock Cylinder"
-    },
-    {
-      "name": "Seirra 50 Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Tahoe G2 Stock Exhaust"
@@ -58,22 +45,13 @@
       "name": "Seirra 50 Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Seirra 50"
-    },
-    {
-      "name": "Tahoe G1"
-    },
-    {
-      "name": "Tahoe G2"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

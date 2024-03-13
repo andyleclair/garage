@@ -1,8 +1,31 @@
 {
   "name": "Riga",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "15-S"
+    },
+    {
+      "name": "22"
+    },
+    {
+      "name": "4"
+    },
+    {
+      "name": "5"
+    },
+    {
+      "name": "Gauja-1"
+    },
+    {
+      "name": "Mini"
+    },
+    {
+      "name": "R-12"
+    },
+    {
+      "name": "V-501M"
+    }
   ],
   "forks": [
     {
@@ -56,42 +79,6 @@
       "name": "15-S Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "V-501M Stock Cylinder"
-    },
-    {
-      "name": "R-12 Stock Cylinder"
-    },
-    {
-      "name": "Mini Stock Cylinder"
-    },
-    {
-      "name": "Gauja-1 Stock Cylinder"
-    },
-    {
-      "name": "5 Stock Cylinder"
-    },
-    {
-      "name": "4 Stock Cylinder"
-    },
-    {
-      "name": "22 Stock Cylinder"
-    },
-    {
-      "name": "15-S Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "V-501M Stock Exhaust"
@@ -118,37 +105,13 @@
       "name": "15-S Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "15-S"
-    },
-    {
-      "name": "22"
-    },
-    {
-      "name": "4"
-    },
-    {
-      "name": "5"
-    },
-    {
-      "name": "Gauja-1"
-    },
-    {
-      "name": "Mini"
-    },
-    {
-      "name": "R-12"
-    },
-    {
-      "name": "V-501M"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

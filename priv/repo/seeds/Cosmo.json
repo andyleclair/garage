@@ -1,8 +1,28 @@
 {
   "name": "Cosmo",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Blazer"
+    },
+    {
+      "name": "Colt I"
+    },
+    {
+      "name": "Colt II"
+    },
+    {
+      "name": "Colt III Reed"
+    },
+    {
+      "name": "Colt III Variator"
+    },
+    {
+      "name": "Colt IV"
+    },
+    {
+      "name": "Stinger"
+    }
   ],
   "forks": [
     {
@@ -50,39 +70,6 @@
       "name": "Blazer Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Stinger Stock Cylinder"
-    },
-    {
-      "name": "Colt IV Stock Cylinder"
-    },
-    {
-      "name": "Colt III Variator Stock Cylinder"
-    },
-    {
-      "name": "Colt III Reed Stock Cylinder"
-    },
-    {
-      "name": "Colt II Stock Cylinder"
-    },
-    {
-      "name": "Colt I Stock Cylinder"
-    },
-    {
-      "name": "Blazer Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Stinger Stock Exhaust"
@@ -106,34 +93,13 @@
       "name": "Blazer Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Blazer"
-    },
-    {
-      "name": "Colt I"
-    },
-    {
-      "name": "Colt II"
-    },
-    {
-      "name": "Colt III Reed"
-    },
-    {
-      "name": "Colt III Variator"
-    },
-    {
-      "name": "Colt IV"
-    },
-    {
-      "name": "Stinger"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

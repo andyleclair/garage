@@ -1,0 +1,43 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 58,
+      "name": "Vespa 58cc"
+    },
+    {
+      "displacement": 50,
+      "name": "Puch 50cc DLX"
+    },
+    {
+      "displacement": 50,
+      "name": "Puch 50cc"
+    },
+    {
+      "displacement": 49,
+      "name": "Peugeot 49cc -11 Port"
+    },
+    {
+      "displacement": 70,
+      "name": "Motobecane AV10 70cc"
+    },
+    {
+      "displacement": 75,
+      "name": "Garelli VIP 75cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Garelli VIP 70cc"
+    },
+    {
+      "displacement": 60,
+      "name": "Franco Morini 60cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "Mec.Eur."
+}

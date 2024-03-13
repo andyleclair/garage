@@ -1,0 +1,56 @@
+{
+  "carburetors": [
+    {
+      "name": "VM 26mm Roundslide"
+    },
+    {
+      "name": "VM 22mm Roundslide"
+    },
+    {
+      "name": "VM 20mm Roundslide"
+    },
+    {
+      "name": "VM 18mm"
+    },
+    {
+      "name": "VM 16mm Roundslide"
+    },
+    {
+      "name": "TM 24mm Flatslide"
+    },
+    {
+      "name": "30mm"
+    },
+    {
+      "name": "28mm TM"
+    },
+    {
+      "name": "26mm VM"
+    },
+    {
+      "name": "180mm VM"
+    },
+    {
+      "name": "17mm VM"
+    },
+    {
+      "name": "16mm VM"
+    },
+    {
+      "name": "14mm VM"
+    },
+    {
+      "name": "12mm VM"
+    },
+    {
+      "name": "10mm"
+    }
+  ],
+  "categories": [
+    "carburetors"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [],
+  "name": "Mikuni"
+}

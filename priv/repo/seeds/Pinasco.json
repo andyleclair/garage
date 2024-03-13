@@ -1,0 +1,27 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 75,
+      "name": "Vespa SI 75cc -12mm Pin"
+    },
+    {
+      "displacement": 75,
+      "name": "Vespa SI 75cc -10mm Pin"
+    },
+    {
+      "displacement": 75,
+      "name": "Vespa Ciao 75cc -12mm Pin"
+    },
+    {
+      "displacement": 75,
+      "name": "Vespa Ciao 75cc -10mm Pin"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "Pinasco"
+}

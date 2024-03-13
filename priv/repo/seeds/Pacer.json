@@ -1,8 +1,43 @@
 {
   "name": "Pacer",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "25"
+    },
+    {
+      "name": "P-1"
+    },
+    {
+      "name": "P-12"
+    },
+    {
+      "name": "P-14"
+    },
+    {
+      "name": "P-14 Delux"
+    },
+    {
+      "name": "P-14RL"
+    },
+    {
+      "name": "P-214"
+    },
+    {
+      "name": "P-278"
+    },
+    {
+      "name": "P-280"
+    },
+    {
+      "name": "Sport P-78"
+    },
+    {
+      "name": "Super Sport"
+    },
+    {
+      "name": "Super Sport P-80"
+    }
   ],
   "forks": [
     {
@@ -80,54 +115,6 @@
       "name": "25 Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Super Sport P-80 Stock Cylinder"
-    },
-    {
-      "name": "Super Sport Stock Cylinder"
-    },
-    {
-      "name": "Sport P-78 Stock Cylinder"
-    },
-    {
-      "name": "P-280 Stock Cylinder"
-    },
-    {
-      "name": "P-278 Stock Cylinder"
-    },
-    {
-      "name": "P-214 Stock Cylinder"
-    },
-    {
-      "name": "P-14RL Stock Cylinder"
-    },
-    {
-      "name": "P-14 Delux Stock Cylinder"
-    },
-    {
-      "name": "P-14 Stock Cylinder"
-    },
-    {
-      "name": "P-12 Stock Cylinder"
-    },
-    {
-      "name": "P-1 Stock Cylinder"
-    },
-    {
-      "name": "25 Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Super Sport P-80 Stock Exhaust"
@@ -166,49 +153,13 @@
       "name": "25 Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "25"
-    },
-    {
-      "name": "P-1"
-    },
-    {
-      "name": "P-12"
-    },
-    {
-      "name": "P-14"
-    },
-    {
-      "name": "P-14 Delux"
-    },
-    {
-      "name": "P-14RL"
-    },
-    {
-      "name": "P-214"
-    },
-    {
-      "name": "P-278"
-    },
-    {
-      "name": "P-280"
-    },
-    {
-      "name": "Sport P-78"
-    },
-    {
-      "name": "Super Sport"
-    },
-    {
-      "name": "Super Sport P-80"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

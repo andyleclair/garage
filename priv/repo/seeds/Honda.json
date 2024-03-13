@@ -1,9 +1,52 @@
 {
-  "name": "Honda",
-  "engines": [],
-  "categories": [
-    "moped"
+  "carburetors": [
+    {
+      "name": "Moped Malossi 21mm Dellorto Kit"
+    },
+    {
+      "name": "Hobbit/Camino Stock"
+    }
   ],
+  "categories": [
+    "carburetors",
+    "cylinders",
+    "engines",
+    "forks",
+    "mopeds",
+    "wheels"
+  ],
+  "clutches": [],
+  "cranks": [],
+  "cylinders": [
+    {
+      "displacement": 50,
+      "name": "Stock 50cc"
+    }
+  ],
+  "engines": [
+    {
+      "name": "PA50II"
+    },
+    {
+      "name": "PA50I"
+    },
+    {
+      "name": "PA50"
+    },
+    {
+      "name": "NU50M"
+    },
+    {
+      "name": "NC50"
+    },
+    {
+      "name": "MB8"
+    },
+    {
+      "name": "MB5"
+    }
+  ],
+  "exhausts": [],
   "forks": [
     {
       "name": "MB-8 Stock Forks"
@@ -183,558 +226,7 @@
       "name": "NC50 Stock Forks"
     }
   ],
-  "wheels": [
-    {
-      "name": "MB-8 Stock Wheels"
-    },
-    {
-      "name": "PA50 II Stock Wheels"
-    },
-    {
-      "name": "Novio Stock Wheels"
-    },
-    {
-      "name": "Express II NA50 Stock Wheels"
-    },
-    {
-      "name": "Melody Stock Wheels"
-    },
-    {
-      "name": "Hobbit Stock Wheels"
-    },
-    {
-      "name": "PA50L Stock Wheels"
-    },
-    {
-      "name": "SH50 City Express Stock Wheels"
-    },
-    {
-      "name": "P25 Stock Wheels"
-    },
-    {
-      "name": "PC50 Stock Wheels"
-    },
-    {
-      "name": "Express NC50 Stock Wheels"
-    },
-    {
-      "name": "C110 Sport Stock Wheels"
-    },
-    {
-      "name": "MT-5 Stock Wheels"
-    },
-    {
-      "name": "SS50ZE Stock Wheels"
-    },
-    {
-      "name": "Z50k2 Stock Wheels"
-    },
-    {
-      "name": "Camino Stock Wheels"
-    },
-    {
-      "name": "Cub Stock Wheels"
-    },
-    {
-      "name": "NU50MC Runaway Stock Wheels"
-    },
-    {
-      "name": "ST50 Stock Wheels"
-    },
-    {
-      "name": "NX50M Stock Wheels"
-    },
-    {
-      "name": "PM50 Canguro Stock Wheels"
-    },
-    {
-      "name": "NF75 Stock Wheels"
-    },
-    {
-      "name": "NC50I Stock Wheels"
-    },
-    {
-      "name": "P50 Stock Wheels"
-    },
-    {
-      "name": "Z50 Stock Wheels"
-    },
-    {
-      "name": "Urban Express Stock Wheels"
-    },
-    {
-      "name": "CB50 Stock Wheels"
-    },
-    {
-      "name": "Express Stock Wheels"
-    },
-    {
-      "name": "Super Cub Stock Wheels"
-    },
-    {
-      "name": "Spree Stock Wheels"
-    },
-    {
-      "name": "Minitrail 50 Stock Wheels"
-    },
-    {
-      "name": "PX50 Stock Wheels"
-    },
-    {
-      "name": "PA50 VL Stock Wheels"
-    },
-    {
-      "name": "PA50 DXVL Stock Wheels"
-    },
-    {
-      "name": "Amigo Stock Wheels"
-    },
-    {
-      "name": "Passport Stock Wheels"
-    },
-    {
-      "name": "PA50 Stock Wheels"
-    },
-    {
-      "name": "CA102 Stock Wheels"
-    },
-    {
-      "name": "Z50J Stock Wheels"
-    },
-    {
-      "name": "Melody Deluxe Stock Wheels"
-    },
-    {
-      "name": "SS50 Stock Wheels"
-    },
-    {
-      "name": "Z50k1 Stock Wheels"
-    },
-    {
-      "name": "ZB50 Stock Wheels"
-    },
-    {
-      "name": "Gyro Stock Wheels"
-    },
-    {
-      "name": "Urban Express NU50 Stock Wheels"
-    },
-    {
-      "name": "C50 Stock Wheels"
-    },
-    {
-      "name": "MT Stock Wheels"
-    },
-    {
-      "name": "CA100 Stock Wheels"
-    },
-    {
-      "name": "MB-5 Stock Wheels"
-    },
-    {
-      "name": "MT-8 Stock Wheels"
-    },
-    {
-      "name": "SS50 M Stock Wheels"
-    },
-    {
-      "name": "CD50 Stock Wheels"
-    },
-    {
-      "name": "Urban Express Deluxe NU50M Stock Wheels"
-    },
-    {
-      "name": "CM91 Stock Wheels"
-    },
-    {
-      "name": "PXR50 Stock Wheels"
-    },
-    {
-      "name": "Express SR NX-50M Stock Wheels"
-    },
-    {
-      "name": "PF50 Stock Wheels"
-    },
-    {
-      "name": "PS50 Stock Wheels"
-    },
-    {
-      "name": "NC50 Stock Wheels"
-    }
-  ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "MB-8 Stock Cylinder"
-    },
-    {
-      "name": "PA50 II Stock Cylinder"
-    },
-    {
-      "name": "Novio Stock Cylinder"
-    },
-    {
-      "name": "Express II NA50 Stock Cylinder"
-    },
-    {
-      "name": "Melody Stock Cylinder"
-    },
-    {
-      "name": "Hobbit Stock Cylinder"
-    },
-    {
-      "name": "PA50L Stock Cylinder"
-    },
-    {
-      "name": "SH50 City Express Stock Cylinder"
-    },
-    {
-      "name": "P25 Stock Cylinder"
-    },
-    {
-      "name": "PC50 Stock Cylinder"
-    },
-    {
-      "name": "Express NC50 Stock Cylinder"
-    },
-    {
-      "name": "C110 Sport Stock Cylinder"
-    },
-    {
-      "name": "MT-5 Stock Cylinder"
-    },
-    {
-      "name": "SS50ZE Stock Cylinder"
-    },
-    {
-      "name": "Z50k2 Stock Cylinder"
-    },
-    {
-      "name": "Camino Stock Cylinder"
-    },
-    {
-      "name": "Cub Stock Cylinder"
-    },
-    {
-      "name": "NU50MC Runaway Stock Cylinder"
-    },
-    {
-      "name": "ST50 Stock Cylinder"
-    },
-    {
-      "name": "NX50M Stock Cylinder"
-    },
-    {
-      "name": "PM50 Canguro Stock Cylinder"
-    },
-    {
-      "name": "NF75 Stock Cylinder"
-    },
-    {
-      "name": "NC50I Stock Cylinder"
-    },
-    {
-      "name": "P50 Stock Cylinder"
-    },
-    {
-      "name": "Z50 Stock Cylinder"
-    },
-    {
-      "name": "Urban Express Stock Cylinder"
-    },
-    {
-      "name": "CB50 Stock Cylinder"
-    },
-    {
-      "name": "Express Stock Cylinder"
-    },
-    {
-      "name": "Super Cub Stock Cylinder"
-    },
-    {
-      "name": "Spree Stock Cylinder"
-    },
-    {
-      "name": "Minitrail 50 Stock Cylinder"
-    },
-    {
-      "name": "PX50 Stock Cylinder"
-    },
-    {
-      "name": "PA50 VL Stock Cylinder"
-    },
-    {
-      "name": "PA50 DXVL Stock Cylinder"
-    },
-    {
-      "name": "Amigo Stock Cylinder"
-    },
-    {
-      "name": "Passport Stock Cylinder"
-    },
-    {
-      "name": "PA50 Stock Cylinder"
-    },
-    {
-      "name": "CA102 Stock Cylinder"
-    },
-    {
-      "name": "Z50J Stock Cylinder"
-    },
-    {
-      "name": "Melody Deluxe Stock Cylinder"
-    },
-    {
-      "name": "SS50 Stock Cylinder"
-    },
-    {
-      "name": "Z50k1 Stock Cylinder"
-    },
-    {
-      "name": "ZB50 Stock Cylinder"
-    },
-    {
-      "name": "Gyro Stock Cylinder"
-    },
-    {
-      "name": "Urban Express NU50 Stock Cylinder"
-    },
-    {
-      "name": "C50 Stock Cylinder"
-    },
-    {
-      "name": "MT Stock Cylinder"
-    },
-    {
-      "name": "CA100 Stock Cylinder"
-    },
-    {
-      "name": "MB-5 Stock Cylinder"
-    },
-    {
-      "name": "MT-8 Stock Cylinder"
-    },
-    {
-      "name": "SS50 M Stock Cylinder"
-    },
-    {
-      "name": "CD50 Stock Cylinder"
-    },
-    {
-      "name": "Urban Express Deluxe NU50M Stock Cylinder"
-    },
-    {
-      "name": "CM91 Stock Cylinder"
-    },
-    {
-      "name": "PXR50 Stock Cylinder"
-    },
-    {
-      "name": "Express SR NX-50M Stock Cylinder"
-    },
-    {
-      "name": "PF50 Stock Cylinder"
-    },
-    {
-      "name": "PS50 Stock Cylinder"
-    },
-    {
-      "name": "NC50 Stock Cylinder"
-    }
-  ],
-  "exhausts": [
-    {
-      "name": "MB-8 Stock Exhaust"
-    },
-    {
-      "name": "PA50 II Stock Exhaust"
-    },
-    {
-      "name": "Novio Stock Exhaust"
-    },
-    {
-      "name": "Express II NA50 Stock Exhaust"
-    },
-    {
-      "name": "Melody Stock Exhaust"
-    },
-    {
-      "name": "Hobbit Stock Exhaust"
-    },
-    {
-      "name": "PA50L Stock Exhaust"
-    },
-    {
-      "name": "SH50 City Express Stock Exhaust"
-    },
-    {
-      "name": "P25 Stock Exhaust"
-    },
-    {
-      "name": "PC50 Stock Exhaust"
-    },
-    {
-      "name": "Express NC50 Stock Exhaust"
-    },
-    {
-      "name": "C110 Sport Stock Exhaust"
-    },
-    {
-      "name": "MT-5 Stock Exhaust"
-    },
-    {
-      "name": "SS50ZE Stock Exhaust"
-    },
-    {
-      "name": "Z50k2 Stock Exhaust"
-    },
-    {
-      "name": "Camino Stock Exhaust"
-    },
-    {
-      "name": "Cub Stock Exhaust"
-    },
-    {
-      "name": "NU50MC Runaway Stock Exhaust"
-    },
-    {
-      "name": "ST50 Stock Exhaust"
-    },
-    {
-      "name": "NX50M Stock Exhaust"
-    },
-    {
-      "name": "PM50 Canguro Stock Exhaust"
-    },
-    {
-      "name": "NF75 Stock Exhaust"
-    },
-    {
-      "name": "NC50I Stock Exhaust"
-    },
-    {
-      "name": "P50 Stock Exhaust"
-    },
-    {
-      "name": "Z50 Stock Exhaust"
-    },
-    {
-      "name": "Urban Express Stock Exhaust"
-    },
-    {
-      "name": "CB50 Stock Exhaust"
-    },
-    {
-      "name": "Express Stock Exhaust"
-    },
-    {
-      "name": "Super Cub Stock Exhaust"
-    },
-    {
-      "name": "Spree Stock Exhaust"
-    },
-    {
-      "name": "Minitrail 50 Stock Exhaust"
-    },
-    {
-      "name": "PX50 Stock Exhaust"
-    },
-    {
-      "name": "PA50 VL Stock Exhaust"
-    },
-    {
-      "name": "PA50 DXVL Stock Exhaust"
-    },
-    {
-      "name": "Amigo Stock Exhaust"
-    },
-    {
-      "name": "Passport Stock Exhaust"
-    },
-    {
-      "name": "PA50 Stock Exhaust"
-    },
-    {
-      "name": "CA102 Stock Exhaust"
-    },
-    {
-      "name": "Z50J Stock Exhaust"
-    },
-    {
-      "name": "Melody Deluxe Stock Exhaust"
-    },
-    {
-      "name": "SS50 Stock Exhaust"
-    },
-    {
-      "name": "Z50k1 Stock Exhaust"
-    },
-    {
-      "name": "ZB50 Stock Exhaust"
-    },
-    {
-      "name": "Gyro Stock Exhaust"
-    },
-    {
-      "name": "Urban Express NU50 Stock Exhaust"
-    },
-    {
-      "name": "C50 Stock Exhaust"
-    },
-    {
-      "name": "MT Stock Exhaust"
-    },
-    {
-      "name": "CA100 Stock Exhaust"
-    },
-    {
-      "name": "MB-5 Stock Exhaust"
-    },
-    {
-      "name": "MT-8 Stock Exhaust"
-    },
-    {
-      "name": "SS50 M Stock Exhaust"
-    },
-    {
-      "name": "CD50 Stock Exhaust"
-    },
-    {
-      "name": "Urban Express Deluxe NU50M Stock Exhaust"
-    },
-    {
-      "name": "CM91 Stock Exhaust"
-    },
-    {
-      "name": "PXR50 Stock Exhaust"
-    },
-    {
-      "name": "Express SR NX-50M Stock Exhaust"
-    },
-    {
-      "name": "PF50 Stock Exhaust"
-    },
-    {
-      "name": "PS50 Stock Exhaust"
-    },
-    {
-      "name": "NC50 Stock Exhaust"
-    }
-  ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
+  "ignitions": [],
   "models": [
     {
       "name": "NC50"
@@ -914,6 +406,186 @@
       "name": "MB-8"
     }
   ],
+  "name": "Honda",
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "wheels": [
+    {
+      "name": "MB-8 Stock Wheels"
+    },
+    {
+      "name": "PA50 II Stock Wheels"
+    },
+    {
+      "name": "Novio Stock Wheels"
+    },
+    {
+      "name": "Express II NA50 Stock Wheels"
+    },
+    {
+      "name": "Melody Stock Wheels"
+    },
+    {
+      "name": "Hobbit Stock Wheels"
+    },
+    {
+      "name": "PA50L Stock Wheels"
+    },
+    {
+      "name": "SH50 City Express Stock Wheels"
+    },
+    {
+      "name": "P25 Stock Wheels"
+    },
+    {
+      "name": "PC50 Stock Wheels"
+    },
+    {
+      "name": "Express NC50 Stock Wheels"
+    },
+    {
+      "name": "C110 Sport Stock Wheels"
+    },
+    {
+      "name": "MT-5 Stock Wheels"
+    },
+    {
+      "name": "SS50ZE Stock Wheels"
+    },
+    {
+      "name": "Z50k2 Stock Wheels"
+    },
+    {
+      "name": "Camino Stock Wheels"
+    },
+    {
+      "name": "Cub Stock Wheels"
+    },
+    {
+      "name": "NU50MC Runaway Stock Wheels"
+    },
+    {
+      "name": "ST50 Stock Wheels"
+    },
+    {
+      "name": "NX50M Stock Wheels"
+    },
+    {
+      "name": "PM50 Canguro Stock Wheels"
+    },
+    {
+      "name": "NF75 Stock Wheels"
+    },
+    {
+      "name": "NC50I Stock Wheels"
+    },
+    {
+      "name": "P50 Stock Wheels"
+    },
+    {
+      "name": "Z50 Stock Wheels"
+    },
+    {
+      "name": "Urban Express Stock Wheels"
+    },
+    {
+      "name": "CB50 Stock Wheels"
+    },
+    {
+      "name": "Express Stock Wheels"
+    },
+    {
+      "name": "Super Cub Stock Wheels"
+    },
+    {
+      "name": "Spree Stock Wheels"
+    },
+    {
+      "name": "Minitrail 50 Stock Wheels"
+    },
+    {
+      "name": "PX50 Stock Wheels"
+    },
+    {
+      "name": "PA50 VL Stock Wheels"
+    },
+    {
+      "name": "PA50 DXVL Stock Wheels"
+    },
+    {
+      "name": "Amigo Stock Wheels"
+    },
+    {
+      "name": "Passport Stock Wheels"
+    },
+    {
+      "name": "PA50 Stock Wheels"
+    },
+    {
+      "name": "CA102 Stock Wheels"
+    },
+    {
+      "name": "Z50J Stock Wheels"
+    },
+    {
+      "name": "Melody Deluxe Stock Wheels"
+    },
+    {
+      "name": "SS50 Stock Wheels"
+    },
+    {
+      "name": "Z50k1 Stock Wheels"
+    },
+    {
+      "name": "ZB50 Stock Wheels"
+    },
+    {
+      "name": "Gyro Stock Wheels"
+    },
+    {
+      "name": "Urban Express NU50 Stock Wheels"
+    },
+    {
+      "name": "C50 Stock Wheels"
+    },
+    {
+      "name": "MT Stock Wheels"
+    },
+    {
+      "name": "CA100 Stock Wheels"
+    },
+    {
+      "name": "MB-5 Stock Wheels"
+    },
+    {
+      "name": "MT-8 Stock Wheels"
+    },
+    {
+      "name": "SS50 M Stock Wheels"
+    },
+    {
+      "name": "CD50 Stock Wheels"
+    },
+    {
+      "name": "Urban Express Deluxe NU50M Stock Wheels"
+    },
+    {
+      "name": "CM91 Stock Wheels"
+    },
+    {
+      "name": "PXR50 Stock Wheels"
+    },
+    {
+      "name": "Express SR NX-50M Stock Wheels"
+    },
+    {
+      "name": "PF50 Stock Wheels"
+    },
+    {
+      "name": "PS50 Stock Wheels"
+    },
+    {
+      "name": "NC50 Stock Wheels"
+    }
+  ]
 }

@@ -1,8 +1,10 @@
 {
   "name": "Rixe",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "V3"
+    }
   ],
   "forks": [
     {
@@ -14,36 +16,18 @@
       "name": "V3 Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "V3 Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "V3 Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "V3"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

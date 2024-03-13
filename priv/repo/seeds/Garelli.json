@@ -1,9 +1,26 @@
 {
-  "name": "Garelli",
-  "engines": [],
+  "carburetors": [],
   "categories": [
-    "moped"
+    "engines",
+    "forks",
+    "mopeds",
+    "wheels"
   ],
+  "clutches": [],
+  "cranks": [],
+  "cylinders": [],
+  "engines": [
+    {
+      "name": "VIP"
+    },
+    {
+      "name": "Team"
+    },
+    {
+      "name": "NOI"
+    }
+  ],
+  "exhausts": [],
   "forks": [
     {
       "name": "Noi SL Stock Forks"
@@ -225,684 +242,7 @@
       "name": "Junior Stock Forks"
     }
   ],
-  "wheels": [
-    {
-      "name": "Noi SL Stock Wheels"
-    },
-    {
-      "name": "Rekord KL100E5V Stock Wheels"
-    },
-    {
-      "name": "Junior Sport Stock Wheels"
-    },
-    {
-      "name": "Team Matic Stock Wheels"
-    },
-    {
-      "name": "SuperVIP 4V Stock Wheels"
-    },
-    {
-      "name": "Junior Turismo Stock Wheels"
-    },
-    {
-      "name": "Sport Stock Wheels"
-    },
-    {
-      "name": "Noi Primo Stock Wheels"
-    },
-    {
-      "name": "Eureka Sport Stock Wheels"
-    },
-    {
-      "name": "Mini 25 Stock Wheels"
-    },
-    {
-      "name": "Team 3V Stock Wheels"
-    },
-    {
-      "name": "Motorino Stock Wheels"
-    },
-    {
-      "name": "Formuno 4V Stock Wheels"
-    },
-    {
-      "name": "Gran Sport Stock Wheels"
-    },
-    {
-      "name": "Super Ciclone Stock Wheels"
-    },
-    {
-      "name": "Super Sport XL Stock Wheels"
-    },
-    {
-      "name": "Gary Uno Stock Wheels"
-    },
-    {
-      "name": "Sahel 50 Stock Wheels"
-    },
-    {
-      "name": "Super Sport Stock Wheels"
-    },
-    {
-      "name": "Katia Stock Wheels"
-    },
-    {
-      "name": "Gran Turismo Stock Wheels"
-    },
-    {
-      "name": "Deluxe Stock Wheels"
-    },
-    {
-      "name": "Monza 50 Stock Wheels"
-    },
-    {
-      "name": "Tiger Junior Cross Stock Wheels"
-    },
-    {
-      "name": "Noi TL Stock Wheels"
-    },
-    {
-      "name": "Mosquito Stock Wheels"
-    },
-    {
-      "name": "Basic Stock Wheels"
-    },
-    {
-      "name": "Rally Sport Stock Wheels"
-    },
-    {
-      "name": "Gran Stock Wheels"
-    },
-    {
-      "name": "Tiger Cross Stock Wheels"
-    },
-    {
-      "name": "Rally Sport LTD Stock Wheels"
-    },
-    {
-      "name": "Standard Stock Wheels"
-    },
-    {
-      "name": "RGS50 Stock Wheels"
-    },
-    {
-      "name": "Noi Matic Stock Wheels"
-    },
-    {
-      "name": "Rekord 50 Stock Wheels"
-    },
-    {
-      "name": "Monza GT Stock Wheels"
-    },
-    {
-      "name": "M50 Stock Wheels"
-    },
-    {
-      "name": "KL505V Stock Wheels"
-    },
-    {
-      "name": "Gulp Stock Wheels"
-    },
-    {
-      "name": "VIP 2V Stock Wheels"
-    },
-    {
-      "name": "Eureka Stock Wheels"
-    },
-    {
-      "name": "Cicione 5V Stock Wheels"
-    },
-    {
-      "name": "VIP 1V Stock Wheels"
-    },
-    {
-      "name": "Europed Stock Wheels"
-    },
-    {
-      "name": "Eureka Matic Stock Wheels"
-    },
-    {
-      "name": "Mokik Stock Wheels"
-    },
-    {
-      "name": "Cross Stock Wheels"
-    },
-    {
-      "name": "VIP 3V Stock Wheels"
-    },
-    {
-      "name": "Katia 25 Stock Wheels"
-    },
-    {
-      "name": "Rally SL Stock Wheels"
-    },
-    {
-      "name": "Sport 40 S Stock Wheels"
-    },
-    {
-      "name": "Noi Junior Bimatic Stock Wheels"
-    },
-    {
-      "name": "Team Bimatic ES Stock Wheels"
-    },
-    {
-      "name": "Special GT Stock Wheels"
-    },
-    {
-      "name": "Grand Prix 50 Stock Wheels"
-    },
-    {
-      "name": "Eureka Flex Stock Wheels"
-    },
-    {
-      "name": "Minibat Stock Wheels"
-    },
-    {
-      "name": "Super Sport XL LTD Stock Wheels"
-    },
-    {
-      "name": "Noi Lusso Stock Wheels"
-    },
-    {
-      "name": "Rally Stock Wheels"
-    },
-    {
-      "name": "VIP 4V Stock Wheels"
-    },
-    {
-      "name": "Baby Moskito Stock Wheels"
-    },
-    {
-      "name": "Bimatic Stock Wheels"
-    },
-    {
-      "name": "Gary Due Stock Wheels"
-    },
-    {
-      "name": "Cicione Matic Stock Wheels"
-    },
-    {
-      "name": "Gran Sport LTD Stock Wheels"
-    },
-    {
-      "name": "Eureka K Stock Wheels"
-    },
-    {
-      "name": "Formuno Raid 4V Stock Wheels"
-    },
-    {
-      "name": "Europed Brianza Stock Wheels"
-    },
-    {
-      "name": "Bonanza Stock Wheels"
-    },
-    {
-      "name": "Bronco Stock Wheels"
-    },
-    {
-      "name": "Eureka M Stock Wheels"
-    },
-    {
-      "name": "Junior Stock Wheels"
-    }
-  ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Noi SL Stock Cylinder"
-    },
-    {
-      "name": "Rekord KL100E5V Stock Cylinder"
-    },
-    {
-      "name": "Junior Sport Stock Cylinder"
-    },
-    {
-      "name": "Team Matic Stock Cylinder"
-    },
-    {
-      "name": "SuperVIP 4V Stock Cylinder"
-    },
-    {
-      "name": "Junior Turismo Stock Cylinder"
-    },
-    {
-      "name": "Sport Stock Cylinder"
-    },
-    {
-      "name": "Noi Primo Stock Cylinder"
-    },
-    {
-      "name": "Eureka Sport Stock Cylinder"
-    },
-    {
-      "name": "Mini 25 Stock Cylinder"
-    },
-    {
-      "name": "Team 3V Stock Cylinder"
-    },
-    {
-      "name": "Motorino Stock Cylinder"
-    },
-    {
-      "name": "Formuno 4V Stock Cylinder"
-    },
-    {
-      "name": "Gran Sport Stock Cylinder"
-    },
-    {
-      "name": "Super Ciclone Stock Cylinder"
-    },
-    {
-      "name": "Super Sport XL Stock Cylinder"
-    },
-    {
-      "name": "Gary Uno Stock Cylinder"
-    },
-    {
-      "name": "Sahel 50 Stock Cylinder"
-    },
-    {
-      "name": "Super Sport Stock Cylinder"
-    },
-    {
-      "name": "Katia Stock Cylinder"
-    },
-    {
-      "name": "Gran Turismo Stock Cylinder"
-    },
-    {
-      "name": "Deluxe Stock Cylinder"
-    },
-    {
-      "name": "Monza 50 Stock Cylinder"
-    },
-    {
-      "name": "Tiger Junior Cross Stock Cylinder"
-    },
-    {
-      "name": "Noi TL Stock Cylinder"
-    },
-    {
-      "name": "Mosquito Stock Cylinder"
-    },
-    {
-      "name": "Basic Stock Cylinder"
-    },
-    {
-      "name": "Rally Sport Stock Cylinder"
-    },
-    {
-      "name": "Gran Stock Cylinder"
-    },
-    {
-      "name": "Tiger Cross Stock Cylinder"
-    },
-    {
-      "name": "Rally Sport LTD Stock Cylinder"
-    },
-    {
-      "name": "Standard Stock Cylinder"
-    },
-    {
-      "name": "RGS50 Stock Cylinder"
-    },
-    {
-      "name": "Noi Matic Stock Cylinder"
-    },
-    {
-      "name": "Rekord 50 Stock Cylinder"
-    },
-    {
-      "name": "Monza GT Stock Cylinder"
-    },
-    {
-      "name": "M50 Stock Cylinder"
-    },
-    {
-      "name": "KL505V Stock Cylinder"
-    },
-    {
-      "name": "Gulp Stock Cylinder"
-    },
-    {
-      "name": "VIP 2V Stock Cylinder"
-    },
-    {
-      "name": "Eureka Stock Cylinder"
-    },
-    {
-      "name": "Cicione 5V Stock Cylinder"
-    },
-    {
-      "name": "VIP 1V Stock Cylinder"
-    },
-    {
-      "name": "Europed Stock Cylinder"
-    },
-    {
-      "name": "Eureka Matic Stock Cylinder"
-    },
-    {
-      "name": "Mokik Stock Cylinder"
-    },
-    {
-      "name": "Cross Stock Cylinder"
-    },
-    {
-      "name": "VIP 3V Stock Cylinder"
-    },
-    {
-      "name": "Katia 25 Stock Cylinder"
-    },
-    {
-      "name": "Rally SL Stock Cylinder"
-    },
-    {
-      "name": "Sport 40 S Stock Cylinder"
-    },
-    {
-      "name": "Noi Junior Bimatic Stock Cylinder"
-    },
-    {
-      "name": "Team Bimatic ES Stock Cylinder"
-    },
-    {
-      "name": "Special GT Stock Cylinder"
-    },
-    {
-      "name": "Grand Prix 50 Stock Cylinder"
-    },
-    {
-      "name": "Eureka Flex Stock Cylinder"
-    },
-    {
-      "name": "Minibat Stock Cylinder"
-    },
-    {
-      "name": "Super Sport XL LTD Stock Cylinder"
-    },
-    {
-      "name": "Noi Lusso Stock Cylinder"
-    },
-    {
-      "name": "Rally Stock Cylinder"
-    },
-    {
-      "name": "VIP 4V Stock Cylinder"
-    },
-    {
-      "name": "Baby Moskito Stock Cylinder"
-    },
-    {
-      "name": "Bimatic Stock Cylinder"
-    },
-    {
-      "name": "Gary Due Stock Cylinder"
-    },
-    {
-      "name": "Cicione Matic Stock Cylinder"
-    },
-    {
-      "name": "Gran Sport LTD Stock Cylinder"
-    },
-    {
-      "name": "Eureka K Stock Cylinder"
-    },
-    {
-      "name": "Formuno Raid 4V Stock Cylinder"
-    },
-    {
-      "name": "Europed Brianza Stock Cylinder"
-    },
-    {
-      "name": "Bonanza Stock Cylinder"
-    },
-    {
-      "name": "Bronco Stock Cylinder"
-    },
-    {
-      "name": "Eureka M Stock Cylinder"
-    },
-    {
-      "name": "Junior Stock Cylinder"
-    }
-  ],
-  "exhausts": [
-    {
-      "name": "Noi SL Stock Exhaust"
-    },
-    {
-      "name": "Rekord KL100E5V Stock Exhaust"
-    },
-    {
-      "name": "Junior Sport Stock Exhaust"
-    },
-    {
-      "name": "Team Matic Stock Exhaust"
-    },
-    {
-      "name": "SuperVIP 4V Stock Exhaust"
-    },
-    {
-      "name": "Junior Turismo Stock Exhaust"
-    },
-    {
-      "name": "Sport Stock Exhaust"
-    },
-    {
-      "name": "Noi Primo Stock Exhaust"
-    },
-    {
-      "name": "Eureka Sport Stock Exhaust"
-    },
-    {
-      "name": "Mini 25 Stock Exhaust"
-    },
-    {
-      "name": "Team 3V Stock Exhaust"
-    },
-    {
-      "name": "Motorino Stock Exhaust"
-    },
-    {
-      "name": "Formuno 4V Stock Exhaust"
-    },
-    {
-      "name": "Gran Sport Stock Exhaust"
-    },
-    {
-      "name": "Super Ciclone Stock Exhaust"
-    },
-    {
-      "name": "Super Sport XL Stock Exhaust"
-    },
-    {
-      "name": "Gary Uno Stock Exhaust"
-    },
-    {
-      "name": "Sahel 50 Stock Exhaust"
-    },
-    {
-      "name": "Super Sport Stock Exhaust"
-    },
-    {
-      "name": "Katia Stock Exhaust"
-    },
-    {
-      "name": "Gran Turismo Stock Exhaust"
-    },
-    {
-      "name": "Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Monza 50 Stock Exhaust"
-    },
-    {
-      "name": "Tiger Junior Cross Stock Exhaust"
-    },
-    {
-      "name": "Noi TL Stock Exhaust"
-    },
-    {
-      "name": "Mosquito Stock Exhaust"
-    },
-    {
-      "name": "Basic Stock Exhaust"
-    },
-    {
-      "name": "Rally Sport Stock Exhaust"
-    },
-    {
-      "name": "Gran Stock Exhaust"
-    },
-    {
-      "name": "Tiger Cross Stock Exhaust"
-    },
-    {
-      "name": "Rally Sport LTD Stock Exhaust"
-    },
-    {
-      "name": "Standard Stock Exhaust"
-    },
-    {
-      "name": "RGS50 Stock Exhaust"
-    },
-    {
-      "name": "Noi Matic Stock Exhaust"
-    },
-    {
-      "name": "Rekord 50 Stock Exhaust"
-    },
-    {
-      "name": "Monza GT Stock Exhaust"
-    },
-    {
-      "name": "M50 Stock Exhaust"
-    },
-    {
-      "name": "KL505V Stock Exhaust"
-    },
-    {
-      "name": "Gulp Stock Exhaust"
-    },
-    {
-      "name": "VIP 2V Stock Exhaust"
-    },
-    {
-      "name": "Eureka Stock Exhaust"
-    },
-    {
-      "name": "Cicione 5V Stock Exhaust"
-    },
-    {
-      "name": "VIP 1V Stock Exhaust"
-    },
-    {
-      "name": "Europed Stock Exhaust"
-    },
-    {
-      "name": "Eureka Matic Stock Exhaust"
-    },
-    {
-      "name": "Mokik Stock Exhaust"
-    },
-    {
-      "name": "Cross Stock Exhaust"
-    },
-    {
-      "name": "VIP 3V Stock Exhaust"
-    },
-    {
-      "name": "Katia 25 Stock Exhaust"
-    },
-    {
-      "name": "Rally SL Stock Exhaust"
-    },
-    {
-      "name": "Sport 40 S Stock Exhaust"
-    },
-    {
-      "name": "Noi Junior Bimatic Stock Exhaust"
-    },
-    {
-      "name": "Team Bimatic ES Stock Exhaust"
-    },
-    {
-      "name": "Special GT Stock Exhaust"
-    },
-    {
-      "name": "Grand Prix 50 Stock Exhaust"
-    },
-    {
-      "name": "Eureka Flex Stock Exhaust"
-    },
-    {
-      "name": "Minibat Stock Exhaust"
-    },
-    {
-      "name": "Super Sport XL LTD Stock Exhaust"
-    },
-    {
-      "name": "Noi Lusso Stock Exhaust"
-    },
-    {
-      "name": "Rally Stock Exhaust"
-    },
-    {
-      "name": "VIP 4V Stock Exhaust"
-    },
-    {
-      "name": "Baby Moskito Stock Exhaust"
-    },
-    {
-      "name": "Bimatic Stock Exhaust"
-    },
-    {
-      "name": "Gary Due Stock Exhaust"
-    },
-    {
-      "name": "Cicione Matic Stock Exhaust"
-    },
-    {
-      "name": "Gran Sport LTD Stock Exhaust"
-    },
-    {
-      "name": "Eureka K Stock Exhaust"
-    },
-    {
-      "name": "Formuno Raid 4V Stock Exhaust"
-    },
-    {
-      "name": "Europed Brianza Stock Exhaust"
-    },
-    {
-      "name": "Bonanza Stock Exhaust"
-    },
-    {
-      "name": "Bronco Stock Exhaust"
-    },
-    {
-      "name": "Eureka M Stock Exhaust"
-    },
-    {
-      "name": "Junior Stock Exhaust"
-    }
-  ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
+  "ignitions": [],
   "models": [
     {
       "name": "Junior"
@@ -1124,6 +464,228 @@
       "name": "Noi SL"
     }
   ],
+  "name": "Garelli",
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "wheels": [
+    {
+      "name": "Noi SL Stock Wheels"
+    },
+    {
+      "name": "Rekord KL100E5V Stock Wheels"
+    },
+    {
+      "name": "Junior Sport Stock Wheels"
+    },
+    {
+      "name": "Team Matic Stock Wheels"
+    },
+    {
+      "name": "SuperVIP 4V Stock Wheels"
+    },
+    {
+      "name": "Junior Turismo Stock Wheels"
+    },
+    {
+      "name": "Sport Stock Wheels"
+    },
+    {
+      "name": "Noi Primo Stock Wheels"
+    },
+    {
+      "name": "Eureka Sport Stock Wheels"
+    },
+    {
+      "name": "Mini 25 Stock Wheels"
+    },
+    {
+      "name": "Team 3V Stock Wheels"
+    },
+    {
+      "name": "Motorino Stock Wheels"
+    },
+    {
+      "name": "Formuno 4V Stock Wheels"
+    },
+    {
+      "name": "Gran Sport Stock Wheels"
+    },
+    {
+      "name": "Super Ciclone Stock Wheels"
+    },
+    {
+      "name": "Super Sport XL Stock Wheels"
+    },
+    {
+      "name": "Gary Uno Stock Wheels"
+    },
+    {
+      "name": "Sahel 50 Stock Wheels"
+    },
+    {
+      "name": "Super Sport Stock Wheels"
+    },
+    {
+      "name": "Katia Stock Wheels"
+    },
+    {
+      "name": "Gran Turismo Stock Wheels"
+    },
+    {
+      "name": "Deluxe Stock Wheels"
+    },
+    {
+      "name": "Monza 50 Stock Wheels"
+    },
+    {
+      "name": "Tiger Junior Cross Stock Wheels"
+    },
+    {
+      "name": "Noi TL Stock Wheels"
+    },
+    {
+      "name": "Mosquito Stock Wheels"
+    },
+    {
+      "name": "Basic Stock Wheels"
+    },
+    {
+      "name": "Rally Sport Stock Wheels"
+    },
+    {
+      "name": "Gran Stock Wheels"
+    },
+    {
+      "name": "Tiger Cross Stock Wheels"
+    },
+    {
+      "name": "Rally Sport LTD Stock Wheels"
+    },
+    {
+      "name": "Standard Stock Wheels"
+    },
+    {
+      "name": "RGS50 Stock Wheels"
+    },
+    {
+      "name": "Noi Matic Stock Wheels"
+    },
+    {
+      "name": "Rekord 50 Stock Wheels"
+    },
+    {
+      "name": "Monza GT Stock Wheels"
+    },
+    {
+      "name": "M50 Stock Wheels"
+    },
+    {
+      "name": "KL505V Stock Wheels"
+    },
+    {
+      "name": "Gulp Stock Wheels"
+    },
+    {
+      "name": "VIP 2V Stock Wheels"
+    },
+    {
+      "name": "Eureka Stock Wheels"
+    },
+    {
+      "name": "Cicione 5V Stock Wheels"
+    },
+    {
+      "name": "VIP 1V Stock Wheels"
+    },
+    {
+      "name": "Europed Stock Wheels"
+    },
+    {
+      "name": "Eureka Matic Stock Wheels"
+    },
+    {
+      "name": "Mokik Stock Wheels"
+    },
+    {
+      "name": "Cross Stock Wheels"
+    },
+    {
+      "name": "VIP 3V Stock Wheels"
+    },
+    {
+      "name": "Katia 25 Stock Wheels"
+    },
+    {
+      "name": "Rally SL Stock Wheels"
+    },
+    {
+      "name": "Sport 40 S Stock Wheels"
+    },
+    {
+      "name": "Noi Junior Bimatic Stock Wheels"
+    },
+    {
+      "name": "Team Bimatic ES Stock Wheels"
+    },
+    {
+      "name": "Special GT Stock Wheels"
+    },
+    {
+      "name": "Grand Prix 50 Stock Wheels"
+    },
+    {
+      "name": "Eureka Flex Stock Wheels"
+    },
+    {
+      "name": "Minibat Stock Wheels"
+    },
+    {
+      "name": "Super Sport XL LTD Stock Wheels"
+    },
+    {
+      "name": "Noi Lusso Stock Wheels"
+    },
+    {
+      "name": "Rally Stock Wheels"
+    },
+    {
+      "name": "VIP 4V Stock Wheels"
+    },
+    {
+      "name": "Baby Moskito Stock Wheels"
+    },
+    {
+      "name": "Bimatic Stock Wheels"
+    },
+    {
+      "name": "Gary Due Stock Wheels"
+    },
+    {
+      "name": "Cicione Matic Stock Wheels"
+    },
+    {
+      "name": "Gran Sport LTD Stock Wheels"
+    },
+    {
+      "name": "Eureka K Stock Wheels"
+    },
+    {
+      "name": "Formuno Raid 4V Stock Wheels"
+    },
+    {
+      "name": "Europed Brianza Stock Wheels"
+    },
+    {
+      "name": "Bonanza Stock Wheels"
+    },
+    {
+      "name": "Bronco Stock Wheels"
+    },
+    {
+      "name": "Eureka M Stock Wheels"
+    },
+    {
+      "name": "Junior Stock Wheels"
+    }
+  ]
 }

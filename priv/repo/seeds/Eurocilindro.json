@@ -1,0 +1,15 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 50,
+      "name": "Morini M1 50cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "Eurocilindro"
+}

@@ -1,8 +1,31 @@
 {
   "name": "Snark",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Deluxe"
+    },
+    {
+      "name": "Satellie I"
+    },
+    {
+      "name": "Satellie II"
+    },
+    {
+      "name": "Standard"
+    },
+    {
+      "name": "Star I"
+    },
+    {
+      "name": "Star II"
+    },
+    {
+      "name": "Stardust I"
+    },
+    {
+      "name": "Stardust II"
+    }
   ],
   "forks": [
     {
@@ -56,42 +79,6 @@
       "name": "Deluxe Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Stardust II Stock Cylinder"
-    },
-    {
-      "name": "Stardust I Stock Cylinder"
-    },
-    {
-      "name": "Star II Stock Cylinder"
-    },
-    {
-      "name": "Star I Stock Cylinder"
-    },
-    {
-      "name": "Standard Stock Cylinder"
-    },
-    {
-      "name": "Satellie II Stock Cylinder"
-    },
-    {
-      "name": "Satellie I Stock Cylinder"
-    },
-    {
-      "name": "Deluxe Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Stardust II Stock Exhaust"
@@ -118,37 +105,13 @@
       "name": "Deluxe Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Deluxe"
-    },
-    {
-      "name": "Satellie I"
-    },
-    {
-      "name": "Satellie II"
-    },
-    {
-      "name": "Standard"
-    },
-    {
-      "name": "Star I"
-    },
-    {
-      "name": "Star II"
-    },
-    {
-      "name": "Stardust I"
-    },
-    {
-      "name": "Stardust II"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

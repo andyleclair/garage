@@ -1,24 +1,35 @@
 {
-  "name": "Bing",
-  "categories": [
-    "carburetor"
-  ],
   "carburetors": [
     {
-      "size": 12,
-      "name": "12mm Bing"
+      "name": "20mm"
     },
     {
-      "size": 14,
-      "name": "14mm Bing"
+      "name": "18mm"
     },
     {
-      "size": 15,
-      "name": "15mm Bing"
+      "name": "17mm"
     },
     {
-      "size": 17,
-      "name": "16mm Bing"
+      "name": "15mm Clone"
+    },
+    {
+      "name": "15mm"
+    },
+    {
+      "name": "14mm"
+    },
+    {
+      "name": "12mm Clone"
+    },
+    {
+      "name": "12mm"
     }
-  ]
+  ],
+  "categories": [
+    "carburetors"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [],
+  "name": "Bing"
 }

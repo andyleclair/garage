@@ -1,0 +1,35 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Circuit for Yamaha Sting"
+    },
+    {
+      "name": "GP for Puch"
+    },
+    {
+      "name": "Circuit for Puch"
+    },
+    {
+      "name": "Circuit for Piaggio"
+    },
+    {
+      "name": "Circuit for Peugeot"
+    },
+    {
+      "name": "Grand Prix Honda NSR"
+    },
+    {
+      "name": "Honda MB5"
+    },
+    {
+      "name": "Circuit for Honda Hobbit/Camino"
+    }
+  ],
+  "name": "Proma"
+}

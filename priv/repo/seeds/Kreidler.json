@@ -1,9 +1,23 @@
 {
-  "name": "Kreidler",
-  "engines": [],
+  "carburetors": [],
   "categories": [
-    "moped"
+    "engines",
+    "forks",
+    "mopeds",
+    "wheels"
   ],
+  "clutches": [],
+  "cranks": [],
+  "cylinders": [],
+  "engines": [
+    {
+      "name": "2-Speed Manual"
+    },
+    {
+      "name": "2-Speed Automatic"
+    }
+  ],
+  "exhausts": [],
   "forks": [
     {
       "name": "RS Cockpit Stock Forks"
@@ -66,207 +80,7 @@
       "name": "Florett Stock Forks"
     }
   ],
-  "wheels": [
-    {
-      "name": "RS Cockpit Stock Wheels"
-    },
-    {
-      "name": "MP-9 Stock Wheels"
-    },
-    {
-      "name": "MP-3 Stock Wheels"
-    },
-    {
-      "name": "MP-2 Stock Wheels"
-    },
-    {
-      "name": "MP-19 Stock Wheels"
-    },
-    {
-      "name": "MG2C Stock Wheels"
-    },
-    {
-      "name": "MF4 Stock Wheels"
-    },
-    {
-      "name": "MF2CL Stock Wheels"
-    },
-    {
-      "name": "MF2 Stock Wheels"
-    },
-    {
-      "name": "Junior Stock Wheels"
-    },
-    {
-      "name": "Flott Stock Wheels"
-    },
-    {
-      "name": "Flory Deluxe Stock Wheels"
-    },
-    {
-      "name": "Flory 23 Stock Wheels"
-    },
-    {
-      "name": "Flory 13 Stock Wheels"
-    },
-    {
-      "name": "Flory 12 Stock Wheels"
-    },
-    {
-      "name": "Florett TM Stock Wheels"
-    },
-    {
-      "name": "Florett RSH Stock Wheels"
-    },
-    {
-      "name": "Florett RS Stock Wheels"
-    },
-    {
-      "name": "Florett RMC Stock Wheels"
-    },
-    {
-      "name": "Florett Stock Wheels"
-    }
-  ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "RS Cockpit Stock Cylinder"
-    },
-    {
-      "name": "MP-9 Stock Cylinder"
-    },
-    {
-      "name": "MP-3 Stock Cylinder"
-    },
-    {
-      "name": "MP-2 Stock Cylinder"
-    },
-    {
-      "name": "MP-19 Stock Cylinder"
-    },
-    {
-      "name": "MG2C Stock Cylinder"
-    },
-    {
-      "name": "MF4 Stock Cylinder"
-    },
-    {
-      "name": "MF2CL Stock Cylinder"
-    },
-    {
-      "name": "MF2 Stock Cylinder"
-    },
-    {
-      "name": "Junior Stock Cylinder"
-    },
-    {
-      "name": "Flott Stock Cylinder"
-    },
-    {
-      "name": "Flory Deluxe Stock Cylinder"
-    },
-    {
-      "name": "Flory 23 Stock Cylinder"
-    },
-    {
-      "name": "Flory 13 Stock Cylinder"
-    },
-    {
-      "name": "Flory 12 Stock Cylinder"
-    },
-    {
-      "name": "Florett TM Stock Cylinder"
-    },
-    {
-      "name": "Florett RSH Stock Cylinder"
-    },
-    {
-      "name": "Florett RS Stock Cylinder"
-    },
-    {
-      "name": "Florett RMC Stock Cylinder"
-    },
-    {
-      "name": "Florett Stock Cylinder"
-    }
-  ],
-  "exhausts": [
-    {
-      "name": "RS Cockpit Stock Exhaust"
-    },
-    {
-      "name": "MP-9 Stock Exhaust"
-    },
-    {
-      "name": "MP-3 Stock Exhaust"
-    },
-    {
-      "name": "MP-2 Stock Exhaust"
-    },
-    {
-      "name": "MP-19 Stock Exhaust"
-    },
-    {
-      "name": "MG2C Stock Exhaust"
-    },
-    {
-      "name": "MF4 Stock Exhaust"
-    },
-    {
-      "name": "MF2CL Stock Exhaust"
-    },
-    {
-      "name": "MF2 Stock Exhaust"
-    },
-    {
-      "name": "Junior Stock Exhaust"
-    },
-    {
-      "name": "Flott Stock Exhaust"
-    },
-    {
-      "name": "Flory Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Flory 23 Stock Exhaust"
-    },
-    {
-      "name": "Flory 13 Stock Exhaust"
-    },
-    {
-      "name": "Flory 12 Stock Exhaust"
-    },
-    {
-      "name": "Florett TM Stock Exhaust"
-    },
-    {
-      "name": "Florett RSH Stock Exhaust"
-    },
-    {
-      "name": "Florett RS Stock Exhaust"
-    },
-    {
-      "name": "Florett RMC Stock Exhaust"
-    },
-    {
-      "name": "Florett Stock Exhaust"
-    }
-  ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
+  "ignitions": [],
   "models": [
     {
       "name": "Florett"
@@ -329,6 +143,69 @@
       "name": "RS Cockpit"
     }
   ],
+  "name": "Kreidler",
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "wheels": [
+    {
+      "name": "RS Cockpit Stock Wheels"
+    },
+    {
+      "name": "MP-9 Stock Wheels"
+    },
+    {
+      "name": "MP-3 Stock Wheels"
+    },
+    {
+      "name": "MP-2 Stock Wheels"
+    },
+    {
+      "name": "MP-19 Stock Wheels"
+    },
+    {
+      "name": "MG2C Stock Wheels"
+    },
+    {
+      "name": "MF4 Stock Wheels"
+    },
+    {
+      "name": "MF2CL Stock Wheels"
+    },
+    {
+      "name": "MF2 Stock Wheels"
+    },
+    {
+      "name": "Junior Stock Wheels"
+    },
+    {
+      "name": "Flott Stock Wheels"
+    },
+    {
+      "name": "Flory Deluxe Stock Wheels"
+    },
+    {
+      "name": "Flory 23 Stock Wheels"
+    },
+    {
+      "name": "Flory 13 Stock Wheels"
+    },
+    {
+      "name": "Flory 12 Stock Wheels"
+    },
+    {
+      "name": "Florett TM Stock Wheels"
+    },
+    {
+      "name": "Florett RSH Stock Wheels"
+    },
+    {
+      "name": "Florett RS Stock Wheels"
+    },
+    {
+      "name": "Florett RMC Stock Wheels"
+    },
+    {
+      "name": "Florett Stock Wheels"
+    }
+  ]
 }

@@ -1,0 +1,20 @@
+{
+  "carburetors": [
+    {
+      "name": "12mm -AV7"
+    },
+    {
+      "name": "12mm"
+    },
+    {
+      "name": "10mm AR1"
+    }
+  ],
+  "categories": [
+    "carburetors"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [],
+  "name": "Gurtner"
+}

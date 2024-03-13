@@ -1,8 +1,10 @@
 {
   "name": "Sunny",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "200"
+    }
   ],
   "forks": [
     {
@@ -14,36 +16,18 @@
       "name": "200 Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "200 Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "200 Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "200"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

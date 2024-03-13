@@ -1,8 +1,61 @@
 {
   "name": "Solex",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "1700"
+    },
+    {
+      "name": "2200"
+    },
+    {
+      "name": "3200"
+    },
+    {
+      "name": "3300"
+    },
+    {
+      "name": "3800"
+    },
+    {
+      "name": "3800 Deluxe"
+    },
+    {
+      "name": "4600"
+    },
+    {
+      "name": "4600 DOT"
+    },
+    {
+      "name": "5000"
+    },
+    {
+      "name": "6000"
+    },
+    {
+      "name": "8000"
+    },
+    {
+      "name": "Flash 6000"
+    },
+    {
+      "name": "Horse"
+    },
+    {
+      "name": "Micron"
+    },
+    {
+      "name": "Pli-Solex"
+    },
+    {
+      "name": "S3800"
+    },
+    {
+      "name": "Tenor"
+    },
+    {
+      "name": "Trotilex"
+    }
   ],
   "forks": [
     {
@@ -116,72 +169,6 @@
       "name": "1700 Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Trotilex Stock Cylinder"
-    },
-    {
-      "name": "Tenor Stock Cylinder"
-    },
-    {
-      "name": "S3800 Stock Cylinder"
-    },
-    {
-      "name": "Pli-Solex Stock Cylinder"
-    },
-    {
-      "name": "Micron Stock Cylinder"
-    },
-    {
-      "name": "Horse Stock Cylinder"
-    },
-    {
-      "name": "Flash 6000 Stock Cylinder"
-    },
-    {
-      "name": "8000 Stock Cylinder"
-    },
-    {
-      "name": "6000 Stock Cylinder"
-    },
-    {
-      "name": "5000 Stock Cylinder"
-    },
-    {
-      "name": "4600 DOT Stock Cylinder"
-    },
-    {
-      "name": "4600 Stock Cylinder"
-    },
-    {
-      "name": "3800 Deluxe Stock Cylinder"
-    },
-    {
-      "name": "3800 Stock Cylinder"
-    },
-    {
-      "name": "3300 Stock Cylinder"
-    },
-    {
-      "name": "3200 Stock Cylinder"
-    },
-    {
-      "name": "2200 Stock Cylinder"
-    },
-    {
-      "name": "1700 Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Trotilex Stock Exhaust"
@@ -238,67 +225,13 @@
       "name": "1700 Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "1700"
-    },
-    {
-      "name": "2200"
-    },
-    {
-      "name": "3200"
-    },
-    {
-      "name": "3300"
-    },
-    {
-      "name": "3800"
-    },
-    {
-      "name": "3800 Deluxe"
-    },
-    {
-      "name": "4600"
-    },
-    {
-      "name": "4600 DOT"
-    },
-    {
-      "name": "5000"
-    },
-    {
-      "name": "6000"
-    },
-    {
-      "name": "8000"
-    },
-    {
-      "name": "Flash 6000"
-    },
-    {
-      "name": "Horse"
-    },
-    {
-      "name": "Micron"
-    },
-    {
-      "name": "Pli-Solex"
-    },
-    {
-      "name": "S3800"
-    },
-    {
-      "name": "Tenor"
-    },
-    {
-      "name": "Trotilex"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

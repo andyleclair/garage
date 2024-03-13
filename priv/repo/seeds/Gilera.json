@@ -1,8 +1,43 @@
 {
   "name": "Gilera",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "50 Touring RS"
+    },
+    {
+      "name": "50 Trial RS"
+    },
+    {
+      "name": "E-type"
+    },
+    {
+      "name": "Eco"
+    },
+    {
+      "name": "Enduro"
+    },
+    {
+      "name": "RA"
+    },
+    {
+      "name": "RE"
+    },
+    {
+      "name": "RL"
+    },
+    {
+      "name": "RS"
+    },
+    {
+      "name": "SD"
+    },
+    {
+      "name": "Touring"
+    },
+    {
+      "name": "Trial"
+    }
   ],
   "forks": [
     {
@@ -80,54 +115,6 @@
       "name": "50 Touring RS Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Trial Stock Cylinder"
-    },
-    {
-      "name": "Touring Stock Cylinder"
-    },
-    {
-      "name": "SD Stock Cylinder"
-    },
-    {
-      "name": "RS Stock Cylinder"
-    },
-    {
-      "name": "RL Stock Cylinder"
-    },
-    {
-      "name": "RE Stock Cylinder"
-    },
-    {
-      "name": "RA Stock Cylinder"
-    },
-    {
-      "name": "Enduro Stock Cylinder"
-    },
-    {
-      "name": "Eco Stock Cylinder"
-    },
-    {
-      "name": "E-type Stock Cylinder"
-    },
-    {
-      "name": "50 Trial RS Stock Cylinder"
-    },
-    {
-      "name": "50 Touring RS Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Trial Stock Exhaust"
@@ -166,49 +153,13 @@
       "name": "50 Touring RS Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "50 Touring RS"
-    },
-    {
-      "name": "50 Trial RS"
-    },
-    {
-      "name": "E-type"
-    },
-    {
-      "name": "Eco"
-    },
-    {
-      "name": "Enduro"
-    },
-    {
-      "name": "RA"
-    },
-    {
-      "name": "RE"
-    },
-    {
-      "name": "RL"
-    },
-    {
-      "name": "RS"
-    },
-    {
-      "name": "SD"
-    },
-    {
-      "name": "Touring"
-    },
-    {
-      "name": "Trial"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

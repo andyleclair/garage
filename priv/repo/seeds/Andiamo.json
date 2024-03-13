@@ -1,8 +1,19 @@
 {
   "name": "Andiamo",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "E-1"
+    },
+    {
+      "name": "E-2"
+    },
+    {
+      "name": "L-1"
+    },
+    {
+      "name": "L-2"
+    }
   ],
   "forks": [
     {
@@ -32,30 +43,6 @@
       "name": "E-1 Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "L-2 Stock Cylinder"
-    },
-    {
-      "name": "L-1 Stock Cylinder"
-    },
-    {
-      "name": "E-2 Stock Cylinder"
-    },
-    {
-      "name": "E-1 Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "L-2 Stock Exhaust"
@@ -70,25 +57,13 @@
       "name": "E-1 Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "E-1"
-    },
-    {
-      "name": "E-2"
-    },
-    {
-      "name": "L-1"
-    },
-    {
-      "name": "L-2"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

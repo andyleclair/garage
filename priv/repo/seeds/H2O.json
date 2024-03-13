@@ -1,0 +1,15 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 50,
+      "name": "MBK AV10 50cc Polini"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "H2O"
+}

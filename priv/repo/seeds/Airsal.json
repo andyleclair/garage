@@ -1,0 +1,71 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 70,
+      "name": "Tomos A55 70cc"
+    },
+    {
+      "displacement": 64,
+      "name": "Tomos A35 64cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Sachs 70cc"
+    },
+    {
+      "displacement": 72,
+      "name": "Puch 72cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Puch 70cc -New Fin"
+    },
+    {
+      "displacement": 65,
+      "name": "Puch 65cc"
+    },
+    {
+      "displacement": 50,
+      "name": "Puch 50cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Peugeot Buxy Scooter 70cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Peugeot 70cc"
+    },
+    {
+      "displacement": 74,
+      "name": "Motobecane AV7 74cc"
+    },
+    {
+      "displacement": 75,
+      "name": "Motobecane AV10 75cc"
+    },
+    {
+      "displacement": 60,
+      "name": "Morini M1 60cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Honda MB5 70cc"
+    },
+    {
+      "displacement": 65,
+      "name": "Derbi 65cc"
+    },
+    {
+      "displacement": 50,
+      "name": "Derbi 50cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "Airsal"
+}

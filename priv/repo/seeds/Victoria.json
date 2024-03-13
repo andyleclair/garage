@@ -1,8 +1,31 @@
 {
   "name": "Victoria",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "110 s"
+    },
+    {
+      "name": "111"
+    },
+    {
+      "name": "Avanti K"
+    },
+    {
+      "name": "FM38 L"
+    },
+    {
+      "name": "IVN"
+    },
+    {
+      "name": "Luxus"
+    },
+    {
+      "name": "Spoetnik"
+    },
+    {
+      "name": "Vicky"
+    }
   ],
   "forks": [
     {
@@ -56,42 +79,6 @@
       "name": "110 s Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Vicky Stock Cylinder"
-    },
-    {
-      "name": "Spoetnik Stock Cylinder"
-    },
-    {
-      "name": "Luxus Stock Cylinder"
-    },
-    {
-      "name": "IVN Stock Cylinder"
-    },
-    {
-      "name": "FM38 L Stock Cylinder"
-    },
-    {
-      "name": "Avanti K Stock Cylinder"
-    },
-    {
-      "name": "111 Stock Cylinder"
-    },
-    {
-      "name": "110 s Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Vicky Stock Exhaust"
@@ -118,37 +105,13 @@
       "name": "110 s Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "110 s"
-    },
-    {
-      "name": "111"
-    },
-    {
-      "name": "Avanti K"
-    },
-    {
-      "name": "FM38 L"
-    },
-    {
-      "name": "IVN"
-    },
-    {
-      "name": "Luxus"
-    },
-    {
-      "name": "Spoetnik"
-    },
-    {
-      "name": "Vicky"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

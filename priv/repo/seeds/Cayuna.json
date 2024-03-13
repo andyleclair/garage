@@ -1,8 +1,10 @@
 {
   "name": "Cayuna",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Scorpion"
+    }
   ],
   "forks": [
     {
@@ -14,36 +16,18 @@
       "name": "Scorpion Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Scorpion Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Scorpion Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Scorpion"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

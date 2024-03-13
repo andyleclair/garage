@@ -1,0 +1,35 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "for Tomos A55"
+    },
+    {
+      "name": "Tomos A35 Pipe"
+    },
+    {
+      "name": "for Puch - Flat Port"
+    },
+    {
+      "name": "for Puch - Angled Port"
+    },
+    {
+      "name": "Minarelli Pipe"
+    },
+    {
+      "name": "Honda Hobbit Pipe"
+    },
+    {
+      "name": "Garelli Pipe"
+    },
+    {
+      "name": "for Derbi FlatReed"
+    }
+  ],
+  "name": "Weak-Ends"
+}

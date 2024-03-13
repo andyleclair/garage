@@ -1,8 +1,34 @@
 {
   "name": "Trac",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Blitz"
+    },
+    {
+      "name": "Clipper"
+    },
+    {
+      "name": "Eagle"
+    },
+    {
+      "name": "Hawk"
+    },
+    {
+      "name": "Image"
+    },
+    {
+      "name": "Liberty"
+    },
+    {
+      "name": "Metro"
+    },
+    {
+      "name": "Olympic"
+    },
+    {
+      "name": "Sprint"
+    }
   ],
   "forks": [
     {
@@ -62,45 +88,6 @@
       "name": "Blitz Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Sprint Stock Cylinder"
-    },
-    {
-      "name": "Olympic Stock Cylinder"
-    },
-    {
-      "name": "Metro Stock Cylinder"
-    },
-    {
-      "name": "Liberty Stock Cylinder"
-    },
-    {
-      "name": "Image Stock Cylinder"
-    },
-    {
-      "name": "Hawk Stock Cylinder"
-    },
-    {
-      "name": "Eagle Stock Cylinder"
-    },
-    {
-      "name": "Clipper Stock Cylinder"
-    },
-    {
-      "name": "Blitz Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Sprint Stock Exhaust"
@@ -130,40 +117,13 @@
       "name": "Blitz Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Blitz"
-    },
-    {
-      "name": "Clipper"
-    },
-    {
-      "name": "Eagle"
-    },
-    {
-      "name": "Hawk"
-    },
-    {
-      "name": "Image"
-    },
-    {
-      "name": "Liberty"
-    },
-    {
-      "name": "Metro"
-    },
-    {
-      "name": "Olympic"
-    },
-    {
-      "name": "Sprint"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

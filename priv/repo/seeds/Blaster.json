@@ -1,0 +1,17 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Hurricane for Minarelli"
+    },
+    {
+      "name": "Hurricane for Garelli"
+    }
+  ],
+  "name": "Blaster"
+}

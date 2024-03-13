@@ -1,0 +1,23 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Destroyer for Puch"
+    },
+    {
+      "name": "Destroyer for Minarelli"
+    },
+    {
+      "name": "Destroyer for Honda Hobbit/Camino"
+    },
+    {
+      "name": "Destroyer for Derbi Flat Reed"
+    }
+  ],
+  "name": "Motomatic"
+}

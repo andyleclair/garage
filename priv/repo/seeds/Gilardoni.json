@@ -1,0 +1,31 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 70,
+      "name": "Peugeot 70cc"
+    },
+    {
+      "displacement": 50,
+      "name": "Peugeot 50cc"
+    },
+    {
+      "displacement": 60,
+      "name": "Morini 60cc"
+    },
+    {
+      "displacement": 10,
+      "name": "Honda NSR 100cc"
+    },
+    {
+      "displacement": 50,
+      "name": "Derbi 50cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "Gilardoni"
+}

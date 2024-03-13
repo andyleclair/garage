@@ -1,8 +1,34 @@
 {
   "name": "Carabela",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Carrera"
+    },
+    {
+      "name": "Delux"
+    },
+    {
+      "name": "Moto-Matic"
+    },
+    {
+      "name": "Moto-Matic Deluxe"
+    },
+    {
+      "name": "Moto-Pedal"
+    },
+    {
+      "name": "Moto-Pony 60"
+    },
+    {
+      "name": "Sport"
+    },
+    {
+      "name": "Sport Deluxe"
+    },
+    {
+      "name": "Super Sport"
+    }
   ],
   "forks": [
     {
@@ -62,45 +88,6 @@
       "name": "Carrera Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Super Sport Stock Cylinder"
-    },
-    {
-      "name": "Sport Deluxe Stock Cylinder"
-    },
-    {
-      "name": "Sport Stock Cylinder"
-    },
-    {
-      "name": "Moto-Pony 60 Stock Cylinder"
-    },
-    {
-      "name": "Moto-Pedal Stock Cylinder"
-    },
-    {
-      "name": "Moto-Matic Deluxe Stock Cylinder"
-    },
-    {
-      "name": "Moto-Matic Stock Cylinder"
-    },
-    {
-      "name": "Delux Stock Cylinder"
-    },
-    {
-      "name": "Carrera Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Super Sport Stock Exhaust"
@@ -130,40 +117,13 @@
       "name": "Carrera Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Carrera"
-    },
-    {
-      "name": "Delux"
-    },
-    {
-      "name": "Moto-Matic"
-    },
-    {
-      "name": "Moto-Matic Deluxe"
-    },
-    {
-      "name": "Moto-Pedal"
-    },
-    {
-      "name": "Moto-Pony 60"
-    },
-    {
-      "name": "Sport"
-    },
-    {
-      "name": "Sport Deluxe"
-    },
-    {
-      "name": "Super Sport"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

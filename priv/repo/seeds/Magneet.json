@@ -1,8 +1,28 @@
 {
   "name": "Magneet",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Cheetah"
+    },
+    {
+      "name": "Commodore"
+    },
+    {
+      "name": "Globemaster"
+    },
+    {
+      "name": "Globemaster Deluxe"
+    },
+    {
+      "name": "Luxe"
+    },
+    {
+      "name": "Sprintmaster"
+    },
+    {
+      "name": "Thunderbird"
+    }
   ],
   "forks": [
     {
@@ -50,39 +70,6 @@
       "name": "Cheetah Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Thunderbird Stock Cylinder"
-    },
-    {
-      "name": "Sprintmaster Stock Cylinder"
-    },
-    {
-      "name": "Luxe Stock Cylinder"
-    },
-    {
-      "name": "Globemaster Deluxe Stock Cylinder"
-    },
-    {
-      "name": "Globemaster Stock Cylinder"
-    },
-    {
-      "name": "Commodore Stock Cylinder"
-    },
-    {
-      "name": "Cheetah Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Thunderbird Stock Exhaust"
@@ -106,34 +93,13 @@
       "name": "Cheetah Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Cheetah"
-    },
-    {
-      "name": "Commodore"
-    },
-    {
-      "name": "Globemaster"
-    },
-    {
-      "name": "Globemaster Deluxe"
-    },
-    {
-      "name": "Luxe"
-    },
-    {
-      "name": "Sprintmaster"
-    },
-    {
-      "name": "Thunderbird"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

@@ -1,8 +1,22 @@
 {
   "name": "Raleigh",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "RM4"
+    },
+    {
+      "name": "RM5"
+    },
+    {
+      "name": "Super 50"
+    },
+    {
+      "name": "Ultramatic"
+    },
+    {
+      "name": "Wisp"
+    }
   ],
   "forks": [
     {
@@ -38,33 +52,6 @@
       "name": "RM4 Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Wisp Stock Cylinder"
-    },
-    {
-      "name": "Ultramatic Stock Cylinder"
-    },
-    {
-      "name": "Super 50 Stock Cylinder"
-    },
-    {
-      "name": "RM5 Stock Cylinder"
-    },
-    {
-      "name": "RM4 Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Wisp Stock Exhaust"
@@ -82,28 +69,13 @@
       "name": "RM4 Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "RM4"
-    },
-    {
-      "name": "RM5"
-    },
-    {
-      "name": "Super 50"
-    },
-    {
-      "name": "Ultramatic"
-    },
-    {
-      "name": "Wisp"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

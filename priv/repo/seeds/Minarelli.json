@@ -1,0 +1,32 @@
+{
+  "carburetors": [],
+  "categories": [
+    "engines",
+    "clutches",
+    "cranks",
+    "ignitions",
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 50,
+      "name": "Stock V1 50cc"
+    }
+  ],
+  "engines": [
+    {
+      "name": "V1L"
+    },
+    {
+      "name": "V1"
+    },
+    {
+      "name": "P4"
+    },
+    {
+      "name": "C2"
+    }
+  ],
+  "exhausts": [],
+  "name": "Minarelli"
+}

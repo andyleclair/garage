@@ -1,0 +1,26 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Next for Tomos A55"
+    },
+    {
+      "name": "Next for Tomos A35"
+    },
+    {
+      "name": "for Tomos A35"
+    },
+    {
+      "name": "Next for Puch"
+    },
+    {
+      "name": "for Piaggio"
+    }
+  ],
+  "name": "Tecnigas"
+}

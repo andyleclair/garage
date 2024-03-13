@@ -1,8 +1,46 @@
 {
   "name": "NSU",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "1053"
+    },
+    {
+      "name": "Cavalio"
+    },
+    {
+      "name": "Maxi"
+    },
+    {
+      "name": "Prima III"
+    },
+    {
+      "name": "Prima IIIK"
+    },
+    {
+      "name": "Prima V"
+    },
+    {
+      "name": "Quickley"
+    },
+    {
+      "name": "Quickly L"
+    },
+    {
+      "name": "Quickly N"
+    },
+    {
+      "name": "Quickly S"
+    },
+    {
+      "name": "Quickly T"
+    },
+    {
+      "name": "Quickly TT"
+    },
+    {
+      "name": "Supermax"
+    }
   ],
   "forks": [
     {
@@ -86,57 +124,6 @@
       "name": "1053 Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Supermax Stock Cylinder"
-    },
-    {
-      "name": "Quickly TT Stock Cylinder"
-    },
-    {
-      "name": "Quickly T Stock Cylinder"
-    },
-    {
-      "name": "Quickly S Stock Cylinder"
-    },
-    {
-      "name": "Quickly N Stock Cylinder"
-    },
-    {
-      "name": "Quickly L Stock Cylinder"
-    },
-    {
-      "name": "Quickley Stock Cylinder"
-    },
-    {
-      "name": "Prima V Stock Cylinder"
-    },
-    {
-      "name": "Prima IIIK Stock Cylinder"
-    },
-    {
-      "name": "Prima III Stock Cylinder"
-    },
-    {
-      "name": "Maxi Stock Cylinder"
-    },
-    {
-      "name": "Cavalio Stock Cylinder"
-    },
-    {
-      "name": "1053 Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Supermax Stock Exhaust"
@@ -178,52 +165,13 @@
       "name": "1053 Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "1053"
-    },
-    {
-      "name": "Cavalio"
-    },
-    {
-      "name": "Maxi"
-    },
-    {
-      "name": "Prima III"
-    },
-    {
-      "name": "Prima IIIK"
-    },
-    {
-      "name": "Prima V"
-    },
-    {
-      "name": "Quickley"
-    },
-    {
-      "name": "Quickly L"
-    },
-    {
-      "name": "Quickly N"
-    },
-    {
-      "name": "Quickly S"
-    },
-    {
-      "name": "Quickly T"
-    },
-    {
-      "name": "Quickly TT"
-    },
-    {
-      "name": "Supermax"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

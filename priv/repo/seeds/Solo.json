@@ -1,8 +1,46 @@
 {
   "name": "Solo",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "710"
+    },
+    {
+      "name": "711"
+    },
+    {
+      "name": "712"
+    },
+    {
+      "name": "713"
+    },
+    {
+      "name": "715"
+    },
+    {
+      "name": "715B"
+    },
+    {
+      "name": "716"
+    },
+    {
+      "name": "722"
+    },
+    {
+      "name": "725"
+    },
+    {
+      "name": "726"
+    },
+    {
+      "name": "Electra"
+    },
+    {
+      "name": "Mini"
+    },
+    {
+      "name": "Odyssey"
+    }
   ],
   "forks": [
     {
@@ -86,57 +124,6 @@
       "name": "710 Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Odyssey Stock Cylinder"
-    },
-    {
-      "name": "Mini Stock Cylinder"
-    },
-    {
-      "name": "Electra Stock Cylinder"
-    },
-    {
-      "name": "726 Stock Cylinder"
-    },
-    {
-      "name": "725 Stock Cylinder"
-    },
-    {
-      "name": "722 Stock Cylinder"
-    },
-    {
-      "name": "716 Stock Cylinder"
-    },
-    {
-      "name": "715B Stock Cylinder"
-    },
-    {
-      "name": "715 Stock Cylinder"
-    },
-    {
-      "name": "713 Stock Cylinder"
-    },
-    {
-      "name": "712 Stock Cylinder"
-    },
-    {
-      "name": "711 Stock Cylinder"
-    },
-    {
-      "name": "710 Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Odyssey Stock Exhaust"
@@ -178,52 +165,13 @@
       "name": "710 Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "710"
-    },
-    {
-      "name": "711"
-    },
-    {
-      "name": "712"
-    },
-    {
-      "name": "713"
-    },
-    {
-      "name": "715"
-    },
-    {
-      "name": "715B"
-    },
-    {
-      "name": "716"
-    },
-    {
-      "name": "722"
-    },
-    {
-      "name": "725"
-    },
-    {
-      "name": "726"
-    },
-    {
-      "name": "Electra"
-    },
-    {
-      "name": "Mini"
-    },
-    {
-      "name": "Odyssey"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

@@ -1,8 +1,40 @@
 {
   "name": "Malaguti",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Commuter"
+    },
+    {
+      "name": "Commuter 2"
+    },
+    {
+      "name": "Commuter 20"
+    },
+    {
+      "name": "Europino"
+    },
+    {
+      "name": "Motorik"
+    },
+    {
+      "name": "Olympique"
+    },
+    {
+      "name": "Pilot"
+    },
+    {
+      "name": "Quattroto Mono"
+    },
+    {
+      "name": "Quattrotto"
+    },
+    {
+      "name": "Roxi"
+    },
+    {
+      "name": "Tiger"
+    }
   ],
   "forks": [
     {
@@ -74,51 +106,6 @@
       "name": "Commuter Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Tiger Stock Cylinder"
-    },
-    {
-      "name": "Roxi Stock Cylinder"
-    },
-    {
-      "name": "Quattrotto Stock Cylinder"
-    },
-    {
-      "name": "Quattroto Mono Stock Cylinder"
-    },
-    {
-      "name": "Pilot Stock Cylinder"
-    },
-    {
-      "name": "Olympique Stock Cylinder"
-    },
-    {
-      "name": "Motorik Stock Cylinder"
-    },
-    {
-      "name": "Europino Stock Cylinder"
-    },
-    {
-      "name": "Commuter 20 Stock Cylinder"
-    },
-    {
-      "name": "Commuter 2 Stock Cylinder"
-    },
-    {
-      "name": "Commuter Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Tiger Stock Exhaust"
@@ -154,46 +141,13 @@
       "name": "Commuter Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Commuter"
-    },
-    {
-      "name": "Commuter 2"
-    },
-    {
-      "name": "Commuter 20"
-    },
-    {
-      "name": "Europino"
-    },
-    {
-      "name": "Motorik"
-    },
-    {
-      "name": "Olympique"
-    },
-    {
-      "name": "Pilot"
-    },
-    {
-      "name": "Quattroto Mono"
-    },
-    {
-      "name": "Quattrotto"
-    },
-    {
-      "name": "Roxi"
-    },
-    {
-      "name": "Tiger"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

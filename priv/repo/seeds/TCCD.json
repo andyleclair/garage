@@ -1,0 +1,19 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 70,
+      "name": "Puch 70cc"
+    },
+    {
+      "displacement": 50,
+      "name": "Puch 50cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "TCCD"
+}

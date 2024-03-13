@@ -14,11 +14,7 @@ defmodule Garage.Mopeds.Manufacturer do
 
     create :bulk_create do
       argument :name, :string, allow_nil?: false
-
-      argument :models, {:array, :map} do
-        allow_nil? false
-      end
-
+      argument :models, {:array, :map}
       argument :engines, {:array, :map}
       argument :carburetors, {:array, :map}
       argument :clutches, {:array, :map}
@@ -26,15 +22,15 @@ defmodule Garage.Mopeds.Manufacturer do
       argument :ignitions, {:array, :map}
       argument :pulleys, {:array, :map}
       argument :variators, {:array, :map}
+      argument :exhausts, {:array, :map}
+      argument :forks, {:array, :map}
+      argument :wheels, {:array, :map}
+      argument :cylinders, {:array, :map}
 
       argument :categories, {:array, :atom} do
         allow_nil? false
       end
 
-      argument :exhausts, {:array, :map}
-      argument :forks, {:array, :map}
-      argument :wheels, {:array, :map}
-      argument :cylinders, {:array, :map}
       change set_attribute(:categories, arg(:categories))
       change set_attribute(:name, arg(:name))
       change Garage.Changes.SetSlug
@@ -85,7 +81,7 @@ defmodule Garage.Mopeds.Manufacturer do
     define :by_category, args: [:category], action: :by_category
   end
 
-  @categories ~w(carburetor clutch crank cylinder engine exhaust forks ignition moped pulley variator wheels)a
+  @categories ~w(carburetors clutches cranks cylinders engines exhausts forks ignitions mopeds pulleys variators wheels)a
   attributes do
     uuid_primary_key :id
     attribute :name, :string, allow_nil?: false

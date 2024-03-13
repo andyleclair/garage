@@ -1,8 +1,10 @@
 {
   "name": "Glockner",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Standard"
+    }
   ],
   "forks": [
     {
@@ -14,36 +16,18 @@
       "name": "Standard Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Standard Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Standard Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Standard"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

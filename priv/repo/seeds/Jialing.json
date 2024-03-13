@@ -1,8 +1,40 @@
 {
   "name": "Jialing",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "CJ50F"
+    },
+    {
+      "name": "CJ50ZC"
+    },
+    {
+      "name": "JH50"
+    },
+    {
+      "name": "JL36PL"
+    },
+    {
+      "name": "JL36PL-A"
+    },
+    {
+      "name": "NP Passport"
+    },
+    {
+      "name": "NP50-GL"
+    },
+    {
+      "name": "NP50-GS"
+    },
+    {
+      "name": "NP50-MA"
+    },
+    {
+      "name": "NP50T-M"
+    },
+    {
+      "name": "TN35L"
+    }
   ],
   "forks": [
     {
@@ -74,51 +106,6 @@
       "name": "CJ50F Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "TN35L Stock Cylinder"
-    },
-    {
-      "name": "NP50T-M Stock Cylinder"
-    },
-    {
-      "name": "NP50-MA Stock Cylinder"
-    },
-    {
-      "name": "NP50-GS Stock Cylinder"
-    },
-    {
-      "name": "NP50-GL Stock Cylinder"
-    },
-    {
-      "name": "NP Passport Stock Cylinder"
-    },
-    {
-      "name": "JL36PL-A Stock Cylinder"
-    },
-    {
-      "name": "JL36PL Stock Cylinder"
-    },
-    {
-      "name": "JH50 Stock Cylinder"
-    },
-    {
-      "name": "CJ50ZC Stock Cylinder"
-    },
-    {
-      "name": "CJ50F Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "TN35L Stock Exhaust"
@@ -154,46 +141,13 @@
       "name": "CJ50F Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "CJ50F"
-    },
-    {
-      "name": "CJ50ZC"
-    },
-    {
-      "name": "JH50"
-    },
-    {
-      "name": "JL36PL"
-    },
-    {
-      "name": "JL36PL-A"
-    },
-    {
-      "name": "NP Passport"
-    },
-    {
-      "name": "NP50-GL"
-    },
-    {
-      "name": "NP50-GS"
-    },
-    {
-      "name": "NP50-MA"
-    },
-    {
-      "name": "NP50T-M"
-    },
-    {
-      "name": "TN35L"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

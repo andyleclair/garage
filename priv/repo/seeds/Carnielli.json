@@ -1,8 +1,10 @@
 {
   "name": "Carnielli",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Moto-G"
+    }
   ],
   "forks": [
     {
@@ -14,36 +16,18 @@
       "name": "Moto-G Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Moto-G Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Moto-G Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Moto-G"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

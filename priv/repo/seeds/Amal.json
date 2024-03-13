@@ -1,0 +1,23 @@
+{
+  "carburetors": [
+    {
+      "name": "19mm"
+    },
+    {
+      "name": "17mm"
+    },
+    {
+      "name": "16mm"
+    },
+    {
+      "name": "15mm"
+    }
+  ],
+  "categories": [
+    "carburetors"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [],
+  "name": "Amal"
+}

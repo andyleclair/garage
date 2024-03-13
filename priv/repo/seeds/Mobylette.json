@@ -1,8 +1,178 @@
 {
   "name": "Mobylette",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "AV49"
+    },
+    {
+      "name": "D55T"
+    },
+    {
+      "name": "AV188"
+    },
+    {
+      "name": "AV42"
+    },
+    {
+      "name": "AV98E"
+    },
+    {
+      "name": "MIPRT"
+    },
+    {
+      "name": "AV32S"
+    },
+    {
+      "name": "S35"
+    },
+    {
+      "name": "AV98SP"
+    },
+    {
+      "name": "AV98"
+    },
+    {
+      "name": "Kaptein"
+    },
+    {
+      "name": "AV68"
+    },
+    {
+      "name": "SP50R"
+    },
+    {
+      "name": "SP50"
+    },
+    {
+      "name": "SP94TJE"
+    },
+    {
+      "name": "S35b"
+    },
+    {
+      "name": "AV32E"
+    },
+    {
+      "name": "AV92"
+    },
+    {
+      "name": "AV50"
+    },
+    {
+      "name": "SPTT"
+    },
+    {
+      "name": "AV32M"
+    },
+    {
+      "name": "AV89"
+    },
+    {
+      "name": "AV84"
+    },
+    {
+      "name": "AV51"
+    },
+    {
+      "name": "AV65"
+    },
+    {
+      "name": "Moby Club"
+    },
+    {
+      "name": "AV48"
+    },
+    {
+      "name": "AV41"
+    },
+    {
+      "name": "AV3"
+    },
+    {
+      "name": "SP93TT"
+    },
+    {
+      "name": "AV78"
+    },
+    {
+      "name": "AV88"
+    },
+    {
+      "name": "AV54"
+    },
+    {
+      "name": "AV46"
+    },
+    {
+      "name": "AV56"
+    },
+    {
+      "name": "SP94TJ"
+    },
+    {
+      "name": "AV33"
+    },
+    {
+      "name": "SP95"
+    },
+    {
+      "name": "AV85"
+    },
+    {
+      "name": "SP96"
+    },
+    {
+      "name": "SP93"
+    },
+    {
+      "name": "AV43"
+    },
+    {
+      "name": "D55"
+    },
+    {
+      "name": "MIP"
+    },
+    {
+      "name": "MIPR"
+    },
+    {
+      "name": "AV42M"
+    },
+    {
+      "name": "AV87"
+    },
+    {
+      "name": "SPTTE"
+    },
+    {
+      "name": "AV31"
+    },
+    {
+      "name": "AV70"
+    },
+    {
+      "name": "Moby Cross"
+    },
+    {
+      "name": "AV37"
+    },
+    {
+      "name": "AV79"
+    },
+    {
+      "name": "AV44"
+    },
+    {
+      "name": "AV55"
+    },
+    {
+      "name": "AV76"
+    },
+    {
+      "name": "AV59"
+    }
   ],
   "forks": [
     {
@@ -350,189 +520,6 @@
       "name": "AV49 Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "AV59 Stock Cylinder"
-    },
-    {
-      "name": "AV76 Stock Cylinder"
-    },
-    {
-      "name": "AV55 Stock Cylinder"
-    },
-    {
-      "name": "AV44 Stock Cylinder"
-    },
-    {
-      "name": "AV79 Stock Cylinder"
-    },
-    {
-      "name": "AV37 Stock Cylinder"
-    },
-    {
-      "name": "Moby Cross Stock Cylinder"
-    },
-    {
-      "name": "AV70 Stock Cylinder"
-    },
-    {
-      "name": "AV31 Stock Cylinder"
-    },
-    {
-      "name": "SPTTE Stock Cylinder"
-    },
-    {
-      "name": "AV87 Stock Cylinder"
-    },
-    {
-      "name": "AV42M Stock Cylinder"
-    },
-    {
-      "name": "MIPR Stock Cylinder"
-    },
-    {
-      "name": "MIP Stock Cylinder"
-    },
-    {
-      "name": "D55 Stock Cylinder"
-    },
-    {
-      "name": "AV43 Stock Cylinder"
-    },
-    {
-      "name": "SP93 Stock Cylinder"
-    },
-    {
-      "name": "SP96 Stock Cylinder"
-    },
-    {
-      "name": "AV85 Stock Cylinder"
-    },
-    {
-      "name": "SP95 Stock Cylinder"
-    },
-    {
-      "name": "AV33 Stock Cylinder"
-    },
-    {
-      "name": "SP94TJ Stock Cylinder"
-    },
-    {
-      "name": "AV56 Stock Cylinder"
-    },
-    {
-      "name": "AV46 Stock Cylinder"
-    },
-    {
-      "name": "AV54 Stock Cylinder"
-    },
-    {
-      "name": "AV88 Stock Cylinder"
-    },
-    {
-      "name": "AV78 Stock Cylinder"
-    },
-    {
-      "name": "SP93TT Stock Cylinder"
-    },
-    {
-      "name": "AV3 Stock Cylinder"
-    },
-    {
-      "name": "AV41 Stock Cylinder"
-    },
-    {
-      "name": "AV48 Stock Cylinder"
-    },
-    {
-      "name": "Moby Club Stock Cylinder"
-    },
-    {
-      "name": "AV65 Stock Cylinder"
-    },
-    {
-      "name": "AV51 Stock Cylinder"
-    },
-    {
-      "name": "AV84 Stock Cylinder"
-    },
-    {
-      "name": "AV89 Stock Cylinder"
-    },
-    {
-      "name": "AV32M Stock Cylinder"
-    },
-    {
-      "name": "SPTT Stock Cylinder"
-    },
-    {
-      "name": "AV50 Stock Cylinder"
-    },
-    {
-      "name": "AV92 Stock Cylinder"
-    },
-    {
-      "name": "AV32E Stock Cylinder"
-    },
-    {
-      "name": "S35b Stock Cylinder"
-    },
-    {
-      "name": "SP94TJE Stock Cylinder"
-    },
-    {
-      "name": "SP50 Stock Cylinder"
-    },
-    {
-      "name": "SP50R Stock Cylinder"
-    },
-    {
-      "name": "AV68 Stock Cylinder"
-    },
-    {
-      "name": "Kaptein Stock Cylinder"
-    },
-    {
-      "name": "AV98 Stock Cylinder"
-    },
-    {
-      "name": "AV98SP Stock Cylinder"
-    },
-    {
-      "name": "S35 Stock Cylinder"
-    },
-    {
-      "name": "AV32S Stock Cylinder"
-    },
-    {
-      "name": "MIPRT Stock Cylinder"
-    },
-    {
-      "name": "AV98E Stock Cylinder"
-    },
-    {
-      "name": "AV42 Stock Cylinder"
-    },
-    {
-      "name": "AV188 Stock Cylinder"
-    },
-    {
-      "name": "D55T Stock Cylinder"
-    },
-    {
-      "name": "AV49 Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "AV59 Stock Exhaust"
@@ -706,184 +693,13 @@
       "name": "AV49 Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "AV49"
-    },
-    {
-      "name": "D55T"
-    },
-    {
-      "name": "AV188"
-    },
-    {
-      "name": "AV42"
-    },
-    {
-      "name": "AV98E"
-    },
-    {
-      "name": "MIPRT"
-    },
-    {
-      "name": "AV32S"
-    },
-    {
-      "name": "S35"
-    },
-    {
-      "name": "AV98SP"
-    },
-    {
-      "name": "AV98"
-    },
-    {
-      "name": "Kaptein"
-    },
-    {
-      "name": "AV68"
-    },
-    {
-      "name": "SP50R"
-    },
-    {
-      "name": "SP50"
-    },
-    {
-      "name": "SP94TJE"
-    },
-    {
-      "name": "S35b"
-    },
-    {
-      "name": "AV32E"
-    },
-    {
-      "name": "AV92"
-    },
-    {
-      "name": "AV50"
-    },
-    {
-      "name": "SPTT"
-    },
-    {
-      "name": "AV32M"
-    },
-    {
-      "name": "AV89"
-    },
-    {
-      "name": "AV84"
-    },
-    {
-      "name": "AV51"
-    },
-    {
-      "name": "AV65"
-    },
-    {
-      "name": "Moby Club"
-    },
-    {
-      "name": "AV48"
-    },
-    {
-      "name": "AV41"
-    },
-    {
-      "name": "AV3"
-    },
-    {
-      "name": "SP93TT"
-    },
-    {
-      "name": "AV78"
-    },
-    {
-      "name": "AV88"
-    },
-    {
-      "name": "AV54"
-    },
-    {
-      "name": "AV46"
-    },
-    {
-      "name": "AV56"
-    },
-    {
-      "name": "SP94TJ"
-    },
-    {
-      "name": "AV33"
-    },
-    {
-      "name": "SP95"
-    },
-    {
-      "name": "AV85"
-    },
-    {
-      "name": "SP96"
-    },
-    {
-      "name": "SP93"
-    },
-    {
-      "name": "AV43"
-    },
-    {
-      "name": "D55"
-    },
-    {
-      "name": "MIP"
-    },
-    {
-      "name": "MIPR"
-    },
-    {
-      "name": "AV42M"
-    },
-    {
-      "name": "AV87"
-    },
-    {
-      "name": "SPTTE"
-    },
-    {
-      "name": "AV31"
-    },
-    {
-      "name": "AV70"
-    },
-    {
-      "name": "Moby Cross"
-    },
-    {
-      "name": "AV37"
-    },
-    {
-      "name": "AV79"
-    },
-    {
-      "name": "AV44"
-    },
-    {
-      "name": "AV55"
-    },
-    {
-      "name": "AV76"
-    },
-    {
-      "name": "AV59"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

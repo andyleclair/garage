@@ -1,8 +1,49 @@
 {
   "name": "Berini",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Berinette"
+    },
+    {
+      "name": "Corona"
+    },
+    {
+      "name": "Eko"
+    },
+    {
+      "name": "F55"
+    },
+    {
+      "name": "Jeunesse"
+    },
+    {
+      "name": "M13"
+    },
+    {
+      "name": "M19"
+    },
+    {
+      "name": "M21"
+    },
+    {
+      "name": "M21 Sport"
+    },
+    {
+      "name": "M23"
+    },
+    {
+      "name": "M31"
+    },
+    {
+      "name": "M35"
+    },
+    {
+      "name": "M48"
+    },
+    {
+      "name": "Miniped"
+    }
   ],
   "forks": [
     {
@@ -92,60 +133,6 @@
       "name": "Berinette Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Miniped Stock Cylinder"
-    },
-    {
-      "name": "M48 Stock Cylinder"
-    },
-    {
-      "name": "M35 Stock Cylinder"
-    },
-    {
-      "name": "M31 Stock Cylinder"
-    },
-    {
-      "name": "M23 Stock Cylinder"
-    },
-    {
-      "name": "M21 Sport Stock Cylinder"
-    },
-    {
-      "name": "M21 Stock Cylinder"
-    },
-    {
-      "name": "M19 Stock Cylinder"
-    },
-    {
-      "name": "M13 Stock Cylinder"
-    },
-    {
-      "name": "Jeunesse Stock Cylinder"
-    },
-    {
-      "name": "F55 Stock Cylinder"
-    },
-    {
-      "name": "Eko Stock Cylinder"
-    },
-    {
-      "name": "Corona Stock Cylinder"
-    },
-    {
-      "name": "Berinette Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Miniped Stock Exhaust"
@@ -190,55 +177,13 @@
       "name": "Berinette Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Berinette"
-    },
-    {
-      "name": "Corona"
-    },
-    {
-      "name": "Eko"
-    },
-    {
-      "name": "F55"
-    },
-    {
-      "name": "Jeunesse"
-    },
-    {
-      "name": "M13"
-    },
-    {
-      "name": "M19"
-    },
-    {
-      "name": "M21"
-    },
-    {
-      "name": "M21 Sport"
-    },
-    {
-      "name": "M23"
-    },
-    {
-      "name": "M31"
-    },
-    {
-      "name": "M35"
-    },
-    {
-      "name": "M48"
-    },
-    {
-      "name": "Miniped"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

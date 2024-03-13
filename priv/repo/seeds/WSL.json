@@ -1,0 +1,17 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Circuit for Puch"
+    },
+    {
+      "name": "Honda Circuit"
+    }
+  ],
+  "name": "WSL"
+}

@@ -1,8 +1,55 @@
 {
   "name": "Columbia",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "2241"
+    },
+    {
+      "name": "2251"
+    },
+    {
+      "name": "57062"
+    },
+    {
+      "name": "Commuter"
+    },
+    {
+      "name": "Commuter 2220"
+    },
+    {
+      "name": "Commuter 2240"
+    },
+    {
+      "name": "Commuter 2250"
+    },
+    {
+      "name": "Commuter I"
+    },
+    {
+      "name": "Imperial"
+    },
+    {
+      "name": "Medallion 2271"
+    },
+    {
+      "name": "Medallion 2280"
+    },
+    {
+      "name": "Mediallion 2281"
+    },
+    {
+      "name": "Motrek"
+    },
+    {
+      "name": "Open Road"
+    },
+    {
+      "name": "Traveller I"
+    },
+    {
+      "name": "Western Flyer"
+    }
   ],
   "forks": [
     {
@@ -104,66 +151,6 @@
       "name": "2241 Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Western Flyer Stock Cylinder"
-    },
-    {
-      "name": "Traveller I Stock Cylinder"
-    },
-    {
-      "name": "Open Road Stock Cylinder"
-    },
-    {
-      "name": "Motrek Stock Cylinder"
-    },
-    {
-      "name": "Mediallion 2281 Stock Cylinder"
-    },
-    {
-      "name": "Medallion 2280 Stock Cylinder"
-    },
-    {
-      "name": "Medallion 2271 Stock Cylinder"
-    },
-    {
-      "name": "Imperial Stock Cylinder"
-    },
-    {
-      "name": "Commuter I Stock Cylinder"
-    },
-    {
-      "name": "Commuter 2250 Stock Cylinder"
-    },
-    {
-      "name": "Commuter 2240 Stock Cylinder"
-    },
-    {
-      "name": "Commuter 2220 Stock Cylinder"
-    },
-    {
-      "name": "Commuter Stock Cylinder"
-    },
-    {
-      "name": "57062 Stock Cylinder"
-    },
-    {
-      "name": "2251 Stock Cylinder"
-    },
-    {
-      "name": "2241 Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Western Flyer Stock Exhaust"
@@ -214,61 +201,13 @@
       "name": "2241 Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "2241"
-    },
-    {
-      "name": "2251"
-    },
-    {
-      "name": "57062"
-    },
-    {
-      "name": "Commuter"
-    },
-    {
-      "name": "Commuter 2220"
-    },
-    {
-      "name": "Commuter 2240"
-    },
-    {
-      "name": "Commuter 2250"
-    },
-    {
-      "name": "Commuter I"
-    },
-    {
-      "name": "Imperial"
-    },
-    {
-      "name": "Medallion 2271"
-    },
-    {
-      "name": "Medallion 2280"
-    },
-    {
-      "name": "Mediallion 2281"
-    },
-    {
-      "name": "Motrek"
-    },
-    {
-      "name": "Open Road"
-    },
-    {
-      "name": "Traveller I"
-    },
-    {
-      "name": "Western Flyer"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

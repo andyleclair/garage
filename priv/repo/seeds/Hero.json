@@ -1,0 +1,26 @@
+{
+  "carburetors": [],
+  "categories": [
+    "engines",
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 65,
+      "name": "Puch 65cc"
+    }
+  ],
+  "engines": [
+    {
+      "name": "Puch Kickstart"
+    },
+    {
+      "name": "Majestic Variated"
+    },
+    {
+      "name": "Majestic 1 Speed"
+    }
+  ],
+  "exhausts": [],
+  "name": "Hero"
+}

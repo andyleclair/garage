@@ -1,0 +1,50 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Calibrata"
+    },
+    {
+      "name": "for Ramzey Prestige"
+    },
+    {
+      "name": "for Puch"
+    },
+    {
+      "name": "for Peugeot SPX - Carbon Fiber Black"
+    },
+    {
+      "name": "for Peugeot SPX - Carbon Fiber"
+    },
+    {
+      "name": "Adjustable for Peugeot SPX"
+    },
+    {
+      "name": "Circuit for Peugeot"
+    },
+    {
+      "name": "for Peugeot - Black Carbon Fiber"
+    },
+    {
+      "name": "for Peugeot - Auto Adjustable"
+    },
+    {
+      "name": "for Motobecane - Carbon Fiber"
+    },
+    {
+      "name": "for Motobecane - Auto Adjustable"
+    },
+    {
+      "name": "for Motobecane"
+    },
+    {
+      "name": "Honda Wallaroo"
+    }
+  ],
+  "name": "Simonini"
+}

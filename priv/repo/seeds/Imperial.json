@@ -1,0 +1,15 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 80,
+      "name": "Minarelli V1 80cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "Imperial"
+}

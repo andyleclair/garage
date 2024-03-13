@@ -1,8 +1,28 @@
 {
   "name": "Union Holland",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Boomerang"
+    },
+    {
+      "name": "Polaris"
+    },
+    {
+      "name": "Roulette"
+    },
+    {
+      "name": "Sport-o-Matic"
+    },
+    {
+      "name": "Tourist"
+    },
+    {
+      "name": "Union Pantalette"
+    },
+    {
+      "name": "Union Super Sport"
+    }
   ],
   "forks": [
     {
@@ -50,39 +70,6 @@
       "name": "Boomerang Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Union Super Sport Stock Cylinder"
-    },
-    {
-      "name": "Union Pantalette Stock Cylinder"
-    },
-    {
-      "name": "Tourist Stock Cylinder"
-    },
-    {
-      "name": "Sport-o-Matic Stock Cylinder"
-    },
-    {
-      "name": "Roulette Stock Cylinder"
-    },
-    {
-      "name": "Polaris Stock Cylinder"
-    },
-    {
-      "name": "Boomerang Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Union Super Sport Stock Exhaust"
@@ -106,34 +93,13 @@
       "name": "Boomerang Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Boomerang"
-    },
-    {
-      "name": "Polaris"
-    },
-    {
-      "name": "Roulette"
-    },
-    {
-      "name": "Sport-o-Matic"
-    },
-    {
-      "name": "Tourist"
-    },
-    {
-      "name": "Union Pantalette"
-    },
-    {
-      "name": "Union Super Sport"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

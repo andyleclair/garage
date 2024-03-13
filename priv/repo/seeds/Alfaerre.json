@@ -1,0 +1,15 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 65,
+      "name": "Vespa 65cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "Alfaerre"
+}

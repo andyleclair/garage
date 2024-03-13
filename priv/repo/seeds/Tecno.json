@@ -1,0 +1,56 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Estoril for Vespa Piaggio"
+    },
+    {
+      "name": "Estoril for Tomos A35"
+    },
+    {
+      "name": "Boss for Tomos A35"
+    },
+    {
+      "name": "Bullet for Tomos A35"
+    },
+    {
+      "name": "Circuit for Tomos A3 A35 "
+    },
+    {
+      "name": "Boss for Tomos A3 A35"
+    },
+    {
+      "name": "Hunter for Puch"
+    },
+    {
+      "name": "Estoril for Puch"
+    },
+    {
+      "name": "Circuit for Puch"
+    },
+    {
+      "name": "Bullet for Puch"
+    },
+    {
+      "name": "Boss for Puch"
+    },
+    {
+      "name": "Estoril for Puch Side Bleed with Adjustable End Bleed - Flat Port"
+    },
+    {
+      "name": "Honda NSR"
+    },
+    {
+      "name": "Honda MB5"
+    },
+    {
+      "name": "for Honda Hobbit/Camino"
+    }
+  ],
+  "name": "Tecno"
+}

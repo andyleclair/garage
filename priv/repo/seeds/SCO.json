@@ -1,8 +1,13 @@
 {
   "name": "SCO",
   "engines": [],
-  "categories": [
-    "moped"
+  "models": [
+    {
+      "name": "Minor Grand"
+    },
+    {
+      "name": "Sprint GS"
+    }
   ],
   "forks": [
     {
@@ -20,24 +25,6 @@
       "name": "Minor Grand Stock Wheels"
     }
   ],
-  "clutches": [
-    {
-      "name": "Stock Clutch"
-    }
-  ],
-  "cranks": [
-    {
-      "name": "Stock Crank"
-    }
-  ],
-  "cylinders": [
-    {
-      "name": "Sprint GS Stock Cylinder"
-    },
-    {
-      "name": "Minor Grand Stock Cylinder"
-    }
-  ],
   "exhausts": [
     {
       "name": "Sprint GS Stock Exhaust"
@@ -46,19 +33,13 @@
       "name": "Minor Grand Stock Exhaust"
     }
   ],
-  "ignitions": [
-    {
-      "name": "Stock Ignition"
-    }
-  ],
-  "models": [
-    {
-      "name": "Minor Grand"
-    },
-    {
-      "name": "Sprint GS"
-    }
-  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

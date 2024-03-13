@@ -1,0 +1,51 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 65,
+      "name": "Vespa 65cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Tomos A35 70cc"
+    },
+    {
+      "displacement": 75,
+      "name": "Puch 75cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Puch 70cc -Big Port"
+    },
+    {
+      "displacement": 70,
+      "name": "Puch 70cc"
+    },
+    {
+      "displacement": 80,
+      "name": "Peugeot 80cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Peugeot 70cc"
+    },
+    {
+      "displacement": 75,
+      "name": "Motobecane AV7 75cc"
+    },
+    {
+      "displacement": 75,
+      "name": "Motobecane AV10 75cc"
+    },
+    {
+      "displacement": 70,
+      "name": "Honda 70cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "Parmakit"
+}

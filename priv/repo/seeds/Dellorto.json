@@ -1,40 +1,173 @@
 {
-  "name": "Dell'orto",
-  "categories": [
-    "carburetor"
-  ],
   "carburetors": [
     {
-      "size": 12,
-      "name": "12.12 SHA"
+      "name": "PHVA 17.5mm w/ E-choke"
     },
     {
-      "size": 14,
-      "name": "14.12 SHA"
+      "name": "PHVA 16 DS"
     },
     {
-      "size": 14,
-      "name": "14.14 SHA"
+      "name": "PHVA 14mm (Stock Tomos A55)"
     },
     {
-      "size": 15,
-      "name": "15.15 SHA"
+      "name": "PHBL 24mm"
     },
     {
-      "size": 16,
-      "name": "16.16 SHA"
+      "name": "PHBG 21mm BS -Leftside Controls"
     },
     {
-      "size": 17,
-      "name": "17mm PHVA"
+      "name": "PHBG 21mm AD -Rightside Controls"
     },
     {
-      "size": 19,
+      "name": "PHBG 21mm 75th Anniversary"
+    },
+    {
+      "name": "PHBG 19mm BD Polini"
+    },
+    {
+      "name": "PHBG 19mm AD -Clamp on"
+    },
+    {
+      "name": "PHBG 19mm -For Morini Motorcycle"
+    },
+    {
+      "name": "PHBG 15mm BD"
+    },
+    {
+      "name": "28mm VHST"
+    },
+    {
+      "name": "26mm"
+    },
+    {
+      "name": "24mm PHBL"
+    },
+    {
+      "name": "24mm"
+    },
+    {
+      "name": "21mm PHGB -Malossi"
+    },
+    {
+      "name": "21mm PHBG  -Red Racing Edition"
+    },
+    {
+      "name": "21mm PHBG  -Racing Edition"
+    },
+    {
+      "name": "21mm PHBG"
+    },
+    {
+      "name": "20mm PHBG"
+    },
+    {
+      "name": "19mm UA"
+    },
+    {
+      "name": "19mm PHBG Clone"
+    },
+    {
+      "name": "19mm PHBG -Racing Edition Clone"
+    },
+    {
+      "name": "19mm PHBG -Racing Edition"
+    },
+    {
+      "name": "19mm PHBG -Clone"
+    },
+    {
       "name": "19mm PHBG"
     },
     {
-      "size": 21,
-      "name": "21mm PHBG"
+      "name": "19mm  PHBG"
+    },
+    {
+      "name": "19.5mm PHBG"
+    },
+    {
+      "name": "18mm UA"
+    },
+    {
+      "name": "18mm PHBG"
+    },
+    {
+      "name": "17mm PHBG"
+    },
+    {
+      "name": "17.5mm PHVA"
+    },
+    {
+      "name": "17.5mm PHBG"
+    },
+    {
+      "name": "16mm UA"
+    },
+    {
+      "name": "16mm SHA"
+    },
+    {
+      "name": "16mm PHBG"
+    },
+    {
+      "name": "16.16 SHA -Lever Choke"
+    },
+    {
+      "name": "16.16 SHA -Lever"
+    },
+    {
+      "name": "16.16 SHA -Cable Choke"
+    },
+    {
+      "name": "16.16 SHA"
+    },
+    {
+      "name": "15mm SHA Clone"
+    },
+    {
+      "name": "15mm SHA -Clone"
+    },
+    {
+      "name": "15mm PHBG"
+    },
+    {
+      "name": "15.15 SHA -Lever Choke"
+    },
+    {
+      "name": "15.15 SHA -Cable Choke"
+    },
+    {
+      "name": "14mm SHA"
+    },
+    {
+      "name": "14mm PHVA"
+    },
+    {
+      "name": "14.14 SHA -Lever Choke"
+    },
+    {
+      "name": "14.12 SHA -Lever Choke"
+    },
+    {
+      "name": "13mm SHA Vespa"
+    },
+    {
+      "name": "12mm SHA Vespa"
+    },
+    {
+      "name": "12mm SHA"
+    },
+    {
+      "name": "12.12 SHA Vespa"
+    },
+    {
+      "name": "12.12 SHA -Cable Choke"
     }
-  ]
+  ],
+  "categories": [
+    "carburetors"
+  ],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [],
+  "name": "Dellorto"
 }

@@ -1,0 +1,15 @@
+{
+  "carburetors": [],
+  "categories": [
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 50,
+      "name": "Puch 50cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [],
+  "name": "Zeta"
+}

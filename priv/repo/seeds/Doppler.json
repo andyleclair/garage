@@ -1,0 +1,24 @@
+{
+  "carburetors": [],
+  "categories": [
+    "exhausts",
+    "clutches",
+    "cylinders"
+  ],
+  "cylinders": [
+    {
+      "displacement": 50,
+      "name": "Motobecane 50cc"
+    }
+  ],
+  "engines": [],
+  "exhausts": [
+    {
+      "name": "Peugeot"
+    },
+    {
+      "name": "Motobecane Pipe"
+    }
+  ],
+  "name": "Doppler"
+}
