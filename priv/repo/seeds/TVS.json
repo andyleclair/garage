@@ -18,6 +18,7 @@
     }
   ],
   "cylinders": [],
+  "clutches": [],
   "forks": [
     {
       "name": "Super Champ Stock Forks"
@@ -37,7 +38,6 @@
   "categories": [
     "mopeds"
   ],
-  "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],

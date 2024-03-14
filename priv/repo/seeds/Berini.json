@@ -90,6 +90,7 @@
     }
   ],
   "cylinders": [],
+  "clutches": [],
   "forks": [
     {
       "name": "Miniped Stock Forks"
@@ -181,7 +182,6 @@
   "categories": [
     "mopeds"
   ],
-  "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],

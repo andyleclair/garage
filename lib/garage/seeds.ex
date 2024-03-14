@@ -151,7 +151,8 @@ defmodule Garage.Seeds do
             "engines" => Map.get(parts, :engines, []),
             "carburetors" => Map.get(parts, :carburetors, []),
             "exhausts" => Map.get(parts, :exhausts, []),
-            "cylinders" => Map.get(parts, :cylinders, [])
+            "cylinders" => Map.get(parts, :cylinders, []),
+            "clutches" => Map.get(parts, :clutches, [])
           })
           |> then(fn rec ->
             Map.put(rec, "categories", record_to_categories(rec))
@@ -163,6 +164,7 @@ defmodule Garage.Seeds do
             "carburetors" => Map.get(parts, :carburetors, []),
             "exhausts" => Map.get(parts, :exhausts, []),
             "cylinders" => Map.get(parts, :cylinders, []),
+            "clutches" => Map.get(parts, :clutches, []),
             "categories" => record_to_categories(parts)
           }
         end

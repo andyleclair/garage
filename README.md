@@ -51,6 +51,7 @@
 - [ ] Logo
 - [ ] Atomic design
 - [ ] Add signed up users to mailing list
+- [ ] Caching
 
 ### Installation
 

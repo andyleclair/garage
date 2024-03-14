@@ -12,6 +12,7 @@
     }
   ],
   "cylinders": [],
+  "clutches": [],
   "forks": [
     {
       "name": "50SH Stock Forks"
@@ -25,7 +26,6 @@
   "categories": [
     "mopeds"
   ],
-  "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],

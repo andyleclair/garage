@@ -9,6 +9,7 @@
     "exhausts",
     "cylinders"
   ],
+  "clutches": [],
   "cylinders": [
     {
       "displacement": 65,

@@ -54,6 +54,7 @@
     }
   ],
   "cylinders": [],
+  "clutches": [],
   "forks": [
     {
       "name": "Weekend Cross Stock Forks"
@@ -109,7 +110,6 @@
   "categories": [
     "mopeds"
   ],
-  "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],

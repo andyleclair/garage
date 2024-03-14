@@ -78,6 +78,7 @@
     }
   ],
   "cylinders": [],
+  "clutches": [],
   "forks": [
     {
       "name": "Zum 3 Stock Forks"
@@ -157,7 +158,6 @@
   "categories": [
     "mopeds"
   ],
-  "clutches": [],
   "cranks": [],
   "ignitions": [],
   "pulleys": [],

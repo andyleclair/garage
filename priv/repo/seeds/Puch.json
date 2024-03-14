@@ -1,13 +1,33 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "cylinders",
     "engines",
     "forks",
     "mopeds",
     "wheels"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "Superclutch"
+    },
+    {
+      "name": "E50 Stock Kickstart"
+    },
+    {
+      "name": "E50 Stock 2-Shoe"
+    },
+    {
+      "name": "E50 Stock 2-Shoe"
+    },
+    {
+      "name": "E50 Stock 2-Shoe"
+    },
+    {
+      "name": "3 Shoe Adjustable Race Clutch"
+    }
+  ],
   "cranks": [],
   "cylinders": [
     {

@@ -5,6 +5,11 @@
     "cylinders",
     "clutches"
   ],
+  "clutches": [
+    {
+      "name": "Clutch Pulley"
+    }
+  ],
   "cylinders": [
     {
       "displacement": 50,

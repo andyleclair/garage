@@ -3,6 +3,20 @@
   "categories": [
     "clutches"
   ],
+  "clutches": [
+    {
+      "name": "Puch E50 Hammer"
+    },
+    {
+      "name": "Minarelli Hammer"
+    },
+    {
+      "name": "Garelli NOI Hammer"
+    },
+    {
+      "name": "Garelli NOI Hammer"
+    }
+  ],
   "cylinders": [],
   "engines": [],
   "exhausts": [],

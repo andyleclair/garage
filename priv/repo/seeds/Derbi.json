@@ -6,12 +6,17 @@
   ],
   "categories": [
     "carburetors",
+    "clutches",
     "engines",
     "forks",
     "mopeds",
     "wheels"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "TJT Race Clutch"
+    }
+  ],
   "cranks": [],
   "cylinders": [],
   "engines": [

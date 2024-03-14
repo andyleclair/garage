@@ -7,6 +7,11 @@
     "cranks",
     "ignitions"
   ],
+  "clutches": [
+    {
+      "name": "Stock Clutch W/ Blue Springs"
+    }
+  ],
   "cylinders": [
     {
       "displacement": 50,

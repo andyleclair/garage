@@ -94,12 +94,12 @@ defmodule GarageWeb.BuildsLive.New do
   end
 
   @impl true
-  def handle_event("set-default", %{"id" => id, "field" => field}, socket) do
-    case field do
-      "form_manufacturer_id" ->
+  def handle_event("set-default", %{"id" => id}, socket) do
+    case id do
+      "form_manufacturer_id" <> _ ->
         send_update(LiveSelect.Component, options: socket.assigns.manufacturer_options, id: id)
 
-      "form_model_id" ->
+      "form_model_id" <> _ ->
         send_update(LiveSelect.Component, options: socket.assigns.model_options, id: id)
     end
 

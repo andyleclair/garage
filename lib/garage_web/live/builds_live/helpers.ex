@@ -5,6 +5,10 @@ defmodule GarageWeb.BuildsLive.Helpers do
   alias AshPhoenix.Form
   alias Garage.Mopeds.Manufacturer
   alias Garage.Mopeds.Model
+  alias Garage.Mopeds.Carburetor
+  alias Garage.Mopeds.Engine
+  alias Garage.Mopeds.Clutch
+  alias Garage.Mopeds.Exhaust
 
   def form_manufacturer_id(form) do
     case Form.value(form, :manufacturer_id) do
@@ -24,9 +28,34 @@ defmodule GarageWeb.BuildsLive.Helpers do
   end
 
   def manufacturer_options() do
-    for manufacturer <- Manufacturer.read_all!(),
+    for manufacturer <- Manufacturer.by_category!(:mopeds),
         into: [],
         do: {manufacturer.name, manufacturer.id}
+  end
+
+  # TODO: Load just the manufacturer name instead of the whole thing
+  def carburetor_options() do
+    for carburetor <- Carburetor.read_all!(load: [:manufacturer]),
+        into: [],
+        do: {"#{carburetor.manufacturer.name} #{carburetor.name}", carburetor.id}
+  end
+
+  def engine_options() do
+    for engine <- Engine.read_all!(load: [:manufacturer]),
+        into: [],
+        do: {"#{engine.manufacturer.name} #{engine.name}", engine.id}
+  end
+
+  def clutch_options() do
+    for clutch <- Clutch.read_all!(load: [:manufacturer]),
+        into: [],
+        do: {"#{clutch.manufacturer.name} #{clutch.name}", clutch.id}
+  end
+
+  def exhaust_options() do
+    for exhaust <- Exhaust.read_all!(load: [:manufacturer]),
+        into: [],
+        do: {"#{exhaust.manufacturer.name} #{exhaust.name}", exhaust.id}
   end
 
   def model_options_by_id(manufacturer_id) do

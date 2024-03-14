@@ -1,11 +1,10 @@
 defmodule GarageWeb.BuildsLive.Edit do
-  alias Garage.Mopeds.Carburetor
-  alias Garage.Builds.Build
   use GarageWeb, :live_view
 
   alias AshPhoenix.Form
   alias ExAws.S3
   alias Garage.Builds
+  alias Garage.Builds.Build
   import GarageWeb.BuildsLive.Helpers
 
   @impl true
@@ -42,13 +41,33 @@ defmodule GarageWeb.BuildsLive.Edit do
           <% end %>
         </div>
       </div>
-      <.live_component
-        module={GarageWeb.Components.LiveSelectPlus}
-        label="Carburetor"
-        id="carburetor-select"
+      <.live_select
+        label="Engine"
         debounce="250"
+        phx-focus="set-default"
+        field={@form[:engine_id]}
+        options={@engine_options}
+      />
+      <.live_select
+        label="Carburetor"
+        debounce="250"
+        phx-focus="set-default"
         field={@form[:carburetor_id]}
-        search_fn={&search_carburetors/1}
+        options={@carburetor_options}
+      />
+      <.live_select
+        label="Clutch"
+        debounce="250"
+        phx-focus="set-default"
+        field={@form[:clutch_id]}
+        options={@clutch_options}
+      />
+      <.live_select
+        label="Exhaust"
+        debounce="250"
+        phx-focus="set-default"
+        field={@form[:exhaust_id]}
+        options={@exhaust_options}
       />
       <.input field={@form[:description]} type="hidden" label="Description" id="trix-editor" />
       <div id="rich-text" phx-update="ignore">
@@ -212,6 +231,10 @@ defmodule GarageWeb.BuildsLive.Edit do
 
       year_options = year_options()
       manufacturer_options = manufacturer_options()
+      carburetor_options = carburetor_options()
+      engine_options = engine_options()
+      clutch_options = clutch_options()
+      exhaust_options = exhaust_options()
 
       # if we already have a manufacturer set, show the model dropdown
       model_options =
@@ -231,6 +254,10 @@ defmodule GarageWeb.BuildsLive.Edit do
        |> assign(:images, images)
        |> assign(:images_to_delete, [])
        |> assign(:model_options, model_options)
+       |> assign(:carburetor_options, carburetor_options)
+       |> assign(:engine_options, engine_options)
+       |> assign(:clutch_options, clutch_options)
+       |> assign(:exhaust_options, exhaust_options)
        |> assign(:year_options, year_options)
        |> assign_form(form)
        |> allow_upload(:image_urls, accept: ~w(.jpg .jpeg .webp .png), max_entries: 10)}
@@ -262,30 +289,34 @@ defmodule GarageWeb.BuildsLive.Edit do
     {:noreply, assign(socket, :images, new_images)}
   end
 
-  @impl true
-  def handle_event("live_select_change", %{"id" => id, "text" => text, "field" => field}, socket) do
-    options =
-      case field do
-        "form_manufacturer_id" -> search_options(socket.assigns.manufacturer_options, text)
-        "form_model_id" -> search_options(socket.assigns.model_options, text)
-      end
+  # Liveselect boilerplate. We do a little codegen
+  for select <- ["manufacturer", "model", "carburetor", "engine", "clutch", "exhaust"] do
+    @impl true
+    def handle_event(
+          "live_select_change",
+          %{"id" => id, "text" => text, "field" => "form_" <> unquote(select) <> "_id"},
+          socket
+        ) do
+      options =
+        search_options(
+          Map.get(socket.assigns, String.to_existing_atom(unquote(select) <> "_options")),
+          text
+        )
 
-    send_update(LiveSelect.Component, options: options, id: id)
+      send_update(LiveSelect.Component, options: options, id: id)
 
-    {:noreply, socket}
-  end
-
-  @impl true
-  def handle_event("set-default", %{"id" => id, "field" => field}, socket) do
-    case field do
-      "form_manufacturer_id" ->
-        send_update(LiveSelect.Component, options: socket.assigns.manufacturer_options, id: id)
-
-      "form_model_id" ->
-        send_update(LiveSelect.Component, options: socket.assigns.model_options, id: id)
+      {:noreply, socket}
     end
 
-    {:noreply, socket}
+    @impl true
+    def handle_event("set-default", %{"id" => "form_" <> unquote(select) <> _ = id}, socket) do
+      send_update(LiveSelect.Component,
+        options: Map.get(socket.assigns, String.to_existing_atom(unquote(select) <> "_options")),
+        id: id
+      )
+
+      {:noreply, socket}
+    end
   end
 
   @impl true
@@ -307,7 +338,7 @@ defmodule GarageWeb.BuildsLive.Edit do
         "save",
         %{"form" => form},
         %{
-          assigns: %{images: images, action: action, images_to_delete: images_to_delete}
+          assigns: %{images: images, images_to_delete: images_to_delete}
         } = socket
       ) do
     uploaded_files =
@@ -342,10 +373,16 @@ defmodule GarageWeb.BuildsLive.Edit do
     image_urls = (image_urls -- images_to_delete) ++ uploaded_files
     form = Map.put(form, :image_urls, image_urls)
 
-    save_build(socket, action, form)
+    save_build(socket, form)
   end
 
-  defp save_build(socket, :edit, params) do
+  # Handle not having to deal with images
+  @impl true
+  def handle_event("save", %{"form" => params}, socket) do
+    save_build(socket, params)
+  end
+
+  defp save_build(socket, params) do
     case Form.submit(socket.assigns.form, params: params) do
       {:ok, build} ->
         {:noreply,
@@ -356,9 +393,5 @@ defmodule GarageWeb.BuildsLive.Edit do
       {:error, form} ->
         {:noreply, assign_form(socket, form)}
     end
-  end
-
-  def search_carburetors(search) do
-    Carburetor.search(search)
   end
 end

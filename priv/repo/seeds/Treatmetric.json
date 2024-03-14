@@ -3,6 +3,11 @@
   "categories": [
     "clutches"
   ],
+  "clutches": [
+    {
+      "name": "Puch E50 Jammer Clutch"
+    }
+  ],
   "cylinders": [],
   "engines": [],
   "exhausts": [],

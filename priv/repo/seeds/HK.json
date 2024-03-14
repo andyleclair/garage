@@ -3,6 +3,11 @@
   "categories": [
     "clutches"
   ],
+  "clutches": [
+    {
+      "name": "Race Clutch"
+    }
+  ],
   "cylinders": [],
   "engines": [],
   "exhausts": [],
