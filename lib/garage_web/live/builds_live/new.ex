@@ -4,6 +4,8 @@ defmodule GarageWeb.BuildsLive.New do
   alias AshPhoenix.Form
   alias Garage.Builds
   alias Garage.Builds.Build
+  alias Garage.Mopeds.Manufacturer
+  alias Garage.Mopeds.Model
   import GarageWeb.BuildsLive.Helpers
 
   @impl true
@@ -136,5 +138,15 @@ defmodule GarageWeb.BuildsLive.New do
       {:error, form} ->
         {:noreply, assign_form(socket, form)}
     end
+  end
+
+  def manufacturer_options() do
+    for manufacturer <- Manufacturer.by_category!(:mopeds),
+        into: [],
+        do: {manufacturer.name, manufacturer.id}
+  end
+
+  def model_options_by_id(manufacturer_id) do
+    for model <- Model.by_manufacturer_id!(manufacturer_id), into: [], do: {model.name, model.id}
   end
 end

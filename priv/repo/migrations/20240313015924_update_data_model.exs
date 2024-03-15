@@ -15,7 +15,7 @@ defmodule Garage.Repo.Migrations.UpdateDataModel do
     alter table(:cylinders) do
       # Attribute removal has been commented out to avoid data loss. See the migration generator documentation for more
       # If you uncomment this, be sure to also uncomment the corresponding attribute *addition* in the `down` migration
-      # remove :engine_id
+      remove :engine_id
 
       add :bore, :bigint
     end
@@ -28,9 +28,9 @@ defmodule Garage.Repo.Migrations.UpdateDataModel do
     alter table(:carburetors) do
       # Attribute removal has been commented out to avoid data loss. See the migration generator documentation for more
       # If you uncomment this, be sure to also uncomment the corresponding attribute *addition* in the `down` migration
-      # remove :size
+      remove :size
 
-      modify :jets, {:array, :text}, default: nil
+      modify :jets, {:array, :text}, default: fragment("array['main']")
     end
   end
 
@@ -42,7 +42,7 @@ defmodule Garage.Repo.Migrations.UpdateDataModel do
       #     remove :size
       #
 
-      # add :size, :text
+      add :size, :text
     end
 
     alter table(:cranks) do
@@ -57,7 +57,13 @@ defmodule Garage.Repo.Migrations.UpdateDataModel do
       #     remove :engine_id
       #
 
-      # add :engine_id, references(:engines, column: :id, name: "cylinders_engine_id_fkey", type: :uuid, prefix: "public")
+      add :engine_id,
+          references(:engines,
+            column: :id,
+            name: "cylinders_engine_id_fkey",
+            type: :uuid,
+            prefix: "public"
+          )
     end
 
     alter table(:engines) do
@@ -65,3 +71,4 @@ defmodule Garage.Repo.Migrations.UpdateDataModel do
     end
   end
 end
+

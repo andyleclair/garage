@@ -6,16 +6,6 @@ defmodule Garage.Mopeds.Carburetor do
   actions do
     defaults [:create, :read, :update, :destroy]
 
-    read :by_id do
-      # This action has one argument :id of type :uuid
-      argument :id, :uuid, allow_nil?: false
-      # Tells us we expect this action to return a single result
-      get? true
-      # Filters the `:id` given in the argument
-      # against the `id` of each element in the resource
-      filter expr(id == ^arg(:id))
-    end
-
     read :search do
       argument :query, :string, allow_nil?: false
 
@@ -28,7 +18,7 @@ defmodule Garage.Mopeds.Carburetor do
     define :read_all, action: :read
     define :update, action: :update
     define :destroy, action: :destroy
-    define :get_by_id, args: [:id], action: :by_id
+    define :get_by_id, action: :read, get_by: :id
     define :search, args: [:query], action: :search
   end
 
