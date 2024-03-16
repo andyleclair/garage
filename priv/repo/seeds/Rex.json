@@ -1,33 +1,23 @@
 {
   "name": "Rex",
-  "engines": [],
   "models": [
     {
       "name": "Monaco"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Monaco Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Monaco Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Monaco Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

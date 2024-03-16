@@ -1,6 +1,5 @@
 {
   "name": "Italjet",
-  "engines": [],
   "models": [
     {
       "name": "K2"
@@ -30,6 +29,12 @@
       "name": "Velocifero"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Velocifero Stock Exhaust"
@@ -60,70 +65,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Velocifero Stock Forks"
-    },
-    {
-      "name": "S5 Stock Forks"
-    },
-    {
-      "name": "Pack-A-Away Stock Forks"
-    },
-    {
-      "name": "Pack 2 50 Stock Forks"
-    },
-    {
-      "name": "P6 Stock Forks"
-    },
-    {
-      "name": "P4 Stock Forks"
-    },
-    {
-      "name": "KT Stock Forks"
-    },
-    {
-      "name": "KIT KAT 50 Stock Forks"
-    },
-    {
-      "name": "K2 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Velocifero Stock Wheels"
-    },
-    {
-      "name": "S5 Stock Wheels"
-    },
-    {
-      "name": "Pack-A-Away Stock Wheels"
-    },
-    {
-      "name": "Pack 2 50 Stock Wheels"
-    },
-    {
-      "name": "P6 Stock Wheels"
-    },
-    {
-      "name": "P4 Stock Wheels"
-    },
-    {
-      "name": "KT Stock Wheels"
-    },
-    {
-      "name": "KIT KAT 50 Stock Wheels"
-    },
-    {
-      "name": "K2 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

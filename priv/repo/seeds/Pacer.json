@@ -1,6 +1,5 @@
 {
   "name": "Pacer",
-  "engines": [],
   "models": [
     {
       "name": "25"
@@ -39,6 +38,12 @@
       "name": "Super Sport P-80"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Super Sport P-80 Stock Exhaust"
@@ -78,88 +83,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Super Sport P-80 Stock Forks"
-    },
-    {
-      "name": "Super Sport Stock Forks"
-    },
-    {
-      "name": "Sport P-78 Stock Forks"
-    },
-    {
-      "name": "P-280 Stock Forks"
-    },
-    {
-      "name": "P-278 Stock Forks"
-    },
-    {
-      "name": "P-214 Stock Forks"
-    },
-    {
-      "name": "P-14RL Stock Forks"
-    },
-    {
-      "name": "P-14 Delux Stock Forks"
-    },
-    {
-      "name": "P-14 Stock Forks"
-    },
-    {
-      "name": "P-12 Stock Forks"
-    },
-    {
-      "name": "P-1 Stock Forks"
-    },
-    {
-      "name": "25 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Super Sport P-80 Stock Wheels"
-    },
-    {
-      "name": "Super Sport Stock Wheels"
-    },
-    {
-      "name": "Sport P-78 Stock Wheels"
-    },
-    {
-      "name": "P-280 Stock Wheels"
-    },
-    {
-      "name": "P-278 Stock Wheels"
-    },
-    {
-      "name": "P-214 Stock Wheels"
-    },
-    {
-      "name": "P-14RL Stock Wheels"
-    },
-    {
-      "name": "P-14 Delux Stock Wheels"
-    },
-    {
-      "name": "P-14 Stock Wheels"
-    },
-    {
-      "name": "P-12 Stock Wheels"
-    },
-    {
-      "name": "P-1 Stock Wheels"
-    },
-    {
-      "name": "25 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

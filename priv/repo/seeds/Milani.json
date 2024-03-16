@@ -1,33 +1,23 @@
 {
   "name": "Milani",
-  "engines": [],
   "models": [
     {
       "name": "Tris"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Tris Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Tris Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Tris Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

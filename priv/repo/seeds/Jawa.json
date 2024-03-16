@@ -2,9 +2,7 @@
   "carburetors": [],
   "categories": [
     "engines",
-    "forks",
-    "mopeds",
-    "wheels"
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
@@ -18,86 +16,6 @@
     }
   ],
   "exhausts": [],
-  "forks": [
-    {
-      "name": "X30 Stock Forks"
-    },
-    {
-      "name": "X25 Stock Forks"
-    },
-    {
-      "name": "X20 Stock Forks"
-    },
-    {
-      "name": "Transistor 40 Stock Forks"
-    },
-    {
-      "name": "Supreme 3 Stock Forks"
-    },
-    {
-      "name": "Supreme 2 Stock Forks"
-    },
-    {
-      "name": "Supreme Stock Forks"
-    },
-    {
-      "name": "Stadion Stock Forks"
-    },
-    {
-      "name": "Robot Stock Forks"
-    },
-    {
-      "name": "Golden Sport Stock Forks"
-    },
-    {
-      "name": "Deluxe Stock Forks"
-    },
-    {
-      "name": "DL Stock Forks"
-    },
-    {
-      "name": "City Bee Stock Forks"
-    },
-    {
-      "name": "Babetta Stock Forks"
-    },
-    {
-      "name": "550 Stock Forks"
-    },
-    {
-      "name": "50 Stock Forks"
-    },
-    {
-      "name": "311DL Stock Forks"
-    },
-    {
-      "name": "311C Stock Forks"
-    },
-    {
-      "name": "300DLX Stock Forks"
-    },
-    {
-      "name": "225 Stock Forks"
-    },
-    {
-      "name": "210 Sport Stock Forks"
-    },
-    {
-      "name": "210 Stock Forks"
-    },
-    {
-      "name": "207 Stock Forks"
-    },
-    {
-      "name": "120 Automatic Stock Forks"
-    },
-    {
-      "name": "120 Stock Forks"
-    },
-    {
-      "name": "05 Stock Forks"
-    }
-  ],
   "ignitions": [],
   "models": [
     {
@@ -181,85 +99,5 @@
   ],
   "name": "Jawa",
   "pulleys": [],
-  "variators": [],
-  "wheels": [
-    {
-      "name": "X30 Stock Wheels"
-    },
-    {
-      "name": "X25 Stock Wheels"
-    },
-    {
-      "name": "X20 Stock Wheels"
-    },
-    {
-      "name": "Transistor 40 Stock Wheels"
-    },
-    {
-      "name": "Supreme 3 Stock Wheels"
-    },
-    {
-      "name": "Supreme 2 Stock Wheels"
-    },
-    {
-      "name": "Supreme Stock Wheels"
-    },
-    {
-      "name": "Stadion Stock Wheels"
-    },
-    {
-      "name": "Robot Stock Wheels"
-    },
-    {
-      "name": "Golden Sport Stock Wheels"
-    },
-    {
-      "name": "Deluxe Stock Wheels"
-    },
-    {
-      "name": "DL Stock Wheels"
-    },
-    {
-      "name": "City Bee Stock Wheels"
-    },
-    {
-      "name": "Babetta Stock Wheels"
-    },
-    {
-      "name": "550 Stock Wheels"
-    },
-    {
-      "name": "50 Stock Wheels"
-    },
-    {
-      "name": "311DL Stock Wheels"
-    },
-    {
-      "name": "311C Stock Wheels"
-    },
-    {
-      "name": "300DLX Stock Wheels"
-    },
-    {
-      "name": "225 Stock Wheels"
-    },
-    {
-      "name": "210 Sport Stock Wheels"
-    },
-    {
-      "name": "210 Stock Wheels"
-    },
-    {
-      "name": "207 Stock Wheels"
-    },
-    {
-      "name": "120 Automatic Stock Wheels"
-    },
-    {
-      "name": "120 Stock Wheels"
-    },
-    {
-      "name": "05 Stock Wheels"
-    }
-  ]
+  "variators": []
 }

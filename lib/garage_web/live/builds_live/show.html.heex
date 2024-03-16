@@ -53,19 +53,50 @@
   </div>
 </div>
 
+<%= if @build.description do %>
+  <div>
+    <h3 class="text-2xl mb-5 border-b">
+      Description
+    </h3>
+    <div class="trix-content">
+      <%= raw(@build.description) %>
+    </div>
+  </div>
+<% end %>
+
 <div>
   <h3 class="text-2xl mb-5 border-b">
-    Description
+    Build Details
   </h3>
-  <div class="trix-content">
-    <%= raw(@build.description) %>
+  <div class="">
+    <ul>
+      <li>
+        <span>Engine: </span><%= @build.engine.manufacturer.name %> <%= @build.engine.name %>
+      </li>
+      <li>
+        <span>Carburetor: </span><%= @build.carburetor.manufacturer.name %> <%= @build.carburetor.name %>
+      </li>
+      <li>
+        <span>Exhaust: </span><%= @build.exhaust.manufacturer.name %> <%= @build.exhaust.name %>
+      </li>
+      <%= if @build.ignition do %>
+        <li>
+          <span>Ignition: </span><%= @build.ignition.name %>
+        </li>
+      <% end %>
+      <%= if @build.clutch do %>
+        <li>
+          <span>Clutch: </span><%= @build.clutch.name %>
+        </li>
+      <% end %>
+    </ul>
   </div>
 </div>
 <!-- likes -->
 <div class="flex flex-col md:flex-row md:space-x-4 mt-10">
   <div class="md:w-1/2 mb-5">
     <h3 class="text-2xl mb-5 border-b">
-      Likes
+      💖 Likes
     </h3>
     <%= if @build.likes == [] do %>
       No likes yet, be the first!

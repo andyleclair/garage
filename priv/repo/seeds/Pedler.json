@@ -1,6 +1,5 @@
 {
   "name": "Pedler",
-  "engines": [],
   "models": [
     {
       "name": "Pedler's Choice"
@@ -9,6 +8,12 @@
       "name": "Pedler's Choice Deluxe"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Pedler's Choice Deluxe Stock Exhaust"
@@ -18,28 +23,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Pedler's Choice Deluxe Stock Forks"
-    },
-    {
-      "name": "Pedler's Choice Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Pedler's Choice Deluxe Stock Wheels"
-    },
-    {
-      "name": "Pedler's Choice Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

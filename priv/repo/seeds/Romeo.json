@@ -1,33 +1,23 @@
 {
   "name": "Romeo",
-  "engines": [],
   "models": [
     {
       "name": "Thunderhawk"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Thunderhawk Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Thunderhawk Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Thunderhawk Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

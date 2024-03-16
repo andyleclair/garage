@@ -1,33 +1,23 @@
 {
   "name": "Rabeneick",
-  "engines": [],
   "models": [
     {
       "name": "Binetta III"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Binetta III Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Binetta III Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Binetta III Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

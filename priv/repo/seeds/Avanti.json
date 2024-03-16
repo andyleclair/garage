@@ -1,6 +1,5 @@
 {
   "name": "Avanti",
-  "engines": [],
   "models": [
     {
       "name": "Autopower"
@@ -21,6 +20,12 @@
       "name": "Super Sport"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Super Sport Stock Exhaust"
@@ -42,52 +47,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Super Sport Stock Forks"
-    },
-    {
-      "name": "Sport Stock Forks"
-    },
-    {
-      "name": "Porta Stock Forks"
-    },
-    {
-      "name": "Mont Stock Forks"
-    },
-    {
-      "name": "Kobra Stock Forks"
-    },
-    {
-      "name": "Autopower Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Super Sport Stock Wheels"
-    },
-    {
-      "name": "Sport Stock Wheels"
-    },
-    {
-      "name": "Porta Stock Wheels"
-    },
-    {
-      "name": "Mont Stock Wheels"
-    },
-    {
-      "name": "Kobra Stock Wheels"
-    },
-    {
-      "name": "Autopower Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

@@ -1,9 +1,10 @@
 defmodule GarageWeb.BuildsLive.Show do
   use GarageWeb, :live_view
 
-  alias Garage.Builds
-  alias Garage.Builds.{Build, Comment}
+  alias Garage.Builds.Build
+  alias Garage.Builds.Comment
   alias AshPhoenix.Form
+
   import GarageWeb.Components.Builds.Comment
   import GarageWeb.Components.Builds.LikeHeart
 
@@ -32,14 +33,7 @@ defmodule GarageWeb.BuildsLive.Show do
      |> assign(:index, 0)
      |> assign(
        :comment_form,
-       to_form(
-         Form.for_action(
-           Comment,
-           :create,
-           api: Builds,
-           actor: socket.assigns.current_user
-         )
-       )
+       to_form(Form.for_action(Comment, :create, actor: socket.assigns.current_user))
      )
      |> assign(:can_edit?, Build.can_update?(socket.assigns.current_user, build))}
   end

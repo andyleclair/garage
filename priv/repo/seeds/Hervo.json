@@ -1,33 +1,23 @@
 {
   "name": "Hervo",
-  "engines": [],
   "models": [
     {
       "name": "Hervo-Matic"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Hervo-Matic Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Hervo-Matic Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Hervo-Matic Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

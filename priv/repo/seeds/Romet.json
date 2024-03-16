@@ -1,6 +1,5 @@
 {
   "name": "Romet",
-  "engines": [],
   "models": [
     {
       "name": "50 T1"
@@ -12,6 +11,12 @@
       "name": "Pony 50"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Pony 50 Stock Exhaust"
@@ -24,34 +29,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Pony 50 Stock Forks"
-    },
-    {
-      "name": "Kadet M-780 Stock Forks"
-    },
-    {
-      "name": "50 T1 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Pony 50 Stock Wheels"
-    },
-    {
-      "name": "Kadet M-780 Stock Wheels"
-    },
-    {
-      "name": "50 T1 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

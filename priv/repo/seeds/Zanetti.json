@@ -1,33 +1,23 @@
 {
   "name": "Zanetti",
-  "engines": [],
   "models": [
     {
       "name": "Bicizeta"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Bicizeta Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Bicizeta Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Bicizeta Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

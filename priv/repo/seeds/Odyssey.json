@@ -1,6 +1,5 @@
 {
   "name": "Odyssey",
-  "engines": [],
   "models": [
     {
       "name": "236"
@@ -36,6 +35,12 @@
       "name": "720"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "720 Stock Exhaust"
@@ -72,82 +77,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "720 Stock Forks"
-    },
-    {
-      "name": "40/2-R Stock Forks"
-    },
-    {
-      "name": "40/2-2 Stock Forks"
-    },
-    {
-      "name": "40/1-R Stock Forks"
-    },
-    {
-      "name": "40/1-2 Stock Forks"
-    },
-    {
-      "name": "32/1-R Stock Forks"
-    },
-    {
-      "name": "32/1-2 Stock Forks"
-    },
-    {
-      "name": "284 Stock Forks"
-    },
-    {
-      "name": "255 Stock Forks"
-    },
-    {
-      "name": "237 Stock Forks"
-    },
-    {
-      "name": "236 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "720 Stock Wheels"
-    },
-    {
-      "name": "40/2-R Stock Wheels"
-    },
-    {
-      "name": "40/2-2 Stock Wheels"
-    },
-    {
-      "name": "40/1-R Stock Wheels"
-    },
-    {
-      "name": "40/1-2 Stock Wheels"
-    },
-    {
-      "name": "32/1-R Stock Wheels"
-    },
-    {
-      "name": "32/1-2 Stock Wheels"
-    },
-    {
-      "name": "284 Stock Wheels"
-    },
-    {
-      "name": "255 Stock Wheels"
-    },
-    {
-      "name": "237 Stock Wheels"
-    },
-    {
-      "name": "236 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

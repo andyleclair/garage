@@ -1,9 +1,9 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "exhausts",
-    "cylinders",
-    "clutches"
+    "cylinders"
   ],
   "clutches": [
     {

@@ -1,6 +1,5 @@
 {
   "name": "Riga",
-  "engines": [],
   "models": [
     {
       "name": "15-S"
@@ -27,6 +26,12 @@
       "name": "V-501M"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "V-501M Stock Exhaust"
@@ -54,64 +59,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "V-501M Stock Forks"
-    },
-    {
-      "name": "R-12 Stock Forks"
-    },
-    {
-      "name": "Mini Stock Forks"
-    },
-    {
-      "name": "Gauja-1 Stock Forks"
-    },
-    {
-      "name": "5 Stock Forks"
-    },
-    {
-      "name": "4 Stock Forks"
-    },
-    {
-      "name": "22 Stock Forks"
-    },
-    {
-      "name": "15-S Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "V-501M Stock Wheels"
-    },
-    {
-      "name": "R-12 Stock Wheels"
-    },
-    {
-      "name": "Mini Stock Wheels"
-    },
-    {
-      "name": "Gauja-1 Stock Wheels"
-    },
-    {
-      "name": "5 Stock Wheels"
-    },
-    {
-      "name": "4 Stock Wheels"
-    },
-    {
-      "name": "22 Stock Wheels"
-    },
-    {
-      "name": "15-S Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

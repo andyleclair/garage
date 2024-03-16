@@ -1,6 +1,5 @@
 {
   "name": "NSU",
-  "engines": [],
   "models": [
     {
       "name": "1053"
@@ -42,6 +41,12 @@
       "name": "Supermax"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Supermax Stock Exhaust"
@@ -84,94 +89,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Supermax Stock Forks"
-    },
-    {
-      "name": "Quickly TT Stock Forks"
-    },
-    {
-      "name": "Quickly T Stock Forks"
-    },
-    {
-      "name": "Quickly S Stock Forks"
-    },
-    {
-      "name": "Quickly N Stock Forks"
-    },
-    {
-      "name": "Quickly L Stock Forks"
-    },
-    {
-      "name": "Quickley Stock Forks"
-    },
-    {
-      "name": "Prima V Stock Forks"
-    },
-    {
-      "name": "Prima IIIK Stock Forks"
-    },
-    {
-      "name": "Prima III Stock Forks"
-    },
-    {
-      "name": "Maxi Stock Forks"
-    },
-    {
-      "name": "Cavalio Stock Forks"
-    },
-    {
-      "name": "1053 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Supermax Stock Wheels"
-    },
-    {
-      "name": "Quickly TT Stock Wheels"
-    },
-    {
-      "name": "Quickly T Stock Wheels"
-    },
-    {
-      "name": "Quickly S Stock Wheels"
-    },
-    {
-      "name": "Quickly N Stock Wheels"
-    },
-    {
-      "name": "Quickly L Stock Wheels"
-    },
-    {
-      "name": "Quickley Stock Wheels"
-    },
-    {
-      "name": "Prima V Stock Wheels"
-    },
-    {
-      "name": "Prima IIIK Stock Wheels"
-    },
-    {
-      "name": "Prima III Stock Wheels"
-    },
-    {
-      "name": "Maxi Stock Wheels"
-    },
-    {
-      "name": "Cavalio Stock Wheels"
-    },
-    {
-      "name": "1053 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

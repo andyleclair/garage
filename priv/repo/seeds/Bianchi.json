@@ -1,6 +1,5 @@
 {
   "name": "Bianchi",
-  "engines": [],
   "models": [
     {
       "name": "Aquilotto"
@@ -30,6 +29,12 @@
       "name": "Snark Stardust"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Snark Stardust Stock Exhaust"
@@ -60,70 +65,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Snark Stardust Stock Forks"
-    },
-    {
-      "name": "Snark Satelite Stock Forks"
-    },
-    {
-      "name": "Snark Eagle Standard Stock Forks"
-    },
-    {
-      "name": "Snark Eagle Deluxe Stock Forks"
-    },
-    {
-      "name": "Snark Stock Forks"
-    },
-    {
-      "name": "Laser Stock Forks"
-    },
-    {
-      "name": "Falco Stock Forks"
-    },
-    {
-      "name": "Bianchimatic Stock Forks"
-    },
-    {
-      "name": "Aquilotto Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Snark Stardust Stock Wheels"
-    },
-    {
-      "name": "Snark Satelite Stock Wheels"
-    },
-    {
-      "name": "Snark Eagle Standard Stock Wheels"
-    },
-    {
-      "name": "Snark Eagle Deluxe Stock Wheels"
-    },
-    {
-      "name": "Snark Stock Wheels"
-    },
-    {
-      "name": "Laser Stock Wheels"
-    },
-    {
-      "name": "Falco Stock Wheels"
-    },
-    {
-      "name": "Bianchimatic Stock Wheels"
-    },
-    {
-      "name": "Aquilotto Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

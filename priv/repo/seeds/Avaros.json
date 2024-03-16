@@ -1,6 +1,5 @@
 {
   "name": "Avaros",
-  "engines": [],
   "models": [
     {
       "name": "Ideal"
@@ -21,6 +20,12 @@
       "name": "Super 7"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Super 7 Stock Exhaust"
@@ -42,52 +47,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Super 7 Stock Forks"
-    },
-    {
-      "name": "Record Stock Forks"
-    },
-    {
-      "name": "Primus Stock Forks"
-    },
-    {
-      "name": "Kingline Stock Forks"
-    },
-    {
-      "name": "Kickmonomatic Stock Forks"
-    },
-    {
-      "name": "Ideal Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Super 7 Stock Wheels"
-    },
-    {
-      "name": "Record Stock Wheels"
-    },
-    {
-      "name": "Primus Stock Wheels"
-    },
-    {
-      "name": "Kingline Stock Wheels"
-    },
-    {
-      "name": "Kickmonomatic Stock Wheels"
-    },
-    {
-      "name": "Ideal Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

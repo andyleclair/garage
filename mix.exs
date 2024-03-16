@@ -52,7 +52,7 @@ defmodule Garage.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.0-pre"},
-      {:ash, "~> 2.20", override: true},
+      {:ash, "~> 2.20"},
       {:ash_postgres, "~> 1.3"},
       {:ash_phoenix, "~> 1.3.2"},
       {:ash_authentication, "~> 3.12"},

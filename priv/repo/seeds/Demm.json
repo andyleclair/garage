@@ -1,6 +1,5 @@
 {
   "name": "Demm",
-  "engines": [],
   "models": [
     {
       "name": "Brio"
@@ -30,6 +29,12 @@
       "name": "Smily"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Smily Stock Exhaust"
@@ -60,70 +65,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Smily Stock Forks"
-    },
-    {
-      "name": "Scouts Stock Forks"
-    },
-    {
-      "name": "RG6 Stock Forks"
-    },
-    {
-      "name": "Panther Stock Forks"
-    },
-    {
-      "name": "Joy Stock Forks"
-    },
-    {
-      "name": "Dove Stock Forks"
-    },
-    {
-      "name": "Condor 4 Stock Forks"
-    },
-    {
-      "name": "Capri Stock Forks"
-    },
-    {
-      "name": "Brio Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Smily Stock Wheels"
-    },
-    {
-      "name": "Scouts Stock Wheels"
-    },
-    {
-      "name": "RG6 Stock Wheels"
-    },
-    {
-      "name": "Panther Stock Wheels"
-    },
-    {
-      "name": "Joy Stock Wheels"
-    },
-    {
-      "name": "Dove Stock Wheels"
-    },
-    {
-      "name": "Condor 4 Stock Wheels"
-    },
-    {
-      "name": "Capri Stock Wheels"
-    },
-    {
-      "name": "Brio Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

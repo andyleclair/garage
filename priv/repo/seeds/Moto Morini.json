@@ -1,33 +1,23 @@
 {
   "name": "Moto Morini",
-  "engines": [],
   "models": [
     {
       "name": "Corsarino"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Corsarino Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Corsarino Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Corsarino Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

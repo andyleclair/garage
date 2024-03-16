@@ -1,33 +1,23 @@
 {
   "name": "Delta",
-  "engines": [],
   "models": [
     {
       "name": "RMR-24"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "RMR-24 Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "RMR-24 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "RMR-24 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

@@ -1,33 +1,23 @@
 {
   "name": "Moto-Matic",
-  "engines": [],
   "models": [
     {
       "name": "Sapporo"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Sapporo Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Sapporo Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Sapporo Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

@@ -1,33 +1,23 @@
 {
   "name": "Motobimm",
-  "engines": [],
   "models": [
     {
       "name": "Bilo"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Bilo Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Bilo Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Bilo Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

@@ -1,6 +1,5 @@
 {
   "name": "Whizzer",
-  "engines": [],
   "models": [
     {
       "name": "Cyclone"
@@ -12,6 +11,12 @@
       "name": "Pacemaker"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Pacemaker Stock Exhaust"
@@ -24,34 +29,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Pacemaker Stock Forks"
-    },
-    {
-      "name": "NE-5 Stock Forks"
-    },
-    {
-      "name": "Cyclone Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Pacemaker Stock Wheels"
-    },
-    {
-      "name": "NE-5 Stock Wheels"
-    },
-    {
-      "name": "Cyclone Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

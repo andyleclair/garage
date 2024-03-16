@@ -2,9 +2,7 @@
   "carburetors": [],
   "categories": [
     "engines",
-    "forks",
-    "mopeds",
-    "wheels"
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
@@ -15,53 +13,6 @@
     }
   ],
   "exhausts": [],
-  "forks": [
-    {
-      "name": "XPower Stock Forks"
-    },
-    {
-      "name": "XLimit Stock Forks"
-    },
-    {
-      "name": "Magnum Racing XR Stock Forks"
-    },
-    {
-      "name": "Magnum Racing Stock Forks"
-    },
-    {
-      "name": "Hard Rock Stock Forks"
-    },
-    {
-      "name": "Club VR Stock Forks"
-    },
-    {
-      "name": "Club Tex Mex Stock Forks"
-    },
-    {
-      "name": "Club Swing Stock Forks"
-    },
-    {
-      "name": "Club Stock Forks"
-    },
-    {
-      "name": "City Club Stock Forks"
-    },
-    {
-      "name": "BMX Stock Forks"
-    },
-    {
-      "name": "881 U Stock Forks"
-    },
-    {
-      "name": "881 M Stock Forks"
-    },
-    {
-      "name": "881 B Stock Forks"
-    },
-    {
-      "name": "51 V Stock Forks"
-    }
-  ],
   "ignitions": [],
   "models": [
     {
@@ -112,52 +63,5 @@
   ],
   "name": "MBK",
   "pulleys": [],
-  "variators": [],
-  "wheels": [
-    {
-      "name": "XPower Stock Wheels"
-    },
-    {
-      "name": "XLimit Stock Wheels"
-    },
-    {
-      "name": "Magnum Racing XR Stock Wheels"
-    },
-    {
-      "name": "Magnum Racing Stock Wheels"
-    },
-    {
-      "name": "Hard Rock Stock Wheels"
-    },
-    {
-      "name": "Club VR Stock Wheels"
-    },
-    {
-      "name": "Club Tex Mex Stock Wheels"
-    },
-    {
-      "name": "Club Swing Stock Wheels"
-    },
-    {
-      "name": "Club Stock Wheels"
-    },
-    {
-      "name": "City Club Stock Wheels"
-    },
-    {
-      "name": "BMX Stock Wheels"
-    },
-    {
-      "name": "881 U Stock Wheels"
-    },
-    {
-      "name": "881 M Stock Wheels"
-    },
-    {
-      "name": "881 B Stock Wheels"
-    },
-    {
-      "name": "51 V Stock Wheels"
-    }
-  ]
+  "variators": []
 }

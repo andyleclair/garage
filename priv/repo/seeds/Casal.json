@@ -2,9 +2,7 @@
   "carburetors": [],
   "categories": [
     "engines",
-    "forks",
-    "mopeds",
-    "wheels"
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
@@ -15,29 +13,6 @@
     }
   ],
   "exhausts": [],
-  "forks": [
-    {
-      "name": "K-196 Stock Forks"
-    },
-    {
-      "name": "K-190 Stock Forks"
-    },
-    {
-      "name": "K-188 Stock Forks"
-    },
-    {
-      "name": "K-184 Stock Forks"
-    },
-    {
-      "name": "K-177 Stock Forks"
-    },
-    {
-      "name": "K-168 Stock Forks"
-    },
-    {
-      "name": "Boss Stock Forks"
-    }
-  ],
   "ignitions": [],
   "models": [
     {
@@ -64,28 +39,5 @@
   ],
   "name": "Casal",
   "pulleys": [],
-  "variators": [],
-  "wheels": [
-    {
-      "name": "K-196 Stock Wheels"
-    },
-    {
-      "name": "K-190 Stock Wheels"
-    },
-    {
-      "name": "K-188 Stock Wheels"
-    },
-    {
-      "name": "K-184 Stock Wheels"
-    },
-    {
-      "name": "K-177 Stock Wheels"
-    },
-    {
-      "name": "K-168 Stock Wheels"
-    },
-    {
-      "name": "Boss Stock Wheels"
-    }
-  ]
+  "variators": []
 }

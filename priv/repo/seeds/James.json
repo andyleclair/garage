@@ -1,33 +1,23 @@
 {
   "name": "James",
-  "engines": [],
   "models": [
     {
       "name": "Superlux"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Superlux Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Superlux Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Superlux Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

@@ -1,6 +1,5 @@
 {
   "name": "Cimatti",
-  "engines": [],
   "models": [
     {
       "name": "4M"
@@ -45,6 +44,12 @@
       "name": "Twin Sport"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Twin Sport Stock Exhaust"
@@ -90,100 +95,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Twin Sport Stock Forks"
-    },
-    {
-      "name": "Town Bike Stock Forks"
-    },
-    {
-      "name": "Piper V1 KS Deluxe Stock Forks"
-    },
-    {
-      "name": "Kaiman Super 6m Radial X21 Stock Forks"
-    },
-    {
-      "name": "Gran Prix XL Stock Forks"
-    },
-    {
-      "name": "Express Stock Forks"
-    },
-    {
-      "name": "City Bike Stock Forks"
-    },
-    {
-      "name": "Chic Stock Forks"
-    },
-    {
-      "name": "C50 Stock Forks"
-    },
-    {
-      "name": "Boy Stock Forks"
-    },
-    {
-      "name": "Bob Cat Stock Forks"
-    },
-    {
-      "name": "Bat Baby Stock Forks"
-    },
-    {
-      "name": "86XL Radial 4M Stock Forks"
-    },
-    {
-      "name": "4M Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Twin Sport Stock Wheels"
-    },
-    {
-      "name": "Town Bike Stock Wheels"
-    },
-    {
-      "name": "Piper V1 KS Deluxe Stock Wheels"
-    },
-    {
-      "name": "Kaiman Super 6m Radial X21 Stock Wheels"
-    },
-    {
-      "name": "Gran Prix XL Stock Wheels"
-    },
-    {
-      "name": "Express Stock Wheels"
-    },
-    {
-      "name": "City Bike Stock Wheels"
-    },
-    {
-      "name": "Chic Stock Wheels"
-    },
-    {
-      "name": "C50 Stock Wheels"
-    },
-    {
-      "name": "Boy Stock Wheels"
-    },
-    {
-      "name": "Bob Cat Stock Wheels"
-    },
-    {
-      "name": "Bat Baby Stock Wheels"
-    },
-    {
-      "name": "86XL Radial 4M Stock Wheels"
-    },
-    {
-      "name": "4M Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

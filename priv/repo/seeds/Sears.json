@@ -1,6 +1,5 @@
 {
   "name": "Sears",
-  "engines": [],
   "models": [
     {
       "name": "Allstate"
@@ -12,6 +11,12 @@
       "name": "VS50L"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "VS50L Stock Exhaust"
@@ -24,34 +29,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "VS50L Stock Forks"
-    },
-    {
-      "name": "Free Spirit Stock Forks"
-    },
-    {
-      "name": "Allstate Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "VS50L Stock Wheels"
-    },
-    {
-      "name": "Free Spirit Stock Wheels"
-    },
-    {
-      "name": "Allstate Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

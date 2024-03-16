@@ -1,33 +1,23 @@
 {
   "name": "Italtelai",
-  "engines": [],
   "models": [
     {
       "name": "Pacer"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Pacer Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Pacer Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Pacer Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

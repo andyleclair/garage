@@ -1,6 +1,5 @@
 {
   "name": "Malanca",
-  "engines": [],
   "models": [
     {
       "name": "Bibi"
@@ -60,6 +59,12 @@
       "name": "Zeta"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Zeta Stock Exhaust"
@@ -120,130 +125,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Zeta Stock Forks"
-    },
-    {
-      "name": "Turismo Turbo Stock Forks"
-    },
-    {
-      "name": "Tigrotto Stock Forks"
-    },
-    {
-      "name": "Tigre Stock Forks"
-    },
-    {
-      "name": "Testa Rossa Stock Forks"
-    },
-    {
-      "name": "Roxi Stock Forks"
-    },
-    {
-      "name": "Minizeta Stock Forks"
-    },
-    {
-      "name": "Mascotte B Stock Forks"
-    },
-    {
-      "name": "Lord Stock Forks"
-    },
-    {
-      "name": "Leoncino Stock Forks"
-    },
-    {
-      "name": "Jolly B Stock Forks"
-    },
-    {
-      "name": "Jolly 3M Stock Forks"
-    },
-    {
-      "name": "Duplimatic Stock Forks"
-    },
-    {
-      "name": "Due PIU Stock Forks"
-    },
-    {
-      "name": "Cross Stock Forks"
-    },
-    {
-      "name": "Country Special Stock Forks"
-    },
-    {
-      "name": "Competizione Stock Forks"
-    },
-    {
-      "name": "Big Stock Forks"
-    },
-    {
-      "name": "Bibi Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Zeta Stock Wheels"
-    },
-    {
-      "name": "Turismo Turbo Stock Wheels"
-    },
-    {
-      "name": "Tigrotto Stock Wheels"
-    },
-    {
-      "name": "Tigre Stock Wheels"
-    },
-    {
-      "name": "Testa Rossa Stock Wheels"
-    },
-    {
-      "name": "Roxi Stock Wheels"
-    },
-    {
-      "name": "Minizeta Stock Wheels"
-    },
-    {
-      "name": "Mascotte B Stock Wheels"
-    },
-    {
-      "name": "Lord Stock Wheels"
-    },
-    {
-      "name": "Leoncino Stock Wheels"
-    },
-    {
-      "name": "Jolly B Stock Wheels"
-    },
-    {
-      "name": "Jolly 3M Stock Wheels"
-    },
-    {
-      "name": "Duplimatic Stock Wheels"
-    },
-    {
-      "name": "Due PIU Stock Wheels"
-    },
-    {
-      "name": "Cross Stock Wheels"
-    },
-    {
-      "name": "Country Special Stock Wheels"
-    },
-    {
-      "name": "Competizione Stock Wheels"
-    },
-    {
-      "name": "Big Stock Wheels"
-    },
-    {
-      "name": "Bibi Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

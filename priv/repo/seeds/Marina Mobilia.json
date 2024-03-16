@@ -1,33 +1,23 @@
 {
   "name": "Marina Mobilia",
-  "engines": [],
   "models": [
     {
       "name": "Montomarina"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Montomarina Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Montomarina Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Montomarina Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

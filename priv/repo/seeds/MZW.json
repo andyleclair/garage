@@ -1,33 +1,23 @@
 {
   "name": "MZW",
-  "engines": [],
   "models": [
     {
       "name": "Cambridge"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Cambridge Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Cambridge Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Cambridge Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

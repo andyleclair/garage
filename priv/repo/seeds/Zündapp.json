@@ -2,9 +2,7 @@
   "carburetors": [],
   "categories": [
     "engines",
-    "forks",
-    "mopeds",
-    "wheels"
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
@@ -15,89 +13,6 @@
     }
   ],
   "exhausts": [],
-  "forks": [
-    {
-      "name": "ZX 25 Stock Forks"
-    },
-    {
-      "name": "ZS 25 Stock Forks"
-    },
-    {
-      "name": "ZL 25 Stock Forks"
-    },
-    {
-      "name": "ZD50 Stock Forks"
-    },
-    {
-      "name": "ZD40 Stock Forks"
-    },
-    {
-      "name": "ZA 40 Stock Forks"
-    },
-    {
-      "name": "Super Combinette De Luxe Stock Forks"
-    },
-    {
-      "name": "Super Combinette Stock Forks"
-    },
-    {
-      "name": "RZ 20 Stock Forks"
-    },
-    {
-      "name": "R50 Stock Forks"
-    },
-    {
-      "name": "Moped M-50 Stock Forks"
-    },
-    {
-      "name": "Mokick Stock Forks"
-    },
-    {
-      "name": "Mofa Star 2 Stock Forks"
-    },
-    {
-      "name": "Mofa 25 Stock Forks"
-    },
-    {
-      "name": "Mamba Stock Forks"
-    },
-    {
-      "name": "M50 Stock Forks"
-    },
-    {
-      "name": "KS-50LC Stock Forks"
-    },
-    {
-      "name": "KS 80 Stock Forks"
-    },
-    {
-      "name": "KS 50 Super Sport Stock Forks"
-    },
-    {
-      "name": "GTS50 Stock Forks"
-    },
-    {
-      "name": "Falconette Stock Forks"
-    },
-    {
-      "name": "Combinette Stock Forks"
-    },
-    {
-      "name": "CS50 Stock Forks"
-    },
-    {
-      "name": "C50 Super Stock Forks"
-    },
-    {
-      "name": "C50 Sport Stock Forks"
-    },
-    {
-      "name": "Automatic Moped Stock Forks"
-    },
-    {
-      "name": "Automatic Mofa Stock Forks"
-    }
-  ],
   "ignitions": [],
   "models": [
     {
@@ -184,88 +99,5 @@
   ],
   "name": "Zündapp",
   "pulleys": [],
-  "variators": [],
-  "wheels": [
-    {
-      "name": "ZX 25 Stock Wheels"
-    },
-    {
-      "name": "ZS 25 Stock Wheels"
-    },
-    {
-      "name": "ZL 25 Stock Wheels"
-    },
-    {
-      "name": "ZD50 Stock Wheels"
-    },
-    {
-      "name": "ZD40 Stock Wheels"
-    },
-    {
-      "name": "ZA 40 Stock Wheels"
-    },
-    {
-      "name": "Super Combinette De Luxe Stock Wheels"
-    },
-    {
-      "name": "Super Combinette Stock Wheels"
-    },
-    {
-      "name": "RZ 20 Stock Wheels"
-    },
-    {
-      "name": "R50 Stock Wheels"
-    },
-    {
-      "name": "Moped M-50 Stock Wheels"
-    },
-    {
-      "name": "Mokick Stock Wheels"
-    },
-    {
-      "name": "Mofa Star 2 Stock Wheels"
-    },
-    {
-      "name": "Mofa 25 Stock Wheels"
-    },
-    {
-      "name": "Mamba Stock Wheels"
-    },
-    {
-      "name": "M50 Stock Wheels"
-    },
-    {
-      "name": "KS-50LC Stock Wheels"
-    },
-    {
-      "name": "KS 80 Stock Wheels"
-    },
-    {
-      "name": "KS 50 Super Sport Stock Wheels"
-    },
-    {
-      "name": "GTS50 Stock Wheels"
-    },
-    {
-      "name": "Falconette Stock Wheels"
-    },
-    {
-      "name": "Combinette Stock Wheels"
-    },
-    {
-      "name": "CS50 Stock Wheels"
-    },
-    {
-      "name": "C50 Super Stock Wheels"
-    },
-    {
-      "name": "C50 Sport Stock Wheels"
-    },
-    {
-      "name": "Automatic Moped Stock Wheels"
-    },
-    {
-      "name": "Automatic Mofa Stock Wheels"
-    }
-  ]
+  "variators": []
 }

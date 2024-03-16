@@ -2,9 +2,7 @@
   "carburetors": [],
   "categories": [
     "engines",
-    "forks",
-    "mopeds",
-    "wheels"
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
@@ -30,98 +28,6 @@
     }
   ],
   "exhausts": [],
-  "forks": [
-    {
-      "name": "YSR-50 Stock Forks"
-    },
-    {
-      "name": "YB 50 Stock Forks"
-    },
-    {
-      "name": "U7E Stock Forks"
-    },
-    {
-      "name": "TY50p Stock Forks"
-    },
-    {
-      "name": "TY50M Stock Forks"
-    },
-    {
-      "name": "SH50ML Stock Forks"
-    },
-    {
-      "name": "Rosa Toro Stock Forks"
-    },
-    {
-      "name": "RD60 Stock Forks"
-    },
-    {
-      "name": "RD50M Stock Forks"
-    },
-    {
-      "name": "RD50 Stock Forks"
-    },
-    {
-      "name": "QT50L Stock Forks"
-    },
-    {
-      "name": "QT50J Stock Forks"
-    },
-    {
-      "name": "QT50 Yamahopper Stock Forks"
-    },
-    {
-      "name": "QT50 Stock Forks"
-    },
-    {
-      "name": "PW-50 Stock Forks"
-    },
-    {
-      "name": "Mate 50 Stock Forks"
-    },
-    {
-      "name": "MS-50 Stock Forks"
-    },
-    {
-      "name": "MJ50 Towny Stock Forks"
-    },
-    {
-      "name": "MJ-2 Stock Forks"
-    },
-    {
-      "name": "MF3-D Stock Forks"
-    },
-    {
-      "name": "MF-2 Stock Forks"
-    },
-    {
-      "name": "LB80 Chappy Stock Forks"
-    },
-    {
-      "name": "LB50-IIAM Chappy Stock Forks"
-    },
-    {
-      "name": "LB-50 Chappy Stock Forks"
-    },
-    {
-      "name": "G6SB Stock Forks"
-    },
-    {
-      "name": "FS1E Stock Forks"
-    },
-    {
-      "name": "FS-1 Stock Forks"
-    },
-    {
-      "name": "DT50mx Stock Forks"
-    },
-    {
-      "name": "DT Stock Forks"
-    },
-    {
-      "name": "Champ Stock Forks"
-    }
-  ],
   "ignitions": [],
   "models": [
     {
@@ -217,97 +123,5 @@
   ],
   "name": "Yamaha",
   "pulleys": [],
-  "variators": [],
-  "wheels": [
-    {
-      "name": "YSR-50 Stock Wheels"
-    },
-    {
-      "name": "YB 50 Stock Wheels"
-    },
-    {
-      "name": "U7E Stock Wheels"
-    },
-    {
-      "name": "TY50p Stock Wheels"
-    },
-    {
-      "name": "TY50M Stock Wheels"
-    },
-    {
-      "name": "SH50ML Stock Wheels"
-    },
-    {
-      "name": "Rosa Toro Stock Wheels"
-    },
-    {
-      "name": "RD60 Stock Wheels"
-    },
-    {
-      "name": "RD50M Stock Wheels"
-    },
-    {
-      "name": "RD50 Stock Wheels"
-    },
-    {
-      "name": "QT50L Stock Wheels"
-    },
-    {
-      "name": "QT50J Stock Wheels"
-    },
-    {
-      "name": "QT50 Yamahopper Stock Wheels"
-    },
-    {
-      "name": "QT50 Stock Wheels"
-    },
-    {
-      "name": "PW-50 Stock Wheels"
-    },
-    {
-      "name": "Mate 50 Stock Wheels"
-    },
-    {
-      "name": "MS-50 Stock Wheels"
-    },
-    {
-      "name": "MJ50 Towny Stock Wheels"
-    },
-    {
-      "name": "MJ-2 Stock Wheels"
-    },
-    {
-      "name": "MF3-D Stock Wheels"
-    },
-    {
-      "name": "MF-2 Stock Wheels"
-    },
-    {
-      "name": "LB80 Chappy Stock Wheels"
-    },
-    {
-      "name": "LB50-IIAM Chappy Stock Wheels"
-    },
-    {
-      "name": "LB-50 Chappy Stock Wheels"
-    },
-    {
-      "name": "G6SB Stock Wheels"
-    },
-    {
-      "name": "FS1E Stock Wheels"
-    },
-    {
-      "name": "FS-1 Stock Wheels"
-    },
-    {
-      "name": "DT50mx Stock Wheels"
-    },
-    {
-      "name": "DT Stock Wheels"
-    },
-    {
-      "name": "Champ Stock Wheels"
-    }
-  ]
+  "variators": []
 }

@@ -1,33 +1,23 @@
 {
   "name": "Wildfire",
-  "engines": [],
   "models": [
     {
       "name": "WF110-M1"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "WF110-M1 Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "WF110-M1 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "WF110-M1 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

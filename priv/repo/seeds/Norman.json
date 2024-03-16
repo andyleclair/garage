@@ -1,33 +1,23 @@
 {
   "name": "Norman",
-  "engines": [],
   "models": [
     {
       "name": "Nippy Deluxe"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Nippy Deluxe Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Nippy Deluxe Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Nippy Deluxe Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

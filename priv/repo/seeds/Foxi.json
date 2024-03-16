@@ -1,6 +1,5 @@
 {
   "name": "Foxi",
-  "engines": [],
   "models": [
     {
       "name": "Amigo"
@@ -39,6 +38,12 @@
       "name": "Super Sport"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Super Sport Stock Exhaust"
@@ -78,88 +83,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Super Sport Stock Forks"
-    },
-    {
-      "name": "Sport Stock Forks"
-    },
-    {
-      "name": "Silver Foxi Stock Forks"
-    },
-    {
-      "name": "Salsburg Stock Forks"
-    },
-    {
-      "name": "S Stock Forks"
-    },
-    {
-      "name": "Red Foxi Stock Forks"
-    },
-    {
-      "name": "GT Sport Stock Forks"
-    },
-    {
-      "name": "GT Deluxe Stock Forks"
-    },
-    {
-      "name": "GT Stock Forks"
-    },
-    {
-      "name": "Deluxe Stock Forks"
-    },
-    {
-      "name": "Baron Stock Forks"
-    },
-    {
-      "name": "Amigo Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Super Sport Stock Wheels"
-    },
-    {
-      "name": "Sport Stock Wheels"
-    },
-    {
-      "name": "Silver Foxi Stock Wheels"
-    },
-    {
-      "name": "Salsburg Stock Wheels"
-    },
-    {
-      "name": "S Stock Wheels"
-    },
-    {
-      "name": "Red Foxi Stock Wheels"
-    },
-    {
-      "name": "GT Sport Stock Wheels"
-    },
-    {
-      "name": "GT Deluxe Stock Wheels"
-    },
-    {
-      "name": "GT Stock Wheels"
-    },
-    {
-      "name": "Deluxe Stock Wheels"
-    },
-    {
-      "name": "Baron Stock Wheels"
-    },
-    {
-      "name": "Amigo Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

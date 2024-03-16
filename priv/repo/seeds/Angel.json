@@ -1,33 +1,23 @@
 {
   "name": "Angel",
-  "engines": [],
   "models": [
     {
       "name": "AP48"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "AP48 Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "AP48 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "AP48 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

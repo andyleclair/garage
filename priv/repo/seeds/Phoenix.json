@@ -1,33 +1,23 @@
 {
   "name": "Phoenix",
-  "engines": [],
   "models": [
     {
       "name": "Saxonette"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Saxonette Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Saxonette Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Saxonette Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

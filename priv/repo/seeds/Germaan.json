@@ -1,33 +1,23 @@
 {
   "name": "Germaan",
-  "engines": [],
   "models": [
     {
       "name": "Florence De Luxe"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Florence De Luxe Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Florence De Luxe Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Florence De Luxe Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

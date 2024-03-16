@@ -1,6 +1,5 @@
 {
   "name": "Torrot",
-  "engines": [],
   "models": [
     {
       "name": "City"
@@ -42,6 +41,12 @@
       "name": "Turismo"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Turismo Stock Exhaust"
@@ -84,94 +89,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Turismo Stock Forks"
-    },
-    {
-      "name": "Trial Stock Forks"
-    },
-    {
-      "name": "Tiburon Stock Forks"
-    },
-    {
-      "name": "TT50 Stock Forks"
-    },
-    {
-      "name": "Sport 4V Stock Forks"
-    },
-    {
-      "name": "Panther Stock Forks"
-    },
-    {
-      "name": "Mustang Stock Forks"
-    },
-    {
-      "name": "Mini Stock Forks"
-    },
-    {
-      "name": "Maxi Stock Forks"
-    },
-    {
-      "name": "Gran Cross Stock Forks"
-    },
-    {
-      "name": "City TT Stock Forks"
-    },
-    {
-      "name": "City Lujo Stock Forks"
-    },
-    {
-      "name": "City Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Turismo Stock Wheels"
-    },
-    {
-      "name": "Trial Stock Wheels"
-    },
-    {
-      "name": "Tiburon Stock Wheels"
-    },
-    {
-      "name": "TT50 Stock Wheels"
-    },
-    {
-      "name": "Sport 4V Stock Wheels"
-    },
-    {
-      "name": "Panther Stock Wheels"
-    },
-    {
-      "name": "Mustang Stock Wheels"
-    },
-    {
-      "name": "Mini Stock Wheels"
-    },
-    {
-      "name": "Maxi Stock Wheels"
-    },
-    {
-      "name": "Gran Cross Stock Wheels"
-    },
-    {
-      "name": "City TT Stock Wheels"
-    },
-    {
-      "name": "City Lujo Stock Wheels"
-    },
-    {
-      "name": "City Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

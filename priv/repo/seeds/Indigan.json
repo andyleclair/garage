@@ -1,33 +1,23 @@
 {
   "name": "Indigan",
-  "engines": [],
   "models": [
     {
       "name": "Trail"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Trail Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Trail Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Trail Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

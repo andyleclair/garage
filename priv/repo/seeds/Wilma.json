@@ -1,33 +1,23 @@
 {
   "name": "Wilma",
-  "engines": [],
   "models": [
     {
       "name": "Mosquito"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Mosquito Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Mosquito Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Mosquito Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

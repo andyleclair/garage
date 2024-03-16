@@ -1,6 +1,5 @@
 {
   "name": "Miele",
-  "engines": [],
   "models": [
     {
       "name": "K-52"
@@ -9,6 +8,12 @@
       "name": "K50S"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "K50S Stock Exhaust"
@@ -18,28 +23,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "K50S Stock Forks"
-    },
-    {
-      "name": "K-52 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "K50S Stock Wheels"
-    },
-    {
-      "name": "K-52 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

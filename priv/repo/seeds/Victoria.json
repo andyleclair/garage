@@ -1,6 +1,5 @@
 {
   "name": "Victoria",
-  "engines": [],
   "models": [
     {
       "name": "110 s"
@@ -27,6 +26,12 @@
       "name": "Vicky"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Vicky Stock Exhaust"
@@ -54,64 +59,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Vicky Stock Forks"
-    },
-    {
-      "name": "Spoetnik Stock Forks"
-    },
-    {
-      "name": "Luxus Stock Forks"
-    },
-    {
-      "name": "IVN Stock Forks"
-    },
-    {
-      "name": "FM38 L Stock Forks"
-    },
-    {
-      "name": "Avanti K Stock Forks"
-    },
-    {
-      "name": "111 Stock Forks"
-    },
-    {
-      "name": "110 s Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Vicky Stock Wheels"
-    },
-    {
-      "name": "Spoetnik Stock Wheels"
-    },
-    {
-      "name": "Luxus Stock Wheels"
-    },
-    {
-      "name": "IVN Stock Wheels"
-    },
-    {
-      "name": "FM38 L Stock Wheels"
-    },
-    {
-      "name": "Avanti K Stock Wheels"
-    },
-    {
-      "name": "111 Stock Wheels"
-    },
-    {
-      "name": "110 s Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

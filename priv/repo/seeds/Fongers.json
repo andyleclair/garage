@@ -1,33 +1,23 @@
 {
   "name": "Fongers",
-  "engines": [],
   "models": [
     {
       "name": "Tandem"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Tandem Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Tandem Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Tandem Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

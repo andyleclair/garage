@@ -7,33 +7,33 @@ defmodule GarageWeb.Components.Builds.Card do
 
   def card(assigns) do
     ~H"""
-    <div class="inline-block rounded-sm bg-gray-50 m-1 shadow-md p-2 w-full md:w-64">
+    <div class="inline-block rounded-md bg-gray-50 m-1 shadow-md p-2 w-full md:w-72">
       <.link navigate={~p"/builds/#{@build.slug}"}>
         <%= if @build.first_image do %>
-          <div class="">
-            <img class="object-cover md:w-64 md:h-64" src={@build.first_image} alt="" />
-          </div>
+          <img class="object-cover w-full rounded-md" src={@build.first_image} alt="" />
         <% else %>
-          <div class="w-64 h-64 bg-gray-300 flex items-stretch">
-            <div class="mt-2 ml-2 text-xl uppercase">No Images</div>
+          <div class="w-full h-64 bg-gray-100 flex items-stretch rounded-md">
+            <div class="mt-2 ml-2 text-xl uppercase">No Images Yet</div>
           </div>
         <% end %>
-
-        <div class="p-6">
-          <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800">
-            <%= @build.name %>
-          </h5>
-          <h6>By: <.username user={@build.builder} /></h6>
-
-          <%= @build.year %>
-          <.link patch={~p"/builds?make=#{@build.manufacturer.slug}"} replace={false}>
-            <%= @build.manufacturer.name %>
-          </.link>
-          <.link patch={~p"/builds?model=#{@build.model.slug}"} replace={false}>
-            <%= @build.model.name %>
-          </.link>
-        </div>
       </.link>
+
+      <div class="p-6">
+        <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800">
+          <.link navigate={~p"/builds/#{@build.slug}"}>
+            <%= @build.name %>
+          </.link>
+        </h5>
+        <h6>By: <.username user={@build.builder} /></h6>
+
+        <%= @build.year %>
+        <.link patch={~p"/builds?make=#{@build.manufacturer.slug}"} replace={false}>
+          <%= @build.manufacturer.name %>
+        </.link>
+        <.link patch={~p"/builds?model=#{@build.model.slug}"} replace={false}>
+          <%= @build.model.name %>
+        </.link>
+      </div>
     </div>
     """
   end

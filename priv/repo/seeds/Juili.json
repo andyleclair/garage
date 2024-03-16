@@ -1,33 +1,23 @@
 {
   "name": "Juili",
-  "engines": [],
   "models": [
     {
       "name": "Honey 50"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Honey 50 Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Honey 50 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Honey 50 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

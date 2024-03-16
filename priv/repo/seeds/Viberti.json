@@ -1,33 +1,23 @@
 {
   "name": "Viberti",
-  "engines": [],
   "models": [
     {
       "name": "Vivi"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Vivi Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Vivi Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Vivi Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

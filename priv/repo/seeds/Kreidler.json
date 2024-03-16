@@ -2,9 +2,7 @@
   "carburetors": [],
   "categories": [
     "engines",
-    "forks",
-    "mopeds",
-    "wheels"
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
@@ -18,68 +16,6 @@
     }
   ],
   "exhausts": [],
-  "forks": [
-    {
-      "name": "RS Cockpit Stock Forks"
-    },
-    {
-      "name": "MP-9 Stock Forks"
-    },
-    {
-      "name": "MP-3 Stock Forks"
-    },
-    {
-      "name": "MP-2 Stock Forks"
-    },
-    {
-      "name": "MP-19 Stock Forks"
-    },
-    {
-      "name": "MG2C Stock Forks"
-    },
-    {
-      "name": "MF4 Stock Forks"
-    },
-    {
-      "name": "MF2CL Stock Forks"
-    },
-    {
-      "name": "MF2 Stock Forks"
-    },
-    {
-      "name": "Junior Stock Forks"
-    },
-    {
-      "name": "Flott Stock Forks"
-    },
-    {
-      "name": "Flory Deluxe Stock Forks"
-    },
-    {
-      "name": "Flory 23 Stock Forks"
-    },
-    {
-      "name": "Flory 13 Stock Forks"
-    },
-    {
-      "name": "Flory 12 Stock Forks"
-    },
-    {
-      "name": "Florett TM Stock Forks"
-    },
-    {
-      "name": "Florett RSH Stock Forks"
-    },
-    {
-      "name": "Florett RS Stock Forks"
-    },
-    {
-      "name": "Florett RMC Stock Forks"
-    },
-    {
-      "name": "Florett Stock Forks"
-    }
-  ],
   "ignitions": [],
   "models": [
     {
@@ -145,67 +81,5 @@
   ],
   "name": "Kreidler",
   "pulleys": [],
-  "variators": [],
-  "wheels": [
-    {
-      "name": "RS Cockpit Stock Wheels"
-    },
-    {
-      "name": "MP-9 Stock Wheels"
-    },
-    {
-      "name": "MP-3 Stock Wheels"
-    },
-    {
-      "name": "MP-2 Stock Wheels"
-    },
-    {
-      "name": "MP-19 Stock Wheels"
-    },
-    {
-      "name": "MG2C Stock Wheels"
-    },
-    {
-      "name": "MF4 Stock Wheels"
-    },
-    {
-      "name": "MF2CL Stock Wheels"
-    },
-    {
-      "name": "MF2 Stock Wheels"
-    },
-    {
-      "name": "Junior Stock Wheels"
-    },
-    {
-      "name": "Flott Stock Wheels"
-    },
-    {
-      "name": "Flory Deluxe Stock Wheels"
-    },
-    {
-      "name": "Flory 23 Stock Wheels"
-    },
-    {
-      "name": "Flory 13 Stock Wheels"
-    },
-    {
-      "name": "Flory 12 Stock Wheels"
-    },
-    {
-      "name": "Florett TM Stock Wheels"
-    },
-    {
-      "name": "Florett RSH Stock Wheels"
-    },
-    {
-      "name": "Florett RS Stock Wheels"
-    },
-    {
-      "name": "Florett RMC Stock Wheels"
-    },
-    {
-      "name": "Florett Stock Wheels"
-    }
-  ]
+  "variators": []
 }

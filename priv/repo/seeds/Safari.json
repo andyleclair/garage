@@ -1,6 +1,5 @@
 {
   "name": "Safari",
-  "engines": [],
   "models": [
     {
       "name": "300MT"
@@ -24,6 +23,12 @@
       "name": "Variomatic deLux"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Variomatic deLux Stock Exhaust"
@@ -48,58 +53,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Variomatic deLux Stock Forks"
-    },
-    {
-      "name": "SuperExtra Stock Forks"
-    },
-    {
-      "name": "MZV Stock Forks"
-    },
-    {
-      "name": "MT400 Stock Forks"
-    },
-    {
-      "name": "Commando Stock Forks"
-    },
-    {
-      "name": "Cobra Stock Forks"
-    },
-    {
-      "name": "300MT Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Variomatic deLux Stock Wheels"
-    },
-    {
-      "name": "SuperExtra Stock Wheels"
-    },
-    {
-      "name": "MZV Stock Wheels"
-    },
-    {
-      "name": "MT400 Stock Wheels"
-    },
-    {
-      "name": "Commando Stock Wheels"
-    },
-    {
-      "name": "Cobra Stock Wheels"
-    },
-    {
-      "name": "300MT Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

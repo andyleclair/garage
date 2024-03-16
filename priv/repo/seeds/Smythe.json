@@ -1,33 +1,23 @@
 {
   "name": "Smythe",
-  "engines": [],
   "models": [
     {
       "name": "Misty"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Misty Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Misty Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Misty Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

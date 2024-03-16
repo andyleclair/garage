@@ -36,17 +36,10 @@ defmodule Garage.Seeds do
         Enum.reduce(
           models,
           %{
-            forks: [],
-            wheels: [],
             exhausts: []
           },
           fn %{name: model}, acc ->
-            %{
-              acc
-              | forks: [%{name: "#{model} Stock Forks"} | acc.forks],
-                exhausts: [%{name: "#{model} Stock Exhaust"} | acc.exhausts],
-                wheels: [%{name: "#{model} Stock Wheels"} | acc.wheels]
-            }
+            %{acc | exhausts: [%{name: "#{model} Stock Exhaust"} | acc.exhausts]}
           end
         )
 
@@ -62,8 +55,6 @@ defmodule Garage.Seeds do
           variators: [],
           categories: [:mopeds],
           exhausts: stock_parts.exhausts,
-          forks: stock_parts.forks,
-          wheels: stock_parts.wheels,
           cylinders: []
         }
         |> Jason.encode!()

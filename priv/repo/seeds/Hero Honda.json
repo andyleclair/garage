@@ -1,6 +1,5 @@
 {
   "name": "Hero Honda",
-  "engines": [],
   "models": [
     {
       "name": "Gizmo"
@@ -12,6 +11,12 @@
       "name": "Street 100"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Street 100 Stock Exhaust"
@@ -24,34 +29,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Street 100 Stock Forks"
-    },
-    {
-      "name": "Panther Stock Forks"
-    },
-    {
-      "name": "Gizmo Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Street 100 Stock Wheels"
-    },
-    {
-      "name": "Panther Stock Wheels"
-    },
-    {
-      "name": "Gizmo Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

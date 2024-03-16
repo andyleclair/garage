@@ -1,6 +1,5 @@
 {
   "name": "Union Holland",
-  "engines": [],
   "models": [
     {
       "name": "Boomerang"
@@ -24,6 +23,12 @@
       "name": "Union Super Sport"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Union Super Sport Stock Exhaust"
@@ -48,58 +53,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Union Super Sport Stock Forks"
-    },
-    {
-      "name": "Union Pantalette Stock Forks"
-    },
-    {
-      "name": "Tourist Stock Forks"
-    },
-    {
-      "name": "Sport-o-Matic Stock Forks"
-    },
-    {
-      "name": "Roulette Stock Forks"
-    },
-    {
-      "name": "Polaris Stock Forks"
-    },
-    {
-      "name": "Boomerang Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Union Super Sport Stock Wheels"
-    },
-    {
-      "name": "Union Pantalette Stock Wheels"
-    },
-    {
-      "name": "Tourist Stock Wheels"
-    },
-    {
-      "name": "Sport-o-Matic Stock Wheels"
-    },
-    {
-      "name": "Roulette Stock Wheels"
-    },
-    {
-      "name": "Polaris Stock Wheels"
-    },
-    {
-      "name": "Boomerang Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

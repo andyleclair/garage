@@ -1,33 +1,23 @@
 {
   "name": "Heinkel",
-  "engines": [],
   "models": [
     {
       "name": "Perle"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Perle Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Perle Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Perle Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

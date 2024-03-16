@@ -1,6 +1,5 @@
 {
   "name": "Rap",
-  "engines": [],
   "models": [
     {
       "name": "Crown"
@@ -24,6 +23,12 @@
       "name": "Super"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Super Stock Exhaust"
@@ -48,58 +53,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Super Stock Forks"
-    },
-    {
-      "name": "Ster Stock Forks"
-    },
-    {
-      "name": "Speedo Stock Forks"
-    },
-    {
-      "name": "Rocky Stock Forks"
-    },
-    {
-      "name": "Matadore Stock Forks"
-    },
-    {
-      "name": "Imperial Stock Forks"
-    },
-    {
-      "name": "Crown Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Super Stock Wheels"
-    },
-    {
-      "name": "Ster Stock Wheels"
-    },
-    {
-      "name": "Speedo Stock Wheels"
-    },
-    {
-      "name": "Rocky Stock Wheels"
-    },
-    {
-      "name": "Matadore Stock Wheels"
-    },
-    {
-      "name": "Imperial Stock Wheels"
-    },
-    {
-      "name": "Crown Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

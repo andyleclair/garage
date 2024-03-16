@@ -1,33 +1,23 @@
 {
   "name": "Riteloc",
-  "engines": [],
   "models": [
     {
       "name": "Roxi"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Roxi Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Roxi Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Roxi Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

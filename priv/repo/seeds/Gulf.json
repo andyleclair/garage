@@ -1,33 +1,23 @@
 {
   "name": "Gulf",
-  "engines": [],
   "models": [
     {
       "name": "Seagull"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Seagull Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Seagull Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Seagull Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

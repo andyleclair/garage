@@ -1,6 +1,5 @@
 {
   "name": "Locomotief",
-  "engines": [],
   "models": [
     {
       "name": "B5"
@@ -24,6 +23,12 @@
       "name": "Modesto"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Modesto Stock Exhaust"
@@ -48,58 +53,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Modesto Stock Forks"
-    },
-    {
-      "name": "M23 Stock Forks"
-    },
-    {
-      "name": "Loco-matic Stock Forks"
-    },
-    {
-      "name": "Kieviet Stock Forks"
-    },
-    {
-      "name": "Hifi Stock Forks"
-    },
-    {
-      "name": "B7 Stock Forks"
-    },
-    {
-      "name": "B5 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Modesto Stock Wheels"
-    },
-    {
-      "name": "M23 Stock Wheels"
-    },
-    {
-      "name": "Loco-matic Stock Wheels"
-    },
-    {
-      "name": "Kieviet Stock Wheels"
-    },
-    {
-      "name": "Hifi Stock Wheels"
-    },
-    {
-      "name": "B7 Stock Wheels"
-    },
-    {
-      "name": "B5 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

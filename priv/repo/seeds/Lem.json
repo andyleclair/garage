@@ -1,33 +1,23 @@
 {
   "name": "Lem",
-  "engines": [],
   "models": [
     {
       "name": "Practical"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Practical Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Practical Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Practical Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

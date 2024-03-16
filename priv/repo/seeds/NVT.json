@@ -1,6 +1,5 @@
 {
   "name": "NVT",
-  "engines": [],
   "models": [
     {
       "name": "ER1"
@@ -30,6 +29,12 @@
       "name": "Lance"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Lance Stock Exhaust"
@@ -60,70 +65,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Lance Stock Forks"
-    },
-    {
-      "name": "Jubilee Stock Forks"
-    },
-    {
-      "name": "Easy Rider Stock Forks"
-    },
-    {
-      "name": "ER2SS Stock Forks"
-    },
-    {
-      "name": "ER2P Stock Forks"
-    },
-    {
-      "name": "ER2L Stock Forks"
-    },
-    {
-      "name": "ER2 Stock Forks"
-    },
-    {
-      "name": "ER1SS Stock Forks"
-    },
-    {
-      "name": "ER1 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Lance Stock Wheels"
-    },
-    {
-      "name": "Jubilee Stock Wheels"
-    },
-    {
-      "name": "Easy Rider Stock Wheels"
-    },
-    {
-      "name": "ER2SS Stock Wheels"
-    },
-    {
-      "name": "ER2P Stock Wheels"
-    },
-    {
-      "name": "ER2L Stock Wheels"
-    },
-    {
-      "name": "ER2 Stock Wheels"
-    },
-    {
-      "name": "ER1SS Stock Wheels"
-    },
-    {
-      "name": "ER1 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

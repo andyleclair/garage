@@ -1,6 +1,5 @@
 {
   "name": "Hercules",
-  "engines": [],
   "models": [
     {
       "name": "218"
@@ -78,6 +77,12 @@
       "name": "Supra 4 Enduro"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Supra 4 Enduro Stock Exhaust"
@@ -156,166 +161,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Supra 4 Enduro Stock Forks"
-    },
-    {
-      "name": "SAXONETTE Stock Forks"
-    },
-    {
-      "name": "Prima 5 Stock Forks"
-    },
-    {
-      "name": "Prima 4 Stock Forks"
-    },
-    {
-      "name": "P-3 Stock Forks"
-    },
-    {
-      "name": "P-1 Stock Forks"
-    },
-    {
-      "name": "MX-1 Stock Forks"
-    },
-    {
-      "name": "MP-4 Stock Forks"
-    },
-    {
-      "name": "MP-2 Stock Forks"
-    },
-    {
-      "name": "M-5 Stock Forks"
-    },
-    {
-      "name": "M-4 Stock Forks"
-    },
-    {
-      "name": "M-2 Stock Forks"
-    },
-    {
-      "name": "M-1 Stock Forks"
-    },
-    {
-      "name": "Lastboy Stock Forks"
-    },
-    {
-      "name": "L50 Stock Forks"
-    },
-    {
-      "name": "K50 Stock Forks"
-    },
-    {
-      "name": "Hobbyrider Stock Forks"
-    },
-    {
-      "name": "HR-2 Stock Forks"
-    },
-    {
-      "name": "Citybike C-3 Stock Forks"
-    },
-    {
-      "name": "Accubike E-1 Stock Forks"
-    },
-    {
-      "name": "504-1B Stock Forks"
-    },
-    {
-      "name": "504-1A Stock Forks"
-    },
-    {
-      "name": "5 SL Stock Forks"
-    },
-    {
-      "name": "220 Stock Forks"
-    },
-    {
-      "name": "218 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Supra 4 Enduro Stock Wheels"
-    },
-    {
-      "name": "SAXONETTE Stock Wheels"
-    },
-    {
-      "name": "Prima 5 Stock Wheels"
-    },
-    {
-      "name": "Prima 4 Stock Wheels"
-    },
-    {
-      "name": "P-3 Stock Wheels"
-    },
-    {
-      "name": "P-1 Stock Wheels"
-    },
-    {
-      "name": "MX-1 Stock Wheels"
-    },
-    {
-      "name": "MP-4 Stock Wheels"
-    },
-    {
-      "name": "MP-2 Stock Wheels"
-    },
-    {
-      "name": "M-5 Stock Wheels"
-    },
-    {
-      "name": "M-4 Stock Wheels"
-    },
-    {
-      "name": "M-2 Stock Wheels"
-    },
-    {
-      "name": "M-1 Stock Wheels"
-    },
-    {
-      "name": "Lastboy Stock Wheels"
-    },
-    {
-      "name": "L50 Stock Wheels"
-    },
-    {
-      "name": "K50 Stock Wheels"
-    },
-    {
-      "name": "Hobbyrider Stock Wheels"
-    },
-    {
-      "name": "HR-2 Stock Wheels"
-    },
-    {
-      "name": "Citybike C-3 Stock Wheels"
-    },
-    {
-      "name": "Accubike E-1 Stock Wheels"
-    },
-    {
-      "name": "504-1B Stock Wheels"
-    },
-    {
-      "name": "504-1A Stock Wheels"
-    },
-    {
-      "name": "5 SL Stock Wheels"
-    },
-    {
-      "name": "220 Stock Wheels"
-    },
-    {
-      "name": "218 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

@@ -1,6 +1,5 @@
 {
   "name": "Tunturi",
-  "engines": [],
   "models": [
     {
       "name": "Maxi"
@@ -15,6 +14,12 @@
       "name": "Tiger"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Tiger Stock Exhaust"
@@ -30,40 +35,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Tiger Stock Forks"
-    },
-    {
-      "name": "Supersport Stock Forks"
-    },
-    {
-      "name": "Pappa Stock Forks"
-    },
-    {
-      "name": "Maxi Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Tiger Stock Wheels"
-    },
-    {
-      "name": "Supersport Stock Wheels"
-    },
-    {
-      "name": "Pappa Stock Wheels"
-    },
-    {
-      "name": "Maxi Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

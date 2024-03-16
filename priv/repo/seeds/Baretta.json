@@ -1,6 +1,5 @@
 {
   "name": "Baretta",
-  "engines": [],
   "models": [
     {
       "name": "22"
@@ -33,6 +32,12 @@
       "name": "Variator"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Variator Stock Exhaust"
@@ -66,76 +71,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Variator Stock Forks"
-    },
-    {
-      "name": "Pistol Stock Forks"
-    },
-    {
-      "name": "Piccoli Stock Forks"
-    },
-    {
-      "name": "Minisport Stock Forks"
-    },
-    {
-      "name": "Magnum Stock Forks"
-    },
-    {
-      "name": "45 Stock Forks"
-    },
-    {
-      "name": "44 Sport Stock Forks"
-    },
-    {
-      "name": "44 Stock Forks"
-    },
-    {
-      "name": "38 Stock Forks"
-    },
-    {
-      "name": "22 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Variator Stock Wheels"
-    },
-    {
-      "name": "Pistol Stock Wheels"
-    },
-    {
-      "name": "Piccoli Stock Wheels"
-    },
-    {
-      "name": "Minisport Stock Wheels"
-    },
-    {
-      "name": "Magnum Stock Wheels"
-    },
-    {
-      "name": "45 Stock Wheels"
-    },
-    {
-      "name": "44 Sport Stock Wheels"
-    },
-    {
-      "name": "44 Stock Wheels"
-    },
-    {
-      "name": "38 Stock Wheels"
-    },
-    {
-      "name": "22 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

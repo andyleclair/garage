@@ -1,6 +1,5 @@
 {
   "name": "Motron",
-  "engines": [],
   "models": [
     {
       "name": "3-Wheeler"
@@ -18,6 +17,12 @@
       "name": "Sprint"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Sprint Stock Exhaust"
@@ -36,46 +41,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Sprint Stock Forks"
-    },
-    {
-      "name": "Medalist Stock Forks"
-    },
-    {
-      "name": "Fairway Stock Forks"
-    },
-    {
-      "name": "Classic Stock Forks"
-    },
-    {
-      "name": "3-Wheeler Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Sprint Stock Wheels"
-    },
-    {
-      "name": "Medalist Stock Wheels"
-    },
-    {
-      "name": "Fairway Stock Wheels"
-    },
-    {
-      "name": "Classic Stock Wheels"
-    },
-    {
-      "name": "3-Wheeler Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

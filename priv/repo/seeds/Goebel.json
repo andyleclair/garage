@@ -1,6 +1,5 @@
 {
   "name": "Goebel",
-  "engines": [],
   "models": [
     {
       "name": "Avus Sport"
@@ -9,6 +8,12 @@
       "name": "Grand Sport"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Grand Sport Stock Exhaust"
@@ -18,28 +23,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Grand Sport Stock Forks"
-    },
-    {
-      "name": "Avus Sport Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Grand Sport Stock Wheels"
-    },
-    {
-      "name": "Avus Sport Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

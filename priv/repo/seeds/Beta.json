@@ -1,6 +1,5 @@
 {
   "name": "Beta",
-  "engines": [],
   "models": [
     {
       "name": "Alpha"
@@ -24,6 +23,12 @@
       "name": "Tour"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Tour Stock Exhaust"
@@ -48,58 +53,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Tour Stock Forks"
-    },
-    {
-      "name": "Standard Stock Forks"
-    },
-    {
-      "name": "Sport Stock Forks"
-    },
-    {
-      "name": "SL5 Stock Forks"
-    },
-    {
-      "name": "Deluxe Stock Forks"
-    },
-    {
-      "name": "Camoscio Stock Forks"
-    },
-    {
-      "name": "Alpha Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Tour Stock Wheels"
-    },
-    {
-      "name": "Standard Stock Wheels"
-    },
-    {
-      "name": "Sport Stock Wheels"
-    },
-    {
-      "name": "SL5 Stock Wheels"
-    },
-    {
-      "name": "Deluxe Stock Wheels"
-    },
-    {
-      "name": "Camoscio Stock Wheels"
-    },
-    {
-      "name": "Alpha Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

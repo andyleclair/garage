@@ -1,33 +1,23 @@
 {
   "name": "Baron",
-  "engines": [],
   "models": [
     {
       "name": "Lazer"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Lazer Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Lazer Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Lazer Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

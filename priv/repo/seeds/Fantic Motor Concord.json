@@ -1,6 +1,5 @@
 {
   "name": "Fantic Motor Concord",
-  "engines": [],
   "models": [
     {
       "name": "Blazar I"
@@ -57,6 +56,12 @@
       "name": "XKE"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "XKE Stock Exhaust"
@@ -114,124 +119,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "XKE Stock Forks"
-    },
-    {
-      "name": "TX300 Stock Forks"
-    },
-    {
-      "name": "Super T Stock Forks"
-    },
-    {
-      "name": "Super Lei Stock Forks"
-    },
-    {
-      "name": "Shadow Stock Forks"
-    },
-    {
-      "name": "Lei Stock Forks"
-    },
-    {
-      "name": "Issimo Stock Forks"
-    },
-    {
-      "name": "Invader Stock Forks"
-    },
-    {
-      "name": "Freedom Stock Forks"
-    },
-    {
-      "name": "Concord KE20 Stock Forks"
-    },
-    {
-      "name": "Concord 30 Stock Forks"
-    },
-    {
-      "name": "Concord 25 Stock Forks"
-    },
-    {
-      "name": "Colt II Stock Forks"
-    },
-    {
-      "name": "Colt I Stock Forks"
-    },
-    {
-      "name": "Chopper 50 Stock Forks"
-    },
-    {
-      "name": "Broncco Stock Forks"
-    },
-    {
-      "name": "Blazar II Stock Forks"
-    },
-    {
-      "name": "Blazar I Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "XKE Stock Wheels"
-    },
-    {
-      "name": "TX300 Stock Wheels"
-    },
-    {
-      "name": "Super T Stock Wheels"
-    },
-    {
-      "name": "Super Lei Stock Wheels"
-    },
-    {
-      "name": "Shadow Stock Wheels"
-    },
-    {
-      "name": "Lei Stock Wheels"
-    },
-    {
-      "name": "Issimo Stock Wheels"
-    },
-    {
-      "name": "Invader Stock Wheels"
-    },
-    {
-      "name": "Freedom Stock Wheels"
-    },
-    {
-      "name": "Concord KE20 Stock Wheels"
-    },
-    {
-      "name": "Concord 30 Stock Wheels"
-    },
-    {
-      "name": "Concord 25 Stock Wheels"
-    },
-    {
-      "name": "Colt II Stock Wheels"
-    },
-    {
-      "name": "Colt I Stock Wheels"
-    },
-    {
-      "name": "Chopper 50 Stock Wheels"
-    },
-    {
-      "name": "Broncco Stock Wheels"
-    },
-    {
-      "name": "Blazar II Stock Wheels"
-    },
-    {
-      "name": "Blazar I Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

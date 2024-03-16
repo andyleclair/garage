@@ -1,6 +1,5 @@
 {
   "name": "Berini",
-  "engines": [],
   "models": [
     {
       "name": "Berinette"
@@ -45,6 +44,12 @@
       "name": "Miniped"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Miniped Stock Exhaust"
@@ -90,100 +95,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Miniped Stock Forks"
-    },
-    {
-      "name": "M48 Stock Forks"
-    },
-    {
-      "name": "M35 Stock Forks"
-    },
-    {
-      "name": "M31 Stock Forks"
-    },
-    {
-      "name": "M23 Stock Forks"
-    },
-    {
-      "name": "M21 Sport Stock Forks"
-    },
-    {
-      "name": "M21 Stock Forks"
-    },
-    {
-      "name": "M19 Stock Forks"
-    },
-    {
-      "name": "M13 Stock Forks"
-    },
-    {
-      "name": "Jeunesse Stock Forks"
-    },
-    {
-      "name": "F55 Stock Forks"
-    },
-    {
-      "name": "Eko Stock Forks"
-    },
-    {
-      "name": "Corona Stock Forks"
-    },
-    {
-      "name": "Berinette Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Miniped Stock Wheels"
-    },
-    {
-      "name": "M48 Stock Wheels"
-    },
-    {
-      "name": "M35 Stock Wheels"
-    },
-    {
-      "name": "M31 Stock Wheels"
-    },
-    {
-      "name": "M23 Stock Wheels"
-    },
-    {
-      "name": "M21 Sport Stock Wheels"
-    },
-    {
-      "name": "M21 Stock Wheels"
-    },
-    {
-      "name": "M19 Stock Wheels"
-    },
-    {
-      "name": "M13 Stock Wheels"
-    },
-    {
-      "name": "Jeunesse Stock Wheels"
-    },
-    {
-      "name": "F55 Stock Wheels"
-    },
-    {
-      "name": "Eko Stock Wheels"
-    },
-    {
-      "name": "Corona Stock Wheels"
-    },
-    {
-      "name": "Berinette Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

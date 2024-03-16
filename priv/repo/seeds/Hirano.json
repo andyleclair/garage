@@ -1,33 +1,23 @@
 {
   "name": "Hirano",
-  "engines": [],
   "models": [
     {
       "name": "Popet"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Popet Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Popet Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Popet Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

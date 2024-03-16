@@ -2,9 +2,7 @@
   "carburetors": [],
   "categories": [
     "engines",
-    "forks",
-    "mopeds",
-    "wheels"
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
@@ -15,65 +13,6 @@
     }
   ],
   "exhausts": [],
-  "forks": [
-    {
-      "name": "Turismo Stock Forks"
-    },
-    {
-      "name": "Sprint Stock Forks"
-    },
-    {
-      "name": "Riverside Stock Forks"
-    },
-    {
-      "name": "Pantera Stock Forks"
-    },
-    {
-      "name": "Motorella Stock Forks"
-    },
-    {
-      "name": "Maserati Stock Forks"
-    },
-    {
-      "name": "Magnum 6V Stock Forks"
-    },
-    {
-      "name": "Magnum 5V Stock Forks"
-    },
-    {
-      "name": "Gentleman-2 Stock Forks"
-    },
-    {
-      "name": "G2 Stock Forks"
-    },
-    {
-      "name": "Fireball 50 Stock Forks"
-    },
-    {
-      "name": "FA Stock Forks"
-    },
-    {
-      "name": "Cross Stock Forks"
-    },
-    {
-      "name": "Cosmo Colt Stock Forks"
-    },
-    {
-      "name": "Cosmo Blazer Stock Forks"
-    },
-    {
-      "name": "Caddy Stock Forks"
-    },
-    {
-      "name": "Blazar Stock Forks"
-    },
-    {
-      "name": "49 Export Stock Forks"
-    },
-    {
-      "name": "3VK Stock Forks"
-    }
-  ],
   "ignitions": [],
   "models": [
     {
@@ -136,64 +75,5 @@
   ],
   "name": "Benelli",
   "pulleys": [],
-  "variators": [],
-  "wheels": [
-    {
-      "name": "Turismo Stock Wheels"
-    },
-    {
-      "name": "Sprint Stock Wheels"
-    },
-    {
-      "name": "Riverside Stock Wheels"
-    },
-    {
-      "name": "Pantera Stock Wheels"
-    },
-    {
-      "name": "Motorella Stock Wheels"
-    },
-    {
-      "name": "Maserati Stock Wheels"
-    },
-    {
-      "name": "Magnum 6V Stock Wheels"
-    },
-    {
-      "name": "Magnum 5V Stock Wheels"
-    },
-    {
-      "name": "Gentleman-2 Stock Wheels"
-    },
-    {
-      "name": "G2 Stock Wheels"
-    },
-    {
-      "name": "Fireball 50 Stock Wheels"
-    },
-    {
-      "name": "FA Stock Wheels"
-    },
-    {
-      "name": "Cross Stock Wheels"
-    },
-    {
-      "name": "Cosmo Colt Stock Wheels"
-    },
-    {
-      "name": "Cosmo Blazer Stock Wheels"
-    },
-    {
-      "name": "Caddy Stock Wheels"
-    },
-    {
-      "name": "Blazar Stock Wheels"
-    },
-    {
-      "name": "49 Export Stock Wheels"
-    },
-    {
-      "name": "3VK Stock Wheels"
-    }
-  ]
+  "variators": []
 }

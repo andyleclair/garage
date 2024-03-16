@@ -1,6 +1,5 @@
 {
   "name": "General",
-  "engines": [],
   "models": [
     {
       "name": "3 Star"
@@ -24,6 +23,12 @@
       "name": "Limited Edition"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Limited Edition Stock Exhaust"
@@ -48,58 +53,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Limited Edition Stock Forks"
-    },
-    {
-      "name": "Laser Stock Forks"
-    },
-    {
-      "name": "C-2 Stock Forks"
-    },
-    {
-      "name": "5 Star TE Stock Forks"
-    },
-    {
-      "name": "5 Star ST Stock Forks"
-    },
-    {
-      "name": "5 Star Stock Forks"
-    },
-    {
-      "name": "3 Star Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Limited Edition Stock Wheels"
-    },
-    {
-      "name": "Laser Stock Wheels"
-    },
-    {
-      "name": "C-2 Stock Wheels"
-    },
-    {
-      "name": "5 Star TE Stock Wheels"
-    },
-    {
-      "name": "5 Star ST Stock Wheels"
-    },
-    {
-      "name": "5 Star Stock Wheels"
-    },
-    {
-      "name": "3 Star Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

@@ -1,6 +1,5 @@
 {
   "name": "AMF",
-  "engines": [],
   "models": [
     {
       "name": "ALL-PRO"
@@ -42,6 +41,12 @@
       "name": "Roadmaster XL Deluxe"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Roadmaster XL Deluxe Stock Exhaust"
@@ -84,94 +89,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Roadmaster XL Deluxe Stock Forks"
-    },
-    {
-      "name": "Roadmaster XL Stock Forks"
-    },
-    {
-      "name": "Roadmaster C140 Stock Forks"
-    },
-    {
-      "name": "Roadmaster C130 Stock Forks"
-    },
-    {
-      "name": "Roadmaster C120 Stock Forks"
-    },
-    {
-      "name": "Roadmaster C110 Stock Forks"
-    },
-    {
-      "name": "Roadmaster B125 Stock Forks"
-    },
-    {
-      "name": "Roadmaster B120 Stock Forks"
-    },
-    {
-      "name": "Roadmaster B115 Stock Forks"
-    },
-    {
-      "name": "Roadmaster B110 Stock Forks"
-    },
-    {
-      "name": "Roadmaster A115 Stock Forks"
-    },
-    {
-      "name": "Roadmaster A110 Stock Forks"
-    },
-    {
-      "name": "ALL-PRO Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Roadmaster XL Deluxe Stock Wheels"
-    },
-    {
-      "name": "Roadmaster XL Stock Wheels"
-    },
-    {
-      "name": "Roadmaster C140 Stock Wheels"
-    },
-    {
-      "name": "Roadmaster C130 Stock Wheels"
-    },
-    {
-      "name": "Roadmaster C120 Stock Wheels"
-    },
-    {
-      "name": "Roadmaster C110 Stock Wheels"
-    },
-    {
-      "name": "Roadmaster B125 Stock Wheels"
-    },
-    {
-      "name": "Roadmaster B120 Stock Wheels"
-    },
-    {
-      "name": "Roadmaster B115 Stock Wheels"
-    },
-    {
-      "name": "Roadmaster B110 Stock Wheels"
-    },
-    {
-      "name": "Roadmaster A115 Stock Wheels"
-    },
-    {
-      "name": "Roadmaster A110 Stock Wheels"
-    },
-    {
-      "name": "ALL-PRO Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

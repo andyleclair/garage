@@ -1,33 +1,23 @@
 {
   "name": "Montgomery Wards",
-  "engines": [],
   "models": [
     {
       "name": "Riverside Moped"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Riverside Moped Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Riverside Moped Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Riverside Moped Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

@@ -4,7 +4,6 @@ defmodule GarageWeb.BuildsLive.Edit do
 
   alias AshPhoenix.Form
   alias ExAws.S3
-  alias Garage.Builds
   alias Garage.Builds.Build
   alias Garage.Mopeds.Manufacturer
   alias Garage.Mopeds.Model
@@ -13,8 +12,6 @@ defmodule GarageWeb.BuildsLive.Edit do
   alias Garage.Mopeds.Clutch
   alias Garage.Mopeds.Exhaust
   alias Garage.Mopeds.Ignition
-  alias Garage.Mopeds.Forks
-  alias Garage.Mopeds.Wheels
 
   import GarageWeb.BuildsLive.Helpers
 
@@ -23,11 +20,7 @@ defmodule GarageWeb.BuildsLive.Edit do
     build = Build.get_by_slug!(slug)
 
     if Build.can_update?(assigns.current_user, build) do
-      form =
-        Form.for_action(build, :update,
-          api: Builds,
-          actor: assigns.current_user
-        )
+      form = Form.for_action(build, :update, actor: assigns.current_user)
 
       year_options = year_options()
       manufacturer_options = manufacturer_options()
@@ -36,8 +29,6 @@ defmodule GarageWeb.BuildsLive.Edit do
       clutch_options = clutch_options()
       exhaust_options = exhaust_options()
       ignition_options = ignition_options()
-      forks_options = forks_options()
-      wheels_options = wheels_options()
 
       # if we already have a manufacturer set, show the model dropdown
       model_options =
@@ -63,8 +54,6 @@ defmodule GarageWeb.BuildsLive.Edit do
        |> assign(:exhaust_options, exhaust_options)
        |> assign(:exhaust_options, exhaust_options)
        |> assign(:ignition_options, ignition_options)
-       |> assign(:forks_options, forks_options)
-       |> assign(:wheels_options, wheels_options)
        |> assign(:year_options, year_options)
        |> assign_form(form)
        |> allow_upload(:image_urls, accept: ~w(.jpg .jpeg .webp .png), max_entries: 10)}
@@ -220,6 +209,10 @@ defmodule GarageWeb.BuildsLive.Edit do
         do: {manufacturer.name, manufacturer.id}
   end
 
+  def model_options_by_id(manufacturer_id) do
+    for model <- Model.by_manufacturer_id!(manufacturer_id), into: [], do: {model.name, model.id}
+  end
+
   # TODO: Load just the manufacturer name instead of the whole thing
   def carburetor_options() do
     for carburetor <- Carburetor.read_all!(load: [:manufacturer]),
@@ -249,21 +242,5 @@ defmodule GarageWeb.BuildsLive.Edit do
     for ignition <- Ignition.read_all!(load: [:manufacturer]),
         into: [],
         do: {"#{ignition.manufacturer.name} #{ignition.name}", ignition.id}
-  end
-
-  def forks_options() do
-    for forks <- Forks.read_all!(load: [:manufacturer]),
-        into: [],
-        do: {"#{forks.manufacturer.name} #{forks.name}", forks.id}
-  end
-
-  def wheels_options() do
-    for wheels <- Wheels.read_all!(load: [:manufacturer]),
-        into: [],
-        do: {"#{wheels.manufacturer.name} #{wheels.name}", wheels.id}
-  end
-
-  def model_options_by_id(manufacturer_id) do
-    for model <- Model.by_manufacturer_id!(manufacturer_id), into: [], do: {model.name, model.id}
   end
 end

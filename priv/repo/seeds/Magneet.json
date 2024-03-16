@@ -1,6 +1,5 @@
 {
   "name": "Magneet",
-  "engines": [],
   "models": [
     {
       "name": "Cheetah"
@@ -24,6 +23,12 @@
       "name": "Thunderbird"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Thunderbird Stock Exhaust"
@@ -48,58 +53,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Thunderbird Stock Forks"
-    },
-    {
-      "name": "Sprintmaster Stock Forks"
-    },
-    {
-      "name": "Luxe Stock Forks"
-    },
-    {
-      "name": "Globemaster Deluxe Stock Forks"
-    },
-    {
-      "name": "Globemaster Stock Forks"
-    },
-    {
-      "name": "Commodore Stock Forks"
-    },
-    {
-      "name": "Cheetah Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Thunderbird Stock Wheels"
-    },
-    {
-      "name": "Sprintmaster Stock Wheels"
-    },
-    {
-      "name": "Luxe Stock Wheels"
-    },
-    {
-      "name": "Globemaster Deluxe Stock Wheels"
-    },
-    {
-      "name": "Globemaster Stock Wheels"
-    },
-    {
-      "name": "Commodore Stock Wheels"
-    },
-    {
-      "name": "Cheetah Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

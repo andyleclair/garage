@@ -1,33 +1,23 @@
 {
   "name": "Tokaido",
-  "engines": [],
   "models": [
     {
       "name": "RC 25"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "RC 25 Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "RC 25 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "RC 25 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

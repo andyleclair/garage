@@ -1,33 +1,23 @@
 {
   "name": "Oltenia",
-  "engines": [],
   "models": [
     {
       "name": "Alpa"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Alpa Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Alpa Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Alpa Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

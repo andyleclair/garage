@@ -64,20 +64,6 @@
     field={@form[:ignition_id]}
     options={@ignition_options}
   />
-  <.live_select
-    label="Forks"
-    debounce="250"
-    phx-focus="set-default"
-    field={@form[:forks_id]}
-    options={@forks_options}
-  />
-  <.live_select
-    label="Wheels"
-    debounce="250"
-    phx-focus="set-default"
-    field={@form[:wheels_id]}
-    options={@wheels_options}
-  />
   <.input field={@form[:description]} type="hidden" label="Description" id="trix-editor" />
   <div id="rich-text" phx-update="ignore">
     <trix-editor class="trix-content" input="trix-editor"></trix-editor>

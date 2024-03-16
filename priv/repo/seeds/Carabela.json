@@ -1,6 +1,5 @@
 {
   "name": "Carabela",
-  "engines": [],
   "models": [
     {
       "name": "Carrera"
@@ -30,6 +29,12 @@
       "name": "Super Sport"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Super Sport Stock Exhaust"
@@ -60,70 +65,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Super Sport Stock Forks"
-    },
-    {
-      "name": "Sport Deluxe Stock Forks"
-    },
-    {
-      "name": "Sport Stock Forks"
-    },
-    {
-      "name": "Moto-Pony 60 Stock Forks"
-    },
-    {
-      "name": "Moto-Pedal Stock Forks"
-    },
-    {
-      "name": "Moto-Matic Deluxe Stock Forks"
-    },
-    {
-      "name": "Moto-Matic Stock Forks"
-    },
-    {
-      "name": "Delux Stock Forks"
-    },
-    {
-      "name": "Carrera Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Super Sport Stock Wheels"
-    },
-    {
-      "name": "Sport Deluxe Stock Wheels"
-    },
-    {
-      "name": "Sport Stock Wheels"
-    },
-    {
-      "name": "Moto-Pony 60 Stock Wheels"
-    },
-    {
-      "name": "Moto-Pedal Stock Wheels"
-    },
-    {
-      "name": "Moto-Matic Deluxe Stock Wheels"
-    },
-    {
-      "name": "Moto-Matic Stock Wheels"
-    },
-    {
-      "name": "Delux Stock Wheels"
-    },
-    {
-      "name": "Carrera Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

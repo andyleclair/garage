@@ -1,6 +1,5 @@
 {
   "name": "Kymco",
-  "engines": [],
   "models": [
     {
       "name": "Agility"
@@ -30,6 +29,12 @@
       "name": "ZX-50"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "ZX-50 Stock Exhaust"
@@ -60,70 +65,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "ZX-50 Stock Forks"
-    },
-    {
-      "name": "Yup 50 Stock Forks"
-    },
-    {
-      "name": "TSR 50 Stock Forks"
-    },
-    {
-      "name": "Super 9 Stock Forks"
-    },
-    {
-      "name": "People 50 Stock Forks"
-    },
-    {
-      "name": "Filly 50 Stock Forks"
-    },
-    {
-      "name": "Cobra Cross Stock Forks"
-    },
-    {
-      "name": "Cobra Stock Forks"
-    },
-    {
-      "name": "Agility Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "ZX-50 Stock Wheels"
-    },
-    {
-      "name": "Yup 50 Stock Wheels"
-    },
-    {
-      "name": "TSR 50 Stock Wheels"
-    },
-    {
-      "name": "Super 9 Stock Wheels"
-    },
-    {
-      "name": "People 50 Stock Wheels"
-    },
-    {
-      "name": "Filly 50 Stock Wheels"
-    },
-    {
-      "name": "Cobra Cross Stock Wheels"
-    },
-    {
-      "name": "Cobra Stock Wheels"
-    },
-    {
-      "name": "Agility Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

@@ -1,33 +1,23 @@
 {
   "name": "Peripoli",
-  "engines": [],
   "models": [
     {
       "name": "Giulietta"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Giulietta Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Giulietta Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Giulietta Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

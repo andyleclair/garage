@@ -1,6 +1,5 @@
 {
   "name": "Fuki Planning",
-  "engines": [],
   "models": [
     {
       "name": "FK310"
@@ -9,6 +8,12 @@
       "name": "LA-2"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "LA-2 Stock Exhaust"
@@ -18,28 +23,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "LA-2 Stock Forks"
-    },
-    {
-      "name": "FK310 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "LA-2 Stock Wheels"
-    },
-    {
-      "name": "FK310 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

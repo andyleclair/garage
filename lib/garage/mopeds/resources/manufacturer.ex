@@ -23,8 +23,6 @@ defmodule Garage.Mopeds.Manufacturer do
       argument :pulleys, {:array, :map}
       argument :variators, {:array, :map}
       argument :exhausts, {:array, :map}
-      argument :forks, {:array, :map}
-      argument :wheels, {:array, :map}
       argument :cylinders, {:array, :map}
 
       argument :categories, {:array, :atom} do
@@ -43,8 +41,6 @@ defmodule Garage.Mopeds.Manufacturer do
       change manage_relationship(:pulleys, type: :create)
       change manage_relationship(:variators, type: :create)
       change manage_relationship(:exhausts, type: :create)
-      change manage_relationship(:forks, type: :create)
-      change manage_relationship(:wheels, type: :create)
       change manage_relationship(:cylinders, type: :create)
     end
 
@@ -128,11 +124,9 @@ defmodule Garage.Mopeds.Manufacturer do
     has_many :cylinders, Garage.Mopeds.Cylinder
     has_many :engines, Garage.Mopeds.Engine
     has_many :exhausts, Garage.Mopeds.Exhaust
-    has_many :forks, Garage.Mopeds.Forks
     has_many :ignitions, Garage.Mopeds.Ignition
     has_many :models, Garage.Mopeds.Model
     has_many :pulleys, Garage.Mopeds.Pulley
     has_many :variators, Garage.Mopeds.Variator
-    has_many :wheels, Garage.Mopeds.Wheels
   end
 end

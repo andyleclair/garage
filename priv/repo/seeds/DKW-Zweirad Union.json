@@ -1,6 +1,5 @@
 {
   "name": "DKW-Zweirad Union",
-  "engines": [],
   "models": [
     {
       "name": "111 BJ"
@@ -24,6 +23,12 @@
       "name": "Model PI"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Model PI Stock Exhaust"
@@ -48,58 +53,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Model PI Stock Forks"
-    },
-    {
-      "name": "Hummel Super Stock Forks"
-    },
-    {
-      "name": "Hummel 3 Gang Stock Forks"
-    },
-    {
-      "name": "Hummel 2 Gang Stock Forks"
-    },
-    {
-      "name": "Hummel Stock Forks"
-    },
-    {
-      "name": "503 Stock Forks"
-    },
-    {
-      "name": "111 BJ Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Model PI Stock Wheels"
-    },
-    {
-      "name": "Hummel Super Stock Wheels"
-    },
-    {
-      "name": "Hummel 3 Gang Stock Wheels"
-    },
-    {
-      "name": "Hummel 2 Gang Stock Wheels"
-    },
-    {
-      "name": "Hummel Stock Wheels"
-    },
-    {
-      "name": "503 Stock Wheels"
-    },
-    {
-      "name": "111 BJ Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

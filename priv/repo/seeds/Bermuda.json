@@ -1,6 +1,5 @@
 {
   "name": "Bermuda",
-  "engines": [],
   "models": [
     {
       "name": "147F"
@@ -21,6 +20,12 @@
       "name": "Somerset 147FVA"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Somerset 147FVA Stock Exhaust"
@@ -42,52 +47,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Somerset 147FVA Stock Forks"
-    },
-    {
-      "name": "Pembroke 147AFA Stock Forks"
-    },
-    {
-      "name": "Hampton 147FA Stock Forks"
-    },
-    {
-      "name": "Flandria Stock Forks"
-    },
-    {
-      "name": "147FA Stock Forks"
-    },
-    {
-      "name": "147F Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Somerset 147FVA Stock Wheels"
-    },
-    {
-      "name": "Pembroke 147AFA Stock Wheels"
-    },
-    {
-      "name": "Hampton 147FA Stock Wheels"
-    },
-    {
-      "name": "Flandria Stock Wheels"
-    },
-    {
-      "name": "147FA Stock Wheels"
-    },
-    {
-      "name": "147F Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

@@ -1,33 +1,23 @@
 {
   "name": "Gemini",
-  "engines": [],
   "models": [
     {
       "name": "Camander"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Camander Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Camander Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Camander Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

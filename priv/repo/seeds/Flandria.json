@@ -1,6 +1,5 @@
 {
   "name": "Flandria",
-  "engines": [],
   "models": [
     {
       "name": "101"
@@ -63,6 +62,12 @@
       "name": "SP 747"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "SP 747 Stock Exhaust"
@@ -126,136 +131,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "SP 747 Stock Forks"
-    },
-    {
-      "name": "SP 547 Stock Forks"
-    },
-    {
-      "name": "SP 537 Stock Forks"
-    },
-    {
-      "name": "SP 527 Stock Forks"
-    },
-    {
-      "name": "SP 337 Stock Forks"
-    },
-    {
-      "name": "SP 237 Stock Forks"
-    },
-    {
-      "name": "Record Stock Forks"
-    },
-    {
-      "name": "Monomatix Stock Forks"
-    },
-    {
-      "name": "Kingline Stock Forks"
-    },
-    {
-      "name": "Imola4 Stock Forks"
-    },
-    {
-      "name": "Commet Stock Forks"
-    },
-    {
-      "name": "Bermuda Stock Forks"
-    },
-    {
-      "name": "Apollo AF-A Stock Forks"
-    },
-    {
-      "name": "Apollo AF Stock Forks"
-    },
-    {
-      "name": "Anker Laura Stock Forks"
-    },
-    {
-      "name": "5CV Stock Forks"
-    },
-    {
-      "name": "4.3CV Stock Forks"
-    },
-    {
-      "name": "104 Stock Forks"
-    },
-    {
-      "name": "102 Stock Forks"
-    },
-    {
-      "name": "101 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "SP 747 Stock Wheels"
-    },
-    {
-      "name": "SP 547 Stock Wheels"
-    },
-    {
-      "name": "SP 537 Stock Wheels"
-    },
-    {
-      "name": "SP 527 Stock Wheels"
-    },
-    {
-      "name": "SP 337 Stock Wheels"
-    },
-    {
-      "name": "SP 237 Stock Wheels"
-    },
-    {
-      "name": "Record Stock Wheels"
-    },
-    {
-      "name": "Monomatix Stock Wheels"
-    },
-    {
-      "name": "Kingline Stock Wheels"
-    },
-    {
-      "name": "Imola4 Stock Wheels"
-    },
-    {
-      "name": "Commet Stock Wheels"
-    },
-    {
-      "name": "Bermuda Stock Wheels"
-    },
-    {
-      "name": "Apollo AF-A Stock Wheels"
-    },
-    {
-      "name": "Apollo AF Stock Wheels"
-    },
-    {
-      "name": "Anker Laura Stock Wheels"
-    },
-    {
-      "name": "5CV Stock Wheels"
-    },
-    {
-      "name": "4.3CV Stock Wheels"
-    },
-    {
-      "name": "104 Stock Wheels"
-    },
-    {
-      "name": "102 Stock Wheels"
-    },
-    {
-      "name": "101 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

@@ -1,6 +1,5 @@
 {
   "name": "Trac",
-  "engines": [],
   "models": [
     {
       "name": "Blitz"
@@ -30,6 +29,12 @@
       "name": "Sprint"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Sprint Stock Exhaust"
@@ -60,70 +65,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Sprint Stock Forks"
-    },
-    {
-      "name": "Olympic Stock Forks"
-    },
-    {
-      "name": "Metro Stock Forks"
-    },
-    {
-      "name": "Liberty Stock Forks"
-    },
-    {
-      "name": "Image Stock Forks"
-    },
-    {
-      "name": "Hawk Stock Forks"
-    },
-    {
-      "name": "Eagle Stock Forks"
-    },
-    {
-      "name": "Clipper Stock Forks"
-    },
-    {
-      "name": "Blitz Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Sprint Stock Wheels"
-    },
-    {
-      "name": "Olympic Stock Wheels"
-    },
-    {
-      "name": "Metro Stock Wheels"
-    },
-    {
-      "name": "Liberty Stock Wheels"
-    },
-    {
-      "name": "Image Stock Wheels"
-    },
-    {
-      "name": "Hawk Stock Wheels"
-    },
-    {
-      "name": "Eagle Stock Wheels"
-    },
-    {
-      "name": "Clipper Stock Wheels"
-    },
-    {
-      "name": "Blitz Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

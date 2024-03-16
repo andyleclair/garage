@@ -1,6 +1,5 @@
 {
   "name": "Malaguti",
-  "engines": [],
   "models": [
     {
       "name": "Commuter"
@@ -36,6 +35,12 @@
       "name": "Tiger"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Tiger Stock Exhaust"
@@ -72,82 +77,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Tiger Stock Forks"
-    },
-    {
-      "name": "Roxi Stock Forks"
-    },
-    {
-      "name": "Quattrotto Stock Forks"
-    },
-    {
-      "name": "Quattroto Mono Stock Forks"
-    },
-    {
-      "name": "Pilot Stock Forks"
-    },
-    {
-      "name": "Olympique Stock Forks"
-    },
-    {
-      "name": "Motorik Stock Forks"
-    },
-    {
-      "name": "Europino Stock Forks"
-    },
-    {
-      "name": "Commuter 20 Stock Forks"
-    },
-    {
-      "name": "Commuter 2 Stock Forks"
-    },
-    {
-      "name": "Commuter Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Tiger Stock Wheels"
-    },
-    {
-      "name": "Roxi Stock Wheels"
-    },
-    {
-      "name": "Quattrotto Stock Wheels"
-    },
-    {
-      "name": "Quattroto Mono Stock Wheels"
-    },
-    {
-      "name": "Pilot Stock Wheels"
-    },
-    {
-      "name": "Olympique Stock Wheels"
-    },
-    {
-      "name": "Motorik Stock Wheels"
-    },
-    {
-      "name": "Europino Stock Wheels"
-    },
-    {
-      "name": "Commuter 20 Stock Wheels"
-    },
-    {
-      "name": "Commuter 2 Stock Wheels"
-    },
-    {
-      "name": "Commuter Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

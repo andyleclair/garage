@@ -1,33 +1,23 @@
 {
   "name": "Francis-Barnett",
-  "engines": [],
   "models": [
     {
       "name": "J50 Powerbike"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "J50 Powerbike Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "J50 Powerbike Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "J50 Powerbike Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

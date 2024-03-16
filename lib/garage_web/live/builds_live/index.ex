@@ -3,7 +3,18 @@ defmodule GarageWeb.BuildsLive.Index do
 
   alias Garage.Builds.Build
   alias Ash.Page.Offset, as: Page
-  import GarageWeb.Components.Builds.Build
+  import GarageWeb.Components.Builds.Card
+
+  @impl true
+  def render(assigns) do
+    ~H"""
+    <.header>
+      All Builds
+    </.header>
+
+    <.card :for={build <- @builds} build={build} />
+    """
+  end
 
   @impl true
   def mount(_params, _session, socket) do

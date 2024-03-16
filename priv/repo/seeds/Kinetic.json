@@ -1,6 +1,5 @@
 {
   "name": "Kinetic",
-  "engines": [],
   "models": [
     {
       "name": "K4 100"
@@ -24,6 +23,12 @@
       "name": "TFR"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "TFR Stock Exhaust"
@@ -48,58 +53,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "TFR Stock Forks"
-    },
-    {
-      "name": "Safari V2 Stock Forks"
-    },
-    {
-      "name": "Magnum Stock Forks"
-    },
-    {
-      "name": "Luna TFR Stock Forks"
-    },
-    {
-      "name": "Luna Super Stock Forks"
-    },
-    {
-      "name": "Luna Stock Forks"
-    },
-    {
-      "name": "K4 100 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "TFR Stock Wheels"
-    },
-    {
-      "name": "Safari V2 Stock Wheels"
-    },
-    {
-      "name": "Magnum Stock Wheels"
-    },
-    {
-      "name": "Luna TFR Stock Wheels"
-    },
-    {
-      "name": "Luna Super Stock Wheels"
-    },
-    {
-      "name": "Luna Stock Wheels"
-    },
-    {
-      "name": "K4 100 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

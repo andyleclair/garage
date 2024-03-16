@@ -1,6 +1,5 @@
 {
   "name": "Simson",
-  "engines": [],
   "models": [
     {
       "name": "Mofa 1"
@@ -42,6 +41,12 @@
       "name": "Sperber"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Sperber Stock Exhaust"
@@ -84,94 +89,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Sperber Stock Forks"
-    },
-    {
-      "name": "Scwalbe Stock Forks"
-    },
-    {
-      "name": "SR50 Stock Forks"
-    },
-    {
-      "name": "SR2 Stock Forks"
-    },
-    {
-      "name": "SR1 Stock Forks"
-    },
-    {
-      "name": "SR 4-1 Stock Forks"
-    },
-    {
-      "name": "SL1S Stock Forks"
-    },
-    {
-      "name": "SL1 Stock Forks"
-    },
-    {
-      "name": "S53 Alpha Stock Forks"
-    },
-    {
-      "name": "S51 Stock Forks"
-    },
-    {
-      "name": "S50 B1 Stock Forks"
-    },
-    {
-      "name": "S50 Stock Forks"
-    },
-    {
-      "name": "Mofa 1 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Sperber Stock Wheels"
-    },
-    {
-      "name": "Scwalbe Stock Wheels"
-    },
-    {
-      "name": "SR50 Stock Wheels"
-    },
-    {
-      "name": "SR2 Stock Wheels"
-    },
-    {
-      "name": "SR1 Stock Wheels"
-    },
-    {
-      "name": "SR 4-1 Stock Wheels"
-    },
-    {
-      "name": "SL1S Stock Wheels"
-    },
-    {
-      "name": "SL1 Stock Wheels"
-    },
-    {
-      "name": "S53 Alpha Stock Wheels"
-    },
-    {
-      "name": "S51 Stock Wheels"
-    },
-    {
-      "name": "S50 B1 Stock Wheels"
-    },
-    {
-      "name": "S50 Stock Wheels"
-    },
-    {
-      "name": "Mofa 1 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

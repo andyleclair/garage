@@ -1,33 +1,23 @@
 {
   "name": "Maico",
-  "engines": [],
   "models": [
     {
       "name": "MPI"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "MPI Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "MPI Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "MPI Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

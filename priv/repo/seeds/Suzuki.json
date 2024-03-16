@@ -2,9 +2,7 @@
   "carburetors": [],
   "categories": [
     "engines",
-    "forks",
-    "mopeds",
-    "wheels"
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
@@ -18,53 +16,6 @@
     }
   ],
   "exhausts": [],
-  "forks": [
-    {
-      "name": "ZR50SP Stock Forks"
-    },
-    {
-      "name": "ZR50 Stock Forks"
-    },
-    {
-      "name": "U50 Stock Forks"
-    },
-    {
-      "name": "TS50X Stock Forks"
-    },
-    {
-      "name": "S1-90 Stock Forks"
-    },
-    {
-      "name": "RV50 Stock Forks"
-    },
-    {
-      "name": "M15 Stock Forks"
-    },
-    {
-      "name": "M12 Stock Forks"
-    },
-    {
-      "name": "K50 DN Stock Forks"
-    },
-    {
-      "name": "FZ-50 Rascal Stock Forks"
-    },
-    {
-      "name": "FS50 Stock Forks"
-    },
-    {
-      "name": "FA50 Shuttle Stock Forks"
-    },
-    {
-      "name": "FA50 Stock Forks"
-    },
-    {
-      "name": "AP50 Stock Forks"
-    },
-    {
-      "name": "A50P Stock Forks"
-    }
-  ],
   "ignitions": [],
   "models": [
     {
@@ -115,52 +66,5 @@
   ],
   "name": "Suzuki",
   "pulleys": [],
-  "variators": [],
-  "wheels": [
-    {
-      "name": "ZR50SP Stock Wheels"
-    },
-    {
-      "name": "ZR50 Stock Wheels"
-    },
-    {
-      "name": "U50 Stock Wheels"
-    },
-    {
-      "name": "TS50X Stock Wheels"
-    },
-    {
-      "name": "S1-90 Stock Wheels"
-    },
-    {
-      "name": "RV50 Stock Wheels"
-    },
-    {
-      "name": "M15 Stock Wheels"
-    },
-    {
-      "name": "M12 Stock Wheels"
-    },
-    {
-      "name": "K50 DN Stock Wheels"
-    },
-    {
-      "name": "FZ-50 Rascal Stock Wheels"
-    },
-    {
-      "name": "FS50 Stock Wheels"
-    },
-    {
-      "name": "FA50 Shuttle Stock Wheels"
-    },
-    {
-      "name": "FA50 Stock Wheels"
-    },
-    {
-      "name": "AP50 Stock Wheels"
-    },
-    {
-      "name": "A50P Stock Wheels"
-    }
-  ]
+  "variators": []
 }

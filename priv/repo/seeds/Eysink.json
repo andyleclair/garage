@@ -1,6 +1,5 @@
 {
   "name": "Eysink",
-  "engines": [],
   "models": [
     {
       "name": "Credette"
@@ -21,6 +20,12 @@
       "name": "Sunny"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Sunny Stock Exhaust"
@@ -42,52 +47,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Sunny Stock Forks"
-    },
-    {
-      "name": "Record Stock Forks"
-    },
-    {
-      "name": "Mini 2 Stock Forks"
-    },
-    {
-      "name": "Mini 1 Stock Forks"
-    },
-    {
-      "name": "Kampioen Stock Forks"
-    },
-    {
-      "name": "Credette Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Sunny Stock Wheels"
-    },
-    {
-      "name": "Record Stock Wheels"
-    },
-    {
-      "name": "Mini 2 Stock Wheels"
-    },
-    {
-      "name": "Mini 1 Stock Wheels"
-    },
-    {
-      "name": "Kampioen Stock Wheels"
-    },
-    {
-      "name": "Credette Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

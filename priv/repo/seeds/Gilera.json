@@ -1,6 +1,5 @@
 {
   "name": "Gilera",
-  "engines": [],
   "models": [
     {
       "name": "50 Touring RS"
@@ -39,6 +38,12 @@
       "name": "Trial"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Trial Stock Exhaust"
@@ -78,88 +83,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Trial Stock Forks"
-    },
-    {
-      "name": "Touring Stock Forks"
-    },
-    {
-      "name": "SD Stock Forks"
-    },
-    {
-      "name": "RS Stock Forks"
-    },
-    {
-      "name": "RL Stock Forks"
-    },
-    {
-      "name": "RE Stock Forks"
-    },
-    {
-      "name": "RA Stock Forks"
-    },
-    {
-      "name": "Enduro Stock Forks"
-    },
-    {
-      "name": "Eco Stock Forks"
-    },
-    {
-      "name": "E-type Stock Forks"
-    },
-    {
-      "name": "50 Trial RS Stock Forks"
-    },
-    {
-      "name": "50 Touring RS Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Trial Stock Wheels"
-    },
-    {
-      "name": "Touring Stock Wheels"
-    },
-    {
-      "name": "SD Stock Wheels"
-    },
-    {
-      "name": "RS Stock Wheels"
-    },
-    {
-      "name": "RL Stock Wheels"
-    },
-    {
-      "name": "RE Stock Wheels"
-    },
-    {
-      "name": "RA Stock Wheels"
-    },
-    {
-      "name": "Enduro Stock Wheels"
-    },
-    {
-      "name": "Eco Stock Wheels"
-    },
-    {
-      "name": "E-type Stock Wheels"
-    },
-    {
-      "name": "50 Trial RS Stock Wheels"
-    },
-    {
-      "name": "50 Touring RS Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

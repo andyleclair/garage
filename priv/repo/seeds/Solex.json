@@ -1,6 +1,5 @@
 {
   "name": "Solex",
-  "engines": [],
   "models": [
     {
       "name": "1700"
@@ -57,6 +56,12 @@
       "name": "Trotilex"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Trotilex Stock Exhaust"
@@ -114,124 +119,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Trotilex Stock Forks"
-    },
-    {
-      "name": "Tenor Stock Forks"
-    },
-    {
-      "name": "S3800 Stock Forks"
-    },
-    {
-      "name": "Pli-Solex Stock Forks"
-    },
-    {
-      "name": "Micron Stock Forks"
-    },
-    {
-      "name": "Horse Stock Forks"
-    },
-    {
-      "name": "Flash 6000 Stock Forks"
-    },
-    {
-      "name": "8000 Stock Forks"
-    },
-    {
-      "name": "6000 Stock Forks"
-    },
-    {
-      "name": "5000 Stock Forks"
-    },
-    {
-      "name": "4600 DOT Stock Forks"
-    },
-    {
-      "name": "4600 Stock Forks"
-    },
-    {
-      "name": "3800 Deluxe Stock Forks"
-    },
-    {
-      "name": "3800 Stock Forks"
-    },
-    {
-      "name": "3300 Stock Forks"
-    },
-    {
-      "name": "3200 Stock Forks"
-    },
-    {
-      "name": "2200 Stock Forks"
-    },
-    {
-      "name": "1700 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Trotilex Stock Wheels"
-    },
-    {
-      "name": "Tenor Stock Wheels"
-    },
-    {
-      "name": "S3800 Stock Wheels"
-    },
-    {
-      "name": "Pli-Solex Stock Wheels"
-    },
-    {
-      "name": "Micron Stock Wheels"
-    },
-    {
-      "name": "Horse Stock Wheels"
-    },
-    {
-      "name": "Flash 6000 Stock Wheels"
-    },
-    {
-      "name": "8000 Stock Wheels"
-    },
-    {
-      "name": "6000 Stock Wheels"
-    },
-    {
-      "name": "5000 Stock Wheels"
-    },
-    {
-      "name": "4600 DOT Stock Wheels"
-    },
-    {
-      "name": "4600 Stock Wheels"
-    },
-    {
-      "name": "3800 Deluxe Stock Wheels"
-    },
-    {
-      "name": "3800 Stock Wheels"
-    },
-    {
-      "name": "3300 Stock Wheels"
-    },
-    {
-      "name": "3200 Stock Wheels"
-    },
-    {
-      "name": "2200 Stock Wheels"
-    },
-    {
-      "name": "1700 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

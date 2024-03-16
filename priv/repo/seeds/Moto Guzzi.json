@@ -1,6 +1,5 @@
 {
   "name": "Moto Guzzi",
-  "engines": [],
   "models": [
     {
       "name": "Chiu"
@@ -21,6 +20,12 @@
       "name": "Trotter"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Trotter Stock Exhaust"
@@ -42,52 +47,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Trotter Stock Forks"
-    },
-    {
-      "name": "Robin Stock Forks"
-    },
-    {
-      "name": "Magnum Stock Forks"
-    },
-    {
-      "name": "G2 Stock Forks"
-    },
-    {
-      "name": "Dingo Stock Forks"
-    },
-    {
-      "name": "Chiu Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Trotter Stock Wheels"
-    },
-    {
-      "name": "Robin Stock Wheels"
-    },
-    {
-      "name": "Magnum Stock Wheels"
-    },
-    {
-      "name": "G2 Stock Wheels"
-    },
-    {
-      "name": "Dingo Stock Wheels"
-    },
-    {
-      "name": "Chiu Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

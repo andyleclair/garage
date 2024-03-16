@@ -1,6 +1,5 @@
 {
   "name": "Solo",
-  "engines": [],
   "models": [
     {
       "name": "710"
@@ -42,6 +41,12 @@
       "name": "Odyssey"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Odyssey Stock Exhaust"
@@ -84,94 +89,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Odyssey Stock Forks"
-    },
-    {
-      "name": "Mini Stock Forks"
-    },
-    {
-      "name": "Electra Stock Forks"
-    },
-    {
-      "name": "726 Stock Forks"
-    },
-    {
-      "name": "725 Stock Forks"
-    },
-    {
-      "name": "722 Stock Forks"
-    },
-    {
-      "name": "716 Stock Forks"
-    },
-    {
-      "name": "715B Stock Forks"
-    },
-    {
-      "name": "715 Stock Forks"
-    },
-    {
-      "name": "713 Stock Forks"
-    },
-    {
-      "name": "712 Stock Forks"
-    },
-    {
-      "name": "711 Stock Forks"
-    },
-    {
-      "name": "710 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Odyssey Stock Wheels"
-    },
-    {
-      "name": "Mini Stock Wheels"
-    },
-    {
-      "name": "Electra Stock Wheels"
-    },
-    {
-      "name": "726 Stock Wheels"
-    },
-    {
-      "name": "725 Stock Wheels"
-    },
-    {
-      "name": "722 Stock Wheels"
-    },
-    {
-      "name": "716 Stock Wheels"
-    },
-    {
-      "name": "715B Stock Wheels"
-    },
-    {
-      "name": "715 Stock Wheels"
-    },
-    {
-      "name": "713 Stock Wheels"
-    },
-    {
-      "name": "712 Stock Wheels"
-    },
-    {
-      "name": "711 Stock Wheels"
-    },
-    {
-      "name": "710 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

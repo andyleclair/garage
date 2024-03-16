@@ -1,6 +1,5 @@
 {
   "name": "Crescent",
-  "engines": [],
   "models": [
     {
       "name": "1151"
@@ -12,6 +11,12 @@
       "name": "2000"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "2000 Stock Exhaust"
@@ -24,34 +29,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "2000 Stock Forks"
-    },
-    {
-      "name": "1269 Stock Forks"
-    },
-    {
-      "name": "1151 Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "2000 Stock Wheels"
-    },
-    {
-      "name": "1269 Stock Wheels"
-    },
-    {
-      "name": "1151 Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

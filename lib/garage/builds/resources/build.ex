@@ -15,13 +15,11 @@ defmodule Garage.Builds.Build do
     Cylinder,
     Engine,
     Exhaust,
-    Forks,
     Ignition,
     Manufacturer,
     Model,
     Pulley,
-    Variator,
-    Wheels
+    Variator
   }
 
   alias Garage.Accounts.User
@@ -72,16 +70,6 @@ defmodule Garage.Builds.Build do
     end
 
     belongs_to :carburetor, Carburetor do
-      api Garage.Mopeds
-      attribute_writable? true
-    end
-
-    belongs_to :wheels, Wheels do
-      api Garage.Mopeds
-      attribute_writable? true
-    end
-
-    belongs_to :forks, Forks do
       api Garage.Mopeds
       attribute_writable? true
     end
@@ -246,7 +234,20 @@ defmodule Garage.Builds.Build do
   end
 
   preparations do
-    prepare build(load: [:builder, :manufacturer, :model, :first_image, :likes])
+    prepare build(
+              load: [
+                :builder,
+                :first_image,
+                :likes,
+                :manufacturer,
+                :model,
+                engine: [:manufacturer],
+                clutch: [:manufacturer],
+                exhaust: [:manufacturer],
+                carburetor: [:manufacturer],
+                ignition: [:manufacturer]
+              ]
+            )
   end
 
   calculations do

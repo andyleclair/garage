@@ -1,33 +1,23 @@
 {
   "name": "Metrorider",
-  "engines": [],
   "models": [
     {
       "name": "Basic"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Basic Stock Exhaust"
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Basic Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Basic Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

@@ -1,6 +1,5 @@
 {
   "name": "Testi",
-  "engines": [],
   "models": [
     {
       "name": "Amico"
@@ -27,6 +26,12 @@
       "name": "Weekend Cross"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Weekend Cross Stock Exhaust"
@@ -54,64 +59,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Weekend Cross Stock Forks"
-    },
-    {
-      "name": "Mini Cricket Stock Forks"
-    },
-    {
-      "name": "Grand Prix Stock Forks"
-    },
-    {
-      "name": "Cricket Stock Forks"
-    },
-    {
-      "name": "Comfort Stock Forks"
-    },
-    {
-      "name": "Champion Stock Forks"
-    },
-    {
-      "name": "Cal Jet Stock Forks"
-    },
-    {
-      "name": "Amico Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Weekend Cross Stock Wheels"
-    },
-    {
-      "name": "Mini Cricket Stock Wheels"
-    },
-    {
-      "name": "Grand Prix Stock Wheels"
-    },
-    {
-      "name": "Cricket Stock Wheels"
-    },
-    {
-      "name": "Comfort Stock Wheels"
-    },
-    {
-      "name": "Champion Stock Wheels"
-    },
-    {
-      "name": "Cal Jet Stock Wheels"
-    },
-    {
-      "name": "Amico Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }

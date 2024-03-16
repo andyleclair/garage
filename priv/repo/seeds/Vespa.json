@@ -3,9 +3,7 @@
   "categories": [
     "cylinders",
     "engines",
-    "forks",
-    "mopeds",
-    "wheels"
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
@@ -36,68 +34,6 @@
     }
   ],
   "exhausts": [],
-  "forks": [
-    {
-      "name": "Vespino Stock Forks"
-    },
-    {
-      "name": "Si Monte Carlo Stock Forks"
-    },
-    {
-      "name": "Si Stock Forks"
-    },
-    {
-      "name": "Grande Super Deluxe Stock Forks"
-    },
-    {
-      "name": "Grande Deluxe Stock Forks"
-    },
-    {
-      "name": "Grande Stock Forks"
-    },
-    {
-      "name": "Ciao Supreme Stock Forks"
-    },
-    {
-      "name": "Ciao Super Stock Forks"
-    },
-    {
-      "name": "Ciao Porter Stock Forks"
-    },
-    {
-      "name": "Ciao PXV Stock Forks"
-    },
-    {
-      "name": "Ciao PX Stock Forks"
-    },
-    {
-      "name": "Ciao P Stock Forks"
-    },
-    {
-      "name": "Ciao Stock Forks"
-    },
-    {
-      "name": "Bravo Super Deluxe Stock Forks"
-    },
-    {
-      "name": "Bravo Super Stock Forks"
-    },
-    {
-      "name": "Bravo Deluxe Stock Forks"
-    },
-    {
-      "name": "Bravo Stock Forks"
-    },
-    {
-      "name": "Boxer 2 Stock Forks"
-    },
-    {
-      "name": "Boxer Stock Forks"
-    },
-    {
-      "name": "Boss Stock Forks"
-    }
-  ],
   "ignitions": [],
   "models": [
     {
@@ -163,67 +99,5 @@
   ],
   "name": "Vespa",
   "pulleys": [],
-  "variators": [],
-  "wheels": [
-    {
-      "name": "Vespino Stock Wheels"
-    },
-    {
-      "name": "Si Monte Carlo Stock Wheels"
-    },
-    {
-      "name": "Si Stock Wheels"
-    },
-    {
-      "name": "Grande Super Deluxe Stock Wheels"
-    },
-    {
-      "name": "Grande Deluxe Stock Wheels"
-    },
-    {
-      "name": "Grande Stock Wheels"
-    },
-    {
-      "name": "Ciao Supreme Stock Wheels"
-    },
-    {
-      "name": "Ciao Super Stock Wheels"
-    },
-    {
-      "name": "Ciao Porter Stock Wheels"
-    },
-    {
-      "name": "Ciao PXV Stock Wheels"
-    },
-    {
-      "name": "Ciao PX Stock Wheels"
-    },
-    {
-      "name": "Ciao P Stock Wheels"
-    },
-    {
-      "name": "Ciao Stock Wheels"
-    },
-    {
-      "name": "Bravo Super Deluxe Stock Wheels"
-    },
-    {
-      "name": "Bravo Super Stock Wheels"
-    },
-    {
-      "name": "Bravo Deluxe Stock Wheels"
-    },
-    {
-      "name": "Bravo Stock Wheels"
-    },
-    {
-      "name": "Boxer 2 Stock Wheels"
-    },
-    {
-      "name": "Boxer Stock Wheels"
-    },
-    {
-      "name": "Boss Stock Wheels"
-    }
-  ]
+  "variators": []
 }

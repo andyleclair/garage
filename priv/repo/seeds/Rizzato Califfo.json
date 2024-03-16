@@ -1,6 +1,5 @@
 {
   "name": "Rizzato Califfo",
-  "engines": [],
   "models": [
     {
       "name": "Califfo"
@@ -39,6 +38,12 @@
       "name": "Zum 3"
     }
   ],
+  "engines": [],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
+  "pulleys": [],
+  "variators": [],
   "exhausts": [
     {
       "name": "Zum 3 Stock Exhaust"
@@ -78,88 +83,7 @@
     }
   ],
   "cylinders": [],
-  "clutches": [],
-  "forks": [
-    {
-      "name": "Zum 3 Stock Forks"
-    },
-    {
-      "name": "Ringo Turismo Stock Forks"
-    },
-    {
-      "name": "Mini Califfo K Stock Forks"
-    },
-    {
-      "name": "Cross 6V Stock Forks"
-    },
-    {
-      "name": "Cross 4V Stock Forks"
-    },
-    {
-      "name": "Califfone Daytona Stock Forks"
-    },
-    {
-      "name": "Califfo Super Stock Forks"
-    },
-    {
-      "name": "Califfo Matic Stock Forks"
-    },
-    {
-      "name": "Califfo Deluxe Stock Forks"
-    },
-    {
-      "name": "Califfo 3-Wheeler Stock Forks"
-    },
-    {
-      "name": "Califfo 2-Speed Stock Forks"
-    },
-    {
-      "name": "Califfo Stock Forks"
-    }
-  ],
-  "wheels": [
-    {
-      "name": "Zum 3 Stock Wheels"
-    },
-    {
-      "name": "Ringo Turismo Stock Wheels"
-    },
-    {
-      "name": "Mini Califfo K Stock Wheels"
-    },
-    {
-      "name": "Cross 6V Stock Wheels"
-    },
-    {
-      "name": "Cross 4V Stock Wheels"
-    },
-    {
-      "name": "Califfone Daytona Stock Wheels"
-    },
-    {
-      "name": "Califfo Super Stock Wheels"
-    },
-    {
-      "name": "Califfo Matic Stock Wheels"
-    },
-    {
-      "name": "Califfo Deluxe Stock Wheels"
-    },
-    {
-      "name": "Califfo 3-Wheeler Stock Wheels"
-    },
-    {
-      "name": "Califfo 2-Speed Stock Wheels"
-    },
-    {
-      "name": "Califfo Stock Wheels"
-    }
-  ],
   "categories": [
     "mopeds"
-  ],
-  "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": []
+  ]
 }
