@@ -439,7 +439,7 @@ defmodule GarageWeb.CoreComponents do
       @class
     ]}>
       <div>
-        <h1 class="font-semibold leading-8 text-zinc-800 text-6xl lg:text-8xl lg:h-32 md:h-full mb-5">
+        <h1 class="font-semibold leading-8 text-zinc-800 text-6xl lg:text-8xl md:h-full mb-5">
           <%= render_slot(@inner_block) %>
         </h1>
         <p :if={@subtitle != []} class="h-12 text-l md:text-xl leading-6 text-zinc-600">

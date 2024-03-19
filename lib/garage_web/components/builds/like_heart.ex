@@ -6,7 +6,7 @@ defmodule GarageWeb.Components.Builds.LikeHeart do
 
   def like_heart(assigns) do
     ~H"""
-    <div>
+    <div class="cursor-pointer">
       <%= if @liked_by_user do %>
         <div phx-click="dislike">
           <.icon name="hero-heart-solid" class={"#{@class} bg-red-500"} />

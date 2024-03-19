@@ -24,6 +24,9 @@ module.exports = {
         unreal_food_pills: "#FA6900"
       }
     },
+    fontFamily: {
+      sans: ["Noto", "sans-serif"]
+    }
   },
   plugins: [
     require("@tailwindcss/forms"),

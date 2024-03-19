@@ -71,4 +71,3 @@ defmodule Garage.Repo.Migrations.UpdateDataModel do
     end
   end
 end
-

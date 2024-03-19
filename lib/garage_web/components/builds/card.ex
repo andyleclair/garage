@@ -18,7 +18,7 @@ defmodule GarageWeb.Components.Builds.Card do
         <% end %>
       </.link>
 
-      <div class="p-6">
+      <div class="p-5">
         <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800">
           <.link navigate={~p"/builds/#{@build.slug}"}>
             <%= @build.name %>
@@ -30,7 +30,10 @@ defmodule GarageWeb.Components.Builds.Card do
         <.link patch={~p"/builds?make=#{@build.manufacturer.slug}"} replace={false}>
           <%= @build.manufacturer.name %>
         </.link>
-        <.link patch={~p"/builds?model=#{@build.model.slug}"} replace={false}>
+        <.link
+          patch={~p"/builds?#{[make: @build.manufacturer.slug, model: @build.model.slug]}"}
+          replace={false}
+        >
           <%= @build.model.name %>
         </.link>
       </div>

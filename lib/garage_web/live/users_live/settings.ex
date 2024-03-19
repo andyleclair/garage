@@ -27,7 +27,7 @@ defmodule GarageWeb.UsersLive.Settings do
           <img
             src={~p"/images/dice.svg"}
             title="roll the dice"
-            class="h-16 cursor-pointer"
+            class="h-16 cursor-pointer strong-tilt-move-shake"
             phx-click="new-color"
             phx-throttle="1000"
           />
@@ -192,7 +192,7 @@ defmodule GarageWeb.UsersLive.Settings do
   @impl true
   def handle_event("new-color", _, socket) do
     {:ok, updated_user} = User.generate_new_color(socket.assigns.user)
-    {:noreply, assign(socket, :user, updated_user)}
+    {:noreply, socket |> assign(:user, updated_user) |> assign(:current_user, updated_user)}
   end
 
   @impl true

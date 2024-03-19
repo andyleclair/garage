@@ -29,9 +29,10 @@ defmodule Garage.Mopeds.Model do
     end
 
     read :by_slug do
+      argument :manufacturer_id, :string, allow_nil?: false
       argument :slug, :string, allow_nil?: false
       get? true
-      filter expr(slug == ^arg(:slug))
+      filter expr(slug == ^arg(:slug) and manufacturer_id == ^arg(:manufacturer_id))
     end
 
     read :all_models do
@@ -47,7 +48,7 @@ defmodule Garage.Mopeds.Model do
     define :create_model, action: :create
     define :all_models, action: :all_models
     define :by_manufacturer_id, args: [:manufacturer_id], action: :by_manufacturer_id
-    define :get_by_slug, args: [:slug], action: :by_slug
+    define :get_by_slug, args: [:manufacturer_id, :slug], action: :by_slug
   end
 
   attributes do

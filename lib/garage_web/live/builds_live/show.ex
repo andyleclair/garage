@@ -15,14 +15,7 @@ defmodule GarageWeb.BuildsLive.Show do
 
   @impl true
   def handle_params(%{"build" => slug}, _, socket) do
-    build =
-      Build.get_by_slug!(slug,
-        load: [
-          comments: [user: [:name]],
-          likes: [user: [:name]],
-          liked_by_user: %{user_id: socket.assigns.current_user.id}
-        ]
-      )
+    build = build(slug, socket.assigns.current_user)
 
     {:noreply,
      socket
@@ -138,5 +131,24 @@ defmodule GarageWeb.BuildsLive.Show do
       {:error, form} ->
         {:noreply, assign(socket, :form, form)}
     end
+  end
+
+  defp build(slug, current_user) when not is_nil(current_user) do
+    Build.get_by_slug!(slug,
+      load: [
+        comments: [user: [:name]],
+        likes: [user: [:name]],
+        liked_by_user: %{user_id: current_user.id}
+      ]
+    )
+  end
+
+  defp build(slug, _) do
+    Build.get_by_slug!(slug,
+      load: [
+        comments: [user: [:name]],
+        likes: [user: [:name]]
+      ]
+    )
   end
 end

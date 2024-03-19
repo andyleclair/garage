@@ -54,7 +54,7 @@
 </div>
 
 <%= if @build.description do %>
-  <div>
+  <div class="mb-5">
     <h3 class="text-2xl mb-5 border-b">
       Description
     </h3>
@@ -66,19 +66,25 @@
 
 <div>
   <h3 class="text-2xl mb-5 border-b">
-    Build Details
+    🔧 Specs
   </h3>
   <div class="">
     <ul>
-      <li>
-        <span>Engine: </span><%= @build.engine.manufacturer.name %> <%= @build.engine.name %>
-      </li>
-      <li>
-        <span>Carburetor: </span><%= @build.carburetor.manufacturer.name %> <%= @build.carburetor.name %>
-      </li>
-      <li>
-        <span>Exhaust: </span><%= @build.exhaust.manufacturer.name %> <%= @build.exhaust.name %>
-      </li>
+      <%= if @build.engine do %>
+        <li>
+          <span>Engine: </span><%= @build.engine.manufacturer.name %> <%= @build.engine.name %>
+        </li>
+      <% end %>
+      <%= if @build.carburetor do %>
+        <li>
+          <span>Carburetor: </span><%= @build.carburetor.manufacturer.name %> <%= @build.carburetor.name %>
+        </li>
+      <% end %>
+      <%= if @build.exhaust do %>
+        <li>
+          <span>Exhaust: </span><%= @build.exhaust.manufacturer.name %> <%= @build.exhaust.name %>
+        </li>
+      <% end %>
       <%= if @build.ignition do %>
         <li>
           <span>Ignition: </span><%= @build.ignition.name %>
@@ -110,28 +116,31 @@
   <!-- comments -->
   <div class="md:w-1/2 mb-5">
     <h3 class="text-2xl mb-5 border-b">
-      Comments
+      💬 Comments
     </h3>
     <%= for comment <- @build.comments do %>
       <.comment comment={comment} />
     <% end %>
-    <div class="mt-5">
-      <h3 class="text-2xl -mb-10">
-        Add a comment!
-      </h3>
-      <.simple_form
-        for={@comment_form}
-        id="comment_form"
-        phx-submit="add_comment"
-        phx-debounce="500"
-      >
-        <.input field={@comment_form[:build_id]} value={@build.id} type="hidden" />
-        <.input field={@comment_form[:text]} type="textarea" />
-        <:actions>
-          <.button>Add Comment</.button>
-        </:actions>
-      </.simple_form>
-    </div>
+    <%= if @current_user do %>
+      <div class="mt-5">
+        <h3 class="text-2xl -mb-10">
+          Add a comment!
+        </h3>
+        <.simple_form
+          for={@comment_form}
+          id="comment_form"
+          phx-submit="add_comment"
+          phx-debounce="500"
+        >
+          <.input field={@comment_form[:build_id]} value={@build.id} type="hidden" />
+          <.input field={@comment_form[:text]} type="textarea" />
+          <:actions>
+            <.button>Add Comment</.button>
+          </:actions>
+        </.simple_form>
+      </div>
+    <% else %>
+    <% end %>
   </div>
 </div>
 

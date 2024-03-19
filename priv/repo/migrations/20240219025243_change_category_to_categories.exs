@@ -28,4 +28,3 @@ defmodule Garage.Repo.Migrations.ChangeCategoryToCategories do
     end
   end
 end
-

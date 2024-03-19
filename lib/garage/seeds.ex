@@ -35,9 +35,7 @@ defmodule Garage.Seeds do
       stock_parts =
         Enum.reduce(
           models,
-          %{
-            exhausts: []
-          },
+          %{exhausts: []},
           fn %{name: model}, acc ->
             %{acc | exhausts: [%{name: "#{model} Stock Exhaust"} | acc.exhausts]}
           end
