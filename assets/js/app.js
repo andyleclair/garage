@@ -23,6 +23,8 @@ import { LiveSocket } from "phoenix_live_view"
 import topbar from "../vendor/topbar"
 import live_select from "live_select"
 import Sortable from "../vendor/sortable"
+// for uploading to S3
+import Uploaders from "./uploaders"
 
 const hooks = {
   TrixEditor: {
@@ -65,7 +67,8 @@ const hooks = {
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 let liveSocket = new LiveSocket('/live', Socket, {
   params: { _csrf_token: csrfToken },
-  hooks: hooks
+  hooks: hooks,
+  uploaders: Uploaders
 })
 
 // Show progress bar on live navigation and form submits

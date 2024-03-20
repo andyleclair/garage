@@ -15,7 +15,8 @@ defmodule Garage.Application do
 
       # Start the Finch HTTP client for sending emails
       {Finch, name: Garage.Finch},
-      {AshAuthentication.Supervisor, otp_app: :example},
+      {AshAuthentication.Supervisor, otp_app: :garage},
+      {Task.Supervisor, name: Garage.TaskSupervisor},
       # Start to serve requests, typically the last entry
       GarageWeb.Endpoint
     ]

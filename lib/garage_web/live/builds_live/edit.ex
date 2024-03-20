@@ -46,6 +46,7 @@ defmodule GarageWeb.BuildsLive.Edit do
        |> assign(:build, build)
        |> assign(:manufacturer_options, manufacturer_options)
        |> assign(:images, images)
+       |> assign(:uploaded_images, [])
        |> assign(:images_to_delete, [])
        |> assign(:model_options, model_options)
        |> assign(:carburetor_options, carburetor_options)
@@ -56,7 +57,11 @@ defmodule GarageWeb.BuildsLive.Edit do
        |> assign(:ignition_options, ignition_options)
        |> assign(:year_options, year_options)
        |> assign_form(form)
-       |> allow_upload(:image_urls, accept: ~w(.jpg .jpeg .webp .png), max_entries: 10)}
+       |> allow_upload(:image_urls,
+         accept: ~w(.jpg .jpeg .webp .png),
+         max_entries: 10,
+         external: &presign_upload/2
+       )}
     else
       Logger.error("Unauthorized access by #{assigns.current_user} trying to edit #{slug}")
 
@@ -149,32 +154,9 @@ defmodule GarageWeb.BuildsLive.Edit do
           assigns: %{images: images, images_to_delete: images_to_delete}
         } = socket
       ) do
-    uploaded_files =
-      consume_uploaded_entries(socket, :image_urls, fn %{path: path}, entry ->
-        upload_path = upload_path(entry)
+    uploaded_files = socket.assigns.uploaded_images
 
-        {:ok, %{status_code: 200}} =
-          path
-          |> S3.Upload.stream_file()
-          |> S3.upload(bucket(), upload_path,
-            acl: :public_read,
-            content_type: entry.client_type,
-            content_disposition: "inline"
-          )
-          |> ExAws.request()
-
-        public_path = public_path(upload_path)
-
-        {:ok, public_path}
-      end)
-
-    Enum.each(images_to_delete, fn img ->
-      with %URI{path: path} <- URI.parse(img) do
-        bucket()
-        |> S3.delete_object(path)
-        |> ExAws.request!()
-      end
-    end)
+    :ok = async_delete_images(images_to_delete)
 
     image_urls = for {_ref, img} <- images, do: img
 
@@ -242,5 +224,62 @@ defmodule GarageWeb.BuildsLive.Edit do
     for ignition <- Ignition.read_all!(load: [:manufacturer]),
         into: [],
         do: {"#{ignition.manufacturer.name} #{ignition.name}", ignition.id}
+  end
+
+  defp presign_upload(entry, socket) do
+    config = ExAws.Config.new(:s3)
+    key = upload_path(socket.assigns.current_user, socket.assigns.build, entry)
+
+    {:ok, url} =
+      ExAws.S3.presigned_url(config, :put, bucket(), key,
+        expires_in: 3600,
+        query_params: [{"Content-Type", entry.client_type}]
+      )
+
+    socket =
+      assign(socket, :uploaded_images, socket.assigns.uploaded_images ++ [public_path(key)])
+
+    {:ok, %{uploader: "S3", key: key, url: url}, socket}
+  end
+
+  defp error_to_string(:too_large), do: "Too large"
+  defp error_to_string(:too_many_files), do: "You have selected too many files"
+  defp error_to_string(:not_accepted), do: "You have selected an unacceptable file type"
+  defp error_to_string(:external_client_failure), do: "External client failure"
+
+  defp bucket, do: Application.get_env(:garage, :upload_bucket)
+
+  defp upload_path(user, build, %Phoenix.LiveView.UploadEntry{client_name: name}) do
+    "/garage/users/#{user.username}/builds/#{build.name}/uploads/#{Ash.UUID.generate()}-#{name}"
+  end
+
+  defp public_path(upload_path) do
+    "#{public_root()}#{upload_path}"
+  end
+
+  defp public_root, do: Application.get_env(:garage, :public_image_root)
+
+  # stolen from Liveview internals 
+  defp random_id do
+    "build-img-"
+    |> Kernel.<>(random_encoded_bytes())
+    |> String.replace(["/", "+"], "-")
+  end
+
+  defp random_encoded_bytes do
+    binary = :crypto.strong_rand_bytes(32)
+
+    Base.url_encode64(binary)
+  end
+
+  defp async_delete_images(images_to_delete) do
+    Task.Supervisor.async_stream_nolink(Garage.TaskSupervisor, images_to_delete, fn img ->
+      with %URI{path: path} <- URI.parse(img) do
+        bucket()
+        |> S3.delete_object(path)
+        |> ExAws.request!()
+      end
+    end)
+    |> Stream.run()
   end
 end

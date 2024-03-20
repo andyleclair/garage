@@ -1,10 +1,9 @@
 defmodule GarageWeb.UsersLive.Settings do
   alias Garage.Accounts.User
   alias Garage.Accounts
-
-  alias ExAws.S3
-  use GarageWeb, :live_view
   alias AshPhoenix.Form
+
+  use GarageWeb, :live_view
 
   @impl true
   def render(assigns) do
@@ -27,8 +26,8 @@ defmodule GarageWeb.UsersLive.Settings do
           <img
             src={~p"/images/dice.svg"}
             title="roll the dice"
-            class="h-16 cursor-pointer strong-tilt-move-shake"
-            phx-click="new-color"
+            class="h-16 cursor-pointer"
+            phx-click={JS.push("new-color") |> JS.transition("strong-tilt-move-shake", time: 300)}
             phx-throttle="1000"
           />
         </div>
@@ -184,7 +183,11 @@ defmodule GarageWeb.UsersLive.Settings do
 
     {:ok,
      socket
-     |> allow_upload(:avatar_url, accept: ~w(.jpg .jpeg .webp .png), max_entries: 1)
+     |> allow_upload(:avatar_url,
+       accept: ~w(.jpg .jpeg .webp .png .gif),
+       max_entries: 1,
+       external: &presign_upload/2
+     )
      |> assign(:user, user)
      |> assign_form(form)}
   end
@@ -208,27 +211,7 @@ defmodule GarageWeb.UsersLive.Settings do
 
   @impl true
   def handle_event("save", %{"form" => form}, socket) do
-    uploaded_file =
-      consume_uploaded_entries(socket, :avatar_url, fn %{path: path}, entry ->
-        upload_path = upload_path(socket.assigns.current_user, entry)
-
-        {:ok, %{status_code: 200}} =
-          path
-          |> S3.Upload.stream_file()
-          |> S3.upload(bucket(), upload_path,
-            acl: :public_read,
-            content_type: entry.client_type,
-            content_disposition: "inline"
-          )
-          |> ExAws.request()
-
-        public_path = public_path(upload_path)
-
-        {:ok, public_path}
-      end)
-      |> List.first()
-
-    params = Map.put(form, :avatar_url, uploaded_file)
+    params = Map.put(form, :avatar_url, socket.assigns.avatar_url)
 
     case Form.submit(socket.assigns.form, params: params) do
       {:ok, user} ->
@@ -242,9 +225,25 @@ defmodule GarageWeb.UsersLive.Settings do
     end
   end
 
+  defp presign_upload(entry, socket) do
+    config = ExAws.Config.new(:s3)
+    key = upload_path(socket.assigns.current_user, entry)
+
+    {:ok, url} =
+      ExAws.S3.presigned_url(config, :put, bucket(), key,
+        expires_in: 3600,
+        query_params: [{"Content-Type", entry.client_type}]
+      )
+
+    socket = assign(socket, :avatar_url, public_path(key))
+
+    {:ok, %{uploader: "S3", key: key, url: url}, socket}
+  end
+
   defp error_to_string(:too_large), do: "Too large"
   defp error_to_string(:too_many_files), do: "You have selected too many files"
   defp error_to_string(:not_accepted), do: "You have selected an unacceptable file type"
+  defp error_to_string(:external_client_failure), do: "External client failure"
 
   defp bucket, do: Application.get_env(:garage, :upload_bucket)
 

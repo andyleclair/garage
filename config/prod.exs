@@ -26,5 +26,5 @@ config :ex_aws,
   region: "auto"
 
 config :ex_aws, :s3,
-  scheme: "https",
+  scheme: "https//",
   host: "4e7e19d415ae25f4681ff5aa75b38d98.r2.cloudflarestorage.com"
