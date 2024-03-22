@@ -1,52 +1,12 @@
 {
   "name": "Simson",
-  "models": [
-    {
-      "name": "Mofa 1"
-    },
-    {
-      "name": "S50"
-    },
-    {
-      "name": "S50 B1"
-    },
-    {
-      "name": "S51"
-    },
-    {
-      "name": "S53 Alpha"
-    },
-    {
-      "name": "SL1"
-    },
-    {
-      "name": "SL1S"
-    },
-    {
-      "name": "SR 4-1"
-    },
-    {
-      "name": "SR1"
-    },
-    {
-      "name": "SR2"
-    },
-    {
-      "name": "SR50"
-    },
-    {
-      "name": "Scwalbe"
-    },
-    {
-      "name": "Sperber"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Sperber Stock Exhaust"
@@ -88,8 +48,48 @@
       "name": "Mofa 1 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Mofa 1"
+    },
+    {
+      "name": "S50"
+    },
+    {
+      "name": "S50 B1"
+    },
+    {
+      "name": "S51"
+    },
+    {
+      "name": "S53 Alpha"
+    },
+    {
+      "name": "SL1"
+    },
+    {
+      "name": "SL1S"
+    },
+    {
+      "name": "SR 4-1"
+    },
+    {
+      "name": "SR1"
+    },
+    {
+      "name": "SR2"
+    },
+    {
+      "name": "SR50"
+    },
+    {
+      "name": "Scwalbe"
+    },
+    {
+      "name": "Sperber"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

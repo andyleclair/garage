@@ -62,7 +62,8 @@ defmodule Garage.MixProject do
       {:ex_aws_s3, "~> 2.0"},
       {:sweet_xml, "~> 0.6"},
       {:timex, "~> 3.0"},
-      {:req, "~> 0.4"}
+      {:req, "~> 0.4"},
+      {:recase, "~> 0.0"}
       # {:crawly, "~> 0.16.0"},
     ]
   end

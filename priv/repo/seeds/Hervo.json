@@ -1,23 +1,23 @@
 {
   "name": "Hervo",
-  "models": [
-    {
-      "name": "Hervo-Matic"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Hervo-Matic Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Hervo-Matic"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

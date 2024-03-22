@@ -1,40 +1,12 @@
 {
   "name": "Italjet",
-  "models": [
-    {
-      "name": "K2"
-    },
-    {
-      "name": "KIT KAT 50"
-    },
-    {
-      "name": "KT"
-    },
-    {
-      "name": "P4"
-    },
-    {
-      "name": "P6"
-    },
-    {
-      "name": "Pack 2 50"
-    },
-    {
-      "name": "Pack-A-Away"
-    },
-    {
-      "name": "S5"
-    },
-    {
-      "name": "Velocifero"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Velocifero Stock Exhaust"
@@ -64,8 +36,36 @@
       "name": "K2 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "K2"
+    },
+    {
+      "name": "KIT KAT 50"
+    },
+    {
+      "name": "KT"
+    },
+    {
+      "name": "P4"
+    },
+    {
+      "name": "P6"
+    },
+    {
+      "name": "Pack 2 50"
+    },
+    {
+      "name": "Pack-A-Away"
+    },
+    {
+      "name": "S5"
+    },
+    {
+      "name": "Velocifero"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

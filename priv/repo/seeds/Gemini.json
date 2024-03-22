@@ -1,23 +1,23 @@
 {
   "name": "Gemini",
-  "models": [
-    {
-      "name": "Camander"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Camander Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Camander"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

@@ -1,166 +1,107 @@
 {
   "carburetors": [
     {
-      "name": "PHVA 17.5mm w/ E-choke"
+      "name": "VHST",
+      "sizes": [
+        "28mm"
+      ],
+      "tunable_parts": [
+        "main_jet",
+        "idle_jet",
+        "starter_jet",
+        "slide",
+        "needle",
+        "atomizer"
+      ]
     },
     {
-      "name": "PHVA 16 DS"
+      "name": "PHBL",
+      "sizes": [
+        "24mm"
+      ],
+      "tunable_parts": [
+        "main_jet",
+        "idle_jet",
+        "starter_jet",
+        "slide",
+        "needle",
+        "atomizer"
+      ]
     },
     {
-      "name": "PHVA 14mm (Stock Tomos A55)"
+      "name": "UA",
+      "sizes": [
+        "16mm",
+        "19mm"
+      ],
+      "tunable_parts": [
+        "main_jet",
+        "idle_jet",
+        "starter_jet",
+        "slide",
+        "needle",
+        "atomizer"
+      ]
     },
     {
-      "name": "PHBL 24mm"
+      "name": "PHBG",
+      "sizes": [
+        "12mm",
+        "15mm",
+        "16mm",
+        "17mm",
+        "17.5",
+        "18mm",
+        "19mm",
+        "20mm",
+        "21mm",
+        "24mm",
+        "26mm",
+        "28mm"
+      ],
+      "tunable_parts": [
+        "main_jet",
+        "idle_jet",
+        "starter_jet",
+        "slide",
+        "needle",
+        "atomizer"
+      ]
     },
     {
-      "name": "PHBG 21mm BS -Leftside Controls"
+      "name": "PHVA",
+      "sizes": [
+        "14mm",
+        "17.5mm"
+      ]
     },
     {
-      "name": "PHBG 21mm AD -Rightside Controls"
+      "name": "Vespa SHA",
+      "sizes": [
+        "12.12",
+        "13.13"
+      ],
+      "tunable_parts": [
+        "main_jet",
+        "slide"
+      ]
     },
     {
-      "name": "PHBG 21mm 75th Anniversary"
-    },
-    {
-      "name": "PHBG 19mm BD Polini"
-    },
-    {
-      "name": "PHBG 19mm AD -Clamp on"
-    },
-    {
-      "name": "PHBG 19mm -For Morini Motorcycle"
-    },
-    {
-      "name": "PHBG 15mm BD"
-    },
-    {
-      "name": "28mm VHST"
-    },
-    {
-      "name": "26mm"
-    },
-    {
-      "name": "24mm PHBL"
-    },
-    {
-      "name": "24mm"
-    },
-    {
-      "name": "21mm PHGB -Malossi"
-    },
-    {
-      "name": "21mm PHBG  -Red Racing Edition"
-    },
-    {
-      "name": "21mm PHBG  -Racing Edition"
-    },
-    {
-      "name": "21mm PHBG"
-    },
-    {
-      "name": "20mm PHBG"
-    },
-    {
-      "name": "19mm UA"
-    },
-    {
-      "name": "19mm PHBG Clone"
-    },
-    {
-      "name": "19mm PHBG -Racing Edition Clone"
-    },
-    {
-      "name": "19mm PHBG -Racing Edition"
-    },
-    {
-      "name": "19mm PHBG -Clone"
-    },
-    {
-      "name": "19mm PHBG"
-    },
-    {
-      "name": "19mm  PHBG"
-    },
-    {
-      "name": "19.5mm PHBG"
-    },
-    {
-      "name": "18mm UA"
-    },
-    {
-      "name": "18mm PHBG"
-    },
-    {
-      "name": "17mm PHBG"
-    },
-    {
-      "name": "17.5mm PHVA"
-    },
-    {
-      "name": "17.5mm PHBG"
-    },
-    {
-      "name": "16mm UA"
-    },
-    {
-      "name": "16mm SHA"
-    },
-    {
-      "name": "16mm PHBG"
-    },
-    {
-      "name": "16.16 SHA -Lever Choke"
-    },
-    {
-      "name": "16.16 SHA -Lever"
-    },
-    {
-      "name": "16.16 SHA -Cable Choke"
-    },
-    {
-      "name": "16.16 SHA"
-    },
-    {
-      "name": "15mm SHA Clone"
-    },
-    {
-      "name": "15mm SHA -Clone"
-    },
-    {
-      "name": "15mm PHBG"
-    },
-    {
-      "name": "15.15 SHA -Lever Choke"
-    },
-    {
-      "name": "15.15 SHA -Cable Choke"
-    },
-    {
-      "name": "14mm SHA"
-    },
-    {
-      "name": "14mm PHVA"
-    },
-    {
-      "name": "14.14 SHA -Lever Choke"
-    },
-    {
-      "name": "14.12 SHA -Lever Choke"
-    },
-    {
-      "name": "13mm SHA Vespa"
-    },
-    {
-      "name": "12mm SHA Vespa"
-    },
-    {
-      "name": "12mm SHA"
-    },
-    {
-      "name": "12.12 SHA Vespa"
-    },
-    {
-      "name": "12.12 SHA -Cable Choke"
+      "name": "SHA",
+      "sizes": [
+        "12.12",
+        "13.13",
+        "14.14",
+        "14.12",
+        "15.15",
+        "16.16",
+        "17.5",
+        "19.5"
+      ],
+      "tunable_parts": [
+        "main_jet",
+        "slide"
+      ]
     }
   ],
   "categories": [

@@ -1,34 +1,12 @@
 {
   "name": "Gloria Intramotor",
-  "models": [
-    {
-      "name": "Blanco"
-    },
-    {
-      "name": "Dream"
-    },
-    {
-      "name": "Kid"
-    },
-    {
-      "name": "Mini-Kid"
-    },
-    {
-      "name": "Pinto"
-    },
-    {
-      "name": "Scout"
-    },
-    {
-      "name": "Verona"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Verona Stock Exhaust"
@@ -52,8 +30,30 @@
       "name": "Blanco Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Blanco"
+    },
+    {
+      "name": "Dream"
+    },
+    {
+      "name": "Kid"
+    },
+    {
+      "name": "Mini-Kid"
+    },
+    {
+      "name": "Pinto"
+    },
+    {
+      "name": "Scout"
+    },
+    {
+      "name": "Verona"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

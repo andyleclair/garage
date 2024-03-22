@@ -1,23 +1,23 @@
 {
   "name": "Metrorider",
-  "models": [
-    {
-      "name": "Basic"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Basic Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Basic"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

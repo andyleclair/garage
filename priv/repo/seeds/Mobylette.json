@@ -1,184 +1,12 @@
 {
   "name": "Mobylette",
-  "models": [
-    {
-      "name": "AV49"
-    },
-    {
-      "name": "D55T"
-    },
-    {
-      "name": "AV188"
-    },
-    {
-      "name": "AV42"
-    },
-    {
-      "name": "AV98E"
-    },
-    {
-      "name": "MIPRT"
-    },
-    {
-      "name": "AV32S"
-    },
-    {
-      "name": "S35"
-    },
-    {
-      "name": "AV98SP"
-    },
-    {
-      "name": "AV98"
-    },
-    {
-      "name": "Kaptein"
-    },
-    {
-      "name": "AV68"
-    },
-    {
-      "name": "SP50R"
-    },
-    {
-      "name": "SP50"
-    },
-    {
-      "name": "SP94TJE"
-    },
-    {
-      "name": "S35b"
-    },
-    {
-      "name": "AV32E"
-    },
-    {
-      "name": "AV92"
-    },
-    {
-      "name": "AV50"
-    },
-    {
-      "name": "SPTT"
-    },
-    {
-      "name": "AV32M"
-    },
-    {
-      "name": "AV89"
-    },
-    {
-      "name": "AV84"
-    },
-    {
-      "name": "AV51"
-    },
-    {
-      "name": "AV65"
-    },
-    {
-      "name": "Moby Club"
-    },
-    {
-      "name": "AV48"
-    },
-    {
-      "name": "AV41"
-    },
-    {
-      "name": "AV3"
-    },
-    {
-      "name": "SP93TT"
-    },
-    {
-      "name": "AV78"
-    },
-    {
-      "name": "AV88"
-    },
-    {
-      "name": "AV54"
-    },
-    {
-      "name": "AV46"
-    },
-    {
-      "name": "AV56"
-    },
-    {
-      "name": "SP94TJ"
-    },
-    {
-      "name": "AV33"
-    },
-    {
-      "name": "SP95"
-    },
-    {
-      "name": "AV85"
-    },
-    {
-      "name": "SP96"
-    },
-    {
-      "name": "SP93"
-    },
-    {
-      "name": "AV43"
-    },
-    {
-      "name": "D55"
-    },
-    {
-      "name": "MIP"
-    },
-    {
-      "name": "MIPR"
-    },
-    {
-      "name": "AV42M"
-    },
-    {
-      "name": "AV87"
-    },
-    {
-      "name": "SPTTE"
-    },
-    {
-      "name": "AV31"
-    },
-    {
-      "name": "AV70"
-    },
-    {
-      "name": "Moby Cross"
-    },
-    {
-      "name": "AV37"
-    },
-    {
-      "name": "AV79"
-    },
-    {
-      "name": "AV44"
-    },
-    {
-      "name": "AV55"
-    },
-    {
-      "name": "AV76"
-    },
-    {
-      "name": "AV59"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "AV59 Stock Exhaust"
@@ -352,8 +180,180 @@
       "name": "AV49 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "AV49"
+    },
+    {
+      "name": "D55T"
+    },
+    {
+      "name": "AV188"
+    },
+    {
+      "name": "AV42"
+    },
+    {
+      "name": "AV98E"
+    },
+    {
+      "name": "MIPRT"
+    },
+    {
+      "name": "AV32S"
+    },
+    {
+      "name": "S35"
+    },
+    {
+      "name": "AV98SP"
+    },
+    {
+      "name": "AV98"
+    },
+    {
+      "name": "Kaptein"
+    },
+    {
+      "name": "AV68"
+    },
+    {
+      "name": "SP50R"
+    },
+    {
+      "name": "SP50"
+    },
+    {
+      "name": "SP94TJE"
+    },
+    {
+      "name": "S35b"
+    },
+    {
+      "name": "AV32E"
+    },
+    {
+      "name": "AV92"
+    },
+    {
+      "name": "AV50"
+    },
+    {
+      "name": "SPTT"
+    },
+    {
+      "name": "AV32M"
+    },
+    {
+      "name": "AV89"
+    },
+    {
+      "name": "AV84"
+    },
+    {
+      "name": "AV51"
+    },
+    {
+      "name": "AV65"
+    },
+    {
+      "name": "Moby Club"
+    },
+    {
+      "name": "AV48"
+    },
+    {
+      "name": "AV41"
+    },
+    {
+      "name": "AV3"
+    },
+    {
+      "name": "SP93TT"
+    },
+    {
+      "name": "AV78"
+    },
+    {
+      "name": "AV88"
+    },
+    {
+      "name": "AV54"
+    },
+    {
+      "name": "AV46"
+    },
+    {
+      "name": "AV56"
+    },
+    {
+      "name": "SP94TJ"
+    },
+    {
+      "name": "AV33"
+    },
+    {
+      "name": "SP95"
+    },
+    {
+      "name": "AV85"
+    },
+    {
+      "name": "SP96"
+    },
+    {
+      "name": "SP93"
+    },
+    {
+      "name": "AV43"
+    },
+    {
+      "name": "D55"
+    },
+    {
+      "name": "MIP"
+    },
+    {
+      "name": "MIPR"
+    },
+    {
+      "name": "AV42M"
+    },
+    {
+      "name": "AV87"
+    },
+    {
+      "name": "SPTTE"
+    },
+    {
+      "name": "AV31"
+    },
+    {
+      "name": "AV70"
+    },
+    {
+      "name": "Moby Cross"
+    },
+    {
+      "name": "AV37"
+    },
+    {
+      "name": "AV79"
+    },
+    {
+      "name": "AV44"
+    },
+    {
+      "name": "AV55"
+    },
+    {
+      "name": "AV76"
+    },
+    {
+      "name": "AV59"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

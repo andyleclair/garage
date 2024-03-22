@@ -1,49 +1,35 @@
 {
   "carburetors": [
     {
-      "name": "VM 26mm Roundslide"
+      "name": "TM",
+      "sizes": [
+        "24mm",
+        "26mm",
+        "28mm",
+        "30mm"
+      ]
     },
     {
-      "name": "VM 22mm Roundslide"
-    },
-    {
-      "name": "VM 20mm Roundslide"
-    },
-    {
-      "name": "VM 18mm"
-    },
-    {
-      "name": "VM 16mm Roundslide"
-    },
-    {
-      "name": "TM 24mm Flatslide"
-    },
-    {
-      "name": "30mm"
-    },
-    {
-      "name": "28mm TM"
-    },
-    {
-      "name": "26mm VM"
-    },
-    {
-      "name": "180mm VM"
-    },
-    {
-      "name": "17mm VM"
-    },
-    {
-      "name": "16mm VM"
-    },
-    {
-      "name": "14mm VM"
-    },
-    {
-      "name": "12mm VM"
-    },
-    {
-      "name": "10mm"
+      "name": "VM",
+      "sizes": [
+        "12mm",
+        "14mm",
+        "16mm",
+        "17mm",
+        "18mm",
+        "20mm",
+        "22mm",
+        "26mm",
+        "28mm",
+        "30mm"
+      ],
+      "tunable_parts": [
+        "main_jet",
+        "idle_jet",
+        "needle",
+        "slide",
+        "needle_jet"
+      ]
     }
   ],
   "categories": [

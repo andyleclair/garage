@@ -1,28 +1,36 @@
 {
   "carburetors": [
     {
-      "name": "Honda Hobbit 10mm Stock"
+      "name": "NC50 NA50 Stock",
+      "sizes": [
+        "10mm",
+        "12mm"
+      ]
     },
     {
-      "name": "28MM PWK"
+      "name": "Hobbit Stock",
+      "sizes": [
+        "10mm",
+        "16mm"
+      ]
     },
     {
-      "name": "28mm"
+      "name": "PWK",
+      "sizes": [
+        "28mm"
+      ]
     },
     {
-      "name": "28 mm"
+      "name": "PE",
+      "sizes": [
+        "24mm"
+      ]
     },
     {
-      "name": "24mm PE"
-    },
-    {
-      "name": "19mm PZ"
-    },
-    {
-      "name": "16mm"
-    },
-    {
-      "name": "12mm"
+      "name": "PZ",
+      "sizes": [
+        "19mm"
+      ]
     }
   ],
   "categories": [

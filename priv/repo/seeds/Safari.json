@@ -1,34 +1,12 @@
 {
   "name": "Safari",
-  "models": [
-    {
-      "name": "300MT"
-    },
-    {
-      "name": "Cobra"
-    },
-    {
-      "name": "Commando"
-    },
-    {
-      "name": "MT400"
-    },
-    {
-      "name": "MZV"
-    },
-    {
-      "name": "SuperExtra"
-    },
-    {
-      "name": "Variomatic deLux"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Variomatic deLux Stock Exhaust"
@@ -52,8 +30,30 @@
       "name": "300MT Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "300MT"
+    },
+    {
+      "name": "Cobra"
+    },
+    {
+      "name": "Commando"
+    },
+    {
+      "name": "MT400"
+    },
+    {
+      "name": "MZV"
+    },
+    {
+      "name": "SuperExtra"
+    },
+    {
+      "name": "Variomatic deLux"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

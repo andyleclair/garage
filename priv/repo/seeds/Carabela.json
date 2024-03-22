@@ -1,40 +1,12 @@
 {
   "name": "Carabela",
-  "models": [
-    {
-      "name": "Carrera"
-    },
-    {
-      "name": "Delux"
-    },
-    {
-      "name": "Moto-Matic"
-    },
-    {
-      "name": "Moto-Matic Deluxe"
-    },
-    {
-      "name": "Moto-Pedal"
-    },
-    {
-      "name": "Moto-Pony 60"
-    },
-    {
-      "name": "Sport"
-    },
-    {
-      "name": "Sport Deluxe"
-    },
-    {
-      "name": "Super Sport"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Super Sport Stock Exhaust"
@@ -64,8 +36,36 @@
       "name": "Carrera Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Carrera"
+    },
+    {
+      "name": "Delux"
+    },
+    {
+      "name": "Moto-Matic"
+    },
+    {
+      "name": "Moto-Matic Deluxe"
+    },
+    {
+      "name": "Moto-Pedal"
+    },
+    {
+      "name": "Moto-Pony 60"
+    },
+    {
+      "name": "Sport"
+    },
+    {
+      "name": "Sport Deluxe"
+    },
+    {
+      "name": "Super Sport"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

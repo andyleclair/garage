@@ -1,23 +1,23 @@
 {
   "name": "Yumbo",
-  "models": [
-    {
-      "name": "Free"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Free Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Free"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

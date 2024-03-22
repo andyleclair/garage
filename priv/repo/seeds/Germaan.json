@@ -1,23 +1,23 @@
 {
   "name": "Germaan",
-  "models": [
-    {
-      "name": "Florence De Luxe"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Florence De Luxe Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Florence De Luxe"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

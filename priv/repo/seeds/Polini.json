@@ -1,13 +1,19 @@
 {
   "carburetors": [
     {
-      "name": "17.5mm CP"
+      "name": "CP",
+      "sizes": [
+        "17.5mm",
+        "19mm",
+        "21mm",
+        "24mm"
+      ]
     }
   ],
   "categories": [
     "carburetors",
-    "exhausts",
-    "cylinders"
+    "cylinders",
+    "exhausts"
   ],
   "clutches": [],
   "cylinders": [

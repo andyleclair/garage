@@ -1,23 +1,23 @@
 {
   "name": "Rixe",
-  "models": [
-    {
-      "name": "V3"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "V3 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "V3"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

@@ -1,67 +1,12 @@
 {
   "name": "Solex",
-  "models": [
-    {
-      "name": "1700"
-    },
-    {
-      "name": "2200"
-    },
-    {
-      "name": "3200"
-    },
-    {
-      "name": "3300"
-    },
-    {
-      "name": "3800"
-    },
-    {
-      "name": "3800 Deluxe"
-    },
-    {
-      "name": "4600"
-    },
-    {
-      "name": "4600 DOT"
-    },
-    {
-      "name": "5000"
-    },
-    {
-      "name": "6000"
-    },
-    {
-      "name": "8000"
-    },
-    {
-      "name": "Flash 6000"
-    },
-    {
-      "name": "Horse"
-    },
-    {
-      "name": "Micron"
-    },
-    {
-      "name": "Pli-Solex"
-    },
-    {
-      "name": "S3800"
-    },
-    {
-      "name": "Tenor"
-    },
-    {
-      "name": "Trotilex"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Trotilex Stock Exhaust"
@@ -118,8 +63,63 @@
       "name": "1700 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "1700"
+    },
+    {
+      "name": "2200"
+    },
+    {
+      "name": "3200"
+    },
+    {
+      "name": "3300"
+    },
+    {
+      "name": "3800"
+    },
+    {
+      "name": "3800 Deluxe"
+    },
+    {
+      "name": "4600"
+    },
+    {
+      "name": "4600 DOT"
+    },
+    {
+      "name": "5000"
+    },
+    {
+      "name": "6000"
+    },
+    {
+      "name": "8000"
+    },
+    {
+      "name": "Flash 6000"
+    },
+    {
+      "name": "Horse"
+    },
+    {
+      "name": "Micron"
+    },
+    {
+      "name": "Pli-Solex"
+    },
+    {
+      "name": "S3800"
+    },
+    {
+      "name": "Tenor"
+    },
+    {
+      "name": "Trotilex"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

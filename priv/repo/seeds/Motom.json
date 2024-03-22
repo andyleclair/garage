@@ -1,22 +1,12 @@
 {
   "name": "Motom",
-  "models": [
-    {
-      "name": "48 Cross"
-    },
-    {
-      "name": "C"
-    },
-    {
-      "name": "Junior"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Junior Stock Exhaust"
@@ -28,8 +18,18 @@
       "name": "48 Cross Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "48 Cross"
+    },
+    {
+      "name": "C"
+    },
+    {
+      "name": "Junior"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

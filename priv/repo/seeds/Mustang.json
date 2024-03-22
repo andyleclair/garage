@@ -1,23 +1,23 @@
 {
   "name": "Mustang",
-  "models": [
-    {
-      "name": "Cobra 2000"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Cobra 2000 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Cobra 2000"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

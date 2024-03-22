@@ -1,49 +1,12 @@
 {
   "name": "Foxi",
-  "models": [
-    {
-      "name": "Amigo"
-    },
-    {
-      "name": "Baron"
-    },
-    {
-      "name": "Deluxe"
-    },
-    {
-      "name": "GT"
-    },
-    {
-      "name": "GT Deluxe"
-    },
-    {
-      "name": "GT Sport"
-    },
-    {
-      "name": "Red Foxi"
-    },
-    {
-      "name": "S"
-    },
-    {
-      "name": "Salsburg"
-    },
-    {
-      "name": "Silver Foxi"
-    },
-    {
-      "name": "Sport"
-    },
-    {
-      "name": "Super Sport"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Super Sport Stock Exhaust"
@@ -82,8 +45,45 @@
       "name": "Amigo Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Amigo"
+    },
+    {
+      "name": "Baron"
+    },
+    {
+      "name": "Deluxe"
+    },
+    {
+      "name": "GT"
+    },
+    {
+      "name": "GT Deluxe"
+    },
+    {
+      "name": "GT Sport"
+    },
+    {
+      "name": "Red Foxi"
+    },
+    {
+      "name": "S"
+    },
+    {
+      "name": "Salsburg"
+    },
+    {
+      "name": "Silver Foxi"
+    },
+    {
+      "name": "Sport"
+    },
+    {
+      "name": "Super Sport"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

@@ -26,12 +26,25 @@ defmodule Garage.Mopeds.Carburetor do
     uuid_primary_key :id
     attribute :name, :string, allow_nil?: false
     attribute :description, :string, default: ""
+    attribute :sizes, {:array, :string}, default: []
 
-    # Possible jets that a carburetor _may_ have
-    # Jetting is set per-build in a TBD join resource
-    attribute :jets, {:array, :atom} do
-      default ~w(main)a
-      constraints items: [one_of: ~w(main idle starter power)a]
+    # Possible tunable parts that a carburetor _may_ have
+    # Jetting, atomizer, etc. is set per-build in a TBD join resource
+    attribute :tunable_parts, {:array, :atom} do
+      default [:main_jet]
+
+      constraints items: [
+                    one_of: [
+                      :main_jet,
+                      :idle_jet,
+                      :starter_jet,
+                      :power_jet,
+                      :needle_jet,
+                      :slide,
+                      :needle,
+                      :atomizer
+                    ]
+                  ]
     end
 
     create_timestamp :inserted_at

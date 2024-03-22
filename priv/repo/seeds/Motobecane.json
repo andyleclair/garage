@@ -1,11 +1,6 @@
 {
-  "carburetors": [
-    {
-      "name": "Gurtner"
-    }
-  ],
+  "carburetors": [],
   "categories": [
-    "carburetors",
     "cylinders",
     "engines",
     "mopeds"

@@ -1,23 +1,23 @@
 {
   "name": "Motobee",
-  "models": [
-    {
-      "name": "RS 100"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "RS 100 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "RS 100"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

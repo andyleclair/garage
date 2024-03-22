@@ -1,22 +1,12 @@
 {
   "name": "Romet",
-  "models": [
-    {
-      "name": "50 T1"
-    },
-    {
-      "name": "Kadet M-780"
-    },
-    {
-      "name": "Pony 50"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Pony 50 Stock Exhaust"
@@ -28,8 +18,18 @@
       "name": "50 T1 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "50 T1"
+    },
+    {
+      "name": "Kadet M-780"
+    },
+    {
+      "name": "Pony 50"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

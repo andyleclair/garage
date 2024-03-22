@@ -1,16 +1,13 @@
 {
   "carburetors": [
     {
-      "name": "19mm"
-    },
-    {
-      "name": "17mm"
-    },
-    {
-      "name": "16mm"
-    },
-    {
-      "name": "15mm"
+      "name": "Carburetor",
+      "sizes": [
+        "15mm",
+        "16mm",
+        "17mm",
+        "19mm"
+      ]
     }
   ],
   "categories": [

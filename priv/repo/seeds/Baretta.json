@@ -1,43 +1,12 @@
 {
   "name": "Baretta",
-  "models": [
-    {
-      "name": "22"
-    },
-    {
-      "name": "38"
-    },
-    {
-      "name": "44"
-    },
-    {
-      "name": "44 Sport"
-    },
-    {
-      "name": "45"
-    },
-    {
-      "name": "Magnum"
-    },
-    {
-      "name": "Minisport"
-    },
-    {
-      "name": "Piccoli"
-    },
-    {
-      "name": "Pistol"
-    },
-    {
-      "name": "Variator"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Variator Stock Exhaust"
@@ -70,8 +39,39 @@
       "name": "22 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "22"
+    },
+    {
+      "name": "38"
+    },
+    {
+      "name": "44"
+    },
+    {
+      "name": "44 Sport"
+    },
+    {
+      "name": "45"
+    },
+    {
+      "name": "Magnum"
+    },
+    {
+      "name": "Minisport"
+    },
+    {
+      "name": "Piccoli"
+    },
+    {
+      "name": "Pistol"
+    },
+    {
+      "name": "Variator"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

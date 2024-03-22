@@ -1,19 +1,12 @@
 {
   "name": "Yardman",
-  "models": [
-    {
-      "name": "Easy Rider"
-    },
-    {
-      "name": "Mo-Trek"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Mo-Trek Stock Exhaust"
@@ -22,8 +15,15 @@
       "name": "Easy Rider Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Easy Rider"
+    },
+    {
+      "name": "Mo-Trek"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

@@ -1,40 +1,16 @@
 {
   "carburetors": [
     {
-      "name": "32mm W/Powerjet"
-    },
-    {
-      "name": "30mm"
-    },
-    {
-      "name": "28mm W/Powerjet"
-    },
-    {
-      "name": "28mm -Powerjet"
-    },
-    {
-      "name": "28mm"
-    },
-    {
-      "name": "26mm"
-    },
-    {
-      "name": "24mm W/Powerjet"
-    },
-    {
-      "name": "24mm -Powerjet"
-    },
-    {
-      "name": "24mm"
-    },
-    {
-      "name": "21mm -Powerjet"
-    },
-    {
-      "name": "21mm"
-    },
-    {
-      "name": "19mm"
+      "name": "Carburetor",
+      "sizes": [
+        "19mm",
+        "21mm",
+        "24mm",
+        "26mm",
+        "28mm",
+        "30mm",
+        "32mm"
+      ]
     }
   ],
   "categories": [

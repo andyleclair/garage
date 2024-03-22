@@ -1,14 +1,6 @@
 {
-  "carburetors": [
-    {
-      "name": "Bing 12mm"
-    },
-    {
-      "name": "Bing 10mm"
-    }
-  ],
+  "carburetors": [],
   "categories": [
-    "carburetors",
     "engines",
     "mopeds"
   ],

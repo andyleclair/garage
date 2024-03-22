@@ -83,7 +83,7 @@ defmodule Garage.Seeds do
         part_type = mapping[idx]
 
         parts_by_manufacturer =
-          Enum.reduce(records, %{}, fn %{"name" => original_name}, parts_by_manufacturer ->
+          Enum.reduce(records, %{}, fn %{"name" => original_name} = part, parts_by_manufacturer ->
             {manufacturer, item} =
               case part_type do
                 :cylinders ->
@@ -112,6 +112,10 @@ defmodule Garage.Seeds do
                     [manufacturer, name] = String.split(original_name, " ", parts: 2)
                     {manufacturer, %{"name" => name}}
                   end
+
+                :carburetors ->
+                  # edited the file to just be right
+                  Map.pop(part, "manufacturer")
 
                 _ ->
                   [manufacturer, name] = String.split(original_name, " ", parts: 2)

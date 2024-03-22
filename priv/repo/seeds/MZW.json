@@ -1,23 +1,23 @@
 {
   "name": "MZW",
-  "models": [
-    {
-      "name": "Cambridge"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Cambridge Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Cambridge"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

@@ -1,23 +1,23 @@
 {
   "name": "Gulf",
-  "models": [
-    {
-      "name": "Seagull"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Seagull Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Seagull"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

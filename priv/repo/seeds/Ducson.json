@@ -1,22 +1,12 @@
 {
   "name": "Ducson",
-  "models": [
-    {
-      "name": "S15"
-    },
-    {
-      "name": "S20"
-    },
-    {
-      "name": "S9"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "S9 Stock Exhaust"
@@ -28,8 +18,18 @@
       "name": "S15 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "S15"
+    },
+    {
+      "name": "S20"
+    },
+    {
+      "name": "S9"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

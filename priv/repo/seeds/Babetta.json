@@ -1,40 +1,12 @@
 {
   "name": "Babetta",
-  "models": [
-    {
-      "name": "100"
-    },
-    {
-      "name": "134"
-    },
-    {
-      "name": "200"
-    },
-    {
-      "name": "206"
-    },
-    {
-      "name": "207"
-    },
-    {
-      "name": "210"
-    },
-    {
-      "name": "213"
-    },
-    {
-      "name": "215"
-    },
-    {
-      "name": "300"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "300 Stock Exhaust"
@@ -64,8 +36,36 @@
       "name": "100 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "100"
+    },
+    {
+      "name": "134"
+    },
+    {
+      "name": "200"
+    },
+    {
+      "name": "206"
+    },
+    {
+      "name": "207"
+    },
+    {
+      "name": "210"
+    },
+    {
+      "name": "213"
+    },
+    {
+      "name": "215"
+    },
+    {
+      "name": "300"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

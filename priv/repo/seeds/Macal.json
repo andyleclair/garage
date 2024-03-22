@@ -1,23 +1,23 @@
 {
   "name": "Macal",
-  "models": [
-    {
-      "name": "Chip"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Chip Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Chip"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

@@ -1,34 +1,12 @@
 {
   "name": "Magneet",
-  "models": [
-    {
-      "name": "Cheetah"
-    },
-    {
-      "name": "Commodore"
-    },
-    {
-      "name": "Globemaster"
-    },
-    {
-      "name": "Globemaster Deluxe"
-    },
-    {
-      "name": "Luxe"
-    },
-    {
-      "name": "Sprintmaster"
-    },
-    {
-      "name": "Thunderbird"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Thunderbird Stock Exhaust"
@@ -52,8 +30,30 @@
       "name": "Cheetah Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Cheetah"
+    },
+    {
+      "name": "Commodore"
+    },
+    {
+      "name": "Globemaster"
+    },
+    {
+      "name": "Globemaster Deluxe"
+    },
+    {
+      "name": "Luxe"
+    },
+    {
+      "name": "Sprintmaster"
+    },
+    {
+      "name": "Thunderbird"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

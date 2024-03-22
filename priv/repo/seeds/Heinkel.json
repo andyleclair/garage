@@ -1,23 +1,23 @@
 {
   "name": "Heinkel",
-  "models": [
-    {
-      "name": "Perle"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Perle Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Perle"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

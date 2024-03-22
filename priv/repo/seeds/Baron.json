@@ -1,23 +1,23 @@
 {
   "name": "Baron",
-  "models": [
-    {
-      "name": "Lazer"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Lazer Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Lazer"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

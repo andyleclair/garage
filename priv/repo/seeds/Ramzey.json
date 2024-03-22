@@ -1,28 +1,12 @@
 {
   "name": "Ramzey",
-  "models": [
-    {
-      "name": "Comfort"
-    },
-    {
-      "name": "Magnum SAfkan"
-    },
-    {
-      "name": "Prestige"
-    },
-    {
-      "name": "Prestige Classic"
-    },
-    {
-      "name": "Wolf"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Wolf Stock Exhaust"
@@ -40,8 +24,24 @@
       "name": "Comfort Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Comfort"
+    },
+    {
+      "name": "Magnum SAfkan"
+    },
+    {
+      "name": "Prestige"
+    },
+    {
+      "name": "Prestige Classic"
+    },
+    {
+      "name": "Wolf"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

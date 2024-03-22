@@ -1,31 +1,12 @@
 {
   "name": "Avaros",
-  "models": [
-    {
-      "name": "Ideal"
-    },
-    {
-      "name": "Kickmonomatic"
-    },
-    {
-      "name": "Kingline"
-    },
-    {
-      "name": "Primus"
-    },
-    {
-      "name": "Record"
-    },
-    {
-      "name": "Super 7"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Super 7 Stock Exhaust"
@@ -46,8 +27,27 @@
       "name": "Ideal Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Ideal"
+    },
+    {
+      "name": "Kickmonomatic"
+    },
+    {
+      "name": "Kingline"
+    },
+    {
+      "name": "Primus"
+    },
+    {
+      "name": "Record"
+    },
+    {
+      "name": "Super 7"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

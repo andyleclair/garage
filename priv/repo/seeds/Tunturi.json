@@ -1,25 +1,12 @@
 {
   "name": "Tunturi",
-  "models": [
-    {
-      "name": "Maxi"
-    },
-    {
-      "name": "Pappa"
-    },
-    {
-      "name": "Supersport"
-    },
-    {
-      "name": "Tiger"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Tiger Stock Exhaust"
@@ -34,8 +21,21 @@
       "name": "Maxi Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Maxi"
+    },
+    {
+      "name": "Pappa"
+    },
+    {
+      "name": "Supersport"
+    },
+    {
+      "name": "Tiger"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

@@ -1,28 +1,41 @@
 {
   "carburetors": [
     {
-      "name": "20mm"
+      "name": "Clone",
+      "sizes": [
+        "12mm",
+        "14mm",
+        "15mm",
+        "17mm",
+        "20mm"
+      ],
+      "tunable_parts": [
+        "main_jet"
+      ]
     },
     {
-      "name": "18mm"
+      "name": "Square Bing",
+      "sizes": [
+        "10mm",
+        "12mm",
+        "17mm"
+      ],
+      "tunable_parts": [
+        "main_jet"
+      ]
     },
     {
-      "name": "17mm"
-    },
-    {
-      "name": "15mm Clone"
-    },
-    {
-      "name": "15mm"
-    },
-    {
-      "name": "14mm"
-    },
-    {
-      "name": "12mm Clone"
-    },
-    {
-      "name": "12mm"
+      "name": "Carburetor",
+      "sizes": [
+        "12mm",
+        "14mm",
+        "15mm",
+        "17mm",
+        "20mm"
+      ],
+      "tunable_parts": [
+        "main_jet"
+      ]
     }
   ],
   "categories": [

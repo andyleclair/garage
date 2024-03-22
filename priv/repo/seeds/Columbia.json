@@ -1,61 +1,12 @@
 {
   "name": "Columbia",
-  "models": [
-    {
-      "name": "2241"
-    },
-    {
-      "name": "2251"
-    },
-    {
-      "name": "57062"
-    },
-    {
-      "name": "Commuter"
-    },
-    {
-      "name": "Commuter 2220"
-    },
-    {
-      "name": "Commuter 2240"
-    },
-    {
-      "name": "Commuter 2250"
-    },
-    {
-      "name": "Commuter I"
-    },
-    {
-      "name": "Imperial"
-    },
-    {
-      "name": "Medallion 2271"
-    },
-    {
-      "name": "Medallion 2280"
-    },
-    {
-      "name": "Mediallion 2281"
-    },
-    {
-      "name": "Motrek"
-    },
-    {
-      "name": "Open Road"
-    },
-    {
-      "name": "Traveller I"
-    },
-    {
-      "name": "Western Flyer"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Western Flyer Stock Exhaust"
@@ -106,8 +57,57 @@
       "name": "2241 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "2241"
+    },
+    {
+      "name": "2251"
+    },
+    {
+      "name": "57062"
+    },
+    {
+      "name": "Commuter"
+    },
+    {
+      "name": "Commuter 2220"
+    },
+    {
+      "name": "Commuter 2240"
+    },
+    {
+      "name": "Commuter 2250"
+    },
+    {
+      "name": "Commuter I"
+    },
+    {
+      "name": "Imperial"
+    },
+    {
+      "name": "Medallion 2271"
+    },
+    {
+      "name": "Medallion 2280"
+    },
+    {
+      "name": "Mediallion 2281"
+    },
+    {
+      "name": "Motrek"
+    },
+    {
+      "name": "Open Road"
+    },
+    {
+      "name": "Traveller I"
+    },
+    {
+      "name": "Western Flyer"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

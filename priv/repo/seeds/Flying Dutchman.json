@@ -1,25 +1,12 @@
 {
   "name": "Flying Dutchman",
-  "models": [
-    {
-      "name": "Buddy"
-    },
-    {
-      "name": "DeLuxe"
-    },
-    {
-      "name": "KML-40"
-    },
-    {
-      "name": "Lucky"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Lucky Stock Exhaust"
@@ -34,8 +21,21 @@
       "name": "Buddy Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Buddy"
+    },
+    {
+      "name": "DeLuxe"
+    },
+    {
+      "name": "KML-40"
+    },
+    {
+      "name": "Lucky"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

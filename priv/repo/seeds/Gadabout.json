@@ -1,19 +1,12 @@
 {
   "name": "Gadabout",
-  "models": [
-    {
-      "name": "Deluxe 3"
-    },
-    {
-      "name": "MK IV"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "MK IV Stock Exhaust"
@@ -22,8 +15,15 @@
       "name": "Deluxe 3 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Deluxe 3"
+    },
+    {
+      "name": "MK IV"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

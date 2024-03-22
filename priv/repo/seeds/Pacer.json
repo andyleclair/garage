@@ -1,49 +1,12 @@
 {
   "name": "Pacer",
-  "models": [
-    {
-      "name": "25"
-    },
-    {
-      "name": "P-1"
-    },
-    {
-      "name": "P-12"
-    },
-    {
-      "name": "P-14"
-    },
-    {
-      "name": "P-14 Delux"
-    },
-    {
-      "name": "P-14RL"
-    },
-    {
-      "name": "P-214"
-    },
-    {
-      "name": "P-278"
-    },
-    {
-      "name": "P-280"
-    },
-    {
-      "name": "Sport P-78"
-    },
-    {
-      "name": "Super Sport"
-    },
-    {
-      "name": "Super Sport P-80"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Super Sport P-80 Stock Exhaust"
@@ -82,8 +45,45 @@
       "name": "25 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "25"
+    },
+    {
+      "name": "P-1"
+    },
+    {
+      "name": "P-12"
+    },
+    {
+      "name": "P-14"
+    },
+    {
+      "name": "P-14 Delux"
+    },
+    {
+      "name": "P-14RL"
+    },
+    {
+      "name": "P-214"
+    },
+    {
+      "name": "P-278"
+    },
+    {
+      "name": "P-280"
+    },
+    {
+      "name": "Sport P-78"
+    },
+    {
+      "name": "Super Sport"
+    },
+    {
+      "name": "Super Sport P-80"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

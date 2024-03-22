@@ -1,7 +1,10 @@
 {
   "carburetors": [
     {
-      "name": "12mm"
+      "name": "Carburetor",
+      "sizes": [
+        "12mm"
+      ]
     }
   ],
   "categories": [

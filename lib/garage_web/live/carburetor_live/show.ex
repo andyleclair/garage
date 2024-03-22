@@ -22,11 +22,13 @@ defmodule GarageWeb.CarburetorLive.Show do
 
       <:item title="Description"><%= @carburetor.description %></:item>
 
-      <:item title="Size"><%= @carburetor.size %></:item>
+      <:item title="Sizes">
+        <.badge :for={size <- @carburetor.sizes}><%= size %></.badge>
+      </:item>
 
-      <:item title="Jets">
-        <.badge :for={jet <- @carburetor.jets}>
-          <%= jet %>
+      <:item title="Tunable Parts">
+        <.badge :for={part <- @carburetor.tunable_parts}>
+          <%= part |> to_string() |> Recase.to_title() %>
         </.badge>
       </:item>
 

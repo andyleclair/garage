@@ -1,31 +1,12 @@
 {
   "name": "Eysink",
-  "models": [
-    {
-      "name": "Credette"
-    },
-    {
-      "name": "Kampioen"
-    },
-    {
-      "name": "Mini 1"
-    },
-    {
-      "name": "Mini 2"
-    },
-    {
-      "name": "Record"
-    },
-    {
-      "name": "Sunny"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Sunny Stock Exhaust"
@@ -46,8 +27,27 @@
       "name": "Credette Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Credette"
+    },
+    {
+      "name": "Kampioen"
+    },
+    {
+      "name": "Mini 1"
+    },
+    {
+      "name": "Mini 2"
+    },
+    {
+      "name": "Record"
+    },
+    {
+      "name": "Sunny"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

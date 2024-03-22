@@ -1,34 +1,12 @@
 {
   "name": "Cosmo",
-  "models": [
-    {
-      "name": "Blazer"
-    },
-    {
-      "name": "Colt I"
-    },
-    {
-      "name": "Colt II"
-    },
-    {
-      "name": "Colt III Reed"
-    },
-    {
-      "name": "Colt III Variator"
-    },
-    {
-      "name": "Colt IV"
-    },
-    {
-      "name": "Stinger"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Stinger Stock Exhaust"
@@ -52,8 +30,30 @@
       "name": "Blazer Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Blazer"
+    },
+    {
+      "name": "Colt I"
+    },
+    {
+      "name": "Colt II"
+    },
+    {
+      "name": "Colt III Reed"
+    },
+    {
+      "name": "Colt III Variator"
+    },
+    {
+      "name": "Colt IV"
+    },
+    {
+      "name": "Stinger"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

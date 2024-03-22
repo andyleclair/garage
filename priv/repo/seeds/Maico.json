@@ -1,23 +1,23 @@
 {
   "name": "Maico",
-  "models": [
-    {
-      "name": "MPI"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "MPI Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "MPI"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

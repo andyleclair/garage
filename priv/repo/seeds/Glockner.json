@@ -1,23 +1,23 @@
 {
   "name": "Glockner",
-  "models": [
-    {
-      "name": "Standard"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Standard Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Standard"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

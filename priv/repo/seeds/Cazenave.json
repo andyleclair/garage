@@ -1,23 +1,23 @@
 {
   "name": "Cazenave",
-  "models": [
-    {
-      "name": "421"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "421 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "421"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

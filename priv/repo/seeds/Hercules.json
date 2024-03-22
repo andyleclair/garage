@@ -1,88 +1,12 @@
 {
   "name": "Hercules",
-  "models": [
-    {
-      "name": "218"
-    },
-    {
-      "name": "220"
-    },
-    {
-      "name": "5 SL"
-    },
-    {
-      "name": "504-1A"
-    },
-    {
-      "name": "504-1B"
-    },
-    {
-      "name": "Accubike E-1"
-    },
-    {
-      "name": "Citybike C-3"
-    },
-    {
-      "name": "HR-2"
-    },
-    {
-      "name": "Hobbyrider"
-    },
-    {
-      "name": "K50"
-    },
-    {
-      "name": "L50"
-    },
-    {
-      "name": "Lastboy"
-    },
-    {
-      "name": "M-1"
-    },
-    {
-      "name": "M-2"
-    },
-    {
-      "name": "M-4"
-    },
-    {
-      "name": "M-5"
-    },
-    {
-      "name": "MP-2"
-    },
-    {
-      "name": "MP-4"
-    },
-    {
-      "name": "MX-1"
-    },
-    {
-      "name": "P-1"
-    },
-    {
-      "name": "P-3"
-    },
-    {
-      "name": "Prima 4"
-    },
-    {
-      "name": "Prima 5"
-    },
-    {
-      "name": "SAXONETTE"
-    },
-    {
-      "name": "Supra 4 Enduro"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Supra 4 Enduro Stock Exhaust"
@@ -160,8 +84,84 @@
       "name": "218 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "218"
+    },
+    {
+      "name": "220"
+    },
+    {
+      "name": "5 SL"
+    },
+    {
+      "name": "504-1A"
+    },
+    {
+      "name": "504-1B"
+    },
+    {
+      "name": "Accubike E-1"
+    },
+    {
+      "name": "Citybike C-3"
+    },
+    {
+      "name": "HR-2"
+    },
+    {
+      "name": "Hobbyrider"
+    },
+    {
+      "name": "K50"
+    },
+    {
+      "name": "L50"
+    },
+    {
+      "name": "Lastboy"
+    },
+    {
+      "name": "M-1"
+    },
+    {
+      "name": "M-2"
+    },
+    {
+      "name": "M-4"
+    },
+    {
+      "name": "M-5"
+    },
+    {
+      "name": "MP-2"
+    },
+    {
+      "name": "MP-4"
+    },
+    {
+      "name": "MX-1"
+    },
+    {
+      "name": "P-1"
+    },
+    {
+      "name": "P-3"
+    },
+    {
+      "name": "Prima 4"
+    },
+    {
+      "name": "Prima 5"
+    },
+    {
+      "name": "SAXONETTE"
+    },
+    {
+      "name": "Supra 4 Enduro"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

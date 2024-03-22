@@ -1,37 +1,12 @@
 {
   "name": "Testi",
-  "models": [
-    {
-      "name": "Amico"
-    },
-    {
-      "name": "Cal Jet"
-    },
-    {
-      "name": "Champion"
-    },
-    {
-      "name": "Comfort"
-    },
-    {
-      "name": "Cricket"
-    },
-    {
-      "name": "Grand Prix"
-    },
-    {
-      "name": "Mini Cricket"
-    },
-    {
-      "name": "Weekend Cross"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Weekend Cross Stock Exhaust"
@@ -58,8 +33,33 @@
       "name": "Amico Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Amico"
+    },
+    {
+      "name": "Cal Jet"
+    },
+    {
+      "name": "Champion"
+    },
+    {
+      "name": "Comfort"
+    },
+    {
+      "name": "Cricket"
+    },
+    {
+      "name": "Grand Prix"
+    },
+    {
+      "name": "Mini Cricket"
+    },
+    {
+      "name": "Weekend Cross"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

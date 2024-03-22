@@ -1,23 +1,23 @@
 {
   "name": "Angel",
-  "models": [
-    {
-      "name": "AP48"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "AP48 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "AP48"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

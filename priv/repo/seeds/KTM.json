@@ -1,22 +1,12 @@
 {
   "name": "KTM",
-  "models": [
-    {
-      "name": "Comet Cross"
-    },
-    {
-      "name": "Comet Racer"
-    },
-    {
-      "name": "Foxi"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Foxi Stock Exhaust"
@@ -28,8 +18,18 @@
       "name": "Comet Cross Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Comet Cross"
+    },
+    {
+      "name": "Comet Racer"
+    },
+    {
+      "name": "Foxi"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

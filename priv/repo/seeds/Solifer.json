@@ -1,22 +1,12 @@
 {
   "name": "Solifer",
-  "models": [
-    {
-      "name": "Export"
-    },
-    {
-      "name": "SM"
-    },
-    {
-      "name": "Speed"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Speed Stock Exhaust"
@@ -28,8 +18,18 @@
       "name": "Export Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Export"
+    },
+    {
+      "name": "SM"
+    },
+    {
+      "name": "Speed"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

@@ -1,13 +1,17 @@
 {
   "carburetors": [
     {
-      "name": "12mm -AV7"
+      "name": "Carburetor",
+      "sizes": [
+        "10mm",
+        "12mm"
+      ]
     },
     {
-      "name": "12mm"
-    },
-    {
-      "name": "10mm AR1"
+      "name": "AR1",
+      "sizes": [
+        "10mm"
+      ]
     }
   ],
   "categories": [

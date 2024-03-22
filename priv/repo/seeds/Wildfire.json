@@ -1,23 +1,23 @@
 {
   "name": "Wildfire",
-  "models": [
-    {
-      "name": "WF110-M1"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "WF110-M1 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "WF110-M1"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

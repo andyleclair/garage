@@ -1,46 +1,12 @@
 {
   "name": "Jialing",
-  "models": [
-    {
-      "name": "CJ50F"
-    },
-    {
-      "name": "CJ50ZC"
-    },
-    {
-      "name": "JH50"
-    },
-    {
-      "name": "JL36PL"
-    },
-    {
-      "name": "JL36PL-A"
-    },
-    {
-      "name": "NP Passport"
-    },
-    {
-      "name": "NP50-GL"
-    },
-    {
-      "name": "NP50-GS"
-    },
-    {
-      "name": "NP50-MA"
-    },
-    {
-      "name": "NP50T-M"
-    },
-    {
-      "name": "TN35L"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "TN35L Stock Exhaust"
@@ -76,8 +42,42 @@
       "name": "CJ50F Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "CJ50F"
+    },
+    {
+      "name": "CJ50ZC"
+    },
+    {
+      "name": "JH50"
+    },
+    {
+      "name": "JL36PL"
+    },
+    {
+      "name": "JL36PL-A"
+    },
+    {
+      "name": "NP Passport"
+    },
+    {
+      "name": "NP50-GL"
+    },
+    {
+      "name": "NP50-GS"
+    },
+    {
+      "name": "NP50-MA"
+    },
+    {
+      "name": "NP50T-M"
+    },
+    {
+      "name": "TN35L"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

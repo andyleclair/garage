@@ -1,49 +1,12 @@
 {
   "name": "Gilera",
-  "models": [
-    {
-      "name": "50 Touring RS"
-    },
-    {
-      "name": "50 Trial RS"
-    },
-    {
-      "name": "E-type"
-    },
-    {
-      "name": "Eco"
-    },
-    {
-      "name": "Enduro"
-    },
-    {
-      "name": "RA"
-    },
-    {
-      "name": "RE"
-    },
-    {
-      "name": "RL"
-    },
-    {
-      "name": "RS"
-    },
-    {
-      "name": "SD"
-    },
-    {
-      "name": "Touring"
-    },
-    {
-      "name": "Trial"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Trial Stock Exhaust"
@@ -82,8 +45,45 @@
       "name": "50 Touring RS Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "50 Touring RS"
+    },
+    {
+      "name": "50 Trial RS"
+    },
+    {
+      "name": "E-type"
+    },
+    {
+      "name": "Eco"
+    },
+    {
+      "name": "Enduro"
+    },
+    {
+      "name": "RA"
+    },
+    {
+      "name": "RE"
+    },
+    {
+      "name": "RL"
+    },
+    {
+      "name": "RS"
+    },
+    {
+      "name": "SD"
+    },
+    {
+      "name": "Touring"
+    },
+    {
+      "name": "Trial"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

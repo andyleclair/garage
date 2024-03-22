@@ -1,7 +1,18 @@
 {
   "carburetors": [
     {
-      "name": "17.5mm AS PHBG Clone"
+      "name": "AS PHBG Clone",
+      "sizes": [
+        "17.5mm"
+      ],
+      "tunable_parts": [
+        "main_jet",
+        "idle_jet",
+        "starter_jet",
+        "slide",
+        "needle",
+        "atomizer"
+      ]
     }
   ],
   "categories": [

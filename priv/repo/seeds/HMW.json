@@ -1,23 +1,23 @@
 {
   "name": "HMW",
-  "models": [
-    {
-      "name": "50SH"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "50SH Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "50SH"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

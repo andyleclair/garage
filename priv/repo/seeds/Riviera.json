@@ -1,23 +1,23 @@
 {
   "name": "Riviera",
-  "models": [
-    {
-      "name": "ST-100"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "ST-100 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "ST-100"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

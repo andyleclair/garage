@@ -1,70 +1,12 @@
 {
   "name": "Malanca",
-  "models": [
-    {
-      "name": "Bibi"
-    },
-    {
-      "name": "Big"
-    },
-    {
-      "name": "Competizione"
-    },
-    {
-      "name": "Country Special"
-    },
-    {
-      "name": "Cross"
-    },
-    {
-      "name": "Due PIU"
-    },
-    {
-      "name": "Duplimatic"
-    },
-    {
-      "name": "Jolly 3M"
-    },
-    {
-      "name": "Jolly B"
-    },
-    {
-      "name": "Leoncino"
-    },
-    {
-      "name": "Lord"
-    },
-    {
-      "name": "Mascotte B"
-    },
-    {
-      "name": "Minizeta"
-    },
-    {
-      "name": "Roxi"
-    },
-    {
-      "name": "Testa Rossa"
-    },
-    {
-      "name": "Tigre"
-    },
-    {
-      "name": "Tigrotto"
-    },
-    {
-      "name": "Turismo Turbo"
-    },
-    {
-      "name": "Zeta"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Zeta Stock Exhaust"
@@ -124,8 +66,66 @@
       "name": "Bibi Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Bibi"
+    },
+    {
+      "name": "Big"
+    },
+    {
+      "name": "Competizione"
+    },
+    {
+      "name": "Country Special"
+    },
+    {
+      "name": "Cross"
+    },
+    {
+      "name": "Due PIU"
+    },
+    {
+      "name": "Duplimatic"
+    },
+    {
+      "name": "Jolly 3M"
+    },
+    {
+      "name": "Jolly B"
+    },
+    {
+      "name": "Leoncino"
+    },
+    {
+      "name": "Lord"
+    },
+    {
+      "name": "Mascotte B"
+    },
+    {
+      "name": "Minizeta"
+    },
+    {
+      "name": "Roxi"
+    },
+    {
+      "name": "Testa Rossa"
+    },
+    {
+      "name": "Tigre"
+    },
+    {
+      "name": "Tigrotto"
+    },
+    {
+      "name": "Turismo Turbo"
+    },
+    {
+      "name": "Zeta"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

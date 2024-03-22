@@ -1,23 +1,23 @@
 {
   "name": "Pony",
-  "models": [
-    {
-      "name": "Yunior"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Yunior Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Yunior"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

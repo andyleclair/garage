@@ -1,19 +1,12 @@
 {
   "name": "DBS",
-  "models": [
-    {
-      "name": "Saxonette"
-    },
-    {
-      "name": "Sport"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Sport Stock Exhaust"
@@ -22,8 +15,15 @@
       "name": "Saxonette Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Saxonette"
+    },
+    {
+      "name": "Sport"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

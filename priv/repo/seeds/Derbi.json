@@ -1,11 +1,6 @@
 {
-  "carburetors": [
-    {
-      "name": "Flatreed Moped Metrakit 16mm Kit"
-    }
-  ],
+  "carburetors": [],
   "categories": [
-    "carburetors",
     "clutches",
     "engines",
     "mopeds"

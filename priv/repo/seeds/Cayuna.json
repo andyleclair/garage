@@ -1,23 +1,23 @@
 {
   "name": "Cayuna",
-  "models": [
-    {
-      "name": "Scorpion"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Scorpion Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Scorpion"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

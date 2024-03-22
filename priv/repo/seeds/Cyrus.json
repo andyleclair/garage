@@ -1,28 +1,12 @@
 {
   "name": "Cyrus",
-  "models": [
-    {
-      "name": "Carrier"
-    },
-    {
-      "name": "Cyriette"
-    },
-    {
-      "name": "Cyrusette"
-    },
-    {
-      "name": "Speciaal Sport"
-    },
-    {
-      "name": "Transporter"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Transporter Stock Exhaust"
@@ -40,8 +24,24 @@
       "name": "Carrier Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Carrier"
+    },
+    {
+      "name": "Cyriette"
+    },
+    {
+      "name": "Cyrusette"
+    },
+    {
+      "name": "Speciaal Sport"
+    },
+    {
+      "name": "Transporter"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

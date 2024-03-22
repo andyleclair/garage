@@ -1,23 +1,23 @@
 {
   "name": "Viberti",
-  "models": [
-    {
-      "name": "Vivi"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Vivi Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Vivi"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

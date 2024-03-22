@@ -1,14 +1,6 @@
 {
-  "carburetors": [
-    {
-      "name": "Moped Malossi 21mm Dellorto Kit"
-    },
-    {
-      "name": "Hobbit/Camino Stock"
-    }
-  ],
+  "carburetors": [],
   "categories": [
-    "carburetors",
     "cylinders",
     "engines",
     "mopeds"

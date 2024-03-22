@@ -1,22 +1,12 @@
 {
   "name": "Whizzer",
-  "models": [
-    {
-      "name": "Cyclone"
-    },
-    {
-      "name": "NE-5"
-    },
-    {
-      "name": "Pacemaker"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Pacemaker Stock Exhaust"
@@ -28,8 +18,18 @@
       "name": "Cyclone Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Cyclone"
+    },
+    {
+      "name": "NE-5"
+    },
+    {
+      "name": "Pacemaker"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

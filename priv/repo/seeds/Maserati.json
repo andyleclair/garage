@@ -1,19 +1,12 @@
 {
   "name": "Maserati",
-  "models": [
-    {
-      "name": "T2/D"
-    },
-    {
-      "name": "T2/U"
-    }
-  ],
   "engines": [],
+  "categories": [
+    "mopeds"
+  ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "T2/U Stock Exhaust"
@@ -22,8 +15,15 @@
       "name": "T2/D Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "T2/D"
+    },
+    {
+      "name": "T2/U"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }
