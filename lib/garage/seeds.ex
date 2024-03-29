@@ -114,7 +114,6 @@ defmodule Garage.Seeds do
                   end
 
                 :carburetors ->
-                  # edited the file to just be right
                   Map.pop(part, "manufacturer")
 
                 _ ->

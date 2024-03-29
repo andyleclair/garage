@@ -5,7 +5,7 @@ defmodule GarageWeb.CarburetorLive.Index do
   def render(assigns) do
     ~H"""
     <.header>
-      Listing Carburetors
+      All Carburetors
       <:actions>
         <.link patch={~p"/carburetors/new"}>
           <.button>New Carburetor</.button>
@@ -32,7 +32,9 @@ defmodule GarageWeb.CarburetorLive.Index do
       </:col>
 
       <:col :let={{_id, carburetor}} label="Tunable Parts">
-        <.badge :for={part <- carburetor.tunable_parts}><%= part %></.badge>
+        <.badge :for={part <- carburetor.tunable_parts}>
+          <%= part |> to_string() |> Recase.to_title() %>
+        </.badge>
       </:col>
 
       <:action :let={{_id, carburetor}}>
@@ -41,15 +43,6 @@ defmodule GarageWeb.CarburetorLive.Index do
         </div>
 
         <.link patch={~p"/carburetors/#{carburetor}/edit"}>Edit</.link>
-      </:action>
-
-      <:action :let={{id, carburetor}}>
-        <.link
-          phx-click={JS.push("delete", value: %{id: carburetor.id}) |> hide("##{id}")}
-          data-confirm="Are you sure?"
-        >
-          Delete
-        </.link>
       </:action>
     </.table>
 

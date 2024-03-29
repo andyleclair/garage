@@ -11,9 +11,10 @@
 }
 
 h1, h2 {
-  font-family: "Holtwood One SC", serif;
+  font-family: "Imbue", serif;
   font-weight: 400;
   font-style: normal;
+  text-transform: uppercase;
 }
 
 @keyframes tilt-n-move-shaking {

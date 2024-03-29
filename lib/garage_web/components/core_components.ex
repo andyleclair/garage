@@ -624,6 +624,7 @@ defmodule GarageWeb.CoreComponents do
 
       <LiveSelect.live_select
         field={@field}
+        tag_class="inline-flex items-center px-2 py-1 me-2 text-sm font-medium text-gray-800 bg-gray-100 rounded dark:bg-gray-700 dark:text-gray-300"
         text_input_class={[
           "mt-2 block w-full rounded-lg border-zinc-300 py-[7px] px-[11px]",
           "text-zinc-900 focus:outline-none focus:ring-4 sm:text-sm sm:leading-6",
@@ -632,7 +633,31 @@ defmodule GarageWeb.CoreComponents do
           @errors != [] && "border-rose-400 focus:border-rose-400 focus:ring-rose-400/10"
         ]}
         {@live_select_opts}
-      />
+      >
+        <:clear_button>
+          <div
+            class="inline-flex items-center p-1 ms-2 mb-0.5 text-sm text-gray-400 bg-transparent rounded-sm hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-gray-300"
+            aria-label="Remove"
+          >
+            <svg
+              class="w-2 h-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+              />
+            </svg>
+            <span class="sr-only">Remove badge</span>
+          </div>
+        </:clear_button>
+      </LiveSelect.live_select>
       <.error :for={msg <- @errors}><%= msg %></.error>
     </div>
     """
@@ -658,9 +683,21 @@ defmodule GarageWeb.CoreComponents do
   """
   def badge(assigns) do
     ~H"""
-    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
+    <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 mx-1 my-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
       <%= render_slot(@inner_block) %>
     </span>
+    """
+  end
+
+  def tag_selector(assigns) do
+    ~H"""
+    <.live_component
+      module={GarageWeb.Components.TagSelector}
+      id={@id}
+      tags={@tags}
+      label={@label}
+      on_tag_update={@on_tag_update}
+    />
     """
   end
 

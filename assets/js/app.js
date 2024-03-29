@@ -25,12 +25,13 @@ import live_select from "live_select"
 import Sortable from "../vendor/sortable"
 // for uploading to S3
 import Uploaders from "./uploaders"
+import tag_selector from "./tag_selector"
 
 const hooks = {
   TrixEditor: {
     mounted() {
       const element = document.querySelector("trix-editor");
-      element.editor.element.addEventListener("trix-change", (e) => {
+      element.editor.element.addEventListener("trix-change", (_e) => {
         this.el.dispatchEvent(new Event("change", { bubbles: true }));
       });
       element.editor.element.addEventListener("trix-initialize", () => {
@@ -60,7 +61,8 @@ const hooks = {
       })
     }
   },
-  ...live_select
+  ...live_select,
+  ...tag_selector
 }
 
 

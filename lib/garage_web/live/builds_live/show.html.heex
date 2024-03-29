@@ -17,7 +17,9 @@
     Last updated: <%= humanize_relative(@build.updated_at) %>
   </:subtitle>
   <:actions>
-    <.like_heart liked_by_user={@build.liked_by_user} class="w-10 h-10" />
+    <%= if @current_user do %>
+      <.like_heart liked_by_user={@build.liked_by_user} class="w-10 h-10" />
+    <% end %>
   </:actions>
 </.header>
 <!-- Gallery -->

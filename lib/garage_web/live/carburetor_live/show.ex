@@ -66,9 +66,10 @@ defmodule GarageWeb.CarburetorLive.Show do
   end
 
   @impl true
-  def handle_params(%{"id" => id}, _, socket) do
+  def handle_params(%{"id" => id}, url, socket) do
     {:noreply,
      socket
+     |> assign(:meta, %{"og:url" => url})
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :carburetor,
