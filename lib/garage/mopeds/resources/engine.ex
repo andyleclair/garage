@@ -59,7 +59,7 @@ defmodule Garage.Mopeds.Engine do
   end
 
   preparations do
-    prepare build(sort: [:name])
+    prepare build(sort: [:name], load: [:manufacturer])
   end
 
   identities do

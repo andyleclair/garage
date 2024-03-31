@@ -64,6 +64,7 @@ defmodule GarageWeb.CarburetorLive.FormComponent do
     """
   end
 
+  @impl true
   def mount(socket) do
     manufacturer_options = manufacturer_options()
     tunable_parts = tunable_parts()
