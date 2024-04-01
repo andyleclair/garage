@@ -104,6 +104,11 @@ defmodule GarageWeb.CarburetorLive.Index do
 
   @impl true
   def handle_info({GarageWeb.CarburetorLive.FormComponent, {:saved, carburetor}}, socket) do
+    carburetor =
+      Garage.Mopeds.get!(Garage.Mopeds.Carburetor, carburetor.id,
+        actor: socket.assigns.current_user
+      )
+
     {:noreply, stream_insert(socket, :carburetors, carburetor)}
   end
 

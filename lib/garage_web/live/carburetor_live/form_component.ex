@@ -181,10 +181,4 @@ defmodule GarageWeb.CarburetorLive.FormComponent do
         into: [],
         do: {part |> to_string() |> Recase.to_title(), part}
   end
-
-  def chip(assigns) do
-    ~H"""
-
-    """
-  end
 end

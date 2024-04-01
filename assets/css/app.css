@@ -10,10 +10,14 @@
   display: none !important;
 }
 
-h1, h2 {
+h1 {
   font-family: "Imbue", serif;
   font-weight: 400;
   font-style: normal;
+  text-transform: uppercase;
+}
+
+h2 {
   text-transform: uppercase;
 }
 

@@ -36,7 +36,7 @@ defmodule Garage.Mopeds.Clutch do
   end
 
   preparations do
-    prepare build(sort: [:name])
+    prepare build(sort: [:name], load: [:manufacturer])
   end
 
   identities do

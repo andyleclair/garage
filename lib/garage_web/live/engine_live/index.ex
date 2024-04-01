@@ -101,6 +101,9 @@ defmodule GarageWeb.EngineLive.Index do
 
   @impl true
   def handle_info({GarageWeb.EngineLive.FormComponent, {:saved, engine}}, socket) do
+    engine =
+      Garage.Mopeds.get!(Garage.Mopeds.Engine, engine.id, actor: socket.assigns.current_user)
+
     {:noreply, stream_insert(socket, :engines, engine)}
   end
 

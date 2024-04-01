@@ -25,7 +25,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      sans: ["Noto", "sans-serif"]
+      sans: ["DM Sans", "sans-serif"]
     }
   },
   plugins: [

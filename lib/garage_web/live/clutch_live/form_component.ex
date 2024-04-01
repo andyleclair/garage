@@ -1,4 +1,4 @@
-defmodule GarageWeb.EngineLive.FormComponent do
+defmodule GarageWeb.ClutchLive.FormComponent do
   use GarageWeb, :live_component
   alias Garage.Mopeds.Manufacturer
 
@@ -8,12 +8,12 @@ defmodule GarageWeb.EngineLive.FormComponent do
     <div>
       <.header>
         <%= @title %>
-        <:subtitle>Use this form to manage engine records in your database.</:subtitle>
+        <:subtitle>Use this form to manage clutch records in your database.</:subtitle>
       </.header>
 
       <.simple_form
         for={@form}
-        id="engine-form"
+        id="clutch-form"
         phx-target={@myself}
         phx-change="validate"
         phx-submit="save"
@@ -24,7 +24,7 @@ defmodule GarageWeb.EngineLive.FormComponent do
             name="manufacturer"
             label="Manufacturer"
             type="text"
-            value={@engine.manufacturer.name}
+            value={@clutch.manufacturer.name}
             disabled
           />
         <% else %>
@@ -38,15 +38,9 @@ defmodule GarageWeb.EngineLive.FormComponent do
         <% end %>
         <.input field={@form[:name]} type="text" label="Name" />
         <.input field={@form[:description]} type="text" label="Description" />
-        <.input
-          field={@form[:transmission]}
-          type="select"
-          label="Transmission"
-          options={@transmissions}
-        />
 
         <:actions>
-          <.button phx-disable-with="Saving...">Save Engine</.button>
+          <.button phx-disable-with="Saving...">Save Clutch</.button>
         </:actions>
       </.simple_form>
     </div>
@@ -55,21 +49,19 @@ defmodule GarageWeb.EngineLive.FormComponent do
 
   @impl true
   def update(assigns, socket) do
-    transmissions = transmissions()
     manufacturer_options = manufacturer_options()
 
     {:ok,
      socket
      |> assign(assigns)
-     |> assign(transmissions: transmissions)
-     |> assign(manufacturer_options: manufacturer_options)
+     |> assign(:manufacturer_options, manufacturer_options)
      |> assign_form()}
   end
 
   @impl true
   def handle_event(
         "live_select_change",
-        %{"id" => id, "text" => text, "field" => "engine_" <> field},
+        %{"id" => id, "text" => text, "field" => "clutch_" <> field},
         socket
       ) do
     options =
@@ -84,7 +76,7 @@ defmodule GarageWeb.EngineLive.FormComponent do
   end
 
   @impl true
-  def handle_event("set-default", %{"id" => "engine_" <> field = id}, socket) do
+  def handle_event("set-default", %{"id" => "clutch_" <> field = id}, socket) do
     options =
       case field do
         "manufacturer" <> _ ->
@@ -97,18 +89,18 @@ defmodule GarageWeb.EngineLive.FormComponent do
   end
 
   @impl true
-  def handle_event("validate", %{"engine" => engine_params}, socket) do
-    {:noreply, assign(socket, form: AshPhoenix.Form.validate(socket.assigns.form, engine_params))}
+  def handle_event("validate", %{"clutch" => clutch_params}, socket) do
+    {:noreply, assign(socket, form: AshPhoenix.Form.validate(socket.assigns.form, clutch_params))}
   end
 
-  def handle_event("save", %{"engine" => engine_params}, socket) do
-    case AshPhoenix.Form.submit(socket.assigns.form, params: engine_params) do
-      {:ok, engine} ->
-        notify_parent({:saved, engine})
+  def handle_event("save", %{"clutch" => clutch_params}, socket) do
+    case AshPhoenix.Form.submit(socket.assigns.form, params: clutch_params) do
+      {:ok, clutch} ->
+        notify_parent({:saved, clutch})
 
         socket =
           socket
-          |> put_flash(:info, "Engine #{socket.assigns.form.source.type}d successfully")
+          |> put_flash(:info, "Clutch #{socket.assigns.form.source.type}d successfully")
           |> push_patch(to: socket.assigns.patch)
 
         {:noreply, socket}
@@ -120,18 +112,18 @@ defmodule GarageWeb.EngineLive.FormComponent do
 
   defp notify_parent(msg), do: send(self(), {__MODULE__, msg})
 
-  defp assign_form(%{assigns: %{engine: engine}} = socket) do
+  defp assign_form(%{assigns: %{clutch: clutch}} = socket) do
     form =
-      if engine do
-        AshPhoenix.Form.for_update(engine, :update,
+      if clutch do
+        AshPhoenix.Form.for_update(clutch, :update,
           api: Garage.Mopeds,
-          as: "engine",
+          as: "clutch",
           actor: socket.assigns.current_user
         )
       else
-        AshPhoenix.Form.for_create(Garage.Mopeds.Engine, :create,
+        AshPhoenix.Form.for_create(Garage.Mopeds.Clutch, :create,
           api: Garage.Mopeds,
-          as: "engine",
+          as: "clutch",
           actor: socket.assigns.current_user
         )
       end
@@ -139,14 +131,8 @@ defmodule GarageWeb.EngineLive.FormComponent do
     assign(socket, form: to_form(form))
   end
 
-  def transmissions() do
-    for t <-
-          Ash.Resource.Info.attribute(Garage.Mopeds.Engine, :transmission).constraints[:one_of],
-        do: {t |> to_string |> Recase.to_title(), t}
-  end
-
   def manufacturer_options() do
-    for manufacturer <- Manufacturer.by_category!(:engines),
+    for manufacturer <- Manufacturer.by_category!(:clutches),
         into: [],
         do: {manufacturer.name, manufacturer.id}
   end
