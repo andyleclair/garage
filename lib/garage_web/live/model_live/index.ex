@@ -7,9 +7,11 @@ defmodule GarageWeb.ModelLive.Index do
     <.header>
       All Moped Models
       <:actions>
-        <.link patch={~p"/models/new"}>
-          <.button>New Model</.button>
-        </.link>
+        <%= if @current_user do %>
+          <.link patch={~p"/models/new"}>
+            <.button>New Model</.button>
+          </.link>
+        <% end %>
       </:actions>
     </.header>
 
@@ -21,20 +23,9 @@ defmodule GarageWeb.ModelLive.Index do
       <:col :let={model} label="Manufacturer"><%= model.manufacturer.name %></:col>
 
       <:action :let={model}>
-        <div class="sr-only">
-          <.link navigate={~p"/models/#{model}"}>Show</.link>
-        </div>
-
-        <.link patch={~p"/models/#{model}/edit"}>Edit</.link>
-      </:action>
-
-      <:action :let={model}>
-        <.link
-          phx-click={JS.push("delete", value: %{id: model.id}) |> hide("##{model.id}")}
-          data-confirm="Are you sure?"
-        >
-          Delete
-        </.link>
+        <%= if @current_user do %>
+          <.link patch={~p"/models/#{model}/edit"}>Edit</.link>
+        <% end %>
       </:action>
     </.table>
 

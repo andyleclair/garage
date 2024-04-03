@@ -53,7 +53,6 @@ defmodule GarageWeb.BuildsLive.Edit do
        |> assign(:engine_options, engine_options)
        |> assign(:clutch_options, clutch_options)
        |> assign(:exhaust_options, exhaust_options)
-       |> assign(:exhaust_options, exhaust_options)
        |> assign(:ignition_options, ignition_options)
        |> assign(:year_options, year_options)
        |> assign_form(form)

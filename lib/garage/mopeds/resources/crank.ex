@@ -3,6 +3,7 @@ defmodule Garage.Mopeds.Crank do
     data_layer: AshPostgres.DataLayer,
     api: Garage.Mopeds
 
+  import Ash.Sort, only: [expr_sort: 2]
   alias Garage.Mopeds.Engine
 
   actions do
@@ -52,7 +53,10 @@ defmodule Garage.Mopeds.Crank do
   end
 
   preparations do
-    prepare build(sort: [:name])
+    prepare build(
+              sort: [expr_sort(manufacturer.name, :string), :name],
+              load: [:manufacturer, :engine]
+            )
   end
 
   identities do

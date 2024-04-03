@@ -17,10 +17,8 @@ defmodule GarageWeb.ModelLive.FormComponent do
         phx-change="validate"
         phx-submit="save"
       >
-        <.input field={@form[:id]} type="text" label="Id" />
         <.input field={@form[:name]} type="text" label="Name" />
         <.input field={@form[:description]} type="text" label="Description" />
-        <.input field={@form[:slug]} type="text" label="Slug" />
         <.input field={@form[:manufacturer_id]} type="text" label="Manufacturer" />
         <.input field={@form[:stock_carburetor_id]} type="text" label="Stock carburetor" />
         <.input field={@form[:stock_clutch_id]} type="text" label="Stock clutch" />

@@ -9,14 +9,20 @@ defmodule GarageWeb.ClutchLive.Show do
       <:subtitle>This is a clutch record from your database.</:subtitle>
 
       <:actions>
-        <.link patch={~p"/clutches/#{@clutch}/show/edit"} phx-click={JS.push_focus()}>
-          <.button>Edit clutch</.button>
-        </.link>
+        <%= if @current_user do %>
+          <.link patch={~p"/clutches/#{@clutch}/show/edit"} phx-click={JS.push_focus()}>
+            <.button>Edit clutch</.button>
+          </.link>
+        <% end %>
       </:actions>
     </.header>
 
     <.list>
-      <:item title="Manufacturer"><%= @clutch.manufacturer.name %></:item>
+      <:item title="Manufacturer">
+        <.link navigate={~p"/manufacturers/#{@clutch.manufacturer}"}>
+          <%= @clutch.manufacturer.name %>
+        </.link>
+      </:item>
 
       <:item title="Name"><%= @clutch.name %></:item>
 

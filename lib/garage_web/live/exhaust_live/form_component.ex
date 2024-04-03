@@ -1,4 +1,4 @@
-defmodule GarageWeb.ClutchLive.FormComponent do
+defmodule GarageWeb.ExhaustLive.FormComponent do
   use GarageWeb, :live_component
   alias Garage.Mopeds.Manufacturer
 
@@ -8,12 +8,12 @@ defmodule GarageWeb.ClutchLive.FormComponent do
     <div>
       <.header>
         <%= @title %>
-        <:subtitle>Use this form to manage clutch records in your database.</:subtitle>
+        <:subtitle>Use this form to manage exhaust records in your database.</:subtitle>
       </.header>
 
       <.simple_form
         for={@form}
-        id="clutch-form"
+        id="exhaust-form"
         phx-target={@myself}
         phx-change="validate"
         phx-submit="save"
@@ -40,7 +40,7 @@ defmodule GarageWeb.ClutchLive.FormComponent do
         <.input field={@form[:description]} type="text" label="Description" />
 
         <:actions>
-          <.button phx-disable-with="Saving...">Save Clutch</.button>
+          <.button phx-disable-with="Saving...">Save Exhaust</.button>
         </:actions>
       </.simple_form>
     </div>
@@ -49,19 +49,17 @@ defmodule GarageWeb.ClutchLive.FormComponent do
 
   @impl true
   def update(assigns, socket) do
-    manufacturer_options = manufacturer_options()
-
     {:ok,
      socket
      |> assign(assigns)
-     |> assign(:manufacturer_options, manufacturer_options)
+     |> assign(:manufacturer_options, manufacturer_options())
      |> assign_form()}
   end
 
   @impl true
   def handle_event(
         "live_select_change",
-        %{"id" => id, "text" => text, "field" => "clutch_" <> field},
+        %{"id" => id, "text" => text, "field" => "exhaust_" <> field},
         socket
       ) do
     options =
@@ -76,7 +74,7 @@ defmodule GarageWeb.ClutchLive.FormComponent do
   end
 
   @impl true
-  def handle_event("set-default", %{"id" => "clutch_" <> field = id}, socket) do
+  def handle_event("set-default", %{"id" => "exhaust_" <> field = id}, socket) do
     options =
       case field do
         "manufacturer" <> _ ->
@@ -89,16 +87,17 @@ defmodule GarageWeb.ClutchLive.FormComponent do
   end
 
   @impl true
-  def handle_event("validate", %{"clutch" => clutch_params}, socket) do
-    {:noreply, assign(socket, form: AshPhoenix.Form.validate(socket.assigns.form, clutch_params))}
+  def handle_event("validate", %{"exhaust" => exhaust_params}, socket) do
+    {:noreply,
+     assign(socket, form: AshPhoenix.Form.validate(socket.assigns.form, exhaust_params))}
   end
 
-  def handle_event("save", %{"clutch" => clutch_params}, socket) do
-    case AshPhoenix.Form.submit(socket.assigns.form, params: clutch_params) do
-      {:ok, _clutch} ->
+  def handle_event("save", %{"exhaust" => exhaust_params}, socket) do
+    case AshPhoenix.Form.submit(socket.assigns.form, params: exhaust_params) do
+      {:ok, _exhaust} ->
         socket =
           socket
-          |> put_flash(:info, "Clutch #{socket.assigns.form.source.type}d successfully")
+          |> put_flash(:info, "Exhaust #{socket.assigns.form.source.type}d successfully")
           |> push_navigate(to: socket.assigns.patch)
 
         {:noreply, socket}
@@ -108,18 +107,18 @@ defmodule GarageWeb.ClutchLive.FormComponent do
     end
   end
 
-  defp assign_form(%{assigns: %{clutch: clutch}} = socket) do
+  defp assign_form(%{assigns: %{exhaust: exhaust}} = socket) do
     form =
-      if clutch do
-        AshPhoenix.Form.for_update(clutch, :update,
+      if exhaust do
+        AshPhoenix.Form.for_update(exhaust, :update,
           api: Garage.Mopeds,
-          as: "clutch",
+          as: "exhaust",
           actor: socket.assigns.current_user
         )
       else
-        AshPhoenix.Form.for_create(Garage.Mopeds.Clutch, :create,
+        AshPhoenix.Form.for_create(Garage.Mopeds.Exhaust, :create,
           api: Garage.Mopeds,
-          as: "clutch",
+          as: "exhaust",
           actor: socket.assigns.current_user
         )
       end
@@ -128,7 +127,7 @@ defmodule GarageWeb.ClutchLive.FormComponent do
   end
 
   def manufacturer_options() do
-    for manufacturer <- Manufacturer.by_category!(:clutches),
+    for manufacturer <- Manufacturer.by_category!(:exhausts),
         into: [],
         do: {manufacturer.name, manufacturer.id}
   end

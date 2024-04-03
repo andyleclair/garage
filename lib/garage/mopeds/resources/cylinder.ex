@@ -3,6 +3,8 @@ defmodule Garage.Mopeds.Cylinder do
     data_layer: AshPostgres.DataLayer,
     api: Garage.Mopeds
 
+  import Ash.Sort, only: [expr_sort: 2]
+
   attributes do
     uuid_primary_key :id
     attribute :name, :string, allow_nil?: false
@@ -46,7 +48,7 @@ defmodule Garage.Mopeds.Cylinder do
   end
 
   preparations do
-    prepare build(sort: [:name])
+    prepare build(sort: [expr_sort(manufacturer.name, :string), :name], load: [:manufacturer])
   end
 
   identities do

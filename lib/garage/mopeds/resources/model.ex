@@ -3,6 +3,8 @@ defmodule Garage.Mopeds.Model do
     data_layer: AshPostgres.DataLayer,
     api: Garage.Mopeds
 
+  import Ash.Sort, only: [expr_sort: 2]
+
   alias Garage.Mopeds.Manufacturer
 
   actions do
@@ -72,7 +74,7 @@ defmodule Garage.Mopeds.Model do
   end
 
   preparations do
-    prepare build(sort: [:name], load: [:manufacturer])
+    prepare build(sort: [expr_sort(manufacturer.name, :string), :name], load: [:manufacturer])
   end
 
   postgres do

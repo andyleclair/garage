@@ -7,9 +7,11 @@ defmodule GarageWeb.CarburetorLive.Index do
     <.header>
       All Carburetors
       <:actions>
-        <.link patch={~p"/carburetors/new"}>
-          <.button>New Carburetor</.button>
-        </.link>
+        <%= if @current_user do %>
+          <.link patch={~p"/carburetors/new"}>
+            <.button>New Carburetor</.button>
+          </.link>
+        <% end %>
       </:actions>
     </.header>
 
@@ -33,16 +35,14 @@ defmodule GarageWeb.CarburetorLive.Index do
 
       <:col :let={{_id, carburetor}} label="Tunable Parts">
         <.badge :for={part <- carburetor.tunable_parts}>
-          <%= part |> to_string() |> Recase.to_title() %>
+          <%= part |> humanize() %>
         </.badge>
       </:col>
 
       <:action :let={{_id, carburetor}}>
-        <div class="sr-only">
-          <.link navigate={~p"/carburetors/#{carburetor}"}>Show</.link>
-        </div>
-
-        <.link patch={~p"/carburetors/#{carburetor}/edit"}>Edit</.link>
+        <%= if @current_user do %>
+          <.link patch={~p"/carburetors/#{carburetor}/edit"}>Edit</.link>
+        <% end %>
       </:action>
     </.table>
 
@@ -100,16 +100,6 @@ defmodule GarageWeb.CarburetorLive.Index do
     socket
     |> assign(:page_title, "Listing Carburetors")
     |> assign(:carburetor, nil)
-  end
-
-  @impl true
-  def handle_info({GarageWeb.CarburetorLive.FormComponent, {:saved, carburetor}}, socket) do
-    carburetor =
-      Garage.Mopeds.get!(Garage.Mopeds.Carburetor, carburetor.id,
-        actor: socket.assigns.current_user
-      )
-
-    {:noreply, stream_insert(socket, :carburetors, carburetor)}
   end
 
   @impl true

@@ -3,6 +3,8 @@ defmodule Garage.Mopeds.Pulley do
     data_layer: AshPostgres.DataLayer,
     api: Garage.Mopeds
 
+  import Ash.Sort, only: [expr_sort: 2]
+
   actions do
     defaults [:create, :read, :update, :destroy]
 
@@ -47,12 +49,12 @@ defmodule Garage.Mopeds.Pulley do
     end
   end
 
-  identities do
-    identity :name, [:manufacturer_id, :name]
+  preparations do
+    prepare build(sort: [expr_sort(manufacturer.name, :string), :name], load: [:manufacturer])
   end
 
-  preparations do
-    prepare build(sort: [:name])
+  identities do
+    identity :name, [:manufacturer_id, :name]
   end
 
   postgres do

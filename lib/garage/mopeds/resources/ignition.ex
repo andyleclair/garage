@@ -3,6 +3,8 @@ defmodule Garage.Mopeds.Ignition do
     data_layer: AshPostgres.DataLayer,
     api: Garage.Mopeds
 
+  import Ash.Sort, only: [expr_sort: 2]
+
   actions do
     defaults [:create, :read, :update, :destroy]
 
@@ -35,7 +37,7 @@ defmodule Garage.Mopeds.Ignition do
   end
 
   preparations do
-    prepare build(sort: [:name])
+    prepare build(sort: [expr_sort(manufacturer.name, :string), :name], load: [:manufacturer])
   end
 
   identities do

@@ -7,9 +7,11 @@ defmodule GarageWeb.ClutchLive.Index do
     <.header>
       Listing Clutches
       <:actions>
-        <.link patch={~p"/clutches/new"}>
-          <.button>New Clutch</.button>
-        </.link>
+        <%= if @current_user do %>
+          <.link patch={~p"/clutches/new"}>
+            <.button>New Clutch</.button>
+          </.link>
+        <% end %>
       </:actions>
     </.header>
 
@@ -18,26 +20,19 @@ defmodule GarageWeb.ClutchLive.Index do
       rows={@streams.clutches}
       row_click={fn {_id, clutch} -> JS.navigate(~p"/clutches/#{clutch}") end}
     >
-      <:col :let={{_id, clutch}} label="Manufacturer"><%= clutch.manufacturer.name %></:col>
+      <:col :let={{_id, clutch}} label="Manufacturer">
+        <.link navigate={~p"/manufacturers/#{clutch.manufacturer}"}>
+          <%= clutch.manufacturer.name %>
+        </.link>
+      </:col>
       <:col :let={{_id, clutch}} label="Name"><%= clutch.name %></:col>
 
       <:col :let={{_id, clutch}} label="Description"><%= clutch.description %></:col>
 
       <:action :let={{_id, clutch}}>
-        <div class="sr-only">
-          <.link navigate={~p"/clutches/#{clutch}"}>Show</.link>
-        </div>
-
-        <.link patch={~p"/clutches/#{clutch}/edit"}>Edit</.link>
-      </:action>
-
-      <:action :let={{id, clutch}}>
-        <.link
-          phx-click={JS.push("delete", value: %{id: clutch.id}) |> hide("##{id}")}
-          data-confirm="Are you sure?"
-        >
-          Delete
-        </.link>
+        <%= if @current_user do %>
+          <.link patch={~p"/clutches/#{clutch}/edit"}>Edit</.link>
+        <% end %>
       </:action>
     </.table>
 
@@ -95,15 +90,6 @@ defmodule GarageWeb.ClutchLive.Index do
     socket
     |> assign(:page_title, "Listing Clutches")
     |> assign(:clutch, nil)
-  end
-
-  @impl true
-  def handle_info({GarageWeb.ClutchLive.FormComponent, {:saved, clutch}}, socket) do
-    # todo: make this not reload
-    clutch =
-      Garage.Mopeds.get!(Garage.Mopeds.Clutch, clutch.id, actor: socket.assigns.current_user)
-
-    {:noreply, stream_insert(socket, :clutches, clutch)}
   end
 
   @impl true

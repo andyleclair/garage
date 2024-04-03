@@ -9,14 +9,20 @@ defmodule GarageWeb.CarburetorLive.Show do
       <:subtitle>This is a carburetor record from your database.</:subtitle>
 
       <:actions>
-        <.link patch={~p"/carburetors/#{@carburetor}/show/edit"} phx-click={JS.push_focus()}>
-          <.button>Edit carburetor</.button>
-        </.link>
+        <%= if @current_user do %>
+          <.link patch={~p"/carburetors/#{@carburetor}/show/edit"} phx-click={JS.push_focus()}>
+            <.button>Edit carburetor</.button>
+          </.link>
+        <% end %>
       </:actions>
     </.header>
 
     <.list>
-      <:item title="Id"><%= @carburetor.id %></:item>
+      <:item title="Manufacturer">
+        <.link navigate={~p"/manufacturers/#{@carburetor.manufacturer}"}>
+          <%= @carburetor.manufacturer.name %>
+        </.link>
+      </:item>
 
       <:item title="Name"><%= @carburetor.name %></:item>
 
@@ -28,14 +34,8 @@ defmodule GarageWeb.CarburetorLive.Show do
 
       <:item title="Tunable Parts">
         <.badge :for={part <- @carburetor.tunable_parts}>
-          <%= part |> to_string() |> Recase.to_title() %>
+          <%= part |> humanize() %>
         </.badge>
-      </:item>
-
-      <:item title="Manufacturer">
-        <.link navigate={~p"/manufacturers/#{@carburetor.manufacturer}"}>
-          <%= @carburetor.manufacturer.name %>
-        </.link>
       </:item>
     </.list>
 

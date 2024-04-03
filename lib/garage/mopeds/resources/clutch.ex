@@ -3,6 +3,8 @@ defmodule Garage.Mopeds.Clutch do
     data_layer: AshPostgres.DataLayer,
     api: Garage.Mopeds
 
+  import Ash.Sort, only: [expr_sort: 2]
+
   actions do
     defaults [:create, :read, :update, :destroy]
   end
@@ -36,7 +38,7 @@ defmodule Garage.Mopeds.Clutch do
   end
 
   preparations do
-    prepare build(sort: [:name], load: [:manufacturer])
+    prepare build(sort: [expr_sort(manufacturer.name, :string), :name], load: [:manufacturer])
   end
 
   identities do

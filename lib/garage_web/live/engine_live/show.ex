@@ -21,10 +21,14 @@ defmodule GarageWeb.EngineLive.Show do
       <:item title="Description"><%= @engine.description %></:item>
 
       <:item title="Transmission">
-        <%= @engine.transmission |> to_string() |> Recase.to_title() %>
+        <%= @engine.transmission |> humanize() %>
       </:item>
 
-      <:item title="Manufacturer"><%= @engine.manufacturer_id %></:item>
+      <:item title="Manufacturer">
+        <.link navigate={~p"/manufacturers/#{@engine.manufacturer}"}>
+          <%= @engine.manufacturer.name %>
+        </.link>
+      </:item>
     </.list>
 
     <.back navigate={~p"/engines"}>Back to engines</.back>

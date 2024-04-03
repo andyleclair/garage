@@ -135,13 +135,11 @@ defmodule GarageWeb.CarburetorLive.FormComponent do
     carburetor_params = Map.put(carburetor_params, "sizes", socket.assigns.sizes)
 
     case AshPhoenix.Form.submit(socket.assigns.form, params: carburetor_params) do
-      {:ok, carburetor} ->
-        notify_parent({:saved, carburetor})
-
+      {:ok, _carburetor} ->
         socket =
           socket
           |> put_flash(:info, "Carburetor #{socket.assigns.form.source.type}d successfully")
-          |> push_patch(to: socket.assigns.patch)
+          |> push_navigate(to: socket.assigns.patch)
 
         {:noreply, socket}
 
@@ -149,8 +147,6 @@ defmodule GarageWeb.CarburetorLive.FormComponent do
         {:noreply, assign(socket, form: form)}
     end
   end
-
-  defp notify_parent(msg), do: send(self(), {__MODULE__, msg})
 
   defp assign_form(%{assigns: %{carburetor: carburetor}} = socket) do
     form =
@@ -179,6 +175,6 @@ defmodule GarageWeb.CarburetorLive.FormComponent do
     for part <-
           Ash.Resource.Info.attribute(Carburetor, :tunable_parts).constraints[:items][:one_of],
         into: [],
-        do: {part |> to_string() |> Recase.to_title(), part}
+        do: {humanize(part), part}
   end
 end

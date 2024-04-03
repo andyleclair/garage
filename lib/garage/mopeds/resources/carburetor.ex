@@ -3,6 +3,8 @@ defmodule Garage.Mopeds.Carburetor do
     data_layer: AshPostgres.DataLayer,
     api: Garage.Mopeds
 
+  import Ash.Sort, only: [expr_sort: 2]
+
   actions do
     defaults [:create, :read, :update, :destroy]
 
@@ -52,7 +54,7 @@ defmodule Garage.Mopeds.Carburetor do
   end
 
   preparations do
-    prepare build(sort: [:name], load: [:manufacturer])
+    prepare build(sort: [expr_sort(manufacturer.name, :string), :name], load: [:manufacturer])
   end
 
   relationships do

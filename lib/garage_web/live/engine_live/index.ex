@@ -18,11 +18,15 @@ defmodule GarageWeb.EngineLive.Index do
       rows={@streams.engines}
       row_click={fn {_id, engine} -> JS.navigate(~p"/engines/#{engine}") end}
     >
-      <:col :let={{_id, engine}} label="Manufacturer"><%= engine.manufacturer.name %></:col>
+      <:col :let={{_id, engine}} label="Manufacturer">
+        <.link navigate={~p"/manufacturers/#{engine.manufacturer}"}>
+          <%= engine.manufacturer.name %>
+        </.link>
+      </:col>
       <:col :let={{_id, engine}} label="Name"><%= engine.name %></:col>
       <:col :let={{_id, engine}} label="Description"><%= engine.description %></:col>
       <:col :let={{_id, engine}} label="Transmission">
-        <%= engine.transmission |> to_string |> Recase.to_title() %>
+        <%= engine.transmission |> humanize() %>
       </:col>
 
       <:action :let={{_id, engine}}>

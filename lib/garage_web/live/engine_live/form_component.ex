@@ -142,7 +142,7 @@ defmodule GarageWeb.EngineLive.FormComponent do
   def transmissions() do
     for t <-
           Ash.Resource.Info.attribute(Garage.Mopeds.Engine, :transmission).constraints[:one_of],
-        do: {t |> to_string |> Recase.to_title(), t}
+        do: {humanize(t), t}
   end
 
   def manufacturer_options() do

@@ -800,4 +800,6 @@ defmodule GarageWeb.CoreComponents do
       end)
     end
   end
+
+  def humanize(atom), do: atom |> to_string() |> Recase.to_title()
 end

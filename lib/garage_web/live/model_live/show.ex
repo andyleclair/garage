@@ -21,7 +21,7 @@ defmodule GarageWeb.ModelLive.Show do
       <:item title="Description"><%= @model.description %></:item>
 
       <:item title="Manufacturer">
-        <.link navigate={~p"/manufacturers/#{@model.manufacturer.slug}"}>
+        <.link navigate={~p"/manufacturers/#{@model.manufacturer}"}>
           <%= @model.manufacturer.name %>
         </.link>
       </:item>
