@@ -39,12 +39,21 @@ defmodule GarageWeb.Router do
       live "/exhausts/:id/edit", ExhaustLive.Index, :edit
       live "/exhausts/:id/show/edit", ExhaustLive.Show, :edit
       live "/exhausts/new", ExhaustLive.Index, :new
+      live "/ignitions/:id/edit", IgnitionLive.Index, :edit
+      live "/ignitions/:id/show/edit", IgnitionLive.Show, :edit
+      live "/ignitions/new", IgnitionLive.Index, :new
       live "/manufacturers/:id/edit", ManufacturerLive.Index, :edit
       live "/manufacturers/:id/show/edit", ManufacturerLive.Show, :edit
       live "/manufacturers/new", ManufacturerLive.Index, :new
       live "/models/:id/edit", ModelLive.Index, :edit
       live "/models/:id/show/edit", ModelLive.Show, :edit
       live "/models/new", ModelLive.Index, :new
+      live "/pulleys/:id/edit", PulleyLive.Index, :edit
+      live "/pulleys/:id/show/edit", PulleyLive.Show, :edit
+      live "/pulleys/new", PulleyLive.Index, :new
+      live "/variators/:id/edit", VariatorLive.Index, :edit
+      live "/variators/:id/show/edit", VariatorLive.Show, :edit
+      live "/variators/new", VariatorLive.Index, :new
       live "/user/settings", UsersLive.Settings, :settings
     end
 
@@ -62,21 +71,12 @@ defmodule GarageWeb.Router do
     ash_authentication_live_session :authentication_optional,
       on_mount: {GarageWeb.LiveUserAuth, :live_user_optional} do
       live "/", HomeLive.Index, :index
+
       live "/builds", BuildsLive.Index, :index
       live "/builds/:build", BuildsLive.Show, :show
 
-      live "/manufacturers", ManufacturerLive.Index, :index
-      live "/manufacturers/:id", ManufacturerLive.Show, :show
-
       live "/carburetors", CarburetorLive.Index, :index
       live "/carburetors/:id", CarburetorLive.Show, :show
-
-      live "/models", ModelLive.Index, :index
-
-      live "/models/:id", ModelLive.Show, :show
-
-      live "/engines", EngineLive.Index, :index
-      live "/engines/:id", EngineLive.Show, :show
 
       live "/clutches", ClutchLive.Index, :index
       live "/clutches/:id", ClutchLive.Show, :show
@@ -84,8 +84,26 @@ defmodule GarageWeb.Router do
       live "/cranks", CrankLive.Index, :index
       live "/cranks/:id", CrankLive.Show, :show
 
+      live "/engines", EngineLive.Index, :index
+      live "/engines/:id", EngineLive.Show, :show
+
       live "/exhausts", ExhaustLive.Index, :index
       live "/exhausts/:id", ExhaustLive.Show, :show
+
+      live "/ignitions", IgnitionLive.Index, :index
+      live "/ignitions/:id", IgnitionLive.Show, :show
+
+      live "/manufacturers", ManufacturerLive.Index, :index
+      live "/manufacturers/:id", ManufacturerLive.Show, :show
+
+      live "/models", ModelLive.Index, :index
+      live "/models/:id", ModelLive.Show, :show
+
+      live "/pulleys", PulleyLive.Index, :index
+      live "/pulleys/:id", PulleyLive.Show, :show
+
+      live "/variators", VariatorLive.Index, :index
+      live "/variators/:id", VariatorLive.Show, :show
       # This one _needs_ to be last
       live "/:username", UsersLive.Show, :show
     end
