@@ -126,6 +126,11 @@ defmodule GarageWeb.BuildsLive.Show do
         {:noreply,
          socket
          |> put_flash(:info, "Comment added!")
+         |> assign(
+           :comment_form,
+           to_form(Form.clear_value(socket.assigns.comment_form, :text))
+           |> dbg
+         )
          |> assign(:build, %{build | comments: build.comments ++ [comment]})}
 
       {:error, form} ->

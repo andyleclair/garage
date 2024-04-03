@@ -99,9 +99,7 @@ defmodule GarageWeb.BuildsLive.Edit do
         "engine",
         "clutch",
         "exhaust",
-        "ignition",
-        "forks",
-        "wheels"
+        "ignition"
       ] do
     @impl true
     def handle_event(
@@ -155,7 +153,7 @@ defmodule GarageWeb.BuildsLive.Edit do
       ) do
     uploaded_files = socket.assigns.uploaded_images
 
-    :ok = async_delete_images(images_to_delete)
+    async_delete_images(images_to_delete)
 
     image_urls = for {_ref, img} <- images, do: img
 
@@ -194,33 +192,32 @@ defmodule GarageWeb.BuildsLive.Edit do
     for model <- Model.by_manufacturer_id!(manufacturer_id), into: [], do: {model.name, model.id}
   end
 
-  # TODO: Load just the manufacturer name instead of the whole thing
   def carburetor_options() do
-    for carburetor <- Carburetor.read_all!(load: [:manufacturer]),
+    for carburetor <- Carburetor.read_all!(),
         into: [],
         do: {"#{carburetor.manufacturer.name} #{carburetor.name}", carburetor.id}
   end
 
   def engine_options() do
-    for engine <- Engine.read_all!(load: [:manufacturer]),
+    for engine <- Engine.read_all!(),
         into: [],
         do: {"#{engine.manufacturer.name} #{engine.name}", engine.id}
   end
 
   def clutch_options() do
-    for clutch <- Clutch.read_all!(load: [:manufacturer]),
+    for clutch <- Clutch.read_all!(),
         into: [],
         do: {"#{clutch.manufacturer.name} #{clutch.name}", clutch.id}
   end
 
   def exhaust_options() do
-    for exhaust <- Exhaust.read_all!(load: [:manufacturer]),
+    for exhaust <- Exhaust.read_all!(),
         into: [],
         do: {"#{exhaust.manufacturer.name} #{exhaust.name}", exhaust.id}
   end
 
   def ignition_options() do
-    for ignition <- Ignition.read_all!(load: [:manufacturer]),
+    for ignition <- Ignition.read_all!(),
         into: [],
         do: {"#{ignition.manufacturer.name} #{ignition.name}", ignition.id}
   end
@@ -272,13 +269,14 @@ defmodule GarageWeb.BuildsLive.Edit do
   end
 
   defp async_delete_images(images_to_delete) do
-    Task.Supervisor.async_stream_nolink(Garage.TaskSupervisor, images_to_delete, fn img ->
-      with %URI{path: path} <- URI.parse(img) do
-        bucket()
-        |> S3.delete_object(path)
-        |> ExAws.request!()
-      end
-    end)
-    |> Stream.run()
+    for img <- images_to_delete do
+      Task.Supervisor.start_child(Garage.TaskSupervisor, fn ->
+        with %URI{path: path} <- URI.parse(img) do
+          bucket()
+          |> S3.delete_object(path)
+          |> ExAws.request!()
+        end
+      end)
+    end
   end
 end

@@ -10,7 +10,7 @@ defmodule GarageWeb.Components.Builds.Card do
     <div class="inline-block rounded-md bg-gray-50 m-1 shadow-md p-2 w-full md:w-72">
       <.link navigate={~p"/builds/#{@build.slug}"}>
         <%= if @build.first_image do %>
-          <img class="object-cover w-full rounded-md" src={@build.first_image} alt="" />
+          <img class="object-cover w-full h-64 rounded-md" src={@build.first_image} alt="" />
         <% else %>
           <div class="w-full h-64 bg-gray-100 flex items-stretch rounded-md">
             <div class="mt-2 ml-2 text-xl uppercase">No Images Yet</div>
