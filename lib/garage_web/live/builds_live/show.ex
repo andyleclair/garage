@@ -14,7 +14,7 @@ defmodule GarageWeb.BuildsLive.Show do
   end
 
   @impl true
-  def handle_params(%{"build" => slug}, _, socket) do
+  def handle_params(%{"build" => slug}, url, socket) do
     build = build(slug, socket.assigns.current_user)
 
     {:noreply,
@@ -22,8 +22,14 @@ defmodule GarageWeb.BuildsLive.Show do
      |> assign(:page_title, build.name)
      |> assign(:build, build)
      |> assign(:images, build.image_urls)
-     |> assign(:selected_image, List.first(build.image_urls))
+     |> assign(:selected_image, build.first_image)
      |> assign(:index, 0)
+     |> assign(:meta, %{
+       "og:url" => url,
+       "og:image" => build.first_image,
+       "og:description" => build.description,
+       "og:title" => build.name
+     })
      |> assign(
        :comment_form,
        to_form(Form.for_action(Comment, :create, actor: socket.assigns.current_user))

@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content={get_csrf_token()} />
     <meta property="og:type" content="website" />
-    <meta :if={assigns[:meta]} property="og:url" content={@meta["url"]} />
+    <%= if assigns[:meta] do %>
+      <meta property="og:title" content={@meta["title"]} />
+      <meta property="og:description" content={@meta["description"]} />
+      <meta property="og:image" content={@meta["image"]} />
+      <meta property="og:url" content={@meta["url"]} />
+      <meta name="twitter:url" value={@meta["url"]} />
+      <meta name="twitter:title" value={@meta["title"]} />
+      <meta name="twitter:description" value={@meta["description"]} />
+      <meta name="twitter:image" value={@meta["image"]} />
+    <% end %>
     <meta property="og:site_name" content="Moped.Build" />
+    <meta property="twitter:card" content="summary_large_image" />
 
     <%= if assigns[:meta] do %>
       <%= for {name, content} <- @meta do %>
