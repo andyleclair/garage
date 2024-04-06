@@ -1,33 +1,19 @@
 defmodule Garage.Mopeds.Model do
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
-    api: Garage.Mopeds
+    domain: Garage.Mopeds
 
   import Ash.Sort, only: [expr_sort: 2]
 
   alias Garage.Mopeds.Manufacturer
 
   actions do
+    default_accept :*
     defaults [:read, :update, :destroy]
 
     create :create do
       primary? true
       change Garage.Changes.SetSlug
-    end
-
-    read :by_id do
-      # This action has one argument :id of type :uuid
-      argument :id, :uuid, allow_nil?: false
-      # Tells us we expect this action to return a single result
-      get? true
-      # Filters the `:id` given in the argument
-      # against the `id` of each element in the resource
-      filter expr(id == ^arg(:id))
-    end
-
-    read :by_manufacturer_id do
-      argument :manufacturer_id, :uuid, allow_nil?: false
-      filter expr(manufacturer_id == ^arg(:manufacturer_id))
     end
 
     read :by_slug do
@@ -46,23 +32,23 @@ defmodule Garage.Mopeds.Model do
   end
 
   code_interface do
-    define_for Garage.Mopeds
     define :create_model, action: :create
     define :all_models, action: :all_models
-    define :by_manufacturer_id, args: [:manufacturer_id], action: :by_manufacturer_id
+    define :by_manufacturer_id, action: :read, get_by: :manufacturer_id
     define :get_by_slug, args: [:manufacturer_id, :slug], action: :by_slug
   end
 
   attributes do
     uuid_primary_key :id
-    attribute :name, :string, allow_nil?: false
-    attribute :description, :string, default: ""
+    attribute :name, :string, allow_nil?: false, public?: true
+    attribute :description, :string, default: "", public?: true
 
     attribute :slug, :string do
       allow_nil? false
       generated? true
       always_select? true
       filterable? true
+      public? true
     end
 
     create_timestamp :inserted_at
@@ -89,7 +75,7 @@ defmodule Garage.Mopeds.Model do
     end
 
     has_many :builds, Garage.Builds.Build do
-      api Garage.Builds
+      domain Garage.Builds
     end
 
     belongs_to :stock_carburetor, Garage.Mopeds.Carburetor, attribute_writable?: true

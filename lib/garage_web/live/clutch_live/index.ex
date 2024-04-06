@@ -61,7 +61,7 @@ defmodule GarageWeb.ClutchLive.Index do
      socket
      |> stream(
        :clutches,
-       Garage.Mopeds.read!(Garage.Mopeds.Clutch, actor: socket.assigns[:current_user])
+       Ash.read!(Garage.Mopeds.Clutch, actor: socket.assigns[:current_user])
      )
      |> assign_new(:current_user, fn -> nil end)}
   end
@@ -76,7 +76,7 @@ defmodule GarageWeb.ClutchLive.Index do
     |> assign(:page_title, "Edit Clutch")
     |> assign(
       :clutch,
-      Garage.Mopeds.get!(Garage.Mopeds.Clutch, id, actor: socket.assigns.current_user)
+      Ash.get!(Garage.Mopeds.Clutch, id, actor: socket.assigns.current_user)
     )
   end
 
@@ -94,8 +94,8 @@ defmodule GarageWeb.ClutchLive.Index do
 
   @impl true
   def handle_event("delete", %{"id" => id}, socket) do
-    clutch = Garage.Mopeds.get!(Garage.Mopeds.Clutch, id, actor: socket.assigns.current_user)
-    Garage.Mopeds.destroy!(clutch, actor: socket.assigns.current_user)
+    clutch = Ash.get!(Garage.Mopeds.Clutch, id, actor: socket.assigns.current_user)
+    Ash.destroy!(clutch, actor: socket.assigns.current_user)
 
     {:noreply, stream_delete(socket, :clutches, clutch)}
   end

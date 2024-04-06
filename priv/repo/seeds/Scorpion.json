@@ -1,24 +1,6 @@
 {
   "name": "Scorpion",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "SC-2X Stock Exhaust"
-    },
-    {
-      "name": "SC-2 Stock Exhaust"
-    },
-    {
-      "name": "SC-1 Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "SC-1"
@@ -30,6 +12,24 @@
       "name": "SC-2X"
     }
   ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "exhausts": [
+    {
+      "name": "SC-2X Stock Exhaust"
+    },
+    {
+      "name": "SC-2 Stock Exhaust"
+    },
+    {
+      "name": "SC-1 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
+  "categories": [
+    "mopeds"
+  ]
 }

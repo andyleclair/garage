@@ -1,11 +1,12 @@
 defmodule Garage.Mopeds.Pulley do
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
-    api: Garage.Mopeds
+    domain: Garage.Mopeds
 
   import Ash.Sort, only: [expr_sort: 2]
 
   actions do
+    default_accept :*
     defaults [:create, :read, :update, :destroy]
 
     read :by_id do
@@ -20,19 +21,18 @@ defmodule Garage.Mopeds.Pulley do
   end
 
   code_interface do
-    define_for Garage.Mopeds
     define :read_all, action: :read
     define :update, action: :update
     define :destroy, action: :destroy
-    define :get_by_id, args: [:id], action: :by_id
+    define :get_by_id, action: :read, get_by: :id
   end
 
   attributes do
     uuid_primary_key :id
-    attribute :name, :string, allow_nil?: false
-    attribute :description, :string, default: ""
+    attribute :name, :string, allow_nil?: false, public?: true
+    attribute :description, :string, default: "", public?: true
     # in mm
-    attribute :size, :integer, allow_nil?: false
+    attribute :size, :integer, allow_nil?: false, public?: true
 
     create_timestamp :inserted_at
     update_timestamp :updated_at
@@ -40,7 +40,7 @@ defmodule Garage.Mopeds.Pulley do
 
   relationships do
     has_many :builds, Garage.Builds.Build do
-      api Garage.Builds
+      domain Garage.Builds
     end
 
     belongs_to :manufacturer, Garage.Mopeds.Manufacturer do

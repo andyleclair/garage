@@ -2,9 +2,10 @@ defmodule Garage.Mopeds.Manufacturer do
   @derive {Phoenix.Param, key: :slug}
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
-    api: Garage.Mopeds
+    domain: Garage.Mopeds
 
   actions do
+    default_accept :*
     defaults [:read, :update, :destroy]
 
     create :create do
@@ -44,22 +45,6 @@ defmodule Garage.Mopeds.Manufacturer do
       change manage_relationship(:cylinders, type: :create)
     end
 
-    read :by_id do
-      # This action has one argument :id of type :uuid
-      argument :id, :uuid, allow_nil?: false
-      # Tells us we expect this action to return a single result
-      get? true
-      # Filters the `:id` given in the argument
-      # against the `id` of each element in the resource
-      filter expr(id == ^arg(:id))
-    end
-
-    read :by_slug do
-      argument :slug, :string, allow_nil?: false
-      get? true
-      filter expr(slug == ^arg(:slug))
-    end
-
     read :by_category do
       argument :category, :atom, allow_nil?: false
       filter expr(^arg(:category) in categories)
@@ -67,32 +52,33 @@ defmodule Garage.Mopeds.Manufacturer do
   end
 
   code_interface do
-    define_for Garage.Mopeds
     define :create, action: :create
     define :read_all, action: :read
     define :update, action: :update
     define :destroy, action: :destroy
-    define :get_by_id, args: [:id], action: :by_id
-    define :get_by_slug, args: [:slug], action: :by_slug
-    define :by_category, args: [:category], action: :by_category
+    define :get_by_id, action: :read, get_by: :id
+    define :get_by_slug, action: :read, get_by: :slug
+    define :by_category, action: :by_category, get_by: :category
   end
 
   @categories ~w(carburetors clutches cranks cylinders engines exhausts forks ignitions mopeds pulleys variators wheels)a
   attributes do
     uuid_primary_key :id
-    attribute :name, :string, allow_nil?: false
+    attribute :name, :string, allow_nil?: false, public?: true
 
     attribute :categories, {:array, :atom} do
       constraints items: [one_of: @categories]
+      public? true
     end
 
-    attribute :description, :string, default: ""
+    attribute :description, :string, default: "", public?: true
 
     attribute :slug, :string do
       allow_nil? false
       generated? true
       always_select? true
       filterable? true
+      public? true
     end
 
     create_timestamp :inserted_at
@@ -115,7 +101,7 @@ defmodule Garage.Mopeds.Manufacturer do
 
   relationships do
     has_many :builds, Garage.Builds.Build do
-      api Garage.Builds
+      domain Garage.Builds
     end
 
     has_many :carburetors, Garage.Mopeds.Carburetor

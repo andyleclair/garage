@@ -73,7 +73,7 @@ defmodule GarageWeb.ManufacturerLive.Index do
      socket
      |> stream(
        :manufacturers,
-       Garage.Mopeds.read!(Garage.Mopeds.Manufacturer, actor: socket.assigns[:current_user])
+       Ash.read!(Garage.Mopeds.Manufacturer, actor: socket.assigns[:current_user])
      )
      |> assign_new(:current_user, fn -> nil end)}
   end
@@ -88,7 +88,7 @@ defmodule GarageWeb.ManufacturerLive.Index do
     |> assign(:page_title, "Edit Manufacturer")
     |> assign(
       :manufacturer,
-      Garage.Mopeds.get!(Garage.Mopeds.Manufacturer, id, actor: socket.assigns.current_user)
+      Ash.get!(Garage.Mopeds.Manufacturer, id, actor: socket.assigns.current_user)
     )
   end
 
@@ -112,9 +112,9 @@ defmodule GarageWeb.ManufacturerLive.Index do
   @impl true
   def handle_event("delete", %{"id" => id}, socket) do
     manufacturer =
-      Garage.Mopeds.get!(Garage.Mopeds.Manufacturer, id, actor: socket.assigns.current_user)
+      Ash.get!(Garage.Mopeds.Manufacturer, id, actor: socket.assigns.current_user)
 
-    Garage.Mopeds.destroy!(manufacturer, actor: socket.assigns.current_user)
+    Ash.destroy!(manufacturer, actor: socket.assigns.current_user)
 
     {:noreply, stream_delete(socket, :manufacturers, manufacturer)}
   end

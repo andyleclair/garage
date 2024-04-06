@@ -132,13 +132,13 @@ defmodule GarageWeb.CrankLive.FormComponent do
     form =
       if crank do
         AshPhoenix.Form.for_update(crank, :update,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "crank",
           actor: socket.assigns.current_user
         )
       else
         AshPhoenix.Form.for_create(Garage.Mopeds.Crank, :create,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "crank",
           actor: socket.assigns.current_user
         )

@@ -124,13 +124,13 @@ defmodule GarageWeb.EngineLive.FormComponent do
     form =
       if engine do
         AshPhoenix.Form.for_update(engine, :update,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "engine",
           actor: socket.assigns.current_user
         )
       else
         AshPhoenix.Form.for_create(Garage.Mopeds.Engine, :create,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "engine",
           actor: socket.assigns.current_user
         )

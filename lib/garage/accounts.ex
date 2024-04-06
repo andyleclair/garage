@@ -1,5 +1,5 @@
 defmodule Garage.Accounts do
-  use Ash.Api
+  use Ash.Domain
 
   resources do
     resource Garage.Accounts.User

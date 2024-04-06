@@ -94,13 +94,13 @@ defmodule GarageWeb.ManufacturerLive.FormComponent do
     form =
       if manufacturer do
         AshPhoenix.Form.for_update(manufacturer, :update,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "manufacturer",
           actor: socket.assigns.current_user
         )
       else
         AshPhoenix.Form.for_create(Garage.Mopeds.Manufacturer, :create,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "manufacturer",
           actor: socket.assigns.current_user
         )

@@ -56,7 +56,7 @@ defmodule GarageWeb.PulleyLive.Index do
      socket
      |> stream(
        :pulleys,
-       Garage.Mopeds.read!(Garage.Mopeds.Pulley, actor: socket.assigns[:current_user])
+       Ash.read!(Garage.Mopeds.Pulley, actor: socket.assigns[:current_user])
      )
      |> assign_new(:current_user, fn -> nil end)}
   end
@@ -71,7 +71,7 @@ defmodule GarageWeb.PulleyLive.Index do
     |> assign(:page_title, "Edit Pulley")
     |> assign(
       :pulley,
-      Garage.Mopeds.get!(Garage.Mopeds.Pulley, id, actor: socket.assigns.current_user)
+      Ash.get!(Garage.Mopeds.Pulley, id, actor: socket.assigns.current_user)
     )
   end
 
@@ -89,8 +89,8 @@ defmodule GarageWeb.PulleyLive.Index do
 
   @impl true
   def handle_event("delete", %{"id" => id}, socket) do
-    pulley = Garage.Mopeds.get!(Garage.Mopeds.Pulley, id, actor: socket.assigns.current_user)
-    Garage.Mopeds.destroy!(pulley, actor: socket.assigns.current_user)
+    pulley = Ash.get!(Garage.Mopeds.Pulley, id, actor: socket.assigns.current_user)
+    Ash.destroy!(pulley, actor: socket.assigns.current_user)
 
     {:noreply, stream_delete(socket, :pulleys, pulley)}
   end

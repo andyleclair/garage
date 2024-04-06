@@ -52,18 +52,19 @@ defmodule Garage.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.0-pre"},
-      {:ash, "~> 2.20"},
-      {:ash_postgres, "~> 1.3"},
-      {:ash_phoenix, "~> 1.3.2"},
-      {:ash_authentication, "~> 3.12"},
-      {:ash_authentication_phoenix, "~> 1.9.2"},
       {:live_select, "~> 1.4"},
       {:ex_aws, "~> 2.0"},
       {:ex_aws_s3, "~> 2.0"},
       {:sweet_xml, "~> 0.6"},
       {:timex, "~> 3.0"},
       {:req, "~> 0.4"},
-      {:recase, "~> 0.0"}
+      {:recase, "~> 0.0"},
+      {:ash, github: "ash-project/ash", branch: "main", override: true},
+      {:ash_postgres, "~> 2.0.0-rc.3"},
+      {:ash_phoenix, "~> 2.0.0-rc.2"},
+      {:ash_authentication, "~> 4.0.0-rc.1"},
+      {:ash_authentication_phoenix, "~> 2.0.0-rc.1"},
+      {:picosat_elixir, "0.2.3"}
       # {:crawly, "~> 0.16.0"},
     ]
   end

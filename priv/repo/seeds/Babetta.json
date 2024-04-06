@@ -1,42 +1,6 @@
 {
   "name": "Babetta",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "300 Stock Exhaust"
-    },
-    {
-      "name": "215 Stock Exhaust"
-    },
-    {
-      "name": "213 Stock Exhaust"
-    },
-    {
-      "name": "210 Stock Exhaust"
-    },
-    {
-      "name": "207 Stock Exhaust"
-    },
-    {
-      "name": "206 Stock Exhaust"
-    },
-    {
-      "name": "200 Stock Exhaust"
-    },
-    {
-      "name": "134 Stock Exhaust"
-    },
-    {
-      "name": "100 Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "100"
@@ -66,6 +30,42 @@
       "name": "300"
     }
   ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "exhausts": [
+    {
+      "name": "300 Stock Exhaust"
+    },
+    {
+      "name": "215 Stock Exhaust"
+    },
+    {
+      "name": "213 Stock Exhaust"
+    },
+    {
+      "name": "210 Stock Exhaust"
+    },
+    {
+      "name": "207 Stock Exhaust"
+    },
+    {
+      "name": "206 Stock Exhaust"
+    },
+    {
+      "name": "200 Stock Exhaust"
+    },
+    {
+      "name": "134 Stock Exhaust"
+    },
+    {
+      "name": "100 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
+  "categories": [
+    "mopeds"
+  ]
 }

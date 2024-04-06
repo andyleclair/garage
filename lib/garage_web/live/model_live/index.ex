@@ -78,7 +78,7 @@ defmodule GarageWeb.ModelLive.Index do
     |> assign(:page_title, "Edit Model")
     |> assign(
       :model,
-      Garage.Mopeds.get!(Garage.Mopeds.Model, id, actor: socket.assigns.current_user)
+      Ash.get!(Garage.Mopeds.Model, id, actor: socket.assigns.current_user)
     )
   end
 
@@ -105,14 +105,14 @@ defmodule GarageWeb.ModelLive.Index do
 
   @impl true
   def handle_info({GarageWeb.ModelLive.FormComponent, {:saved, model}}, socket) do
-    model = Garage.Mopeds.get!(Garage.Mopeds.Model, model.id, actor: socket.assigns.current_user)
+    model = Ash.get!(Garage.Mopeds.Model, model.id, actor: socket.assigns.current_user)
     {:noreply, stream_insert(socket, :models, model)}
   end
 
   @impl true
   def handle_event("delete", %{"id" => id}, socket) do
-    model = Garage.Mopeds.get!(Garage.Mopeds.Model, id, actor: socket.assigns.current_user)
-    Garage.Mopeds.destroy!(model, actor: socket.assigns.current_user)
+    model = Ash.get!(Garage.Mopeds.Model, id, actor: socket.assigns.current_user)
+    Ash.destroy!(model, actor: socket.assigns.current_user)
 
     {:noreply, stream_delete(socket, :models, model)}
   end

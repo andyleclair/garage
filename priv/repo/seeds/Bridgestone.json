@@ -1,21 +1,6 @@
 {
   "name": "Bridgestone",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Surfrider Stock Exhaust"
-    },
-    {
-      "name": "7 Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "7"
@@ -24,6 +9,21 @@
       "name": "Surfrider"
     }
   ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "exhausts": [
+    {
+      "name": "Surfrider Stock Exhaust"
+    },
+    {
+      "name": "7 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
+  "categories": [
+    "mopeds"
+  ]
 }

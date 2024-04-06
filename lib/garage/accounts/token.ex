@@ -1,10 +1,11 @@
 defmodule Garage.Accounts.Token do
   use Ash.Resource,
+    domain: Garage.Accounts,
     data_layer: AshPostgres.DataLayer,
     extensions: [AshAuthentication.TokenResource]
 
   token do
-    api Garage.Accounts
+    domain Garage.Accounts
   end
 
   postgres do

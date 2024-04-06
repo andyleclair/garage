@@ -1,39 +1,33 @@
 defmodule Garage.Mopeds.Carburetor do
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
-    api: Garage.Mopeds
+    domain: Garage.Mopeds
 
   import Ash.Sort, only: [expr_sort: 2]
 
   actions do
+    default_accept :*
     defaults [:create, :read, :update, :destroy]
-
-    read :search do
-      argument :query, :string, allow_nil?: false
-
-      filter expr(fragment("? like '%?%'", :name, ^arg(:query)))
-    end
   end
 
   code_interface do
-    define_for Garage.Mopeds
     define :read_all, action: :read
     define :update, action: :update
     define :destroy, action: :destroy
     define :get_by_id, action: :read, get_by: :id
-    define :search, args: [:query], action: :search
   end
 
   attributes do
     uuid_primary_key :id
-    attribute :name, :string, allow_nil?: false
-    attribute :description, :string, default: ""
-    attribute :sizes, {:array, :string}, default: []
+    attribute :name, :string, allow_nil?: false, public?: true
+    attribute :description, :string, default: "", public?: true
+    attribute :sizes, {:array, :string}, default: [], public?: true
 
     # Possible tunable parts that a carburetor _may_ have
     # Jetting, atomizer, etc. is set per-build in a TBD join resource
     attribute :tunable_parts, {:array, :atom} do
       default [:main_jet]
+      public? true
 
       constraints items: [
                     one_of: [
@@ -59,7 +53,7 @@ defmodule Garage.Mopeds.Carburetor do
 
   relationships do
     has_many :builds, Garage.Builds.Build do
-      api Garage.Builds
+      domain Garage.Builds
     end
 
     belongs_to :manufacturer, Garage.Mopeds.Manufacturer do

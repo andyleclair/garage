@@ -82,7 +82,7 @@ defmodule GarageWeb.ModelLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :model,
-       Garage.Mopeds.get!(Garage.Mopeds.Model, id,
+       Ash.get!(Garage.Mopeds.Model, id,
          load: [:manufacturer],
          actor: socket.assigns.current_user
        )

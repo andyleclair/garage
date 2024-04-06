@@ -62,7 +62,7 @@ defmodule GarageWeb.ClutchLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :clutch,
-       Garage.Mopeds.get!(Garage.Mopeds.Clutch, id, actor: socket.assigns.current_user)
+       Ash.get!(Garage.Mopeds.Clutch, id, actor: socket.assigns.current_user)
      )}
   end
 

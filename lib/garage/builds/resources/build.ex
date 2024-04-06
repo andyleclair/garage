@@ -1,7 +1,7 @@
 defmodule Garage.Builds.Build do
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
-    api: Garage.Builds,
+    domain: Garage.Builds,
     authorizers: [Ash.Policy.Authorizer]
 
   require Ecto.Query
@@ -27,34 +27,27 @@ defmodule Garage.Builds.Build do
   attributes do
     uuid_primary_key :id
 
-    # General attributes
-    attribute :name, :string, allow_nil?: false
-    attribute :description, :string
-    attribute :year, :integer, allow_nil?: false
-    attribute :image_urls, {:array, :string}, allow_nil?: false, default: []
+    # General attributes, public: true
+    attribute :name, :string, allow_nil?: false, public?: true
+    attribute :description, :string, public?: true
+    attribute :year, :integer, allow_nil?: false, public?: true
+    attribute :image_urls, {:array, :string}, allow_nil?: false, default: [], public?: true
 
     attribute :slug, :string do
       allow_nil? false
       generated? true
       always_select? true
       filterable? true
+      public? true
     end
 
     # Build specifics
-    attribute :subframe, :string
-
-    attribute :cdi_box, :string
-
-    # Carburetor
-    attribute :jetting, :map
-    attribute :slide, :string
-    attribute :needle, :string
-
-    # Transmission
-    attribute :variated?, :boolean, default: false, allow_nil?: false
-    attribute :front_sprocket, :integer
-    attribute :rear_sprocket, :integer
-    attribute :gear_ratio, :string
+    attribute :subframe, :string, public?: true
+    attribute :cdi_box, :string, public?: true
+    attribute :variated?, :boolean, default: false, allow_nil?: false, public?: true
+    attribute :front_sprocket, :integer, public?: true
+    attribute :rear_sprocket, :integer, public?: true
+    attribute :gear_ratio, :string, public?: true
 
     create_timestamp :inserted_at
     update_timestamp :updated_at
@@ -65,78 +58,65 @@ defmodule Garage.Builds.Build do
     has_many :comments, Comment
 
     belongs_to :ignition, Ignition do
-      api Garage.Mopeds
-      attribute_writable? true
+      domain Garage.Mopeds
     end
 
     belongs_to :carburetor, Carburetor do
-      api Garage.Mopeds
-      attribute_writable? true
+      domain Garage.Mopeds
     end
 
     belongs_to :cylinder, Cylinder do
-      api Garage.Mopeds
-      attribute_writable? true
+      domain Garage.Mopeds
     end
 
     belongs_to :exhaust, Exhaust do
-      api Garage.Mopeds
-      attribute_writable? true
+      domain Garage.Mopeds
     end
 
     belongs_to :clutch, Clutch do
-      api Garage.Mopeds
-      attribute_writable? true
+      domain Garage.Mopeds
     end
 
     belongs_to :crank, Crank do
-      api Garage.Mopeds
-      attribute_writable? true
+      domain Garage.Mopeds
     end
 
     belongs_to :variator, Variator do
-      api Garage.Mopeds
-      attribute_writable? true
+      domain Garage.Mopeds
     end
 
     belongs_to :pulley, Pulley do
-      api Garage.Mopeds
-      attribute_writable? true
+      domain Garage.Mopeds
     end
 
     belongs_to :engine, Engine do
-      api Garage.Mopeds
-      attribute_writable? true
+      domain Garage.Mopeds
     end
 
     belongs_to :builder, User do
-      api Garage.Accounts
-      attribute_writable? true
+      domain Garage.Accounts
     end
 
     # manufacturer and model correspond to the frame
     # that's the thing the vin goes on and counts as "the" bike
     belongs_to :manufacturer, Manufacturer do
-      api Garage.Mopeds
-      attribute_writable? true
+      domain Garage.Mopeds
       allow_nil? false
     end
 
     belongs_to :model, Model do
-      api Garage.Mopeds
-      attribute_writable? true
+      domain Garage.Mopeds
       allow_nil? false
     end
   end
 
   code_interface do
-    define_for Garage.Builds
     define :create, action: :create
     define :all_builds, action: :all_builds
     define :update, action: :update
     define :destroy, action: :destroy
-    define :get_by_id, args: [:id], action: :by_id
-    define :get_by_slug, args: [:slug], action: :by_slug
+    define :get_by_id, action: :read, get_by: :id
+    define :get_by_slug, action: :read, get_by: :slug
     define :latest_builds, action: :latest
     define :recently_updated, action: :recently_updated
     define :by_manufacturer, action: :by_manufacturer, args: [:manufacturer]
@@ -150,6 +130,7 @@ defmodule Garage.Builds.Build do
   end
 
   actions do
+    default_accept :*
     defaults [:read, :update, :destroy]
 
     create :create do
@@ -157,22 +138,6 @@ defmodule Garage.Builds.Build do
 
       change Garage.Changes.SetSlug
       change relate_actor(:builder)
-    end
-
-    read :by_id do
-      # This action has one argument :id of type :uuid
-      argument :id, :uuid, allow_nil?: false
-      # Tells us we expect this action to return a single result
-      get? true
-      # Filters the `:id` given in the argument
-      # against the `id` of each element in the resource
-      filter expr(id == ^arg(:id))
-    end
-
-    read :by_slug do
-      argument :slug, :string, allow_nil?: false
-      get? true
-      filter expr(slug == ^arg(:slug))
     end
 
     read :all_builds do

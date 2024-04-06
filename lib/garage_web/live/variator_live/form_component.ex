@@ -111,13 +111,13 @@ defmodule GarageWeb.VariatorLive.FormComponent do
     form =
       if variator do
         AshPhoenix.Form.for_update(variator, :update,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "variator",
           actor: socket.assigns.current_user
         )
       else
         AshPhoenix.Form.for_create(Garage.Mopeds.Variator, :create,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "variator",
           actor: socket.assigns.current_user
         )

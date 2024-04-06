@@ -73,7 +73,7 @@ defmodule GarageWeb.CarburetorLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :carburetor,
-       Garage.Mopeds.get!(Garage.Mopeds.Carburetor, id, actor: socket.assigns.current_user)
+       Ash.get!(Garage.Mopeds.Carburetor, id, actor: socket.assigns.current_user)
      )}
   end
 

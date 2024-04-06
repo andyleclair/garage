@@ -72,7 +72,7 @@ defmodule GarageWeb.EngineLive.Index do
      socket
      |> stream(
        :engines,
-       Garage.Mopeds.read!(Garage.Mopeds.Engine, actor: socket.assigns[:current_user])
+       Ash.read!(Garage.Mopeds.Engine, actor: socket.assigns[:current_user])
      )
      |> assign_new(:current_user, fn -> nil end)}
   end
@@ -87,7 +87,7 @@ defmodule GarageWeb.EngineLive.Index do
     |> assign(:page_title, "Edit Engine")
     |> assign(
       :engine,
-      Garage.Mopeds.get!(Garage.Mopeds.Engine, id, actor: socket.assigns.current_user)
+      Ash.get!(Garage.Mopeds.Engine, id, actor: socket.assigns.current_user)
     )
   end
 
@@ -106,15 +106,15 @@ defmodule GarageWeb.EngineLive.Index do
   @impl true
   def handle_info({GarageWeb.EngineLive.FormComponent, {:saved, engine}}, socket) do
     engine =
-      Garage.Mopeds.get!(Garage.Mopeds.Engine, engine.id, actor: socket.assigns.current_user)
+      Ash.get!(Garage.Mopeds.Engine, engine.id, actor: socket.assigns.current_user)
 
     {:noreply, stream_insert(socket, :engines, engine)}
   end
 
   @impl true
   def handle_event("delete", %{"id" => id}, socket) do
-    engine = Garage.Mopeds.get!(Garage.Mopeds.Engine, id, actor: socket.assigns.current_user)
-    Garage.Mopeds.destroy!(engine, actor: socket.assigns.current_user)
+    engine = Ash.get!(Garage.Mopeds.Engine, id, actor: socket.assigns.current_user)
+    Ash.destroy!(engine, actor: socket.assigns.current_user)
 
     {:noreply, stream_delete(socket, :engines, engine)}
   end

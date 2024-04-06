@@ -3,7 +3,6 @@ defmodule Garage.Seeds do
   Module to encapsulate seed logic
   """
   alias Garage.Mopeds.Manufacturer
-  alias Garage.Mopeds
 
   def seeds do
     [:code.priv_dir(:garage), "repo", "seeds", "*.json"]
@@ -18,7 +17,7 @@ defmodule Garage.Seeds do
         |> Jason.decode!()
 
       Ash.Changeset.for_action(Manufacturer, :bulk_create, json)
-      |> Mopeds.create!()
+      |> Ash.create!()
     end)
   end
 
@@ -145,6 +144,7 @@ defmodule Garage.Seeds do
             "exhausts" => Map.get(parts, :exhausts, []),
             "cylinders" => Map.get(parts, :cylinders, []),
             "clutches" => Map.get(parts, :clutches, [])
+            # "ignitions" => Map.get(parts, :ignitions, [])
           })
           |> then(fn rec ->
             Map.put(rec, "categories", record_to_categories(rec))
@@ -157,6 +157,7 @@ defmodule Garage.Seeds do
             "exhausts" => Map.get(parts, :exhausts, []),
             "cylinders" => Map.get(parts, :cylinders, []),
             "clutches" => Map.get(parts, :clutches, []),
+            # "ignitions" => Map.get(parts, :ignitions, []),
             "categories" => record_to_categories(parts)
           }
         end

@@ -56,7 +56,7 @@ defmodule GarageWeb.VariatorLive.Index do
      socket
      |> stream(
        :variators,
-       Garage.Mopeds.read!(Garage.Mopeds.Variator, actor: socket.assigns[:current_user])
+       Ash.read!(Garage.Mopeds.Variator, actor: socket.assigns[:current_user])
      )
      |> assign_new(:current_user, fn -> nil end)}
   end
@@ -71,7 +71,7 @@ defmodule GarageWeb.VariatorLive.Index do
     |> assign(:page_title, "Edit Variator")
     |> assign(
       :variator,
-      Garage.Mopeds.get!(Garage.Mopeds.Variator, id, actor: socket.assigns.current_user)
+      Ash.get!(Garage.Mopeds.Variator, id, actor: socket.assigns.current_user)
     )
   end
 
@@ -89,8 +89,8 @@ defmodule GarageWeb.VariatorLive.Index do
 
   @impl true
   def handle_event("delete", %{"id" => id}, socket) do
-    variator = Garage.Mopeds.get!(Garage.Mopeds.Variator, id, actor: socket.assigns.current_user)
-    Garage.Mopeds.destroy!(variator, actor: socket.assigns.current_user)
+    variator = Ash.get!(Garage.Mopeds.Variator, id, actor: socket.assigns.current_user)
+    Ash.destroy!(variator, actor: socket.assigns.current_user)
 
     {:noreply, stream_delete(socket, :variators, variator)}
   end

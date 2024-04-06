@@ -58,7 +58,7 @@ defmodule GarageWeb.ExhaustLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :exhaust,
-       Garage.Mopeds.get!(Garage.Mopeds.Exhaust, id, actor: socket.assigns.current_user)
+       Ash.get!(Garage.Mopeds.Exhaust, id, actor: socket.assigns.current_user)
      )}
   end
 

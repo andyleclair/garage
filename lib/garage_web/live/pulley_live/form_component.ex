@@ -110,13 +110,13 @@ defmodule GarageWeb.PulleyLive.FormComponent do
     form =
       if pulley do
         AshPhoenix.Form.for_update(pulley, :update,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "pulley",
           actor: socket.assigns.current_user
         )
       else
         AshPhoenix.Form.for_create(Garage.Mopeds.Pulley, :create,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "pulley",
           actor: socket.assigns.current_user
         )

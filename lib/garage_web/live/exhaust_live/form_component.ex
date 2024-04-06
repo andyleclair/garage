@@ -111,13 +111,13 @@ defmodule GarageWeb.ExhaustLive.FormComponent do
     form =
       if exhaust do
         AshPhoenix.Form.for_update(exhaust, :update,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "exhaust",
           actor: socket.assigns.current_user
         )
       else
         AshPhoenix.Form.for_create(Garage.Mopeds.Exhaust, :create,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "exhaust",
           actor: socket.assigns.current_user
         )

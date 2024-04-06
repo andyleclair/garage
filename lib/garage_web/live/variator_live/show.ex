@@ -58,7 +58,7 @@ defmodule GarageWeb.VariatorLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :variator,
-       Garage.Mopeds.get!(Garage.Mopeds.Variator, id, actor: socket.assigns.current_user)
+       Ash.get!(Garage.Mopeds.Variator, id, actor: socket.assigns.current_user)
      )}
   end
 

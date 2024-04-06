@@ -111,13 +111,13 @@ defmodule GarageWeb.IgnitionLive.FormComponent do
     form =
       if ignition do
         AshPhoenix.Form.for_update(ignition, :update,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "ignition",
           actor: socket.assigns.current_user
         )
       else
         AshPhoenix.Form.for_create(Garage.Mopeds.Ignition, :create,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "ignition",
           actor: socket.assigns.current_user
         )

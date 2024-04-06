@@ -1,45 +1,6 @@
 {
   "name": "Baretta",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Variator Stock Exhaust"
-    },
-    {
-      "name": "Pistol Stock Exhaust"
-    },
-    {
-      "name": "Piccoli Stock Exhaust"
-    },
-    {
-      "name": "Minisport Stock Exhaust"
-    },
-    {
-      "name": "Magnum Stock Exhaust"
-    },
-    {
-      "name": "45 Stock Exhaust"
-    },
-    {
-      "name": "44 Sport Stock Exhaust"
-    },
-    {
-      "name": "44 Stock Exhaust"
-    },
-    {
-      "name": "38 Stock Exhaust"
-    },
-    {
-      "name": "22 Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "22"
@@ -72,6 +33,45 @@
       "name": "Variator"
     }
   ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "exhausts": [
+    {
+      "name": "Variator Stock Exhaust"
+    },
+    {
+      "name": "Pistol Stock Exhaust"
+    },
+    {
+      "name": "Piccoli Stock Exhaust"
+    },
+    {
+      "name": "Minisport Stock Exhaust"
+    },
+    {
+      "name": "Magnum Stock Exhaust"
+    },
+    {
+      "name": "45 Stock Exhaust"
+    },
+    {
+      "name": "44 Sport Stock Exhaust"
+    },
+    {
+      "name": "44 Stock Exhaust"
+    },
+    {
+      "name": "38 Stock Exhaust"
+    },
+    {
+      "name": "22 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
+  "categories": [
+    "mopeds"
+  ]
 }

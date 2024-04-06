@@ -1,7 +1,7 @@
 defmodule Garage.Builds.Like do
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
-    api: Garage.Builds
+    domain: Garage.Builds
 
   actions do
     defaults [:read, :destroy]
@@ -24,7 +24,6 @@ defmodule Garage.Builds.Like do
   end
 
   code_interface do
-    define_for Garage.Builds
     define :like, args: [:build_id]
   end
 
@@ -51,12 +50,12 @@ defmodule Garage.Builds.Like do
 
   relationships do
     belongs_to :user, Garage.Accounts.User do
-      api Garage.Accounts
+      domain Garage.Accounts
       allow_nil? false
     end
 
     belongs_to :build, Garage.Builds.Build do
-      api Garage.Builds
+      domain Garage.Builds
       allow_nil? false
     end
   end

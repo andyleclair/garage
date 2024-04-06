@@ -1,90 +1,6 @@
 {
   "name": "Hercules",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Supra 4 Enduro Stock Exhaust"
-    },
-    {
-      "name": "SAXONETTE Stock Exhaust"
-    },
-    {
-      "name": "Prima 5 Stock Exhaust"
-    },
-    {
-      "name": "Prima 4 Stock Exhaust"
-    },
-    {
-      "name": "P-3 Stock Exhaust"
-    },
-    {
-      "name": "P-1 Stock Exhaust"
-    },
-    {
-      "name": "MX-1 Stock Exhaust"
-    },
-    {
-      "name": "MP-4 Stock Exhaust"
-    },
-    {
-      "name": "MP-2 Stock Exhaust"
-    },
-    {
-      "name": "M-5 Stock Exhaust"
-    },
-    {
-      "name": "M-4 Stock Exhaust"
-    },
-    {
-      "name": "M-2 Stock Exhaust"
-    },
-    {
-      "name": "M-1 Stock Exhaust"
-    },
-    {
-      "name": "Lastboy Stock Exhaust"
-    },
-    {
-      "name": "L50 Stock Exhaust"
-    },
-    {
-      "name": "K50 Stock Exhaust"
-    },
-    {
-      "name": "Hobbyrider Stock Exhaust"
-    },
-    {
-      "name": "HR-2 Stock Exhaust"
-    },
-    {
-      "name": "Citybike C-3 Stock Exhaust"
-    },
-    {
-      "name": "Accubike E-1 Stock Exhaust"
-    },
-    {
-      "name": "504-1B Stock Exhaust"
-    },
-    {
-      "name": "504-1A Stock Exhaust"
-    },
-    {
-      "name": "5 SL Stock Exhaust"
-    },
-    {
-      "name": "220 Stock Exhaust"
-    },
-    {
-      "name": "218 Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "218"
@@ -162,6 +78,90 @@
       "name": "Supra 4 Enduro"
     }
   ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "exhausts": [
+    {
+      "name": "Supra 4 Enduro Stock Exhaust"
+    },
+    {
+      "name": "SAXONETTE Stock Exhaust"
+    },
+    {
+      "name": "Prima 5 Stock Exhaust"
+    },
+    {
+      "name": "Prima 4 Stock Exhaust"
+    },
+    {
+      "name": "P-3 Stock Exhaust"
+    },
+    {
+      "name": "P-1 Stock Exhaust"
+    },
+    {
+      "name": "MX-1 Stock Exhaust"
+    },
+    {
+      "name": "MP-4 Stock Exhaust"
+    },
+    {
+      "name": "MP-2 Stock Exhaust"
+    },
+    {
+      "name": "M-5 Stock Exhaust"
+    },
+    {
+      "name": "M-4 Stock Exhaust"
+    },
+    {
+      "name": "M-2 Stock Exhaust"
+    },
+    {
+      "name": "M-1 Stock Exhaust"
+    },
+    {
+      "name": "Lastboy Stock Exhaust"
+    },
+    {
+      "name": "L50 Stock Exhaust"
+    },
+    {
+      "name": "K50 Stock Exhaust"
+    },
+    {
+      "name": "Hobbyrider Stock Exhaust"
+    },
+    {
+      "name": "HR-2 Stock Exhaust"
+    },
+    {
+      "name": "Citybike C-3 Stock Exhaust"
+    },
+    {
+      "name": "Accubike E-1 Stock Exhaust"
+    },
+    {
+      "name": "504-1B Stock Exhaust"
+    },
+    {
+      "name": "504-1A Stock Exhaust"
+    },
+    {
+      "name": "5 SL Stock Exhaust"
+    },
+    {
+      "name": "220 Stock Exhaust"
+    },
+    {
+      "name": "218 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
+  "categories": [
+    "mopeds"
+  ]
 }

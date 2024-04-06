@@ -1,7 +1,7 @@
 defmodule Garage.Builds.Comment do
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
-    api: Garage.Builds
+    domain: Garage.Builds
 
   actions do
     defaults [:read, :destroy]
@@ -9,10 +9,6 @@ defmodule Garage.Builds.Comment do
     create :create do
       change relate_actor(:user)
     end
-  end
-
-  code_interface do
-    define_for Garage.Builds
   end
 
   postgres do
@@ -39,12 +35,12 @@ defmodule Garage.Builds.Comment do
 
   relationships do
     belongs_to :user, Garage.Accounts.User do
-      api Garage.Accounts
+      domain Garage.Accounts
       allow_nil? false
     end
 
     belongs_to :build, Garage.Builds.Build do
-      api Garage.Builds
+      domain Garage.Builds
       attribute_writable? true
       allow_nil? false
     end

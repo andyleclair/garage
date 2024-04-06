@@ -1,21 +1,6 @@
 {
   "name": "AJW",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Greyhound Stock Exhaust"
-    },
-    {
-      "name": "Collie Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "Collie"
@@ -24,6 +9,21 @@
       "name": "Greyhound"
     }
   ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "exhausts": [
+    {
+      "name": "Greyhound Stock Exhaust"
+    },
+    {
+      "name": "Collie Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
+  "categories": [
+    "mopeds"
+  ]
 }

@@ -71,7 +71,7 @@ defmodule GarageWeb.CarburetorLive.Index do
      socket
      |> stream(
        :carburetors,
-       Garage.Mopeds.read!(Garage.Mopeds.Carburetor, actor: socket.assigns[:current_user])
+       Ash.read!(Garage.Mopeds.Carburetor, actor: socket.assigns[:current_user])
      )
      |> assign_new(:current_user, fn -> nil end)}
   end
@@ -86,7 +86,7 @@ defmodule GarageWeb.CarburetorLive.Index do
     |> assign(:page_title, "Edit Carburetor")
     |> assign(
       :carburetor,
-      Garage.Mopeds.get!(Garage.Mopeds.Carburetor, id, actor: socket.assigns.current_user)
+      Ash.get!(Garage.Mopeds.Carburetor, id, actor: socket.assigns.current_user)
     )
   end
 
@@ -105,9 +105,9 @@ defmodule GarageWeb.CarburetorLive.Index do
   @impl true
   def handle_event("delete", %{"id" => id}, socket) do
     carburetor =
-      Garage.Mopeds.get!(Garage.Mopeds.Carburetor, id, actor: socket.assigns.current_user)
+      Ash.get!(Garage.Mopeds.Carburetor, id, actor: socket.assigns.current_user)
 
-    Garage.Mopeds.destroy!(carburetor, actor: socket.assigns.current_user)
+    Ash.destroy!(carburetor, actor: socket.assigns.current_user)
 
     {:noreply, stream_delete(socket, :carburetors, carburetor)}
   end

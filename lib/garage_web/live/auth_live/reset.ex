@@ -56,7 +56,7 @@ defmodule GarageWeb.AuthLive.Reset do
     |> assign(:action, ~p"/auth/user/password/reset_request")
     |> assign(
       :form,
-      Form.for_action(User, :request_password_reset_with_password, api: Accounts, as: "user")
+      Form.for_action(User, :request_password_reset_with_password, domain: Accounts, as: "user")
       |> to_form()
     )
   end
@@ -71,7 +71,7 @@ defmodule GarageWeb.AuthLive.Reset do
     |> assign(:token, token)
     |> assign(
       :form,
-      Form.for_action(User, :password_reset_with_password, api: Accounts, as: "user")
+      Form.for_action(User, :password_reset_with_password, domain: Accounts, as: "user")
       |> to_form()
     )
   end

@@ -179,7 +179,7 @@ defmodule GarageWeb.UsersLive.Settings do
 
   @impl true
   def mount(_params, _session, %{assigns: %{current_user: user}} = socket) do
-    form = Form.for_update(user, :update, api: Accounts, actor: user)
+    form = Form.for_update(user, :update, domain: Accounts, actor: user)
 
     {:ok,
      socket

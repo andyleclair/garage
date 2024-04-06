@@ -1,36 +1,6 @@
 {
   "name": "Ducati",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Rolly Stock Exhaust"
-    },
-    {
-      "name": "Mini 3 Stock Exhaust"
-    },
-    {
-      "name": "Falcon 50 Stock Exhaust"
-    },
-    {
-      "name": "Brisk Stock Exhaust"
-    },
-    {
-      "name": "55e Stock Exhaust"
-    },
-    {
-      "name": "50 Senda Stock Exhaust"
-    },
-    {
-      "name": "50 Pronto Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "50 Pronto"
@@ -54,6 +24,36 @@
       "name": "Rolly"
     }
   ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "exhausts": [
+    {
+      "name": "Rolly Stock Exhaust"
+    },
+    {
+      "name": "Mini 3 Stock Exhaust"
+    },
+    {
+      "name": "Falcon 50 Stock Exhaust"
+    },
+    {
+      "name": "Brisk Stock Exhaust"
+    },
+    {
+      "name": "55e Stock Exhaust"
+    },
+    {
+      "name": "50 Senda Stock Exhaust"
+    },
+    {
+      "name": "50 Pronto Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
+  "categories": [
+    "mopeds"
+  ]
 }

@@ -58,7 +58,7 @@ defmodule GarageWeb.BuildsLive.New do
   def mount(_params, _session, socket) do
     form =
       Form.for_action(Build, :create,
-        api: Builds,
+        domain: Builds,
         actor: socket.assigns.current_user
       )
 

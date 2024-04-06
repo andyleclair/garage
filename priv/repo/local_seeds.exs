@@ -1,3 +1,4 @@
+:erlang.system_flag(:backtrace_depth, 100)
 alias AshAuthentication.Info
 alias AshAuthentication.Strategy
 alias Garage.Mopeds.Manufacturer
@@ -10,8 +11,7 @@ strategy = Info.strategy!(Garage.Accounts.User, :password)
     "username" => "admin",
     "name" => "admin",
     "email" => "admin@moped.build",
-    "password" => "admin12345",
-    "password_confirmation" => "admin12345"
+    "password" => "admin12345"
   })
 
 {:ok, beavis} =
@@ -19,8 +19,7 @@ strategy = Info.strategy!(Garage.Accounts.User, :password)
     "username" => "beavis",
     "name" => "Beavis",
     "email" => "beavis@moped.build",
-    "password" => "beavis12345",
-    "password_confirmation" => "beavis12345"
+    "password" => "beavis12345"
   })
 
 {:ok, butthead} =
@@ -28,8 +27,7 @@ strategy = Info.strategy!(Garage.Accounts.User, :password)
     "username" => "butthead",
     "name" => "Butthead",
     "email" => "butthead@moped.build",
-    "password" => "butthead12345",
-    "password_confirmation" => "butthead12345"
+    "password" => "butthead12345"
   })
 
 possible_mopeds = [

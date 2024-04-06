@@ -73,7 +73,7 @@ defmodule GarageWeb.CrankLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :crank,
-       Garage.Mopeds.get!(Garage.Mopeds.Crank, id, actor: socket.assigns.current_user)
+       Ash.get!(Garage.Mopeds.Crank, id, actor: socket.assigns.current_user)
      )}
   end
 

@@ -1,36 +1,6 @@
 {
   "name": "Kinetic",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "TFR Stock Exhaust"
-    },
-    {
-      "name": "Safari V2 Stock Exhaust"
-    },
-    {
-      "name": "Magnum Stock Exhaust"
-    },
-    {
-      "name": "Luna TFR Stock Exhaust"
-    },
-    {
-      "name": "Luna Super Stock Exhaust"
-    },
-    {
-      "name": "Luna Stock Exhaust"
-    },
-    {
-      "name": "K4 100 Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "K4 100"
@@ -54,6 +24,36 @@
       "name": "TFR"
     }
   ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "exhausts": [
+    {
+      "name": "TFR Stock Exhaust"
+    },
+    {
+      "name": "Safari V2 Stock Exhaust"
+    },
+    {
+      "name": "Magnum Stock Exhaust"
+    },
+    {
+      "name": "Luna TFR Stock Exhaust"
+    },
+    {
+      "name": "Luna Super Stock Exhaust"
+    },
+    {
+      "name": "Luna Stock Exhaust"
+    },
+    {
+      "name": "K4 100 Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
+  "categories": [
+    "mopeds"
+  ]
 }

@@ -64,7 +64,7 @@ defmodule GarageWeb.ManufacturerLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :manufacturer,
-       Garage.Mopeds.get!(Garage.Mopeds.Manufacturer,
+       Ash.get!(Garage.Mopeds.Manufacturer,
          slug: id,
          actor: socket.assigns.current_user
        )

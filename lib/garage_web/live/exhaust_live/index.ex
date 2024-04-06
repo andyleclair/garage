@@ -56,7 +56,7 @@ defmodule GarageWeb.ExhaustLive.Index do
      socket
      |> stream(
        :exhausts,
-       Garage.Mopeds.read!(Garage.Mopeds.Exhaust, actor: socket.assigns[:current_user])
+       Ash.read!(Garage.Mopeds.Exhaust, actor: socket.assigns[:current_user])
      )
      |> assign_new(:current_user, fn -> nil end)}
   end
@@ -71,7 +71,7 @@ defmodule GarageWeb.ExhaustLive.Index do
     |> assign(:page_title, "Edit Exhaust")
     |> assign(
       :exhaust,
-      Garage.Mopeds.get!(Garage.Mopeds.Exhaust, id, actor: socket.assigns.current_user)
+      Ash.get!(Garage.Mopeds.Exhaust, id, actor: socket.assigns.current_user)
     )
   end
 
@@ -89,8 +89,8 @@ defmodule GarageWeb.ExhaustLive.Index do
 
   @impl true
   def handle_event("delete", %{"id" => id}, socket) do
-    exhaust = Garage.Mopeds.get!(Garage.Mopeds.Exhaust, id, actor: socket.assigns.current_user)
-    Garage.Mopeds.destroy!(exhaust, actor: socket.assigns.current_user)
+    exhaust = Ash.get!(Garage.Mopeds.Exhaust, id, actor: socket.assigns.current_user)
+    Ash.destroy!(exhaust, actor: socket.assigns.current_user)
 
     {:noreply, stream_delete(socket, :exhausts, exhaust)}
   end

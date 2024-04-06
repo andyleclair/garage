@@ -1,27 +1,6 @@
 {
   "name": "Wind",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "WMX Cargo Stock Exhaust"
-    },
-    {
-      "name": "WMX 50 Stock Exhaust"
-    },
-    {
-      "name": "Classic Stock Exhaust"
-    },
-    {
-      "name": "City Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "City"
@@ -36,6 +15,27 @@
       "name": "WMX Cargo"
     }
   ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "exhausts": [
+    {
+      "name": "WMX Cargo Stock Exhaust"
+    },
+    {
+      "name": "WMX 50 Stock Exhaust"
+    },
+    {
+      "name": "Classic Stock Exhaust"
+    },
+    {
+      "name": "City Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
+  "categories": [
+    "mopeds"
+  ]
 }

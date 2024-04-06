@@ -1,57 +1,6 @@
 {
   "name": "Cimatti",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Twin Sport Stock Exhaust"
-    },
-    {
-      "name": "Town Bike Stock Exhaust"
-    },
-    {
-      "name": "Piper V1 KS Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Kaiman Super 6m Radial X21 Stock Exhaust"
-    },
-    {
-      "name": "Gran Prix XL Stock Exhaust"
-    },
-    {
-      "name": "Express Stock Exhaust"
-    },
-    {
-      "name": "City Bike Stock Exhaust"
-    },
-    {
-      "name": "Chic Stock Exhaust"
-    },
-    {
-      "name": "C50 Stock Exhaust"
-    },
-    {
-      "name": "Boy Stock Exhaust"
-    },
-    {
-      "name": "Bob Cat Stock Exhaust"
-    },
-    {
-      "name": "Bat Baby Stock Exhaust"
-    },
-    {
-      "name": "86XL Radial 4M Stock Exhaust"
-    },
-    {
-      "name": "4M Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "4M"
@@ -96,6 +45,57 @@
       "name": "Twin Sport"
     }
   ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "exhausts": [
+    {
+      "name": "Twin Sport Stock Exhaust"
+    },
+    {
+      "name": "Town Bike Stock Exhaust"
+    },
+    {
+      "name": "Piper V1 KS Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Kaiman Super 6m Radial X21 Stock Exhaust"
+    },
+    {
+      "name": "Gran Prix XL Stock Exhaust"
+    },
+    {
+      "name": "Express Stock Exhaust"
+    },
+    {
+      "name": "City Bike Stock Exhaust"
+    },
+    {
+      "name": "Chic Stock Exhaust"
+    },
+    {
+      "name": "C50 Stock Exhaust"
+    },
+    {
+      "name": "Boy Stock Exhaust"
+    },
+    {
+      "name": "Bob Cat Stock Exhaust"
+    },
+    {
+      "name": "Bat Baby Stock Exhaust"
+    },
+    {
+      "name": "86XL Radial 4M Stock Exhaust"
+    },
+    {
+      "name": "4M Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
+  "categories": [
+    "mopeds"
+  ]
 }

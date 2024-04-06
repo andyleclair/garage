@@ -58,7 +58,7 @@ defmodule GarageWeb.IgnitionLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :ignition,
-       Garage.Mopeds.get!(Garage.Mopeds.Ignition, id, actor: socket.assigns.current_user)
+       Ash.get!(Garage.Mopeds.Ignition, id, actor: socket.assigns.current_user)
      )}
   end
 

@@ -58,7 +58,7 @@ defmodule GarageWeb.PulleyLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :pulley,
-       Garage.Mopeds.get!(Garage.Mopeds.Pulley, id, actor: socket.assigns.current_user)
+       Ash.get!(Garage.Mopeds.Pulley, id, actor: socket.assigns.current_user)
      )}
   end
 

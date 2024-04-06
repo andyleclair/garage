@@ -1,21 +1,6 @@
 {
   "name": "Suvega",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Tiger T-3 Stock Exhaust"
-    },
-    {
-      "name": "Samrat Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "Samrat"
@@ -24,6 +9,21 @@
       "name": "Tiger T-3"
     }
   ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "exhausts": [
+    {
+      "name": "Tiger T-3 Stock Exhaust"
+    },
+    {
+      "name": "Samrat Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
+  "categories": [
+    "mopeds"
+  ]
 }

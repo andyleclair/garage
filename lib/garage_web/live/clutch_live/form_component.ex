@@ -112,13 +112,13 @@ defmodule GarageWeb.ClutchLive.FormComponent do
     form =
       if clutch do
         AshPhoenix.Form.for_update(clutch, :update,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "clutch",
           actor: socket.assigns.current_user
         )
       else
         AshPhoenix.Form.for_create(Garage.Mopeds.Clutch, :create,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "clutch",
           actor: socket.assigns.current_user
         )

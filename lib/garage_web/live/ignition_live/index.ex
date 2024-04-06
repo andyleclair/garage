@@ -56,7 +56,7 @@ defmodule GarageWeb.IgnitionLive.Index do
      socket
      |> stream(
        :ignitions,
-       Garage.Mopeds.read!(Garage.Mopeds.Ignition, actor: socket.assigns[:current_user])
+       Ash.read!(Garage.Mopeds.Ignition, actor: socket.assigns[:current_user])
      )
      |> assign_new(:current_user, fn -> nil end)}
   end
@@ -71,7 +71,7 @@ defmodule GarageWeb.IgnitionLive.Index do
     |> assign(:page_title, "Edit Ignition")
     |> assign(
       :ignition,
-      Garage.Mopeds.get!(Garage.Mopeds.Ignition, id, actor: socket.assigns.current_user)
+      Ash.get!(Garage.Mopeds.Ignition, id, actor: socket.assigns.current_user)
     )
   end
 
@@ -89,8 +89,8 @@ defmodule GarageWeb.IgnitionLive.Index do
 
   @impl true
   def handle_event("delete", %{"id" => id}, socket) do
-    ignition = Garage.Mopeds.get!(Garage.Mopeds.Ignition, id, actor: socket.assigns.current_user)
-    Garage.Mopeds.destroy!(ignition, actor: socket.assigns.current_user)
+    ignition = Ash.get!(Garage.Mopeds.Ignition, id, actor: socket.assigns.current_user)
+    Ash.destroy!(ignition, actor: socket.assigns.current_user)
 
     {:noreply, stream_delete(socket, :ignitions, ignition)}
   end

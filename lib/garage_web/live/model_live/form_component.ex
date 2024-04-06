@@ -76,13 +76,13 @@ defmodule GarageWeb.ModelLive.FormComponent do
     form =
       if model do
         AshPhoenix.Form.for_update(model, :update,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "model",
           actor: socket.assigns.current_user
         )
       else
         AshPhoenix.Form.for_create(Garage.Mopeds.Model, :create,
-          api: Garage.Mopeds,
+          domain: Garage.Mopeds,
           as: "model",
           actor: socket.assigns.current_user
         )

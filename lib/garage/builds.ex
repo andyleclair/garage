@@ -1,7 +1,9 @@
 defmodule Garage.Builds do
-  use Ash.Api
+  use Ash.Domain
 
   resources do
-    registry Garage.Builds.Registry
+    resource Garage.Builds.Build
+    resource Garage.Builds.Like
+    resource Garage.Builds.Comment
   end
 end

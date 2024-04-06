@@ -1,41 +1,31 @@
 defmodule Garage.Mopeds.Crank do
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
-    api: Garage.Mopeds
+    domain: Garage.Mopeds
 
   import Ash.Sort, only: [expr_sort: 2]
   alias Garage.Mopeds.Engine
 
   actions do
+    default_accept :*
     defaults [:create, :read, :update, :destroy]
-
-    read :by_id do
-      # This action has one argument :id of type :uuid
-      argument :id, :uuid, allow_nil?: false
-      # Tells us we expect this action to return a single result
-      get? true
-      # Filters the `:id` given in the argument
-      # against the `id` of each element in the resource
-      filter expr(id == ^arg(:id))
-    end
   end
 
   code_interface do
-    define_for Garage.Mopeds
     define :read_all, action: :read
     define :update, action: :update
     define :destroy, action: :destroy
-    define :get_by_id, args: [:id], action: :by_id
+    define :get_by_id, action: :read, get_by: :id
   end
 
   attributes do
     uuid_primary_key :id
-    attribute :name, :string, allow_nil?: false
-    attribute :description, :string, default: ""
-    # in mm
-    attribute :stroke, :integer
-    attribute :conn_rod_length, :integer
-    attribute :small_end_bearing_diameter, :integer
+    attribute :name, :string, allow_nil?: false, public?: true
+    attribute :description, :string, default: "", public?: true
+    # in mm, public?: true
+    attribute :stroke, :integer, public?: true
+    attribute :conn_rod_length, :integer, public?: true
+    attribute :small_end_bearing_diameter, :integer, public?: true
 
     create_timestamp :inserted_at
     update_timestamp :updated_at

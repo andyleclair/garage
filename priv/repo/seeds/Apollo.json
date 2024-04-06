@@ -1,27 +1,6 @@
 {
   "name": "Apollo",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Pacific Stock Exhaust"
-    },
-    {
-      "name": "Carrier Stock Exhaust"
-    },
-    {
-      "name": "Bel Rock Stock Exhaust"
-    },
-    {
-      "name": "Apell Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "Apell"
@@ -36,6 +15,27 @@
       "name": "Pacific"
     }
   ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "exhausts": [
+    {
+      "name": "Pacific Stock Exhaust"
+    },
+    {
+      "name": "Carrier Stock Exhaust"
+    },
+    {
+      "name": "Bel Rock Stock Exhaust"
+    },
+    {
+      "name": "Apell Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
+  "categories": [
+    "mopeds"
+  ]
 }

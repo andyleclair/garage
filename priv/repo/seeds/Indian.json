@@ -1,27 +1,6 @@
 {
   "name": "Indian",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Mini-Mini Bambino Stock Exhaust"
-    },
-    {
-      "name": "MX-74 Stock Exhaust"
-    },
-    {
-      "name": "MM5A Stock Exhaust"
-    },
-    {
-      "name": "AMI-50 Chief Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "AMI-50 Chief"
@@ -36,6 +15,27 @@
       "name": "Mini-Mini Bambino"
     }
   ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "exhausts": [
+    {
+      "name": "Mini-Mini Bambino Stock Exhaust"
+    },
+    {
+      "name": "MX-74 Stock Exhaust"
+    },
+    {
+      "name": "MM5A Stock Exhaust"
+    },
+    {
+      "name": "AMI-50 Chief Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
+  "categories": [
+    "mopeds"
+  ]
 }

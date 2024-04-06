@@ -1,42 +1,6 @@
 {
   "name": "Carabela",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Super Sport Stock Exhaust"
-    },
-    {
-      "name": "Sport Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Sport Stock Exhaust"
-    },
-    {
-      "name": "Moto-Pony 60 Stock Exhaust"
-    },
-    {
-      "name": "Moto-Pedal Stock Exhaust"
-    },
-    {
-      "name": "Moto-Matic Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Moto-Matic Stock Exhaust"
-    },
-    {
-      "name": "Delux Stock Exhaust"
-    },
-    {
-      "name": "Carrera Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "Carrera"
@@ -66,6 +30,42 @@
       "name": "Super Sport"
     }
   ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "exhausts": [
+    {
+      "name": "Super Sport Stock Exhaust"
+    },
+    {
+      "name": "Sport Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "Moto-Pony 60 Stock Exhaust"
+    },
+    {
+      "name": "Moto-Pedal Stock Exhaust"
+    },
+    {
+      "name": "Moto-Matic Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Moto-Matic Stock Exhaust"
+    },
+    {
+      "name": "Delux Stock Exhaust"
+    },
+    {
+      "name": "Carrera Stock Exhaust"
+    }
+  ],
+  "cylinders": [],
+  "categories": [
+    "mopeds"
+  ]
 }
