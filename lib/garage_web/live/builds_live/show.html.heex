@@ -10,17 +10,18 @@
 
 <.header>
   <%= @build.name %>
+  <:actions>
+    <%= if @current_user do %>
+      <.like_heart liked_by_user={@build.liked_by_user} class="w-16 h-16 mb-4" />
+      <.follow_button followed_by_user={@build.liked_by_user} class="w-16 h-16 mb-4" />
+    <% end %>
+  </:actions>
 
   <:subtitle>
     Built by: <.username user={@build.builder} /> |
     Submitted on: <%= to_human_date(@build.inserted_at) %> |
     Last updated: <%= humanize_relative(@build.updated_at) %>
   </:subtitle>
-  <:actions>
-    <%= if @current_user do %>
-      <.like_heart liked_by_user={@build.liked_by_user} class="w-10 h-10" />
-    <% end %>
-  </:actions>
 </.header>
 <!-- Gallery -->
 <div class="mb-5">

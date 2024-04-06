@@ -439,14 +439,16 @@ defmodule GarageWeb.CoreComponents do
       @class
     ]}>
       <div>
-        <h1 class="font-semibold leading-8 text-zinc-800 text-6xl lg:text-8xl md:h-full mb-5">
-          <%= render_slot(@inner_block) %>
-        </h1>
+        <div class="flex flex-row items-center">
+          <h1 class="font-semibold leading-8 text-zinc-800 text-6xl lg:text-8xl md:h-full mb-5">
+            <%= render_slot(@inner_block) %>
+          </h1>
+          <div class="flex flex-row gap-4 -mt-8"><%= render_slot(@actions) %></div>
+        </div>
         <p :if={@subtitle != []} class="h-12 text-l md:text-xl leading-6 text-zinc-600">
           <%= render_slot(@subtitle) %>
         </p>
       </div>
-      <div class="flex flex-row gap-4 -mt-8"><%= render_slot(@actions) %></div>
     </header>
     """
   end

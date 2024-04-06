@@ -7,6 +7,7 @@ defmodule GarageWeb.BuildsLive.Show do
 
   import GarageWeb.Components.Builds.Comment
   import GarageWeb.Components.Builds.LikeHeart
+  import GarageWeb.Components.Builds.FollowButton
 
   @impl true
   def mount(_params, _session, socket) do
@@ -66,6 +67,35 @@ defmodule GarageWeb.BuildsLive.Show do
       build
       | liked_by_user: false,
         likes: Enum.reject(build.likes, fn like -> like.user_id == current_user.id end)
+    }
+
+    {:noreply, assign(socket, :build, build)}
+  end
+
+  @impl true
+  def handle_event(
+        "follow",
+        _params,
+        %{assigns: %{build: build, current_user: current_user}} = socket
+      ) do
+    # {:ok, _follow} = Build.follow(build, actor: current_user)
+    build = %{
+      build
+      | followed_by_user: true
+    }
+
+    {:noreply, assign(socket, :build, build)}
+  end
+
+  def handle_event(
+        "unfollow",
+        _params,
+        %{assigns: %{build: build, current_user: current_user}} = socket
+      ) do
+    # {:ok, _follow} = Build.unfollow(build, actor: current_user)
+    build = %{
+      build
+      | followed_by_user: false
     }
 
     {:noreply, assign(socket, :build, build)}

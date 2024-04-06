@@ -58,7 +58,7 @@ defmodule Garage.Mopeds.Manufacturer do
     define :destroy, action: :destroy
     define :get_by_id, action: :read, get_by: :id
     define :get_by_slug, action: :read, get_by: :slug
-    define :by_category, action: :by_category, get_by: :category
+    define :by_category, action: :by_category, args: [:category]
   end
 
   @categories ~w(carburetors clutches cranks cylinders engines exhausts forks ignitions mopeds pulleys variators wheels)a

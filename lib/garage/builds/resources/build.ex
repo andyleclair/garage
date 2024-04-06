@@ -167,6 +167,7 @@ defmodule Garage.Builds.Build do
 
     update :like do
       accept []
+      require_atomic? false
 
       manual fn changeset, %{actor: actor} ->
         with {:ok, _} <- Like.like(changeset.data.id, actor: actor) do
@@ -177,6 +178,7 @@ defmodule Garage.Builds.Build do
 
     update :dislike do
       accept []
+      require_atomic? false
 
       manual fn changeset, %{actor: actor} ->
         like =
