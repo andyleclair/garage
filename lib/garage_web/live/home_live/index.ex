@@ -4,7 +4,15 @@ defmodule GarageWeb.HomeLive.Index do
 
   def render(assigns) do
     ~H"""
-    <section>
+    <section class="py-6">
+      <h2 class="md:text-5xl text-3xl border-b mb-5">
+        Welcome to Moped.Build
+      </h2>
+      <p class="md:text-xl text-lg">
+        Moped.Build is a place to share and discover moped builds from around the world!
+      </p>
+    </section>
+    <section class="py-6">
       <h2 class="md:text-4xl text-2xl border-b mb-5">
         Latest Builds
       </h2>
@@ -15,7 +23,7 @@ defmodule GarageWeb.HomeLive.Index do
         <% end %>
       </div>
     </section>
-    <section class="mt-5">
+    <section class="py-6">
       <h2 class="md:text-4xl text-2xl border-b mb-5">
         Recently Updated Builds
       </h2>

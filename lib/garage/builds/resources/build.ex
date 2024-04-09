@@ -6,7 +6,7 @@ defmodule Garage.Builds.Build do
 
   require Ecto.Query
 
-  alias Garage.Builds.{Comment, Like}
+  alias Garage.Builds.{Comment, Follow, Like}
 
   alias Garage.Mopeds.{
     Carburetor,
@@ -56,45 +56,56 @@ defmodule Garage.Builds.Build do
   relationships do
     has_many :likes, Like
     has_many :comments, Comment
+    has_many :follows, Follow
 
     belongs_to :ignition, Ignition do
       domain Garage.Mopeds
+      public? true
     end
 
     belongs_to :carburetor, Carburetor do
       domain Garage.Mopeds
+      public? true
     end
 
     belongs_to :cylinder, Cylinder do
       domain Garage.Mopeds
+      public? true
     end
 
     belongs_to :exhaust, Exhaust do
       domain Garage.Mopeds
+      public? true
     end
 
     belongs_to :clutch, Clutch do
       domain Garage.Mopeds
+      public? true
     end
 
     belongs_to :crank, Crank do
       domain Garage.Mopeds
+      public? true
     end
 
     belongs_to :variator, Variator do
       domain Garage.Mopeds
+      public? true
     end
 
     belongs_to :pulley, Pulley do
       domain Garage.Mopeds
+      public? true
     end
 
     belongs_to :engine, Engine do
       domain Garage.Mopeds
+      public? true
     end
 
     belongs_to :builder, User do
       domain Garage.Accounts
+      public? true
     end
 
     # manufacturer and model correspond to the frame
@@ -102,11 +113,13 @@ defmodule Garage.Builds.Build do
     belongs_to :manufacturer, Manufacturer do
       domain Garage.Mopeds
       allow_nil? false
+      public? true
     end
 
     belongs_to :model, Model do
       domain Garage.Mopeds
       allow_nil? false
+      public? true
     end
   end
 
@@ -123,6 +136,8 @@ defmodule Garage.Builds.Build do
     define :by_model, action: :by_model, args: [:model]
     define :like
     define :dislike
+    define :follow
+    define :unfollow
   end
 
   identities do
@@ -192,6 +207,34 @@ defmodule Garage.Builds.Build do
         {:ok, changeset.data}
       end
     end
+
+    update :follow do
+      accept []
+      require_atomic? false
+
+      manual fn changeset, %{actor: actor} ->
+        with {:ok, _} <- Follow.follow(changeset.data.id, actor: actor) do
+          {:ok, changeset.data}
+        end
+      end
+    end
+
+    update :unfollow do
+      accept []
+      require_atomic? false
+
+      manual fn changeset, %{actor: actor} ->
+        follow =
+          Ecto.Query.from(follow in Follow,
+            where: follow.user_id == ^actor.id,
+            where: follow.build_id == ^changeset.data.id
+          )
+
+        Garage.Repo.delete_all(follow)
+
+        {:ok, changeset.data}
+      end
+    end
   end
 
   postgres do
@@ -224,6 +267,12 @@ defmodule Garage.Builds.Build do
       end
     end
 
+    calculate :followed_by_user, :boolean, expr(exists(follows, user_id == ^arg(:user_id))) do
+      argument :user_id, :uuid do
+        allow_nil? false
+      end
+    end
+
     calculate :first_image, :string, expr(at(image_urls, 0))
   end
 
@@ -239,5 +288,7 @@ defmodule Garage.Builds.Build do
 
   aggregates do
     count :like_count, :likes
+    count :follow_count, :follows
+    count :comment_count, :comments
   end
 end

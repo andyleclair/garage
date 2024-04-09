@@ -13,7 +13,7 @@ defmodule GarageWeb.Components.Builds.Card do
           <img class="object-cover w-full h-64 rounded-md" src={@build.first_image} alt="" />
         <% else %>
           <div class="w-full h-64 bg-gray-100 flex items-stretch rounded-md">
-            <div class="mt-2 ml-2 text-xl uppercase">No Images Yet</div>
+            <.icon name="hero-photo" class="m-auto text-gray-300 w-16 h-16" />
           </div>
         <% end %>
       </.link>

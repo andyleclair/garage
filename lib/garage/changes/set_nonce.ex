@@ -5,6 +5,7 @@ defmodule Garage.Changes.SetNonce do
   use Ash.Resource.Change
   alias Ash.Changeset
 
+  @impl true
   def change(changeset, _opts, _context) do
     nonce = Changeset.get_attribute(changeset, :color_nonce)
 
@@ -17,5 +18,10 @@ defmodule Garage.Changes.SetNonce do
     else
       changeset
     end
+  end
+
+  @impl true
+  def atomic(changeset, opts, context) do
+    {:ok, change(changeset, opts, context)}
   end
 end

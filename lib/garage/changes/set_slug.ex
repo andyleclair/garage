@@ -5,6 +5,7 @@ defmodule Garage.Changes.SetSlug do
   use Ash.Resource.Change
   alias Ash.Changeset
 
+  @impl true
   def change(changeset, _opts, _context) do
     slug = Changeset.get_attribute(changeset, :slug)
     name = Changeset.get_attribute(changeset, :name)
@@ -20,5 +21,10 @@ defmodule Garage.Changes.SetSlug do
       :else ->
         Changeset.change_attribute(changeset, :slug, slugified)
     end
+  end
+
+  @impl true
+  def atomic(changeset, opts, context) do
+    {:ok, change(changeset, opts, context)}
   end
 end

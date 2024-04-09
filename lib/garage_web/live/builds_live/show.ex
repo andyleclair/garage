@@ -78,10 +78,12 @@ defmodule GarageWeb.BuildsLive.Show do
         _params,
         %{assigns: %{build: build, current_user: current_user}} = socket
       ) do
-    # {:ok, _follow} = Build.follow(build, actor: current_user)
+    {:ok, _follow} = Build.follow(build, actor: current_user)
+
     build = %{
       build
-      | followed_by_user: true
+      | followed_by_user: true,
+        follows: [%{user: current_user, user_id: current_user.id} | build.follows]
     }
 
     {:noreply, assign(socket, :build, build)}
@@ -92,10 +94,12 @@ defmodule GarageWeb.BuildsLive.Show do
         _params,
         %{assigns: %{build: build, current_user: current_user}} = socket
       ) do
-    # {:ok, _follow} = Build.unfollow(build, actor: current_user)
+    {:ok, _follow} = Build.unfollow(build, actor: current_user)
+
     build = %{
       build
-      | followed_by_user: false
+      | followed_by_user: false,
+        follows: Enum.reject(build.follows, fn follow -> follow.user_id == current_user.id end)
     }
 
     {:noreply, assign(socket, :build, build)}
@@ -179,7 +183,9 @@ defmodule GarageWeb.BuildsLive.Show do
       load: [
         comments: [user: [:name]],
         likes: [user: [:name]],
-        liked_by_user: %{user_id: current_user.id}
+        follows: [user: [:name]],
+        liked_by_user: %{user_id: current_user.id},
+        followed_by_user: %{user_id: current_user.id}
       ]
     )
   end
@@ -188,7 +194,8 @@ defmodule GarageWeb.BuildsLive.Show do
     Build.get_by_slug!(slug,
       load: [
         comments: [user: [:name]],
-        likes: [user: [:name]]
+        likes: [user: [:name]],
+        follows: [user: [:name]]
       ]
     )
   end

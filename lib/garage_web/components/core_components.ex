@@ -433,22 +433,21 @@ defmodule GarageWeb.CoreComponents do
 
   def header(assigns) do
     ~H"""
-    <header class={[
-      @actions != [] && "flex items-center justify-between gap-6",
-      "mb-5 h-auto align-middle",
-      @class
-    ]}>
-      <div>
-        <div class="flex flex-row items-center">
-          <h1 class="font-semibold leading-8 text-zinc-800 text-6xl lg:text-8xl md:h-full mb-5">
-            <%= render_slot(@inner_block) %>
-          </h1>
-          <div class="flex flex-row gap-4 -mt-8"><%= render_slot(@actions) %></div>
+    <header class={["mb-5 h-auto align-middle", @class]}>
+      <div class={[
+        @actions != [] && "flex items-center justify-between gap-6",
+        "flex flex-row items-center justify-between"
+      ]}>
+        <h1 class="flex font-semibold leading-8 text-zinc-800 text-6xl lg:text-8xl md:h-full mb-5">
+          <%= render_slot(@inner_block) %>
+        </h1>
+        <div class="flex flex-row gap-4 -mt-8">
+          <%= render_slot(@actions) %>
         </div>
-        <p :if={@subtitle != []} class="h-12 text-l md:text-xl leading-6 text-zinc-600">
-          <%= render_slot(@subtitle) %>
-        </p>
       </div>
+      <p :if={@subtitle != []} class="h-12 text-l md:text-xl leading-6 text-zinc-600">
+        <%= render_slot(@subtitle) %>
+      </p>
     </header>
     """
   end

@@ -23,6 +23,11 @@ defmodule Garage.Mopeds.Model do
       filter expr(slug == ^arg(:slug) and manufacturer_id == ^arg(:manufacturer_id))
     end
 
+    read :by_manufacturer_id do
+      argument :manufacturer_id, :string, allow_nil?: false
+      filter expr(manufacturer_id == ^arg(:manufacturer_id))
+    end
+
     read :all_models do
       pagination do
         default_limit 30
@@ -34,7 +39,7 @@ defmodule Garage.Mopeds.Model do
   code_interface do
     define :create_model, action: :create
     define :all_models, action: :all_models
-    define :by_manufacturer_id, action: :read, get_by: :manufacturer_id
+    define :by_manufacturer_id, action: :by_manufacturer_id, args: [:manufacturer_id]
     define :get_by_slug, args: [:manufacturer_id, :slug], action: :by_slug
   end
 

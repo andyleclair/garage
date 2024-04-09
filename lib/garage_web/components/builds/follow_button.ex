@@ -15,7 +15,7 @@ defmodule GarageWeb.Components.Builds.FollowButton do
         </div>
       <% else %>
         <div phx-click="follow">
-          <.button icon="hero-bolt">follow</.button>
+          <.button icon="hero-bolt">Follow</.button>
         </div>
       <% end %>
     </div>

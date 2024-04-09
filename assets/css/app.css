@@ -32,3 +32,5 @@ h2 {
 .strong-tilt-move-shake:hover {
   animation: tilt-n-move-shaking 0.15s infinite;
 }
+
+input[disabled] { @apply cursor-not-allowed; }

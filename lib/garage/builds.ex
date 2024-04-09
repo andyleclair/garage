@@ -4,6 +4,7 @@ defmodule Garage.Builds do
   resources do
     resource Garage.Builds.Build
     resource Garage.Builds.Like
+    resource Garage.Builds.Follow
     resource Garage.Builds.Comment
   end
 end

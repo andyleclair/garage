@@ -4,7 +4,7 @@ defmodule GarageWeb.UsersLive.Show do
   import GarageWeb.Components.Builds.Card
 
   def mount(%{"username" => username}, _session, socket) do
-    {:ok, user} = User.get_by_username(username)
+    {:ok, user} = User.get_by_username(username, load: [:builds])
     {:ok, assign(socket, :user, user)}
   end
 end

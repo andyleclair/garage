@@ -8,7 +8,6 @@ defmodule Garage.Accounts.User do
     defaults [:create, :read, :update]
 
     update :new_color do
-      require_atomic? false
       change Garage.Changes.ResetNonce
       change Garage.Changes.SetColor
     end
@@ -87,6 +86,16 @@ defmodule Garage.Accounts.User do
     has_many :builds, Garage.Builds.Build do
       domain Garage.Builds
       destination_attribute :builder_id
+    end
+
+    has_many :likes, Garage.Builds.Like do
+      domain Garage.Builds
+      destination_attribute :user_id
+    end
+
+    has_many :follows, Garage.Builds.Follow do
+      domain Garage.Builds
+      destination_attribute :user_id
     end
   end
 end

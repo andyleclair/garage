@@ -20,7 +20,7 @@ defmodule GarageWeb.BuildsLive.Edit do
     build = Build.get_by_slug!(slug)
 
     if Build.can_update?(assigns.current_user, build) do
-      form = Form.for_action(build, :update, actor: assigns.current_user)
+      form = Form.for_update(build, :update, actor: assigns.current_user)
 
       year_options = year_options()
       manufacturer_options = manufacturer_options()

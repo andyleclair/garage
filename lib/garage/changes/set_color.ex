@@ -7,11 +7,17 @@ defmodule Garage.Changes.SetColor do
   use Ash.Resource.Change
   alias Ash.Changeset
 
+  @impl true
   def change(changeset, _opts, _context) do
     username = Changeset.get_attribute(changeset, :username) || ""
     nonce = Changeset.get_attribute(changeset, :color_nonce)
     color = (username <> nonce) |> ColorHash.hash() |> ColorHash.hsl_to_string()
 
     Changeset.change_attribute(changeset, :color, color)
+  end
+
+  @impl true
+  def atomic(changeset, opts, context) do
+    {:ok, change(changeset, opts, context)}
   end
 end
