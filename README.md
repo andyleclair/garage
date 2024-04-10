@@ -40,7 +40,7 @@
   - [x] forks
   - [x] wheels
 - [ ] Image flagging
-- [ ] Client-side image upload + auto upload
+- [x] Client-side image upload + auto upload
 - [ ] Tools
   - Gearing calculator
   - blowdown etc.
@@ -52,6 +52,7 @@
 - [ ] Atomic design
 - [ ] Add signed up users to mailing list
 - [ ] Caching
+- [ ] Delete users if requested
 
 ### Installation
 

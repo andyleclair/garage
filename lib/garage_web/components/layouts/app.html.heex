@@ -43,11 +43,24 @@
     </div>
   </div>
 </header>
-<div class="relative">
-  <main class="px-4 py-20 sm:px-6 lg:px-8 bg-white">
-    <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <.flash_group flash={@flash} />
-      <%= @inner_content %>
+<main class="relative grow px-4 py-20 sm:px-6 lg:px-8 bg-white">
+  <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <.flash_group flash={@flash} />
+    <%= @inner_content %>
+  </div>
+</main>
+<footer class="px-4 sm:px-6 lg:px-20 bg-white border-t boder-color-zinc-800">
+  <div class="flex items-center justify-between py-3 text-sm">
+    <div class="flex items-center gap-4">
+      <p class="text-zinc-900">
+        &copy; 2024 Moped.Build
+      </p>
     </div>
-  </main>
-</div>
+    <div class="flex items-center gap-8 font-semibold leading-6 text-zinc-900">
+      <.link navigate={~p"/about"}>About</.link>
+      <.link navigate={~p"/terms"}>Terms</.link>
+      <.link navigate={~p"/privacy"}>Privacy</.link>
+      <.link navigate={~p"/contact"}>Contact</.link>
+    </div>
+  </div>
+</footer>

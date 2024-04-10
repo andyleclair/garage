@@ -59,7 +59,7 @@ defmodule Garage.MixProject do
       {:timex, "~> 3.0"},
       {:req, "~> 0.4"},
       {:recase, "~> 0.0"},
-      {:ash, github: "ash-project/ash", branch: "main", override: true},
+      {:ash, "~> 3.0.0-rc.17"},
       {:ash_postgres, "~> 2.0.0-rc.3"},
       {:ash_phoenix, "~> 2.0.0-rc.2"},
       {:ash_authentication, "~> 4.0.0-rc.1"},

@@ -6,10 +6,9 @@ defmodule Garage.Builds.Build do
 
   require Ecto.Query
 
-  alias Garage.Builds.{Comment, Follow, Like}
+  alias Garage.Builds.{CarbTuning, Comment, Follow, Like}
 
   alias Garage.Mopeds.{
-    Carburetor,
     Clutch,
     Crank,
     Cylinder,
@@ -27,7 +26,7 @@ defmodule Garage.Builds.Build do
   attributes do
     uuid_primary_key :id
 
-    # General attributes, public: true
+    # General attributes
     attribute :name, :string, allow_nil?: false, public?: true
     attribute :description, :string, public?: true
     attribute :year, :integer, allow_nil?: false, public?: true
@@ -63,8 +62,7 @@ defmodule Garage.Builds.Build do
       public? true
     end
 
-    belongs_to :carburetor, Carburetor do
-      domain Garage.Mopeds
+    belongs_to :carb_tuning, CarbTuning do
       public? true
     end
 
@@ -254,7 +252,7 @@ defmodule Garage.Builds.Build do
                 engine: [:manufacturer],
                 clutch: [:manufacturer],
                 exhaust: [:manufacturer],
-                carburetor: [:manufacturer],
+                carb_tuning: [carburetor: [:manufacturer]],
                 ignition: [:manufacturer]
               ]
             )

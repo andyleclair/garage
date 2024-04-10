@@ -104,6 +104,7 @@ defmodule GarageWeb.Router do
 
       live "/variators", VariatorLive.Index, :index
       live "/variators/:id", VariatorLive.Show, :show
+      live "/about", HomeLive.About, :about
       # This one _needs_ to be last
       live "/:username", UsersLive.Show, :show
     end
