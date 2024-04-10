@@ -13,6 +13,13 @@ defmodule GarageWeb.UsersLive.Settings do
     <.simple_form for={@form} id="settings-form" phx-change="validate" phx-submit="save">
       <.input field={@form[:username]} type="text" label="Username" />
       <.input field={@form[:email]} type="text" label="Email" />
+      <.label>
+        Push Notifications
+        <span class="text-sm font-medium italic">
+          - receive notifications when your builds are liked or commented on and for updates on builds you follow!
+        </span>
+      </.label>
+      <.button id="allow_push_button" phx-hook="PushNotification">Enable Push Notifications</.button>
       <!-- color management -->
       <div class="h-20 flex flex-col">
         <.label>
@@ -196,6 +203,15 @@ defmodule GarageWeb.UsersLive.Settings do
   def handle_event("new-color", _, socket) do
     {:ok, updated_user} = User.generate_new_color(socket.assigns.user)
     {:noreply, socket |> assign(:user, updated_user) |> assign(:current_user, updated_user)}
+  end
+
+  @impl true
+  def handle_event("push-notification-enabled", _params, socket) do
+    {:ok, updated_user} =
+      Ash.Changeset.for_update(socket.assigns.user, :update, %{enabled_push_notifications: true})
+      |> Ash.update()
+
+    {:noreply, socket |> assign(:user, updated_user)}
   end
 
   @impl true

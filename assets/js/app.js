@@ -61,6 +61,34 @@ const hooks = {
       })
     }
   },
+  PushNotification: {
+    mounted() {
+      if (Notification.permission === "granted") {
+        this.el.innerText = "Push Notifications Enabled";
+      } else {
+        this.el.addEventListener("click", e => {
+          e.preventDefault();
+          if (Notification.permission === "granted") {
+            new Notification("Demo Notification from Moped.Build", {
+              body: "This is where a real notification will be... later",
+              icon: this.el.dataset.icon
+            });
+          } else if (Notification.permission !== "denied") {
+            Notification.requestPermission().then(permission => {
+              if (permission === "granted") {
+                this.el.innerText = "Push Notifications Enabled";
+                this.pushEventTo(this.el, "push-notification-enabled", {})
+                new Notification("Demo Notification from Moped.Build", {
+                  body: "This is where a real notification will be... later",
+                  icon: this.el.dataset.icon
+                });
+              }
+            });
+          }
+        });
+      }
+    }
+  },
   ...live_select,
   ...tag_selector
 }

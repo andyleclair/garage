@@ -5,7 +5,11 @@ defmodule Garage.Accounts.User do
     extensions: [AshAuthentication]
 
   actions do
-    defaults [:create, :read, :update]
+    defaults [:create, :read]
+
+    update :update do
+      accept [:username, :email, :name, :avatar_url, :profile, :enabled_push_notifications]
+    end
 
     update :new_color do
       change Garage.Changes.ResetNonce
@@ -14,8 +18,8 @@ defmodule Garage.Accounts.User do
   end
 
   changes do
-    change Garage.Changes.SetNonce
-    change Garage.Changes.SetColor
+    change Garage.Changes.SetNonce, on: :create
+    change Garage.Changes.SetColor, on: :create
   end
 
   attributes do
@@ -34,6 +38,7 @@ defmodule Garage.Accounts.User do
 
     attribute :color_nonce, :string, allow_nil?: false, generated?: true, public?: true
     attribute :profile, :string, public?: true
+    attribute :enabled_push_notifications, :boolean, default: false, public?: true
     create_timestamp :inserted_at
     update_timestamp :updated_at
   end
