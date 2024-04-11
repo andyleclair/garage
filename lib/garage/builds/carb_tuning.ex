@@ -5,6 +5,18 @@ defmodule Garage.Builds.CarbTuning do
 
   alias Garage.Mopeds.Carburetor
 
+  actions do
+    default_accept :*
+    defaults [:create, :read, :update, :destroy]
+  end
+
+  code_interface do
+    define :read_all, action: :read
+    define :update, action: :update
+    define :destroy, action: :destroy
+    define :get_by_id, action: :read, get_by: :id
+  end
+
   # Tuning depends on the carburetor, different carbs have different tunable things
   attributes do
     uuid_primary_key :id

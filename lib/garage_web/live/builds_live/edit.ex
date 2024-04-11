@@ -20,7 +20,8 @@ defmodule GarageWeb.BuildsLive.Edit do
     build = Build.get_by_slug!(slug)
 
     if Build.can_update?(assigns.current_user, build) do
-      form = Form.for_update(build, :update, actor: assigns.current_user)
+      form =
+        Form.for_update(build, :update, forms: [auto?: true], actor: assigns.current_user)
 
       year_options = year_options()
       manufacturer_options = manufacturer_options()
@@ -91,42 +92,70 @@ defmodule GarageWeb.BuildsLive.Edit do
     {:noreply, assign(socket, :images, new_images)}
   end
 
-  # Liveselect boilerplate. We do a little codegen
-  for select <- [
-        "manufacturer",
-        "model",
-        "carburetor",
-        "engine",
-        "clutch",
-        "exhaust",
-        "ignition"
-      ] do
-    @impl true
-    def handle_event(
-          "live_select_change",
-          %{"id" => id, "text" => text, "field" => "form_" <> unquote(select) <> "_id"},
-          socket
-        ) do
-      options =
-        search_options(
-          Map.get(socket.assigns, String.to_existing_atom(unquote(select) <> "_options")),
-          text
-        )
+  @impl true
+  def handle_event(
+        "live_select_change",
+        %{"id" => id, "text" => text, "field" => "form_" <> field},
+        socket
+      ) do
+    options =
+      case field do
+        "manufacturer" <> _ ->
+          search_options(socket.assigns.manufacturer_options, text)
 
-      send_update(LiveSelect.Component, options: options, id: id)
+        "model" <> _ ->
+          search_options(socket.assigns.model_options, text)
 
-      {:noreply, socket}
-    end
+        "[carb_tuning]" <> _ ->
+          search_options(socket.assigns.carburetor_options, text)
 
-    @impl true
-    def handle_event("set-default", %{"id" => "form_" <> unquote(select) <> _ = id}, socket) do
-      send_update(LiveSelect.Component,
-        options: Map.get(socket.assigns, String.to_existing_atom(unquote(select) <> "_options")),
-        id: id
-      )
+        "engine" <> _ ->
+          search_options(socket.assigns.engine_options, text)
 
-      {:noreply, socket}
-    end
+        "clutch" <> _ ->
+          search_options(socket.assigns.clutch_options, text)
+
+        "exhaust" <> _ ->
+          search_options(socket.assigns.exhaust_options, text)
+
+        "ignition" <> _ ->
+          search_options(socket.assigns.ignition_options, text)
+      end
+
+    send_update(LiveSelect.Component, options: options, id: id)
+
+    {:noreply, socket}
+  end
+
+  @impl true
+  def handle_event("set-default", %{"id" => "form" <> field = id}, socket) do
+    options =
+      case field do
+        "_manufacturer" <> _ ->
+          socket.assigns.manufacturer_options
+
+        "_model" <> _ ->
+          socket.assigns.model_options
+
+        "[carb_tuning]" <> _ ->
+          socket.assigns.carburetor_options
+
+        "_engine" <> _ ->
+          socket.assigns.engine_options
+
+        "_clutch" <> _ ->
+          socket.assigns.clutch_options
+
+        "_exhaust" <> _ ->
+          socket.assigns.exhaust_options
+
+        "_ignition" <> _ ->
+          socket.assigns.ignition_options
+      end
+
+    send_update(LiveSelect.Component, options: options, id: id)
+
+    {:noreply, socket}
   end
 
   @impl true

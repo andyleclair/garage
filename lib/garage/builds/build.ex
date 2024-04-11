@@ -144,13 +144,31 @@ defmodule Garage.Builds.Build do
 
   actions do
     default_accept :*
-    defaults [:read, :update, :destroy]
+    defaults [:read, :destroy]
 
     create :create do
       accept [:name, :description, :year, :builder_id, :manufacturer_id, :model_id, :image_urls]
 
       change Garage.Changes.SetSlug
       change relate_actor(:builder)
+    end
+
+    update :update do
+      require_atomic? false
+
+      accept [
+        :name,
+        :description,
+        :year,
+        :builder_id,
+        :manufacturer_id,
+        :model_id,
+        :image_urls
+      ]
+
+      argument :carb_tuning, :map
+
+      change manage_relationship(:carb_tuning, type: :direct_control)
     end
 
     read :all_builds do

@@ -36,13 +36,15 @@
     field={@form[:engine_id]}
     options={@engine_options}
   />
-  <.live_select
-    label="Carburetor"
-    debounce="250"
-    phx-focus="set-default"
-    field={@form[:carburetor_id]}
-    options={@carburetor_options}
-  />
+  <.inputs_for :let={carb_tuning_form} field={@form[:carb_tuning]}>
+    <.live_select
+      label="Carburetor"
+      debounce="250"
+      phx-focus="set-default"
+      field={carb_tuning_form[:carburetor_id]}
+      options={@carburetor_options}
+    />
+  </.inputs_for>
   <.live_select
     label="Clutch"
     debounce="250"

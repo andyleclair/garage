@@ -78,9 +78,9 @@
           <span>Engine: </span><%= @build.engine.manufacturer.name %> <%= @build.engine.name %>
         </li>
       <% end %>
-      <%= if @build.carburetor do %>
+      <%= if @build.carb_tuning.carburetor do %>
         <li>
-          <span>Carburetor: </span><%= @build.carburetor.manufacturer.name %> <%= @build.carburetor.name %>
+          <span>Carburetor: </span><%= @build.carb_tuning.carburetor.manufacturer.name %> <%= @build.carb_tuning.carburetor.name %>
         </li>
       <% end %>
       <%= if @build.exhaust do %>
