@@ -5,7 +5,7 @@ defmodule GarageWeb.VariatorLive.Index do
   def render(assigns) do
     ~H"""
     <.header>
-      Listing Variators
+      All Variators
       <:actions>
         <.link patch={~p"/variators/new"}>
           <.button>New Variator</.button>
@@ -83,7 +83,7 @@ defmodule GarageWeb.VariatorLive.Index do
 
   defp apply_action(socket, :index, _params) do
     socket
-    |> assign(:page_title, "Listing Variators")
+    |> assign(:page_title, "All Variators")
     |> assign(:variator, nil)
   end
 

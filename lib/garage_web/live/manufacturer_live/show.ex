@@ -6,7 +6,6 @@ defmodule GarageWeb.ManufacturerLive.Show do
     ~H"""
     <.header>
       <%= @manufacturer.name %>
-      <:subtitle>This is a manufacturer record from your database.</:subtitle>
 
       <:actions>
         <.link patch={~p"/manufacturers/#{@manufacturer}/show/edit"} phx-click={JS.push_focus()}>
@@ -16,8 +15,6 @@ defmodule GarageWeb.ManufacturerLive.Show do
     </.header>
 
     <.list>
-      <:item title="Id"><%= @manufacturer.id %></:item>
-
       <:item title="Name"><%= @manufacturer.name %></:item>
 
       <:item title="Categories">
@@ -27,8 +24,6 @@ defmodule GarageWeb.ManufacturerLive.Show do
       </:item>
 
       <:item title="Description"><%= @manufacturer.description %></:item>
-
-      <:item title="Slug"><%= @manufacturer.slug %></:item>
     </.list>
 
     <.back navigate={~p"/manufacturers"}>Back to manufacturers</.back>

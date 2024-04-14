@@ -5,7 +5,7 @@ defmodule GarageWeb.ClutchLive.Index do
   def render(assigns) do
     ~H"""
     <.header>
-      Listing Clutches
+      All Clutches
       <:actions>
         <%= if @current_user do %>
           <.link patch={~p"/clutches/new"}>
@@ -88,7 +88,7 @@ defmodule GarageWeb.ClutchLive.Index do
 
   defp apply_action(socket, :index, _params) do
     socket
-    |> assign(:page_title, "Listing Clutches")
+    |> assign(:page_title, "All Clutches")
     |> assign(:clutch, nil)
   end
 

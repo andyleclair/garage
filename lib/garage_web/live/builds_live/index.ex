@@ -2,8 +2,7 @@ defmodule GarageWeb.BuildsLive.Index do
   use GarageWeb, :live_view
 
   alias Garage.Builds.Build
-  alias Ash.Page.Offset, as: Page
-  import GarageWeb.Components.Builds.Card
+  import GarageWeb.Components.Builds.Build
 
   @impl true
   def render(assigns) do
@@ -12,14 +11,28 @@ defmodule GarageWeb.BuildsLive.Index do
       All Builds
     </.header>
 
-    <.card :for={build <- @builds} build={build} />
+    <div class="flex flex-col"><.build :for={build <- @builds} build={build} /></div>
+
+    <.pagination
+      id="pagination"
+      page_number={@active_page}
+      page_size={@page_limit}
+      entries_length={length(@builds)}
+      total_entries={@total_entries}
+      total_pages={@pages}
+    />
     """
   end
 
   @impl true
   def mount(_params, _session, socket) do
-    {:ok, %Page{results: builds}} = Build.all_builds()
-    {:ok, assign(socket, :builds, builds)}
+    {:ok,
+     socket
+     |> assign(:page_offset, 0)
+     |> assign(:page_limit, 30)
+     |> assign(:pages, 0)
+     |> assign(:active_page, 1)
+     |> assign_new(:current_user, fn -> nil end)}
   end
 
   @impl true
@@ -32,7 +45,7 @@ defmodule GarageWeb.BuildsLive.Index do
 
     socket
     |> assign(:builds, builds)
-    |> assign(:page_title, "Listing Builds - #{manufacturer}")
+    |> assign(:page_title, "All Builds - #{manufacturer}")
   end
 
   defp apply_action(socket, :index, %{"model" => model}) do
@@ -40,11 +53,24 @@ defmodule GarageWeb.BuildsLive.Index do
 
     socket
     |> assign(:builds, builds)
-    |> assign(:page_title, "Listing Builds - #{model}")
+    |> assign(:page_title, "All Builds - #{model}")
   end
 
-  defp apply_action(socket, :index, _params) do
+  defp apply_action(socket, :index, params) do
+    active_page = page(params["page"])
+    offset = page_offset(active_page, socket.assigns.page_limit)
+    {:ok, page} = load_page(socket.assigns.page_limit, offset)
+
     socket
-    |> assign(:page_title, "Listing Builds")
+    |> assign(:pages, ceil(page.count / socket.assigns.page_limit))
+    |> assign(:total_entries, page.count)
+    |> assign(:builds, page.results)
+    |> assign(:active_page, active_page)
+    |> assign(:page_offset, offset)
+    |> assign(:page_title, "All Builds")
+  end
+
+  def load_page(limit, offset) do
+    Garage.Builds.Build.all_builds(page: [limit: limit, offset: offset, count: true])
   end
 end

@@ -7,20 +7,20 @@ defmodule GarageWeb.Components.Builds.Build do
 
   def build(assigns) do
     ~H"""
-    <div class="inline-block rounded-sm bg-gray-50 m-1 shadow-md p-2 m-2 w-full">
-      <div class="flex flex-row">
+    <div class="inline-block rounded-md bg-gray-50 m-1 shadow-md p-2 m-2 w-full md:w-auto">
+      <div class="flex flex-col md:flex-row">
         <%= if @build.first_image do %>
           <div class="">
             <img class="object-cover w-64 h-64" src={@build.first_image} alt="" />
           </div>
         <% else %>
-          <div class="w-64 h-64 bg-gray-300 flex items-stretch">
-            <div class="mt-2 ml-2 text-xl uppercase">No Images</div>
+          <div class="w-full md:w-64 h-64 bg-gray-100 flex items-stretch rounded-md">
+            <.icon name="hero-photo" class="m-auto text-gray-300 w-16 h-16" />
           </div>
         <% end %>
 
         <div class="p-6">
-          <h5 class="mb-2 text-4xl font-medium leading-tight text-neutral-800">
+          <h5 class="truncate mb-2 text-4xl font-medium leading-tight text-neutral-800">
             <.link navigate={~p"/builds/#{@build.slug}"}>
               <%= @build.name %>
             </.link>

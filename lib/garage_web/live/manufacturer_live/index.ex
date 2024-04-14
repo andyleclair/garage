@@ -5,7 +5,7 @@ defmodule GarageWeb.ManufacturerLive.Index do
   def render(assigns) do
     ~H"""
     <.header>
-      Listing Manufacturers
+      All Manufacturers
       <:actions>
         <.link patch={~p"/manufacturers/new"}>
           <.button>New Manufacturer</.button>
@@ -28,23 +28,12 @@ defmodule GarageWeb.ManufacturerLive.Index do
 
       <:col :let={{_id, manufacturer}} label="Description"><%= manufacturer.description %></:col>
 
-      <:col :let={{_id, manufacturer}} label="Slug"><%= manufacturer.slug %></:col>
-
       <:action :let={{_id, manufacturer}}>
         <div class="sr-only">
           <.link navigate={~p"/manufacturers/#{manufacturer}"}>Show</.link>
         </div>
 
         <.link patch={~p"/manufacturers/#{manufacturer}/edit"}>Edit</.link>
-      </:action>
-
-      <:action :let={{id, manufacturer}}>
-        <.link
-          phx-click={JS.push("delete", value: %{id: manufacturer.id}) |> hide("##{id}")}
-          data-confirm="Are you sure?"
-        >
-          Delete
-        </.link>
       </:action>
     </.table>
 
@@ -100,7 +89,7 @@ defmodule GarageWeb.ManufacturerLive.Index do
 
   defp apply_action(socket, :index, _params) do
     socket
-    |> assign(:page_title, "Listing Manufacturers")
+    |> assign(:page_title, "All Manufacturers")
     |> assign(:manufacturer, nil)
   end
 

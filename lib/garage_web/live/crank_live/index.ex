@@ -5,7 +5,7 @@ defmodule GarageWeb.CrankLive.Index do
   def render(assigns) do
     ~H"""
     <.header>
-      Listing Cranks
+      All Cranks
       <:actions>
         <%= if @current_user do %>
           <.link patch={~p"/cranks/new"}>
@@ -101,7 +101,7 @@ defmodule GarageWeb.CrankLive.Index do
 
   defp apply_action(socket, :index, _params) do
     socket
-    |> assign(:page_title, "Listing Cranks")
+    |> assign(:page_title, "All Cranks")
     |> assign(:crank, nil)
   end
 

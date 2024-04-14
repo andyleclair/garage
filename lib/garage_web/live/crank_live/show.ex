@@ -5,8 +5,7 @@ defmodule GarageWeb.CrankLive.Show do
   def render(assigns) do
     ~H"""
     <.header>
-      Crank <%= @crank.id %>
-      <:subtitle>This is a crank record from your database.</:subtitle>
+      <%= @crank.name %>
 
       <:actions>
         <.link patch={~p"/cranks/#{@crank}/show/edit"} phx-click={JS.push_focus()}>

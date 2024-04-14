@@ -5,8 +5,7 @@ defmodule GarageWeb.VariatorLive.Show do
   def render(assigns) do
     ~H"""
     <.header>
-      Variator <%= @variator.id %>
-      <:subtitle>This is a variator record from your database.</:subtitle>
+      <%= @variator.name %>
 
       <:actions>
         <%= if @current_user do %>

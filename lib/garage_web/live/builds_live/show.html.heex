@@ -12,8 +12,8 @@
   <%= @build.name %>
   <:actions>
     <%= if @current_user do %>
-      <.like_heart liked_by_user={@build.liked_by_user} class="w-16 h-16 mb-4" />
-      <.follow_button followed_by_user={@build.followed_by_user} class="w-16 h-16 mb-4" />
+      <.like_heart liked_by_user={@build.liked_by_user} class="mb-4" />
+      <.follow_button followed_by_user={@build.followed_by_user} class="mb-4" />
     <% end %>
   </:actions>
 

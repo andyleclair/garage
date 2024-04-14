@@ -5,8 +5,7 @@ defmodule GarageWeb.IgnitionLive.Show do
   def render(assigns) do
     ~H"""
     <.header>
-      Ignition <%= @ignition.id %>
-      <:subtitle>This is a ignition record from your database.</:subtitle>
+      <%= @ignition.name %>
 
       <:actions>
         <%= if @current_user do %>

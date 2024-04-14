@@ -5,7 +5,7 @@ defmodule GarageWeb.PulleyLive.Index do
   def render(assigns) do
     ~H"""
     <.header>
-      Listing Pulleys
+      All Pulleys
       <:actions>
         <.link patch={~p"/pulleys/new"}>
           <.button>New Pulley</.button>
@@ -83,7 +83,7 @@ defmodule GarageWeb.PulleyLive.Index do
 
   defp apply_action(socket, :index, _params) do
     socket
-    |> assign(:page_title, "Listing Pulleys")
+    |> assign(:page_title, "All Pulleys")
     |> assign(:pulley, nil)
   end
 

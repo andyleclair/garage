@@ -94,7 +94,7 @@ defmodule GarageWeb.ModelLive.Index do
     {:ok, page} = load_page(socket.assigns.page_limit, offset)
 
     socket
-    |> assign(:page_title, "Listing Models")
+    |> assign(:page_title, "All Models")
     |> assign(:pages, ceil(page.count / socket.assigns.page_limit))
     |> assign(:total_entries, page.count)
     |> assign(:models, page.results)
@@ -119,18 +119,5 @@ defmodule GarageWeb.ModelLive.Index do
 
   def load_page(limit, offset) do
     Garage.Mopeds.Model.all_models(page: [limit: limit, offset: offset, count: true])
-  end
-
-  defp page(nil), do: 1
-
-  defp page(page_param) do
-    {active_page, _} = Integer.parse(page_param)
-    active_page
-  end
-
-  defp page_offset(1, _page_limit), do: 0
-
-  defp page_offset(page_param, page_limit) do
-    (page_param - 1) * page_limit
   end
 end

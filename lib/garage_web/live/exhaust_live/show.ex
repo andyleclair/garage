@@ -5,8 +5,7 @@ defmodule GarageWeb.ExhaustLive.Show do
   def render(assigns) do
     ~H"""
     <.header>
-      Exhaust <%= @exhaust.id %>
-      <:subtitle>This is a exhaust record from your database.</:subtitle>
+      <%= @exhaust.name %>
 
       <:actions>
         <%= if @current_user do %>

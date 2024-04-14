@@ -6,7 +6,6 @@ defmodule GarageWeb.ClutchLive.Show do
     ~H"""
     <.header>
       Clutch <%= @clutch.id %>
-      <:subtitle>This is a clutch record from your database.</:subtitle>
 
       <:actions>
         <%= if @current_user do %>

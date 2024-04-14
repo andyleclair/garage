@@ -98,7 +98,7 @@ defmodule GarageWeb.CarburetorLive.Index do
 
   defp apply_action(socket, :index, _params) do
     socket
-    |> assign(:page_title, "Listing Carburetors")
+    |> assign(:page_title, "All Carburetors")
     |> assign(:carburetor, nil)
   end
 

@@ -6,7 +6,6 @@ defmodule GarageWeb.CarburetorLive.Show do
     ~H"""
     <.header>
       <%= @carburetor.manufacturer.name %> <%= @carburetor.name %>
-      <:subtitle>This is a carburetor record from your database.</:subtitle>
 
       <:actions>
         <%= if @current_user do %>

@@ -5,7 +5,7 @@ defmodule GarageWeb.IgnitionLive.Index do
   def render(assigns) do
     ~H"""
     <.header>
-      Listing Ignitions
+      All Ignitions
       <:actions>
         <.link patch={~p"/ignitions/new"}>
           <.button>New Ignition</.button>
@@ -83,7 +83,7 @@ defmodule GarageWeb.IgnitionLive.Index do
 
   defp apply_action(socket, :index, _params) do
     socket
-    |> assign(:page_title, "Listing Ignitions")
+    |> assign(:page_title, "All Ignitions")
     |> assign(:ignition, nil)
   end
 

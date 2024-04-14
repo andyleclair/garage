@@ -434,11 +434,11 @@ defmodule GarageWeb.CoreComponents do
   def header(assigns) do
     ~H"""
     <header class={["flex flex-col gap-10 mb-5 h-auto align-middle", @class]}>
-      <div class="flex flex-col md:flex-row items-center justify-between gap-10">
-        <h1 class="flex font-semibold leading-8 text-zinc-800 text-6xl lg:text-8xl md:h-full mb-5">
+      <div class="flex flex-col items-center justify-between gap-10">
+        <h1 class="flex font-semibold leading-none text-zinc-800 text-8xl md:h-full mb-5  text-center">
           <%= render_slot(@inner_block) %>
         </h1>
-        <div class="flex flex-row gap-4 -mt-8">
+        <div class="grid grid-cols-2 auto-cols-max w-full justify-items-stretch gap-10">
           <%= render_slot(@actions) %>
         </div>
       </div>
@@ -699,6 +699,39 @@ defmodule GarageWeb.CoreComponents do
     """
   end
 
+  attr :id, :string, required: true
+  slot :title, required: true
+  slot :content, required: true
+
+  def dropdown(assigns) do
+    ~H"""
+    <div
+      class="cursor-pointer"
+      phx-click={
+        JS.toggle(
+          to: "##{@id}-menu",
+          in: {"ease-out duration-100", "opacity-0 scale-95", "opacity-100 scale-100"},
+          out: {"ease-out duration-75", "opacity-100 scale-100", "opacity-0 scale-95"}
+        )
+      }
+    >
+      <div>
+        <%= render_slot(@title) %>
+      </div>
+      <nav
+        class="absolute z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+        hidden="true"
+        id={"#{@id}-menu"}
+        phx-click-away={hide("##{@id}-menu")}
+      >
+        <div class="flex flex-col gap-2 p-4 bg-white rounded-lg shadow-lg ring-1 ring-zinc-200">
+          <%= render_slot(@content) %>
+        </div>
+      </nav>
+    </div>
+    """
+  end
+
   ## JS Commands
 
   def show(js \\ %JS{}, selector) do
@@ -806,4 +839,18 @@ defmodule GarageWeb.CoreComponents do
   end
 
   def humanize(atom), do: atom |> to_string() |> Recase.to_title()
+
+  ## Pagination
+  def page(nil), do: 1
+
+  def page(page_param) do
+    {active_page, _} = Integer.parse(page_param)
+    active_page
+  end
+
+  def page_offset(1, _page_limit), do: 0
+
+  def page_offset(page_param, page_limit) do
+    (page_param - 1) * page_limit
+  end
 end

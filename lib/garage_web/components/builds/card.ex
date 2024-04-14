@@ -19,7 +19,7 @@ defmodule GarageWeb.Components.Builds.Card do
       </.link>
 
       <div class="p-5">
-        <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800">
+        <h5 class="truncate mb-2 text-xl font-medium leading-tight text-neutral-800">
           <.link navigate={~p"/builds/#{@build.slug}"}>
             <%= @build.name %>
           </.link>

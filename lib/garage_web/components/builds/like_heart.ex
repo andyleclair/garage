@@ -9,13 +9,13 @@ defmodule GarageWeb.Components.Builds.LikeHeart do
     <div class="cursor-pointer">
       <%= if @liked_by_user do %>
         <div phx-click="dislike">
-          <.button>
+          <.button class="w-full">
             Unlike <.icon name="hero-heart-solid" class="bg-red-500" />
           </.button>
         </div>
       <% else %>
         <div phx-click="like">
-          <.button icon="hero-heart">Like</.button>
+          <.button class="w-full" icon="hero-heart">Like</.button>
         </div>
       <% end %>
     </div>

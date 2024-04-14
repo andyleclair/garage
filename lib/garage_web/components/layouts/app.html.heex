@@ -1,5 +1,6 @@
-<header class="px-4 sm:px-6 lg:px-20 bg-white border-b boder-color-zinc-800">
-  <div class="flex items-center justify-between py-3 text-sm">
+<header class=" max-sm:fixed max-sm:top-0 max-sm:start-0 max-sm:z-10 px-4 sm:px-6 lg:px-20 bg-white border-b boder-color-zinc-800 w-full">
+  <!-- Full size header -->
+  <div class="max-sm:hidden flex items-center justify-between py-3 text-sm">
     <div class="flex items-center gap-4">
       <.link navigate={~p"/"}>
         <h2 class="px-2 text-5xl">
@@ -16,6 +17,22 @@
         </.link>
       <% end %>
       <.link navigate={~p"/builds"}>Browse Builds</.link>
+      <.dropdown id="parts-index-dropdown">
+        <:title>Parts Index</:title>
+        <:content>
+          <.link navigate={~p"/parts"}>All Parts</.link>
+          <.link navigate={~p"/manufacturers"}>Manufacturers</.link>
+          <.link navigate={~p"/models"}>Moped Models</.link>
+          <.link navigate={~p"/engines"}>Engines</.link>
+          <.link navigate={~p"/clutches"}>Clutches</.link>
+          <.link navigate={~p"/carburetors"}>Carburetors</.link>
+          <.link navigate={~p"/cranks"}>Crankshafts</.link>
+          <.link navigate={~p"/cylinders"}>Cylinders</.link>
+          <.link navigate={~p"/exhausts"}>Exhausts</.link>
+          <.link navigate={~p"/ignitions"}>Ignitions</.link>
+          <.link navigate={~p"/pulleys"}>Pulleys</.link>
+        </:content>
+      </.dropdown>
       <%= if @current_user do %>
         <.link
           navigate={~p"/#{@current_user.username}"}
@@ -42,6 +59,82 @@
       <% end %>
     </div>
   </div>
+  <!-- Mobile header -->
+  <div class="md:hidden flex items-center justify-between py-3 text-sm">
+    <.link navigate={~p"/"}>
+      <h2 class="px-2 text-5xl">
+        MOPED.BUILD
+      </h2>
+    </.link>
+    <.button
+      id="mobile-menu-button"
+      class="text-zinc-100 cursor-pointer"
+      phx-click={
+        JS.toggle(
+          to: "#mobile-menu",
+          in: {"ease-out duration-100", "opacity-0 scale-95", "opacity-100 scale-100"},
+          out: {"ease-out duration-75", "opacity-100 scale-100", "opacity-0 scale-95"}
+        )
+      }
+    >
+      <.icon name="hero-bars-3" class="text-xl" />
+    </.button>
+  </div>
+  <nav
+    hidden="true"
+    id="mobile-menu"
+    class="absolute z-20 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+    phx-click-away={hide("#mobile-menu")}
+  >
+    <div class="flex flex-col gap-10 p-4 bg-white rounded-lg shadow-lg ring-1 ring-zinc-200">
+      <.link navigate={~p"/builds"}>Browse Builds</.link>
+      <.dropdown id="mobile-parts-index-dropdown">
+        <:title>Parts Index</:title>
+        <:content>
+          <.link navigate={~p"/parts"}>All Parts</.link>
+          <.link navigate={~p"/manufacturers"}>Manufacturers</.link>
+          <.link navigate={~p"/models"}>Moped Models</.link>
+          <.link navigate={~p"/engines"}>Engines</.link>
+          <.link navigate={~p"/clutches"}>Clutches</.link>
+          <.link navigate={~p"/carburetors"}>Carburetors</.link>
+          <.link navigate={~p"/cranks"}>Crankshafts</.link>
+          <.link navigate={~p"/cylinders"}>Cylinders</.link>
+          <.link navigate={~p"/exhausts"}>Exhausts</.link>
+          <.link navigate={~p"/ignitions"}>Ignitions</.link>
+          <.link navigate={~p"/pulleys"}>Pulleys</.link>
+        </:content>
+      </.dropdown>
+      <%= if @current_user do %>
+        <.link patch={~p"/builds/new"}>
+          <.button>
+            <.icon name="hero-plus" class="bg-green-500 -mt-1" /> New Build
+          </.button>
+        </.link>
+        <.link
+          navigate={~p"/#{@current_user.username}"}
+          class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
+          style={"color: #{@current_user.color}"}
+        >
+          My Builds
+        </.link>
+        <.link
+          navigate={~p"/user/settings"}
+          class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
+        >
+          Settings
+        </.link>
+        <.link navigate={~p"/sign-out"} method="delete">
+          <.button icon="hero-arrow-right-circle">
+            Sign Out
+          </.button>
+        </.link>
+      <% else %>
+        <.link navigate={~p"/sign-in"}>
+          <.button icon="hero-arrow-right-circle">Sign In</.button>
+        </.link>
+      <% end %>
+    </div>
+  </nav>
 </header>
 <main class="relative grow px-4 py-20 sm:px-6 lg:px-8 bg-white">
   <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">

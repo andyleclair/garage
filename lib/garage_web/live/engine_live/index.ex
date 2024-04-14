@@ -5,7 +5,7 @@ defmodule GarageWeb.EngineLive.Index do
   def render(assigns) do
     ~H"""
     <.header>
-      Listing Engines
+      All Engines
       <:actions>
         <.link patch={~p"/engines/new"}>
           <.button>New Engine</.button>
@@ -35,15 +35,6 @@ defmodule GarageWeb.EngineLive.Index do
         </div>
 
         <.link patch={~p"/engines/#{engine}/edit"}>Edit</.link>
-      </:action>
-
-      <:action :let={{id, engine}}>
-        <.link
-          phx-click={JS.push("delete", value: %{id: engine.id}) |> hide("##{id}")}
-          data-confirm="Are you sure?"
-        >
-          Delete
-        </.link>
       </:action>
     </.table>
 
@@ -99,7 +90,7 @@ defmodule GarageWeb.EngineLive.Index do
 
   defp apply_action(socket, :index, _params) do
     socket
-    |> assign(:page_title, "Listing Engines")
+    |> assign(:page_title, "All Engines")
     |> assign(:engine, nil)
   end
 

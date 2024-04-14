@@ -5,8 +5,7 @@ defmodule GarageWeb.PulleyLive.Show do
   def render(assigns) do
     ~H"""
     <.header>
-      Pulley <%= @pulley.id %>
-      <:subtitle>This is a pulley record from your database.</:subtitle>
+      <%= @pulley.name %>
 
       <:actions>
         <%= if @current_user do %>

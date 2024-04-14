@@ -6,7 +6,6 @@ defmodule GarageWeb.ModelLive.Show do
     ~H"""
     <.header>
       <%= @model.manufacturer.name %> <%= @model.name %>
-      <:subtitle>This is a model record from your database.</:subtitle>
 
       <:actions>
         <.link patch={~p"/models/#{@model}/show/edit"} phx-click={JS.push_focus()}>
