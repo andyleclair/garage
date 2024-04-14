@@ -71,34 +71,43 @@
   <h3 class="text-2xl mb-5 border-b">
     <.icon name="hero-wrench-screwdriver" /> Specs
   </h3>
-  <div class="">
-    <ul>
-      <%= if @build.engine do %>
-        <li>
-          <span>Engine: </span><%= @build.engine.manufacturer.name %> <%= @build.engine.name %>
-        </li>
-      <% end %>
-      <%= if @build.carb_tuning.carburetor do %>
-        <li>
-          <span>Carburetor: </span><%= @build.carb_tuning.carburetor.manufacturer.name %> <%= @build.carb_tuning.carburetor.name %>
-        </li>
-      <% end %>
-      <%= if @build.exhaust do %>
-        <li>
-          <span>Exhaust: </span><%= @build.exhaust.manufacturer.name %> <%= @build.exhaust.name %>
-        </li>
-      <% end %>
-      <%= if @build.ignition do %>
-        <li>
-          <span>Ignition: </span><%= @build.ignition.name %>
-        </li>
-      <% end %>
-      <%= if @build.clutch do %>
-        <li>
-          <span>Clutch: </span><%= @build.clutch.name %>
-        </li>
-      <% end %>
-    </ul>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div class="flex flex-row justify-between">
+      <div class="font-black">Engine:</div>
+      <div :if={@build.engine}>
+        <%= @build.engine.manufacturer.name %> <%= @build.engine.name %>
+      </div>
+    </div>
+    <div class="flex flex-row justify-between">
+      <div class="font-black">Carburetor:</div>
+      <div :if={@build.carb_tuning && @build.carb_tuning.carburetor}>
+        <%= @build.carb_tuning.carburetor.manufacturer.name %> <%= @build.carb_tuning.carburetor.name %>
+      </div>
+    </div>
+    <div class="flex flex-row justify-between">
+      <div class="font-black">Exhaust:</div>
+      <div :if={@build.exhaust}>
+        <%= @build.exhaust.manufacturer.name %> <%= @build.exhaust.name %>
+      </div>
+    </div>
+    <div class="flex flex-row justify-between">
+      <div class="font-black">Exhaust:</div>
+      <div :if={@build.exhaust}>
+        <%= @build.exhaust.manufacturer.name %> <%= @build.exhaust.name %>
+      </div>
+    </div>
+    <div class="flex flex-row justify-between">
+      <div class="font-black">Clutch:</div>
+      <div :if={@build.clutch}>
+        <%= @build.clutch.manufacturer.name %> <%= @build.clutch.name %>
+      </div>
+    </div>
+    <div class="flex flex-row justify-between">
+      <div class="font-black">Ignition:</div>
+      <div :if={@build.ignition}>
+        <%= @build.ignition.manufacturer.name %> <%= @build.ignition.name %>
+      </div>
+    </div>
   </div>
 </div>
 <!-- likes -->

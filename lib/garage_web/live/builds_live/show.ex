@@ -169,7 +169,6 @@ defmodule GarageWeb.BuildsLive.Show do
          |> assign(
            :comment_form,
            to_form(Form.clear_value(socket.assigns.comment_form, :text))
-           |> dbg
          )
          |> assign(:build, %{build | comments: build.comments ++ [comment]})}
 

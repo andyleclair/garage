@@ -20,41 +20,52 @@ defmodule GarageWeb.BuildsLive.Edit do
     build = Build.get_by_slug!(slug)
 
     if Build.can_update?(assigns.current_user, build) do
-      form =
-        Form.for_update(build, :update, forms: [auto?: true], actor: assigns.current_user)
+      form = form(build, assigns.current_user)
 
       year_options = year_options()
-      manufacturer_options = manufacturer_options()
-      carburetor_options = carburetor_options()
-      engine_options = engine_options()
-      clutch_options = clutch_options()
-      exhaust_options = exhaust_options()
-      ignition_options = ignition_options()
+      manufacturers = Manufacturer.by_category!(:mopeds)
+      carburetors = Carburetor.read_all!()
+      engines = Engine.read_all!()
+      clutches = Clutch.read_all!()
+      exhausts = Exhaust.read_all!()
+      ignitions = Ignition.read_all!()
 
       # if we already have a manufacturer set, show the model dropdown
-      model_options =
+      models =
         if manufacturer_id = form_manufacturer_id(form) do
-          model_options_by_id(manufacturer_id)
+          Model.by_manufacturer_id!(manufacturer_id)
         else
           nil
         end
 
       images = build.image_urls |> Enum.map(fn url -> {random_id(), url} end)
 
+      selected_carb =
+        if selected_carb_id = form |> Form.value(:carb_tuning) |> Form.value(:carburetor_id) do
+          Enum.find(carburetors, fn carb -> carb.id == selected_carb_id end)
+        else
+          nil
+        end
+
       {:ok,
        socket
        |> assign(:title, "Edit Build")
        |> assign(:build, build)
-       |> assign(:manufacturer_options, manufacturer_options)
+       |> assign(:manufacturer_options, to_options(manufacturers, &manufacturer_formatter/1))
        |> assign(:images, images)
        |> assign(:uploaded_images, [])
        |> assign(:images_to_delete, [])
-       |> assign(:model_options, model_options)
-       |> assign(:carburetor_options, carburetor_options)
-       |> assign(:engine_options, engine_options)
-       |> assign(:clutch_options, clutch_options)
-       |> assign(:exhaust_options, exhaust_options)
-       |> assign(:ignition_options, ignition_options)
+       |> assign(:selected_carburetor, selected_carb)
+       # get special treatment
+       |> assign(:models, models)
+       # get special treatment
+       |> assign(:carburetors, carburetors)
+       |> assign(:model_options, to_options(models, &model_formatter/1))
+       |> assign(:carburetor_options, to_options(carburetors, &carburetor_formatter/1))
+       |> assign(:engine_options, to_options(engines, &engine_formatter/1))
+       |> assign(:clutch_options, to_options(clutches, &clutch_formatter/1))
+       |> assign(:exhaust_options, to_options(exhausts, &exhaust_formatter/1))
+       |> assign(:ignition_options, to_options(ignitions, &ignition_formatter/1))
        |> assign(:year_options, year_options)
        |> assign_form(form)
        |> allow_upload(:image_urls,
@@ -63,7 +74,9 @@ defmodule GarageWeb.BuildsLive.Edit do
          external: &presign_upload/2
        )}
     else
-      Logger.error("Unauthorized access by #{assigns.current_user} trying to edit #{slug}")
+      Logger.error(
+        "Unauthorized access by #{inspect(assigns.current_user)} trying to edit #{slug}"
+      )
 
       {:ok,
        socket
@@ -162,12 +175,10 @@ defmodule GarageWeb.BuildsLive.Edit do
   def handle_event("validate", %{"form" => params}, socket) do
     form = Form.validate(socket.assigns.form, params)
 
-    socket =
-      if manufacturer_id = form_manufacturer_id(form) do
-        assign(socket, :model_options, model_options_by_id(manufacturer_id))
-      else
-        socket
-      end
+    socket = maybe_assign_models(socket, form)
+
+    socket = maybe_assign_selected_carb(socket, form)
+    dbg(params)
 
     {:noreply, assign_form(socket, form)}
   end
@@ -177,7 +188,7 @@ defmodule GarageWeb.BuildsLive.Edit do
         "save",
         %{"form" => form},
         %{
-          assigns: %{images: images, images_to_delete: images_to_delete}
+          assigns: %{images: [_ | _] = images, images_to_delete: images_to_delete}
         } = socket
       ) do
     uploaded_files = socket.assigns.uploaded_images
@@ -187,7 +198,7 @@ defmodule GarageWeb.BuildsLive.Edit do
     image_urls = for {_ref, img} <- images, do: img
 
     image_urls = (image_urls -- images_to_delete) ++ uploaded_files
-    form = Map.put(form, :image_urls, image_urls)
+    form = Map.put(form, "image_urls", image_urls)
 
     save_build(socket, form)
   end
@@ -211,44 +222,32 @@ defmodule GarageWeb.BuildsLive.Edit do
     end
   end
 
-  def manufacturer_options() do
-    for manufacturer <- Manufacturer.by_category!(:mopeds),
-        into: [],
-        do: {manufacturer.name, manufacturer.id}
+  def manufacturer_formatter(manufacturer) do
+    manufacturer.name
   end
 
-  def model_options_by_id(manufacturer_id) do
-    for model <- Model.by_manufacturer_id!(manufacturer_id), into: [], do: {model.name, model.id}
+  def model_formatter(model) do
+    model.name
   end
 
-  def carburetor_options() do
-    for carburetor <- Carburetor.read_all!(),
-        into: [],
-        do: {"#{carburetor.manufacturer.name} #{carburetor.name}", carburetor.id}
+  def carburetor_formatter(carburetor) do
+    "#{carburetor.manufacturer.name} #{carburetor.name}"
   end
 
-  def engine_options() do
-    for engine <- Engine.read_all!(),
-        into: [],
-        do: {"#{engine.manufacturer.name} #{engine.name}", engine.id}
+  def engine_formatter(engine) do
+    "#{engine.manufacturer.name} #{engine.name}"
   end
 
-  def clutch_options() do
-    for clutch <- Clutch.read_all!(),
-        into: [],
-        do: {"#{clutch.manufacturer.name} #{clutch.name}", clutch.id}
+  def clutch_formatter(clutch) do
+    "#{clutch.manufacturer.name} #{clutch.name}"
   end
 
-  def exhaust_options() do
-    for exhaust <- Exhaust.read_all!(),
-        into: [],
-        do: {"#{exhaust.manufacturer.name} #{exhaust.name}", exhaust.id}
+  def exhaust_formatter(exhaust) do
+    "#{exhaust.manufacturer.name} #{exhaust.name}"
   end
 
-  def ignition_options() do
-    for ignition <- Ignition.read_all!(),
-        into: [],
-        do: {"#{ignition.manufacturer.name} #{ignition.name}", ignition.id}
+  def ignition_formatter(ignition) do
+    "#{ignition.manufacturer.name} #{ignition.name}"
   end
 
   defp presign_upload(entry, socket) do
@@ -306,6 +305,53 @@ defmodule GarageWeb.BuildsLive.Edit do
           |> ExAws.request!()
         end
       end)
+    end
+  end
+
+  defp form(build, current_user) do
+    form = Form.for_update(build, :update, forms: [auto?: true], actor: current_user)
+
+    if Form.value(form, :carb_tuning) do
+      form
+    else
+      Form.add_form(form, [:carb_tuning])
+    end
+  end
+
+  defp maybe_assign_models(%{assigns: %{models: models}} = socket, form) do
+    if manufacturer_id = form_manufacturer_id(form) do
+      if is_list(models) and List.first(models).manufacturer_id == manufacturer_id do
+        socket
+      else
+        models = Model.by_manufacturer_id!(manufacturer_id)
+
+        assign(
+          socket,
+          :model_options,
+          to_options(models, &model_formatter/1)
+        )
+      end
+    else
+      socket
+    end
+  end
+
+  defp maybe_assign_models(socket, _form), do: socket
+
+  defp maybe_assign_selected_carb(
+         %{assigns: %{selected_carburetor: selected_carburetor, carburetors: carburetors}} =
+           socket,
+         form
+       ) do
+    if selected_carb_id = form |> Form.value(:carb_tuning) |> Form.value(:carburetor_id) do
+      if is_struct(selected_carburetor, Carburetor) and selected_carburetor.id == selected_carb_id do
+        socket
+      else
+        carb = Enum.find(carburetors, fn carb -> carb.id == selected_carb_id end)
+        assign(socket, :selected_carburetor, carb)
+      end
+    else
+      socket
     end
   end
 end

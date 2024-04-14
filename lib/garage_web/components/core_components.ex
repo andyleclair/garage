@@ -433,11 +433,8 @@ defmodule GarageWeb.CoreComponents do
 
   def header(assigns) do
     ~H"""
-    <header class={["mb-5 h-auto align-middle", @class]}>
-      <div class={[
-        @actions != [] && "flex items-center justify-between gap-6",
-        "flex flex-row items-center justify-between"
-      ]}>
+    <header class={["flex flex-col gap-10 mb-5 h-auto align-middle", @class]}>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-10">
         <h1 class="flex font-semibold leading-8 text-zinc-800 text-6xl lg:text-8xl md:h-full mb-5">
           <%= render_slot(@inner_block) %>
         </h1>
@@ -800,6 +797,12 @@ defmodule GarageWeb.CoreComponents do
         String.downcase(option) |> String.contains?(String.downcase(text))
       end)
     end
+  end
+
+  def to_options(nil, _), do: nil
+
+  def to_options(list, formatter) do
+    for item <- list, do: {formatter.(item), item.id}
   end
 
   def humanize(atom), do: atom |> to_string() |> Recase.to_title()

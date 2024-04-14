@@ -44,6 +44,21 @@
       field={carb_tuning_form[:carburetor_id]}
       options={@carburetor_options}
     />
+    <%= if @selected_carburetor do %>
+      <div class="flex flex-row justify-between gap-x-4">
+        <%= for part <- @selected_carburetor.tunable_parts do %>
+          <div class="w-24">
+            <.input
+              type="text"
+              name={"#{carb_tuning_form[:tuning].name }[#{part}]"}
+              id={"#{carb_tuning_form.id}[tuning][#{part}]"}
+              value={AshPhoenix.Form.value(carb_tuning_form, :tuning)[to_string(part)]}
+              label={humanize(part)}
+            />
+          </div>
+        <% end %>
+      </div>
+    <% end %>
   </.inputs_for>
   <.live_select
     label="Clutch"

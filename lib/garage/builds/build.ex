@@ -160,10 +160,16 @@ defmodule Garage.Builds.Build do
         :name,
         :description,
         :year,
-        :builder_id,
         :manufacturer_id,
         :model_id,
-        :image_urls
+        :image_urls,
+        :engine_id,
+        :exhaust_id,
+        :clutch_id,
+        :ignition_id,
+        :cylinder_id,
+        :pulley_id,
+        :variator_id
       ]
 
       argument :carb_tuning, :map

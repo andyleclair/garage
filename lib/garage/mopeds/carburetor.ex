@@ -52,7 +52,7 @@ defmodule Garage.Mopeds.Carburetor do
   end
 
   relationships do
-    has_many :carb_tuning, Garage.Builds.CarbTuning do
+    has_many :carb_tunings, Garage.Builds.CarbTuning do
       domain Garage.Builds
     end
 

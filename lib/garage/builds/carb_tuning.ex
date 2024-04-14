@@ -21,7 +21,7 @@ defmodule Garage.Builds.CarbTuning do
   attributes do
     uuid_primary_key :id
 
-    attribute :tuning, :map, public?: true
+    attribute :tuning, :map, default: %{}, public?: true
     attribute :needle_position, :integer, public?: true
   end
 

@@ -89,8 +89,8 @@ defmodule GarageWeb.ModelLive.Index do
   end
 
   defp apply_action(socket, :index, params) do
-    active_page = page(params["page"]) |> dbg()
-    offset = page_offset(active_page, socket.assigns.page_limit) |> dbg()
+    active_page = page(params["page"])
+    offset = page_offset(active_page, socket.assigns.page_limit)
     {:ok, page} = load_page(socket.assigns.page_limit, offset)
 
     socket
