@@ -60,7 +60,7 @@
     </div>
   </div>
   <!-- Mobile header -->
-  <div class="md:hidden flex items-center justify-between py-3 text-sm">
+  <div class="sm:hidden flex items-center justify-between py-3 text-sm">
     <.link navigate={~p"/"}>
       <h2 class="px-2 text-5xl">
         MOPED.BUILD
@@ -80,47 +80,36 @@
       <.icon name="hero-bars-3" class="text-xl" />
     </.button>
   </div>
+  <!-- Hidden mobile menu -->
   <nav
     hidden="true"
     id="mobile-menu"
-    class="absolute z-20 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+    class="absolute z-20 mt-2 w-full origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
     phx-click-away={hide("#mobile-menu")}
   >
-    <div class="flex flex-col gap-10 p-4 bg-white rounded-lg shadow-lg ring-1 ring-zinc-200">
+    <div class="flex flex-col gap-5 p-4 bg-white rounded-lg shadow-lg ring-1 ring-zinc-200">
       <.link navigate={~p"/builds"}>Browse Builds</.link>
-      <.dropdown id="mobile-parts-index-dropdown">
-        <:title>Parts Index</:title>
-        <:content>
-          <.link navigate={~p"/parts"}>All Parts</.link>
-          <.link navigate={~p"/manufacturers"}>Manufacturers</.link>
-          <.link navigate={~p"/models"}>Moped Models</.link>
-          <.link navigate={~p"/engines"}>Engines</.link>
-          <.link navigate={~p"/clutches"}>Clutches</.link>
-          <.link navigate={~p"/carburetors"}>Carburetors</.link>
-          <.link navigate={~p"/cranks"}>Crankshafts</.link>
-          <.link navigate={~p"/cylinders"}>Cylinders</.link>
-          <.link navigate={~p"/exhausts"}>Exhausts</.link>
-          <.link navigate={~p"/ignitions"}>Ignitions</.link>
-          <.link navigate={~p"/pulleys"}>Pulleys</.link>
-        </:content>
-      </.dropdown>
+      <.link navigate={~p"/parts"}>All Parts</.link>
+      <.link navigate={~p"/manufacturers"}>Manufacturers</.link>
+      <.link navigate={~p"/models"}>Moped Models</.link>
+      <.link navigate={~p"/engines"}>Engines</.link>
+      <.link navigate={~p"/clutches"}>Clutches</.link>
+      <.link navigate={~p"/carburetors"}>Carburetors</.link>
+      <.link navigate={~p"/cranks"}>Crankshafts</.link>
+      <.link navigate={~p"/cylinders"}>Cylinders</.link>
+      <.link navigate={~p"/exhausts"}>Exhausts</.link>
+      <.link navigate={~p"/ignitions"}>Ignitions</.link>
+      <.link navigate={~p"/pulleys"}>Pulleys</.link>
       <%= if @current_user do %>
         <.link patch={~p"/builds/new"}>
           <.button>
             <.icon name="hero-plus" class="bg-green-500 -mt-1" /> New Build
           </.button>
         </.link>
-        <.link
-          navigate={~p"/#{@current_user.username}"}
-          class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
-          style={"color: #{@current_user.color}"}
-        >
+        <.link navigate={~p"/#{@current_user.username}"} style={"color: #{@current_user.color}"}>
           My Builds
         </.link>
-        <.link
-          navigate={~p"/user/settings"}
-          class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
-        >
+        <.link navigate={~p"/user/settings"}>
           Settings
         </.link>
         <.link navigate={~p"/sign-out"} method="delete">
