@@ -178,7 +178,6 @@ defmodule GarageWeb.BuildsLive.Edit do
     socket = maybe_assign_models(socket, form)
 
     socket = maybe_assign_selected_carb(socket, form)
-    dbg(params)
 
     {:noreply, assign_form(socket, form)}
   end

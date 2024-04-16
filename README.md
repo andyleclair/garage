@@ -20,6 +20,7 @@
 - [x] Build details
   - [x] engine
     - [x] cylinder
+    - [ ] Cylinder tuning (porting etc)
     - head
     - piston
     - [x] cases -- going to handle these as separate engines
@@ -53,6 +54,13 @@
 - [ ] Add signed up users to mailing list
 - [ ] Caching
 - [ ] Delete users if requested
+- [ ] Site news
+- [ ] User roles
+- [ ] Clubs
+- [ ] Rallies
+
+## Known Issues
+- [ ] Image uploads are broken in prod
 
 ### Installation
 
