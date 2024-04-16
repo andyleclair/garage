@@ -13,6 +13,7 @@ defmodule GarageWeb.PartsLive.Index do
         <.link navigate={~p"/models"}>Moped Models</.link>
         <.link navigate={~p"/engines"}>Engines</.link>
         <.link navigate={~p"/clutches"}>Clutches</.link>
+        <.link navigate={~p"/cylinders"}>Cylinders</.link>
         <.link navigate={~p"/carburetors"}>Carburetors</.link>
         <.link navigate={~p"/cranks"}>Crankshafts</.link>
         <.link navigate={~p"/cylinders"}>Cylinders</.link>

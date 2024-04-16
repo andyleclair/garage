@@ -105,14 +105,6 @@ defmodule GarageWeb.ExhaustLive.Index do
     |> assign(:exhaust, nil)
   end
 
-  @impl true
-  def handle_event("delete", %{"id" => id}, socket) do
-    exhaust = Ash.get!(Garage.Mopeds.Exhaust, id, actor: socket.assigns.current_user)
-    Ash.destroy!(exhaust, actor: socket.assigns.current_user)
-
-    {:noreply, stream_delete(socket, :exhausts, exhaust)}
-  end
-
   def load_page(limit, offset) do
     Garage.Mopeds.Exhaust.read_all(page: [limit: limit, offset: offset, count: true])
   end

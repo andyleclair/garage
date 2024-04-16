@@ -10,7 +10,7 @@ defmodule Garage.Mopeds.Cylinder do
     attribute :name, :string, allow_nil?: false, public?: true
     attribute :description, :string, default: "", public?: true
     # in cc
-    attribute :displacement, :integer, default: 50, public?: true
+    attribute :displacement, :integer, public?: true
     # in mm
     attribute :bore, :integer, public?: true
 

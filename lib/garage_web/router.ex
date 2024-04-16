@@ -30,6 +30,9 @@ defmodule GarageWeb.Router do
       live "/clutches/:id/edit", ClutchLive.Index, :edit
       live "/clutches/:id/show/edit", ClutchLive.Show, :edit
       live "/clutches/new", ClutchLive.Index, :new
+      live "/cylinders/:id/edit", CylinderLive.Index, :edit
+      live "/cylinders/:id/show/edit", CylinderLive.Show, :edit
+      live "/cylinders/new", CylinderLive.Index, :new
       live "/cranks/:id/edit", CrankLive.Index, :edit
       live "/cranks/:id/show/edit", CrankLive.Show, :edit
       live "/cranks/new", CrankLive.Index, :new
@@ -84,6 +87,9 @@ defmodule GarageWeb.Router do
       live "/cranks", CrankLive.Index, :index
       live "/cranks/:id", CrankLive.Show, :show
 
+      live "/cylinders", CylinderLive.Index, :index
+      live "/cylinders/:id", CylinderLive.Show, :show
+
       live "/engines", EngineLive.Index, :index
       live "/engines/:id", EngineLive.Show, :show
 
@@ -106,6 +112,7 @@ defmodule GarageWeb.Router do
       live "/variators/:id", VariatorLive.Show, :show
       live "/parts", PartsLive.Index, :index
       live "/about", HomeLive.About, :about
+      live "/privacy", HomeLive.Privacy, :privacy
       # This one _needs_ to be last
       live "/:username", UsersLive.Show, :show
     end

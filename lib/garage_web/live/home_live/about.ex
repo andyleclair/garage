@@ -3,14 +3,24 @@ defmodule GarageWeb.HomeLive.About do
 
   def render(assigns) do
     ~H"""
-    <section class="py-6">
-      <h2 class="md:text-5xl text-3xl border-b mb-5">
+    <article class="prose lg:prose-xl">
+      <h2>
         About Moped.Build
       </h2>
-      <p class="md:text-xl text-lg">
-        Moped.Build is a place to share and discover moped builds from around the world!
+      <p>
+        Hi, my name is Andy LeClair, I'm a software engineer by trade, but  on nights
+        and weekends I'm one of the Top Guns of the
+        <a href="https://www.mopedarmy.com/branches/lslb/">LSLB</a>
+        moped club.
       </p>
-    </section>
+      <p>
+        I thought our community deserved a better way to show off our moped builds, and
+        so I built this site.
+      </p>
+      <p>
+        I've been working on this project for a while now, and I'm excited to share it with you!
+      </p>
+    </article>
     """
   end
 end
