@@ -71,7 +71,8 @@ defmodule GarageWeb.BuildsLive.Edit do
        |> allow_upload(:image_urls,
          accept: ~w(.jpg .jpeg .webp .png),
          max_entries: 10,
-         external: &presign_upload/2
+         external: &presign_upload/2,
+         auto_upload: true
        )}
     else
       Logger.error(
@@ -187,28 +188,21 @@ defmodule GarageWeb.BuildsLive.Edit do
         "save",
         %{"form" => form},
         %{
-          assigns: %{images: [_ | _] = images, images_to_delete: images_to_delete}
+          assigns: %{images: images, images_to_delete: images_to_delete}
         } = socket
       ) do
-    uploaded_files = socket.assigns.uploaded_images
-
     async_delete_images(images_to_delete)
+
+    uploaded_files =
+      consume_uploaded_entries(socket, :image_urls, fn upload, _entry ->
+        {:ok, public_path(upload.key)}
+      end)
 
     image_urls = for {_ref, img} <- images, do: img
 
     image_urls = (image_urls -- images_to_delete) ++ uploaded_files
-    form = Map.put(form, "image_urls", image_urls)
+    params = Map.put(form, "image_urls", image_urls)
 
-    save_build(socket, form)
-  end
-
-  # Handle not having to deal with images
-  @impl true
-  def handle_event("save", %{"form" => params}, socket) do
-    save_build(socket, params)
-  end
-
-  defp save_build(socket, params) do
     case Form.submit(socket.assigns.form, params: params) do
       {:ok, build} ->
         {:noreply,

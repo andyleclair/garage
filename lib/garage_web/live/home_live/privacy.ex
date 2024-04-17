@@ -19,6 +19,13 @@ defmodule GarageWeb.HomeLive.Privacy do
         I'm not going to send you any email unless you ask me to.
       </p>
       <p>If you want to delete your account, just let me know and I'll take care of it.</p>
+      <p>
+        In return, I ask that you don't be a jerk. Don't post anything illegal, don't post anything hateful, don't post anything that you wouldn't want your mom to see.
+        If you do, I'll delete it and I'll probably ban you.
+        This is a hobby project and I don't want to spend a lot of time moderating it.
+        If you see something that you think is inappropriate, please report it.
+      </p>
+      <p>Thanks!</p>
     </article>
     """
   end

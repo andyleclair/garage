@@ -227,7 +227,14 @@ defmodule GarageWeb.UsersLive.Settings do
 
   @impl true
   def handle_event("save", %{"form" => form}, socket) do
-    params = Map.put(form, :avatar_url, socket.assigns.avatar_url)
+    params =
+      consume_uploaded_entries(socket, :avatar_url, fn upload, _entry ->
+        {:ok, public_path(upload.key)}
+      end)
+      |> case do
+        [] -> form
+        [avatar_url] -> Map.put(form, :avatar_url, avatar_url)
+      end
 
     case Form.submit(socket.assigns.form, params: params) do
       {:ok, user} ->
