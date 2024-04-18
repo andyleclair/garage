@@ -196,7 +196,6 @@ defmodule GarageWeb.BuildsLive.Edit do
 
     uploaded_files =
       consume_uploaded_entries(socket, :image_urls, fn upload, _entry ->
-        Logger.debug("Presigning upload for #{inspect(upload)}")
         {:ok, public_path(upload.key)}
       end)
 
@@ -248,15 +247,12 @@ defmodule GarageWeb.BuildsLive.Edit do
   defp presign_upload(entry, socket) do
     config = ExAws.Config.new(:s3)
     key = upload_path(socket.assigns.current_user, socket.assigns.build, entry)
-    Logger.debug("Presigning upload for #{key}")
 
     {:ok, url} =
       ExAws.S3.presigned_url(config, :put, bucket(), key,
         expires_in: 3600,
         query_params: [{"Content-Type", entry.client_type}]
       )
-
-    Logger.debug("Presigned URL: #{url}")
 
     socket =
       assign(socket, :uploaded_images, socket.assigns.uploaded_images ++ [public_path(key)])

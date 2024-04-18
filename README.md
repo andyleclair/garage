@@ -60,7 +60,7 @@
 - [ ] Rallies
 
 ## Known Issues
-- [ ] Image uploads are broken in prod
+- [x] Image uploads are broken in prod
 
 ### Installation
 
