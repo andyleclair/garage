@@ -7,9 +7,11 @@ defmodule GarageWeb.IgnitionLive.Index do
     <.header>
       All Ignitions
       <:actions>
-        <.link patch={~p"/ignitions/new"}>
-          <.button>New Ignition</.button>
-        </.link>
+        <%= if @current_user do %>
+          <.link patch={~p"/ignitions/new"}>
+            <.button>New Ignition</.button>
+          </.link>
+        <% end %>
       </:actions>
     </.header>
 

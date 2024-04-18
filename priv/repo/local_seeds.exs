@@ -39,6 +39,14 @@ possible_mopeds = [
   {"derbi", "revolution"}
 ]
 
+image_urls = [
+  "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev/garage%2Fusers%2Fadmin%2Fbuilds%2Fbig%20long%20ass%20moped%20bike%20name%20because%20i%20fuckin%20suck%20and%20i'm%20an%20asshole%20to%20everyone%2Fuploads%2F0223da64-fac5-4c80-b758-efc47845fc2f-IMG_23441116145026.jpeg",
+  "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev/garage%2Fusers%2Fadmin%2Fbuilds%2Fbig%20long%20ass%20moped%20bike%20name%20because%20i%20fuckin%20suck%20and%20i'm%20an%20asshole%20to%20everyone%2Fuploads%2F02fd25e1-52f3-45d4-8edc-3e10bbd9062c-MVIMG_20200715_200730.jpg",
+  "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev/garage%2Fusers%2Fadmin%2Fbuilds%2Fbig%20long%20ass%20moped%20bike%20name%20because%20i%20fuckin%20suck%20and%20i'm%20an%20asshole%20to%20everyone%2Fuploads%2F045db959-4cb0-4aeb-8230-8c6dc54b2f83-IMG_20200715_200733.jpg",
+  "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev/garage%2Fusers%2Fadmin%2Fbuilds%2Fbig%20long%20ass%20moped%20bike%20name%20because%20i%20fuckin%20suck%20and%20i'm%20an%20asshole%20to%20everyone%2Fuploads%2F0475a9cc-0d41-4fdd-8b3c-a66e9534ef1c-July%2020%2C%202014%20at%200501PM.jpg",
+  "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev/garage%2Fusers%2Fadmin%2Fbuilds%2Fbig%20long%20ass%20moped%20bike%20name%20because%20i%20fuckin%20suck%20and%20i'm%20an%20asshole%20to%20everyone%2Fuploads%2F0a747def-a8fc-4cf7-b056-54930f889101-PXL_20220828_152440295.jpg"
+]
+
 for i <- 1..25 do
   {make, model} = Enum.random(possible_mopeds)
   {:ok, make} = Manufacturer.get_by_slug(make, load: [:engines])
@@ -47,7 +55,13 @@ for i <- 1..25 do
   Ash.Changeset.for_create(
     Garage.Builds.Build,
     :create,
-    %{name: "My Build #{i} - beavis", manufacturer_id: make.id, model_id: model.id, year: 1989},
+    %{
+      name: "My Build #{i} - beavis",
+      manufacturer_id: make.id,
+      model_id: model.id,
+      year: 1989,
+      image_urls: image_urls
+    },
     actor: beavis
   )
   |> Ash.create!()
@@ -61,7 +75,13 @@ for i <- 1..25 do
   Ash.Changeset.for_create(
     Garage.Builds.Build,
     :create,
-    %{name: "My Build #{i} butthead", manufacturer_id: make.id, model_id: model.id, year: 1989},
+    %{
+      name: "My Build #{i} butthead",
+      manufacturer_id: make.id,
+      model_id: model.id,
+      image_urls: image_urls,
+      year: 1989
+    },
     actor: butthead
   )
   |> Ash.create!()

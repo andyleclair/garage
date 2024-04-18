@@ -30,7 +30,6 @@
           <.link navigate={~p"/cylinders"}>Cylinders</.link>
           <.link navigate={~p"/exhausts"}>Exhausts</.link>
           <.link navigate={~p"/ignitions"}>Ignitions</.link>
-          <.link navigate={~p"/pulleys"}>Pulleys</.link>
         </:content>
       </.dropdown>
       <%= if @current_user do %>
@@ -82,12 +81,11 @@
   </div>
   <!-- Hidden mobile menu -->
   <nav
-    hidden="true"
     id="mobile-menu"
-    class="absolute z-20 mt-2 w-full origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+    class="hidden absolute z-20 mt-2 p-4 flex flex-col gap-5 w-5/6 md:w-72 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
     phx-click-away={hide("#mobile-menu")}
   >
-    <div class="flex flex-col gap-5 p-4 bg-white rounded-lg shadow-lg ring-1 ring-zinc-200">
+    <div class="flex flex-col gap-5 p-4">
       <.link navigate={~p"/builds"}>Browse Builds</.link>
       <.link navigate={~p"/parts"}>All Parts</.link>
       <.link navigate={~p"/manufacturers"}>Manufacturers</.link>
@@ -99,7 +97,6 @@
       <.link navigate={~p"/cylinders"}>Cylinders</.link>
       <.link navigate={~p"/exhausts"}>Exhausts</.link>
       <.link navigate={~p"/ignitions"}>Ignitions</.link>
-      <.link navigate={~p"/pulleys"}>Pulleys</.link>
       <%= if @current_user do %>
         <.link patch={~p"/builds/new"}>
           <.button>

@@ -7,9 +7,11 @@ defmodule GarageWeb.ManufacturerLive.Index do
     <.header>
       All Manufacturers
       <:actions>
-        <.link patch={~p"/manufacturers/new"}>
-          <.button>New Manufacturer</.button>
-        </.link>
+        <%= if @current_user do %>
+          <.link patch={~p"/manufacturers/new"}>
+            <.button>New Manufacturer</.button>
+          </.link>
+        <% end %>
       </:actions>
     </.header>
 
@@ -29,11 +31,13 @@ defmodule GarageWeb.ManufacturerLive.Index do
       <:col :let={{_id, manufacturer}} label="Description"><%= manufacturer.description %></:col>
 
       <:action :let={{_id, manufacturer}}>
-        <div class="sr-only">
-          <.link navigate={~p"/manufacturers/#{manufacturer}"}>Show</.link>
-        </div>
+        <%= if @current_user do %>
+          <div class="sr-only">
+            <.link navigate={~p"/manufacturers/#{manufacturer}"}>Show</.link>
+          </div>
 
-        <.link patch={~p"/manufacturers/#{manufacturer}/edit"}>Edit</.link>
+          <.link patch={~p"/manufacturers/#{manufacturer}/edit"}>Edit</.link>
+        <% end %>
       </:action>
     </.table>
 

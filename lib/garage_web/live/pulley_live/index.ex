@@ -7,9 +7,11 @@ defmodule GarageWeb.PulleyLive.Index do
     <.header>
       All Pulleys
       <:actions>
-        <.link patch={~p"/pulleys/new"}>
-          <.button>New Pulley</.button>
-        </.link>
+        <%= if @current_user do %>
+          <.link patch={~p"/pulleys/new"}>
+            <.button>New Pulley</.button>
+          </.link>
+        <% end %>
       </:actions>
     </.header>
 

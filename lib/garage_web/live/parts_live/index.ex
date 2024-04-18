@@ -19,7 +19,6 @@ defmodule GarageWeb.PartsLive.Index do
         <.link navigate={~p"/cylinders"}>Cylinders</.link>
         <.link navigate={~p"/exhausts"}>Exhausts</.link>
         <.link navigate={~p"/ignitions"}>Ignitions</.link>
-        <.link navigate={~p"/pulleys"}>Pulleys</.link>
       </div>
     </div>
     """

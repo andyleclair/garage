@@ -7,9 +7,11 @@ defmodule GarageWeb.EngineLive.Index do
     <.header>
       All Engines
       <:actions>
-        <.link patch={~p"/engines/new"}>
-          <.button>New Engine</.button>
-        </.link>
+        <%= if @current_user do %>
+          <.link patch={~p"/engines/new"}>
+            <.button>New Engine</.button>
+          </.link>
+        <% end %>
       </:actions>
     </.header>
 
@@ -30,11 +32,13 @@ defmodule GarageWeb.EngineLive.Index do
       </:col>
 
       <:action :let={{_id, engine}}>
-        <div class="sr-only">
-          <.link navigate={~p"/engines/#{engine}"}>Show</.link>
-        </div>
+        <%= if @current_user do %>
+          <div class="sr-only">
+            <.link navigate={~p"/engines/#{engine}"}>Show</.link>
+          </div>
 
-        <.link patch={~p"/engines/#{engine}/edit"}>Edit</.link>
+          <.link patch={~p"/engines/#{engine}/edit"}>Edit</.link>
+        <% end %>
       </:action>
     </.table>
 

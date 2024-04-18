@@ -11,10 +11,12 @@
 <.header>
   <%= @build.name %>
   <:actions>
-    <%= if @current_user do %>
-      <.like_heart liked_by_user={@build.liked_by_user} class="mb-4" />
-      <.follow_button followed_by_user={@build.followed_by_user} class="mb-4" />
-    <% end %>
+    <.like_heart liked_by_user={@build.liked_by_user} current_user={@current_user} class="mb-4" />
+    <.follow_button
+      followed_by_user={@build.followed_by_user}
+      current_user={@current_user}
+      class="mb-4"
+    />
   </:actions>
 
   <:subtitle>
@@ -27,17 +29,17 @@
 <div class="mb-5">
   <div class="relative">
     <div
-      phx-click="prev-image"
+      phx-click={JS.push("prev-image") |> JS.transition("horizontal-shake", time: 300)}
       class="absolute inset-y-0 left-0 cursor-pointer flex flex-col justify-center"
     >
       <.icon name="hero-chevron-double-left" class="w-16 h-16 text-white" />
     </div>
     <img src={@selected_image} class="w-full rounded-md object-cover mb-5" />
     <div
-      phx-click="next-image"
+      phx-click={JS.push("next-image") |> JS.transition("horizontal-shake", time: 300)}
       class="absolute inset-y-0 right-0 cursor-pointer flex flex-col justify-center"
     >
-      <.icon name="hero-chevron-double-right" class="w-16 h-16 text-white " />
+      <.icon name="hero-chevron-double-right" class="w-16 h-16 text-white hover:text-slate-100" />
     </div>
   </div>
   <div class="flex items-inline space-x-4 overflow-x-auto">

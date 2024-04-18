@@ -7,9 +7,11 @@ defmodule GarageWeb.ExhaustLive.Index do
     <.header>
       All Exhausts
       <:actions>
-        <.link patch={~p"/exhausts/new"}>
-          <.button>New Exhaust</.button>
-        </.link>
+        <%= if @current_user do %>
+          <.link patch={~p"/exhausts/new"}>
+            <.button>New Exhaust</.button>
+          </.link>
+        <% end %>
       </:actions>
     </.header>
 

@@ -11,7 +11,9 @@ defmodule GarageWeb.BuildsLive.Index do
       All Builds
     </.header>
 
-    <div class="flex flex-col"><.build :for={build <- @builds} build={build} /></div>
+    <div class="flex flex-col">
+      <.build :for={build <- @builds} build={build} current_user={@current_user} />
+    </div>
 
     <.pagination
       id="pagination"
@@ -71,6 +73,9 @@ defmodule GarageWeb.BuildsLive.Index do
   end
 
   def load_page(limit, offset) do
-    Garage.Builds.Build.all_builds(page: [limit: limit, offset: offset, count: true])
+    Garage.Builds.Build.all_builds(
+      page: [limit: limit, offset: offset, count: true],
+      load: [:like_count, :follow_count]
+    )
   end
 end
