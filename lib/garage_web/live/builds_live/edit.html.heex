@@ -106,7 +106,7 @@
           <div class="drag-ghost:opacity-0">
             <img src={image_url} class="object-cover mb-5 rounded-lg" />
             <div
-              class="absolute top-0 right-0 cursor-pointer z-10 hover:border hover:border-red-500 hover:rounded-lg"
+              class="absolute top-2 right-2 cursor-pointer z-10 hover:ring-1 hover:ring-red-500 hover:rounded-lg"
               phx-click="delete-image"
               phx-value-ref={ref}
               id={"delete_image-#{ref}"}
@@ -137,7 +137,7 @@
               </progress>
 
               <div
-                class="absolute top-0 right-0 cursor-pointer z-10 hover:border hover:border-red-500 hover:rounded-lg"
+                class="absolute top-2 right-2 cursor-pointer z-10 hover:ring-1 hover:ring-red-500 hover:rounded-lg"
                 phx-click="cancel-upload"
                 phx-value-ref={entry.ref}
                 id={"close_pic-#{entry.ref}"}
