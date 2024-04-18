@@ -14,6 +14,7 @@ Uploaders.S3 = function(entries, onViewError) {
       }
     })
 
+    console.log(entry)
     let url = entry.meta.url
     xhr.open("PUT", url, true)
     xhr.send(entry.file)
