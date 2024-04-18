@@ -93,9 +93,9 @@
       </div>
     </div>
     <div class="flex flex-row justify-between">
-      <div class="font-black">Exhaust:</div>
-      <div :if={@build.exhaust}>
-        <%= @build.exhaust.manufacturer.name %> <%= @build.exhaust.name %>
+      <div class="font-black">Cylinder:</div>
+      <div :if={@build.cylinder}>
+        <%= @build.cylinder.displacement %> cc <%= @build.cylinder.manufacturer.name %> <%= @build.cylinder.name %>
       </div>
     </div>
     <div class="flex flex-row justify-between">

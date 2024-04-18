@@ -151,6 +151,7 @@ defmodule Garage.Builds.Build do
 
       change Garage.Changes.SetSlug
       change relate_actor(:builder)
+      notifiers [Garage.Notifiers.Discord]
     end
 
     update :update do
@@ -276,6 +277,7 @@ defmodule Garage.Builds.Build do
                 engine: [:manufacturer],
                 clutch: [:manufacturer],
                 exhaust: [:manufacturer],
+                cylinder: [:manufacturer],
                 carb_tuning: [carburetor: [:manufacturer]],
                 ignition: [:manufacturer]
               ]

@@ -74,10 +74,10 @@ defmodule GarageWeb.Components.Builds.Build do
                 <%= @build.carb_tuning.carburetor.manufacturer.name %> <%= @build.carb_tuning.carburetor.name %>
               </div>
             </div>
-            <div :if={@build.exhaust} class="flex flex-row justify-between">
-              <div class="font-black">Exhaust:</div>
+            <div :if={@build.cylinder} class="flex flex-row justify-between">
+              <div class="font-black">Cylinder:</div>
               <div>
-                <%= @build.exhaust.manufacturer.name %> <%= @build.exhaust.name %>
+                <%= @build.cylinder.manufacturer.name %> <%= @build.cylinder.name %>
               </div>
             </div>
             <div :if={@build.exhaust} class="flex flex-row justify-between">
