@@ -103,20 +103,6 @@ defmodule GarageWeb.ModelLive.Index do
     |> assign(:model, nil)
   end
 
-  @impl true
-  def handle_info({GarageWeb.ModelLive.FormComponent, {:saved, model}}, socket) do
-    model = Ash.get!(Garage.Mopeds.Model, model.id, actor: socket.assigns.current_user)
-    {:noreply, stream_insert(socket, :models, model)}
-  end
-
-  @impl true
-  def handle_event("delete", %{"id" => id}, socket) do
-    model = Ash.get!(Garage.Mopeds.Model, id, actor: socket.assigns.current_user)
-    Ash.destroy!(model, actor: socket.assigns.current_user)
-
-    {:noreply, stream_delete(socket, :models, model)}
-  end
-
   def load_page(limit, offset) do
     Garage.Mopeds.Model.all_models(page: [limit: limit, offset: offset, count: true])
   end

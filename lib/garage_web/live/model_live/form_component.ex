@@ -55,13 +55,11 @@ defmodule GarageWeb.ModelLive.FormComponent do
 
   def handle_event("save", %{"model" => model_params}, socket) do
     case AshPhoenix.Form.submit(socket.assigns.form, params: model_params) do
-      {:ok, model} ->
-        notify_parent({:saved, model})
-
+      {:ok, _model} ->
         socket =
           socket
           |> put_flash(:info, "Model #{socket.assigns.form.source.type}d successfully")
-          |> push_patch(to: socket.assigns.patch)
+          |> push_navigate(to: socket.assigns.patch)
 
         {:noreply, socket}
 
@@ -69,8 +67,6 @@ defmodule GarageWeb.ModelLive.FormComponent do
         {:noreply, assign(socket, form: form)}
     end
   end
-
-  defp notify_parent(msg), do: send(self(), {__MODULE__, msg})
 
   defp assign_form(%{assigns: %{model: model}} = socket) do
     form =
