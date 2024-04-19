@@ -75,6 +75,13 @@
     options={@exhaust_options}
   />
   <.live_select
+    label="Cylinder"
+    debounce="250"
+    phx-focus="set-default"
+    field={@form[:cylinder_id]}
+    options={@cylinder_options}
+  />
+  <.live_select
     label="Ignition"
     debounce="250"
     phx-focus="set-default"

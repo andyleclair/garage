@@ -28,3 +28,10 @@ config :ex_aws,
 config :ex_aws, :s3,
   scheme: "https://",
   host: "4e7e19d415ae25f4681ff5aa75b38d98.r2.cloudflarestorage.com"
+
+config :sentry,
+  dsn:
+    "https://153ece384847272c7b3cc11a022af3c4@o4507110221283328.ingest.us.sentry.io/4507110223839232",
+  environment_name: Mix.env(),
+  enable_source_code_context: true,
+  root_source_code_paths: [File.cwd!()]

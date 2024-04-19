@@ -10,6 +10,7 @@ defmodule GarageWeb.BuildsLive.Edit do
   alias Garage.Mopeds.Carburetor
   alias Garage.Mopeds.Engine
   alias Garage.Mopeds.Clutch
+  alias Garage.Mopeds.Cylinder
   alias Garage.Mopeds.Exhaust
   alias Garage.Mopeds.Ignition
 
@@ -30,6 +31,7 @@ defmodule GarageWeb.BuildsLive.Edit do
       clutches = Clutch.read_all!()
       exhausts = Exhaust.read_all!()
       ignitions = Ignition.read_all!()
+      cylinders = Cylinder.read_all!()
 
       # if we already have a manufacturer set, show the model dropdown
       models =
@@ -65,6 +67,7 @@ defmodule GarageWeb.BuildsLive.Edit do
        |> assign(:carburetor_options, to_options(carburetors, &carburetor_formatter/1))
        |> assign(:engine_options, to_options(engines, &engine_formatter/1))
        |> assign(:clutch_options, to_options(clutches, &clutch_formatter/1))
+       |> assign(:cylinder_options, to_options(cylinders, &cylinder_formatter/1))
        |> assign(:exhaust_options, to_options(exhausts, &exhaust_formatter/1))
        |> assign(:ignition_options, to_options(ignitions, &ignition_formatter/1))
        |> assign(:year_options, year_options)
@@ -121,7 +124,7 @@ defmodule GarageWeb.BuildsLive.Edit do
         "model" <> _ ->
           search_options(socket.assigns.model_options, text)
 
-        "[carb_tuning]" <> _ ->
+        "carb_tuning" <> _ ->
           search_options(socket.assigns.carburetor_options, text)
 
         "engine" <> _ ->
@@ -132,6 +135,9 @@ defmodule GarageWeb.BuildsLive.Edit do
 
         "exhaust" <> _ ->
           search_options(socket.assigns.exhaust_options, text)
+
+        "cylinder" <> _ ->
+          search_options(socket.assigns.cylinder_options, text)
 
         "ignition" <> _ ->
           search_options(socket.assigns.ignition_options, text)
@@ -163,6 +169,9 @@ defmodule GarageWeb.BuildsLive.Edit do
 
         "_exhaust" <> _ ->
           socket.assigns.exhaust_options
+
+        "_cylinder" <> _ ->
+          socket.assigns.cylinder_options
 
         "_ignition" <> _ ->
           socket.assigns.ignition_options
@@ -238,6 +247,10 @@ defmodule GarageWeb.BuildsLive.Edit do
 
   def exhaust_formatter(exhaust) do
     "#{exhaust.manufacturer.name} #{exhaust.name}"
+  end
+
+  def cylinder_formatter(cylinder) do
+    "#{cylinder.manufacturer.name} #{cylinder.name}"
   end
 
   def ignition_formatter(ignition) do
