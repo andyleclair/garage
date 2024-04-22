@@ -50,4 +50,10 @@ defmodule Garage.Mopeds.Exhaust do
 
     repo Garage.Repo
   end
+
+  defimpl GarageWeb.OptionsFormatter do
+    def format(exhaust) do
+      "#{exhaust.manufacturer.name} #{exhaust.name}"
+    end
+  end
 end

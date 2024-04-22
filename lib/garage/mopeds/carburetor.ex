@@ -71,4 +71,10 @@ defmodule Garage.Mopeds.Carburetor do
 
     repo Garage.Repo
   end
+
+  defimpl GarageWeb.OptionsFormatter do
+    def format(carburetor) do
+      "#{carburetor.manufacturer.name} #{carburetor.name}"
+    end
+  end
 end

@@ -50,4 +50,10 @@ defmodule Garage.Mopeds.Cylinder do
 
     repo Garage.Repo
   end
+
+  defimpl GarageWeb.OptionsFormatter do
+    def format(cylinder) do
+      "#{cylinder.manufacturer.name} #{cylinder.name}"
+    end
+  end
 end

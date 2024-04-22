@@ -61,11 +61,11 @@
     <% end %>
   </.inputs_for>
   <.live_select
-    label="Clutch"
+    label="Cylinder"
     debounce="250"
     phx-focus="set-default"
-    field={@form[:clutch_id]}
-    options={@clutch_options}
+    field={@form[:cylinder_id]}
+    options={@cylinder_options}
   />
   <.live_select
     label="Exhaust"
@@ -75,11 +75,18 @@
     options={@exhaust_options}
   />
   <.live_select
-    label="Cylinder"
+    label="Crank"
     debounce="250"
     phx-focus="set-default"
-    field={@form[:cylinder_id]}
-    options={@cylinder_options}
+    field={@form[:crank_id]}
+    options={@crank_options}
+  />
+  <.live_select
+    label="Clutch"
+    debounce="250"
+    phx-focus="set-default"
+    field={@form[:clutch_id]}
+    options={@clutch_options}
   />
   <.live_select
     label="Ignition"

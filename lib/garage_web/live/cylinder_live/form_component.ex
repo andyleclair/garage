@@ -39,7 +39,7 @@ defmodule GarageWeb.CylinderLive.FormComponent do
         <% end %>
 
         <.input field={@form[:name]} type="text" label="Name" />
-        <.input field={@form[:description]} type="text" label="Description" />
+        <.input field={@form[:description]} type="textarea" label="Description" />
         <.input field={@form[:displacement]} type="text" label="Displacement (cc)" />
         <.input field={@form[:bore]} type="text" label="Bore (mm)" />
         <:actions>

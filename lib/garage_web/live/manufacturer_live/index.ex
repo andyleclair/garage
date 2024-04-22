@@ -81,7 +81,7 @@ defmodule GarageWeb.ManufacturerLive.Index do
     |> assign(:page_title, "Edit Manufacturer")
     |> assign(
       :manufacturer,
-      Ash.get!(Garage.Mopeds.Manufacturer, id, actor: socket.assigns.current_user)
+      Garage.Mopeds.Manufacturer.get_by_slug!(id, actor: socket.assigns.current_user)
     )
   end
 

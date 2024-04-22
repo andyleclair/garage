@@ -40,7 +40,7 @@ defmodule GarageWeb.CarburetorLive.FormComponent do
         <% end %>
 
         <.input field={@form[:name]} type="text" label="Name" />
-        <.input field={@form[:description]} type="text" label="Description" />
+        <.input field={@form[:description]} type="textarea" label="Description" />
         <.tag_selector
           id="size-select"
           label="Sizes"

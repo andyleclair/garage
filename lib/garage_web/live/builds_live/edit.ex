@@ -5,14 +5,15 @@ defmodule GarageWeb.BuildsLive.Edit do
   alias AshPhoenix.Form
   alias ExAws.S3
   alias Garage.Builds.Build
-  alias Garage.Mopeds.Manufacturer
-  alias Garage.Mopeds.Model
   alias Garage.Mopeds.Carburetor
-  alias Garage.Mopeds.Engine
   alias Garage.Mopeds.Clutch
+  alias Garage.Mopeds.Crank
   alias Garage.Mopeds.Cylinder
+  alias Garage.Mopeds.Engine
   alias Garage.Mopeds.Exhaust
   alias Garage.Mopeds.Ignition
+  alias Garage.Mopeds.Manufacturer
+  alias Garage.Mopeds.Model
 
   import GarageWeb.BuildsLive.Helpers
   require Logger
@@ -32,6 +33,7 @@ defmodule GarageWeb.BuildsLive.Edit do
       exhausts = Exhaust.read_all!()
       ignitions = Ignition.read_all!()
       cylinders = Cylinder.read_all!()
+      crankshafts = Crank.read_all!()
 
       # if we already have a manufacturer set, show the model dropdown
       models =
@@ -54,7 +56,7 @@ defmodule GarageWeb.BuildsLive.Edit do
        socket
        |> assign(:title, "Edit Build")
        |> assign(:build, build)
-       |> assign(:manufacturer_options, to_options(manufacturers, &manufacturer_formatter/1))
+       |> assign(:manufacturer_options, to_options(manufacturers))
        |> assign(:images, images)
        |> assign(:uploaded_images, [])
        |> assign(:images_to_delete, [])
@@ -63,13 +65,14 @@ defmodule GarageWeb.BuildsLive.Edit do
        |> assign(:models, models)
        # get special treatment
        |> assign(:carburetors, carburetors)
-       |> assign(:model_options, to_options(models, &model_formatter/1))
-       |> assign(:carburetor_options, to_options(carburetors, &carburetor_formatter/1))
-       |> assign(:engine_options, to_options(engines, &engine_formatter/1))
-       |> assign(:clutch_options, to_options(clutches, &clutch_formatter/1))
-       |> assign(:cylinder_options, to_options(cylinders, &cylinder_formatter/1))
-       |> assign(:exhaust_options, to_options(exhausts, &exhaust_formatter/1))
-       |> assign(:ignition_options, to_options(ignitions, &ignition_formatter/1))
+       |> assign(:model_options, to_options(models))
+       |> assign(:carburetor_options, to_options(carburetors))
+       |> assign(:engine_options, to_options(engines))
+       |> assign(:clutch_options, to_options(clutches))
+       |> assign(:cylinder_options, to_options(cylinders))
+       |> assign(:exhaust_options, to_options(exhausts))
+       |> assign(:ignition_options, to_options(ignitions))
+       |> assign(:crank_options, to_options(crankshafts))
        |> assign(:year_options, year_options)
        |> assign_form(form)
        |> allow_upload(:image_urls,
@@ -141,6 +144,9 @@ defmodule GarageWeb.BuildsLive.Edit do
 
         "ignition" <> _ ->
           search_options(socket.assigns.ignition_options, text)
+
+        "crank" <> _ ->
+          search_options(socket.assigns.crank_options, text)
       end
 
     send_update(LiveSelect.Component, options: options, id: id)
@@ -175,6 +181,9 @@ defmodule GarageWeb.BuildsLive.Edit do
 
         "_ignition" <> _ ->
           socket.assigns.ignition_options
+
+        "_crank" <> _ ->
+          socket.assigns.crank_options
       end
 
     send_update(LiveSelect.Component, options: options, id: id)
@@ -223,38 +232,6 @@ defmodule GarageWeb.BuildsLive.Edit do
       {:error, form} ->
         {:noreply, assign_form(socket, form)}
     end
-  end
-
-  def manufacturer_formatter(manufacturer) do
-    manufacturer.name
-  end
-
-  def model_formatter(model) do
-    model.name
-  end
-
-  def carburetor_formatter(carburetor) do
-    "#{carburetor.manufacturer.name} #{carburetor.name}"
-  end
-
-  def engine_formatter(engine) do
-    "#{engine.manufacturer.name} #{engine.name}"
-  end
-
-  def clutch_formatter(clutch) do
-    "#{clutch.manufacturer.name} #{clutch.name}"
-  end
-
-  def exhaust_formatter(exhaust) do
-    "#{exhaust.manufacturer.name} #{exhaust.name}"
-  end
-
-  def cylinder_formatter(cylinder) do
-    "#{cylinder.manufacturer.name} #{cylinder.name}"
-  end
-
-  def ignition_formatter(ignition) do
-    "#{ignition.manufacturer.name} #{ignition.name}"
   end
 
   defp presign_upload(entry, socket) do
@@ -332,11 +309,7 @@ defmodule GarageWeb.BuildsLive.Edit do
       else
         models = Model.by_manufacturer_id!(manufacturer_id)
 
-        assign(
-          socket,
-          :model_options,
-          to_options(models, &model_formatter/1)
-        )
+        assign(socket, :model_options, to_options(models))
       end
     else
       socket

@@ -58,4 +58,10 @@ defmodule Garage.Mopeds.Crank do
 
     repo Garage.Repo
   end
+
+  defimpl GarageWeb.OptionsFormatter do
+    def format(crank) do
+      "#{crank.manufacturer.name} #{crank.name}"
+    end
+  end
 end

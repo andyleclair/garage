@@ -14,6 +14,21 @@ defmodule Garage.Mopeds.Model do
     create :create do
       primary? true
       change Garage.Changes.SetSlug
+
+      accept [
+        :name,
+        :description,
+        :manufacturer_id,
+        :stock_carburetor_id,
+        :stock_clutch_id,
+        :stock_crank_id,
+        :stock_cylinder_id,
+        :stock_engine_id,
+        :stock_exhaust_id,
+        :stock_ignition_id,
+        :stock_pulley_id,
+        :stock_variator_id
+      ]
     end
 
     read :by_slug do
@@ -92,5 +107,11 @@ defmodule Garage.Mopeds.Model do
     belongs_to :stock_ignition, Garage.Mopeds.Ignition, attribute_writable?: true
     belongs_to :stock_pulley, Garage.Mopeds.Pulley, attribute_writable?: true
     belongs_to :stock_variator, Garage.Mopeds.Variator, attribute_writable?: true
+  end
+
+  defimpl GarageWeb.OptionsFormatter do
+    def format(model) do
+      model.name
+    end
   end
 end

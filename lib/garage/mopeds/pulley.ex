@@ -62,4 +62,10 @@ defmodule Garage.Mopeds.Pulley do
 
     repo Garage.Repo
   end
+
+  defimpl GarageWeb.OptionsFormatter do
+    def format(pulley) do
+      "#{pulley.manufacturer.name} #{pulley.name}"
+    end
+  end
 end

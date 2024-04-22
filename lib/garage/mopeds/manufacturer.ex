@@ -61,7 +61,7 @@ defmodule Garage.Mopeds.Manufacturer do
     define :by_category, action: :by_category, args: [:category]
   end
 
-  @categories ~w(carburetors clutches cranks cylinders engines exhausts forks ignitions mopeds pulleys variators wheels)a
+  @categories ~w(carburetors clutches cranks cylinders engines exhausts ignitions mopeds pulleys variators)a
   attributes do
     uuid_primary_key :id
     attribute :name, :string, allow_nil?: false, public?: true
@@ -114,5 +114,11 @@ defmodule Garage.Mopeds.Manufacturer do
     has_many :models, Garage.Mopeds.Model
     has_many :pulleys, Garage.Mopeds.Pulley
     has_many :variators, Garage.Mopeds.Variator
+  end
+
+  defimpl GarageWeb.OptionsFormatter do
+    def format(manufacturer) do
+      manufacturer.name
+    end
   end
 end

@@ -37,7 +37,7 @@ defmodule GarageWeb.IgnitionLive.FormComponent do
           />
         <% end %>
         <.input field={@form[:name]} type="text" label="Name" />
-        <.input field={@form[:description]} type="text" label="Description" />
+        <.input field={@form[:description]} type="textarea" label="Description" />
 
         <:actions>
           <.button phx-disable-with="Saving...">Save Ignition</.button>
@@ -111,13 +111,11 @@ defmodule GarageWeb.IgnitionLive.FormComponent do
     form =
       if ignition do
         AshPhoenix.Form.for_update(ignition, :update,
-          domain: Garage.Mopeds,
           as: "ignition",
           actor: socket.assigns.current_user
         )
       else
         AshPhoenix.Form.for_create(Garage.Mopeds.Ignition, :create,
-          domain: Garage.Mopeds,
           as: "ignition",
           actor: socket.assigns.current_user
         )

@@ -37,7 +37,7 @@ defmodule GarageWeb.PulleyLive.FormComponent do
           />
         <% end %>
         <.input field={@form[:name]} type="text" label="Name" />
-        <.input field={@form[:description]} type="text" label="Description" />
+        <.input field={@form[:description]} type="textarea" label="Description" />
 
         <:actions>
           <.button phx-disable-with="Saving...">Save Pulley</.button>
@@ -110,13 +110,11 @@ defmodule GarageWeb.PulleyLive.FormComponent do
     form =
       if pulley do
         AshPhoenix.Form.for_update(pulley, :update,
-          domain: Garage.Mopeds,
           as: "pulley",
           actor: socket.assigns.current_user
         )
       else
         AshPhoenix.Form.for_create(Garage.Mopeds.Pulley, :create,
-          domain: Garage.Mopeds,
           as: "pulley",
           actor: socket.assigns.current_user
         )

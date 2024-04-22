@@ -37,7 +37,7 @@ defmodule GarageWeb.ClutchLive.FormComponent do
           />
         <% end %>
         <.input field={@form[:name]} type="text" label="Name" />
-        <.input field={@form[:description]} type="text" label="Description" />
+        <.input field={@form[:description]} type="textarea" label="Description" />
 
         <:actions>
           <.button phx-disable-with="Saving...">Save Clutch</.button>
@@ -112,13 +112,11 @@ defmodule GarageWeb.ClutchLive.FormComponent do
     form =
       if clutch do
         AshPhoenix.Form.for_update(clutch, :update,
-          domain: Garage.Mopeds,
           as: "clutch",
           actor: socket.assigns.current_user
         )
       else
         AshPhoenix.Form.for_create(Garage.Mopeds.Clutch, :create,
-          domain: Garage.Mopeds,
           as: "clutch",
           actor: socket.assigns.current_user
         )

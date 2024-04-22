@@ -28,7 +28,7 @@ defmodule GarageWeb.ManufacturerLive.FormComponent do
           mode={:tags}
           options={@categories}
         />
-        <.input field={@form[:description]} type="text" label="Description" />
+        <.input field={@form[:description]} type="textarea" label="Description" />
 
         <:actions>
           <.button phx-disable-with="Saving...">Save Manufacturer</.button>
@@ -94,13 +94,11 @@ defmodule GarageWeb.ManufacturerLive.FormComponent do
     form =
       if manufacturer do
         AshPhoenix.Form.for_update(manufacturer, :update,
-          domain: Garage.Mopeds,
           as: "manufacturer",
           actor: socket.assigns.current_user
         )
       else
         AshPhoenix.Form.for_create(Garage.Mopeds.Manufacturer, :create,
-          domain: Garage.Mopeds,
           as: "manufacturer",
           actor: socket.assigns.current_user
         )

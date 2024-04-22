@@ -22,7 +22,14 @@ defmodule Garage.Mopeds.Variator do
     attribute :name, :string, allow_nil?: false, public?: true
     attribute :description, :string, default: "", public?: true
     # in mm
+    attribute :type, :atom,
+      allow_nil?: false,
+      default: :rollers,
+      constraints: [one_of: [:rollers, :pivoting_arm]],
+      public?: true
+
     attribute :size, :integer, allow_nil?: false, public?: true
+    attribute :rollers, :integer, public?: true, constraints: [min: 3, max: 8]
 
     create_timestamp :inserted_at
     update_timestamp :updated_at
@@ -34,7 +41,7 @@ defmodule Garage.Mopeds.Variator do
     end
 
     belongs_to :manufacturer, Garage.Mopeds.Manufacturer do
-      attribute_writable? true
+      public? true
       allow_nil? false
     end
   end
@@ -51,5 +58,11 @@ defmodule Garage.Mopeds.Variator do
     table "variators"
 
     repo Garage.Repo
+  end
+
+  defimpl GarageWeb.OptionsFormatter do
+    def format(variator) do
+      "#{variator.manufacturer.name} #{variator.name}"
+    end
   end
 end

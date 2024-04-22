@@ -100,6 +100,8 @@ defmodule GarageWeb do
 
       import GarageWeb.TimeHelpers
 
+      import GarageWeb.Options
+
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS
 

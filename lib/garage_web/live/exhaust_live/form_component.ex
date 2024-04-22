@@ -37,7 +37,7 @@ defmodule GarageWeb.ExhaustLive.FormComponent do
           />
         <% end %>
         <.input field={@form[:name]} type="text" label="Name" />
-        <.input field={@form[:description]} type="text" label="Description" />
+        <.input field={@form[:description]} type="textarea" label="Description" />
 
         <:actions>
           <.button phx-disable-with="Saving...">Save Exhaust</.button>
@@ -111,13 +111,11 @@ defmodule GarageWeb.ExhaustLive.FormComponent do
     form =
       if exhaust do
         AshPhoenix.Form.for_update(exhaust, :update,
-          domain: Garage.Mopeds,
           as: "exhaust",
           actor: socket.assigns.current_user
         )
       else
         AshPhoenix.Form.for_create(Garage.Mopeds.Exhaust, :create,
-          domain: Garage.Mopeds,
           as: "exhaust",
           actor: socket.assigns.current_user
         )

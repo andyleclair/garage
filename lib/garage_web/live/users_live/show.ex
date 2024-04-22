@@ -4,7 +4,15 @@ defmodule GarageWeb.UsersLive.Show do
   import GarageWeb.Components.Builds.Build
 
   def mount(%{"username" => username}, _session, socket) do
-    {:ok, user} = User.get_by_username(username, load: [builds: [:like_count, :follow_count]])
-    {:ok, assign(socket, :user, user)}
+    case User.get_by_username(username, load: [builds: [:like_count, :follow_count]]) do
+      {:ok, user} ->
+        {:ok,
+         socket
+         |> assign(:user, user)
+         |> assign(:builds, user.builds)}
+
+      {:error, _} ->
+        {:ok, socket |> put_flash(:error, "Not Found") |> redirect(to: ~p"/")}
+    end
   end
 end

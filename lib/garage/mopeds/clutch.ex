@@ -50,4 +50,10 @@ defmodule Garage.Mopeds.Clutch do
 
     repo Garage.Repo
   end
+
+  defimpl GarageWeb.OptionsFormatter do
+    def format(clutch) do
+      "#{clutch.manufacturer.name} #{clutch.name}"
+    end
+  end
 end

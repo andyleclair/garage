@@ -43,7 +43,7 @@ defmodule Garage.Mopeds.Engine do
 
   relationships do
     belongs_to :manufacturer, Garage.Mopeds.Manufacturer do
-      attribute_writable? true
+      public? true
       allow_nil? false
     end
 
@@ -64,5 +64,11 @@ defmodule Garage.Mopeds.Engine do
     table "engines"
 
     repo Garage.Repo
+  end
+
+  defimpl GarageWeb.OptionsFormatter do
+    def format(engine) do
+      "#{engine.manufacturer.name} #{engine.name}"
+    end
   end
 end

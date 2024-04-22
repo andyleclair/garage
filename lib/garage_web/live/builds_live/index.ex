@@ -11,7 +11,7 @@ defmodule GarageWeb.BuildsLive.Index do
       All Builds
     </.header>
 
-    <div class="flex flex-col">
+    <div class="flex flex-col gap-y-4">
       <.build :for={build <- @builds} build={build} current_user={@current_user} />
     </div>
 
@@ -39,10 +39,22 @@ defmodule GarageWeb.BuildsLive.Index do
 
   @impl true
   def handle_params(params, _url, socket) do
+    active_page = page(params["page"])
+    offset = page_offset(active_page, socket.assigns.page_limit)
+    {:ok, page} = load_page(socket.assigns.page_limit, offset)
+
+    socket =
+      socket
+      |> assign(:pages, ceil(page.count / socket.assigns.page_limit))
+      |> assign(:total_entries, page.count)
+      |> assign(:builds, page.results)
+      |> assign(:active_page, active_page)
+      |> assign(:page_offset, offset)
+
     {:noreply, apply_action(socket, socket.assigns.live_action, params)}
   end
 
-  defp apply_action(socket, :index, %{"manufacturer" => manufacturer}) do
+  defp apply_action(socket, :index, %{"make" => manufacturer}) do
     {:ok, builds} = Build.by_manufacturer(manufacturer)
 
     socket
@@ -58,17 +70,8 @@ defmodule GarageWeb.BuildsLive.Index do
     |> assign(:page_title, "All Builds - #{model}")
   end
 
-  defp apply_action(socket, :index, params) do
-    active_page = page(params["page"])
-    offset = page_offset(active_page, socket.assigns.page_limit)
-    {:ok, page} = load_page(socket.assigns.page_limit, offset)
-
+  defp apply_action(socket, :index, _params) do
     socket
-    |> assign(:pages, ceil(page.count / socket.assigns.page_limit))
-    |> assign(:total_entries, page.count)
-    |> assign(:builds, page.results)
-    |> assign(:active_page, active_page)
-    |> assign(:page_offset, offset)
     |> assign(:page_title, "All Builds")
   end
 

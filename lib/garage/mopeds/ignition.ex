@@ -50,4 +50,10 @@ defmodule Garage.Mopeds.Ignition do
 
     repo Garage.Repo
   end
+
+  defimpl GarageWeb.OptionsFormatter do
+    def format(ignition) do
+      "#{ignition.manufacturer.name} #{ignition.name}"
+    end
+  end
 end
