@@ -30,6 +30,7 @@
           <.link navigate={~p"/cylinders"}>Cylinders</.link>
           <.link navigate={~p"/exhausts"}>Exhausts</.link>
           <.link navigate={~p"/ignitions"}>Ignitions</.link>
+          <.link navigate={~p"/variators"}>Variators</.link>
         </:content>
       </.dropdown>
       <%= if @current_user do %>
@@ -97,6 +98,7 @@
       <.link navigate={~p"/cylinders"}>Cylinders</.link>
       <.link navigate={~p"/exhausts"}>Exhausts</.link>
       <.link navigate={~p"/ignitions"}>Ignitions</.link>
+      <.link navigate={~p"/variators"}>Variators</.link>
       <%= if @current_user do %>
         <.link patch={~p"/builds/new"}>
           <.button>

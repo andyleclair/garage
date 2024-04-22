@@ -28,7 +28,7 @@ defmodule Garage.Mopeds.Variator do
       constraints: [one_of: [:rollers, :pivoting_arm]],
       public?: true
 
-    attribute :size, :integer, allow_nil?: false, public?: true
+    attribute :size, :integer, public?: true
     attribute :rollers, :integer, public?: true, constraints: [min: 3, max: 8]
 
     create_timestamp :inserted_at

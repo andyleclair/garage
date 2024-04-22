@@ -86,6 +86,7 @@ defmodule Garage.Mopeds.Manufacturer do
   end
 
   identities do
+    identity :name, [:name], eager_check_with: Garage.Mopeds
     identity :slug, [:slug]
   end
 

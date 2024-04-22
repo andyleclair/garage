@@ -65,7 +65,9 @@ config :ex_aws,
   http_client: ExAws.Finch,
   json_codec: Jason
 
-config :garage, ash_domains: [Garage.Builds, Garage.Mopeds, Garage.Accounts]
+config :garage,
+  ash_domains: [Garage.Builds, Garage.Mopeds, Garage.Accounts],
+  env: config_env()
 
 # config :crawly,
 #  closespider_timeout: 10,

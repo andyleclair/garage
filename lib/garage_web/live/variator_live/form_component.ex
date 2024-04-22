@@ -1,6 +1,7 @@
 defmodule GarageWeb.VariatorLive.FormComponent do
   use GarageWeb, :live_component
   alias Garage.Mopeds.Manufacturer
+  alias Garage.Mopeds.Variator
 
   @impl true
   def render(assigns) do
@@ -38,6 +39,39 @@ defmodule GarageWeb.VariatorLive.FormComponent do
         <% end %>
         <.input field={@form[:name]} type="text" label="Name" />
         <.input field={@form[:description]} type="textarea" label="Description" />
+        <.input field={@form[:size]} type="number" label="Size (mm)" />
+        <.input field={@form[:type]} type="select" label="Type" options={@types} />
+        <%= if AshPhoenix.Form.value(@form, :type) == :rollers do %>
+          <div class="grid grid-rows-2 mb-6 auto-rows-max">
+            <.input
+              field={@form[:rollers]}
+              type="range"
+              min={Ash.Resource.Info.attribute(Variator, :rollers).constraints[:min]}
+              max={Ash.Resource.Info.attribute(Variator, :rollers).constraints[:max]}
+              label="Number of Rollers"
+            />
+            <div class="flex flex-row flex-none justify-between items-center">
+              <span class="text-sm text-gray-500 dark:text-gray-400 ">
+                3
+              </span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 ">
+                4
+              </span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 ">
+                5
+              </span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 ">
+                6
+              </span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 ">
+                7
+              </span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 ">
+                8
+              </span>
+            </div>
+          </div>
+        <% end %>
 
         <:actions>
           <.button phx-disable-with="Saving...">Save Variator</.button>
@@ -53,6 +87,7 @@ defmodule GarageWeb.VariatorLive.FormComponent do
      socket
      |> assign(assigns)
      |> assign(:manufacturer_options, manufacturer_options())
+     |> assign(:types, types())
      |> assign_form()}
   end
 
@@ -128,5 +163,11 @@ defmodule GarageWeb.VariatorLive.FormComponent do
     for manufacturer <- Manufacturer.by_category!(:variators),
         into: [],
         do: {manufacturer.name, manufacturer.id}
+  end
+
+  def types() do
+    for t <-
+          Ash.Resource.Info.attribute(Garage.Mopeds.Variator, :type).constraints[:one_of],
+        do: {humanize(t), t}
   end
 end

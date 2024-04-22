@@ -67,15 +67,13 @@ defmodule GarageWeb.ManufacturerLive.FormComponent do
 
   @impl true
   def handle_event("validate", %{"manufacturer" => manufacturer_params}, socket) do
-    {:noreply,
-     assign(socket, form: AshPhoenix.Form.validate(socket.assigns.form, manufacturer_params))}
+    form = AshPhoenix.Form.validate(socket.assigns.form, manufacturer_params)
+    {:noreply, assign(socket, form: form)}
   end
 
   def handle_event("save", %{"manufacturer" => manufacturer_params}, socket) do
     case AshPhoenix.Form.submit(socket.assigns.form, params: manufacturer_params) do
-      {:ok, manufacturer} ->
-        notify_parent({:saved, manufacturer})
-
+      {:ok, _manufacturer} ->
         socket =
           socket
           |> put_flash(:info, "Manufacturer #{socket.assigns.form.source.type}d successfully")
@@ -87,8 +85,6 @@ defmodule GarageWeb.ManufacturerLive.FormComponent do
         {:noreply, assign(socket, form: form)}
     end
   end
-
-  defp notify_parent(msg), do: send(self(), {__MODULE__, msg})
 
   defp assign_form(%{assigns: %{manufacturer: manufacturer}} = socket) do
     form =
