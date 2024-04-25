@@ -1,23 +1,23 @@
 {
   "name": "Clinton",
   "engines": [],
-  "models": [
-    {
-      "name": "50-A"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "50-A Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "50-A"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

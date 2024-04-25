@@ -3,6 +3,7 @@
   "categories": [
     "cylinders",
     "engines",
+    "ignitions",
     "mopeds"
   ],
   "clutches": [],
@@ -33,7 +34,14 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "A55 OEM CDI"
+    },
+    {
+      "name": "A35 OEM CDI"
+    }
+  ],
   "models": [
     {
       "name": "TLS"

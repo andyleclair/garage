@@ -12,8 +12,8 @@
   ],
   "categories": [
     "carburetors",
-    "exhausts",
-    "cylinders"
+    "cylinders",
+    "exhausts"
   ],
   "clutches": [],
   "cylinders": [
@@ -115,5 +115,8 @@
       "name": "Derbi GPR Pipe"
     }
   ],
-  "name": "Polini"
+  "ignitions": [],
+  "name": "Polini",
+  "pulleys": [],
+  "variators": []
 }

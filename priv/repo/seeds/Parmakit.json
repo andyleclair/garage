@@ -48,5 +48,8 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "Parmakit"
+  "ignitions": [],
+  "name": "Parmakit",
+  "pulleys": [],
+  "variators": []
 }

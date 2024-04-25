@@ -95,5 +95,8 @@
       "name": "ST-Ripper for Derbi Flat Reed"
     }
   ],
-  "name": "MLM"
+  "ignitions": [],
+  "name": "MLM",
+  "pulleys": [],
+  "variators": []
 }

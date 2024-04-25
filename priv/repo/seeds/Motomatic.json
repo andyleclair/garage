@@ -20,5 +20,8 @@
       "name": "Destroyer for Derbi Flat Reed"
     }
   ],
-  "name": "Motomatic"
+  "ignitions": [],
+  "name": "Motomatic",
+  "pulleys": [],
+  "variators": []
 }

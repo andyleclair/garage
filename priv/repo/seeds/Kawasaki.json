@@ -11,5 +11,8 @@
     }
   ],
   "exhausts": [],
-  "name": "Kawasaki"
+  "ignitions": [],
+  "name": "Kawasaki",
+  "pulleys": [],
+  "variators": []
 }

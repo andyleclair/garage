@@ -1,0 +1,42 @@
+{
+  "carburetors": [],
+  "categories": [
+    "ignitions"
+  ],
+  "clutches": [],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [],
+  "ignitions": [
+    {
+      "name": "Tomos Mini Rotor CDI"
+    },
+    {
+      "name": "Tomos Inner Rotor CDI"
+    },
+    {
+      "name": "Sachs Mini Rotor CDI"
+    },
+    {
+      "name": "Puch Mini Rotor CDI"
+    },
+    {
+      "name": "Puch Inner Rotor CDI"
+    },
+    {
+      "name": "Honda Hobbit Mini Rotor CDI"
+    },
+    {
+      "name": "Honda Hobbit Inner Rotor CDI"
+    },
+    {
+      "name": "Derbi Mini Rotor CDI"
+    },
+    {
+      "name": "Derbi Inner Rotor CDI"
+    }
+  ],
+  "name": "HPI",
+  "pulleys": [],
+  "variators": []
+}

@@ -1,23 +1,23 @@
 {
   "name": "Carnielli",
   "engines": [],
-  "models": [
-    {
-      "name": "Moto-G"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Moto-G Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Moto-G"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

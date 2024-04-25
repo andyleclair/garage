@@ -47,5 +47,8 @@
       "name": "Honda Wallaroo"
     }
   ],
-  "name": "Simonini"
+  "ignitions": [],
+  "name": "Simonini",
+  "pulleys": [],
+  "variators": []
 }

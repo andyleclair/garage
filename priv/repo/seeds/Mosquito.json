@@ -1,19 +1,12 @@
 {
   "name": "Mosquito",
   "engines": [],
-  "models": [
-    {
-      "name": "38B"
-    },
-    {
-      "name": "Baby"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Baby Stock Exhaust"
@@ -22,8 +15,15 @@
       "name": "38B Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "38B"
+    },
+    {
+      "name": "Baby"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

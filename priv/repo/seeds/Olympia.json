@@ -1,0 +1,22 @@
+{
+  "carburetors": [],
+  "categories": [
+    "pulleys"
+  ],
+  "clutches": [],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [],
+  "ignitions": [],
+  "name": "Olympia",
+  "pulleys": [
+    {
+      "name": "Vespa Single Speed Pulley",
+      "sizes": [
+        95,
+        80
+      ]
+    }
+  ],
+  "variators": []
+}

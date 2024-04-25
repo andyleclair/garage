@@ -1,46 +1,12 @@
 {
   "name": "Malaguti",
   "engines": [],
-  "models": [
-    {
-      "name": "Commuter"
-    },
-    {
-      "name": "Commuter 2"
-    },
-    {
-      "name": "Commuter 20"
-    },
-    {
-      "name": "Europino"
-    },
-    {
-      "name": "Motorik"
-    },
-    {
-      "name": "Olympique"
-    },
-    {
-      "name": "Pilot"
-    },
-    {
-      "name": "Quattroto Mono"
-    },
-    {
-      "name": "Quattrotto"
-    },
-    {
-      "name": "Roxi"
-    },
-    {
-      "name": "Tiger"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Tiger Stock Exhaust"
@@ -76,8 +42,42 @@
       "name": "Commuter Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Commuter"
+    },
+    {
+      "name": "Commuter 2"
+    },
+    {
+      "name": "Commuter 20"
+    },
+    {
+      "name": "Europino"
+    },
+    {
+      "name": "Motorik"
+    },
+    {
+      "name": "Olympique"
+    },
+    {
+      "name": "Pilot"
+    },
+    {
+      "name": "Quattroto Mono"
+    },
+    {
+      "name": "Quattrotto"
+    },
+    {
+      "name": "Roxi"
+    },
+    {
+      "name": "Tiger"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

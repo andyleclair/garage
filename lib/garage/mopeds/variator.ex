@@ -30,6 +30,7 @@ defmodule Garage.Mopeds.Variator do
 
     attribute :size, :integer, public?: true
     attribute :rollers, :integer, public?: true, constraints: [min: 3, max: 8]
+    attribute :roller_size, :string, public?: true, constraints: [match: ~r/^\d{2}x\d{2}$/]
 
     create_timestamp :inserted_at
     update_timestamp :updated_at

@@ -29,5 +29,8 @@
       "name": "50cc Honda MB5"
     }
   ],
-  "name": "Homoet"
+  "ignitions": [],
+  "name": "Homoet",
+  "pulleys": [],
+  "variators": []
 }

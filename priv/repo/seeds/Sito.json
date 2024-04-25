@@ -14,5 +14,8 @@
       "name": "USA for Piaggio"
     }
   ],
-  "name": "Sito"
+  "ignitions": [],
+  "name": "Sito",
+  "pulleys": [],
+  "variators": []
 }

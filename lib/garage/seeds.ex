@@ -71,11 +71,13 @@ defmodule Garage.Seeds do
       "4" => :exhausts,
       "5" => :ignitions,
       "6" => :cranks,
-      "7" => :clutches
+      "7" => :clutches,
+      "8" => :variators,
+      "9" => :pulleys
     }
 
     json =
-      File.read!(Path.join([:code.priv_dir(:garage), "repo", "1977dump.json"])) |> Jason.decode!()
+      File.read!(Path.join([:code.priv_dir(:garage), "repo", "input.json"])) |> Jason.decode!()
 
     parts_by_manufacturer =
       Enum.reduce(json, %{}, fn {idx, records}, acc ->
@@ -115,6 +117,26 @@ defmodule Garage.Seeds do
                 :carburetors ->
                   Map.pop(part, "manufacturer")
 
+                :variators ->
+                  [manufacturer, name] = String.split(original_name, " ", parts: 2)
+
+                  {manufacturer,
+                   %{
+                     "name" => name,
+                     "type" => part["type"],
+                     "rollers" => part["rollers"],
+                     "size" => part["size"]
+                   }}
+
+                :pulleys ->
+                  [manufacturer, name] = String.split(original_name, " ", parts: 2)
+
+                  {manufacturer,
+                   %{
+                     "name" => name,
+                     "sizes" => part["sizes"]
+                   }}
+
                 _ ->
                   [manufacturer, name] = String.split(original_name, " ", parts: 2)
                   {manufacturer, %{"name" => name}}
@@ -143,8 +165,10 @@ defmodule Garage.Seeds do
             "carburetors" => Map.get(parts, :carburetors, []),
             "exhausts" => Map.get(parts, :exhausts, []),
             "cylinders" => Map.get(parts, :cylinders, []),
-            "clutches" => Map.get(parts, :clutches, [])
-            # "ignitions" => Map.get(parts, :ignitions, [])
+            "clutches" => Map.get(parts, :clutches, []),
+            "ignitions" => Map.get(parts, :ignitions, []),
+            "pulleys" => Map.get(parts, :pulleys, []),
+            "variators" => Map.get(parts, :variators, [])
           })
           |> then(fn rec ->
             Map.put(rec, "categories", record_to_categories(rec))
@@ -157,7 +181,9 @@ defmodule Garage.Seeds do
             "exhausts" => Map.get(parts, :exhausts, []),
             "cylinders" => Map.get(parts, :cylinders, []),
             "clutches" => Map.get(parts, :clutches, []),
-            # "ignitions" => Map.get(parts, :ignitions, []),
+            "ignitions" => Map.get(parts, :ignitions, []),
+            "variators" => Map.get(parts, :variators, []),
+            "pulleys" => Map.get(parts, :pulleys, []),
             "categories" => record_to_categories(parts)
           }
         end

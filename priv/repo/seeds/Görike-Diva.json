@@ -1,23 +1,23 @@
 {
   "name": "Görike-Diva",
   "engines": [],
-  "models": [
-    {
-      "name": "Luxus"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Luxus Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Luxus"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

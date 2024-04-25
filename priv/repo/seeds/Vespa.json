@@ -3,7 +3,9 @@
   "categories": [
     "cylinders",
     "engines",
-    "mopeds"
+    "ignitions",
+    "mopeds",
+    "pulleys"
   ],
   "clutches": [],
   "cranks": [],
@@ -34,7 +36,11 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "Stock Points"
+    }
+  ],
   "models": [
     {
       "name": "Boss"
@@ -98,6 +104,23 @@
     }
   ],
   "name": "Vespa",
-  "pulleys": [],
+  "pulleys": [
+    {
+      "name": "Single Speed Stock Pulley",
+      "sizes": [
+        70,
+        80,
+        65,
+        95
+      ]
+    },
+    {
+      "name": "Variated Stock Pulley",
+      "sizes": [
+        100,
+        90
+      ]
+    }
+  ],
   "variators": []
 }

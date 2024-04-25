@@ -23,5 +23,8 @@
       "name": "for Piaggio"
     }
   ],
-  "name": "Tecnigas"
+  "ignitions": [],
+  "name": "Tecnigas",
+  "pulleys": [],
+  "variators": []
 }

@@ -1,28 +1,12 @@
 {
   "name": "Fram",
   "engines": [],
-  "models": [
-    {
-      "name": "NR50"
-    },
-    {
-      "name": "NR51"
-    },
-    {
-      "name": "NR52"
-    },
-    {
-      "name": "NR65"
-    },
-    {
-      "name": "NR66"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "NR66 Stock Exhaust"
@@ -40,8 +24,24 @@
       "name": "NR50 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "NR50"
+    },
+    {
+      "name": "NR51"
+    },
+    {
+      "name": "NR52"
+    },
+    {
+      "name": "NR65"
+    },
+    {
+      "name": "NR66"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

@@ -1,23 +1,23 @@
 {
   "name": "Smythe",
   "engines": [],
-  "models": [
-    {
-      "name": "Misty"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Misty Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Misty"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

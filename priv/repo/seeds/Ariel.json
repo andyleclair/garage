@@ -1,19 +1,12 @@
 {
   "name": "Ariel",
   "engines": [],
-  "models": [
-    {
-      "name": "3"
-    },
-    {
-      "name": "Zizer"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Zizer Stock Exhaust"
@@ -22,8 +15,15 @@
       "name": "3 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "3"
+    },
+    {
+      "name": "Zizer"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

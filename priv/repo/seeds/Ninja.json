@@ -20,5 +20,8 @@
       "name": "G2 for Motobecane"
     }
   ],
-  "name": "Ninja"
+  "ignitions": [],
+  "name": "Ninja",
+  "pulleys": [],
+  "variators": []
 }

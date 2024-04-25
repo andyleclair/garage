@@ -1,23 +1,23 @@
 {
   "name": "Fongers",
   "engines": [],
-  "models": [
-    {
-      "name": "Tandem"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Tandem Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Tandem"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

@@ -1,52 +1,12 @@
 {
   "name": "Solo",
   "engines": [],
-  "models": [
-    {
-      "name": "710"
-    },
-    {
-      "name": "711"
-    },
-    {
-      "name": "712"
-    },
-    {
-      "name": "713"
-    },
-    {
-      "name": "715"
-    },
-    {
-      "name": "715B"
-    },
-    {
-      "name": "716"
-    },
-    {
-      "name": "722"
-    },
-    {
-      "name": "725"
-    },
-    {
-      "name": "726"
-    },
-    {
-      "name": "Electra"
-    },
-    {
-      "name": "Mini"
-    },
-    {
-      "name": "Odyssey"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Odyssey Stock Exhaust"
@@ -88,8 +48,48 @@
       "name": "710 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "710"
+    },
+    {
+      "name": "711"
+    },
+    {
+      "name": "712"
+    },
+    {
+      "name": "713"
+    },
+    {
+      "name": "715"
+    },
+    {
+      "name": "715B"
+    },
+    {
+      "name": "716"
+    },
+    {
+      "name": "722"
+    },
+    {
+      "name": "725"
+    },
+    {
+      "name": "726"
+    },
+    {
+      "name": "Electra"
+    },
+    {
+      "name": "Mini"
+    },
+    {
+      "name": "Odyssey"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

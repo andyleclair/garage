@@ -11,5 +11,8 @@
       "name": "Marmitta for Puch"
     }
   ],
-  "name": "Forza"
+  "ignitions": [],
+  "name": "Forza",
+  "pulleys": [],
+  "variators": []
 }

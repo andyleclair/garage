@@ -1,46 +1,12 @@
 {
   "name": "Odyssey",
   "engines": [],
-  "models": [
-    {
-      "name": "236"
-    },
-    {
-      "name": "237"
-    },
-    {
-      "name": "255"
-    },
-    {
-      "name": "284"
-    },
-    {
-      "name": "32/1-2"
-    },
-    {
-      "name": "32/1-R"
-    },
-    {
-      "name": "40/1-2"
-    },
-    {
-      "name": "40/1-R"
-    },
-    {
-      "name": "40/2-2"
-    },
-    {
-      "name": "40/2-R"
-    },
-    {
-      "name": "720"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "720 Stock Exhaust"
@@ -76,8 +42,42 @@
       "name": "236 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "236"
+    },
+    {
+      "name": "237"
+    },
+    {
+      "name": "255"
+    },
+    {
+      "name": "284"
+    },
+    {
+      "name": "32/1-2"
+    },
+    {
+      "name": "32/1-R"
+    },
+    {
+      "name": "40/1-2"
+    },
+    {
+      "name": "40/1-R"
+    },
+    {
+      "name": "40/2-2"
+    },
+    {
+      "name": "40/2-R"
+    },
+    {
+      "name": "720"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

@@ -17,5 +17,8 @@
   "cylinders": [],
   "engines": [],
   "exhausts": [],
-  "name": "Amal"
+  "ignitions": [],
+  "name": "Amal",
+  "pulleys": [],
+  "variators": []
 }

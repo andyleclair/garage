@@ -3,7 +3,9 @@
   "categories": [
     "cylinders",
     "engines",
-    "mopeds"
+    "ignitions",
+    "mopeds",
+    "pulleys"
   ],
   "clutches": [],
   "cranks": [],
@@ -28,7 +30,11 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "CDI"
+    }
+  ],
   "models": [
     {
       "name": "Majorette"
@@ -302,6 +308,11 @@
     }
   ],
   "name": "Motobecane",
-  "pulleys": [],
+  "pulleys": [
+    {
+      "name": "Stock Pulley",
+      "sizes": null
+    }
+  ],
   "variators": []
 }

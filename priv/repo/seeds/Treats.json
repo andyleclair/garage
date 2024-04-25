@@ -1,7 +1,10 @@
 {
   "carburetors": [],
   "categories": [
-    "cylinders"
+    "cylinders",
+    "ignitions",
+    "pulleys",
+    "variators"
   ],
   "clutches": [],
   "cylinders": [
@@ -12,5 +15,39 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "Treats"
+  "ignitions": [
+    {
+      "name": "Puch ZA50 CDI of the Stars"
+    },
+    {
+      "name": "Puch E50 CDI of the Stars"
+    },
+    {
+      "name": "Puch E50 Adventure Pack"
+    }
+  ],
+  "name": "Treats",
+  "pulleys": [
+    {
+      "name": "Vespa Single Speed Pulley",
+      "sizes": [
+        75,
+        80,
+        90,
+        95
+      ]
+    },
+    {
+      "name": "Honda Hobbit Pulley",
+      "sizes": null
+    }
+  ],
+  "variators": [
+    {
+      "name": "Honda Hobbit Variator",
+      "rollers": 6,
+      "size": null,
+      "type": "rollers"
+    }
+  ]
 }

@@ -1,31 +1,12 @@
 {
   "name": "Moto Guzzi",
   "engines": [],
-  "models": [
-    {
-      "name": "Chiu"
-    },
-    {
-      "name": "Dingo"
-    },
-    {
-      "name": "G2"
-    },
-    {
-      "name": "Magnum"
-    },
-    {
-      "name": "Robin"
-    },
-    {
-      "name": "Trotter"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Trotter Stock Exhaust"
@@ -46,8 +27,27 @@
       "name": "Chiu Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Chiu"
+    },
+    {
+      "name": "Dingo"
+    },
+    {
+      "name": "G2"
+    },
+    {
+      "name": "Magnum"
+    },
+    {
+      "name": "Robin"
+    },
+    {
+      "name": "Trotter"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

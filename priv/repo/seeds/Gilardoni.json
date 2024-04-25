@@ -28,5 +28,8 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "Gilardoni"
+  "ignitions": [],
+  "name": "Gilardoni",
+  "pulleys": [],
+  "variators": []
 }

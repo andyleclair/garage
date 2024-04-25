@@ -3,7 +3,9 @@
   "categories": [
     "clutches",
     "engines",
-    "mopeds"
+    "mopeds",
+    "pulleys",
+    "variators"
   ],
   "clutches": [
     {
@@ -127,6 +129,36 @@
     }
   ],
   "name": "Derbi",
-  "pulleys": [],
-  "variators": []
+  "pulleys": [
+    {
+      "name": "Start III Stock Pulley",
+      "sizes": null
+    },
+    {
+      "name": "Start V Stock Pulley",
+      "sizes": null
+    },
+    {
+      "name": "Flat Reed Stock Pulley",
+      "sizes": null
+    },
+    {
+      "name": "Piston Port/Pyramid Reed Stock Pulley",
+      "sizes": null
+    }
+  ],
+  "variators": [
+    {
+      "name": "Stock 6-Roller",
+      "rollers": 6,
+      "size": null,
+      "type": "rollers"
+    },
+    {
+      "name": "Stock 3-Roller",
+      "rollers": 3,
+      "size": null,
+      "type": "rollers"
+    }
+  ]
 }

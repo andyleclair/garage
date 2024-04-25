@@ -1,19 +1,12 @@
 {
   "name": "Legnano",
   "engines": [],
-  "models": [
-    {
-      "name": "Mini Mars"
-    },
-    {
-      "name": "Super Sport"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Super Sport Stock Exhaust"
@@ -22,8 +15,15 @@
       "name": "Mini Mars Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Mini Mars"
+    },
+    {
+      "name": "Super Sport"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

@@ -11,5 +11,8 @@
       "name": "Puch"
     }
   ],
-  "name": "Jamarcol"
+  "ignitions": [],
+  "name": "Jamarcol",
+  "pulleys": [],
+  "variators": []
 }

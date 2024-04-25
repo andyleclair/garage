@@ -32,5 +32,8 @@
       "name": "for Derbi FlatReed"
     }
   ],
-  "name": "Weak-Ends"
+  "ignitions": [],
+  "name": "Weak-Ends",
+  "pulleys": [],
+  "variators": []
 }

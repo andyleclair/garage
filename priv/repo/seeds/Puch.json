@@ -4,6 +4,7 @@
     "clutches",
     "cylinders",
     "engines",
+    "ignitions",
     "mopeds"
   ],
   "clutches": [
@@ -45,7 +46,11 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "Stock Points"
+    }
+  ],
   "models": [
     {
       "name": "VS50L"

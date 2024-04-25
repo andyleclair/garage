@@ -20,5 +20,8 @@
   "cylinders": [],
   "engines": [],
   "exhausts": [],
-  "name": "OKO"
+  "ignitions": [],
+  "name": "OKO",
+  "pulleys": [],
+  "variators": []
 }

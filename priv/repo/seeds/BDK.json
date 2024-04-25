@@ -7,5 +7,12 @@
   "cylinders": [],
   "engines": [],
   "exhausts": [],
-  "name": "BDK"
+  "ignitions": [
+    {
+      "name": "Stock Modded CDI"
+    }
+  ],
+  "name": "BDK",
+  "pulleys": [],
+  "variators": []
 }

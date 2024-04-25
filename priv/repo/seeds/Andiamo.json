@@ -1,25 +1,12 @@
 {
   "name": "Andiamo",
   "engines": [],
-  "models": [
-    {
-      "name": "E-1"
-    },
-    {
-      "name": "E-2"
-    },
-    {
-      "name": "L-1"
-    },
-    {
-      "name": "L-2"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "L-2 Stock Exhaust"
@@ -34,8 +21,21 @@
       "name": "E-1 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "E-1"
+    },
+    {
+      "name": "E-2"
+    },
+    {
+      "name": "L-1"
+    },
+    {
+      "name": "L-2"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

@@ -20,5 +20,8 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "DR"
+  "ignitions": [],
+  "name": "DR",
+  "pulleys": [],
+  "variators": []
 }

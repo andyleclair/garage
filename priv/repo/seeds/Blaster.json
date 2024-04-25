@@ -14,5 +14,8 @@
       "name": "Hurricane for Garelli"
     }
   ],
-  "name": "Blaster"
+  "ignitions": [],
+  "name": "Blaster",
+  "pulleys": [],
+  "variators": []
 }

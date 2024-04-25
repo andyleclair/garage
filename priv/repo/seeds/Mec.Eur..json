@@ -40,5 +40,8 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "Mec.Eur."
+  "ignitions": [],
+  "name": "Mec.Eur.",
+  "pulleys": [],
+  "variators": []
 }

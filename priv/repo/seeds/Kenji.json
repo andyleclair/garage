@@ -11,5 +11,8 @@
       "name": "Peugeot"
     }
   ],
-  "name": "Kenji"
+  "ignitions": [],
+  "name": "Kenji",
+  "pulleys": [],
+  "variators": []
 }

@@ -1,40 +1,12 @@
 {
   "name": "NVT",
   "engines": [],
-  "models": [
-    {
-      "name": "ER1"
-    },
-    {
-      "name": "ER1SS"
-    },
-    {
-      "name": "ER2"
-    },
-    {
-      "name": "ER2L"
-    },
-    {
-      "name": "ER2P"
-    },
-    {
-      "name": "ER2SS"
-    },
-    {
-      "name": "Easy Rider"
-    },
-    {
-      "name": "Jubilee"
-    },
-    {
-      "name": "Lance"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Lance Stock Exhaust"
@@ -64,8 +36,36 @@
       "name": "ER1 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "ER1"
+    },
+    {
+      "name": "ER1SS"
+    },
+    {
+      "name": "ER2"
+    },
+    {
+      "name": "ER2L"
+    },
+    {
+      "name": "ER2P"
+    },
+    {
+      "name": "ER2SS"
+    },
+    {
+      "name": "Easy Rider"
+    },
+    {
+      "name": "Jubilee"
+    },
+    {
+      "name": "Lance"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

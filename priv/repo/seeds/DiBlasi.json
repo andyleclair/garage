@@ -1,19 +1,12 @@
 {
   "name": "DiBlasi",
   "engines": [],
-  "models": [
-    {
-      "name": "R2"
-    },
-    {
-      "name": "R7"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "R7 Stock Exhaust"
@@ -22,8 +15,15 @@
       "name": "R2 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "R2"
+    },
+    {
+      "name": "R7"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

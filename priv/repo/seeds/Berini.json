@@ -1,55 +1,12 @@
 {
   "name": "Berini",
   "engines": [],
-  "models": [
-    {
-      "name": "Berinette"
-    },
-    {
-      "name": "Corona"
-    },
-    {
-      "name": "Eko"
-    },
-    {
-      "name": "F55"
-    },
-    {
-      "name": "Jeunesse"
-    },
-    {
-      "name": "M13"
-    },
-    {
-      "name": "M19"
-    },
-    {
-      "name": "M21"
-    },
-    {
-      "name": "M21 Sport"
-    },
-    {
-      "name": "M23"
-    },
-    {
-      "name": "M31"
-    },
-    {
-      "name": "M35"
-    },
-    {
-      "name": "M48"
-    },
-    {
-      "name": "Miniped"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Miniped Stock Exhaust"
@@ -94,8 +51,51 @@
       "name": "Berinette Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Berinette"
+    },
+    {
+      "name": "Corona"
+    },
+    {
+      "name": "Eko"
+    },
+    {
+      "name": "F55"
+    },
+    {
+      "name": "Jeunesse"
+    },
+    {
+      "name": "M13"
+    },
+    {
+      "name": "M19"
+    },
+    {
+      "name": "M21"
+    },
+    {
+      "name": "M21 Sport"
+    },
+    {
+      "name": "M23"
+    },
+    {
+      "name": "M31"
+    },
+    {
+      "name": "M35"
+    },
+    {
+      "name": "M48"
+    },
+    {
+      "name": "Miniped"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

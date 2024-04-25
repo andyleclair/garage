@@ -4,8 +4,8 @@
     "engines",
     "clutches",
     "cranks",
-    "ignitions",
-    "cylinders"
+    "cylinders",
+    "ignitions"
   ],
   "clutches": [
     {
@@ -33,5 +33,12 @@
     }
   ],
   "exhausts": [],
-  "name": "Minarelli"
+  "ignitions": [
+    {
+      "name": "Stock Points"
+    }
+  ],
+  "name": "Minarelli",
+  "pulleys": [],
+  "variators": []
 }

@@ -1,22 +1,12 @@
 {
   "name": "Sears",
   "engines": [],
-  "models": [
-    {
-      "name": "Allstate"
-    },
-    {
-      "name": "Free Spirit"
-    },
-    {
-      "name": "VS50L"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "VS50L Stock Exhaust"
@@ -28,8 +18,18 @@
       "name": "Allstate Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Allstate"
+    },
+    {
+      "name": "Free Spirit"
+    },
+    {
+      "name": "VS50L"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

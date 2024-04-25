@@ -22,5 +22,8 @@
   "cylinders": [],
   "engines": [],
   "exhausts": [],
-  "name": "Dakar"
+  "ignitions": [],
+  "name": "Dakar",
+  "pulleys": [],
+  "variators": []
 }

@@ -1,23 +1,23 @@
 {
   "name": "Indigan",
   "engines": [],
-  "models": [
-    {
-      "name": "Trail"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Trail Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Trail"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

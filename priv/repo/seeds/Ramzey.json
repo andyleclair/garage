@@ -1,6 +1,19 @@
 {
-  "name": "Ramzey",
+  "carburetors": [],
+  "categories": [
+    "ignitions",
+    "mopeds"
+  ],
+  "clutches": [],
+  "cranks": [],
+  "cylinders": [],
   "engines": [],
+  "exhausts": [],
+  "ignitions": [
+    {
+      "name": "CDI for Peugeot"
+    }
+  ],
   "models": [
     {
       "name": "Comfort"
@@ -18,30 +31,7 @@
       "name": "Wolf"
     }
   ],
-  "clutches": [],
-  "cranks": [],
-  "ignitions": [],
+  "name": "Ramzey",
   "pulleys": [],
-  "variators": [],
-  "exhausts": [
-    {
-      "name": "Wolf Stock Exhaust"
-    },
-    {
-      "name": "Prestige Classic Stock Exhaust"
-    },
-    {
-      "name": "Prestige Stock Exhaust"
-    },
-    {
-      "name": "Magnum SAfkan Stock Exhaust"
-    },
-    {
-      "name": "Comfort Stock Exhaust"
-    }
-  ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "variators": []
 }

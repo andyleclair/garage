@@ -1,7 +1,10 @@
 {
   "carburetors": [],
   "categories": [
-    "cylinders"
+    "cylinders",
+    "ignitions",
+    "pulleys",
+    "variators"
   ],
   "clutches": [],
   "cylinders": [
@@ -56,5 +59,50 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "Malossi"
+  "ignitions": [
+    {
+      "name": "CDI for Peugeot "
+    }
+  ],
+  "name": "Malossi",
+  "pulleys": [
+    {
+      "name": "Vespa Overrange Racing Pulley",
+      "sizes": [
+        102
+      ]
+    },
+    {
+      "name": "Vespa Racing Pulley",
+      "sizes": [
+        102
+      ]
+    }
+  ],
+  "variators": [
+    {
+      "name": "Variotop for Motobecane - REVERSED No Clutch",
+      "rollers": null,
+      "size": 114,
+      "type": "pivoting_arm"
+    },
+    {
+      "name": "Large Variotop for Motobecane - No Clutch",
+      "rollers": null,
+      "size": 114,
+      "type": "pivoting_arm"
+    },
+    {
+      "name": "Variotop for Motobecane - No Clutch",
+      "rollers": null,
+      "size": 106,
+      "type": "pivoting_arm"
+    },
+    {
+      "name": "Varplus for Motobecane",
+      "rollers": 3,
+      "size": 106,
+      "type": "rollers"
+    }
+  ]
 }

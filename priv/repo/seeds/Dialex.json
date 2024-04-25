@@ -1,23 +1,23 @@
 {
   "name": "Dialex",
   "engines": [],
-  "models": [
-    {
-      "name": "E-Z Rider"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "E-Z Rider Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "E-Z Rider"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

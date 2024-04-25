@@ -1,40 +1,12 @@
 {
   "name": "Bianchi",
   "engines": [],
-  "models": [
-    {
-      "name": "Aquilotto"
-    },
-    {
-      "name": "Bianchimatic"
-    },
-    {
-      "name": "Falco"
-    },
-    {
-      "name": "Laser"
-    },
-    {
-      "name": "Snark"
-    },
-    {
-      "name": "Snark Eagle Deluxe"
-    },
-    {
-      "name": "Snark Eagle Standard"
-    },
-    {
-      "name": "Snark Satelite"
-    },
-    {
-      "name": "Snark Stardust"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Snark Stardust Stock Exhaust"
@@ -64,8 +36,36 @@
       "name": "Aquilotto Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Aquilotto"
+    },
+    {
+      "name": "Bianchimatic"
+    },
+    {
+      "name": "Falco"
+    },
+    {
+      "name": "Laser"
+    },
+    {
+      "name": "Snark"
+    },
+    {
+      "name": "Snark Eagle Deluxe"
+    },
+    {
+      "name": "Snark Eagle Standard"
+    },
+    {
+      "name": "Snark Satelite"
+    },
+    {
+      "name": "Snark Stardust"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

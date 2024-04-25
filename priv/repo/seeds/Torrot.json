@@ -1,52 +1,12 @@
 {
   "name": "Torrot",
   "engines": [],
-  "models": [
-    {
-      "name": "City"
-    },
-    {
-      "name": "City Lujo"
-    },
-    {
-      "name": "City TT"
-    },
-    {
-      "name": "Gran Cross"
-    },
-    {
-      "name": "Maxi"
-    },
-    {
-      "name": "Mini"
-    },
-    {
-      "name": "Mustang"
-    },
-    {
-      "name": "Panther"
-    },
-    {
-      "name": "Sport 4V"
-    },
-    {
-      "name": "TT50"
-    },
-    {
-      "name": "Tiburon"
-    },
-    {
-      "name": "Trial"
-    },
-    {
-      "name": "Turismo"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Turismo Stock Exhaust"
@@ -88,8 +48,48 @@
       "name": "City Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "City"
+    },
+    {
+      "name": "City Lujo"
+    },
+    {
+      "name": "City TT"
+    },
+    {
+      "name": "Gran Cross"
+    },
+    {
+      "name": "Maxi"
+    },
+    {
+      "name": "Mini"
+    },
+    {
+      "name": "Mustang"
+    },
+    {
+      "name": "Panther"
+    },
+    {
+      "name": "Sport 4V"
+    },
+    {
+      "name": "TT50"
+    },
+    {
+      "name": "Tiburon"
+    },
+    {
+      "name": "Trial"
+    },
+    {
+      "name": "Turismo"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

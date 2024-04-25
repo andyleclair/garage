@@ -1,52 +1,12 @@
 {
   "name": "AMF",
   "engines": [],
-  "models": [
-    {
-      "name": "ALL-PRO"
-    },
-    {
-      "name": "Roadmaster A110"
-    },
-    {
-      "name": "Roadmaster A115"
-    },
-    {
-      "name": "Roadmaster B110"
-    },
-    {
-      "name": "Roadmaster B115"
-    },
-    {
-      "name": "Roadmaster B120"
-    },
-    {
-      "name": "Roadmaster B125"
-    },
-    {
-      "name": "Roadmaster C110"
-    },
-    {
-      "name": "Roadmaster C120"
-    },
-    {
-      "name": "Roadmaster C130"
-    },
-    {
-      "name": "Roadmaster C140"
-    },
-    {
-      "name": "Roadmaster XL"
-    },
-    {
-      "name": "Roadmaster XL Deluxe"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Roadmaster XL Deluxe Stock Exhaust"
@@ -88,8 +48,48 @@
       "name": "ALL-PRO Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "ALL-PRO"
+    },
+    {
+      "name": "Roadmaster A110"
+    },
+    {
+      "name": "Roadmaster A115"
+    },
+    {
+      "name": "Roadmaster B110"
+    },
+    {
+      "name": "Roadmaster B115"
+    },
+    {
+      "name": "Roadmaster B120"
+    },
+    {
+      "name": "Roadmaster B125"
+    },
+    {
+      "name": "Roadmaster C110"
+    },
+    {
+      "name": "Roadmaster C120"
+    },
+    {
+      "name": "Roadmaster C130"
+    },
+    {
+      "name": "Roadmaster C140"
+    },
+    {
+      "name": "Roadmaster XL"
+    },
+    {
+      "name": "Roadmaster XL Deluxe"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

@@ -11,5 +11,8 @@
       "name": "Peugeot"
     }
   ],
-  "name": "Bidalot"
+  "ignitions": [],
+  "name": "Bidalot",
+  "pulleys": [],
+  "variators": []
 }

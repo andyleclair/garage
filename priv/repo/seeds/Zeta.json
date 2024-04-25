@@ -12,5 +12,8 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "Zeta"
+  "ignitions": [],
+  "name": "Zeta",
+  "pulleys": [],
+  "variators": []
 }

@@ -1,55 +1,12 @@
 {
   "name": "Cimatti",
   "engines": [],
-  "models": [
-    {
-      "name": "4M"
-    },
-    {
-      "name": "86XL Radial 4M"
-    },
-    {
-      "name": "Bat Baby"
-    },
-    {
-      "name": "Bob Cat"
-    },
-    {
-      "name": "Boy"
-    },
-    {
-      "name": "C50"
-    },
-    {
-      "name": "Chic"
-    },
-    {
-      "name": "City Bike"
-    },
-    {
-      "name": "Express"
-    },
-    {
-      "name": "Gran Prix XL"
-    },
-    {
-      "name": "Kaiman Super 6m Radial X21"
-    },
-    {
-      "name": "Piper V1 KS Deluxe"
-    },
-    {
-      "name": "Town Bike"
-    },
-    {
-      "name": "Twin Sport"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Twin Sport Stock Exhaust"
@@ -94,8 +51,51 @@
       "name": "4M Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "4M"
+    },
+    {
+      "name": "86XL Radial 4M"
+    },
+    {
+      "name": "Bat Baby"
+    },
+    {
+      "name": "Bob Cat"
+    },
+    {
+      "name": "Boy"
+    },
+    {
+      "name": "C50"
+    },
+    {
+      "name": "Chic"
+    },
+    {
+      "name": "City Bike"
+    },
+    {
+      "name": "Express"
+    },
+    {
+      "name": "Gran Prix XL"
+    },
+    {
+      "name": "Kaiman Super 6m Radial X21"
+    },
+    {
+      "name": "Piper V1 KS Deluxe"
+    },
+    {
+      "name": "Town Bike"
+    },
+    {
+      "name": "Twin Sport"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

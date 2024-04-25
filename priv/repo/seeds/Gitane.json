@@ -1,28 +1,12 @@
 {
   "name": "Gitane",
   "engines": [],
-  "models": [
-    {
-      "name": "CL-200"
-    },
-    {
-      "name": "Confort"
-    },
-    {
-      "name": "Cricket"
-    },
-    {
-      "name": "Jeans"
-    },
-    {
-      "name": "OKS"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "OKS Stock Exhaust"
@@ -40,8 +24,24 @@
       "name": "CL-200 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "CL-200"
+    },
+    {
+      "name": "Confort"
+    },
+    {
+      "name": "Cricket"
+    },
+    {
+      "name": "Jeans"
+    },
+    {
+      "name": "OKS"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

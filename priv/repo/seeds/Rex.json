@@ -1,23 +1,23 @@
 {
   "name": "Rex",
   "engines": [],
-  "models": [
-    {
-      "name": "Monaco"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Monaco Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Monaco"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

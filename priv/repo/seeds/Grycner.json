@@ -1,25 +1,12 @@
 {
   "name": "Grycner",
   "engines": [],
-  "models": [
-    {
-      "name": "Desert Classic"
-    },
-    {
-      "name": "Floozie"
-    },
-    {
-      "name": "LaJolla"
-    },
-    {
-      "name": "Palm Springs"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Palm Springs Stock Exhaust"
@@ -34,8 +21,21 @@
       "name": "Desert Classic Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Desert Classic"
+    },
+    {
+      "name": "Floozie"
+    },
+    {
+      "name": "LaJolla"
+    },
+    {
+      "name": "Palm Springs"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

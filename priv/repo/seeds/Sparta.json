@@ -1,100 +1,12 @@
 {
   "name": "Sparta",
   "engines": [],
-  "models": [
-    {
-      "name": "2V"
-    },
-    {
-      "name": "Buddy"
-    },
-    {
-      "name": "Foxi"
-    },
-    {
-      "name": "Foxi GT Sport"
-    },
-    {
-      "name": "G50"
-    },
-    {
-      "name": "GB50"
-    },
-    {
-      "name": "GC50"
-    },
-    {
-      "name": "GD 50"
-    },
-    {
-      "name": "GE 50 Sport"
-    },
-    {
-      "name": "GE 50 Tour"
-    },
-    {
-      "name": "GF50"
-    },
-    {
-      "name": "GH50"
-    },
-    {
-      "name": "GS50"
-    },
-    {
-      "name": "Grand Sport"
-    },
-    {
-      "name": "Happy"
-    },
-    {
-      "name": "Happy Mini"
-    },
-    {
-      "name": "Lucky"
-    },
-    {
-      "name": "MB 50"
-    },
-    {
-      "name": "Met"
-    },
-    {
-      "name": "Met Tandem"
-    },
-    {
-      "name": "SB 50"
-    },
-    {
-      "name": "SE 50"
-    },
-    {
-      "name": "Spartamatic"
-    },
-    {
-      "name": "Sport"
-    },
-    {
-      "name": "Sport 3V"
-    },
-    {
-      "name": "Sport 4"
-    },
-    {
-      "name": "Super Sport"
-    },
-    {
-      "name": "Tour"
-    },
-    {
-      "name": "Typen"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Typen Stock Exhaust"
@@ -184,8 +96,96 @@
       "name": "2V Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "2V"
+    },
+    {
+      "name": "Buddy"
+    },
+    {
+      "name": "Foxi"
+    },
+    {
+      "name": "Foxi GT Sport"
+    },
+    {
+      "name": "G50"
+    },
+    {
+      "name": "GB50"
+    },
+    {
+      "name": "GC50"
+    },
+    {
+      "name": "GD 50"
+    },
+    {
+      "name": "GE 50 Sport"
+    },
+    {
+      "name": "GE 50 Tour"
+    },
+    {
+      "name": "GF50"
+    },
+    {
+      "name": "GH50"
+    },
+    {
+      "name": "GS50"
+    },
+    {
+      "name": "Grand Sport"
+    },
+    {
+      "name": "Happy"
+    },
+    {
+      "name": "Happy Mini"
+    },
+    {
+      "name": "Lucky"
+    },
+    {
+      "name": "MB 50"
+    },
+    {
+      "name": "Met"
+    },
+    {
+      "name": "Met Tandem"
+    },
+    {
+      "name": "SB 50"
+    },
+    {
+      "name": "SE 50"
+    },
+    {
+      "name": "Spartamatic"
+    },
+    {
+      "name": "Sport"
+    },
+    {
+      "name": "Sport 3V"
+    },
+    {
+      "name": "Sport 4"
+    },
+    {
+      "name": "Super Sport"
+    },
+    {
+      "name": "Tour"
+    },
+    {
+      "name": "Typen"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

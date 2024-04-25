@@ -1,67 +1,12 @@
 {
   "name": "Fantic Motor Concord",
   "engines": [],
-  "models": [
-    {
-      "name": "Blazar I"
-    },
-    {
-      "name": "Blazar II"
-    },
-    {
-      "name": "Broncco"
-    },
-    {
-      "name": "Chopper 50"
-    },
-    {
-      "name": "Colt I"
-    },
-    {
-      "name": "Colt II"
-    },
-    {
-      "name": "Concord 25"
-    },
-    {
-      "name": "Concord 30"
-    },
-    {
-      "name": "Concord KE20"
-    },
-    {
-      "name": "Freedom"
-    },
-    {
-      "name": "Invader"
-    },
-    {
-      "name": "Issimo"
-    },
-    {
-      "name": "Lei"
-    },
-    {
-      "name": "Shadow"
-    },
-    {
-      "name": "Super Lei"
-    },
-    {
-      "name": "Super T"
-    },
-    {
-      "name": "TX300"
-    },
-    {
-      "name": "XKE"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "XKE Stock Exhaust"
@@ -118,8 +63,63 @@
       "name": "Blazar I Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Blazar I"
+    },
+    {
+      "name": "Blazar II"
+    },
+    {
+      "name": "Broncco"
+    },
+    {
+      "name": "Chopper 50"
+    },
+    {
+      "name": "Colt I"
+    },
+    {
+      "name": "Colt II"
+    },
+    {
+      "name": "Concord 25"
+    },
+    {
+      "name": "Concord 30"
+    },
+    {
+      "name": "Concord KE20"
+    },
+    {
+      "name": "Freedom"
+    },
+    {
+      "name": "Invader"
+    },
+    {
+      "name": "Issimo"
+    },
+    {
+      "name": "Lei"
+    },
+    {
+      "name": "Shadow"
+    },
+    {
+      "name": "Super Lei"
+    },
+    {
+      "name": "Super T"
+    },
+    {
+      "name": "TX300"
+    },
+    {
+      "name": "XKE"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

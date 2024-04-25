@@ -24,5 +24,8 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "Pinasco"
+  "ignitions": [],
+  "name": "Pinasco",
+  "pulleys": [],
+  "variators": []
 }

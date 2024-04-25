@@ -2,8 +2,10 @@
   "carburetors": [],
   "categories": [
     "clutches",
+    "cylinders",
     "exhausts",
-    "cylinders"
+    "pulleys",
+    "variators"
   ],
   "clutches": [
     {
@@ -25,5 +27,62 @@
       "name": "Motobecane Pipe"
     }
   ],
-  "name": "Doppler"
+  "ignitions": [],
+  "name": "Doppler",
+  "pulleys": [
+    {
+      "name": "Peugeot OPEN Class Pulley",
+      "sizes": null
+    },
+    {
+      "name": "Motobecane OPEN Class Pulley",
+      "sizes": null
+    },
+    {
+      "name": "Peugeot SPX Clutch Pulley",
+      "sizes": null
+    },
+    {
+      "name": "ER2 Peugeot Pulley",
+      "sizes": null
+    },
+    {
+      "name": "ER2 Peugeot Clutch Pulley",
+      "sizes": null
+    },
+    {
+      "name": "ER2 Motobecane Pulley",
+      "sizes": null
+    },
+    {
+      "name": "ER2 Motobecane Clutch Pulley",
+      "sizes": null
+    }
+  ],
+  "variators": [
+    {
+      "name": "ER3 for Motobecane - Without Clutch",
+      "rollers": null,
+      "size": null,
+      "type": "pivoting_arm"
+    },
+    {
+      "name": "ER3 for Motobecane - With Clutch",
+      "rollers": null,
+      "size": null,
+      "type": "pivoting_arm"
+    },
+    {
+      "name": "ER2 for Motobecane - With Clutch",
+      "rollers": 6,
+      "size": null,
+      "type": "rollers"
+    },
+    {
+      "name": "ER2 for Motobecane - No Clutch",
+      "rollers": 6,
+      "size": null,
+      "type": "rollers"
+    }
+  ]
 }

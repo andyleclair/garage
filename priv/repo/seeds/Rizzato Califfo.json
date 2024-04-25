@@ -1,49 +1,12 @@
 {
   "name": "Rizzato Califfo",
   "engines": [],
-  "models": [
-    {
-      "name": "Califfo"
-    },
-    {
-      "name": "Califfo 2-Speed"
-    },
-    {
-      "name": "Califfo 3-Wheeler"
-    },
-    {
-      "name": "Califfo Deluxe"
-    },
-    {
-      "name": "Califfo Matic"
-    },
-    {
-      "name": "Califfo Super"
-    },
-    {
-      "name": "Califfone Daytona"
-    },
-    {
-      "name": "Cross 4V"
-    },
-    {
-      "name": "Cross 6V"
-    },
-    {
-      "name": "Mini Califfo K"
-    },
-    {
-      "name": "Ringo Turismo"
-    },
-    {
-      "name": "Zum 3"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Zum 3 Stock Exhaust"
@@ -82,8 +45,45 @@
       "name": "Califfo Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Califfo"
+    },
+    {
+      "name": "Califfo 2-Speed"
+    },
+    {
+      "name": "Califfo 3-Wheeler"
+    },
+    {
+      "name": "Califfo Deluxe"
+    },
+    {
+      "name": "Califfo Matic"
+    },
+    {
+      "name": "Califfo Super"
+    },
+    {
+      "name": "Califfone Daytona"
+    },
+    {
+      "name": "Cross 4V"
+    },
+    {
+      "name": "Cross 6V"
+    },
+    {
+      "name": "Mini Califfo K"
+    },
+    {
+      "name": "Ringo Turismo"
+    },
+    {
+      "name": "Zum 3"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

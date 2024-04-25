@@ -1,6 +1,6 @@
 # Garage
 
-## TODO
+## Completed
 
 - [x] Upload photos for builds
 - [x] Likes
@@ -17,31 +17,35 @@
 - [x] Actually send emails
 - [x] Set prod credentials
 - [x] Seeds
-- [x] Build details
+- [x] Client-side image upload + auto upload
+
+## TODO
+
+- [ ] Build details
   - [x] engine
     - [x] cylinder
     - [ ] Cylinder tuning (porting etc)
-    - head
-    - piston
-    - [x] cases -- going to handle these as separate engines
     - [x] crank
-  - [x] carb
+  - [ ] carb
+    - [x] tuning
+    - [ ] size
     - [x] make
     - [x] model
     - [x] jets
   - [x] ignition
-    - [x] cdi box
-  - [x] transmission
+    - [ ] ignition tuning
+      - [ ] cdi box
+      - [ ] timing (degrees? mm btdc?)
+  - [ ] transmission
     - [x] clutch
     - [x] GEARING
       - [x] How to handle vespa, hobbit?
     - [x] variator
-    - [x] pulley
+    - [ ] pulley
+    - [ ] variator tuning
+      - [ ] weights
   - [x] exhaust
-  - [x] forks
-  - [x] wheels
 - [ ] Image flagging
-- [x] Client-side image upload + auto upload
 - [ ] Tools
   - Gearing calculator
   - blowdown etc.

@@ -17,5 +17,8 @@
   "cylinders": [],
   "engines": [],
   "exhausts": [],
-  "name": "Trickmetric"
+  "ignitions": [],
+  "name": "Trickmetric",
+  "pulleys": [],
+  "variators": []
 }

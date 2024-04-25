@@ -1,0 +1,18 @@
+{
+  "carburetors": [],
+  "categories": [
+    "ignitions"
+  ],
+  "clutches": [],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [],
+  "ignitions": [
+    {
+      "name": "Minarelli Conversion CDI"
+    }
+  ],
+  "name": "Pietcard",
+  "pulleys": [],
+  "variators": []
+}

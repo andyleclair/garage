@@ -32,5 +32,8 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "Athena"
+  "ignitions": [],
+  "name": "Athena",
+  "pulleys": [],
+  "variators": []
 }

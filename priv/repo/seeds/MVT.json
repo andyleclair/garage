@@ -1,0 +1,21 @@
+{
+  "carburetors": [],
+  "categories": [
+    "ignitions"
+  ],
+  "clutches": [],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [],
+  "ignitions": [
+    {
+      "name": "Millenium CDI for Peugeot"
+    },
+    {
+      "name": "Millenium CDI for Motobecane"
+    }
+  ],
+  "name": "MVT",
+  "pulleys": [],
+  "variators": []
+}

@@ -1,0 +1,21 @@
+{
+  "carburetors": [],
+  "categories": [
+    "ignitions"
+  ],
+  "clutches": [],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [],
+  "ignitions": [
+    {
+      "name": "Puch ZA50 CDI"
+    },
+    {
+      "name": "Puch E50 CDI"
+    }
+  ],
+  "name": "Powerdynamo",
+  "pulleys": [],
+  "variators": []
+}

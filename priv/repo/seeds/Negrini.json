@@ -1,25 +1,12 @@
 {
   "name": "Negrini",
   "engines": [],
-  "models": [
-    {
-      "name": "Gazelle"
-    },
-    {
-      "name": "Harvard"
-    },
-    {
-      "name": "Leprotto"
-    },
-    {
-      "name": "MX Sport"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "MX Sport Stock Exhaust"
@@ -34,8 +21,21 @@
       "name": "Gazelle Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Gazelle"
+    },
+    {
+      "name": "Harvard"
+    },
+    {
+      "name": "Leprotto"
+    },
+    {
+      "name": "MX Sport"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

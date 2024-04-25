@@ -3,7 +3,10 @@
   "categories": [
     "cylinders",
     "engines",
-    "mopeds"
+    "ignitions",
+    "mopeds",
+    "pulleys",
+    "variators"
   ],
   "clutches": [],
   "cranks": [],
@@ -37,7 +40,11 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "Hobbit Stock CDI"
+    }
+  ],
   "models": [
     {
       "name": "NC50"
@@ -218,6 +225,32 @@
     }
   ],
   "name": "Honda",
-  "pulleys": [],
-  "variators": []
+  "pulleys": [
+    {
+      "name": "Camino Stock Pulley",
+      "sizes": null
+    },
+    {
+      "name": "PA50 Stock Pulley",
+      "sizes": null
+    },
+    {
+      "name": "NU50 and NX50 Stock Pulley",
+      "sizes": null
+    }
+  ],
+  "variators": [
+    {
+      "name": "Stock PA50i Variator",
+      "rollers": 3,
+      "size": null,
+      "type": "rollers"
+    },
+    {
+      "name": "Stock NU50 & NX50 Variator",
+      "rollers": 6,
+      "size": null,
+      "type": "rollers"
+    }
+  ]
 }

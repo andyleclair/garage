@@ -16,5 +16,8 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "TCCD"
+  "ignitions": [],
+  "name": "TCCD",
+  "pulleys": [],
+  "variators": []
 }

@@ -1,23 +1,23 @@
 {
   "name": "Oltenia",
   "engines": [],
-  "models": [
-    {
-      "name": "Alpa"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Alpa Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Alpa"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

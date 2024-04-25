@@ -2,7 +2,8 @@
   "carburetors": [],
   "categories": [
     "engines",
-    "mopeds"
+    "mopeds",
+    "pulleys"
   ],
   "clutches": [],
   "cranks": [],
@@ -155,6 +156,11 @@
     }
   ],
   "name": "Batavus",
-  "pulleys": [],
+  "pulleys": [
+    {
+      "name": "Laura M48 Stock Pulley",
+      "sizes": null
+    }
+  ],
   "variators": []
 }

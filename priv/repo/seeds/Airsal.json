@@ -68,5 +68,8 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "Airsal"
+  "ignitions": [],
+  "name": "Airsal",
+  "pulleys": [],
+  "variators": []
 }

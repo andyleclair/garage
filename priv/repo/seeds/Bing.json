@@ -45,5 +45,8 @@
   "cylinders": [],
   "engines": [],
   "exhausts": [],
-  "name": "Bing"
+  "ignitions": [],
+  "name": "Bing",
+  "pulleys": [],
+  "variators": []
 }

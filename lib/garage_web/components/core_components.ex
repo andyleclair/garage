@@ -848,6 +848,7 @@ defmodule GarageWeb.CoreComponents do
     active_page
   end
 
+  def page_offset(0, _), do: 0
   def page_offset(1, _page_limit), do: 0
 
   def page_offset(page_param, page_limit) do

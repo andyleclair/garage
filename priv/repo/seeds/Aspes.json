@@ -1,28 +1,12 @@
 {
   "name": "Aspes",
   "engines": [],
-  "models": [
-    {
-      "name": "Sioux 16 America"
-    },
-    {
-      "name": "Sioux 50"
-    },
-    {
-      "name": "Sioux KS"
-    },
-    {
-      "name": "Sioux KSL"
-    },
-    {
-      "name": "Sioux Mini"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Sioux Mini Stock Exhaust"
@@ -40,8 +24,24 @@
       "name": "Sioux 16 America Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Sioux 16 America"
+    },
+    {
+      "name": "Sioux 50"
+    },
+    {
+      "name": "Sioux KS"
+    },
+    {
+      "name": "Sioux KSL"
+    },
+    {
+      "name": "Sioux Mini"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

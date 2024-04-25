@@ -35,5 +35,8 @@
       "name": "HiBoy Reverse for Derbi Flat Reed"
     }
   ],
-  "name": "Giannelli"
+  "ignitions": [],
+  "name": "Giannelli",
+  "pulleys": [],
+  "variators": []
 }

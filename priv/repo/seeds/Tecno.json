@@ -53,5 +53,8 @@
       "name": "for Honda Hobbit/Camino"
     }
   ],
-  "name": "Tecno"
+  "ignitions": [],
+  "name": "Tecno",
+  "pulleys": [],
+  "variators": []
 }

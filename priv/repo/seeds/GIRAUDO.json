@@ -1,0 +1,21 @@
+{
+  "carburetors": [],
+  "categories": [
+    "variators"
+  ],
+  "clutches": [],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [],
+  "ignitions": [],
+  "name": "GIRAUDO",
+  "pulleys": [],
+  "variators": [
+    {
+      "name": "G1 G2 Racing Replica for Motobecane",
+      "rollers": null,
+      "size": null,
+      "type": "pivoting_arm"
+    }
+  ]
+}

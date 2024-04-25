@@ -12,5 +12,8 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "Eurocilindro"
+  "ignitions": [],
+  "name": "Eurocilindro",
+  "pulleys": [],
+  "variators": []
 }

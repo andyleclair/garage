@@ -1,23 +1,23 @@
 {
   "name": "Phoenix",
   "engines": [],
-  "models": [
-    {
-      "name": "Saxonette"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Saxonette Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Saxonette"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

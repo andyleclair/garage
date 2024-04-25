@@ -3,7 +3,8 @@
   "categories": [
     "cylinders",
     "engines",
-    "mopeds"
+    "mopeds",
+    "pulleys"
   ],
   "clutches": [],
   "cranks": [],
@@ -238,6 +239,15 @@
     }
   ],
   "name": "Peugeot",
-  "pulleys": [],
+  "pulleys": [
+    {
+      "name": "102 Stock Pulley",
+      "sizes": null
+    },
+    {
+      "name": "103 Stock Pulley",
+      "sizes": null
+    }
+  ],
   "variators": []
 }

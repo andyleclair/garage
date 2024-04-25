@@ -1,8 +1,8 @@
 {
   "carburetors": [],
   "categories": [
-    "exhausts",
-    "cylinders"
+    "cylinders",
+    "exhausts"
   ],
   "clutches": [],
   "cylinders": [
@@ -40,5 +40,8 @@
       "name": "Derbi RK Pipe"
     }
   ],
-  "name": "Metrakit"
+  "ignitions": [],
+  "name": "Metrakit",
+  "pulleys": [],
+  "variators": []
 }

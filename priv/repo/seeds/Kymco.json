@@ -1,40 +1,12 @@
 {
   "name": "Kymco",
   "engines": [],
-  "models": [
-    {
-      "name": "Agility"
-    },
-    {
-      "name": "Cobra"
-    },
-    {
-      "name": "Cobra Cross"
-    },
-    {
-      "name": "Filly 50"
-    },
-    {
-      "name": "People 50"
-    },
-    {
-      "name": "Super 9"
-    },
-    {
-      "name": "TSR 50"
-    },
-    {
-      "name": "Yup 50"
-    },
-    {
-      "name": "ZX-50"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "ZX-50 Stock Exhaust"
@@ -64,8 +36,36 @@
       "name": "Agility Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Agility"
+    },
+    {
+      "name": "Cobra"
+    },
+    {
+      "name": "Cobra Cross"
+    },
+    {
+      "name": "Filly 50"
+    },
+    {
+      "name": "People 50"
+    },
+    {
+      "name": "Super 9"
+    },
+    {
+      "name": "TSR 50"
+    },
+    {
+      "name": "Yup 50"
+    },
+    {
+      "name": "ZX-50"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

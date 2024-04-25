@@ -11,5 +11,8 @@
     }
   ],
   "exhausts": [],
-  "name": "SuperHawk"
+  "ignitions": [],
+  "name": "SuperHawk",
+  "pulleys": [],
+  "variators": []
 }

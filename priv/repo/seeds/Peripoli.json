@@ -1,23 +1,23 @@
 {
   "name": "Peripoli",
   "engines": [],
-  "models": [
-    {
-      "name": "Giulietta"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Giulietta Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Giulietta"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

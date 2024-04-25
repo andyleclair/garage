@@ -1,7 +1,8 @@
 {
   "carburetors": [],
   "categories": [
-    "cylinders"
+    "cylinders",
+    "ignitions"
   ],
   "clutches": [],
   "cylinders": [
@@ -12,5 +13,12 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "Italkit"
+  "ignitions": [
+    {
+      "name": "CDI for Peugeot"
+    }
+  ],
+  "name": "Italkit",
+  "pulleys": [],
+  "variators": []
 }

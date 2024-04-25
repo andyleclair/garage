@@ -1,52 +1,12 @@
 {
   "name": "NSU",
   "engines": [],
-  "models": [
-    {
-      "name": "1053"
-    },
-    {
-      "name": "Cavalio"
-    },
-    {
-      "name": "Maxi"
-    },
-    {
-      "name": "Prima III"
-    },
-    {
-      "name": "Prima IIIK"
-    },
-    {
-      "name": "Prima V"
-    },
-    {
-      "name": "Quickley"
-    },
-    {
-      "name": "Quickly L"
-    },
-    {
-      "name": "Quickly N"
-    },
-    {
-      "name": "Quickly S"
-    },
-    {
-      "name": "Quickly T"
-    },
-    {
-      "name": "Quickly TT"
-    },
-    {
-      "name": "Supermax"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Supermax Stock Exhaust"
@@ -88,8 +48,48 @@
       "name": "1053 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "1053"
+    },
+    {
+      "name": "Cavalio"
+    },
+    {
+      "name": "Maxi"
+    },
+    {
+      "name": "Prima III"
+    },
+    {
+      "name": "Prima IIIK"
+    },
+    {
+      "name": "Prima V"
+    },
+    {
+      "name": "Quickley"
+    },
+    {
+      "name": "Quickly L"
+    },
+    {
+      "name": "Quickly N"
+    },
+    {
+      "name": "Quickly S"
+    },
+    {
+      "name": "Quickly T"
+    },
+    {
+      "name": "Quickly TT"
+    },
+    {
+      "name": "Supermax"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

@@ -1,19 +1,12 @@
 {
   "name": "Italvelo",
   "engines": [],
-  "models": [
-    {
-      "name": "I-78"
-    },
-    {
-      "name": "I-80"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "I-80 Stock Exhaust"
@@ -22,8 +15,15 @@
       "name": "I-78 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "I-78"
+    },
+    {
+      "name": "I-80"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

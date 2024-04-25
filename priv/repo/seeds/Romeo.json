@@ -1,23 +1,23 @@
 {
   "name": "Romeo",
   "engines": [],
-  "models": [
-    {
-      "name": "Thunderhawk"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Thunderhawk Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Thunderhawk"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

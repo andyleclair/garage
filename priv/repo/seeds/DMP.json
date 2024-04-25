@@ -1,8 +1,8 @@
 {
   "carburetors": [],
   "categories": [
-    "exhausts",
-    "cylinders"
+    "cylinders",
+    "exhausts"
   ],
   "clutches": [],
   "cylinders": [
@@ -29,5 +29,8 @@
       "name": "Racing for Puch - Carbon Tip"
     }
   ],
-  "name": "DMP"
+  "ignitions": [],
+  "name": "DMP",
+  "pulleys": [],
+  "variators": []
 }

@@ -32,5 +32,8 @@
       "name": "Circuit for Honda Hobbit/Camino"
     }
   ],
-  "name": "Proma"
+  "ignitions": [],
+  "name": "Proma",
+  "pulleys": [],
+  "variators": []
 }

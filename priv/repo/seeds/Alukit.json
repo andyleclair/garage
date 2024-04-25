@@ -12,5 +12,8 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "Alukit"
+  "ignitions": [],
+  "name": "Alukit",
+  "pulleys": [],
+  "variators": []
 }

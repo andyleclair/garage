@@ -1,23 +1,23 @@
 {
   "name": "Triumph",
   "engines": [],
-  "models": [
-    {
-      "name": "Knirps"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Knirps Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Knirps"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

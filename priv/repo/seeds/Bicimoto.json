@@ -1,23 +1,23 @@
 {
   "name": "Bicimoto",
   "engines": [],
-  "models": [
-    {
-      "name": "Pumita"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Pumita Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Pumita"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

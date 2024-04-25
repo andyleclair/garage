@@ -1,23 +1,23 @@
 {
   "name": "Bumble Bike",
   "engines": [],
-  "models": [
-    {
-      "name": "Bike Motor (Roper)"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Bike Motor (Roper) Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Bike Motor (Roper)"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

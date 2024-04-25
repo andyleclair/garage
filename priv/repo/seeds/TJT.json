@@ -1,0 +1,21 @@
+{
+  "carburetors": [],
+  "categories": [
+    "variators"
+  ],
+  "clutches": [],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [],
+  "ignitions": [],
+  "name": "TJT",
+  "pulleys": [],
+  "variators": [
+    {
+      "name": "Variator for Honda and Derbi",
+      "rollers": 6,
+      "size": null,
+      "type": "rollers"
+    }
+  ]
+}

@@ -11,5 +11,8 @@
   "cylinders": [],
   "engines": [],
   "exhausts": [],
-  "name": "Treatmetric"
+  "ignitions": [],
+  "name": "Treatmetric",
+  "pulleys": [],
+  "variators": []
 }

@@ -1,23 +1,23 @@
 {
   "name": "Wilma",
   "engines": [],
-  "models": [
-    {
-      "name": "Mosquito"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Mosquito Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Mosquito"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

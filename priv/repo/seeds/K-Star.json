@@ -12,5 +12,8 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "K-Star"
+  "ignitions": [],
+  "name": "K-Star",
+  "pulleys": [],
+  "variators": []
 }

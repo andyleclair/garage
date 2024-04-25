@@ -21,5 +21,8 @@
   "cylinders": [],
   "engines": [],
   "exhausts": [],
-  "name": "Gurtner"
+  "ignitions": [],
+  "name": "Gurtner",
+  "pulleys": [],
+  "variators": []
 }

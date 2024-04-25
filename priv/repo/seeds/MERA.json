@@ -12,5 +12,8 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "MERA"
+  "ignitions": [],
+  "name": "MERA",
+  "pulleys": [],
+  "variators": []
 }

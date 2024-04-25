@@ -1,23 +1,23 @@
 {
   "name": "Moto-Matic",
   "engines": [],
-  "models": [
-    {
-      "name": "Sapporo"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Sapporo Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Sapporo"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

@@ -32,7 +32,7 @@ defmodule Garage.Mopeds.Pulley do
     attribute :name, :string, allow_nil?: false, public?: true
     attribute :description, :string, default: "", public?: true
     # in mm
-    attribute :size, :integer, allow_nil?: false, public?: true
+    attribute :sizes, {:array, :integer}, default: [], public?: true
 
     create_timestamp :inserted_at
     update_timestamp :updated_at

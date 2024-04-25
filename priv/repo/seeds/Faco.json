@@ -11,5 +11,8 @@
       "name": "Peugeot"
     }
   ],
-  "name": "Faco"
+  "ignitions": [],
+  "name": "Faco",
+  "pulleys": [],
+  "variators": []
 }

@@ -1,34 +1,12 @@
 {
   "name": "General",
   "engines": [],
-  "models": [
-    {
-      "name": "3 Star"
-    },
-    {
-      "name": "5 Star"
-    },
-    {
-      "name": "5 Star ST"
-    },
-    {
-      "name": "5 Star TE"
-    },
-    {
-      "name": "C-2"
-    },
-    {
-      "name": "Laser"
-    },
-    {
-      "name": "Limited Edition"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Limited Edition Stock Exhaust"
@@ -52,8 +30,30 @@
       "name": "3 Star Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "3 Star"
+    },
+    {
+      "name": "5 Star"
+    },
+    {
+      "name": "5 Star ST"
+    },
+    {
+      "name": "5 Star TE"
+    },
+    {
+      "name": "C-2"
+    },
+    {
+      "name": "Laser"
+    },
+    {
+      "name": "Limited Edition"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

@@ -20,5 +20,8 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "BRN"
+  "ignitions": [],
+  "name": "BRN",
+  "pulleys": [],
+  "variators": []
 }

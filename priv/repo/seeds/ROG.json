@@ -1,23 +1,23 @@
 {
   "name": "ROG",
   "engines": [],
-  "models": [
-    {
-      "name": "Pony Express"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Pony Express Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Pony Express"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

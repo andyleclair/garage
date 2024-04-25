@@ -1,0 +1,23 @@
+{
+  "carburetors": [],
+  "categories": [
+    "pulleys"
+  ],
+  "clutches": [],
+  "cylinders": [],
+  "engines": [],
+  "exhausts": [],
+  "ignitions": [],
+  "name": "Tun",
+  "pulleys": [
+    {
+      "name": "Peugeot Pulley",
+      "sizes": null
+    },
+    {
+      "name": "Motobecane Pulley",
+      "sizes": null
+    }
+  ],
+  "variators": []
+}

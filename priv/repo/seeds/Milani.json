@@ -1,23 +1,23 @@
 {
   "name": "Milani",
   "engines": [],
-  "models": [
-    {
-      "name": "Tris"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "Tris Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "Tris"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

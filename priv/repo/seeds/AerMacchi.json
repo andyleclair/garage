@@ -1,23 +1,23 @@
 {
   "name": "AerMacchi",
   "engines": [],
-  "models": [
-    {
-      "name": "M65 Leggero"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "M65 Leggero Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "M65 Leggero"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }

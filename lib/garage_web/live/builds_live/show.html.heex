@@ -136,7 +136,7 @@
         <%= if @build.follows == [] do %>
           No follows yet, be the first!
         <% else %>
-          Followd by:
+          Followed by:
           <%= for follow <- @build.follows do %>
             <.username user={follow.user} />
           <% end %>

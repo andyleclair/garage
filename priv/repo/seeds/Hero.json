@@ -23,5 +23,8 @@
     }
   ],
   "exhausts": [],
-  "name": "Hero"
+  "ignitions": [],
+  "name": "Hero",
+  "pulleys": [],
+  "variators": []
 }

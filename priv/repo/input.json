@@ -1,4 +1,195 @@
 {
+  "9": [
+    {
+      "name": "Treats Honda Hobbit Pulley"
+    },
+    {
+      "name": "Kinetic Stock Pulley",
+      "sizes": [
+        84,
+        95
+      ]
+    },
+    {
+      "name": "Honda NU50 and NX50 Stock Pulley"
+    },
+    {
+      "name": "Honda PA50 Stock Pulley"
+    },
+    {
+      "name": "Honda Camino Stock Pulley"
+    },
+    {
+      "name": "Doppler ER2 Motobecane Clutch Pulley"
+    },
+    {
+      "name": "Doppler ER2 Motobecane Pulley"
+    },
+    {
+      "name": "Doppler ER2 Peugeot Clutch Pulley"
+    },
+    {
+      "name": "Doppler ER2 Peugeot Pulley"
+    },
+    {
+      "name": "Doppler Peugeot SPX Clutch Pulley"
+    },
+    {
+      "name": "Doppler Motobecane OPEN Class Pulley"
+    },
+    {
+      "name": "Doppler Peugeot OPEN Class Pulley"
+    },
+    {
+      "name": "Tun Motobecane Pulley"
+    },
+    {
+      "name": "Tun Peugeot Pulley"
+    },
+    {
+      "name": "Motobecane Stock Pulley"
+    },
+    {
+      "name": "Peugeot 103 Stock Pulley"
+    },
+    {
+      "name": "Peugeot 102 Stock Pulley"
+    },
+    {
+      "name": "Derbi Piston Port/Pyramid Reed Stock Pulley"
+    },
+    {
+      "name": "Derbi Flat Reed Stock Pulley"
+    },
+    {
+      "name": "Derbi Start V Stock Pulley"
+    },
+    {
+      "name": "Derbi Start III Stock Pulley"
+    },
+    {
+      "name": "Vespa Variated Stock Pulley",
+      "sizes": [
+        100,
+        90
+      ]
+    },
+    {
+      "name": "Vespa Single Speed Stock Pulley",
+      "sizes": [
+        70,
+        80,
+        65,
+        95
+      ]
+    },
+    {
+      "name": "Olympia Vespa Single Speed Pulley",
+      "sizes": [
+        95,
+        80
+      ]
+    },
+    {
+      "name": "Batavus Laura M48 Stock Pulley"
+    },
+    {
+      "name": "Malossi Vespa Racing Pulley",
+      "sizes": [
+        102
+      ]
+    },
+    {
+      "name": "Malossi Vespa Overrange Racing Pulley",
+      "sizes": [
+        102
+      ]
+    },
+    {
+      "name": "Treats Vespa Single Speed Pulley",
+      "sizes": [
+        75,
+        80,
+        90,
+        95
+      ]
+    }
+  ],
+  "8": [
+    {
+      "name": "Treats Honda Hobbit Variator",
+      "rollers": 6,
+      "type": "rollers"
+    },
+    {
+      "name": "TJT Variator for Honda and Derbi",
+      "rollers": 6,
+      "type": "rollers"
+    },
+    {
+      "name": "Derbi Stock 3-Roller",
+      "rollers": 3,
+      "type": "rollers"
+    },
+    {
+      "name": "Derbi Stock 6-Roller",
+      "rollers": 6,
+      "type": "rollers"
+    },
+    {
+      "name": "Honda Stock NU50 & NX50 Variator",
+      "rollers": 6,
+      "type": "rollers"
+    },
+    {
+      "name": "Honda Stock PA50i Variator",
+      "rollers": 3,
+      "type": "rollers"
+    },
+    {
+      "name": "Malossi Varplus for Motobecane",
+      "type": "rollers",
+      "rollers": 3,
+      "size": 106
+    },
+    {
+      "name": "Malossi Variotop for Motobecane - No Clutch",
+      "type": "pivoting_arm",
+      "size": 106
+    },
+    {
+      "name": "Malossi Large Variotop for Motobecane - No Clutch",
+      "type": "pivoting_arm",
+      "size": 114
+    },
+    {
+      "name": "Malossi Variotop for Motobecane - REVERSED No Clutch",
+      "type": "pivoting_arm",
+      "size": 114
+    },
+    {
+      "name": "Doppler ER2 for Motobecane - No Clutch",
+      "rollers": 6,
+      "type": "rollers"
+    },
+    {
+      "name": "Doppler ER2 for Motobecane - With Clutch",
+      "rollers": 6,
+      "type": "rollers"
+    },
+    {
+      "name": "Doppler ER3 for Motobecane - With Clutch",
+      "type": "pivoting_arm"
+    },
+    {
+      "name": "Doppler ER3 for Motobecane - Without Clutch",
+      "type": "pivoting_arm"
+    },
+    {
+      "name": "GIRAUDO G1 G2 Racing Replica for Motobecane",
+      "type": "pivoting_arm"
+    }
+  ],
   "7": [
     {
       "id": "3800",
@@ -196,32 +387,32 @@
     },
     {
       "id": "3221",
-      "name": "Derbi HPI Inner Rotor CDI",
+      "name": "HPI Derbi Inner Rotor CDI",
       "count": "8"
     },
     {
       "id": "3227",
-      "name": "Derbi HPI Mini Rotor CDI",
+      "name": "HPI Derbi Mini Rotor CDI",
       "count": "14"
     },
     {
       "id": "3224",
-      "name": "Honda Hobbit CDI",
+      "name": "Honda Hobbit Stock CDI",
       "count": "46"
     },
     {
       "id": "3244",
-      "name": "Honda Hobbit HPI Inner Rotor CDI",
+      "name": "HPI Honda Hobbit Inner Rotor CDI",
       "count": "18"
     },
     {
       "id": "3243",
-      "name": "Honda Hobbit HPI Mini Rotor CDI",
+      "name": "HPI Honda Hobbit Mini Rotor CDI",
       "count": "28"
     },
     {
       "id": "3242",
-      "name": "Minarelli Pietcard Conversion CDI",
+      "name": "Pietcard Minarelli Conversion CDI",
       "count": "52"
     },
     {
@@ -230,73 +421,63 @@
       "count": "61"
     },
     {
-      "id": "4127",
-      "name": "Minarelli Stock Points",
-      "count": "51"
-    },
-    {
-      "id": "4128",
-      "name": "Minarelli Stock Points",
-      "count": "64"
-    },
-    {
       "id": "3238",
       "name": "Motobecane CDI",
       "count": "80"
     },
     {
       "id": "3226",
-      "name": "Motobecane MVT Millenium CDI",
+      "name": "MVT Millenium CDI for Motobecane",
       "count": "2"
     },
     {
       "id": "3237",
-      "name": "Peugeot Italkit CDI",
+      "name": "Italkit CDI for Peugeot",
       "count": "2"
     },
     {
       "id": "3236",
-      "name": "Peugeot Malossi CDI",
+      "name": "Malossi CDI for Peugeot ",
       "count": "3"
     },
     {
       "id": "3225",
-      "name": "Peugeot MVT Millenium CDI",
+      "name": "MVT Millenium CDI for Peugeot",
       "count": "11"
     },
     {
       "id": "3229",
-      "name": "Peugeot Ramzey CDI",
+      "name": "Ramzey CDI for Peugeot",
       "count": "4"
     },
     {
       "id": "4137",
-      "name": "Puch Ducati Clone",
+      "name": "Ducati Puch Clone",
       "count": "8"
     },
     {
       "id": "3233",
-      "name": "Puch E50 Adventure Pack",
+      "name": "Treats Puch E50 Adventure Pack",
       "count": "28"
     },
     {
       "id": "3231",
-      "name": "Puch E50 CDI of the Stars",
+      "name": "Treats Puch E50 CDI of the Stars",
       "count": "39"
     },
     {
       "id": "3223",
-      "name": "Puch E50 Powerdynamo CDI",
+      "name": "Powerdynamo Puch E50 CDI",
       "count": "24"
     },
     {
       "id": "3220",
-      "name": "Puch HPI Inner Rotor CDI",
+      "name": "HPI Puch Inner Rotor CDI",
       "count": "50"
     },
     {
       "id": "3230",
-      "name": "Puch HPI Mini Rotor CDI",
+      "name": "HPI Puch Mini Rotor CDI",
       "count": "70"
     },
     {
@@ -306,17 +487,17 @@
     },
     {
       "id": "3232",
-      "name": "Puch ZA50 CDI of the Stars",
+      "name": "Treats Puch ZA50 CDI of the Stars",
       "count": "21"
     },
     {
       "id": "3228",
-      "name": "Puch ZA50 Powerdynamo CDI",
+      "name": "Powerdynamo Puch ZA50 CDI",
       "count": "7"
     },
     {
       "id": "3222",
-      "name": "Sachs HPI Mini Rotor CDI",
+      "name": "HPI Sachs Mini Rotor CDI",
       "count": "1"
     },
     {
@@ -331,12 +512,12 @@
     },
     {
       "id": "3234",
-      "name": "Tomos HPI Inner Rotor CDI",
+      "name": "HPI Tomos Inner Rotor CDI",
       "count": "4"
     },
     {
       "id": "3235",
-      "name": "Tomos HPI Mini Rotor CDI",
+      "name": "HPI Tomos Mini Rotor CDI",
       "count": "8"
     },
     {

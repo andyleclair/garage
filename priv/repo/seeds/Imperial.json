@@ -12,5 +12,8 @@
   ],
   "engines": [],
   "exhausts": [],
-  "name": "Imperial"
+  "ignitions": [],
+  "name": "Imperial",
+  "pulleys": [],
+  "variators": []
 }

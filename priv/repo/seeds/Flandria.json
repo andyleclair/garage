@@ -1,73 +1,12 @@
 {
   "name": "Flandria",
   "engines": [],
-  "models": [
-    {
-      "name": "101"
-    },
-    {
-      "name": "102"
-    },
-    {
-      "name": "104"
-    },
-    {
-      "name": "4.3CV"
-    },
-    {
-      "name": "5CV"
-    },
-    {
-      "name": "Anker Laura"
-    },
-    {
-      "name": "Apollo AF"
-    },
-    {
-      "name": "Apollo AF-A"
-    },
-    {
-      "name": "Bermuda"
-    },
-    {
-      "name": "Commet"
-    },
-    {
-      "name": "Imola4"
-    },
-    {
-      "name": "Kingline"
-    },
-    {
-      "name": "Monomatix"
-    },
-    {
-      "name": "Record"
-    },
-    {
-      "name": "SP 237"
-    },
-    {
-      "name": "SP 337"
-    },
-    {
-      "name": "SP 527"
-    },
-    {
-      "name": "SP 537"
-    },
-    {
-      "name": "SP 547"
-    },
-    {
-      "name": "SP 747"
-    }
+  "categories": [
+    "mopeds"
   ],
   "clutches": [],
   "cranks": [],
-  "ignitions": [],
-  "pulleys": [],
-  "variators": [],
+  "cylinders": [],
   "exhausts": [
     {
       "name": "SP 747 Stock Exhaust"
@@ -130,8 +69,69 @@
       "name": "101 Stock Exhaust"
     }
   ],
-  "cylinders": [],
-  "categories": [
-    "mopeds"
-  ]
+  "ignitions": [],
+  "models": [
+    {
+      "name": "101"
+    },
+    {
+      "name": "102"
+    },
+    {
+      "name": "104"
+    },
+    {
+      "name": "4.3CV"
+    },
+    {
+      "name": "5CV"
+    },
+    {
+      "name": "Anker Laura"
+    },
+    {
+      "name": "Apollo AF"
+    },
+    {
+      "name": "Apollo AF-A"
+    },
+    {
+      "name": "Bermuda"
+    },
+    {
+      "name": "Commet"
+    },
+    {
+      "name": "Imola4"
+    },
+    {
+      "name": "Kingline"
+    },
+    {
+      "name": "Monomatix"
+    },
+    {
+      "name": "Record"
+    },
+    {
+      "name": "SP 237"
+    },
+    {
+      "name": "SP 337"
+    },
+    {
+      "name": "SP 527"
+    },
+    {
+      "name": "SP 537"
+    },
+    {
+      "name": "SP 547"
+    },
+    {
+      "name": "SP 747"
+    }
+  ],
+  "pulleys": [],
+  "variators": []
 }
