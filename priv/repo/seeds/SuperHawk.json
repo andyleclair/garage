@@ -4,6 +4,11 @@
     "engines"
   ],
   "clutches": [],
+  "cranks": [
+    {
+      "name": "R80 Stock Crank"
+    }
+  ],
   "cylinders": [],
   "engines": [
     {

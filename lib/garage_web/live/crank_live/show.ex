@@ -22,20 +22,21 @@ defmodule GarageWeb.CrankLive.Show do
       </:item>
       <:item title="Name"><%= @crank.name %></:item>
 
+      <:item title="Engine">
+        <%= if @crank.engine  do %>
+          <.link navigate={~p"/engines/#{@crank.engine}"}>
+            <%= @crank.engine.name %>
+          </.link>
+        <% end %>
+      </:item>
       <:item title="Description"><%= @crank.description %></:item>
 
-      <:item title="Stroke (mm)"><%= @crank.stroke %>mm</:item>
+      <:item title="Stroke (mm)"><%= @crank.stroke %></:item>
 
-      <:item title="Conn rod length (mm)"><%= @crank.conn_rod_length %>mm</:item>
+      <:item title="Conn rod length (mm)"><%= @crank.conn_rod_length %></:item>
 
       <:item title="Small end bearing diameter (mm)">
-        <%= @crank.small_end_bearing_diameter %>mm
-      </:item>
-
-      <:item title="Engine">
-        <.link navigate={~p"/engines/#{@crank.engine}"}>
-          <%= @crank.engine.name %>
-        </.link>
+        <%= @crank.small_end_bearing_diameter %>
       </:item>
     </.list>
 

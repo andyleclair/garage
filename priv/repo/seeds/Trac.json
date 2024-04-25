@@ -1,42 +1,6 @@
 {
   "name": "Trac",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Sprint Stock Exhaust"
-    },
-    {
-      "name": "Olympic Stock Exhaust"
-    },
-    {
-      "name": "Metro Stock Exhaust"
-    },
-    {
-      "name": "Liberty Stock Exhaust"
-    },
-    {
-      "name": "Image Stock Exhaust"
-    },
-    {
-      "name": "Hawk Stock Exhaust"
-    },
-    {
-      "name": "Eagle Stock Exhaust"
-    },
-    {
-      "name": "Clipper Stock Exhaust"
-    },
-    {
-      "name": "Blitz Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "Blitz"
@@ -66,6 +30,42 @@
       "name": "Sprint"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Sprint Stock Exhaust"
+    },
+    {
+      "name": "Olympic Stock Exhaust"
+    },
+    {
+      "name": "Metro Stock Exhaust"
+    },
+    {
+      "name": "Liberty Stock Exhaust"
+    },
+    {
+      "name": "Image Stock Exhaust"
+    },
+    {
+      "name": "Hawk Stock Exhaust"
+    },
+    {
+      "name": "Eagle Stock Exhaust"
+    },
+    {
+      "name": "Clipper Stock Exhaust"
+    },
+    {
+      "name": "Blitz Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

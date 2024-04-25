@@ -24,7 +24,7 @@ defmodule GarageWeb.PulleyLive.FormComponent do
             name="manufacturer"
             label="Manufacturer"
             type="text"
-            value={@clutch.manufacturer.name}
+            value={@pulley.manufacturer.name}
             disabled
           />
         <% else %>
@@ -38,6 +38,12 @@ defmodule GarageWeb.PulleyLive.FormComponent do
         <% end %>
         <.input field={@form[:name]} type="text" label="Name" />
         <.input field={@form[:description]} type="textarea" label="Description" />
+        <.tag_selector
+          id="size-select"
+          label="Sizes"
+          tags={@sizes}
+          on_tag_update={fn sizes -> send_update(@myself, sizes: sizes) end}
+        />
 
         <:actions>
           <.button phx-disable-with="Saving...">Save Pulley</.button>
@@ -48,11 +54,22 @@ defmodule GarageWeb.PulleyLive.FormComponent do
   end
 
   @impl true
+  def mount(socket) do
+    manufacturer_options = manufacturer_options()
+
+    {:ok,
+     socket
+     |> assign(:manufacturer_options, manufacturer_options)}
+  end
+
+  @impl true
   def update(assigns, socket) do
+    sizes = if assigns[:sizes], do: assigns.sizes, else: []
+
     {:ok,
      socket
      |> assign(assigns)
-     |> assign(:manufacturer_options, manufacturer_options())
+     |> assign(:sizes, sizes)
      |> assign_form()}
   end
 
@@ -88,10 +105,14 @@ defmodule GarageWeb.PulleyLive.FormComponent do
 
   @impl true
   def handle_event("validate", %{"pulley" => pulley_params}, socket) do
+    dbg(socket)
+    pulley_params = Map.put(pulley_params, "sizes", socket.assigns.sizes)
     {:noreply, assign(socket, form: AshPhoenix.Form.validate(socket.assigns.form, pulley_params))}
   end
 
   def handle_event("save", %{"pulley" => pulley_params}, socket) do
+    pulley_params = Map.put(pulley_params, "sizes", socket.assigns.sizes)
+
     case AshPhoenix.Form.submit(socket.assigns.form, params: pulley_params) do
       {:ok, _pulley} ->
         socket =
@@ -104,6 +125,10 @@ defmodule GarageWeb.PulleyLive.FormComponent do
       {:error, form} ->
         {:noreply, assign(socket, form: form)}
     end
+  end
+
+  defp assign_form(%{assigns: %{form: _form}} = socket) do
+    socket
   end
 
   defp assign_form(%{assigns: %{pulley: pulley}} = socket) do

@@ -1,21 +1,6 @@
 {
   "name": "Pepi",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Sport Stock Exhaust"
-    },
-    {
-      "name": "Delux Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "Delux"
@@ -24,6 +9,21 @@
       "name": "Sport"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "Delux Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

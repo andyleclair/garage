@@ -1,0 +1,23 @@
+{
+  "carburetors": [],
+  "categories": [
+    "engines"
+  ],
+  "clutches": [],
+  "cranks": [
+    {
+      "name": "Motobecane AV10 Stock Crank"
+    }
+  ],
+  "cylinders": [],
+  "engines": [
+    {
+      "name": "Motobecane AV10"
+    }
+  ],
+  "exhausts": [],
+  "ignitions": [],
+  "name": "Omega",
+  "pulleys": [],
+  "variators": []
+}

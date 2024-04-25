@@ -1,54 +1,6 @@
 {
   "name": "Simson",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Sperber Stock Exhaust"
-    },
-    {
-      "name": "Scwalbe Stock Exhaust"
-    },
-    {
-      "name": "SR50 Stock Exhaust"
-    },
-    {
-      "name": "SR2 Stock Exhaust"
-    },
-    {
-      "name": "SR1 Stock Exhaust"
-    },
-    {
-      "name": "SR 4-1 Stock Exhaust"
-    },
-    {
-      "name": "SL1S Stock Exhaust"
-    },
-    {
-      "name": "SL1 Stock Exhaust"
-    },
-    {
-      "name": "S53 Alpha Stock Exhaust"
-    },
-    {
-      "name": "S51 Stock Exhaust"
-    },
-    {
-      "name": "S50 B1 Stock Exhaust"
-    },
-    {
-      "name": "S50 Stock Exhaust"
-    },
-    {
-      "name": "Mofa 1 Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "Mofa 1"
@@ -90,6 +42,54 @@
       "name": "Sperber"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Sperber Stock Exhaust"
+    },
+    {
+      "name": "Scwalbe Stock Exhaust"
+    },
+    {
+      "name": "SR50 Stock Exhaust"
+    },
+    {
+      "name": "SR2 Stock Exhaust"
+    },
+    {
+      "name": "SR1 Stock Exhaust"
+    },
+    {
+      "name": "SR 4-1 Stock Exhaust"
+    },
+    {
+      "name": "SL1S Stock Exhaust"
+    },
+    {
+      "name": "SL1 Stock Exhaust"
+    },
+    {
+      "name": "S53 Alpha Stock Exhaust"
+    },
+    {
+      "name": "S51 Stock Exhaust"
+    },
+    {
+      "name": "S50 B1 Stock Exhaust"
+    },
+    {
+      "name": "S50 Stock Exhaust"
+    },
+    {
+      "name": "Mofa 1 Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

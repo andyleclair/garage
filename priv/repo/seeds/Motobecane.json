@@ -1,6 +1,7 @@
 {
   "carburetors": [],
   "categories": [
+    "cranks",
     "cylinders",
     "engines",
     "ignitions",
@@ -8,7 +9,23 @@
     "pulleys"
   ],
   "clutches": [],
-  "cranks": [],
+  "cranks": [
+    {
+      "name": "Dimoby Stock Crank"
+    },
+    {
+      "name": "Isodyne Stock Crank"
+    },
+    {
+      "name": "AV88 Stock Crank"
+    },
+    {
+      "name": "AV10 Stock Crank"
+    },
+    {
+      "name": "AV7 Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "displacement": 50,
@@ -17,13 +34,16 @@
   ],
   "engines": [
     {
-      "name": "Polini"
+      "name": "Dimoby"
     },
     {
       "name": "Isodyne"
     },
     {
       "name": "AV88"
+    },
+    {
+      "name": "AV10"
     },
     {
       "name": "AV7"

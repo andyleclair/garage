@@ -1,10 +1,11 @@
 {
   "carburetors": [],
   "categories": [
-    "cylinders",
-    "exhausts"
+    "exhausts",
+    "cylinders"
   ],
   "clutches": [],
+  "cranks": [],
   "cylinders": [
     {
       "displacement": 60,

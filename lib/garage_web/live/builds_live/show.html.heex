@@ -113,66 +113,63 @@
   </div>
 </div>
 <!-- likes -->
-<div class="flex flex-col md:flex-row md:space-x-4 mt-10">
-  <div class="md:w-1/2 mb-5">
-    <div class="flex flex-col space-y-4">
-      <div>
-        <h3 class="text-2xl mb-5 border-b">
-          <.icon name="hero-heart" /> Likes
-        </h3>
-        <%= if @build.likes == [] do %>
-          No likes yet, be the first!
-        <% else %>
-          Liked by:
-          <%= for like <- @build.likes do %>
-            <.username user={like.user} />
-          <% end %>
-        <% end %>
-      </div>
-      <div>
-        <h3 class="text-2xl mb-5 border-b">
-          <.icon name="hero-bolt" /> Follows
-        </h3>
-        <%= if @build.follows == [] do %>
-          No follows yet, be the first!
-        <% else %>
-          Followed by:
-          <%= for follow <- @build.follows do %>
-            <.username user={follow.user} />
-          <% end %>
-        <% end %>
-      </div>
-    </div>
-  </div>
-  <!-- comments -->
-  <div class="md:w-1/2 mb-5">
+<div class="flex flex-col md:flex-row md:space-x-4 space-y-10 md:space-y-0 my-10">
+  <div class="md:w-1/2">
     <h3 class="text-2xl mb-5 border-b">
-      <.icon name="hero-chat-bubble-bottom-center" /> Comments
+      <.icon name="hero-heart" /> Likes
     </h3>
-    <%= for comment <- @build.comments do %>
-      <.comment comment={comment} />
-    <% end %>
-    <%= if @current_user do %>
-      <div class="mt-5">
-        <h3 class="text-2xl -mb-10">
-          Add a comment!
-        </h3>
-        <.simple_form
-          for={@comment_form}
-          id="comment_form"
-          phx-submit="add_comment"
-          phx-debounce="500"
-        >
-          <.input field={@comment_form[:build_id]} value={@build.id} type="hidden" />
-          <.input field={@comment_form[:text]} type="textarea" />
-          <:actions>
-            <.button>Add Comment</.button>
-          </:actions>
-        </.simple_form>
-      </div>
+    <%= if @build.likes == [] do %>
+      No likes yet, be the first!
     <% else %>
+      Liked by:
+      <%= for like <- @build.likes do %>
+        <.username user={like.user} />
+      <% end %>
     <% end %>
   </div>
+  <!-- follows -->
+  <div class="md:w-1/2">
+    <h3 class="text-2xl mb-5 border-b">
+      <.icon name="hero-bolt" /> Follows
+    </h3>
+    <%= if @build.follows == [] do %>
+      No follows yet, be the first!
+    <% else %>
+      Followed by:
+      <%= for follow <- @build.follows do %>
+        <.username user={follow.user} />
+      <% end %>
+    <% end %>
+  </div>
+</div>
+<!-- comments -->
+<div class=" mb-5">
+  <h3 class="text-2xl mb-5 border-b">
+    <.icon name="hero-chat-bubble-bottom-center" /> Comments
+  </h3>
+  <%= for comment <- @build.comments do %>
+    <.comment comment={comment} />
+  <% end %>
+  <%= if @current_user do %>
+    <div class="mt-5">
+      <h3 class="text-2xl -mb-10">
+        Add a comment!
+      </h3>
+      <.simple_form
+        for={@comment_form}
+        id="comment_form"
+        phx-submit="add_comment"
+        phx-debounce="500"
+      >
+        <.input field={@comment_form[:build_id]} value={@build.id} type="hidden" />
+        <.input field={@comment_form[:text]} type="textarea" />
+        <:actions>
+          <.button>Add Comment</.button>
+        </:actions>
+      </.simple_form>
+    </div>
+  <% else %>
+  <% end %>
 </div>
 
 <.back navigate={~p"/builds"}>Back to builds</.back>

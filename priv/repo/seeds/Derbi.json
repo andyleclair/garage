@@ -2,6 +2,7 @@
   "carburetors": [],
   "categories": [
     "clutches",
+    "cranks",
     "engines",
     "mopeds",
     "pulleys",
@@ -12,7 +13,26 @@
       "name": "TJT Race Clutch"
     }
   ],
-  "cranks": [],
+  "cranks": [
+    {
+      "name": "Start III Stock Crank"
+    },
+    {
+      "name": "Start V Stock Crank"
+    },
+    {
+      "name": "Pyramid Reed Stock Crank"
+    },
+    {
+      "name": "Piston Port Stock Crank"
+    },
+    {
+      "name": "GPR50 Stock Crank"
+    },
+    {
+      "name": "Flat Reed Stock Crank"
+    }
+  ],
   "cylinders": [],
   "engines": [
     {

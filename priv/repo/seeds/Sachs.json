@@ -1,11 +1,34 @@
 {
   "carburetors": [],
   "categories": [
+    "cranks",
     "engines",
     "mopeds"
   ],
   "clutches": [],
-  "cranks": [],
+  "cranks": [
+    {
+      "name": "508 Stock Crank"
+    },
+    {
+      "name": "5052B Stock Crank"
+    },
+    {
+      "name": "505 Stock Crank"
+    },
+    {
+      "name": "504 Stock Crank"
+    },
+    {
+      "name": "503 Stock Crank"
+    },
+    {
+      "name": "502 Stock Crank"
+    },
+    {
+      "name": "501 Stock Crank"
+    }
+  ],
   "cylinders": [],
   "engines": [
     {

@@ -1,39 +1,6 @@
 {
   "name": "Riga",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "V-501M Stock Exhaust"
-    },
-    {
-      "name": "R-12 Stock Exhaust"
-    },
-    {
-      "name": "Mini Stock Exhaust"
-    },
-    {
-      "name": "Gauja-1 Stock Exhaust"
-    },
-    {
-      "name": "5 Stock Exhaust"
-    },
-    {
-      "name": "4 Stock Exhaust"
-    },
-    {
-      "name": "22 Stock Exhaust"
-    },
-    {
-      "name": "15-S Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "15-S"
@@ -60,6 +27,39 @@
       "name": "V-501M"
     }
   ],
+  "exhausts": [
+    {
+      "name": "V-501M Stock Exhaust"
+    },
+    {
+      "name": "R-12 Stock Exhaust"
+    },
+    {
+      "name": "Mini Stock Exhaust"
+    },
+    {
+      "name": "Gauja-1 Stock Exhaust"
+    },
+    {
+      "name": "5 Stock Exhaust"
+    },
+    {
+      "name": "4 Stock Exhaust"
+    },
+    {
+      "name": "22 Stock Exhaust"
+    },
+    {
+      "name": "15-S Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

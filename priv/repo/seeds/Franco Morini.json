@@ -1,0 +1,59 @@
+{
+  "carburetors": [],
+  "categories": [
+    "engines"
+  ],
+  "clutches": [],
+  "cranks": [
+    {
+      "name": "S5K2 Stock Crank"
+    },
+    {
+      "name": "P4S Stock Crank"
+    },
+    {
+      "name": "MO2 Stock Crank"
+    },
+    {
+      "name": "MO1 Stock Crank"
+    },
+    {
+      "name": "MK1 Stock Crank"
+    },
+    {
+      "name": "M101 Stock Crank"
+    },
+    {
+      "name": "M1 Stock Crank"
+    }
+  ],
+  "cylinders": [],
+  "engines": [
+    {
+      "name": "S5K2"
+    },
+    {
+      "name": "P4S"
+    },
+    {
+      "name": "MO2"
+    },
+    {
+      "name": "MO1"
+    },
+    {
+      "name": "MK1"
+    },
+    {
+      "name": "M101"
+    },
+    {
+      "name": "M1"
+    }
+  ],
+  "exhausts": [],
+  "ignitions": [],
+  "name": "Franco Morini",
+  "pulleys": [],
+  "variators": []
+}

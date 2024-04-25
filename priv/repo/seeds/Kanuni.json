@@ -1,21 +1,6 @@
 {
   "name": "Kanuni",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Turbo Sport GXL Stock Exhaust"
-    },
-    {
-      "name": "Power GXL Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "Power GXL"
@@ -24,6 +9,21 @@
       "name": "Turbo Sport GXL"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Turbo Sport GXL Stock Exhaust"
+    },
+    {
+      "name": "Power GXL Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

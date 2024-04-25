@@ -1,6 +1,7 @@
 {
   "carburetors": [],
   "categories": [
+    "cranks",
     "cylinders",
     "engines",
     "ignitions",
@@ -8,7 +9,23 @@
     "pulleys"
   ],
   "clutches": [],
-  "cranks": [],
+  "cranks": [
+    {
+      "name": "Piaggio Stock Crank"
+    },
+    {
+      "name": "Polini Evolution Stock Crank"
+    },
+    {
+      "name": "Polini Speed Stock Crank"
+    },
+    {
+      "name": "Polini Reed Stock Crank"
+    },
+    {
+      "name": "MP-ONE Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "displacement": 50,
@@ -17,22 +34,19 @@
   ],
   "engines": [
     {
-      "name": "Stock"
-    },
-    {
-      "name": "Sprocatti"
-    },
-    {
-      "name": "Simonini"
+      "name": "Piaggio"
     },
     {
       "name": "Polini Evolution"
     },
     {
-      "name": "Polini"
+      "name": "Polini Speed"
     },
     {
-      "name": "Malossi"
+      "name": "Polini Reed"
+    },
+    {
+      "name": "MP-ONE"
     }
   ],
   "exhausts": [],

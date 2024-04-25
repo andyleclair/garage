@@ -1,11 +1,19 @@
 {
   "carburetors": [],
   "categories": [
+    "cranks",
     "engines",
     "mopeds"
   ],
   "clutches": [],
-  "cranks": [],
+  "cranks": [
+    {
+      "name": "2-Speed Manual Stock Crank"
+    },
+    {
+      "name": "2-Speed Automatic Stock Crank"
+    }
+  ],
   "cylinders": [],
   "engines": [
     {

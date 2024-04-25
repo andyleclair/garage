@@ -1,11 +1,16 @@
 {
   "carburetors": [],
   "categories": [
+    "cranks",
     "engines",
     "mopeds"
   ],
   "clutches": [],
-  "cranks": [],
+  "cranks": [
+    {
+      "name": "G2 Stock Crank"
+    }
+  ],
   "cylinders": [],
   "engines": [
     {

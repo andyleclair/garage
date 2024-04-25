@@ -4,6 +4,7 @@
     "cylinders"
   ],
   "clutches": [],
+  "cranks": [],
   "cylinders": [
     {
       "displacement": 50,

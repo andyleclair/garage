@@ -7,9 +7,11 @@ defmodule GarageWeb.VariatorLive.Index do
     <.header>
       All Variators
       <:actions>
-        <.link patch={~p"/variators/new"}>
-          <.button>New Variator</.button>
-        </.link>
+        <%= if @current_user do %>
+          <.link patch={~p"/variators/new"}>
+            <.button>New Variator</.button>
+          </.link>
+        <% end %>
       </:actions>
     </.header>
 
@@ -25,7 +27,9 @@ defmodule GarageWeb.VariatorLive.Index do
       <:col :let={{_id, variator}} label="Description"><%= variator.description %></:col>
 
       <:col :let={{_id, variator}} label="Type"><%= humanize(variator.type) %></:col>
-      <:col :let={{_id, variator}} label="Size"><%= variator.size %> mm</:col>
+      <:col :let={{_id, variator}} label="Size">
+        <%= if variator.size, do: "#{variator.size} mm" %>
+      </:col>
       <:col :let={{_id, variator}} label="Roller Count"><%= variator.rollers %></:col>
       <:action :let={{_id, variator}}>
         <%= if @current_user do %>

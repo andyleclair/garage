@@ -1,102 +1,6 @@
 {
   "name": "Sparta",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Typen Stock Exhaust"
-    },
-    {
-      "name": "Tour Stock Exhaust"
-    },
-    {
-      "name": "Super Sport Stock Exhaust"
-    },
-    {
-      "name": "Sport 4 Stock Exhaust"
-    },
-    {
-      "name": "Sport 3V Stock Exhaust"
-    },
-    {
-      "name": "Sport Stock Exhaust"
-    },
-    {
-      "name": "Spartamatic Stock Exhaust"
-    },
-    {
-      "name": "SE 50 Stock Exhaust"
-    },
-    {
-      "name": "SB 50 Stock Exhaust"
-    },
-    {
-      "name": "Met Tandem Stock Exhaust"
-    },
-    {
-      "name": "Met Stock Exhaust"
-    },
-    {
-      "name": "MB 50 Stock Exhaust"
-    },
-    {
-      "name": "Lucky Stock Exhaust"
-    },
-    {
-      "name": "Happy Mini Stock Exhaust"
-    },
-    {
-      "name": "Happy Stock Exhaust"
-    },
-    {
-      "name": "Grand Sport Stock Exhaust"
-    },
-    {
-      "name": "GS50 Stock Exhaust"
-    },
-    {
-      "name": "GH50 Stock Exhaust"
-    },
-    {
-      "name": "GF50 Stock Exhaust"
-    },
-    {
-      "name": "GE 50 Tour Stock Exhaust"
-    },
-    {
-      "name": "GE 50 Sport Stock Exhaust"
-    },
-    {
-      "name": "GD 50 Stock Exhaust"
-    },
-    {
-      "name": "GC50 Stock Exhaust"
-    },
-    {
-      "name": "GB50 Stock Exhaust"
-    },
-    {
-      "name": "G50 Stock Exhaust"
-    },
-    {
-      "name": "Foxi GT Sport Stock Exhaust"
-    },
-    {
-      "name": "Foxi Stock Exhaust"
-    },
-    {
-      "name": "Buddy Stock Exhaust"
-    },
-    {
-      "name": "2V Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "2V"
@@ -186,6 +90,102 @@
       "name": "Typen"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Typen Stock Exhaust"
+    },
+    {
+      "name": "Tour Stock Exhaust"
+    },
+    {
+      "name": "Super Sport Stock Exhaust"
+    },
+    {
+      "name": "Sport 4 Stock Exhaust"
+    },
+    {
+      "name": "Sport 3V Stock Exhaust"
+    },
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "Spartamatic Stock Exhaust"
+    },
+    {
+      "name": "SE 50 Stock Exhaust"
+    },
+    {
+      "name": "SB 50 Stock Exhaust"
+    },
+    {
+      "name": "Met Tandem Stock Exhaust"
+    },
+    {
+      "name": "Met Stock Exhaust"
+    },
+    {
+      "name": "MB 50 Stock Exhaust"
+    },
+    {
+      "name": "Lucky Stock Exhaust"
+    },
+    {
+      "name": "Happy Mini Stock Exhaust"
+    },
+    {
+      "name": "Happy Stock Exhaust"
+    },
+    {
+      "name": "Grand Sport Stock Exhaust"
+    },
+    {
+      "name": "GS50 Stock Exhaust"
+    },
+    {
+      "name": "GH50 Stock Exhaust"
+    },
+    {
+      "name": "GF50 Stock Exhaust"
+    },
+    {
+      "name": "GE 50 Tour Stock Exhaust"
+    },
+    {
+      "name": "GE 50 Sport Stock Exhaust"
+    },
+    {
+      "name": "GD 50 Stock Exhaust"
+    },
+    {
+      "name": "GC50 Stock Exhaust"
+    },
+    {
+      "name": "GB50 Stock Exhaust"
+    },
+    {
+      "name": "G50 Stock Exhaust"
+    },
+    {
+      "name": "Foxi GT Sport Stock Exhaust"
+    },
+    {
+      "name": "Foxi Stock Exhaust"
+    },
+    {
+      "name": "Buddy Stock Exhaust"
+    },
+    {
+      "name": "2V Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

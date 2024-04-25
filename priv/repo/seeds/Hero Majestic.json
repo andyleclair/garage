@@ -1,27 +1,6 @@
 {
   "name": "Hero Majestic",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Panther Stock Exhaust"
-    },
-    {
-      "name": "Pacer Stock Exhaust"
-    },
-    {
-      "name": "Gizmo Stock Exhaust"
-    },
-    {
-      "name": "Ankur Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "Ankur"
@@ -36,6 +15,27 @@
       "name": "Panther"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Panther Stock Exhaust"
+    },
+    {
+      "name": "Pacer Stock Exhaust"
+    },
+    {
+      "name": "Gizmo Stock Exhaust"
+    },
+    {
+      "name": "Ankur Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

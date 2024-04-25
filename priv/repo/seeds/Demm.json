@@ -1,42 +1,6 @@
 {
   "name": "Demm",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Smily Stock Exhaust"
-    },
-    {
-      "name": "Scouts Stock Exhaust"
-    },
-    {
-      "name": "RG6 Stock Exhaust"
-    },
-    {
-      "name": "Panther Stock Exhaust"
-    },
-    {
-      "name": "Joy Stock Exhaust"
-    },
-    {
-      "name": "Dove Stock Exhaust"
-    },
-    {
-      "name": "Condor 4 Stock Exhaust"
-    },
-    {
-      "name": "Capri Stock Exhaust"
-    },
-    {
-      "name": "Brio Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "Brio"
@@ -66,6 +30,42 @@
       "name": "Smily"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Smily Stock Exhaust"
+    },
+    {
+      "name": "Scouts Stock Exhaust"
+    },
+    {
+      "name": "RG6 Stock Exhaust"
+    },
+    {
+      "name": "Panther Stock Exhaust"
+    },
+    {
+      "name": "Joy Stock Exhaust"
+    },
+    {
+      "name": "Dove Stock Exhaust"
+    },
+    {
+      "name": "Condor 4 Stock Exhaust"
+    },
+    {
+      "name": "Capri Stock Exhaust"
+    },
+    {
+      "name": "Brio Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

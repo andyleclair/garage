@@ -1,33 +1,6 @@
 {
   "name": "Lambretta",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Puma Cross Stock Exhaust"
-    },
-    {
-      "name": "Puma Stock Exhaust"
-    },
-    {
-      "name": "Mark 2 Stock Exhaust"
-    },
-    {
-      "name": "Eagle Stock Exhaust"
-    },
-    {
-      "name": "A 50 Stock Exhaust"
-    },
-    {
-      "name": "48 Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "48"
@@ -48,6 +21,33 @@
       "name": "Puma Cross"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Puma Cross Stock Exhaust"
+    },
+    {
+      "name": "Puma Stock Exhaust"
+    },
+    {
+      "name": "Mark 2 Stock Exhaust"
+    },
+    {
+      "name": "Eagle Stock Exhaust"
+    },
+    {
+      "name": "A 50 Stock Exhaust"
+    },
+    {
+      "name": "48 Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

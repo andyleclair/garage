@@ -1,36 +1,6 @@
 {
   "name": "Rap",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Super Stock Exhaust"
-    },
-    {
-      "name": "Ster Stock Exhaust"
-    },
-    {
-      "name": "Speedo Stock Exhaust"
-    },
-    {
-      "name": "Rocky Stock Exhaust"
-    },
-    {
-      "name": "Matadore Stock Exhaust"
-    },
-    {
-      "name": "Imperial Stock Exhaust"
-    },
-    {
-      "name": "Crown Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "Crown"
@@ -54,6 +24,36 @@
       "name": "Super"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Super Stock Exhaust"
+    },
+    {
+      "name": "Ster Stock Exhaust"
+    },
+    {
+      "name": "Speedo Stock Exhaust"
+    },
+    {
+      "name": "Rocky Stock Exhaust"
+    },
+    {
+      "name": "Matadore Stock Exhaust"
+    },
+    {
+      "name": "Imperial Stock Exhaust"
+    },
+    {
+      "name": "Crown Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

@@ -1,0 +1,23 @@
+{
+  "carburetors": [],
+  "categories": [
+    "engines"
+  ],
+  "clutches": [],
+  "cranks": [
+    {
+      "name": "Vespa Stock Crank"
+    }
+  ],
+  "cylinders": [],
+  "engines": [
+    {
+      "name": "Vespa"
+    }
+  ],
+  "exhausts": [],
+  "ignitions": [],
+  "name": "Sprocatti",
+  "pulleys": [],
+  "variators": []
+}

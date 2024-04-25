@@ -45,6 +45,7 @@ defmodule GarageWeb.CarburetorLive.FormComponent do
           id="size-select"
           label="Sizes"
           tags={@sizes}
+          phx-target={@myself}
           on_tag_update={fn sizes -> send_update(@myself, sizes: sizes) end}
         />
         <.live_select
@@ -146,6 +147,10 @@ defmodule GarageWeb.CarburetorLive.FormComponent do
       {:error, form} ->
         {:noreply, assign(socket, form: form)}
     end
+  end
+
+  defp assign_form(%{assigns: %{form: _form}} = socket) do
+    socket
   end
 
   defp assign_form(%{assigns: %{carburetor: carburetor}} = socket) do

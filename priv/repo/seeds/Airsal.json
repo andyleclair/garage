@@ -1,9 +1,15 @@
 {
   "carburetors": [],
   "categories": [
+    "engines",
     "cylinders"
   ],
   "clutches": [],
+  "cranks": [
+    {
+      "name": "Peugeot 103 Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "displacement": 70,
@@ -66,7 +72,11 @@
       "name": "Derbi 50cc"
     }
   ],
-  "engines": [],
+  "engines": [
+    {
+      "name": "Peugeot 103"
+    }
+  ],
   "exhausts": [],
   "ignitions": [],
   "name": "Airsal",

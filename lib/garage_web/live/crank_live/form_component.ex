@@ -25,7 +25,7 @@ defmodule GarageWeb.CrankLive.FormComponent do
             name="manufacturer"
             label="Manufacturer"
             type="text"
-            value={@clutch.manufacturer.name}
+            value={@crank.manufacturer.name}
             disabled
           />
         <% else %>
@@ -38,6 +38,13 @@ defmodule GarageWeb.CrankLive.FormComponent do
           />
         <% end %>
         <.input field={@form[:name]} type="text" label="Name" />
+        <.live_select
+          field={@form[:engine_id]}
+          phx-focus="set-default"
+          options={@engine_options}
+          phx-target={@myself}
+          label="Engine"
+        />
         <.input field={@form[:description]} type="textarea" label="Description" />
         <.input field={@form[:stroke]} type="number" label="Stroke" />
         <.input field={@form[:conn_rod_length]} type="number" label="Conn rod length" />
@@ -45,13 +52,6 @@ defmodule GarageWeb.CrankLive.FormComponent do
           field={@form[:small_end_bearing_diameter]}
           type="number"
           label="Small end bearing diameter"
-        />
-        <.live_select
-          field={@form[:engine_id]}
-          phx-focus="set-default"
-          options={@engine_options}
-          phx-target={@myself}
-          label="Engine"
         />
 
         <:actions>

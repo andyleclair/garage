@@ -25,21 +25,25 @@ defmodule GarageWeb.CrankLive.Index do
           <%= crank.manufacturer.name %>
         </.link>
       </:col>
-      <:col :let={{_id, engine}} label="Manufacturer">
-        <.link navigate={~p"/manufacturers/#{engine.manufacturer}"}>
-          <%= engine.manufacturer.name %>
-        </.link>
-      </:col>
       <:col :let={{_id, crank}} label="Name"><%= crank.name %></:col>
+      <:col :let={{_id, crank}} label="Engine">
+        <%= if crank.engine do %>
+          <.link navigate={~p"/engines/#{crank.engine}"}>
+            <%= crank.engine.name %>
+          </.link>
+        <% end %>
+      </:col>
 
       <:col :let={{_id, crank}} label="Description"><%= crank.description %></:col>
 
-      <:col :let={{_id, crank}} label="Stroke (mm)"><%= crank.stroke %></:col>
+      <:col :let={{_id, crank}} label="Stroke"><%= if crank.stroke, do: "#{crank.stroke} mm" %></:col>
 
-      <:col :let={{_id, crank}} label="Conn rod length (mm)"><%= crank.conn_rod_length %></:col>
+      <:col :let={{_id, crank}} label="Conrod length">
+        <%= if crank.conn_rod_length, do: "#{crank.conn_rod_length} mm" %>
+      </:col>
 
-      <:col :let={{_id, crank}} label="Small end bearing diameter (mm)">
-        <%= crank.small_end_bearing_diameter %>mm
+      <:col :let={{_id, crank}} label="Small end bearing diameter">
+        <%= if crank.small_end_bearing_diameter, do: "#{crank.small_end_bearing_diameter} mm" %>
       </:col>
 
       <:action :let={{_id, crank}}>

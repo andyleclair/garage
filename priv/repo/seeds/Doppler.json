@@ -1,17 +1,18 @@
 {
   "carburetors": [],
   "categories": [
-    "clutches",
-    "cylinders",
     "exhausts",
+    "clutches",
     "pulleys",
-    "variators"
+    "variators",
+    "cylinders"
   ],
   "clutches": [
     {
       "name": "Clutch Pulley"
     }
   ],
+  "cranks": [],
   "cylinders": [
     {
       "displacement": 50,

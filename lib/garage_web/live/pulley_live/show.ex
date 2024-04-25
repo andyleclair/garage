@@ -22,6 +22,9 @@ defmodule GarageWeb.PulleyLive.Show do
       <:item title="Description"><%= @pulley.description %></:item>
 
       <:item title="Manufacturer"><%= @pulley.manufacturer.name %></:item>
+      <:item title="Sizes">
+        <.badge :for={size <- @pulley.sizes}><%= size %> mm</.badge>
+      </:item>
     </.list>
 
     <.back navigate={~p"/pulleys"}>Back to pulleys</.back>

@@ -1,9 +1,18 @@
 {
   "carburetors": [],
   "categories": [
+    "engines",
     "cylinders"
   ],
   "clutches": [],
+  "cranks": [
+    {
+      "name": "Peugeot 103 Stock Crank"
+    },
+    {
+      "name": "Motobecane AV10 Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "displacement": 65,
@@ -46,7 +55,14 @@
       "name": "Honda 70cc"
     }
   ],
-  "engines": [],
+  "engines": [
+    {
+      "name": "Peugeot 103"
+    },
+    {
+      "name": "Motobecane AV10"
+    }
+  ],
   "exhausts": [],
   "ignitions": [],
   "name": "Parmakit",

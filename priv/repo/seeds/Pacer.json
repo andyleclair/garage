@@ -1,51 +1,6 @@
 {
   "name": "Pacer",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Super Sport P-80 Stock Exhaust"
-    },
-    {
-      "name": "Super Sport Stock Exhaust"
-    },
-    {
-      "name": "Sport P-78 Stock Exhaust"
-    },
-    {
-      "name": "P-280 Stock Exhaust"
-    },
-    {
-      "name": "P-278 Stock Exhaust"
-    },
-    {
-      "name": "P-214 Stock Exhaust"
-    },
-    {
-      "name": "P-14RL Stock Exhaust"
-    },
-    {
-      "name": "P-14 Delux Stock Exhaust"
-    },
-    {
-      "name": "P-14 Stock Exhaust"
-    },
-    {
-      "name": "P-12 Stock Exhaust"
-    },
-    {
-      "name": "P-1 Stock Exhaust"
-    },
-    {
-      "name": "25 Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "25"
@@ -84,6 +39,51 @@
       "name": "Super Sport P-80"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Super Sport P-80 Stock Exhaust"
+    },
+    {
+      "name": "Super Sport Stock Exhaust"
+    },
+    {
+      "name": "Sport P-78 Stock Exhaust"
+    },
+    {
+      "name": "P-280 Stock Exhaust"
+    },
+    {
+      "name": "P-278 Stock Exhaust"
+    },
+    {
+      "name": "P-214 Stock Exhaust"
+    },
+    {
+      "name": "P-14RL Stock Exhaust"
+    },
+    {
+      "name": "P-14 Delux Stock Exhaust"
+    },
+    {
+      "name": "P-14 Stock Exhaust"
+    },
+    {
+      "name": "P-12 Stock Exhaust"
+    },
+    {
+      "name": "P-1 Stock Exhaust"
+    },
+    {
+      "name": "25 Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

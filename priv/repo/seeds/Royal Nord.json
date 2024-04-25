@@ -1,24 +1,6 @@
 {
   "name": "Royal Nord",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Super Vedette Stock Exhaust"
-    },
-    {
-      "name": "Polaris Stock Exhaust"
-    },
-    {
-      "name": "GT Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "GT"
@@ -30,6 +12,24 @@
       "name": "Super Vedette"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Super Vedette Stock Exhaust"
+    },
+    {
+      "name": "Polaris Stock Exhaust"
+    },
+    {
+      "name": "GT Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

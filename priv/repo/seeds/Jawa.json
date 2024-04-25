@@ -1,18 +1,26 @@
 {
   "carburetors": [],
   "categories": [
+    "cranks",
     "engines",
     "mopeds"
   ],
   "clutches": [],
-  "cranks": [],
+  "cranks": [
+    {
+      "name": "207 Stock Crank"
+    },
+    {
+      "name": "210 2 Speed Stock Crank"
+    }
+  ],
   "cylinders": [],
   "engines": [
     {
       "name": "207"
     },
     {
-      "name": " 210 2 Speed"
+      "name": "210 2 Speed"
     }
   ],
   "exhausts": [],

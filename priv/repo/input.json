@@ -2477,17 +2477,17 @@
     },
     {
       "id": "29",
-      "name": "Honda PA50I",
+      "name": "Honda PA50i",
       "count": "28"
     },
     {
       "id": "30",
-      "name": "Honda PA50II",
+      "name": "Honda PA50ii",
       "count": "151"
     },
     {
       "id": "31",
-      "name": "Jawa  210 2 Speed",
+      "name": "Jawa 210 2 Speed",
       "count": "6"
     },
     {
@@ -2546,9 +2546,21 @@
       "count": "13"
     },
     {
-      "id": "43",
-      "name": "Motobecane AV7",
-      "count": "90"
+      "id": "42",
+      "name": "Minarelli V1LKS",
+      "count": "13"
+    },
+    {
+      "name": "Motobecane AV7"
+    },
+    {
+      "name": "Motobecane AV10"
+    },
+    {
+      "name": "Omega Motobecane AV10"
+    },
+    {
+      "name": "Teknix Motobecane AV10"
     },
     {
       "id": "44",
@@ -2561,8 +2573,16 @@
       "count": "3"
     },
     {
+      "id": "45",
+      "name": "Motobecane Dimoby",
+      "count": "3"
+    },
+    {
+      "name": "Parmakit Motobecane AV10"
+    },
+    {
       "id": "46",
-      "name": "Motobecane Polini",
+      "name": "Polini Motobecane AV10",
       "count": "11"
     },
     {
@@ -2571,9 +2591,13 @@
       "count": "5"
     },
     {
-      "id": "48",
-      "name": "Peugeot 103SP",
-      "count": "56"
+      "name": "Peugeot 103SP"
+    },
+    {
+      "name": "Teknix Peugeot 103"
+    },
+    {
+      "name": "Airsal Peugeot 103"
     },
     {
       "id": "49",
@@ -2582,22 +2606,23 @@
     },
     {
       "id": "50",
-      "name": "Peugeot Malossi",
+      "name": "Malossi Peugeot 103 Reed",
       "count": "12"
     },
     {
       "id": "51",
-      "name": "Peugeot Parmakit",
+      "name": "Parmakit Peugeot 103",
       "count": "3"
     },
     {
-      "id": "52",
-      "name": "Peugeot Polini Budget",
-      "count": "4"
+      "name": "Polini Budget Peugeot"
+    },
+    {
+      "name": "Polini Peugeot Reed"
     },
     {
       "id": "53",
-      "name": "Peugeot Polini Pro",
+      "name": "Polini Pro Peugeot",
       "count": "18"
     },
     {
@@ -2702,13 +2727,17 @@
     },
     {
       "id": "74",
-      "name": "Vespa Malossi",
+      "name": "Malossi Vespa",
       "count": "23"
     },
     {
-      "id": "75",
-      "name": "Vespa Polini",
-      "count": "17"
+      "name": "Vespa MP-ONE"
+    },
+    {
+      "name": "Vespa Polini Reed"
+    },
+    {
+      "name": "Vespa Polini Speed"
     },
     {
       "id": "76",
@@ -2717,17 +2746,22 @@
     },
     {
       "id": "77",
-      "name": "Vespa Simonini",
+      "name": "Simonini Vespa",
       "count": "1"
     },
     {
       "id": "78",
-      "name": "Vespa Sprocatti",
+      "name": "Sprocatti Vespa",
+      "count": "0"
+    },
+    {
+      "id": "78",
+      "name": "Malossi D.E.P.S.",
       "count": "0"
     },
     {
       "id": "79",
-      "name": "Vespa Stock",
+      "name": "Vespa Piaggio",
       "count": "53"
     },
     {

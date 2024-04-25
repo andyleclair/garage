@@ -1,11 +1,19 @@
 {
   "carburetors": [],
   "categories": [
+    "cranks",
     "engines",
     "mopeds"
   ],
   "clutches": [],
-  "cranks": [],
+  "cranks": [
+    {
+      "name": "M15 Stock Crank"
+    },
+    {
+      "name": "FA50 Stock Crank"
+    }
+  ],
   "cylinders": [],
   "engines": [
     {

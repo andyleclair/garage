@@ -1,21 +1,6 @@
 {
   "name": "Harley Davidson",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "M-65 Stock Exhaust"
-    },
-    {
-      "name": "M-50 Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "M-50"
@@ -24,6 +9,21 @@
       "name": "M-65"
     }
   ],
+  "exhausts": [
+    {
+      "name": "M-65 Stock Exhaust"
+    },
+    {
+      "name": "M-50 Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

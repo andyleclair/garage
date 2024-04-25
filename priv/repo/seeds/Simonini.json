@@ -1,11 +1,21 @@
 {
   "carburetors": [],
   "categories": [
+    "engines",
     "exhausts"
   ],
   "clutches": [],
+  "cranks": [
+    {
+      "name": "Vespa Stock Crank"
+    }
+  ],
   "cylinders": [],
-  "engines": [],
+  "engines": [
+    {
+      "name": "Vespa"
+    }
+  ],
   "exhausts": [
     {
       "name": "Calibrata"

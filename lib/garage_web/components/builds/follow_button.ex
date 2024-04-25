@@ -9,25 +9,16 @@ defmodule GarageWeb.Components.Builds.FollowButton do
   def follow_button(assigns) do
     ~H"""
     <div class="cursor-pointer w-auto">
-      <%= if @followed_by_user do %>
-        <div phx-click={@current_user && "unfollow"}>
+      <%= if not is_struct(@followed_by_user, Ash.NotLoaded) and @followed_by_user do %>
+        <div phx-click={if @current_user, do: "unfollow", else: "login"}>
           <.button class="w-full">
-            <%= if @follows do %>
-              <%= @follows %> Follows
-            <% else %>
-              Unfollow
-            <% end %>
-            <.icon name="hero-bolt-solid" class="bg-green-500" />
+            Unfollow <.icon name="hero-bolt-solid" class="bg-green-500" />
           </.button>
         </div>
       <% else %>
-        <div phx-click={@current_user && "follow"}>
+        <div phx-click={if @current_user, do: "follow", else: "login"}>
           <.button class="w-full" icon="hero-bolt">
-            <%= if @follows do %>
-              <%= @follows %> Follows
-            <% else %>
-              Follow
-            <% end %>
+            Follow
           </.button>
         </div>
       <% end %>

@@ -4,12 +4,29 @@
     "engines",
     "clutches",
     "cranks",
-    "cylinders",
-    "ignitions"
+    "ignitions",
+    "cylinders"
   ],
   "clutches": [
     {
       "name": "Stock Clutch W/ Blue Springs"
+    }
+  ],
+  "cranks": [
+    {
+      "name": "V1LKS Stock Crank"
+    },
+    {
+      "name": "V1L Stock Crank"
+    },
+    {
+      "name": "V1 Stock Crank"
+    },
+    {
+      "name": "P4 Stock Crank"
+    },
+    {
+      "name": "C2 Stock Crank"
     }
   ],
   "cylinders": [
@@ -19,6 +36,9 @@
     }
   ],
   "engines": [
+    {
+      "name": "V1LKS"
+    },
     {
       "name": "V1L"
     },

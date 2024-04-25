@@ -1,12 +1,24 @@
 {
   "carburetors": [],
   "categories": [
-    "cylinders",
+    "engines",
     "ignitions",
     "pulleys",
-    "variators"
+    "variators",
+    "cylinders"
   ],
   "clutches": [],
+  "cranks": [
+    {
+      "name": "D.E.P.S. Stock Crank"
+    },
+    {
+      "name": "Vespa Stock Crank"
+    },
+    {
+      "name": "Peugeot 103 Reed Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "displacement": 70,
@@ -57,7 +69,17 @@
       "name": "Honda 70cc"
     }
   ],
-  "engines": [],
+  "engines": [
+    {
+      "name": "D.E.P.S."
+    },
+    {
+      "name": "Vespa"
+    },
+    {
+      "name": "Peugeot 103 Reed"
+    }
+  ],
   "exhausts": [],
   "ignitions": [
     {

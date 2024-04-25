@@ -11,11 +11,26 @@
     }
   ],
   "categories": [
-    "carburetors",
+    "engines",
+    "exhausts",
     "cylinders",
-    "exhausts"
+    "carburetors"
   ],
   "clutches": [],
+  "cranks": [
+    {
+      "name": "Pro Peugeot Stock Crank"
+    },
+    {
+      "name": "Peugeot Reed Stock Crank"
+    },
+    {
+      "name": "Budget Peugeot Stock Crank"
+    },
+    {
+      "name": "Motobecane AV10 Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "displacement": 65,
@@ -82,7 +97,20 @@
       "name": "Garelli 70cc"
     }
   ],
-  "engines": [],
+  "engines": [
+    {
+      "name": "Pro Peugeot"
+    },
+    {
+      "name": "Peugeot Reed"
+    },
+    {
+      "name": "Budget Peugeot"
+    },
+    {
+      "name": "Motobecane AV10"
+    }
+  ],
   "exhausts": [
     {
       "name": "Mod SP for Piaggio"

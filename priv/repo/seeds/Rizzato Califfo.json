@@ -1,51 +1,6 @@
 {
   "name": "Rizzato Califfo",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Zum 3 Stock Exhaust"
-    },
-    {
-      "name": "Ringo Turismo Stock Exhaust"
-    },
-    {
-      "name": "Mini Califfo K Stock Exhaust"
-    },
-    {
-      "name": "Cross 6V Stock Exhaust"
-    },
-    {
-      "name": "Cross 4V Stock Exhaust"
-    },
-    {
-      "name": "Califfone Daytona Stock Exhaust"
-    },
-    {
-      "name": "Califfo Super Stock Exhaust"
-    },
-    {
-      "name": "Califfo Matic Stock Exhaust"
-    },
-    {
-      "name": "Califfo Deluxe Stock Exhaust"
-    },
-    {
-      "name": "Califfo 3-Wheeler Stock Exhaust"
-    },
-    {
-      "name": "Califfo 2-Speed Stock Exhaust"
-    },
-    {
-      "name": "Califfo Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "Califfo"
@@ -84,6 +39,51 @@
       "name": "Zum 3"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Zum 3 Stock Exhaust"
+    },
+    {
+      "name": "Ringo Turismo Stock Exhaust"
+    },
+    {
+      "name": "Mini Califfo K Stock Exhaust"
+    },
+    {
+      "name": "Cross 6V Stock Exhaust"
+    },
+    {
+      "name": "Cross 4V Stock Exhaust"
+    },
+    {
+      "name": "Califfone Daytona Stock Exhaust"
+    },
+    {
+      "name": "Califfo Super Stock Exhaust"
+    },
+    {
+      "name": "Califfo Matic Stock Exhaust"
+    },
+    {
+      "name": "Califfo Deluxe Stock Exhaust"
+    },
+    {
+      "name": "Califfo 3-Wheeler Stock Exhaust"
+    },
+    {
+      "name": "Califfo 2-Speed Stock Exhaust"
+    },
+    {
+      "name": "Califfo Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

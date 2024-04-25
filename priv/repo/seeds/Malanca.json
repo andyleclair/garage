@@ -1,72 +1,6 @@
 {
   "name": "Malanca",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Zeta Stock Exhaust"
-    },
-    {
-      "name": "Turismo Turbo Stock Exhaust"
-    },
-    {
-      "name": "Tigrotto Stock Exhaust"
-    },
-    {
-      "name": "Tigre Stock Exhaust"
-    },
-    {
-      "name": "Testa Rossa Stock Exhaust"
-    },
-    {
-      "name": "Roxi Stock Exhaust"
-    },
-    {
-      "name": "Minizeta Stock Exhaust"
-    },
-    {
-      "name": "Mascotte B Stock Exhaust"
-    },
-    {
-      "name": "Lord Stock Exhaust"
-    },
-    {
-      "name": "Leoncino Stock Exhaust"
-    },
-    {
-      "name": "Jolly B Stock Exhaust"
-    },
-    {
-      "name": "Jolly 3M Stock Exhaust"
-    },
-    {
-      "name": "Duplimatic Stock Exhaust"
-    },
-    {
-      "name": "Due PIU Stock Exhaust"
-    },
-    {
-      "name": "Cross Stock Exhaust"
-    },
-    {
-      "name": "Country Special Stock Exhaust"
-    },
-    {
-      "name": "Competizione Stock Exhaust"
-    },
-    {
-      "name": "Big Stock Exhaust"
-    },
-    {
-      "name": "Bibi Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "Bibi"
@@ -126,6 +60,72 @@
       "name": "Zeta"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Zeta Stock Exhaust"
+    },
+    {
+      "name": "Turismo Turbo Stock Exhaust"
+    },
+    {
+      "name": "Tigrotto Stock Exhaust"
+    },
+    {
+      "name": "Tigre Stock Exhaust"
+    },
+    {
+      "name": "Testa Rossa Stock Exhaust"
+    },
+    {
+      "name": "Roxi Stock Exhaust"
+    },
+    {
+      "name": "Minizeta Stock Exhaust"
+    },
+    {
+      "name": "Mascotte B Stock Exhaust"
+    },
+    {
+      "name": "Lord Stock Exhaust"
+    },
+    {
+      "name": "Leoncino Stock Exhaust"
+    },
+    {
+      "name": "Jolly B Stock Exhaust"
+    },
+    {
+      "name": "Jolly 3M Stock Exhaust"
+    },
+    {
+      "name": "Duplimatic Stock Exhaust"
+    },
+    {
+      "name": "Due PIU Stock Exhaust"
+    },
+    {
+      "name": "Cross Stock Exhaust"
+    },
+    {
+      "name": "Country Special Stock Exhaust"
+    },
+    {
+      "name": "Competizione Stock Exhaust"
+    },
+    {
+      "name": "Big Stock Exhaust"
+    },
+    {
+      "name": "Bibi Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

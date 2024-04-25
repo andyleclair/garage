@@ -87,6 +87,21 @@ defmodule Garage.Seeds do
           Enum.reduce(records, %{}, fn %{"name" => original_name} = part, parts_by_manufacturer ->
             {manufacturer, item} =
               case part_type do
+                :engines ->
+                  if String.starts_with?(original_name, "Franco Morini") do
+                    # spesh case for the special pipes
+                    name =
+                      String.split(original_name, " ")
+                      |> then(fn list -> Enum.slice(list, 2..length(list)) end)
+                      |> Enum.join(" ")
+
+                    {"Franco Morini", %{"name" => name}}
+                  else
+                    [manufacturer, name] = String.split(original_name, " ", parts: 2)
+
+                    {manufacturer, %{"name" => name}}
+                  end
+
                 :cylinders ->
                   # i made sure the real manufacturer is last
                   {real_manufacturer, rest} = String.split(original_name, " ") |> List.pop_at(-1)
@@ -155,6 +170,10 @@ defmodule Garage.Seeds do
     Enum.each(parts_by_manufacturer, fn {name, parts} ->
       path = Path.join([:code.priv_dir(:garage), "repo", "seeds", "#{name}.json"])
 
+      cranks =
+        Map.get(parts, :engines, [])
+        |> Enum.map(fn %{"name" => name} -> %{"name" => "#{name} Stock Crank"} end)
+
       content =
         if File.exists?(path) do
           path
@@ -163,6 +182,7 @@ defmodule Garage.Seeds do
           |> Map.merge(%{
             "engines" => Map.get(parts, :engines, []),
             "carburetors" => Map.get(parts, :carburetors, []),
+            "cranks" => cranks,
             "exhausts" => Map.get(parts, :exhausts, []),
             "cylinders" => Map.get(parts, :cylinders, []),
             "clutches" => Map.get(parts, :clutches, []),
@@ -177,6 +197,7 @@ defmodule Garage.Seeds do
           %{
             "name" => name,
             "engines" => Map.get(parts, :engines, []),
+            "cranks" => cranks,
             "carburetors" => Map.get(parts, :carburetors, []),
             "exhausts" => Map.get(parts, :exhausts, []),
             "cylinders" => Map.get(parts, :cylinders, []),

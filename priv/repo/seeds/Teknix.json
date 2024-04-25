@@ -1,0 +1,29 @@
+{
+  "carburetors": [],
+  "categories": [
+    "engines"
+  ],
+  "clutches": [],
+  "cranks": [
+    {
+      "name": "Peugeot 103 Stock Crank"
+    },
+    {
+      "name": "Motobecane AV10 Stock Crank"
+    }
+  ],
+  "cylinders": [],
+  "engines": [
+    {
+      "name": "Peugeot 103"
+    },
+    {
+      "name": "Motobecane AV10"
+    }
+  ],
+  "exhausts": [],
+  "ignitions": [],
+  "name": "Teknix",
+  "pulleys": [],
+  "variators": []
+}

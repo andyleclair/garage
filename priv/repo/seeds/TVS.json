@@ -1,21 +1,6 @@
 {
   "name": "TVS",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Super Champ Stock Exhaust"
-    },
-    {
-      "name": "50XL Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "50XL"
@@ -24,6 +9,21 @@
       "name": "Super Champ"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Super Champ Stock Exhaust"
+    },
+    {
+      "name": "50XL Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

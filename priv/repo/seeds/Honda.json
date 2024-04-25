@@ -1,6 +1,7 @@
 {
   "carburetors": [],
   "categories": [
+    "cranks",
     "cylinders",
     "engines",
     "ignitions",
@@ -9,7 +10,29 @@
     "variators"
   ],
   "clutches": [],
-  "cranks": [],
+  "cranks": [
+    {
+      "name": "PA50ii Stock Crank"
+    },
+    {
+      "name": "PA50i Stock Crank"
+    },
+    {
+      "name": "PA50 Stock Crank"
+    },
+    {
+      "name": "NU50M Stock Crank"
+    },
+    {
+      "name": "NC50 Stock Crank"
+    },
+    {
+      "name": "MB8 Stock Crank"
+    },
+    {
+      "name": "MB5 Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "displacement": 50,
@@ -18,10 +41,10 @@
   ],
   "engines": [
     {
-      "name": "PA50II"
+      "name": "PA50ii"
     },
     {
-      "name": "PA50I"
+      "name": "PA50i"
     },
     {
       "name": "PA50"

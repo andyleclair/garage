@@ -1,21 +1,6 @@
 {
   "name": "Motomarina",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Sebring Stock Exhaust"
-    },
-    {
-      "name": "Raven Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "Raven"
@@ -24,6 +9,21 @@
       "name": "Sebring"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Sebring Stock Exhaust"
+    },
+    {
+      "name": "Raven Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

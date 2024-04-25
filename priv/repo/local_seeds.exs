@@ -3,6 +3,7 @@ alias AshAuthentication.Info
 alias AshAuthentication.Strategy
 alias Garage.Mopeds.Manufacturer
 alias Garage.Mopeds.Model
+alias Garage.Mopeds.Engine
 
 strategy = Info.strategy!(Garage.Accounts.User, :password)
 
@@ -31,12 +32,12 @@ strategy = Info.strategy!(Garage.Accounts.User, :password)
   })
 
 possible_mopeds = [
-  {"tomos", "colibri"},
-  {"puch", "cobra"},
-  {"vespa", "grande"},
-  {"honda", "hobbit"},
-  {"puch", "maxi"},
-  {"derbi", "revolution"}
+  {"tomos", "colibri", "A35"},
+  {"puch", "cobra", "E50"},
+  {"vespa", "grande", "Piaggio"},
+  {"honda", "hobbit", "PA50ii"},
+  {"puch", "maxi", "ZA50"},
+  {"derbi", "revolution", "Start V"}
 ]
 
 image_urls = [
@@ -48,9 +49,10 @@ image_urls = [
 ]
 
 for i <- 1..25 do
-  {make, model} = Enum.random(possible_mopeds)
+  {make, model, engine} = Enum.random(possible_mopeds)
   {:ok, make} = Manufacturer.get_by_slug(make, load: [:engines])
   {:ok, model} = Model.get_by_slug(make.id, model)
+  {:ok, engine} = Ash.get(Engine, %{manufacturer_id: make.id, name: engine})
 
   Ash.Changeset.for_create(
     Garage.Builds.Build,
@@ -59,8 +61,9 @@ for i <- 1..25 do
       name: "My Build #{i} - beavis",
       manufacturer_id: make.id,
       model_id: model.id,
-      year: 1989,
-      image_urls: image_urls
+      year: 1987,
+      image_urls: image_urls,
+      engine_id: engine.id
     },
     actor: beavis
   )
@@ -68,9 +71,10 @@ for i <- 1..25 do
 end
 
 for i <- 1..25 do
-  {make, model} = Enum.random(possible_mopeds)
+  {make, model, engine} = Enum.random(possible_mopeds)
   {:ok, make} = Manufacturer.get_by_slug(make, load: [:engines])
   {:ok, model} = Model.get_by_slug(make.id, model)
+  {:ok, engine} = Ash.get(Engine, %{manufacturer_id: make.id, name: engine})
 
   Ash.Changeset.for_create(
     Garage.Builds.Build,
@@ -80,7 +84,8 @@ for i <- 1..25 do
       manufacturer_id: make.id,
       model_id: model.id,
       image_urls: image_urls,
-      year: 1989
+      year: 1989,
+      engine_id: engine.id
     },
     actor: butthead
   )

@@ -4,6 +4,14 @@
     "engines"
   ],
   "clutches": [],
+  "cranks": [
+    {
+      "name": "Califfo 2 Speed Stock Crank"
+    },
+    {
+      "name": "Califfo 1 Speed Stock Crank"
+    }
+  ],
   "cylinders": [],
   "engines": [
     {

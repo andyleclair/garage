@@ -7,6 +7,7 @@ defmodule Garage.Builds.Comment do
     defaults [:read, :destroy]
 
     create :create do
+      accept [:text, :build_id, :user_id]
       change relate_actor(:user)
     end
   end
@@ -40,8 +41,7 @@ defmodule Garage.Builds.Comment do
     end
 
     belongs_to :build, Garage.Builds.Build do
-      domain Garage.Builds
-      attribute_writable? true
+      public? true
       allow_nil? false
     end
   end

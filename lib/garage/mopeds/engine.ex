@@ -50,6 +50,10 @@ defmodule Garage.Mopeds.Engine do
     has_many :builds, Garage.Builds.Build do
       domain Garage.Builds
     end
+
+    has_one :cranks, Garage.Mopeds.Crank do
+      public? true
+    end
   end
 
   preparations do

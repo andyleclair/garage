@@ -1,23 +1,23 @@
 {
   "name": "Arco",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "E-Z Rider Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "E-Z Rider"
     }
   ],
+  "exhausts": [
+    {
+      "name": "E-Z Rider Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

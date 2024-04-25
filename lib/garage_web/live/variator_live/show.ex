@@ -23,7 +23,7 @@ defmodule GarageWeb.VariatorLive.Show do
 
       <:item title="Manufacturer"><%= @variator.manufacturer.name %></:item>
       <:item title="Type"><%= humanize(@variator.type) %></:item>
-      <:item title="Size"><%= @variator.size %>mm</:item>
+      <:item title="Size"><%= if @variator.size, do: "#{@variator.size} mm" %></:item>
       <:item :if={@variator.type == :rollers} title="Roller Count"><%= @variator.rollers %></:item>
     </.list>
 

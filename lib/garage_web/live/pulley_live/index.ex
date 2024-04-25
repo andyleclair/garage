@@ -25,6 +25,9 @@ defmodule GarageWeb.PulleyLive.Index do
       <:col :let={{_id, pulley}} label="Name"><%= pulley.name %></:col>
 
       <:col :let={{_id, pulley}} label="Description"><%= pulley.description %></:col>
+      <:col :let={{_id, pulley}} label="Sizes">
+        <.badge :for={size <- pulley.sizes || []}><%= size %> mm</.badge>
+      </:col>
 
       <:action :let={{_id, pulley}}>
         <%= if @current_user do %>

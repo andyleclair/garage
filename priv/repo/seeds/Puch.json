@@ -2,6 +2,7 @@
   "carburetors": [],
   "categories": [
     "clutches",
+    "cranks",
     "cylinders",
     "engines",
     "ignitions",
@@ -21,7 +22,23 @@
       "name": "E50 Stock 2-Shoe"
     }
   ],
-  "cranks": [],
+  "cranks": [
+    {
+      "name": "ZA50 Stock Crank"
+    },
+    {
+      "name": "Z50 Stock Crank"
+    },
+    {
+      "name": "Korado Stock Crank"
+    },
+    {
+      "name": "E50 Kickstart Stock Crank"
+    },
+    {
+      "name": "E50 Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "displacement": 50,

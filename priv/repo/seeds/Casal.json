@@ -1,11 +1,16 @@
 {
   "carburetors": [],
   "categories": [
+    "cranks",
     "engines",
     "mopeds"
   ],
   "clutches": [],
-  "cranks": [],
+  "cranks": [
+    {
+      "name": "1 Speed Stock Crank"
+    }
+  ],
   "cylinders": [],
   "engines": [
     {

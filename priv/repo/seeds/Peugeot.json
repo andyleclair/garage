@@ -1,13 +1,24 @@
 {
   "carburetors": [],
   "categories": [
+    "cranks",
     "cylinders",
     "engines",
     "mopeds",
     "pulleys"
   ],
   "clutches": [],
-  "cranks": [],
+  "cranks": [
+    {
+      "name": "103SPX Stock Crank"
+    },
+    {
+      "name": "103SP Stock Crank"
+    },
+    {
+      "name": "102 Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "displacement": 50,
@@ -23,18 +34,6 @@
     }
   ],
   "engines": [
-    {
-      "name": "Polini Pro"
-    },
-    {
-      "name": "Polini Budget"
-    },
-    {
-      "name": "Parmakit"
-    },
-    {
-      "name": "Malossi"
-    },
     {
       "name": "103SPX"
     },

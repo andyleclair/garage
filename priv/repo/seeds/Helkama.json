@@ -1,36 +1,6 @@
 {
   "name": "Helkama",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Tossu Stock Exhaust"
-    },
-    {
-      "name": "Sport Stock Exhaust"
-    },
-    {
-      "name": "Raisu Stock Exhaust"
-    },
-    {
-      "name": "Mini GT Stock Exhaust"
-    },
-    {
-      "name": "Major S Stock Exhaust"
-    },
-    {
-      "name": "Hopeasauma Stock Exhaust"
-    },
-    {
-      "name": "AX Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "AX"
@@ -54,6 +24,36 @@
       "name": "Tossu"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Tossu Stock Exhaust"
+    },
+    {
+      "name": "Sport Stock Exhaust"
+    },
+    {
+      "name": "Raisu Stock Exhaust"
+    },
+    {
+      "name": "Mini GT Stock Exhaust"
+    },
+    {
+      "name": "Major S Stock Exhaust"
+    },
+    {
+      "name": "Hopeasauma Stock Exhaust"
+    },
+    {
+      "name": "AX Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

@@ -1,57 +1,6 @@
 {
   "name": "Berini",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "Miniped Stock Exhaust"
-    },
-    {
-      "name": "M48 Stock Exhaust"
-    },
-    {
-      "name": "M35 Stock Exhaust"
-    },
-    {
-      "name": "M31 Stock Exhaust"
-    },
-    {
-      "name": "M23 Stock Exhaust"
-    },
-    {
-      "name": "M21 Sport Stock Exhaust"
-    },
-    {
-      "name": "M21 Stock Exhaust"
-    },
-    {
-      "name": "M19 Stock Exhaust"
-    },
-    {
-      "name": "M13 Stock Exhaust"
-    },
-    {
-      "name": "Jeunesse Stock Exhaust"
-    },
-    {
-      "name": "F55 Stock Exhaust"
-    },
-    {
-      "name": "Eko Stock Exhaust"
-    },
-    {
-      "name": "Corona Stock Exhaust"
-    },
-    {
-      "name": "Berinette Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "Berinette"
@@ -96,6 +45,57 @@
       "name": "Miniped"
     }
   ],
+  "exhausts": [
+    {
+      "name": "Miniped Stock Exhaust"
+    },
+    {
+      "name": "M48 Stock Exhaust"
+    },
+    {
+      "name": "M35 Stock Exhaust"
+    },
+    {
+      "name": "M31 Stock Exhaust"
+    },
+    {
+      "name": "M23 Stock Exhaust"
+    },
+    {
+      "name": "M21 Sport Stock Exhaust"
+    },
+    {
+      "name": "M21 Stock Exhaust"
+    },
+    {
+      "name": "M19 Stock Exhaust"
+    },
+    {
+      "name": "M13 Stock Exhaust"
+    },
+    {
+      "name": "Jeunesse Stock Exhaust"
+    },
+    {
+      "name": "F55 Stock Exhaust"
+    },
+    {
+      "name": "Eko Stock Exhaust"
+    },
+    {
+      "name": "Corona Stock Exhaust"
+    },
+    {
+      "name": "Berinette Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

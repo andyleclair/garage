@@ -5,6 +5,17 @@
     "cylinders"
   ],
   "clutches": [],
+  "cranks": [
+    {
+      "name": "Puch Kickstart Stock Crank"
+    },
+    {
+      "name": "Majestic Variated Stock Crank"
+    },
+    {
+      "name": "Majestic 1 Speed Stock Crank"
+    }
+  ],
   "cylinders": [
     {
       "displacement": 65,

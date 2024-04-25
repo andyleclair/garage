@@ -1,24 +1,6 @@
 {
   "name": "Eagle",
   "engines": [],
-  "categories": [
-    "mopeds"
-  ],
-  "clutches": [],
-  "cranks": [],
-  "cylinders": [],
-  "exhausts": [
-    {
-      "name": "3 Stock Exhaust"
-    },
-    {
-      "name": "2 Stock Exhaust"
-    },
-    {
-      "name": "1 Stock Exhaust"
-    }
-  ],
-  "ignitions": [],
   "models": [
     {
       "name": "1"
@@ -30,6 +12,24 @@
       "name": "3"
     }
   ],
+  "exhausts": [
+    {
+      "name": "3 Stock Exhaust"
+    },
+    {
+      "name": "2 Stock Exhaust"
+    },
+    {
+      "name": "1 Stock Exhaust"
+    }
+  ],
+  "clutches": [],
+  "cranks": [],
+  "ignitions": [],
   "pulleys": [],
-  "variators": []
+  "variators": [],
+  "categories": [
+    "mopeds"
+  ],
+  "cylinders": []
 }

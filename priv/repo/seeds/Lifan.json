@@ -4,6 +4,14 @@
     "engines"
   ],
   "clutches": [],
+  "cranks": [
+    {
+      "name": "125 Semi-Auto Stock Crank"
+    },
+    {
+      "name": "110cc Stock Crank"
+    }
+  ],
   "cylinders": [],
   "engines": [
     {

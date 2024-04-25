@@ -53,9 +53,9 @@ defmodule Garage.Builds.Build do
   end
 
   relationships do
-    has_many :likes, Like
-    has_many :comments, Comment
-    has_many :follows, Follow
+    has_many :likes, Like, public?: true
+    has_many :comments, Comment, public?: true
+    has_many :follows, Follow, public?: true
 
     belongs_to :ignition, Ignition do
       domain Garage.Mopeds
@@ -147,7 +147,16 @@ defmodule Garage.Builds.Build do
     defaults [:read, :destroy]
 
     create :create do
-      accept [:name, :description, :year, :builder_id, :manufacturer_id, :model_id, :image_urls]
+      accept [
+        :name,
+        :description,
+        :year,
+        :builder_id,
+        :manufacturer_id,
+        :model_id,
+        :image_urls,
+        :engine_id
+      ]
 
       change Garage.Changes.SetSlug
       change relate_actor(:builder)

@@ -17,6 +17,7 @@ defmodule GarageWeb.BuildsLive.Show do
   @impl true
   def handle_params(%{"build" => slug}, url, socket) do
     build = build(slug, socket.assigns.current_user)
+    dbg(build)
 
     {:noreply,
      socket
@@ -36,6 +37,12 @@ defmodule GarageWeb.BuildsLive.Show do
        to_form(Form.for_action(Comment, :create, actor: socket.assigns.current_user))
      )
      |> assign(:can_edit?, Build.can_update?(socket.assigns.current_user, build))}
+  end
+
+  @impl true
+  def handle_event("login", _, socket) do
+    {:noreply,
+     socket |> put_flash(:error, "You Must Be Logged In First!") |> redirect(to: ~p"/sign-in")}
   end
 
   @impl true
@@ -168,11 +175,12 @@ defmodule GarageWeb.BuildsLive.Show do
          |> put_flash(:info, "Comment added!")
          |> assign(
            :comment_form,
-           to_form(Form.clear_value(socket.assigns.comment_form, :text))
+           to_form(Form.for_action(Comment, :create, actor: socket.assigns.current_user))
          )
          |> assign(:build, %{build | comments: build.comments ++ [comment]})}
 
       {:error, form} ->
+        dbg(form)
         {:noreply, assign(socket, :form, form)}
     end
   end
