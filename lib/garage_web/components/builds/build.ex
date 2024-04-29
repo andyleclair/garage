@@ -70,10 +70,13 @@ defmodule GarageWeb.Components.Builds.Build do
                 <%= @build.carb_tuning.carburetor.manufacturer.name %> <%= @build.carb_tuning.carburetor.name %>
               </div>
             </div>
-            <div :if={@build.cylinder} class="flex flex-row justify-between">
+            <div
+              :if={@build.cylinder_tuning && @build.cylinder_tuning.cylinder}
+              class="flex flex-row justify-between"
+            >
               <div class="font-semibold">Cylinder:</div>
               <div>
-                <%= @build.cylinder.manufacturer.name %> <%= @build.cylinder.name %>
+                <%= @build.cylinder_tuning.cylinder.manufacturer.name %> <%= @build.cylinder_tuning.cylinder.name %>
               </div>
             </div>
             <div :if={@build.exhaust} class="flex flex-row justify-between">
@@ -82,16 +85,31 @@ defmodule GarageWeb.Components.Builds.Build do
                 <%= @build.exhaust.manufacturer.name %> <%= @build.exhaust.name %>
               </div>
             </div>
-            <div :if={@build.clutch} class="flex flex-row justify-between">
+            <div
+              :if={@build.clutch_tuning && @build.clutch_tuning.clutch}
+              class="flex flex-row justify-between"
+            >
               <div class="font-semibold">Clutch:</div>
               <div>
-                <%= @build.clutch.manufacturer.name %> <%= @build.clutch.name %>
+                <%= @build.clutch_tuning.clutch.manufacturer.name %> <%= @build.clutch_tuning.clutch.name %>
               </div>
             </div>
-            <div :if={@build.ignition} class="flex flex-row justify-between">
+            <div
+              :if={@build.ignition_tuning && @build.ignition_tuning.ignition}
+              class="flex flex-row justify-between"
+            >
               <div class="font-semibold">Ignition:</div>
               <div>
-                <%= @build.ignition.manufacturer.name %> <%= @build.ignition.name %>
+                <%= @build.ignition_tuning.ignition.manufacturer.name %> <%= @build.ignition_tuning.ignition.name %>
+              </div>
+            </div>
+            <div
+              :if={@build.variator_tuning && @build.variator_tuning.variator}
+              class="flex flex-row justify-between"
+            >
+              <div class="font-semibold">Variator:</div>
+              <div>
+                <%= @build.variator_tuning.variator.manufacturer.name %> <%= @build.variator_tuning.variator.name %>
               </div>
             </div>
           </div>

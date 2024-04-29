@@ -17,7 +17,6 @@ defmodule GarageWeb.BuildsLive.Show do
   @impl true
   def handle_params(%{"build" => slug}, url, socket) do
     build = build(slug, socket.assigns.current_user)
-    dbg(build)
 
     {:noreply,
      socket
@@ -170,19 +169,28 @@ defmodule GarageWeb.BuildsLive.Show do
   def handle_event("add_comment", %{"form" => params}, %{assigns: %{build: build}} = socket) do
     case Form.submit(socket.assigns.comment_form, params: params) do
       {:ok, comment} ->
+        form =
+          Form.for_action(Comment, :create, actor: socket.assigns.current_user)
+
         {:noreply,
          socket
          |> put_flash(:info, "Comment added!")
-         |> assign(
-           :comment_form,
-           to_form(Form.for_action(Comment, :create, actor: socket.assigns.current_user))
-         )
+         |> assign(:comment_form, to_form(form))
          |> assign(:build, %{build | comments: build.comments ++ [comment]})}
 
       {:error, form} ->
-        dbg(form)
         {:noreply, assign(socket, :form, form)}
     end
+  end
+
+  @impl true
+  def handle_event(
+        "validate_comment",
+        %{"form" => params},
+        %{assigns: %{comment_form: form}} = socket
+      ) do
+    form = Form.validate(form, params)
+    {:noreply, assign(socket, :comment_form, form)}
   end
 
   defp build(slug, current_user) when not is_nil(current_user) do

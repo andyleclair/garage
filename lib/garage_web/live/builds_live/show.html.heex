@@ -73,7 +73,7 @@
   <h3 class="text-2xl mb-5 border-b">
     <.icon name="hero-wrench-screwdriver" /> Specs
   </h3>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
     <div class="flex flex-row justify-between">
       <div class="font-black">Engine:</div>
       <div :if={@build.engine}>
@@ -94,20 +94,26 @@
     </div>
     <div class="flex flex-row justify-between">
       <div class="font-black">Cylinder:</div>
-      <div :if={@build.cylinder}>
-        <%= @build.cylinder.manufacturer.name %> <%= @build.cylinder.name %>
+      <div :if={@build.cylinder_tuning && @build.cylinder_tuning.cylinder}>
+        <%= @build.cylinder_tuning.cylinder.manufacturer.name %> <%= @build.cylinder_tuning.cylinder.name %>
       </div>
     </div>
     <div class="flex flex-row justify-between">
       <div class="font-black">Clutch:</div>
-      <div :if={@build.clutch}>
-        <%= @build.clutch.manufacturer.name %> <%= @build.clutch.name %>
+      <div :if={@build.clutch_tuning && @build.clutch_tuning.clutch}>
+        <%= @build.clutch_tuning.clutch.manufacturer.name %> <%= @build.clutch_tuning.clutch.name %>
       </div>
     </div>
     <div class="flex flex-row justify-between">
       <div class="font-black">Ignition:</div>
-      <div :if={@build.ignition}>
-        <%= @build.ignition.manufacturer.name %> <%= @build.ignition.name %>
+      <div :if={@build.ignition_tuning && @build.ignition_tuning.ignition}>
+        <%= @build.ignition_tuning.ignition.manufacturer.name %> <%= @build.ignition_tuning.ignition.name %>
+      </div>
+    </div>
+    <div class="flex flex-row justify-between">
+      <div class="font-black">Variator:</div>
+      <div :if={@build.variator_tuning && @build.variator_tuning.variator}>
+        <%= @build.variator_tuning.variator.manufacturer.name %> <%= @build.variator_tuning.variator.name %>
       </div>
     </div>
   </div>
@@ -158,17 +164,17 @@
       <.simple_form
         for={@comment_form}
         id="comment_form"
+        phx-change="validate_comment"
         phx-submit="add_comment"
         phx-debounce="500"
       >
         <.input field={@comment_form[:build_id]} value={@build.id} type="hidden" />
-        <.input field={@comment_form[:text]} type="textarea" />
+        <.input field={@comment_form[:text]} type="textarea" value="" />
         <:actions>
           <.button>Add Comment</.button>
         </:actions>
       </.simple_form>
     </div>
-  <% else %>
   <% end %>
 </div>
 

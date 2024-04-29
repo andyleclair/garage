@@ -37,8 +37,9 @@ defmodule Garage.Mopeds.Variator do
   end
 
   relationships do
-    has_many :builds, Garage.Builds.Build do
+    has_many :variator_tuning, Garage.Builds.VariatorTuning do
       domain Garage.Builds
+      public? true
     end
 
     belongs_to :manufacturer, Garage.Mopeds.Manufacturer do

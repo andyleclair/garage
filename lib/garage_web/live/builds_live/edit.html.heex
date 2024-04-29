@@ -60,13 +60,15 @@
       </div>
     <% end %>
   </.inputs_for>
-  <.live_select
-    label="Cylinder"
-    debounce="250"
-    phx-focus="set-default"
-    field={@form[:cylinder_id]}
-    options={@cylinder_options}
-  />
+  <.inputs_for :let={cylinder_tuning_form} field={@form[:cylinder_tuning]}>
+    <.live_select
+      label="Cylinder"
+      debounce="250"
+      phx-focus="set-default"
+      field={cylinder_tuning_form[:cylinder_id]}
+      options={@cylinder_options}
+    />
+  </.inputs_for>
   <.live_select
     label="Exhaust"
     debounce="250"
@@ -81,20 +83,33 @@
     field={@form[:crank_id]}
     options={@crank_options}
   />
-  <.live_select
-    label="Clutch"
-    debounce="250"
-    phx-focus="set-default"
-    field={@form[:clutch_id]}
-    options={@clutch_options}
-  />
-  <.live_select
-    label="Ignition"
-    debounce="250"
-    phx-focus="set-default"
-    field={@form[:ignition_id]}
-    options={@ignition_options}
-  />
+  <.inputs_for :let={clutch_tuning_form} field={@form[:clutch_tuning]}>
+    <.live_select
+      label="Clutch"
+      debounce="250"
+      phx-focus="set-default"
+      field={clutch_tuning_form[:clutch_id]}
+      options={@clutch_options}
+    />
+  </.inputs_for>
+  <.inputs_for :let={ignition_tuning_form} field={@form[:ignition_tuning]}>
+    <.live_select
+      label="Ignition"
+      debounce="250"
+      phx-focus="set-default"
+      field={ignition_tuning_form[:ignition_id]}
+      options={@ignition_options}
+    />
+  </.inputs_for>
+  <.inputs_for :let={variator_tuning_form} field={@form[:variator_tuning]}>
+    <.live_select
+      label="variator"
+      debounce="250"
+      phx-focus="set-default"
+      field={variator_tuning_form[:variator_id]}
+      options={@variator_options}
+    />
+  </.inputs_for>
   <.input field={@form[:description]} type="hidden" label="Description" id="trix-editor" />
   <div id="rich-text" phx-update="ignore">
     <trix-editor class="trix-content" input="trix-editor"></trix-editor>

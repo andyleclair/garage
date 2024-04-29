@@ -15,4 +15,15 @@ defmodule Garage.Notifiers.Discord do
 
     :ok
   end
+
+  def notify(%Ash.Notifier.Notification{data: data, action: %{type: :update}, actor: user}) do
+    if @env == :prod do
+      Api.create_message!(
+        @channel,
+        "#{user.username} just updated their build, check it out! #{data.name} https://moped.build/builds/#{data.slug}"
+      )
+    end
+
+    :ok
+  end
 end

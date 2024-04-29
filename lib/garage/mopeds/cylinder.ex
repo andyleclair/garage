@@ -20,8 +20,13 @@ defmodule Garage.Mopeds.Cylinder do
 
   relationships do
     belongs_to :manufacturer, Garage.Mopeds.Manufacturer do
-      attribute_writable? true
+      public? true
       allow_nil? false
+    end
+
+    has_many :cylinder_tunings, Garage.Builds.CylinderTuning do
+      domain Garage.Builds
+      public? true
     end
   end
 

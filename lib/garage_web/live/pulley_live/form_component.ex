@@ -105,7 +105,6 @@ defmodule GarageWeb.PulleyLive.FormComponent do
 
   @impl true
   def handle_event("validate", %{"pulley" => pulley_params}, socket) do
-    dbg(socket)
     pulley_params = Map.put(pulley_params, "sizes", socket.assigns.sizes)
     {:noreply, assign(socket, form: AshPhoenix.Form.validate(socket.assigns.form, pulley_params))}
   end

@@ -1,5 +1,7 @@
 defmodule GarageWeb.BuildsLive.Edit do
   require Logger
+  alias Garage.Mopeds.Variator
+  alias Garage.Mopeds.Pulley
   use GarageWeb, :live_view
 
   alias AshPhoenix.Form
@@ -34,6 +36,8 @@ defmodule GarageWeb.BuildsLive.Edit do
       ignitions = Ignition.read_all!()
       cylinders = Cylinder.read_all!()
       crankshafts = Crank.read_all!()
+      pulleys = Pulley.read_all!()
+      variators = Variator.read_all!()
 
       # if we already have a manufacturer set, show the model dropdown
       models =
@@ -45,26 +49,27 @@ defmodule GarageWeb.BuildsLive.Edit do
 
       images = build.image_urls |> Enum.map(fn url -> {random_id(), url} end)
 
-      selected_carb =
-        if selected_carb_id = form |> Form.value(:carb_tuning) |> Form.value(:carburetor_id) do
-          Enum.find(carburetors, fn carb -> carb.id == selected_carb_id end)
-        else
-          nil
-        end
-
       {:ok,
        socket
-       |> assign(:title, "Edit Build")
+       |> assign(:title, "Edit Build - #{build.name}")
        |> assign(:build, build)
+       |> assign_form(form)
        |> assign(:manufacturer_options, to_options(manufacturers))
        |> assign(:images, images)
        |> assign(:uploaded_images, [])
        |> assign(:images_to_delete, [])
-       |> assign(:selected_carburetor, selected_carb)
-       # get special treatment
        |> assign(:models, models)
-       # get special treatment
        |> assign(:carburetors, carburetors)
+       |> assign(:clutches, clutches)
+       |> assign(:clutches, clutches)
+       |> assign(:ignitions, ignitions)
+       |> assign(:cylinders, cylinders)
+       |> assign(:variators, variators)
+       |> maybe_assign_selected(form, :carb_tuning)
+       |> maybe_assign_selected(form, :clutch_tuning)
+       |> maybe_assign_selected(form, :cylinder_tuning)
+       |> maybe_assign_selected(form, :ignition_tuning)
+       |> maybe_assign_selected(form, :variator_tuning)
        |> assign(:model_options, to_options(models))
        |> assign(:carburetor_options, to_options(carburetors))
        |> assign(:engine_options, to_options(engines))
@@ -73,8 +78,9 @@ defmodule GarageWeb.BuildsLive.Edit do
        |> assign(:exhaust_options, to_options(exhausts))
        |> assign(:ignition_options, to_options(ignitions))
        |> assign(:crank_options, to_options(crankshafts))
+       |> assign(:pulley_options, to_options(pulleys))
+       |> assign(:variator_options, to_options(variators))
        |> assign(:year_options, year_options)
-       |> assign_form(form)
        |> allow_upload(:image_urls,
          accept: ~w(.jpg .jpeg .webp .png),
          max_entries: 10,
@@ -170,17 +176,20 @@ defmodule GarageWeb.BuildsLive.Edit do
         "_engine" <> _ ->
           socket.assigns.engine_options
 
-        "_clutch" <> _ ->
+        "[clutch_tuning]" <> _ ->
           socket.assigns.clutch_options
 
         "_exhaust" <> _ ->
           socket.assigns.exhaust_options
 
-        "_cylinder" <> _ ->
+        "[cylinder_tuning]" <> _ ->
           socket.assigns.cylinder_options
 
-        "_ignition" <> _ ->
+        "[ignition_tuning]" <> _ ->
           socket.assigns.ignition_options
+
+        "[variator_tuning]" <> _ ->
+          socket.assigns.variator_options
 
         "_crank" <> _ ->
           socket.assigns.crank_options
@@ -195,9 +204,14 @@ defmodule GarageWeb.BuildsLive.Edit do
   def handle_event("validate", %{"form" => params}, socket) do
     form = Form.validate(socket.assigns.form, params)
 
-    socket = maybe_assign_models(socket, form)
-
-    socket = maybe_assign_selected_carb(socket, form)
+    socket =
+      socket
+      |> maybe_assign_models(form)
+      |> maybe_assign_selected(form, :carb_tuning)
+      |> maybe_assign_selected(form, :clutch_tuning)
+      |> maybe_assign_selected(form, :cylinder_tuning)
+      |> maybe_assign_selected(form, :ignition_tuning)
+      |> maybe_assign_selected(form, :variator_tuning)
 
     {:noreply, assign_form(socket, form)}
   end
@@ -293,12 +307,19 @@ defmodule GarageWeb.BuildsLive.Edit do
   end
 
   defp form(build, current_user) do
-    form = Form.for_update(build, :update, forms: [auto?: true], actor: current_user)
+    Form.for_update(build, :update, forms: [auto?: true], actor: current_user)
+    |> maybe_add_form(:carb_tuning)
+    |> maybe_add_form(:clutch_tuning)
+    |> maybe_add_form(:cylinder_tuning)
+    |> maybe_add_form(:ignition_tuning)
+    |> maybe_add_form(:variator_tuning)
+  end
 
-    if Form.value(form, :carb_tuning) do
+  def maybe_add_form(form, key) do
+    if Form.value(form, key) do
       form
     else
-      Form.add_form(form, [:carb_tuning])
+      Form.add_form(form, [key])
     end
   end
 
@@ -318,20 +339,86 @@ defmodule GarageWeb.BuildsLive.Edit do
 
   defp maybe_assign_models(socket, _form), do: socket
 
-  defp maybe_assign_selected_carb(
-         %{assigns: %{selected_carburetor: selected_carburetor, carburetors: carburetors}} =
-           socket,
-         form
-       ) do
-    if selected_carb_id = form |> Form.value(:carb_tuning) |> Form.value(:carburetor_id) do
-      if is_struct(selected_carburetor, Carburetor) and selected_carburetor.id == selected_carb_id do
+  defp maybe_assign_selected(socket, form, :carb_tuning) do
+    maybe_assign(
+      socket,
+      form,
+      :carb_tuning,
+      :carburetor_id,
+      Carburetor,
+      :selected_carburetor,
+      :carburetors
+    )
+  end
+
+  defp maybe_assign_selected(socket, form, :ignition_tuning) do
+    maybe_assign(
+      socket,
+      form,
+      :ignition_tuning,
+      :ignition_id,
+      Ignition,
+      :selected_ignition,
+      :ignitions
+    )
+  end
+
+  defp maybe_assign_selected(socket, form, :clutch_tuning) do
+    maybe_assign(
+      socket,
+      form,
+      :clutch_tuning,
+      :clutch_id,
+      Clutch,
+      :selected_clutch,
+      :clutches
+    )
+  end
+
+  defp maybe_assign_selected(socket, form, :cylinder_tuning) do
+    maybe_assign(
+      socket,
+      form,
+      :cylinder_tuning,
+      :cylinder_id,
+      Cylinder,
+      :selected_cylinder,
+      :cylinders
+    )
+  end
+
+  defp maybe_assign_selected(socket, form, :variator_tuning) do
+    maybe_assign(
+      socket,
+      form,
+      :variator_tuning,
+      :variator_id,
+      Variator,
+      :selected_variator,
+      :variators
+    )
+  end
+
+  def maybe_assign(
+        %{assigns: assigns} = socket,
+        form,
+        form_id,
+        item_id,
+        mod,
+        selected_item,
+        collection
+      ) do
+    if selected_id = form |> Form.value(form_id) |> Form.value(item_id) do
+      item = assigns[selected_item]
+
+      if is_struct(item, mod) and item.id == selected_id do
         socket
       else
-        carb = Enum.find(carburetors, fn carb -> carb.id == selected_carb_id end)
-        assign(socket, :selected_carburetor, carb)
+        item = Enum.find(assigns[collection], fn thing -> thing.id == selected_id end)
+        assign(socket, selected_item, item)
       end
     else
-      socket
+      assign(socket, selected_item, nil)
     end
   end
 end

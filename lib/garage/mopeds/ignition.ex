@@ -35,12 +35,13 @@ defmodule Garage.Mopeds.Ignition do
   end
 
   relationships do
-    has_many :builds, Garage.Builds.Build do
+    has_many :ignition_tuning, Garage.Builds.IgnitionTuning do
       domain Garage.Builds
+      public? true
     end
 
     belongs_to :manufacturer, Garage.Mopeds.Manufacturer do
-      attribute_writable? true
+      public? true
       allow_nil? false
     end
   end

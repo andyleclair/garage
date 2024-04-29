@@ -62,6 +62,8 @@
 - [ ] User roles
 - [ ] Clubs
 - [ ] Rallies
+- [ ] Stats on parts
+- [ ] Switch from using streams everywhere
 
 ## Known Issues
 

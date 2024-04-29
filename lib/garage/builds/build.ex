@@ -6,19 +6,24 @@ defmodule Garage.Builds.Build do
 
   require Ecto.Query
 
-  alias Garage.Builds.{CarbTuning, Comment, Follow, Like}
+  alias Garage.Builds.{
+    CarbTuning,
+    ClutchTuning,
+    Comment,
+    CylinderTuning,
+    Follow,
+    IgnitionTuning,
+    Like,
+    VariatorTuning
+  }
 
   alias Garage.Mopeds.{
-    Clutch,
     Crank,
-    Cylinder,
     Engine,
     Exhaust,
-    Ignition,
     Manufacturer,
     Model,
-    Pulley,
-    Variator
+    Pulley
   }
 
   alias Garage.Accounts.User
@@ -40,10 +45,21 @@ defmodule Garage.Builds.Build do
       public? true
     end
 
-    # Build specifics
-    attribute :subframe, :string, public?: true
-    attribute :cdi_box, :string, public?: true
-    attribute :variated?, :boolean, default: false, allow_nil?: false, public?: true
+    # transmission
+    attribute :transmission, :atom,
+      public?: true,
+      constraints: [
+        one_of: [
+          :single_speed,
+          :two_speed_manual,
+          :two_speed_automatic,
+          :single_variated,
+          :dual_variated,
+          :hand_shift,
+          :foot_shift
+        ]
+      ]
+
     attribute :front_sprocket, :integer, public?: true
     attribute :rear_sprocket, :integer, public?: true
     attribute :gear_ratio, :string, public?: true
@@ -57,8 +73,7 @@ defmodule Garage.Builds.Build do
     has_many :comments, Comment, public?: true
     has_many :follows, Follow, public?: true
 
-    belongs_to :ignition, Ignition do
-      domain Garage.Mopeds
+    belongs_to :ignition_tuning, IgnitionTuning do
       public? true
     end
 
@@ -66,8 +81,15 @@ defmodule Garage.Builds.Build do
       public? true
     end
 
-    belongs_to :cylinder, Cylinder do
-      domain Garage.Mopeds
+    belongs_to :cylinder_tuning, CylinderTuning do
+      public? true
+    end
+
+    belongs_to :variator_tuning, VariatorTuning do
+      public? true
+    end
+
+    belongs_to :clutch_tuning, ClutchTuning do
       public? true
     end
 
@@ -76,17 +98,7 @@ defmodule Garage.Builds.Build do
       public? true
     end
 
-    belongs_to :clutch, Clutch do
-      domain Garage.Mopeds
-      public? true
-    end
-
     belongs_to :crank, Crank do
-      domain Garage.Mopeds
-      public? true
-    end
-
-    belongs_to :variator, Variator do
       domain Garage.Mopeds
       public? true
     end
@@ -175,16 +187,20 @@ defmodule Garage.Builds.Build do
         :image_urls,
         :engine_id,
         :exhaust_id,
-        :clutch_id,
-        :ignition_id,
-        :cylinder_id,
-        :pulley_id,
-        :variator_id
+        :pulley_id
       ]
 
       argument :carb_tuning, :map
+      argument :clutch_tuning, :map
+      argument :ignition_tuning, :map
+      argument :cylinder_tuning, :map
+      argument :variator_tuning, :map
 
       change manage_relationship(:carb_tuning, type: :direct_control)
+      change manage_relationship(:clutch_tuning, type: :direct_control)
+      change manage_relationship(:ignition_tuning, type: :direct_control)
+      change manage_relationship(:cylinder_tuning, type: :direct_control)
+      change manage_relationship(:variator_tuning, type: :direct_control)
     end
 
     read :all_builds do
@@ -287,11 +303,13 @@ defmodule Garage.Builds.Build do
                 :follow_count,
                 :comment_count,
                 engine: [:manufacturer],
-                clutch: [:manufacturer],
                 exhaust: [:manufacturer],
-                cylinder: [:manufacturer],
+                pulley: [:manufacturer],
+                clutch_tuning: [clutch: [:manufacturer]],
+                cylinder_tuning: [cylinder: [:manufacturer]],
                 carb_tuning: [carburetor: [:manufacturer]],
-                ignition: [:manufacturer]
+                ignition_tuning: [ignition: [:manufacturer]],
+                variator_tuning: [variator: [:manufacturer]]
               ]
             )
   end

@@ -54,6 +54,7 @@ defmodule Garage.Mopeds.Carburetor do
   relationships do
     has_many :carb_tunings, Garage.Builds.CarbTuning do
       domain Garage.Builds
+      public? true
     end
 
     belongs_to :manufacturer, Garage.Mopeds.Manufacturer do

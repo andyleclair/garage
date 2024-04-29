@@ -44,7 +44,6 @@ defmodule Garage.Mopeds.Pulley do
     end
 
     belongs_to :manufacturer, Garage.Mopeds.Manufacturer do
-      public? true
       allow_nil? false
     end
   end
