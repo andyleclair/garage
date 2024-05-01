@@ -60,7 +60,7 @@ defmodule GarageWeb.BuildsLive.Edit do
        |> assign(:images_to_delete, [])
        |> assign(:models, models)
        |> assign(:carburetors, carburetors)
-       |> assign(:clutches, clutches)
+       |> assign(:engines, engines)
        |> assign(:clutches, clutches)
        |> assign(:ignitions, ignitions)
        |> assign(:cylinders, cylinders)
@@ -70,6 +70,7 @@ defmodule GarageWeb.BuildsLive.Edit do
        |> maybe_assign_selected(form, :cylinder_tuning)
        |> maybe_assign_selected(form, :ignition_tuning)
        |> maybe_assign_selected(form, :variator_tuning)
+       |> maybe_assign_selected(form, :engine_tuning)
        |> assign(:model_options, to_options(models))
        |> assign(:carburetor_options, to_options(carburetors))
        |> assign(:engine_options, to_options(engines))
@@ -153,6 +154,9 @@ defmodule GarageWeb.BuildsLive.Edit do
 
         "crank" <> _ ->
           search_options(socket.assigns.crank_options, text)
+
+        "pulley" <> _ ->
+          search_options(socket.assigns.pulley_options, text)
       end
 
     send_update(LiveSelect.Component, options: options, id: id)
@@ -173,7 +177,7 @@ defmodule GarageWeb.BuildsLive.Edit do
         "[carb_tuning]" <> _ ->
           socket.assigns.carburetor_options
 
-        "_engine" <> _ ->
+        "[engine_tuning]" <> _ ->
           socket.assigns.engine_options
 
         "[clutch_tuning]" <> _ ->
@@ -193,6 +197,9 @@ defmodule GarageWeb.BuildsLive.Edit do
 
         "_crank" <> _ ->
           socket.assigns.crank_options
+
+        "_pulley" <> _ ->
+          socket.assigns.pulley_options
       end
 
     send_update(LiveSelect.Component, options: options, id: id)
@@ -212,6 +219,7 @@ defmodule GarageWeb.BuildsLive.Edit do
       |> maybe_assign_selected(form, :cylinder_tuning)
       |> maybe_assign_selected(form, :ignition_tuning)
       |> maybe_assign_selected(form, :variator_tuning)
+      |> maybe_assign_selected(form, :engine_tuning)
 
     {:noreply, assign_form(socket, form)}
   end
@@ -313,6 +321,7 @@ defmodule GarageWeb.BuildsLive.Edit do
     |> maybe_add_form(:cylinder_tuning)
     |> maybe_add_form(:ignition_tuning)
     |> maybe_add_form(:variator_tuning)
+    |> maybe_add_form(:engine_tuning)
   end
 
   def maybe_add_form(form, key) do
@@ -396,6 +405,18 @@ defmodule GarageWeb.BuildsLive.Edit do
       Variator,
       :selected_variator,
       :variators
+    )
+  end
+
+  defp maybe_assign_selected(socket, form, :engine_tuning) do
+    maybe_assign(
+      socket,
+      form,
+      :engine_tuning,
+      :engine_id,
+      Engine,
+      :selected_engine,
+      :engines
     )
   end
 

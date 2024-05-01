@@ -21,14 +21,14 @@ defmodule GarageWeb.Components.Builds.Build do
         <% end %>
 
         <div class="flex flex-col gap-y-10 md:gap-y-4 ml-2 w-full">
-          <div class="flex flex-col md:flex-row justify-between items-baseline">
+          <div class="flex flex-col md:flex-row justify-between items-baseline border-b border-neutral-800">
             <h5 class="flex truncate text-4xl font-black leading-tight text-neutral-800">
               <.link navigate={~p"/builds/#{@build.slug}"} class="truncate w-full max-w-md">
                 <%= @build.name %>
               </.link>
             </h5>
 
-            <div class="flex flex-col md:flex-row divide-x items-baseline justify-between gap-2 w-full md:w-auto">
+            <div class="flex flex-col md:flex-row divide-x items-baseline justify-between gap-2 w-full md:w-auto ">
               <div class="flex flex-row flex-none inline-block gap-x-2">
                 <%= @build.year %>
                 <.link patch={~p"/builds?make=#{@build.manufacturer.slug}"}>
@@ -55,10 +55,13 @@ defmodule GarageWeb.Components.Builds.Build do
           <h6><span class="font-semibold">Builder:</span> <.username user={@build.builder} /></h6>
 
           <div class="grid grid-cols-1 p-2 md:grid-cols-2 gap-4">
-            <div :if={@build.engine} class="flex flex-row justify-between">
+            <div
+              :if={@build.engine_tuning && @build.engine_tuning.engine}
+              class="flex flex-row justify-between"
+            >
               <div class="font-semibold">Engine:</div>
               <div>
-                <%= @build.engine.manufacturer.name %> <%= @build.engine.name %>
+                <%= @build.engine_tuning.engine.manufacturer.name %> <%= @build.engine_tuning.engine.name %>
               </div>
             </div>
             <div
@@ -110,6 +113,12 @@ defmodule GarageWeb.Components.Builds.Build do
               <div class="font-semibold">Variator:</div>
               <div>
                 <%= @build.variator_tuning.variator.manufacturer.name %> <%= @build.variator_tuning.variator.name %>
+              </div>
+            </div>
+            <div :if={@build.pulley} class="flex flex-row justify-between">
+              <div class="font-semibold">Pulley:</div>
+              <div>
+                <%= @build.pulley.manufacturer.name %> <%= @build.pulley.name %>
               </div>
             </div>
           </div>

@@ -11,7 +11,7 @@ defmodule GarageWeb.BuildsLive.Index do
       All Builds
     </.header>
 
-    <div class="flex flex-col gap-y-4">
+    <div class="flex flex-col gap-y-10">
       <.build :for={build <- @builds} build={build} current_user={@current_user} />
     </div>
 

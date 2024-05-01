@@ -11,6 +11,7 @@ defmodule Garage.Builds.Build do
     ClutchTuning,
     Comment,
     CylinderTuning,
+    EngineTuning,
     Follow,
     IgnitionTuning,
     Like,
@@ -19,7 +20,6 @@ defmodule Garage.Builds.Build do
 
   alias Garage.Mopeds.{
     Crank,
-    Engine,
     Exhaust,
     Manufacturer,
     Model,
@@ -44,25 +44,6 @@ defmodule Garage.Builds.Build do
       filterable? true
       public? true
     end
-
-    # transmission
-    attribute :transmission, :atom,
-      public?: true,
-      constraints: [
-        one_of: [
-          :single_speed,
-          :two_speed_manual,
-          :two_speed_automatic,
-          :single_variated,
-          :dual_variated,
-          :hand_shift,
-          :foot_shift
-        ]
-      ]
-
-    attribute :front_sprocket, :integer, public?: true
-    attribute :rear_sprocket, :integer, public?: true
-    attribute :gear_ratio, :string, public?: true
 
     create_timestamp :inserted_at
     update_timestamp :updated_at
@@ -93,6 +74,10 @@ defmodule Garage.Builds.Build do
       public? true
     end
 
+    belongs_to :engine_tuning, EngineTuning do
+      public? true
+    end
+
     belongs_to :exhaust, Exhaust do
       domain Garage.Mopeds
       public? true
@@ -104,11 +89,6 @@ defmodule Garage.Builds.Build do
     end
 
     belongs_to :pulley, Pulley do
-      domain Garage.Mopeds
-      public? true
-    end
-
-    belongs_to :engine, Engine do
       domain Garage.Mopeds
       public? true
     end
@@ -166,12 +146,14 @@ defmodule Garage.Builds.Build do
         :builder_id,
         :manufacturer_id,
         :model_id,
-        :image_urls,
-        :engine_id
+        :image_urls
       ]
+
+      argument :engine_tuning, :map
 
       change Garage.Changes.SetSlug
       change relate_actor(:builder)
+      change manage_relationship(:engine_tuning, type: :direct_control)
       notifiers [Garage.Notifiers.Discord]
     end
 
@@ -185,7 +167,6 @@ defmodule Garage.Builds.Build do
         :manufacturer_id,
         :model_id,
         :image_urls,
-        :engine_id,
         :exhaust_id,
         :pulley_id
       ]
@@ -195,12 +176,14 @@ defmodule Garage.Builds.Build do
       argument :ignition_tuning, :map
       argument :cylinder_tuning, :map
       argument :variator_tuning, :map
+      argument :engine_tuning, :map
 
       change manage_relationship(:carb_tuning, type: :direct_control)
       change manage_relationship(:clutch_tuning, type: :direct_control)
       change manage_relationship(:ignition_tuning, type: :direct_control)
       change manage_relationship(:cylinder_tuning, type: :direct_control)
       change manage_relationship(:variator_tuning, type: :direct_control)
+      change manage_relationship(:engine_tuning, type: :direct_control)
     end
 
     read :all_builds do
@@ -302,14 +285,14 @@ defmodule Garage.Builds.Build do
                 :like_count,
                 :follow_count,
                 :comment_count,
-                engine: [:manufacturer],
                 exhaust: [:manufacturer],
                 pulley: [:manufacturer],
                 clutch_tuning: [clutch: [:manufacturer]],
                 cylinder_tuning: [cylinder: [:manufacturer]],
                 carb_tuning: [carburetor: [:manufacturer]],
                 ignition_tuning: [ignition: [:manufacturer]],
-                variator_tuning: [variator: [:manufacturer]]
+                variator_tuning: [variator: [:manufacturer]],
+                engine_tuning: [engine: [:manufacturer]]
               ]
             )
   end

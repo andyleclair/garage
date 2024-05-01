@@ -23,6 +23,7 @@ defmodule Garage.Builds.CarbTuning do
 
     attribute :tuning, :map, default: %{}, public?: true
     attribute :needle_position, :integer, public?: true
+    attribute :size, :string, public?: true
   end
 
   relationships do

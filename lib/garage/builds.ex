@@ -6,6 +6,7 @@ defmodule Garage.Builds do
     resource Garage.Builds.CarbTuning
     resource Garage.Builds.CylinderTuning
     resource Garage.Builds.ClutchTuning
+    resource Garage.Builds.EngineTuning
     resource Garage.Builds.IgnitionTuning
     resource Garage.Builds.VariatorTuning
     resource Garage.Builds.Like

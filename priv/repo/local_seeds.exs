@@ -63,7 +63,7 @@ for i <- 1..25 do
       model_id: model.id,
       year: 1987,
       image_urls: image_urls,
-      engine_id: engine.id
+      engine_tuning: %{engine_id: engine.id}
     },
     actor: beavis
   )
@@ -85,7 +85,7 @@ for i <- 1..25 do
       model_id: model.id,
       image_urls: image_urls,
       year: 1989,
-      engine_id: engine.id
+      engine_tuning: %{engine_id: engine.id}
     },
     actor: butthead
   )

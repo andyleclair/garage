@@ -76,15 +76,35 @@
   <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
     <div class="flex flex-row justify-between">
       <div class="font-black">Engine:</div>
-      <div :if={@build.engine}>
-        <%= @build.engine.manufacturer.name %> <%= @build.engine.name %>
+      <div :if={@build.engine_tuning && @build.engine_tuning.engine}>
+        <%= @build.engine_tuning.engine.manufacturer.name %> <%= @build.engine_tuning.engine.name %>
       </div>
     </div>
-    <div class="flex flex-row justify-between">
-      <div class="font-black">Carburetor:</div>
-      <div :if={@build.carb_tuning && @build.carb_tuning.carburetor}>
-        <%= @build.carb_tuning.carburetor.manufacturer.name %> <%= @build.carb_tuning.carburetor.name %>
+    <div class="flex flex-col space-y-4">
+      <div class="flex flex-row justify-between">
+        <div class="font-black">Carburetor:</div>
+        <div :if={@build.carb_tuning && @build.carb_tuning.carburetor}>
+          <%= @build.carb_tuning.carburetor.manufacturer.name %> <%= @build.carb_tuning.carburetor.name %>
+        </div>
       </div>
+      <div
+        :if={@build.carb_tuning && @build.carb_tuning.size}
+        class="flex flex-row justify-between ml-10"
+      >
+        <div class="font-bold">Size:</div>
+        <div>
+          <%= @build.carb_tuning.size %>
+        </div>
+      </div>
+      <%= if @build.carb_tuning && @build.carb_tuning.tuning != %{} do %>
+        <div
+          :for={{name, value} <- @build.carb_tuning.tuning}
+          class="flex flex-row justify-between ml-10"
+        >
+          <div class="font-bold"><%= humanize(name) %>:</div>
+          <div><%= value %></div>
+        </div>
+      <% end %>
     </div>
     <div class="flex flex-row justify-between">
       <div class="font-black">Exhaust:</div>
@@ -114,6 +134,12 @@
       <div class="font-black">Variator:</div>
       <div :if={@build.variator_tuning && @build.variator_tuning.variator}>
         <%= @build.variator_tuning.variator.manufacturer.name %> <%= @build.variator_tuning.variator.name %>
+      </div>
+    </div>
+    <div class="flex flex-row justify-between">
+      <div class="font-black">Pulley:</div>
+      <div :if={@build.pulley}>
+        <%= @build.pulley.manufacturer.name %> <%= @build.pulley.name %>
       </div>
     </div>
   </div>

@@ -29,21 +29,46 @@
       <% end %>
     </div>
   </div>
-  <.live_select
-    label="Engine"
-    debounce="250"
-    phx-focus="set-default"
-    field={@form[:engine_id]}
-    options={@engine_options}
-  />
-  <.inputs_for :let={carb_tuning_form} field={@form[:carb_tuning]}>
+  <.inputs_for :let={engine_tuning_form} field={@form[:engine_tuning]}>
     <.live_select
-      label="Carburetor"
+      label="Engine"
       debounce="250"
       phx-focus="set-default"
-      field={carb_tuning_form[:carburetor_id]}
-      options={@carburetor_options}
+      field={engine_tuning_form[:engine_id]}
+      options={@engine_options}
     />
+
+    <%= if @selected_engine do %>
+      <.input
+        type="select"
+        field={engine_tuning_form[:size]}
+        options={@selected_engine.transmission}
+        label="Size"
+        class="w-1/6"
+      />
+    <% end %>
+  </.inputs_for>
+  <.inputs_for :let={carb_tuning_form} field={@form[:carb_tuning]}>
+    <div class="flex justify-around">
+      <%= if @selected_carburetor do %>
+        <.input
+          type="select"
+          field={carb_tuning_form[:size]}
+          options={@selected_carburetor.sizes}
+          label="Size"
+          class="w-1/6"
+        />
+      <% end %>
+      <div class="w-5/6">
+        <.live_select
+          label="Carburetor"
+          debounce="250"
+          phx-focus="set-default"
+          field={carb_tuning_form[:carburetor_id]}
+          options={@carburetor_options}
+        />
+      </div>
+    </div>
     <%= if @selected_carburetor do %>
       <div class="flex flex-row justify-between gap-x-4">
         <%= for part <- @selected_carburetor.tunable_parts do %>
@@ -101,9 +126,16 @@
       options={@ignition_options}
     />
   </.inputs_for>
+  <.live_select
+    label="Pulley"
+    debounce="250"
+    phx-focus="set-default"
+    field={@form[:pulley_id]}
+    options={@pulley_options}
+  />
   <.inputs_for :let={variator_tuning_form} field={@form[:variator_tuning]}>
     <.live_select
-      label="variator"
+      label="Variator"
       debounce="250"
       phx-focus="set-default"
       field={variator_tuning_form[:variator_id]}

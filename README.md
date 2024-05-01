@@ -24,26 +24,26 @@
 - [ ] Build details
   - [x] engine
     - [x] cylinder
-    - [ ] Cylinder tuning (porting etc)
+    - [x] Cylinder tuning (porting etc)
     - [x] crank
-  - [ ] carb
+  - [x] carb
     - [x] tuning
-    - [ ] size
+    - [x] size
     - [x] make
     - [x] model
     - [x] jets
   - [x] ignition
-    - [ ] ignition tuning
-      - [ ] cdi box
-      - [ ] timing (degrees? mm btdc?)
+    - [x] ignition tuning
+      - [x] cdi box
+      - [x] timing (degrees? mm btdc?)
   - [ ] transmission
     - [x] clutch
     - [x] GEARING
       - [x] How to handle vespa, hobbit?
     - [x] variator
-    - [ ] pulley
-    - [ ] variator tuning
-      - [ ] weights
+    - [x] pulley
+    - [x] variator tuning
+      - [x] weights
   - [x] exhaust
 - [ ] Image flagging
 - [ ] Tools

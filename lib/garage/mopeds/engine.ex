@@ -37,6 +37,18 @@ defmodule Garage.Mopeds.Engine do
                   ]
     end
 
+    attribute :drive, {:array, :atom} do
+      public? true
+
+      constraints items: [
+                    one_of: [
+                      :chain,
+                      :belt,
+                      :shaft
+                    ]
+                  ]
+    end
+
     create_timestamp :inserted_at
     update_timestamp :updated_at
   end
@@ -47,7 +59,7 @@ defmodule Garage.Mopeds.Engine do
       allow_nil? false
     end
 
-    has_many :builds, Garage.Builds.Build do
+    has_many :engine_tuning, Garage.Builds.EngineTuning do
       domain Garage.Builds
     end
 
