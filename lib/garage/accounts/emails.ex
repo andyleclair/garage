@@ -15,7 +15,7 @@ defmodule Garage.Accounts.Emails do
 
   defp deliver(to, template_name, params) do
     new()
-    |> from({"Moped.Build Admin", "admin@moped.build"})
+    |> from({"Moped.Club Admin", "admin@moped.club"})
     |> to(to_string(to))
     |> put_provider_option(:track_links, "None")
     |> put_provider_option(:custom_vars, params)

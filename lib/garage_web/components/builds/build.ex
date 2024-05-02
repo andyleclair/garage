@@ -31,10 +31,10 @@ defmodule GarageWeb.Components.Builds.Build do
             <div class="flex flex-col md:flex-row divide-x items-baseline justify-between gap-2 w-full md:w-auto ">
               <div class="flex flex-row flex-none inline-block gap-x-2">
                 <%= @build.year %>
-                <.link patch={~p"/builds?make=#{@build.manufacturer.slug}"}>
+                <.link patch={~p"/builds?#{[make: @build.manufacturer]}"}>
                   <%= @build.manufacturer.name %>
                 </.link>
-                <.link patch={~p"/builds?model=#{@build.model.slug}"}>
+                <.link patch={~p"/builds?#{[make: @build.manufacturer, model: @build.model]}"}>
                   <%= @build.model.name %>
                 </.link>
               </div>

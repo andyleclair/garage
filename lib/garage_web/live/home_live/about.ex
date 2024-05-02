@@ -5,7 +5,7 @@ defmodule GarageWeb.HomeLive.About do
     ~H"""
     <article class="prose lg:prose-xl">
       <h2>
-        About Moped.Build
+        About Moped.Club
       </h2>
       <p>
         Hi, my name is Andy LeClair, I'm a software engineer by trade, but  on nights
@@ -14,7 +14,7 @@ defmodule GarageWeb.HomeLive.About do
         moped club.
       </p>
       <p>
-        I thought our community deserved a better way to show off our moped builds, and
+        I thought our community deserved a better way to show off our Moped.Clubs, and
         so I built this site.
       </p>
       <p>

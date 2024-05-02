@@ -11,7 +11,7 @@ strategy = Info.strategy!(Garage.Accounts.User, :password)
   Strategy.action(strategy, :register, %{
     "username" => "admin",
     "name" => "admin",
-    "email" => "admin@moped.build",
+    "email" => "admin@Moped.Club",
     "password" => "admin12345"
   })
 
@@ -19,7 +19,7 @@ strategy = Info.strategy!(Garage.Accounts.User, :password)
   Strategy.action(strategy, :register, %{
     "username" => "beavis",
     "name" => "Beavis",
-    "email" => "beavis@moped.build",
+    "email" => "beavis@Moped.Club",
     "password" => "beavis12345"
   })
 
@@ -27,7 +27,7 @@ strategy = Info.strategy!(Garage.Accounts.User, :password)
   Strategy.action(strategy, :register, %{
     "username" => "butthead",
     "name" => "Butthead",
-    "email" => "butthead@moped.build",
+    "email" => "butthead@Moped.Club",
     "password" => "butthead12345"
   })
 

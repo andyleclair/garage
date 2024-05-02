@@ -6,10 +6,10 @@ defmodule GarageWeb.HomeLive.Index do
     ~H"""
     <section class="py-6">
       <h2 class="md:text-5xl text-3xl border-b mb-5">
-        Welcome to Moped.Build
+        Welcome to Moped.Club
       </h2>
       <p class="md:text-xl text-lg">
-        Moped.Build is a place to share and discover moped builds from around the world!
+        Moped.Club is a place to share and discover Moped.Clubs from around the world!
       </p>
     </section>
     <section class="py-6">

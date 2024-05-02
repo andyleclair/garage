@@ -9,7 +9,7 @@ defmodule Garage.Notifiers.Discord do
     if @env == :prod do
       Api.create_message!(
         @channel,
-        "#{user.username} just created a new build, check it out! #{data.name} https://moped.build/builds/#{data.slug}"
+        "#{user.username} just created a new build, check it out! #{data.name} https://Moped.Club/builds/#{data.slug}"
       )
     end
 
@@ -20,7 +20,7 @@ defmodule Garage.Notifiers.Discord do
     if @env == :prod do
       Api.create_message!(
         @channel,
-        "#{user.username} just updated their build, check it out! #{data.name} https://moped.build/builds/#{data.slug}"
+        "#{user.username} just updated their build, check it out! #{data.name} https://Moped.Club/builds/#{data.slug}"
       )
     end
 

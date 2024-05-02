@@ -69,7 +69,7 @@ const hooks = {
         this.el.addEventListener("click", e => {
           e.preventDefault();
           if (Notification.permission === "granted") {
-            new Notification("Demo Notification from Moped.Build", {
+            new Notification("Demo Notification from Moped.Club", {
               body: "This is where a real notification will be... later",
               icon: this.el.dataset.icon
             });
@@ -78,7 +78,7 @@ const hooks = {
               if (permission === "granted") {
                 this.el.innerText = "Push Notifications Enabled";
                 this.pushEventTo(this.el, "push-notification-enabled", {})
-                new Notification("Demo Notification from Moped.Build", {
+                new Notification("Demo Notification from Moped.Club", {
                   body: "This is where a real notification will be... later",
                   icon: this.el.dataset.icon
                 });

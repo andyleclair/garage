@@ -48,7 +48,7 @@ if config_env() == :prod do
       You can generate one by calling: mix phx.gen.secret
       """
 
-  host = System.get_env("PHX_HOST") || "moped.build"
+  host = System.get_env("PHX_HOST") || "Moped.Club"
   port = String.to_integer(System.get_env("PORT") || "4000")
 
   config :garage, :dns_cluster_query, System.get_env("DNS_CLUSTER_QUERY")

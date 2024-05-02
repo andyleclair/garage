@@ -20,7 +20,7 @@ config :logger, level: :info
 # of environment variables, is done on config/runtime.exs.
 config :garage,
   upload_bucket: :prod,
-  public_image_root: "https://pics.moped.build"
+  public_image_root: "https://pics.Moped.Club"
 
 config :ex_aws,
   region: "auto"
