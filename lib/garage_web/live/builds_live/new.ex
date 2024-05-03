@@ -49,6 +49,28 @@ defmodule GarageWeb.BuildsLive.New do
         </:actions>
       </.simple_form>
     </div>
+    <div class="relative flex py-5 items-center my-16">
+      <div class="flex-grow border-t border-gray-400"></div>
+      <span class="flex-shrink mx-4 text-gray-400">or</span>
+      <div class="flex-grow border-t border-gray-400"></div>
+    </div>
+    <div>
+      <.header>
+        Import From '77 Garage
+        <:subtitle>Import a build from '77 Garage by pasting in the URL here</:subtitle>
+      </.header>
+      <.simple_form
+        for={@import_form}
+        id="import-form"
+        phx-change="import-validate"
+        phx-submit="import"
+      >
+        <.input field={@import_form[:url]} type="text" label="URL" />
+        <:actions>
+          <.button phx-disable-with="Importing...">Import Build</.button>
+        </:actions>
+      </.simple_form>
+    </div>
 
     <.back navigate={~p"/builds"}>Back to builds</.back>
     """
@@ -73,6 +95,8 @@ defmodule GarageWeb.BuildsLive.New do
         nil
       end
 
+    import_form = to_form(%{url: ""})
+
     {:ok,
      socket
      |> assign(:page_title, "New Build")
@@ -80,7 +104,8 @@ defmodule GarageWeb.BuildsLive.New do
      |> assign(:manufacturer_options, manufacturer_options)
      |> assign(:model_options, model_options)
      |> assign(:year_options, year_options)
-     |> assign_form(form)}
+     |> assign_form(form)
+     |> assign(:import_form, import_form)}
   end
 
   def handle_event("live_select_change", %{"id" => id, "text" => text, "field" => field}, socket) do
@@ -123,6 +148,12 @@ defmodule GarageWeb.BuildsLive.New do
   end
 
   @impl true
+  def handle_event("import-validate", %{"url" => url}, socket) do
+    IO.puts(url)
+    {:noreply, socket}
+  end
+
+  @impl true
   def handle_event(
         "save",
         %{"form" => params},
@@ -138,6 +169,12 @@ defmodule GarageWeb.BuildsLive.New do
       {:error, form} ->
         {:noreply, assign_form(socket, form)}
     end
+  end
+
+  @impl true
+  def handle_event("import", %{"url" => params}, socket) do
+    IO.puts(params)
+    {:noreply, socket}
   end
 
   def manufacturer_options() do
