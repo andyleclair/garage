@@ -95,7 +95,7 @@ const hooks = {
 
 // Register service worker
 navigator.serviceWorker
-  .register(`/assets/js/service-worker.js`)
+  .register(`/js/service_worker.js`)
   .then(registration => {
     console.log('Service Worker registered')
     console.log(registration)
