@@ -93,6 +93,18 @@ const hooks = {
   ...tag_selector
 }
 
+// Register service worker
+navigator.serviceWorker
+  .register(`/assets/js/service-worker.js`)
+  .then(registration => {
+    console.log('Service Worker registered')
+    console.log(registration)
+  })
+  .catch(err => {
+    console.error('Service Worker registration failed')
+    console.error(err)
+  })
+
 
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 let liveSocket = new LiveSocket('/live', Socket, {

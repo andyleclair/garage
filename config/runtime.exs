@@ -31,7 +31,7 @@ if config_env() == :prod do
   maybe_ipv6 = if System.get_env("ECTO_IPV6") in ~w(true 1), do: [:inet6], else: []
 
   config :garage, Garage.Repo,
-    # ssl: true
+    ssl: true,
     url: database_url,
     pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
     socket_options: maybe_ipv6
@@ -48,8 +48,34 @@ if config_env() == :prod do
       You can generate one by calling: mix phx.gen.secret
       """
 
-  host = System.get_env("PHX_HOST") || "Moped.Club"
+  host = System.get_env("PHX_HOST") || "moped.club"
   port = String.to_integer(System.get_env("PORT") || "4000")
+
+  vapid_private_key =
+    System.get_env("VAPID_PRIVATE_KEY") ||
+      raise """
+      environment variable VAPID_PRIVATE_KEY is missing.
+      You can generate one by calling: mix generate.vapid.keys
+      """
+
+  vapid_public_key =
+    System.get_env("VAPID_PUBLIC_KEY") ||
+      raise """
+      environment variable VAPID_PUBLIC_KEY is missing.
+      You can generate one by calling: mix generate.vapid.keys
+      """
+
+  vapid_subject =
+    System.get_env("VAPID_SUBJECT") ||
+      raise """
+      environment variable VAPID_SUBJECT is missing.
+      You can generate one by calling: mix generate.vapid.keys
+      """
+
+  config :garage, GarageWeb.Push,
+    vapid_private_key: vapid_private_key,
+    vapid_public_key: vapid_public_key,
+    vapid_subject: vapid_subject
 
   config :garage, :dns_cluster_query, System.get_env("DNS_CLUSTER_QUERY")
 

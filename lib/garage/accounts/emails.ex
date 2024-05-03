@@ -5,6 +5,14 @@ defmodule Garage.Accounts.Emails do
 
   import Swoosh.Email
 
+  def deliver_welcome_email(user, url) do
+    if !url do
+      raise "Cannot deliver welcome email without a url"
+    end
+
+    deliver(user.email, "Welcome Email", %{"user_url" => url})
+  end
+
   def deliver_reset_password_instructions(user, url) do
     if !url do
       raise "Cannot deliver reset instructions without a url"

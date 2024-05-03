@@ -2,15 +2,27 @@ defmodule GarageWeb.AuthController do
   use GarageWeb, :controller
   use AshAuthentication.Phoenix.Controller
 
-  def success(conn, _activity, user, _token) do
+  def success(conn, {:password, activity}, user, _token) do
     return_to = get_session(conn, :return_to) || ~p"/"
+    IO.inspect(activity)
 
-    conn
-    |> delete_session(:return_to)
-    |> store_in_session(user)
-    |> assign(:current_user, user)
-    |> put_flash(:info, "Success!")
-    |> redirect(to: return_to)
+    if activity == :sign_up do
+      Garage.Accounts.Emails.deliver_welcome_email(user, ~p"/users/#{user}")
+
+      conn
+      |> delete_session(:return_to)
+      |> store_in_session(user)
+      |> assign(:current_user, user)
+      |> put_flash(:info, "Welcome!")
+      |> redirect(to: return_to)
+    else
+      conn
+      |> delete_session(:return_to)
+      |> store_in_session(user)
+      |> assign(:current_user, user)
+      |> put_flash(:info, "Success!")
+      |> redirect(to: return_to)
+    end
   end
 
   def failure(conn, _activity, _reason) do

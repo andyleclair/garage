@@ -83,8 +83,8 @@ defmodule Garage.Accounts.User do
   end
 
   identities do
-    identity :unique_email, [:email]
-    identity :username, [:username]
+    identity :unique_email, [:email], eager_check?: true
+    identity :username, [:username], eager_check?: true
   end
 
   relationships do

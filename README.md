@@ -18,10 +18,7 @@
 - [x] Set prod credentials
 - [x] Seeds
 - [x] Client-side image upload + auto upload
-
-## TODO
-
-- [ ] Build details
+- [x] Build details
   - [x] engine
     - [x] cylinder
     - [x] Cylinder tuning (porting etc)
@@ -36,7 +33,7 @@
     - [x] ignition tuning
       - [x] cdi box
       - [x] timing (degrees? mm btdc?)
-  - [ ] transmission
+  - [x] transmission
     - [x] clutch
     - [x] GEARING
       - [x] How to handle vespa, hobbit?
@@ -45,6 +42,10 @@
     - [x] variator tuning
       - [x] weights
   - [x] exhaust
+- [x] Logo
+
+## TODO
+
 - [ ] Image flagging
 - [ ] Tools
   - Gearing calculator
@@ -53,7 +54,6 @@
 - [ ] Dark mode
 - [ ] Chat
 - [ ] Better index page
-- [ ] Logo
 - [ ] Atomic design
 - [ ] Add signed up users to mailing list
 - [ ] Caching
@@ -64,6 +64,8 @@
 - [ ] Rallies
 - [ ] Stats on parts
 - [ ] Switch from using streams everywhere
+- [ ] Add acknowledgements page
+- [ ] Favicon
 
 ## Known Issues
 
