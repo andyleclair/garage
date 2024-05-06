@@ -22,7 +22,14 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "125 Semi-Auto Stock Ignition"
+    },
+    {
+      "name": "110cc Stock Ignition"
+    }
+  ],
   "name": "Lifan",
   "pulleys": [],
   "variators": []

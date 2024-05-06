@@ -52,6 +52,21 @@
   "exhausts": [],
   "ignitions": [
     {
+      "name": "Dimoby Stock Ignition"
+    },
+    {
+      "name": "Isodyne Stock Ignition"
+    },
+    {
+      "name": "AV88 Stock Ignition"
+    },
+    {
+      "name": "AV10 Stock Ignition"
+    },
+    {
+      "name": "AV7 Stock Ignition"
+    },
+    {
       "name": "CDI"
     }
   ],

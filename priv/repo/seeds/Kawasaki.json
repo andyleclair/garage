@@ -16,7 +16,11 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "KX65 Stock Ignition"
+    }
+  ],
   "name": "Kawasaki",
   "pulleys": [],
   "variators": []

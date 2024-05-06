@@ -3,6 +3,7 @@
   "categories": [
     "cranks",
     "engines",
+    "ignitions",
     "mopeds"
   ],
   "clutches": [],
@@ -24,7 +25,14 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "2-Speed Manual Stock Ignition"
+    },
+    {
+      "name": "2-Speed Automatic Stock Ignition"
+    }
+  ],
   "models": [
     {
       "name": "Florett"

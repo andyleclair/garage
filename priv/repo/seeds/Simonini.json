@@ -57,7 +57,11 @@
       "name": "Honda Wallaroo"
     }
   ],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "Vespa Stock Ignition"
+    }
+  ],
   "name": "Simonini",
   "pulleys": [],
   "variators": []

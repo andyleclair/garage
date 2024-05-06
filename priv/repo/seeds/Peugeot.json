@@ -4,6 +4,7 @@
     "cranks",
     "cylinders",
     "engines",
+    "ignitions",
     "mopeds",
     "pulleys"
   ],
@@ -45,7 +46,17 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "103SPX Stock Ignition"
+    },
+    {
+      "name": "103SP Stock Ignition"
+    },
+    {
+      "name": "102 Stock Ignition"
+    }
+  ],
   "models": [
     {
       "name": "TSA"

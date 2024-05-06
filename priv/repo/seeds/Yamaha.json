@@ -3,6 +3,7 @@
   "categories": [
     "cranks",
     "engines",
+    "ignitions",
     "mopeds"
   ],
   "clutches": [],
@@ -48,7 +49,26 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "RD60 Stock Ignition"
+    },
+    {
+      "name": "QT50 Stock Ignition"
+    },
+    {
+      "name": "PW80 Stock Ignition"
+    },
+    {
+      "name": "LB80 Stock Ignition"
+    },
+    {
+      "name": "LB50 Stock Ignition"
+    },
+    {
+      "name": "G6SB Stock Ignition"
+    }
+  ],
   "models": [
     {
       "name": "Champ"

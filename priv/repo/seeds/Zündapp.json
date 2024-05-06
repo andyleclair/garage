@@ -3,6 +3,7 @@
   "categories": [
     "cranks",
     "engines",
+    "ignitions",
     "mopeds"
   ],
   "clutches": [],
@@ -18,7 +19,11 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "278 Stock Ignition"
+    }
+  ],
   "models": [
     {
       "name": "Automatic Mofa"

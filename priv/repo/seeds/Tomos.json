@@ -47,6 +47,15 @@
   "exhausts": [],
   "ignitions": [
     {
+      "name": "A55 Stock Ignition"
+    },
+    {
+      "name": "A35 Stock Ignition"
+    },
+    {
+      "name": "A3 Stock Ignition"
+    },
+    {
       "name": "A55 OEM CDI"
     },
     {

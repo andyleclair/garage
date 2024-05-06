@@ -174,6 +174,12 @@ defmodule Garage.Seeds do
         Map.get(parts, :engines, [])
         |> Enum.map(fn %{"name" => name} -> %{"name" => "#{name} Stock Crank"} end)
 
+      stock_ignitions =
+        Map.get(parts, :engines, [])
+        |> Enum.map(fn %{"name" => name} -> %{"name" => "#{name} Stock Ignition"} end)
+
+      ignitions = (stock_ignitions ++ Map.get(parts, :ignitions, [])) |> Enum.uniq()
+
       content =
         if File.exists?(path) do
           path
@@ -186,7 +192,7 @@ defmodule Garage.Seeds do
             "exhausts" => Map.get(parts, :exhausts, []),
             "cylinders" => Map.get(parts, :cylinders, []),
             "clutches" => Map.get(parts, :clutches, []),
-            "ignitions" => Map.get(parts, :ignitions, []),
+            "ignitions" => ignitions,
             "pulleys" => Map.get(parts, :pulleys, []),
             "variators" => Map.get(parts, :variators, [])
           })
@@ -202,7 +208,7 @@ defmodule Garage.Seeds do
             "exhausts" => Map.get(parts, :exhausts, []),
             "cylinders" => Map.get(parts, :cylinders, []),
             "clutches" => Map.get(parts, :clutches, []),
-            "ignitions" => Map.get(parts, :ignitions, []),
+            "ignitions" => ignitions,
             "variators" => Map.get(parts, :variators, []),
             "pulleys" => Map.get(parts, :pulleys, []),
             "categories" => record_to_categories(parts)

@@ -78,7 +78,11 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "Peugeot 103 Stock Ignition"
+    }
+  ],
   "name": "Airsal",
   "pulleys": [],
   "variators": []

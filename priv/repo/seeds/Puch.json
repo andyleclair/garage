@@ -65,6 +65,21 @@
   "exhausts": [],
   "ignitions": [
     {
+      "name": "ZA50 Stock Ignition"
+    },
+    {
+      "name": "Z50 Stock Ignition"
+    },
+    {
+      "name": "Korado Stock Ignition"
+    },
+    {
+      "name": "E50 Kickstart Stock Ignition"
+    },
+    {
+      "name": "E50 Stock Ignition"
+    },
+    {
       "name": "Stock Points"
     }
   ],

@@ -83,6 +83,15 @@
   "exhausts": [],
   "ignitions": [
     {
+      "name": "D.E.P.S. Stock Ignition"
+    },
+    {
+      "name": "Vespa Stock Ignition"
+    },
+    {
+      "name": "Peugeot 103 Reed Stock Ignition"
+    },
+    {
       "name": "CDI for Peugeot "
     }
   ],

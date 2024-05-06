@@ -65,6 +65,27 @@
   "exhausts": [],
   "ignitions": [
     {
+      "name": "PA50ii Stock Ignition"
+    },
+    {
+      "name": "PA50i Stock Ignition"
+    },
+    {
+      "name": "PA50 Stock Ignition"
+    },
+    {
+      "name": "NU50M Stock Ignition"
+    },
+    {
+      "name": "NC50 Stock Ignition"
+    },
+    {
+      "name": "MB8 Stock Ignition"
+    },
+    {
+      "name": "MB5 Stock Ignition"
+    },
+    {
       "name": "Hobbit Stock CDI"
     }
   ],

@@ -55,6 +55,21 @@
   "exhausts": [],
   "ignitions": [
     {
+      "name": "V1LKS Stock Ignition"
+    },
+    {
+      "name": "V1L Stock Ignition"
+    },
+    {
+      "name": "V1 Stock Ignition"
+    },
+    {
+      "name": "P4 Stock Ignition"
+    },
+    {
+      "name": "C2 Stock Ignition"
+    },
+    {
       "name": "Stock Points"
     }
   ],

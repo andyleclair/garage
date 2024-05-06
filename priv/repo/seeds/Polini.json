@@ -143,7 +143,20 @@
       "name": "Derbi GPR Pipe"
     }
   ],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "Pro Peugeot Stock Ignition"
+    },
+    {
+      "name": "Peugeot Reed Stock Ignition"
+    },
+    {
+      "name": "Budget Peugeot Stock Ignition"
+    },
+    {
+      "name": "Motobecane AV10 Stock Ignition"
+    }
+  ],
   "name": "Polini",
   "pulleys": [],
   "variators": []

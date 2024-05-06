@@ -3,6 +3,7 @@
   "categories": [
     "cranks",
     "engines",
+    "ignitions",
     "mopeds"
   ],
   "clutches": [],
@@ -24,7 +25,14 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "M15 Stock Ignition"
+    },
+    {
+      "name": "FA50 Stock Ignition"
+    }
+  ],
   "models": [
     {
       "name": "A50P"

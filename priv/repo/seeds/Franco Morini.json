@@ -52,7 +52,29 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "S5K2 Stock Ignition"
+    },
+    {
+      "name": "P4S Stock Ignition"
+    },
+    {
+      "name": "MO2 Stock Ignition"
+    },
+    {
+      "name": "MO1 Stock Ignition"
+    },
+    {
+      "name": "MK1 Stock Ignition"
+    },
+    {
+      "name": "M101 Stock Ignition"
+    },
+    {
+      "name": "M1 Stock Ignition"
+    }
+  ],
   "name": "Franco Morini",
   "pulleys": [],
   "variators": []

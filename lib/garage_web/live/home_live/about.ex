@@ -14,7 +14,7 @@ defmodule GarageWeb.HomeLive.About do
         moped club.
       </p>
       <p>
-        I thought our community deserved a better way to show off our Moped.Clubs, and
+        I thought our community deserved a better way to show off our moped builds, and
         so I built this site.
       </p>
       <p>

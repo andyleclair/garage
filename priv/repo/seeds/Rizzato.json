@@ -22,7 +22,14 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "Califfo 2 Speed Stock Ignition"
+    },
+    {
+      "name": "Califfo 1 Speed Stock Ignition"
+    }
+  ],
   "name": "Rizzato",
   "pulleys": [],
   "variators": []

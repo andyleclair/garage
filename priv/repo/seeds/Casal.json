@@ -3,6 +3,7 @@
   "categories": [
     "cranks",
     "engines",
+    "ignitions",
     "mopeds"
   ],
   "clutches": [],
@@ -18,7 +19,11 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "1 Speed Stock Ignition"
+    }
+  ],
   "models": [
     {
       "name": "Boss"

@@ -3,6 +3,7 @@
   "categories": [
     "cranks",
     "engines",
+    "ignitions",
     "mopeds"
   ],
   "clutches": [],
@@ -30,7 +31,17 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "VIP Stock Ignition"
+    },
+    {
+      "name": "Team Stock Ignition"
+    },
+    {
+      "name": "NOI Stock Ignition"
+    }
+  ],
   "models": [
     {
       "name": "Junior"

@@ -64,7 +64,14 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "Peugeot 103 Stock Ignition"
+    },
+    {
+      "name": "Motobecane AV10 Stock Ignition"
+    }
+  ],
   "name": "Parmakit",
   "pulleys": [],
   "variators": []

@@ -34,7 +34,17 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "Puch Kickstart Stock Ignition"
+    },
+    {
+      "name": "Majestic Variated Stock Ignition"
+    },
+    {
+      "name": "Majestic 1 Speed Stock Ignition"
+    }
+  ],
   "name": "Hero",
   "pulleys": [],
   "variators": []

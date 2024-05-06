@@ -1,146 +1,148 @@
-<header class="max-sm:fixed max-sm:top-0 max-sm:start-0 max-sm:z-10 px-4 sm:px-6 lg:px-20 bg-white border-b boder-color-zinc-800 w-full">
-  <!-- Full size header -->
-  <div class="max-sm:hidden flex items-center justify-between py-3 text-sm">
-    <div class="flex items-center gap-4">
+<div class="flex min-h-screen flex-col bg-white antialiased justify-between">
+  <header class="max-sm:fixed max-sm:top-0 max-sm:start-0 max-sm:z-10 px-4 sm:px-6 lg:px-20 bg-white border-b boder-color-zinc-800 w-full h-dvh">
+    <!-- Full size header -->
+    <div class="max-sm:hidden flex items-center justify-between py-3 text-sm">
+      <div class="flex items-center gap-4">
+        <.link navigate={~p"/"}>
+          <img src={~p"/images/site_header.png"} alt="Moped.Club Logo" class="h-16" />
+        </.link>
+      </div>
+      <div class="flex items-center gap-8 font-semibold leading-6 text-zinc-900">
+        <%= if @current_user do %>
+          <.link patch={~p"/builds/new"}>
+            <.button>
+              <.icon name="hero-plus" class="bg-green-500 -mt-1" /> New Build
+            </.button>
+          </.link>
+        <% end %>
+        <.link navigate={~p"/builds"}>Browse Builds</.link>
+        <.dropdown id="parts-index-dropdown">
+          <:title>Parts Index</:title>
+          <:content>
+            <.link navigate={~p"/parts"}>All Parts</.link>
+            <.link navigate={~p"/manufacturers"}>Manufacturers</.link>
+            <.link navigate={~p"/models"}>Moped Models</.link>
+            <.link navigate={~p"/engines"}>Engines</.link>
+            <.link navigate={~p"/clutches"}>Clutches</.link>
+            <.link navigate={~p"/carburetors"}>Carburetors</.link>
+            <.link navigate={~p"/cranks"}>Crankshafts</.link>
+            <.link navigate={~p"/cylinders"}>Cylinders</.link>
+            <.link navigate={~p"/exhausts"}>Exhausts</.link>
+            <.link navigate={~p"/ignitions"}>Ignitions</.link>
+            <.link navigate={~p"/variators"}>Variators</.link>
+            <.link navigate={~p"/pulleys"}>Pulleys</.link>
+          </:content>
+        </.dropdown>
+        <%= if @current_user do %>
+          <.link
+            navigate={~p"/#{@current_user.username}"}
+            class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
+            style={"color: #{@current_user.color}"}
+          >
+            My Builds
+          </.link>
+          <.link
+            navigate={~p"/user/settings"}
+            class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
+          >
+            Settings
+          </.link>
+          <.link navigate={~p"/sign-out"} method="delete">
+            <.button icon="hero-arrow-right-circle">
+              Sign Out
+            </.button>
+          </.link>
+        <% else %>
+          <.link navigate={~p"/sign-in"}>
+            <.button icon="hero-arrow-right-circle">Sign In</.button>
+          </.link>
+        <% end %>
+      </div>
+    </div>
+    <!-- Mobile header -->
+    <div class="sm:hidden flex items-center justify-between py-3 text-sm">
       <.link navigate={~p"/"}>
-        <img src={~p"/images/site_header.png"} alt="Moped.Club Logo" class="h-16" />
+        <h2 class="px-2 text-5xl">
+          Moped.Club
+        </h2>
       </.link>
+      <.button
+        id="mobile-menu-button"
+        class="text-zinc-100 cursor-pointer"
+        phx-click={
+          JS.toggle(
+            to: "#mobile-menu",
+            in: {"ease-out duration-100", "opacity-0 scale-95", "opacity-100 scale-100"},
+            out: {"ease-out duration-75", "opacity-100 scale-100", "opacity-0 scale-95"}
+          )
+        }
+      >
+        <.icon name="hero-bars-3" class="text-xl" />
+      </.button>
     </div>
-    <div class="flex items-center gap-8 font-semibold leading-6 text-zinc-900">
-      <%= if @current_user do %>
-        <.link patch={~p"/builds/new"}>
-          <.button>
-            <.icon name="hero-plus" class="bg-green-500 -mt-1" /> New Build
-          </.button>
-        </.link>
-      <% end %>
-      <.link navigate={~p"/builds"}>Browse Builds</.link>
-      <.dropdown id="parts-index-dropdown">
-        <:title>Parts Index</:title>
-        <:content>
-          <.link navigate={~p"/parts"}>All Parts</.link>
-          <.link navigate={~p"/manufacturers"}>Manufacturers</.link>
-          <.link navigate={~p"/models"}>Moped Models</.link>
-          <.link navigate={~p"/engines"}>Engines</.link>
-          <.link navigate={~p"/clutches"}>Clutches</.link>
-          <.link navigate={~p"/carburetors"}>Carburetors</.link>
-          <.link navigate={~p"/cranks"}>Crankshafts</.link>
-          <.link navigate={~p"/cylinders"}>Cylinders</.link>
-          <.link navigate={~p"/exhausts"}>Exhausts</.link>
-          <.link navigate={~p"/ignitions"}>Ignitions</.link>
-          <.link navigate={~p"/variators"}>Variators</.link>
-          <.link navigate={~p"/pulleys"}>Pulleys</.link>
-        </:content>
-      </.dropdown>
-      <%= if @current_user do %>
-        <.link
-          navigate={~p"/#{@current_user.username}"}
-          class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
-          style={"color: #{@current_user.color}"}
-        >
-          My Builds
-        </.link>
-        <.link
-          navigate={~p"/user/settings"}
-          class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
-        >
-          Settings
-        </.link>
-        <.link navigate={~p"/sign-out"} method="delete">
-          <.button icon="hero-arrow-right-circle">
-            Sign Out
-          </.button>
-        </.link>
-      <% else %>
-        <.link navigate={~p"/sign-in"}>
-          <.button icon="hero-arrow-right-circle">Sign In</.button>
-        </.link>
-      <% end %>
-    </div>
-  </div>
-  <!-- Mobile header -->
-  <div class="sm:hidden flex items-center justify-between py-3 text-sm">
-    <.link navigate={~p"/"}>
-      <h2 class="px-2 text-5xl">
-        Moped.Club
-      </h2>
-    </.link>
-    <.button
-      id="mobile-menu-button"
-      class="text-zinc-100 cursor-pointer"
-      phx-click={
-        JS.toggle(
-          to: "#mobile-menu",
-          in: {"ease-out duration-100", "opacity-0 scale-95", "opacity-100 scale-100"},
-          out: {"ease-out duration-75", "opacity-100 scale-100", "opacity-0 scale-95"}
-        )
-      }
+    <!-- Hidden mobile menu -->
+    <nav
+      id="mobile-menu"
+      class="hidden absolute z-20 mt-2 p-4 flex flex-col gap-5 w-5/6 md:w-72 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+      phx-click-away={hide("#mobile-menu")}
     >
-      <.icon name="hero-bars-3" class="text-xl" />
-    </.button>
-  </div>
-  <!-- Hidden mobile menu -->
-  <nav
-    id="mobile-menu"
-    class="hidden absolute z-20 mt-2 p-4 flex flex-col gap-5 w-5/6 md:w-72 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
-    phx-click-away={hide("#mobile-menu")}
-  >
-    <div class="flex flex-col gap-5 p-4">
-      <.link navigate={~p"/builds"}>Browse Builds</.link>
-      <.link navigate={~p"/parts"}>All Parts</.link>
-      <.link navigate={~p"/manufacturers"}>Manufacturers</.link>
-      <.link navigate={~p"/models"}>Moped Models</.link>
-      <.link navigate={~p"/engines"}>Engines</.link>
-      <.link navigate={~p"/clutches"}>Clutches</.link>
-      <.link navigate={~p"/carburetors"}>Carburetors</.link>
-      <.link navigate={~p"/cranks"}>Crankshafts</.link>
-      <.link navigate={~p"/cylinders"}>Cylinders</.link>
-      <.link navigate={~p"/exhausts"}>Exhausts</.link>
-      <.link navigate={~p"/ignitions"}>Ignitions</.link>
-      <.link navigate={~p"/variators"}>Variators</.link>
-      <.link navigate={~p"/pulleys"}>Pulleys</.link>
-      <%= if @current_user do %>
-        <.link patch={~p"/builds/new"}>
-          <.button>
-            <.icon name="hero-plus" class="bg-green-500 -mt-1" /> New Build
-          </.button>
-        </.link>
-        <.link navigate={~p"/#{@current_user.username}"} style={"color: #{@current_user.color}"}>
-          My Builds
-        </.link>
-        <.link navigate={~p"/user/settings"}>
-          Settings
-        </.link>
-        <.link navigate={~p"/sign-out"} method="delete">
-          <.button icon="hero-arrow-right-circle">
-            Sign Out
-          </.button>
-        </.link>
-      <% else %>
-        <.link navigate={~p"/sign-in"}>
-          <.button icon="hero-arrow-right-circle">Sign In</.button>
-        </.link>
-      <% end %>
+      <div class="flex flex-col gap-5 p-4">
+        <.link navigate={~p"/builds"}>Browse Builds</.link>
+        <.link navigate={~p"/parts"}>All Parts</.link>
+        <.link navigate={~p"/manufacturers"}>Manufacturers</.link>
+        <.link navigate={~p"/models"}>Moped Models</.link>
+        <.link navigate={~p"/engines"}>Engines</.link>
+        <.link navigate={~p"/clutches"}>Clutches</.link>
+        <.link navigate={~p"/carburetors"}>Carburetors</.link>
+        <.link navigate={~p"/cranks"}>Crankshafts</.link>
+        <.link navigate={~p"/cylinders"}>Cylinders</.link>
+        <.link navigate={~p"/exhausts"}>Exhausts</.link>
+        <.link navigate={~p"/ignitions"}>Ignitions</.link>
+        <.link navigate={~p"/variators"}>Variators</.link>
+        <.link navigate={~p"/pulleys"}>Pulleys</.link>
+        <%= if @current_user do %>
+          <.link patch={~p"/builds/new"}>
+            <.button>
+              <.icon name="hero-plus" class="bg-green-500 -mt-1" /> New Build
+            </.button>
+          </.link>
+          <.link navigate={~p"/#{@current_user.username}"} style={"color: #{@current_user.color}"}>
+            My Builds
+          </.link>
+          <.link navigate={~p"/user/settings"}>
+            Settings
+          </.link>
+          <.link navigate={~p"/sign-out"} method="delete">
+            <.button icon="hero-arrow-right-circle">
+              Sign Out
+            </.button>
+          </.link>
+        <% else %>
+          <.link navigate={~p"/sign-in"}>
+            <.button icon="hero-arrow-right-circle">Sign In</.button>
+          </.link>
+        <% end %>
+      </div>
+    </nav>
+  </header>
+  <main class="relative grow px-4 py-20 sm:px-6 lg:px-8 bg-white">
+    <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <.flash_group flash={@flash} />
+      <%= @inner_content %>
     </div>
-  </nav>
-</header>
-<main class="relative grow px-4 py-20 sm:px-6 lg:px-8 bg-white">
-  <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-    <.flash_group flash={@flash} />
-    <%= @inner_content %>
-  </div>
-</main>
-<footer class="px-4 sm:px-6 lg:px-20 bg-white border-t boder-color-zinc-800">
-  <div class="flex items-center justify-between py-3 text-sm">
-    <div class="flex items-center gap-4">
-      <p class="text-zinc-900">
-        &copy; 2024 Moped.Club
-      </p>
+  </main>
+  <footer class="px-4 sm:px-6 lg:px-20 bg-white border-t boder-color-zinc-800">
+    <div class="flex items-center justify-between py-3 text-sm">
+      <div class="flex items-center gap-4">
+        <p class="text-zinc-900">
+          &copy; 2024 Moped.Club
+        </p>
+      </div>
+      <div class="flex items-center gap-8 font-semibold leading-6 text-zinc-900">
+        <.link navigate={~p"/about"}>About</.link>
+        <.link navigate={~p"/privacy"}>Privacy</.link>
+        <a href="mailto:admin@Moped.Club">Say Hi!</a>
+      </div>
     </div>
-    <div class="flex items-center gap-8 font-semibold leading-6 text-zinc-900">
-      <.link navigate={~p"/about"}>About</.link>
-      <.link navigate={~p"/privacy"}>Privacy</.link>
-      <a href="mailto:admin@Moped.Club">Say Hi!</a>
-    </div>
-  </div>
-</footer>
+  </footer>
+</div>

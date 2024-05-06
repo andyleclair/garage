@@ -4,6 +4,7 @@
     "clutches",
     "cranks",
     "engines",
+    "ignitions",
     "mopeds",
     "pulleys",
     "variators"
@@ -55,7 +56,26 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "Start III Stock Ignition"
+    },
+    {
+      "name": "Start V Stock Ignition"
+    },
+    {
+      "name": "Pyramid Reed Stock Ignition"
+    },
+    {
+      "name": "Piston Port Stock Ignition"
+    },
+    {
+      "name": "GPR50 Stock Ignition"
+    },
+    {
+      "name": "Flat Reed Stock Ignition"
+    }
+  ],
   "models": [
     {
       "name": "Antorcha"

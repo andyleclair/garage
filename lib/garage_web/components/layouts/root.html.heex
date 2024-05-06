@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="[scrollbar-gutter:stable] h-dvh">
+<html lang="en" class="[scrollbar-gutter:stable]">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,12 +8,12 @@
     <%= if assigns[:meta] do %>
       <meta property="og:title" content={@meta["title"]} />
       <meta property="og:description" content={@meta["description"]} />
-      <meta property="og:image" content={@meta["image"]} />
+      <meta property="og:image" content={@meta["image"] || ~p"/static/images/site_header.png"} />
       <meta property="og:url" content={@meta["url"]} />
       <meta name="twitter:url" value={@meta["url"]} />
       <meta name="twitter:title" value={@meta["title"]} />
       <meta name="twitter:description" value={@meta["description"]} />
-      <meta name="twitter:image" value={@meta["image"]} />
+      <meta name="twitter:image" value={@meta["image"] || ~p"/static/images/site_header.png"} />
     <% end %>
     <meta property="og:site_name" content="Moped.Club" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -39,7 +39,7 @@
     <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
     </script>
   </head>
-  <body class="flex min-h-full flex-col bg-white antialiased">
+  <body>
     <%= @inner_content %>
   </body>
 </html>

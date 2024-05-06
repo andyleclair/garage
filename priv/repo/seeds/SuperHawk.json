@@ -16,7 +16,11 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "R80 Stock Ignition"
+    }
+  ],
   "name": "SuperHawk",
   "pulleys": [],
   "variators": []

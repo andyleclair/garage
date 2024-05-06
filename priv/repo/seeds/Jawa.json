@@ -3,6 +3,7 @@
   "categories": [
     "cranks",
     "engines",
+    "ignitions",
     "mopeds"
   ],
   "clutches": [],
@@ -24,7 +25,14 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "207 Stock Ignition"
+    },
+    {
+      "name": "210 2 Speed Stock Ignition"
+    }
+  ],
   "models": [
     {
       "name": "05"

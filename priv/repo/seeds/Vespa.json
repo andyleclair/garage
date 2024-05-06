@@ -52,6 +52,21 @@
   "exhausts": [],
   "ignitions": [
     {
+      "name": "Piaggio Stock Ignition"
+    },
+    {
+      "name": "Polini Evolution Stock Ignition"
+    },
+    {
+      "name": "Polini Speed Stock Ignition"
+    },
+    {
+      "name": "Polini Reed Stock Ignition"
+    },
+    {
+      "name": "MP-ONE Stock Ignition"
+    },
+    {
       "name": "Stock Points"
     }
   ],

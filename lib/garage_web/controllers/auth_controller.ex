@@ -7,7 +7,7 @@ defmodule GarageWeb.AuthController do
     IO.inspect(activity)
 
     if activity == :sign_up do
-      Garage.Accounts.Emails.deliver_welcome_email(user, ~p"/users/#{user}")
+      Garage.Accounts.Emails.deliver_welcome_email(user, ~p"/#{user}")
 
       conn
       |> delete_session(:return_to)

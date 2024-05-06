@@ -3,6 +3,7 @@
   "categories": [
     "cranks",
     "engines",
+    "ignitions",
     "mopeds"
   ],
   "clutches": [],
@@ -54,7 +55,29 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "508 Stock Ignition"
+    },
+    {
+      "name": "5052B Stock Ignition"
+    },
+    {
+      "name": "505 Stock Ignition"
+    },
+    {
+      "name": "504 Stock Ignition"
+    },
+    {
+      "name": "503 Stock Ignition"
+    },
+    {
+      "name": "502 Stock Ignition"
+    },
+    {
+      "name": "501 Stock Ignition"
+    }
+  ],
   "models": [
     {
       "name": "Balboa"

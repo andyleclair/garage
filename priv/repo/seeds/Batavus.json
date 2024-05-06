@@ -3,6 +3,7 @@
   "categories": [
     "cranks",
     "engines",
+    "ignitions",
     "mopeds",
     "pulleys"
   ],
@@ -25,7 +26,14 @@
     }
   ],
   "exhausts": [],
-  "ignitions": [],
+  "ignitions": [
+    {
+      "name": "Laura M56 Stock Ignition"
+    },
+    {
+      "name": "Laura M48 Stock Ignition"
+    }
+  ],
   "models": [
     {
       "name": "Regency"
