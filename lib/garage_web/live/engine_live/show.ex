@@ -24,6 +24,12 @@ defmodule GarageWeb.EngineLive.Show do
         <%= @engine.transmission |> humanize() %>
       </:item>
 
+      <:item title="Drive">
+        <%= for drive <- @engine.drive do %>
+          <.badge><%= drive |> humanize() %></.badge>
+        <% end %>
+      </:item>
+
       <:item title="Manufacturer">
         <.link navigate={~p"/manufacturers/#{@engine.manufacturer}"}>
           <%= @engine.manufacturer.name %>

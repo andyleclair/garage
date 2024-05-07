@@ -37,15 +37,11 @@ defmodule GarageWeb.ModelLive.Show do
 
       <:item title="Stock exhaust"><%= @model.stock_exhaust_id %></:item>
 
-      <:item title="Stock forks"><%= @model.stock_forks_id %></:item>
-
       <:item title="Stock ignition"><%= @model.stock_ignition_id %></:item>
 
       <:item title="Stock pulley"><%= @model.stock_pulley_id %></:item>
 
       <:item title="Stock variator"><%= @model.stock_variator_id %></:item>
-
-      <:item title="Stock wheels"><%= @model.stock_wheels_id %></:item>
     </.list>
 
     <.back navigate={~p"/models"}>Back to models</.back>

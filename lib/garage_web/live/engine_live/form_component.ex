@@ -42,7 +42,20 @@ defmodule GarageWeb.EngineLive.FormComponent do
           field={@form[:transmission]}
           type="select"
           label="Transmission"
-          options={@transmissions}
+          options={
+            to_options(
+              Ash.Resource.Info.attribute(Garage.Mopeds.Engine, :transmission).constraints[:one_of]
+            )
+          }
+        />
+        <.live_select
+          field={@form[:drive]}
+          phx-target={@myself}
+          mode={:tags}
+          update_min_len={0}
+          phx-focus="set-default"
+          label="Drive"
+          options={@drives}
         />
 
         <:actions>
@@ -55,14 +68,18 @@ defmodule GarageWeb.EngineLive.FormComponent do
 
   @impl true
   def update(assigns, socket) do
-    transmissions = transmissions()
-    manufacturer_options = manufacturer_options()
+    manufacturers = Manufacturer.by_category!(:engines)
 
     {:ok,
      socket
      |> assign(assigns)
-     |> assign(transmissions: transmissions)
-     |> assign(manufacturer_options: manufacturer_options)
+     |> assign(manufacturer_options: to_options(manufacturers))
+     |> assign(
+       drives:
+         to_options(
+           Ash.Resource.Info.attribute(Garage.Mopeds.Engine, :drive).constraints[:items][:one_of]
+         )
+     )
      |> assign_form()}
   end
 
@@ -76,6 +93,9 @@ defmodule GarageWeb.EngineLive.FormComponent do
       case field do
         "manufacturer" <> _ ->
           search_options(socket.assigns.manufacturer_options, text)
+
+        "drive" <> _ ->
+          search_options(socket.assigns.drives, text)
       end
 
     send_update(LiveSelect.Component, options: options, id: id)
@@ -89,6 +109,9 @@ defmodule GarageWeb.EngineLive.FormComponent do
       case field do
         "manufacturer" <> _ ->
           socket.assigns.manufacturer_options
+
+        "drive" <> _ ->
+          socket.assigns.drives
       end
 
     send_update(LiveSelect.Component, options: options, id: id)
@@ -135,17 +158,5 @@ defmodule GarageWeb.EngineLive.FormComponent do
       end
 
     assign(socket, form: to_form(form))
-  end
-
-  def transmissions() do
-    for t <-
-          Ash.Resource.Info.attribute(Garage.Mopeds.Engine, :transmission).constraints[:one_of],
-        do: {humanize(t), t}
-  end
-
-  def manufacturer_options() do
-    for manufacturer <- Manufacturer.by_category!(:engines),
-        into: [],
-        do: {manufacturer.name, manufacturer.id}
   end
 end

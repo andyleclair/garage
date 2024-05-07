@@ -8,12 +8,12 @@
     <%= if assigns[:meta] do %>
       <meta property="og:title" content={@meta["title"]} />
       <meta property="og:description" content={@meta["description"]} />
-      <meta property="og:image" content={@meta["image"] || ~p"/static/images/site_header.png"} />
+      <meta property="og:image" content={@meta["image"] || ~p"/images/site_header.png"} />
       <meta property="og:url" content={@meta["url"]} />
       <meta name="twitter:url" value={@meta["url"]} />
       <meta name="twitter:title" value={@meta["title"]} />
       <meta name="twitter:description" value={@meta["description"]} />
-      <meta name="twitter:image" value={@meta["image"] || ~p"/static/images/site_header.png"} />
+      <meta name="twitter:image" value={@meta["image"] || ~p"/images/site_header.png"} />
     <% end %>
     <meta property="og:site_name" content="Moped.Club" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -23,12 +23,6 @@
         <meta name={name} content={content} />
       <% end %>
     <% end %>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Imbue:opsz,wght@10..100,100..900&display=swap"
-      rel="stylesheet"
-    />
     <.live_title suffix=" · Moped.Club">
       <%= assigns[:page_title] || "Moped.Club" %>
     </.live_title>

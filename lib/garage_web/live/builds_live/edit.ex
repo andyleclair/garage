@@ -81,6 +81,12 @@ defmodule GarageWeb.BuildsLive.Edit do
        |> assign(:crank_options, to_options(crankshafts))
        |> assign(:pulley_options, to_options(pulleys))
        |> assign(:variator_options, to_options(variators))
+       |> assign(
+         :drive_options,
+         to_options(
+           Ash.Resource.Info.attribute(Garage.Mopeds.Engine, :drive).constraints[:items][:one_of]
+         )
+       )
        |> assign(:year_options, year_options)
        |> allow_upload(:image_urls,
          accept: ~w(.jpg .jpeg .webp .png),
@@ -177,8 +183,11 @@ defmodule GarageWeb.BuildsLive.Edit do
         "[carb_tuning]" <> _ ->
           socket.assigns.carburetor_options
 
-        "[engine_tuning]" <> _ ->
+        "[engine_tuning]_engine" <> _ ->
           socket.assigns.engine_options
+
+        "[engine_tuning]_drive" <> _ ->
+          socket.assigns.drive_options
 
         "[clutch_tuning]" <> _ ->
           socket.assigns.clutch_options

@@ -74,10 +74,32 @@
     <.icon name="hero-wrench-screwdriver" /> Specs
   </h3>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-    <div class="flex flex-row justify-between">
-      <div class="font-black">Engine:</div>
-      <div :if={@build.engine_tuning && @build.engine_tuning.engine}>
-        <%= @build.engine_tuning.engine.manufacturer.name %> <%= @build.engine_tuning.engine.name %>
+    <div class="flex flex-col space-y-4">
+      <div class="flex flex-row justify-between">
+        <div class="font-black">Engine:</div>
+        <div :if={@build.engine_tuning && @build.engine_tuning.engine}>
+          <%= @build.engine_tuning.engine.manufacturer.name %> <%= @build.engine_tuning.engine.name %>
+        </div>
+      </div>
+      <div
+        :if={@build.engine_tuning && @build.engine_tuning.transmission}
+        class="flex flex-row justify-between ml-10"
+      >
+        <div class="font-bold">Transmission:</div>
+        <div>
+          <%= humanize(@build.engine_tuning.transmission) %>
+        </div>
+      </div>
+      <div
+        :if={@build.engine_tuning && @build.engine_tuning.drive}
+        class="flex flex-row justify-between ml-10"
+      >
+        <div class="font-bold">Drive:</div>
+        <div>
+          <%= for drive <- @build.engine_tuning.drive do %>
+            <.badge><%= drive |> humanize() %></.badge>
+          <% end %>
+        </div>
       </div>
     </div>
     <div class="flex flex-col space-y-4">

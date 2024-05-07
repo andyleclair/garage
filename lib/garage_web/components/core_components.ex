@@ -435,7 +435,7 @@ defmodule GarageWeb.CoreComponents do
     ~H"""
     <header class={["flex flex-col gap-10 mb-5 h-auto align-middle", @class]}>
       <div class="flex flex-col items-center justify-between gap-10">
-        <h1 class="flex font-semibold leading-none text-zinc-800 text-8xl md:h-full mb-5  text-center">
+        <h1 class="flex leading-none text-zinc-800 text-8xl md:h-full mb-5 text-center">
           <%= render_slot(@inner_block) %>
         </h1>
         <div class="grid grid-cols-2 auto-cols-max w-full justify-items-stretch gap-10">

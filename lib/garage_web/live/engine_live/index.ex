@@ -30,6 +30,11 @@ defmodule GarageWeb.EngineLive.Index do
       <:col :let={{_id, engine}} label="Transmission">
         <%= engine.transmission |> humanize() %>
       </:col>
+      <:col :let={{_id, engine}} label="Drive">
+        <%= for drive <- engine.drive || [] do %>
+          <.badge><%= drive |> humanize() %></.badge>
+        <% end %>
+      </:col>
 
       <:action :let={{_id, engine}}>
         <%= if @current_user do %>
@@ -104,13 +109,5 @@ defmodule GarageWeb.EngineLive.Index do
       Ash.get!(Garage.Mopeds.Engine, engine.id, actor: socket.assigns.current_user)
 
     {:noreply, stream_insert(socket, :engines, engine)}
-  end
-
-  @impl true
-  def handle_event("delete", %{"id" => id}, socket) do
-    engine = Ash.get!(Garage.Mopeds.Engine, id, actor: socket.assigns.current_user)
-    Ash.destroy!(engine, actor: socket.assigns.current_user)
-
-    {:noreply, stream_delete(socket, :engines, engine)}
   end
 end

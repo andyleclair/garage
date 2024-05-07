@@ -47,6 +47,8 @@ defmodule Garage.Mopeds.Engine do
                       :shaft
                     ]
                   ]
+
+      default []
     end
 
     create_timestamp :inserted_at
