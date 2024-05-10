@@ -25,7 +25,7 @@ defmodule GarageWeb.EngineLive.Show do
       </:item>
 
       <:item title="Drive">
-        <%= for drive <- @engine.drive do %>
+        <%= for drive <- @engine.drive || [] do %>
           <.badge><%= drive |> humanize() %></.badge>
         <% end %>
       </:item>
