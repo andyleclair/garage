@@ -8,7 +8,6 @@ defmodule GarageWeb.ManufacturerLive.FormComponent do
     <div>
       <.header>
         <%= @title %>
-        <:subtitle>Use this form to manage manufacturer records in your database.</:subtitle>
       </.header>
 
       <.simple_form

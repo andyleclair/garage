@@ -8,7 +8,6 @@ defmodule GarageWeb.PulleyLive.FormComponent do
     <div>
       <.header>
         <%= @title %>
-        <:subtitle>Use this form to manage pulley records in your database.</:subtitle>
       </.header>
 
       <.simple_form

@@ -8,9 +8,11 @@ defmodule GarageWeb.ManufacturerLive.Show do
       <%= @manufacturer.name %>
 
       <:actions>
-        <.link patch={~p"/manufacturers/#{@manufacturer}/show/edit"} phx-click={JS.push_focus()}>
-          <.button>Edit manufacturer</.button>
-        </.link>
+        <%= if @current_user do %>
+          <.link patch={~p"/manufacturers/#{@manufacturer}/show/edit"} phx-click={JS.push_focus()}>
+            <.button>Edit manufacturer</.button>
+          </.link>
+        <% end %>
       </:actions>
     </.header>
 

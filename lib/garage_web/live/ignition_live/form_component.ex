@@ -8,7 +8,6 @@ defmodule GarageWeb.IgnitionLive.FormComponent do
     <div>
       <.header>
         <%= @title %>
-        <:subtitle>Use this form to manage ignition records in your database.</:subtitle>
       </.header>
 
       <.simple_form

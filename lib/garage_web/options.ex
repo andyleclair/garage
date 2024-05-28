@@ -1,4 +1,6 @@
 defmodule GarageWeb.Options do
+  alias GarageWeb.OptionsFormatter
+
   @spec to_options([OptionsFormatter.t()]) :: [{binary(), binary()}]
   def to_options(things) do
     for thing <- things, into: [] do

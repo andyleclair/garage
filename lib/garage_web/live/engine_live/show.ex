@@ -6,7 +6,6 @@ defmodule GarageWeb.EngineLive.Show do
     ~H"""
     <.header>
       <%= @engine.manufacturer.name %> <%= @engine.name %>
-      <:subtitle>This is a engine record from your database.</:subtitle>
 
       <:actions>
         <.link patch={~p"/engines/#{@engine}/show/edit"} phx-click={JS.push_focus()}>

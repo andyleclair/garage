@@ -39,26 +39,33 @@
     />
 
     <%= if @selected_engine do %>
-      <.input
-        type="select"
-        field={engine_tuning_form[:transmission]}
-        options={
-          to_options(
-            Ash.Resource.Info.attribute(Garage.Mopeds.Engine, :transmission).constraints[:one_of]
-          )
-        }
-        label="Transmission"
-        class="w-1/6"
-      />
+      <div class="flex flex-col md:flex-row justify-around md:gap-x-5 items-end">
+        <div class="grow">
+          <.input
+            type="select"
+            field={engine_tuning_form[:transmission]}
+            options={
+              to_options(
+                Ash.Resource.Info.attribute(Garage.Mopeds.Engine, :transmission).constraints[
+                  :one_of
+                ]
+              )
+            }
+            label="Transmission"
+          />
+        </div>
 
-      <.live_select
-        field={engine_tuning_form[:drive]}
-        mode={:tags}
-        update_min_len={0}
-        phx-focus="set-default"
-        label="Drive"
-        options={@drive_options}
-      />
+        <div class="grow">
+          <.live_select
+            field={engine_tuning_form[:drive]}
+            mode={:tags}
+            update_min_len={0}
+            phx-focus="set-default"
+            label="Drive"
+            options={@drive_options}
+          />
+        </div>
+      </div>
     <% end %>
   </.inputs_for>
   <.inputs_for :let={carb_tuning_form} field={@form[:carb_tuning]}>

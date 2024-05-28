@@ -122,16 +122,16 @@ defmodule GarageWeb.Push do
     Finch.build(
       :post,
       endpoint,
-      %{
-        "Authorization" => "WebPush #{signed_json_web_token}",
-        "Content-Encoding" => "aesgcm",
-        "Content-Length" => "#{byte_size(encrypted_payload.ciphertext)}",
-        "Content-Type" => "application/octet-stream",
-        "Crypto-Key" =>
-          "dh=#{url_encode(encrypted_payload.local_public_key)};p256ecdsa=#{url_encode(vapid_public_key)}",
-        "Encryption" => "salt=#{url_encode(encrypted_payload.salt)}",
-        "TTL" => "60"
-      },
+      [
+        {"Authorization", "WebPush #{signed_json_web_token}"},
+        {"Content-Encoding", "aesgcm"},
+        {"Content-Length", "#{byte_size(encrypted_payload.ciphertext)}"},
+        {"Content-Type", "application/octet-stream"},
+        {"Crypto-Key",
+         "dh=#{url_encode(encrypted_payload.local_public_key)};p256ecdsa=#{url_encode(vapid_public_key)}"},
+        {"Encryption", "salt=#{url_encode(encrypted_payload.salt)}"},
+        {"TTL", "60"}
+      ],
       encrypted_payload.ciphertext
     )
     |> Finch.request(Garage.Finch)

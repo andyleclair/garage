@@ -9,7 +9,6 @@ defmodule GarageWeb.VariatorLive.FormComponent do
     <div>
       <.header>
         <%= @title %>
-        <:subtitle>Use this form to manage variator records in your database.</:subtitle>
       </.header>
 
       <.simple_form

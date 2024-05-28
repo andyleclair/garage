@@ -8,7 +8,6 @@ defmodule GarageWeb.EngineLive.FormComponent do
     <div>
       <.header>
         <%= @title %>
-        <:subtitle>Use this form to manage engine records in your database.</:subtitle>
       </.header>
 
       <.simple_form

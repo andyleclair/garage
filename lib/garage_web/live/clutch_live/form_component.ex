@@ -8,7 +8,6 @@ defmodule GarageWeb.ClutchLive.FormComponent do
     <div>
       <.header>
         <%= @title %>
-        <:subtitle>Use this form to manage clutch records in your database.</:subtitle>
       </.header>
 
       <.simple_form

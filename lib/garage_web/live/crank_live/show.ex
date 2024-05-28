@@ -8,9 +8,11 @@ defmodule GarageWeb.CrankLive.Show do
       <%= @crank.name %>
 
       <:actions>
+        <%= if @current_user do %>
         <.link patch={~p"/cranks/#{@crank}/show/edit"} phx-click={JS.push_focus()}>
           <.button>Edit crank</.button>
         </.link>
+          <% end %>
       </:actions>
     </.header>
 

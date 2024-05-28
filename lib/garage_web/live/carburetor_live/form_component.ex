@@ -10,7 +10,6 @@ defmodule GarageWeb.CarburetorLive.FormComponent do
     <div>
       <.header>
         <%= @title %>
-        <:subtitle>Use this form to manage carburetor records in your database.</:subtitle>
       </.header>
 
       <.simple_form
