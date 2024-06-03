@@ -163,6 +163,9 @@ defmodule GarageWeb.BuildsLive.Edit do
 
         "pulley" <> _ ->
           search_options(socket.assigns.pulley_options, text)
+
+        "variator" <> _ ->
+          search_options(socket.assigns.variator_options, text)
       end
 
     send_update(LiveSelect.Component, options: options, id: id)
@@ -438,14 +441,18 @@ defmodule GarageWeb.BuildsLive.Edit do
         selected_item,
         collection
       ) do
-    if selected_id = form |> Form.value(form_id) |> Form.value(item_id) do
-      item = assigns[selected_item]
+    if form && Form.value(form, form_id) do
+      if selected_id = form |> Form.value(form_id) |> Form.value(item_id) do
+        item = assigns[selected_item]
 
-      if is_struct(item, mod) and item.id == selected_id do
-        socket
+        if is_struct(item, mod) and item.id == selected_id do
+          socket
+        else
+          item = Enum.find(assigns[collection], fn thing -> thing.id == selected_id end)
+          assign(socket, selected_item, item)
+        end
       else
-        item = Enum.find(assigns[collection], fn thing -> thing.id == selected_id end)
-        assign(socket, selected_item, item)
+        assign(socket, selected_item, nil)
       end
     else
       assign(socket, selected_item, nil)

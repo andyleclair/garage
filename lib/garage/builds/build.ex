@@ -168,6 +168,7 @@ defmodule Garage.Builds.Build do
         :model_id,
         :image_urls,
         :exhaust_id,
+        :crank_id,
         :pulley_id
       ]
 
@@ -194,11 +195,11 @@ defmodule Garage.Builds.Build do
     end
 
     read :latest do
-      prepare build(limit: 5, sort: [inserted_at: :desc])
+      prepare build(limit: 6, sort: [inserted_at: :desc])
     end
 
     read :recently_updated do
-      prepare build(limit: 5, sort: [updated_at: :desc])
+      prepare build(limit: 6, sort: [updated_at: :desc])
     end
 
     read :by_manufacturer do
@@ -287,6 +288,7 @@ defmodule Garage.Builds.Build do
                 :comment_count,
                 exhaust: [:manufacturer],
                 pulley: [:manufacturer],
+                crank: [:manufacturer],
                 clutch_tuning: [clutch: [:manufacturer]],
                 cylinder_tuning: [cylinder: [:manufacturer]],
                 carb_tuning: [carburetor: [:manufacturer]],

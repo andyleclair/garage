@@ -135,6 +135,12 @@
       </div>
     </div>
     <div class="flex flex-row justify-between">
+      <div class="font-black">Crank:</div>
+      <div :if={@build.crank}>
+        <%= @build.crank.manufacturer.name %> <%= @build.crank.name %>
+      </div>
+    </div>
+    <div class="flex flex-row justify-between">
       <div class="font-black">Cylinder:</div>
       <div :if={@build.cylinder_tuning && @build.cylinder_tuning.cylinder}>
         <%= @build.cylinder_tuning.cylinder.manufacturer.name %> <%= @build.cylinder_tuning.cylinder.name %>

@@ -39,7 +39,7 @@
     />
 
     <%= if @selected_engine do %>
-      <div class="flex flex-col md:flex-row justify-around md:gap-x-5 items-end">
+      <div class="flex flex-col md:flex-row justify-around md:gap-x-5 items-baseline">
         <div class="grow">
           <.input
             type="select"
@@ -62,9 +62,25 @@
             update_min_len={0}
             phx-focus="set-default"
             label="Drive"
+            tags_container_extra_class="order-last"
+            container_extra_class="flex flex-col"
+            dropdown_extra_class="top-11"
             options={@drive_options}
           />
         </div>
+        <%= if :chain in (AshPhoenix.Form.value(engine_tuning_form, :drive) || []) do %>
+          <div class="grow">
+            <.input
+              type="text"
+              field={engine_tuning_form[:front_sprocket]}
+              label="Front Sprocket"
+            />
+            <.input type="text" field={engine_tuning_form[:rear_sprocket]} label="Rear Sprocket" />
+          </div>
+        <% end %>
+        <%= if [:belt] == AshPhoenix.Form.value(engine_tuning_form, :drive) do %>
+          <.input type="text" field={engine_tuning_form[:gear_ratio]} label="Gear Ratio" />
+        <% end %>
       </div>
     <% end %>
   </.inputs_for>
@@ -146,22 +162,42 @@
       options={@ignition_options}
     />
   </.inputs_for>
-  <.live_select
-    label="Pulley"
-    debounce="250"
-    phx-focus="set-default"
-    field={@form[:pulley_id]}
-    options={@pulley_options}
-  />
-  <.inputs_for :let={variator_tuning_form} field={@form[:variator_tuning]}>
+
+  <%= if AshPhoenix.Form.value(AshPhoenix.Form.get_form(@form, [:engine_tuning]), :transmission) in [:single_variated, :dual_variated] do %>
     <.live_select
-      label="Variator"
+      label="Pulley"
       debounce="250"
       phx-focus="set-default"
-      field={variator_tuning_form[:variator_id]}
-      options={@variator_options}
+      field={@form[:pulley_id]}
+      options={@pulley_options}
     />
-  </.inputs_for>
+    <.inputs_for :let={variator_tuning_form} field={@form[:variator_tuning]}>
+      <.live_select
+        label="Variator"
+        debounce="250"
+        phx-focus="set-default"
+        field={variator_tuning_form[:variator_id]}
+        options={@variator_options}
+      />
+      <%= if @selected_variator do %>
+        <div class="flex flex-row justify-between gap-x-4">
+          <%= for index <- 1..@selected_variator.rollers do %>
+            <div class="w-24">
+              <.input
+                type="text"
+                name={"#{variator_tuning_form[:weights].name}[#{index}]"}
+                id={"#{variator_tuning_form.id}[weights][#{index}]"}
+                value={
+                  AshPhoenix.Form.value(variator_tuning_form, :weights) |> Enum.at(index - 1)
+                }
+                label={"Roller #{index}"}
+              />
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </.inputs_for>
+  <% end %>
   <.input field={@form[:description]} type="hidden" label="Description" id="trix-editor" />
   <div id="rich-text" phx-update="ignore">
     <trix-editor class="trix-content" input="trix-editor"></trix-editor>

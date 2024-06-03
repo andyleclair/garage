@@ -20,7 +20,7 @@ defmodule Garage.Builds.VariatorTuning do
   attributes do
     uuid_primary_key :id
 
-    attribute :weights, {:array, :float}, default: [], public?: true
+    attribute :weights, {:array, :string}, default: [], public?: true
   end
 
   relationships do

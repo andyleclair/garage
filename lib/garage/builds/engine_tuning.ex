@@ -47,6 +47,7 @@ defmodule Garage.Builds.EngineTuning do
         ]
       ]
 
+    # TODO: add belt
     attribute :front_sprocket, :integer, public?: true
     attribute :rear_sprocket, :integer, public?: true
     attribute :gear_ratio, :string, public?: true
