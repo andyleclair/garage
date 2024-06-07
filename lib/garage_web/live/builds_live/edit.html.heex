@@ -179,7 +179,7 @@
         field={variator_tuning_form[:variator_id]}
         options={@variator_options}
       />
-      <%= if @selected_variator do %>
+      <%= if @selected_variator && @selected_variator.rollers do %>
         <div class="flex flex-row justify-between gap-x-4">
           <%= for index <- 1..@selected_variator.rollers do %>
             <div class="w-24">
