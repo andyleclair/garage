@@ -76,7 +76,7 @@ defmodule GarageWeb.ManufacturerLive.FormComponent do
         socket =
           socket
           |> put_flash(:info, "Manufacturer #{socket.assigns.form.source.type}d successfully")
-          |> push_patch(to: socket.assigns.patch)
+          |> push_navigate(to: socket.assigns.patch)
 
         {:noreply, socket}
 
