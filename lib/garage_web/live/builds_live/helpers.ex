@@ -18,6 +18,6 @@ defmodule GarageWeb.BuildsLive.Helpers do
   end
 
   def year_options() do
-    2023..1900 |> Enum.to_list()
+    2023..1900//-1 |> Enum.to_list()
   end
 end

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content={get_csrf_token()} />
     <meta property="og:type" content="website" />
+    <link rel="apple-touch-icon" sizes="180x180" href={~p"/images/apple-touch-icon.png"} />
+    <link rel="icon" type="image/png" sizes="32x32" href={~p"/images/favicon-32x32.png"} />
+    <link rel="icon" type="image/png" sizes="16x16" href={~p"/images/favicon-16x16.png"} />
+    <link rel="manifest" href="/site.webmanifest" />
     <%= if assigns[:meta] do %>
       <meta property="og:title" content={@meta["title"]} />
       <meta property="og:description" content={@meta["description"]} />
