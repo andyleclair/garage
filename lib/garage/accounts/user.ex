@@ -2,7 +2,11 @@ defmodule Garage.Accounts.User do
   use Ash.Resource,
     domain: Garage.Accounts,
     data_layer: AshPostgres.DataLayer,
-    extensions: [AshAuthentication]
+    extensions: [AshAuthentication, AshAdmin.Resource]
+
+  admin do
+    actor?(true)
+  end
 
   actions do
     defaults [:create, :read]

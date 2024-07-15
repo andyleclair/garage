@@ -64,6 +64,7 @@ defmodule Garage.MixProject do
       {:ash_phoenix, "~> 2.0.0"},
       {:ash_authentication, "~> 4.0.0"},
       {:ash_authentication_phoenix, "~> 2.0.0"},
+      {:ash_admin, "~> 0.11"},
       {:picosat_elixir, "0.2.3"},
       {:nostrum, "~> 0.8.0"},
       {:sentry, "~> 10.0"}

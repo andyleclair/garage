@@ -4,10 +4,11 @@
     :ecto_sql,
     :phoenix,
     :ash,
-    :ash_phoenix,
-    :ash_postgres,
+    :ash_admin,
     :ash_authentication,
-    :ash_authentication_phoenix
+    :ash_authentication_phoenix,
+    :ash_phoenix,
+    :ash_postgres
   ],
   subdirectories: ["priv/*/migrations"],
   plugins: [Phoenix.LiveView.HTMLFormatter],

@@ -1,6 +1,9 @@
 defmodule GarageWeb.Router do
   use GarageWeb, :router
   use AshAuthentication.Phoenix.Router
+  require Logger
+
+  import AshAdmin.Router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -12,9 +15,20 @@ defmodule GarageWeb.Router do
     plug :load_from_session
   end
 
+  pipeline :admin do
+    plug :admin_required
+  end
+
   pipeline :api do
     plug :accepts, ["json"]
     plug :load_from_bearer
+  end
+
+  scope "/" do
+    pipe_through :browser
+    pipe_through :admin
+
+    ash_admin "/admin"
   end
 
   scope "/", GarageWeb do
@@ -137,6 +151,22 @@ defmodule GarageWeb.Router do
 
       live_dashboard "/dashboard", metrics: GarageWeb.Telemetry
       forward "/mailbox", Plug.Swoosh.MailboxPreview
+    end
+  end
+
+  def admin_required(conn, _opts) do
+    if conn.assigns[:current_user] &&
+         Ash.CiString.compare(conn.assigns.current_user.email, "admin@moped.club") do
+      conn
+    else
+      Logger.debug(
+        "User is not an admin, tried to access the admin console #{inspect(conn.assigns.current_user)}"
+      )
+
+      conn
+      |> put_flash(:error, "You must be an admin to access this page")
+      |> redirect(to: "/")
+      |> halt()
     end
   end
 end
