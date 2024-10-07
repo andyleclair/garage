@@ -1,4 +1,8 @@
-# Garage
+# Moped.Club
+
+Source for https://moped.club
+
+PRs welcome!
 
 ## Installation
 
