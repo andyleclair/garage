@@ -14,7 +14,7 @@ defmodule GarageWeb.ModelLive.FormComponent do
     ~H"""
     <div>
       <.header>
-        <%= @title %>
+        {@title}
       </.header>
 
       <.simple_form

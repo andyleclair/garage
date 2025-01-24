@@ -17,6 +17,8 @@ h1 {
 
 h2 {
   text-transform: uppercase;
+  font-family: "Times New Roman", serif;
+  font-style: normal;
 }
 
 @keyframes tilt-n-move-shaking {

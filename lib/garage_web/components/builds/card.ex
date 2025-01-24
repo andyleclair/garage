@@ -21,20 +21,20 @@ defmodule GarageWeb.Components.Builds.Card do
       <div class="p-5">
         <h5 class="truncate mb-2 text-xl font-medium leading-tight text-neutral-800">
           <.link navigate={~p"/builds/#{@build.slug}"}>
-            <%= @build.name %>
+            {@build.name}
           </.link>
         </h5>
         <h6>By: <.username user={@build.builder} /></h6>
 
-        <%= @build.year %>
+        {@build.year}
         <.link patch={~p"/builds?make=#{@build.manufacturer.slug}"} replace={false}>
-          <%= @build.manufacturer.name %>
+          {@build.manufacturer.name}
         </.link>
         <.link
           patch={~p"/builds?#{[make: @build.manufacturer.slug, model: @build.model.slug]}"}
           replace={false}
         >
-          <%= @build.model.name %>
+          {@build.model.name}
         </.link>
       </div>
     </div>

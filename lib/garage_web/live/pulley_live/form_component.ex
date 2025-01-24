@@ -7,7 +7,7 @@ defmodule GarageWeb.PulleyLive.FormComponent do
     ~H"""
     <div>
       <.header>
-        <%= @title %>
+        {@title}
       </.header>
 
       <.simple_form

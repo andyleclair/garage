@@ -1,11 +1,12 @@
 defmodule GarageWeb.CylinderLive.Show do
+  import GarageWeb.Components.Builds.Build
   use GarageWeb, :live_view
 
   @impl true
   def render(assigns) do
     ~H"""
     <.header>
-      <%= @cylinder.manufacturer.name %> <%= @cylinder.name %>
+      {@cylinder.manufacturer.name} {@cylinder.name}
 
       <:actions>
         <%= if @current_user do %>
@@ -19,21 +20,31 @@ defmodule GarageWeb.CylinderLive.Show do
     <.list>
       <:item title="Manufacturer">
         <.link navigate={~p"/manufacturers/#{@cylinder.manufacturer}"}>
-          <%= @cylinder.manufacturer.name %>
+          {@cylinder.manufacturer.name}
         </.link>
       </:item>
 
-      <:item title="Name"><%= @cylinder.name %></:item>
+      <:item title="Name">{@cylinder.name}</:item>
 
-      <:item title="Description"><%= @cylinder.description %></:item>
+      <:item title="Description">{@cylinder.description}</:item>
 
       <:item title="Displacement">
-        <.badge :if={@cylinder.displacement}><%= @cylinder.displacement %> cc</.badge>
+        <.badge :if={@cylinder.displacement}>{@cylinder.displacement} cc</.badge>
       </:item>
       <:item title="Bore">
-        <.badge :if={@cylinder.bore}><%= @cylinder.bore %> mm</.badge>
+        <.badge :if={@cylinder.bore}>{@cylinder.bore} mm</.badge>
       </:item>
     </.list>
+
+    <div :if={@cylinder.cylinder_tunings != []} class="mt-24 flex flex-col gap-y-10">
+      <.subheading>
+        Builds with this cylinder
+      </.subheading>
+
+      <%= for tuning <- @cylinder.cylinder_tunings do %>
+        <.build build={tuning.build} current_user={@current_user} />
+      <% end %>
+    </div>
 
     <.back navigate={~p"/cylinders"}>Back to cylinders</.back>
 
@@ -69,7 +80,10 @@ defmodule GarageWeb.CylinderLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :cylinder,
-       Ash.get!(Garage.Mopeds.Cylinder, id, actor: socket.assigns.current_user)
+       Ash.get!(Garage.Mopeds.Cylinder, id,
+         actor: socket.assigns.current_user,
+         load: [cylinder_tunings: [:build]]
+       )
      )}
   end
 

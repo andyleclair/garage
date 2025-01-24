@@ -9,7 +9,7 @@ defmodule GarageWeb.AuthLive.Reset do
     ~H"""
     <div>
       <.header class="text-center">
-        <%= @cta %>
+        {@cta}
       </.header>
 
       <div class="mx-auto max-w-sm">
@@ -29,7 +29,7 @@ defmodule GarageWeb.AuthLive.Reset do
           <% end %>
 
           <:actions>
-            <.button><%= @cta %></.button>
+            <.button>{@cta}</.button>
           </:actions>
         </.simple_form>
       </div>

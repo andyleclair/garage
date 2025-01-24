@@ -10,10 +10,10 @@ defmodule GarageWeb.AuthLive.Index do
     ~H"""
     <div>
       <.header class="text-center">
-        <%= @cta %>
+        {@cta}
         <:subtitle>
           <.link navigate={@alternative_path} class="font-semibold text-brand hover:underline">
-            <%= @alternative %>
+            {@alternative}
           </.link>
           <.link navigate={~p"/password-reset"} class="font-semibold text-brand hover:underline">
             Forgot your password?
@@ -38,7 +38,7 @@ defmodule GarageWeb.AuthLive.Index do
           <.input field={@form[:password]} type="password" label="Password" required />
 
           <:actions>
-            <.button><%= @cta %></.button>
+            <.button>{@cta}</.button>
           </:actions>
         </.simple_form>
       </div>

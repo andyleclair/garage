@@ -9,7 +9,7 @@
 <% end %>
 
 <.header>
-  <%= @build.name %>
+  {@build.name}
   <:actions>
     <.like_heart liked_by_user={@build.liked_by_user} current_user={@current_user} class="mb-4" />
     <.follow_button
@@ -21,8 +21,8 @@
 
   <:subtitle>
     Built by: <.username user={@build.builder} /> |
-    Submitted on: <%= to_human_date(@build.inserted_at) %> |
-    Last updated: <%= humanize_relative(@build.updated_at) %>
+    Submitted on: {to_human_date(@build.inserted_at)} |
+    Last updated: {humanize_relative(@build.updated_at)}
   </:subtitle>
 </.header>
 <!-- Gallery -->
@@ -64,21 +64,32 @@
       Description
     </h3>
     <div class="trix-content">
-      <%= raw(@build.description) %>
+      {raw(@build.description)}
     </div>
   </div>
 <% end %>
-
+<!-- Parts -->
 <div>
-  <h3 class="text-2xl mb-5 border-b">
-    <.icon name="hero-wrench-screwdriver" /> Specs
+  <h3 class="text-2xl mb-5 border-b flex flex-row justify-between">
+    <span><.icon name="hero-wrench-screwdriver" /> Specs</span>
+    <span>
+      {@build.year}
+      <.link navigate={~p"/manufacturers/#{@build.manufacturer}"}>
+        {@build.manufacturer.name}
+      </.link>
+      <.link navigate={~p"/models/#{@build.model}"}>
+        {@build.model.name}
+      </.link>
+    </span>
   </h3>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
     <div class="flex flex-col space-y-4">
       <div class="flex flex-row justify-between">
         <div class="font-black">Engine:</div>
         <div :if={@build.engine_tuning && @build.engine_tuning.engine}>
-          <%= @build.engine_tuning.engine.manufacturer.name %> <%= @build.engine_tuning.engine.name %>
+          <.link navigate={~p"/engines/#{@build.engine_tuning.engine}"}>
+            {@build.engine_tuning.engine.manufacturer.name} {@build.engine_tuning.engine.name}
+          </.link>
         </div>
       </div>
       <div
@@ -87,7 +98,7 @@
       >
         <div class="font-bold">Transmission:</div>
         <div>
-          <%= humanize(@build.engine_tuning.transmission) %>
+          {humanize(@build.engine_tuning.transmission)}
         </div>
       </div>
       <div
@@ -97,7 +108,7 @@
         <div class="font-bold">Drive:</div>
         <div>
           <%= for drive <- @build.engine_tuning.drive do %>
-            <.badge><%= drive |> humanize() %></.badge>
+            <.badge>{drive |> humanize()}</.badge>
           <% end %>
         </div>
       </div>
@@ -106,7 +117,9 @@
       <div class="flex flex-row justify-between">
         <div class="font-black">Carburetor:</div>
         <div :if={@build.carb_tuning && @build.carb_tuning.carburetor}>
-          <%= @build.carb_tuning.carburetor.manufacturer.name %> <%= @build.carb_tuning.carburetor.name %>
+          <.link navigate={~p"/carburetors/#{@build.carb_tuning.carburetor}"}>
+            {@build.carb_tuning.carburetor.manufacturer.name} {@build.carb_tuning.carburetor.name}
+          </.link>
         </div>
       </div>
       <div
@@ -115,7 +128,7 @@
       >
         <div class="font-bold">Size:</div>
         <div>
-          <%= @build.carb_tuning.size %>
+          {@build.carb_tuning.size}
         </div>
       </div>
       <%= if @build.carb_tuning && @build.carb_tuning.tuning != %{} do %>
@@ -123,51 +136,65 @@
           :for={{name, value} <- @build.carb_tuning.tuning}
           class="flex flex-row justify-between ml-10"
         >
-          <div class="font-bold"><%= humanize(name) %>:</div>
-          <div><%= value %></div>
+          <div class="font-bold">{humanize(name)}:</div>
+          <div>{value}</div>
         </div>
       <% end %>
     </div>
     <div class="flex flex-row justify-between">
       <div class="font-black">Exhaust:</div>
       <div :if={@build.exhaust}>
-        <%= @build.exhaust.manufacturer.name %> <%= @build.exhaust.name %>
+        <.link navigate={~p"/exhausts/#{@build.exhaust}"}>
+          {@build.exhaust.manufacturer.name} {@build.exhaust.name}
+        </.link>
       </div>
     </div>
     <div class="flex flex-row justify-between">
       <div class="font-black">Crank:</div>
       <div :if={@build.crank}>
-        <%= @build.crank.manufacturer.name %> <%= @build.crank.name %>
+        <.link navigate={~p"/cranks/#{@build.crank}"}>
+          {@build.crank.manufacturer.name} {@build.crank.name}
+        </.link>
       </div>
     </div>
     <div class="flex flex-row justify-between">
       <div class="font-black">Cylinder:</div>
       <div :if={@build.cylinder_tuning && @build.cylinder_tuning.cylinder}>
-        <%= @build.cylinder_tuning.cylinder.manufacturer.name %> <%= @build.cylinder_tuning.cylinder.name %>
+        <.link navigate={~p"/cylinders/#{@build.cylinder_tuning.cylinder}"}>
+          {@build.cylinder_tuning.cylinder.manufacturer.name} {@build.cylinder_tuning.cylinder.name}
+        </.link>
       </div>
     </div>
     <div class="flex flex-row justify-between">
       <div class="font-black">Clutch:</div>
       <div :if={@build.clutch_tuning && @build.clutch_tuning.clutch}>
-        <%= @build.clutch_tuning.clutch.manufacturer.name %> <%= @build.clutch_tuning.clutch.name %>
+        <.link navigate={~p"/clutches/#{@build.clutch_tuning.clutch}"}>
+          {@build.clutch_tuning.clutch.manufacturer.name} {@build.clutch_tuning.clutch.name}
+        </.link>
       </div>
     </div>
     <div class="flex flex-row justify-between">
       <div class="font-black">Ignition:</div>
       <div :if={@build.ignition_tuning && @build.ignition_tuning.ignition}>
-        <%= @build.ignition_tuning.ignition.manufacturer.name %> <%= @build.ignition_tuning.ignition.name %>
+        <.link navigate={~p"/ignitions/#{@build.ignition_tuning.ignition}"}>
+          {@build.ignition_tuning.ignition.manufacturer.name} {@build.ignition_tuning.ignition.name}
+        </.link>
       </div>
     </div>
     <div class="flex flex-row justify-between">
       <div class="font-black">Variator:</div>
       <div :if={@build.variator_tuning && @build.variator_tuning.variator}>
-        <%= @build.variator_tuning.variator.manufacturer.name %> <%= @build.variator_tuning.variator.name %>
+        <.link navigate={~p"/variators/#{@build.variator_tuning.variator}"}>
+          {@build.variator_tuning.variator.manufacturer.name} {@build.variator_tuning.variator.name}
+        </.link>
       </div>
     </div>
     <div class="flex flex-row justify-between">
       <div class="font-black">Pulley:</div>
       <div :if={@build.pulley}>
-        <%= @build.pulley.manufacturer.name %> <%= @build.pulley.name %>
+        <.link navigate={~p"/pulleys/#{@build.pulley}"}>
+          {@build.pulley.manufacturer.name} {@build.pulley.name}
+        </.link>
       </div>
     </div>
   </div>

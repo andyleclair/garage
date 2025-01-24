@@ -22,12 +22,12 @@ defmodule GarageWeb.ClutchLive.Index do
     >
       <:col :let={{_id, clutch}} label="Manufacturer">
         <.link navigate={~p"/manufacturers/#{clutch.manufacturer}"}>
-          <%= clutch.manufacturer.name %>
+          {clutch.manufacturer.name}
         </.link>
       </:col>
-      <:col :let={{_id, clutch}} label="Name"><%= clutch.name %></:col>
+      <:col :let={{_id, clutch}} label="Name">{clutch.name}</:col>
 
-      <:col :let={{_id, clutch}} label="Description"><%= clutch.description %></:col>
+      <:col :let={{_id, clutch}} label="Description">{clutch.description}</:col>
 
       <:action :let={{_id, clutch}}>
         <%= if @current_user do %>

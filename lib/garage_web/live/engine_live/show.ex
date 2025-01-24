@@ -1,11 +1,12 @@
 defmodule GarageWeb.EngineLive.Show do
+  import GarageWeb.Components.Builds.Build
   use GarageWeb, :live_view
 
   @impl true
   def render(assigns) do
     ~H"""
     <.header>
-      <%= @engine.manufacturer.name %> <%= @engine.name %>
+      {@engine.manufacturer.name} {@engine.name}
 
       <:actions>
         <.link patch={~p"/engines/#{@engine}/show/edit"} phx-click={JS.push_focus()}>
@@ -15,26 +16,36 @@ defmodule GarageWeb.EngineLive.Show do
     </.header>
 
     <.list>
-      <:item title="Name"><%= @engine.name %></:item>
+      <:item title="Name">{@engine.name}</:item>
 
-      <:item title="Description"><%= @engine.description %></:item>
+      <:item title="Description">{@engine.description}</:item>
 
       <:item title="Transmission">
-        <%= @engine.transmission |> humanize() %>
+        {@engine.transmission |> humanize()}
       </:item>
 
       <:item title="Drive">
         <%= for drive <- @engine.drive || [] do %>
-          <.badge><%= drive |> humanize() %></.badge>
+          <.badge>{drive |> humanize()}</.badge>
         <% end %>
       </:item>
 
       <:item title="Manufacturer">
         <.link navigate={~p"/manufacturers/#{@engine.manufacturer}"}>
-          <%= @engine.manufacturer.name %>
+          {@engine.manufacturer.name}
         </.link>
       </:item>
     </.list>
+
+    <div :if={@engine.engine_tunings != []} class="mt-24 flex flex-col gap-y-10">
+      <.subheading>
+        Builds with this engine
+      </.subheading>
+
+      <%= for tuning <- @engine.engine_tunings do %>
+        <.build build={tuning.build} current_user={@current_user} />
+      <% end %>
+    </div>
 
     <.back navigate={~p"/engines"}>Back to engines</.back>
 
@@ -69,7 +80,10 @@ defmodule GarageWeb.EngineLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :engine,
-       Ash.get!(Garage.Mopeds.Engine, id, actor: socket.assigns.current_user)
+       Ash.get!(Garage.Mopeds.Engine, id,
+         actor: socket.assigns.current_user,
+         load: [engine_tunings: [:build]]
+       )
      )}
   end
 

@@ -1,11 +1,12 @@
 defmodule GarageWeb.PulleyLive.Show do
+  import GarageWeb.Components.Builds.Build
   use GarageWeb, :live_view
 
   @impl true
   def render(assigns) do
     ~H"""
     <.header>
-      <%= @pulley.name %>
+      {@pulley.name}
 
       <:actions>
         <%= if @current_user do %>
@@ -17,15 +18,25 @@ defmodule GarageWeb.PulleyLive.Show do
     </.header>
 
     <.list>
-      <:item title="Name"><%= @pulley.name %></:item>
+      <:item title="Name">{@pulley.name}</:item>
 
-      <:item title="Description"><%= @pulley.description %></:item>
+      <:item title="Description">{@pulley.description}</:item>
 
-      <:item title="Manufacturer"><%= @pulley.manufacturer.name %></:item>
+      <:item title="Manufacturer">{@pulley.manufacturer.name}</:item>
       <:item title="Sizes">
-        <.badge :for={size <- @pulley.sizes || []}><%= size %> mm</.badge>
+        <.badge :for={size <- @pulley.sizes || []}>{size} mm</.badge>
       </:item>
     </.list>
+
+    <div :if={@pulley.builds != []} class="mt-24 flex flex-col gap-y-10">
+      <.subheading>
+        Builds with this pulley
+      </.subheading>
+
+      <%= for build <- @pulley.builds do %>
+        <.build build={build} current_user={@current_user} />
+      <% end %>
+    </div>
 
     <.back navigate={~p"/pulleys"}>Back to pulleys</.back>
 
@@ -60,7 +71,7 @@ defmodule GarageWeb.PulleyLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :pulley,
-       Ash.get!(Garage.Mopeds.Pulley, id, actor: socket.assigns.current_user)
+       Ash.get!(Garage.Mopeds.Pulley, id, actor: socket.assigns.current_user, load: [:builds])
      )}
   end
 

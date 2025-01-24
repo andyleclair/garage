@@ -1,5 +1,5 @@
 <.header>
-  <%= @title %>
+  {@title}
   <:subtitle>Tell the world about your moped!</:subtitle>
 </.header>
 
@@ -250,7 +250,7 @@
               </div>
 
               <progress value={entry.progress} max="100" class="w-full h-1">
-                <%= entry.progress %>%
+                {entry.progress}%
               </progress>
 
               <div
@@ -284,7 +284,7 @@
 
                     <div class="ml-3">
                       <h3 class="text-sm font-medium text-red-800">
-                        <%= error_to_string(err) %>
+                        {error_to_string(err)}
                       </h3>
                     </div>
                   </div>
@@ -331,7 +331,7 @@
 
             <p class="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
             <p class="text-xs leading-5 text-gray-600">
-              Up to <%= @uploads.image_urls.max_entries %> pictures allowed at a time
+              Up to {@uploads.image_urls.max_entries} pictures allowed at a time
             </p>
           </div>
         </div>

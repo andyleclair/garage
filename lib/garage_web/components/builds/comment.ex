@@ -6,9 +6,9 @@ defmodule GarageWeb.Components.Builds.Comment do
   def comment(assigns) do
     ~H"""
     <div class="rounded-md border p-4 mb-5">
-      <p>"<%= @comment.text %>"</p>
+      <p>"{@comment.text}"</p>
       <p class="mt-2">
-        - <.username user={@comment.user} />, <%= humanize_relative(@comment.inserted_at) %>
+        - <.username user={@comment.user} />, {humanize_relative(@comment.inserted_at)}
       </p>
     </div>
     """

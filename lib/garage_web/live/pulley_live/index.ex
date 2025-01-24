@@ -20,13 +20,13 @@ defmodule GarageWeb.PulleyLive.Index do
       rows={@streams.pulleys}
       row_click={fn {_id, pulley} -> JS.navigate(~p"/pulleys/#{pulley}") end}
     >
-      <:col :let={{_id, pulley}} label="Manufacturer"><%= pulley.manufacturer.name %></:col>
+      <:col :let={{_id, pulley}} label="Manufacturer">{pulley.manufacturer.name}</:col>
 
-      <:col :let={{_id, pulley}} label="Name"><%= pulley.name %></:col>
+      <:col :let={{_id, pulley}} label="Name">{pulley.name}</:col>
 
-      <:col :let={{_id, pulley}} label="Description"><%= pulley.description %></:col>
+      <:col :let={{_id, pulley}} label="Description">{pulley.description}</:col>
       <:col :let={{_id, pulley}} label="Sizes">
-        <.badge :for={size <- pulley.sizes || []}><%= size %> mm</.badge>
+        <.badge :for={size <- pulley.sizes || []}>{size} mm</.badge>
       </:col>
 
       <:action :let={{_id, pulley}}>

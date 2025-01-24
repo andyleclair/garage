@@ -4,10 +4,16 @@ defmodule Garage.Mopeds.Engine do
     domain: Garage.Mopeds
 
   import Ash.Sort, only: [expr_sort: 2]
+  import Ash.Expr
 
   actions do
     default_accept :*
     defaults [:create, :read, :update, :destroy]
+  end
+
+  changes do
+    change {Garage.Changes.SetSlug, parts: [expr(manufacturer.slug), :name]},
+      on: [:create, :update]
   end
 
   code_interface do
@@ -16,6 +22,7 @@ defmodule Garage.Mopeds.Engine do
     define :update, action: :update
     define :destroy, action: :destroy
     define :get_by_id, action: :read, get_by: :id
+    define :get_by_slug, action: :read, get_by: :slug
   end
 
   attributes do
@@ -51,6 +58,14 @@ defmodule Garage.Mopeds.Engine do
       default []
     end
 
+    attribute :slug, :string do
+      allow_nil? false
+      generated? true
+      always_select? true
+      filterable? true
+      public? true
+    end
+
     create_timestamp :inserted_at
     update_timestamp :updated_at
   end
@@ -61,7 +76,7 @@ defmodule Garage.Mopeds.Engine do
       allow_nil? false
     end
 
-    has_many :engine_tuning, Garage.Builds.EngineTuning do
+    has_many :engine_tunings, Garage.Builds.EngineTuning do
       domain Garage.Builds
     end
 

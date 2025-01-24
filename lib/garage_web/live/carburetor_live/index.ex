@@ -22,20 +22,20 @@ defmodule GarageWeb.CarburetorLive.Index do
     >
       <:col :let={{_id, carburetor}} label="Manufacturer">
         <.link navigate={~p"/manufacturers/#{carburetor.manufacturer}"}>
-          <%= carburetor.manufacturer.name %>
+          {carburetor.manufacturer.name}
         </.link>
       </:col>
-      <:col :let={{_id, carburetor}} label="Name"><%= carburetor.name %></:col>
+      <:col :let={{_id, carburetor}} label="Name">{carburetor.name}</:col>
 
-      <:col :let={{_id, carburetor}} label="Description"><%= carburetor.description %></:col>
+      <:col :let={{_id, carburetor}} label="Description">{carburetor.description}</:col>
 
       <:col :let={{_id, carburetor}} label="Sizes">
-        <.badge :for={size <- carburetor.sizes}><%= size %></.badge>
+        <.badge :for={size <- carburetor.sizes}>{size}</.badge>
       </:col>
 
       <:col :let={{_id, carburetor}} label="Tunable Parts">
         <.badge :for={part <- carburetor.tunable_parts}>
-          <%= part |> humanize() %>
+          {part |> humanize()}
         </.badge>
       </:col>
 

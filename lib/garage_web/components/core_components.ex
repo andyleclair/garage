@@ -18,7 +18,7 @@ defmodule GarageWeb.CoreComponents do
   use GarageWeb, :verified_routes
 
   alias Phoenix.LiveView.JS
-  import GarageWeb.Gettext
+  use Gettext, backend: GarageWeb.Gettext
 
   @doc """
   Renders a modal.
@@ -80,7 +80,7 @@ defmodule GarageWeb.CoreComponents do
                 </button>
               </div>
               <div id={"#{@id}-content"}>
-                <%= render_slot(@inner_block) %>
+                {render_slot(@inner_block)}
               </div>
             </.focus_wrap>
           </div>
@@ -125,9 +125,9 @@ defmodule GarageWeb.CoreComponents do
       <p :if={@title} class="flex items-center gap-1.5 text-sm font-semibold leading-6">
         <.icon :if={@kind == :info} name="hero-information-circle-mini" class="h-4 w-4" />
         <.icon :if={@kind == :error} name="hero-exclamation-circle-mini" class="h-4 w-4" />
-        <%= @title %>
+        {@title}
       </p>
-      <p class="mt-2 text-sm leading-5"><%= msg %></p>
+      <p class="mt-2 text-sm leading-5">{msg}</p>
       <button type="button" class="group absolute top-1 right-1 p-2" aria-label={gettext("close")}>
         <.icon name="hero-x-mark-solid" class="h-5 w-5 opacity-40 group-hover:opacity-70" />
       </button>
@@ -203,9 +203,9 @@ defmodule GarageWeb.CoreComponents do
     ~H"""
     <.form :let={f} for={@for} as={@as} {@rest}>
       <div class="mt-10 space-y-8 bg-white">
-        <%= render_slot(@inner_block, f) %>
+        {render_slot(@inner_block, f)}
         <div :for={action <- @actions} class="mt-2 flex items-center justify-between gap-6">
-          <%= render_slot(action, f) %>
+          {render_slot(action, f)}
         </div>
       </div>
     </.form>
@@ -238,7 +238,7 @@ defmodule GarageWeb.CoreComponents do
       ]}
       {@rest}
     >
-      <%= render_slot(@inner_block) %>
+      {render_slot(@inner_block)}
       <%= if @icon do %>
         <.icon name={@icon} />
       <% end %>
@@ -325,9 +325,9 @@ defmodule GarageWeb.CoreComponents do
           class="rounded border-zinc-300 text-zinc-900 focus:ring-0"
           {@rest}
         />
-        <%= @label %>
+        {@label}
       </label>
-      <.error :for={msg <- @errors}><%= msg %></.error>
+      <.error :for={msg <- @errors}>{msg}</.error>
     </div>
     """
   end
@@ -335,7 +335,7 @@ defmodule GarageWeb.CoreComponents do
   def input(%{type: "select"} = assigns) do
     ~H"""
     <div phx-feedback-for={@name}>
-      <.label for={@id}><%= @label %></.label>
+      <.label for={@id}>{@label}</.label>
       <select
         id={@id}
         name={@name}
@@ -343,10 +343,10 @@ defmodule GarageWeb.CoreComponents do
         multiple={@multiple}
         {@rest}
       >
-        <option :if={@prompt} value=""><%= @prompt %></option>
-        <%= Phoenix.HTML.Form.options_for_select(@options, @value) %>
+        <option :if={@prompt} value="">{@prompt}</option>
+        {Phoenix.HTML.Form.options_for_select(@options, @value)}
       </select>
-      <.error :for={msg <- @errors}><%= msg %></.error>
+      <.error :for={msg <- @errors}>{msg}</.error>
     </div>
     """
   end
@@ -354,7 +354,7 @@ defmodule GarageWeb.CoreComponents do
   def input(%{type: "textarea"} = assigns) do
     ~H"""
     <div phx-feedback-for={@name}>
-      <.label for={@id}><%= @label %></.label>
+      <.label for={@id}>{@label}</.label>
       <textarea
         id={@id}
         name={@name}
@@ -366,7 +366,7 @@ defmodule GarageWeb.CoreComponents do
         ]}
         {@rest}
       ><%= Phoenix.HTML.Form.normalize_value("textarea", @value) %></textarea>
-      <.error :for={msg <- @errors}><%= msg %></.error>
+      <.error :for={msg <- @errors}>{msg}</.error>
     </div>
     """
   end
@@ -375,7 +375,7 @@ defmodule GarageWeb.CoreComponents do
   def input(assigns) do
     ~H"""
     <div phx-feedback-for={@name}>
-      <.label for={@id}><%= @label %></.label>
+      <.label for={@id}>{@label}</.label>
       <input
         type={@type}
         name={@name}
@@ -389,7 +389,7 @@ defmodule GarageWeb.CoreComponents do
         ]}
         {@rest}
       />
-      <.error :for={msg <- @errors}><%= msg %></.error>
+      <.error :for={msg <- @errors}>{msg}</.error>
     </div>
     """
   end
@@ -403,7 +403,7 @@ defmodule GarageWeb.CoreComponents do
   def label(assigns) do
     ~H"""
     <label for={@for} class="block text-sm font-semibold leading-6 text-zinc-800">
-      <%= render_slot(@inner_block) %>
+      {render_slot(@inner_block)}
     </label>
     """
   end
@@ -417,7 +417,7 @@ defmodule GarageWeb.CoreComponents do
     ~H"""
     <p class="mt-3 flex gap-3 text-sm leading-6 text-rose-600 phx-no-feedback:hidden">
       <.icon name="hero-exclamation-circle-mini" class="mt-0.5 h-5 w-5 flex-none" />
-      <%= render_slot(@inner_block) %>
+      {render_slot(@inner_block)}
     </p>
     """
   end
@@ -436,15 +436,32 @@ defmodule GarageWeb.CoreComponents do
     <header class={["flex flex-col gap-10 mb-5 h-auto align-middle", @class]}>
       <div class="flex flex-col items-center justify-between gap-10">
         <h1 class="flex leading-none text-zinc-800 text-8xl md:h-full mb-5 text-center">
-          <%= render_slot(@inner_block) %>
+          {render_slot(@inner_block)}
         </h1>
         <div class="grid grid-cols-2 auto-cols-max w-full justify-items-stretch gap-10">
-          <%= render_slot(@actions) %>
+          {render_slot(@actions)}
         </div>
       </div>
       <p :if={@subtitle != []} class="h-12 text-l md:text-xl leading-6 text-zinc-600">
-        <%= render_slot(@subtitle) %>
+        {render_slot(@subtitle)}
       </p>
+    </header>
+    """
+  end
+
+  @doc """
+  Renders a subheading
+  """
+  attr :class, :string, default: nil
+
+  slot :inner_block, required: true
+
+  def subheading(assigns) do
+    ~H"""
+    <header class={["flex flex-col gap-10 mb-5 h-auto align-middle", @class]}>
+      <h2 class="flex leading-none text-zinc-800 text-6xl md:h-full mb-5 text-center">
+        {render_slot(@inner_block)}
+      </h2>
     </header>
     """
   end
@@ -485,9 +502,9 @@ defmodule GarageWeb.CoreComponents do
       <table class="w-[40rem] mt-11 sm:w-full">
         <thead class="text-sm text-left leading-6 text-zinc-500">
           <tr>
-            <th :for={col <- @col} class="p-0 pb-4 pr-6 font-normal"><%= col[:label] %></th>
+            <th :for={col <- @col} class="p-0 pb-4 pr-6 font-normal">{col[:label]}</th>
             <th :if={@action != []} class="relative p-0 pb-4">
-              <span class="sr-only"><%= gettext("Actions") %></span>
+              <span class="sr-only">{gettext("Actions")}</span>
             </th>
           </tr>
         </thead>
@@ -505,7 +522,7 @@ defmodule GarageWeb.CoreComponents do
               <div class="block py-4 pr-6">
                 <span class="absolute -inset-y-px right-0 -left-4 group-hover:bg-zinc-50 sm:rounded-l-xl" />
                 <span class={["relative", i == 0 && "font-semibold text-zinc-900"]}>
-                  <%= render_slot(col, @row_item.(row)) %>
+                  {render_slot(col, @row_item.(row))}
                 </span>
               </div>
             </td>
@@ -516,7 +533,7 @@ defmodule GarageWeb.CoreComponents do
                   :for={action <- @action}
                   class="relative ml-4 font-semibold leading-6 text-zinc-900 hover:text-zinc-700"
                 >
-                  <%= render_slot(action, @row_item.(row)) %>
+                  {render_slot(action, @row_item.(row))}
                 </span>
               </div>
             </td>
@@ -546,8 +563,8 @@ defmodule GarageWeb.CoreComponents do
     <div class="mt-14">
       <dl class="-my-4 divide-y divide-zinc-100">
         <div :for={item <- @item} class="flex gap-4 py-4 text-sm leading-6 sm:gap-8">
-          <dt class="w-1/4 flex-none text-zinc-500"><%= item.title %></dt>
-          <dd class="text-zinc-700"><%= render_slot(item) %></dd>
+          <dt class="w-1/4 flex-none text-zinc-500">{item.title}</dt>
+          <dd class="text-zinc-700">{render_slot(item)}</dd>
         </div>
       </dl>
     </div>
@@ -572,7 +589,7 @@ defmodule GarageWeb.CoreComponents do
         class="text-sm font-semibold leading-6 text-zinc-900 hover:text-zinc-700"
       >
         <.icon name="hero-arrow-left-solid" class="h-3 w-3" />
-        <%= render_slot(@inner_block) %>
+        {render_slot(@inner_block)}
       </.link>
     </div>
     """
@@ -618,7 +635,7 @@ defmodule GarageWeb.CoreComponents do
 
     ~H"""
     <div phx-feedback-for={@field.name}>
-      <.label for={@field.id}><%= @label %></.label>
+      <.label for={@field.id}>{@label}</.label>
 
       <LiveSelect.live_select
         field={@field}
@@ -656,7 +673,7 @@ defmodule GarageWeb.CoreComponents do
           </div>
         </:clear_button>
       </LiveSelect.live_select>
-      <.error :for={msg <- @errors}><%= msg %></.error>
+      <.error :for={msg <- @errors}>{msg}</.error>
     </div>
     """
   end
@@ -669,8 +686,8 @@ defmodule GarageWeb.CoreComponents do
   def username(assigns) do
     ~H"""
     <span style={"color: #{@user.color}"}>
-      <.link navigate={~p"/#{@user.username}"}>
-        <%= @user.username %>
+      <.link navigate={~p"/u/#{@user.username}"}>
+        {@user.username}
       </.link>
     </span>
     """
@@ -682,7 +699,7 @@ defmodule GarageWeb.CoreComponents do
   def badge(assigns) do
     ~H"""
     <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 mx-1 my-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
-      <%= render_slot(@inner_block) %>
+      {render_slot(@inner_block)}
     </span>
     """
   end
@@ -716,7 +733,7 @@ defmodule GarageWeb.CoreComponents do
       }
     >
       <div>
-        <%= render_slot(@title) %>
+        {render_slot(@title)}
       </div>
       <nav
         class="absolute z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
@@ -725,7 +742,7 @@ defmodule GarageWeb.CoreComponents do
         phx-click-away={hide("##{@id}-menu")}
       >
         <div class="flex flex-col gap-2 p-4 bg-white rounded-lg shadow-lg ring-1 ring-zinc-200">
-          <%= render_slot(@content) %>
+          {render_slot(@content)}
         </div>
       </nav>
     </div>

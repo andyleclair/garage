@@ -67,13 +67,13 @@ defmodule GarageWeb.UsersLive.Settings do
                       <.live_img_preview entry={entry} class="h-full w-full flex-none bg-gray-50" />
                       <div class="min-w-0 flex-auto">
                         <p class="text-sm font-semibold leading-6 break-all text-gray-900">
-                          <span class="absolute inset-x-0 -top-px bottom-0"></span> <%= entry.client_name %>
+                          <span class="absolute inset-x-0 -top-px bottom-0"></span> {entry.client_name}
                         </p>
                       </div>
                     </div>
                   </div>
                   <progress value={entry.progress} max="100" class="w-full h-1">
-                    <%= entry.progress %>%
+                    {entry.progress}%
                   </progress>
 
                   <div
@@ -106,7 +106,7 @@ defmodule GarageWeb.UsersLive.Settings do
 
                           <div class="ml-3">
                             <h3 class="text-sm font-medium text-red-800">
-                              <%= error_to_string(err) %>
+                              {error_to_string(err)}
                             </h3>
                           </div>
                         </div>
@@ -241,7 +241,7 @@ defmodule GarageWeb.UsersLive.Settings do
         {:noreply,
          socket
          |> put_flash(:info, "User updated successfully")
-         |> push_navigate(to: ~p"/#{user.username}")}
+         |> push_navigate(to: ~p"/u/#{user.username}")}
 
       {:error, form} ->
         {:noreply, assign_form(socket, form)}

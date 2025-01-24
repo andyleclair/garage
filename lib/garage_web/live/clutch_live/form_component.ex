@@ -7,7 +7,7 @@ defmodule GarageWeb.ClutchLive.FormComponent do
     ~H"""
     <div>
       <.header>
-        <%= @title %>
+        {@title}
       </.header>
 
       <.simple_form

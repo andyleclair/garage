@@ -1,11 +1,12 @@
 defmodule GarageWeb.ClutchLive.Show do
+  import GarageWeb.Components.Builds.Build
   use GarageWeb, :live_view
 
   @impl true
   def render(assigns) do
     ~H"""
     <.header>
-      Clutch <%= @clutch.id %>
+      Clutch {@clutch.id}
 
       <:actions>
         <%= if @current_user do %>
@@ -19,14 +20,24 @@ defmodule GarageWeb.ClutchLive.Show do
     <.list>
       <:item title="Manufacturer">
         <.link navigate={~p"/manufacturers/#{@clutch.manufacturer}"}>
-          <%= @clutch.manufacturer.name %>
+          {@clutch.manufacturer.name}
         </.link>
       </:item>
 
-      <:item title="Name"><%= @clutch.name %></:item>
+      <:item title="Name">{@clutch.name}</:item>
 
-      <:item title="Description"><%= @clutch.description %></:item>
+      <:item title="Description">{@clutch.description}</:item>
     </.list>
+
+    <div :if={@clutch.clutch_tunings != []} class="mt-24 flex flex-col gap-y-10">
+      <.subheading>
+        Builds with this clutch
+      </.subheading>
+
+      <%= for tuning <- @clutch.clutch_tunings do %>
+        <.build build={tuning.build} current_user={@current_user} />
+      <% end %>
+    </div>
 
     <.back navigate={~p"/clutches"}>Back to clutches</.back>
 
@@ -61,7 +72,10 @@ defmodule GarageWeb.ClutchLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :clutch,
-       Ash.get!(Garage.Mopeds.Clutch, id, actor: socket.assigns.current_user)
+       Ash.get!(Garage.Mopeds.Clutch, id,
+         actor: socket.assigns.current_user,
+         load: [clutch_tunings: [:build]]
+       )
      )}
   end
 

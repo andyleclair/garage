@@ -35,7 +35,7 @@
         </.dropdown>
         <%= if @current_user do %>
           <.link
-            navigate={~p"/#{@current_user.username}"}
+            navigate={~p"/u/#{@current_user.username}"}
             class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
             style={"color: #{@current_user.color}"}
           >
@@ -106,7 +106,10 @@
               <.icon name="hero-plus" class="bg-green-500 -mt-1" /> New Build
             </.button>
           </.link>
-          <.link navigate={~p"/#{@current_user.username}"} style={"color: #{@current_user.color}"}>
+          <.link
+            navigate={~p"/u/#{@current_user.username}"}
+            style={"color: #{@current_user.color}"}
+          >
             My Builds
           </.link>
           <.link navigate={~p"/user/settings"}>
@@ -128,20 +131,20 @@
   <main class="relative grow px-4 py-20 sm:px-6 lg:px-8 bg-white">
     <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
       <.flash_group flash={@flash} />
-      <%= @inner_content %>
+      {@inner_content}
     </div>
   </main>
   <footer class="px-4 sm:px-6 lg:px-20 bg-white border-t boder-color-zinc-800">
     <div class="flex items-center justify-between py-3 text-sm">
       <div class="flex items-center gap-4">
         <p class="text-zinc-900">
-          &copy; 2024 Moped.Club
+          &copy; 2025 Moped.Club
         </p>
       </div>
       <div class="flex items-center gap-8 font-semibold leading-6 text-zinc-900">
         <.link navigate={~p"/about"}>About</.link>
         <.link navigate={~p"/privacy"}>Privacy</.link>
-        <a href="mailto:admin@Moped.Club">Say Hi!</a>
+        <a href="mailto:admin@moped.club">Say Hi!</a>
       </div>
     </div>
   </footer>

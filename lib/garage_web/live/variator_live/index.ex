@@ -20,17 +20,17 @@ defmodule GarageWeb.VariatorLive.Index do
       rows={@streams.variators}
       row_click={fn {_id, variator} -> JS.navigate(~p"/variators/#{variator}") end}
     >
-      <:col :let={{_id, variator}} label="Manufacturer"><%= variator.manufacturer.name %></:col>
+      <:col :let={{_id, variator}} label="Manufacturer">{variator.manufacturer.name}</:col>
 
-      <:col :let={{_id, variator}} label="Name"><%= variator.name %></:col>
+      <:col :let={{_id, variator}} label="Name">{variator.name}</:col>
 
-      <:col :let={{_id, variator}} label="Description"><%= variator.description %></:col>
+      <:col :let={{_id, variator}} label="Description">{variator.description}</:col>
 
-      <:col :let={{_id, variator}} label="Type"><%= humanize(variator.type) %></:col>
+      <:col :let={{_id, variator}} label="Type">{humanize(variator.type)}</:col>
       <:col :let={{_id, variator}} label="Size">
-        <%= if variator.size, do: "#{variator.size} mm" %>
+        {if variator.size, do: "#{variator.size} mm"}
       </:col>
-      <:col :let={{_id, variator}} label="Roller Count"><%= variator.rollers %></:col>
+      <:col :let={{_id, variator}} label="Roller Count">{variator.rollers}</:col>
       <:action :let={{_id, variator}}>
         <%= if @current_user do %>
           <.link patch={~p"/variators/#{variator}/edit"}>Edit</.link>

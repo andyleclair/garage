@@ -43,7 +43,7 @@ defmodule GarageWeb do
         layouts: [html: GarageWeb.Layouts]
 
       import Plug.Conn
-      import GarageWeb.Gettext
+      use Gettext, backend: GarageWeb.Gettext
 
       unquote(verified_routes())
     end
@@ -96,7 +96,7 @@ defmodule GarageWeb do
       # Core UI components and translation
       import GarageWeb.CoreComponents
 
-      import GarageWeb.Gettext
+      use Gettext, backend: GarageWeb.Gettext
 
       import GarageWeb.TimeHelpers
 

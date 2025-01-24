@@ -19,7 +19,7 @@ strategy = Info.strategy!(Garage.Accounts.User, :password)
   Strategy.action(strategy, :register, %{
     "username" => "beavis",
     "name" => "Beavis",
-    "email" => "beavis@moped.ub",
+    "email" => "beavis@moped.club",
     "password" => "beavis12345"
   })
 
@@ -48,7 +48,7 @@ image_urls = [
   "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev/garage%2Fusers%2Fadmin%2Fbuilds%2Fbig%20long%20ass%20moped%20bike%20name%20because%20i%20fuckin%20suck%20and%20i'm%20an%20asshole%20to%20everyone%2Fuploads%2F0a747def-a8fc-4cf7-b056-54930f889101-PXL_20220828_152440295.jpg"
 ]
 
-for i <- 1..25 do
+for i <- 1..100 do
   {make, model, engine} = Enum.random(possible_mopeds)
   {:ok, make} = Manufacturer.get_by_slug(make, load: [:engines])
   {:ok, model} = Model.get_by_slug(make.id, model)
@@ -70,7 +70,7 @@ for i <- 1..25 do
   |> Ash.create!()
 end
 
-for i <- 1..25 do
+for i <- 1..100 do
   {make, model, engine} = Enum.random(possible_mopeds)
   {:ok, make} = Manufacturer.get_by_slug(make, load: [:engines])
   {:ok, model} = Model.get_by_slug(make.id, model)

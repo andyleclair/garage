@@ -20,11 +20,11 @@ defmodule GarageWeb.ExhaustLive.Index do
       rows={@exhausts}
       row_click={fn exhaust -> JS.navigate(~p"/exhausts/#{exhaust}") end}
     >
-      <:col :let={exhaust} label="Manufacturer"><%= exhaust.manufacturer.name %></:col>
+      <:col :let={exhaust} label="Manufacturer">{exhaust.manufacturer.name}</:col>
 
-      <:col :let={exhaust} label="Name"><%= exhaust.name %></:col>
+      <:col :let={exhaust} label="Name">{exhaust.name}</:col>
 
-      <:col :let={exhaust} label="Description"><%= exhaust.description %></:col>
+      <:col :let={exhaust} label="Description">{exhaust.description}</:col>
 
       <:action :let={exhaust}>
         <%= if @current_user do %>

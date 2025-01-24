@@ -22,17 +22,17 @@ defmodule GarageWeb.EngineLive.Index do
     >
       <:col :let={{_id, engine}} label="Manufacturer">
         <.link navigate={~p"/manufacturers/#{engine.manufacturer}"}>
-          <%= engine.manufacturer.name %>
+          {engine.manufacturer.name}
         </.link>
       </:col>
-      <:col :let={{_id, engine}} label="Name"><%= engine.name %></:col>
-      <:col :let={{_id, engine}} label="Description"><%= engine.description %></:col>
+      <:col :let={{_id, engine}} label="Name">{engine.name}</:col>
+      <:col :let={{_id, engine}} label="Description">{engine.description}</:col>
       <:col :let={{_id, engine}} label="Transmission">
-        <%= engine.transmission |> humanize() %>
+        {engine.transmission |> humanize()}
       </:col>
       <:col :let={{_id, engine}} label="Drive">
         <%= for drive <- engine.drive || [] do %>
-          <.badge><%= drive |> humanize() %></.badge>
+          <.badge>{drive |> humanize()}</.badge>
         <% end %>
       </:col>
 

@@ -20,11 +20,11 @@ defmodule GarageWeb.IgnitionLive.Index do
       rows={@streams.ignitions}
       row_click={fn {_id, ignition} -> JS.navigate(~p"/ignitions/#{ignition}") end}
     >
-      <:col :let={{_id, ignition}} label="Manufacturer"><%= ignition.manufacturer.name %></:col>
+      <:col :let={{_id, ignition}} label="Manufacturer">{ignition.manufacturer.name}</:col>
 
-      <:col :let={{_id, ignition}} label="Name"><%= ignition.name %></:col>
+      <:col :let={{_id, ignition}} label="Name">{ignition.name}</:col>
 
-      <:col :let={{_id, ignition}} label="Description"><%= ignition.description %></:col>
+      <:col :let={{_id, ignition}} label="Description">{ignition.description}</:col>
 
       <:action :let={{_id, ignition}}>
         <%= if @current_user do %>

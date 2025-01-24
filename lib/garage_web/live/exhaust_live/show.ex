@@ -1,11 +1,12 @@
 defmodule GarageWeb.ExhaustLive.Show do
+  import GarageWeb.Components.Builds.Build
   use GarageWeb, :live_view
 
   @impl true
   def render(assigns) do
     ~H"""
     <.header>
-      <%= @exhaust.name %>
+      {@exhaust.name}
 
       <:actions>
         <%= if @current_user do %>
@@ -17,12 +18,22 @@ defmodule GarageWeb.ExhaustLive.Show do
     </.header>
 
     <.list>
-      <:item title="Name"><%= @exhaust.name %></:item>
+      <:item title="Name">{@exhaust.name}</:item>
 
-      <:item title="Description"><%= @exhaust.description %></:item>
+      <:item title="Description">{@exhaust.description}</:item>
 
-      <:item title="Manufacturer"><%= @exhaust.manufacturer.name %></:item>
+      <:item title="Manufacturer">{@exhaust.manufacturer.name}</:item>
     </.list>
+
+    <div :if={@exhaust.builds != []} class="mt-24 flex flex-col gap-y-10">
+      <.subheading>
+        Builds with this exhaust
+      </.subheading>
+
+      <%= for build <- @exhaust.builds do %>
+        <.build build={build} current_user={@current_user} />
+      <% end %>
+    </div>
 
     <.back navigate={~p"/exhausts"}>Back to exhausts</.back>
 
@@ -57,7 +68,7 @@ defmodule GarageWeb.ExhaustLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :exhaust,
-       Ash.get!(Garage.Mopeds.Exhaust, id, actor: socket.assigns.current_user)
+       Ash.get!(Garage.Mopeds.Exhaust, id, actor: socket.assigns.current_user, load: [:builds])
      )}
   end
 

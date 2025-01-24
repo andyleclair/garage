@@ -5,7 +5,7 @@ defmodule GarageWeb.CrankLive.Show do
   def render(assigns) do
     ~H"""
     <.header>
-      <%= @crank.name %>
+      {@crank.name}
 
       <:actions>
         <%= if @current_user do %>
@@ -19,26 +19,26 @@ defmodule GarageWeb.CrankLive.Show do
     <.list>
       <:item title="Manufacturer">
         <.link navigate={~p"/manufacturers/#{@crank.manufacturer}"}>
-          <%= @crank.manufacturer.name %>
+          {@crank.manufacturer.name}
         </.link>
       </:item>
-      <:item title="Name"><%= @crank.name %></:item>
+      <:item title="Name">{@crank.name}</:item>
 
       <:item title="Engine">
         <%= if @crank.engine  do %>
           <.link navigate={~p"/engines/#{@crank.engine}"}>
-            <%= @crank.engine.name %>
+            {@crank.engine.name}
           </.link>
         <% end %>
       </:item>
-      <:item title="Description"><%= @crank.description %></:item>
+      <:item title="Description">{@crank.description}</:item>
 
-      <:item title="Stroke (mm)"><%= @crank.stroke %></:item>
+      <:item title="Stroke (mm)">{@crank.stroke}</:item>
 
-      <:item title="Conn rod length (mm)"><%= @crank.conn_rod_length %></:item>
+      <:item title="Conn rod length (mm)">{@crank.conn_rod_length}</:item>
 
       <:item title="Small end bearing diameter (mm)">
-        <%= @crank.small_end_bearing_diameter %>
+        {@crank.small_end_bearing_diameter}
       </:item>
     </.list>
 

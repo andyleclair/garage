@@ -22,18 +22,18 @@ defmodule GarageWeb.CylinderLive.Index do
     >
       <:col :let={cylinder} label="Manufacturer">
         <.link navigate={~p"/manufacturers/#{cylinder.manufacturer}"}>
-          <%= cylinder.manufacturer.name %>
+          {cylinder.manufacturer.name}
         </.link>
       </:col>
-      <:col :let={cylinder} label="Name"><%= cylinder.name %></:col>
+      <:col :let={cylinder} label="Name">{cylinder.name}</:col>
 
-      <:col :let={cylinder} label="Description"><%= cylinder.description %></:col>
+      <:col :let={cylinder} label="Description">{cylinder.description}</:col>
 
       <:col :let={cylinder} label="Displacement">
-        <.badge :if={cylinder.displacement}><%= cylinder.displacement %> cc</.badge>
+        <.badge :if={cylinder.displacement}>{cylinder.displacement} cc</.badge>
       </:col>
       <:col :let={cylinder} label="Bore">
-        <.badge :if={cylinder.bore}><%= cylinder.bore %> mm</.badge>
+        <.badge :if={cylinder.bore}>{cylinder.bore} mm</.badge>
       </:col>
 
       <:action :let={cylinder}>

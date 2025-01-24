@@ -29,7 +29,7 @@ defmodule Garage.Builds.ClutchTuning do
       public? true
     end
 
-    belongs_to :build, Garage.Builds.Build do
+    has_one :build, Garage.Builds.Build do
       public? true
     end
   end

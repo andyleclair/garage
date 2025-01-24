@@ -35,7 +35,7 @@ defmodule Garage.Mopeds.Ignition do
   end
 
   relationships do
-    has_many :ignition_tuning, Garage.Builds.IgnitionTuning do
+    has_many :ignition_tunings, Garage.Builds.IgnitionTuning do
       domain Garage.Builds
       public? true
     end

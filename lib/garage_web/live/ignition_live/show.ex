@@ -1,11 +1,12 @@
 defmodule GarageWeb.IgnitionLive.Show do
+  import GarageWeb.Components.Builds.Build
   use GarageWeb, :live_view
 
   @impl true
   def render(assigns) do
     ~H"""
     <.header>
-      <%= @ignition.name %>
+      {@ignition.name}
 
       <:actions>
         <%= if @current_user do %>
@@ -17,12 +18,22 @@ defmodule GarageWeb.IgnitionLive.Show do
     </.header>
 
     <.list>
-      <:item title="Name"><%= @ignition.name %></:item>
+      <:item title="Name">{@ignition.name}</:item>
 
-      <:item title="Description"><%= @ignition.description %></:item>
+      <:item title="Description">{@ignition.description}</:item>
 
-      <:item title="Manufacturer"><%= @ignition.manufacturer.name %></:item>
+      <:item title="Manufacturer">{@ignition.manufacturer.name}</:item>
     </.list>
+
+    <div :if={@ignition.ignition_tunings != []} class="mt-24 flex flex-col gap-y-10">
+      <.subheading>
+        Builds with this ignition
+      </.subheading>
+
+      <%= for tuning <- @ignition.ignition_tunings do %>
+        <.build build={tuning.build} current_user={@current_user} />
+      <% end %>
+    </div>
 
     <.back navigate={~p"/ignitions"}>Back to ignitions</.back>
 
@@ -57,7 +68,10 @@ defmodule GarageWeb.IgnitionLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :ignition,
-       Ash.get!(Garage.Mopeds.Ignition, id, actor: socket.assigns.current_user)
+       Ash.get!(Garage.Mopeds.Ignition, id,
+         actor: socket.assigns.current_user,
+         load: [ignition_tunings: [:build]]
+       )
      )}
   end
 

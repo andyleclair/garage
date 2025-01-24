@@ -5,7 +5,7 @@ defmodule GarageWeb.VariatorLive.Show do
   def render(assigns) do
     ~H"""
     <.header>
-      <%= @variator.name %>
+      {@variator.name}
 
       <:actions>
         <%= if @current_user do %>
@@ -17,14 +17,14 @@ defmodule GarageWeb.VariatorLive.Show do
     </.header>
 
     <.list>
-      <:item title="Name"><%= @variator.name %></:item>
+      <:item title="Name">{@variator.name}</:item>
 
-      <:item title="Description"><%= @variator.description %></:item>
+      <:item title="Description">{@variator.description}</:item>
 
-      <:item title="Manufacturer"><%= @variator.manufacturer.name %></:item>
-      <:item title="Type"><%= humanize(@variator.type) %></:item>
-      <:item title="Size"><%= if @variator.size, do: "#{@variator.size} mm" %></:item>
-      <:item :if={@variator.type == :rollers} title="Roller Count"><%= @variator.rollers %></:item>
+      <:item title="Manufacturer">{@variator.manufacturer.name}</:item>
+      <:item title="Type">{humanize(@variator.type)}</:item>
+      <:item title="Size">{if @variator.size, do: "#{@variator.size} mm"}</:item>
+      <:item :if={@variator.type == :rollers} title="Roller Count">{@variator.rollers}</:item>
     </.list>
 
     <.back navigate={~p"/variators"}>Back to variators</.back>

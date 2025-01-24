@@ -9,13 +9,13 @@
     </div>
     <div class="md:w-2/3 md:ml-5">
       <h1 class="text-6xl max-h-full mb-2">
-        <%= @user.name %>
+        {@user.name}
       </h1>
       <p class="h-12 text-l md:text-xl leading-6 text-zinc-500">
         ~ <.username user={@user} />
       </p>
       <div class="trix-content">
-        <%= raw(@user.profile) %>
+        {raw(@user.profile)}
       </div>
     </div>
   </div>

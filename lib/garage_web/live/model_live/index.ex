@@ -16,9 +16,9 @@ defmodule GarageWeb.ModelLive.Index do
     </.header>
 
     <.table id="models" rows={@models} row_click={fn model -> JS.navigate(~p"/models/#{model}") end}>
-      <:col :let={model} label="Manufacturer"><%= model.manufacturer.name %></:col>
-      <:col :let={model} label="Name"><%= model.name %></:col>
-      <:col :let={model} label="Description"><%= model.description %></:col>
+      <:col :let={model} label="Manufacturer">{model.manufacturer.name}</:col>
+      <:col :let={model} label="Name">{model.name}</:col>
+      <:col :let={model} label="Description">{model.description}</:col>
 
       <:action :let={model}>
         <%= if @current_user do %>

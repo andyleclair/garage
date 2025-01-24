@@ -24,29 +24,29 @@ defmodule GarageWeb.Components.Builds.Build do
           <div class="flex flex-col md:flex-row justify-between items-baseline border-b border-neutral-800">
             <h5 class="flex truncate text-4xl font-black leading-tight text-neutral-800">
               <.link navigate={~p"/builds/#{@build.slug}"} class="truncate w-full max-w-md">
-                <%= @build.name %>
+                {@build.name}
               </.link>
             </h5>
 
             <div class="flex flex-col md:flex-row divide-x items-baseline justify-between gap-2 w-full md:w-auto ">
               <div class="flex flex-row flex-none inline-block gap-x-2">
-                <%= @build.year %>
-                <.link patch={~p"/builds?#{[make: @build.manufacturer]}"}>
-                  <%= @build.manufacturer.name %>
+                {@build.year}
+                <.link navigate={~p"/manufacturers/#{@build.manufacturer}"}>
+                  {@build.manufacturer.name}
                 </.link>
-                <.link patch={~p"/builds?#{[make: @build.manufacturer, model: @build.model]}"}>
-                  <%= @build.model.name %>
+                <.link navigate={~p"/models/#{@build.model}"}>
+                  {@build.model.name}
                 </.link>
               </div>
               <div class="grid grid-cols-3 auto-cols-max w-full justify-items-stretch gap-x-2 px-2">
                 <div>
-                  <%= @build.like_count %> <.icon name="hero-heart-solid" class="bg-red-500" />
+                  {@build.like_count} <.icon name="hero-heart-solid" class="bg-red-500" />
                 </div>
                 <div>
-                  <%= @build.follow_count %> <.icon name="hero-bolt-solid" class="bg-green-500" />
+                  {@build.follow_count} <.icon name="hero-bolt-solid" class="bg-green-500" />
                 </div>
                 <div>
-                  <%= @build.comment_count %>
+                  {@build.comment_count}
                   <.icon name="hero-chat-bubble-bottom-center-solid" class="bg-blue-500" />
                 </div>
               </div>
@@ -61,7 +61,9 @@ defmodule GarageWeb.Components.Builds.Build do
             >
               <div class="font-semibold">Engine:</div>
               <div>
-                <%= @build.engine_tuning.engine.manufacturer.name %> <%= @build.engine_tuning.engine.name %>
+                <.link navigate={~p"/engines/#{@build.engine_tuning.engine}"}>
+                  {@build.engine_tuning.engine.manufacturer.name} {@build.engine_tuning.engine.name}
+                </.link>
               </div>
             </div>
             <div
@@ -70,7 +72,9 @@ defmodule GarageWeb.Components.Builds.Build do
             >
               <div class="font-semibold">Carburetor:</div>
               <div>
-                <%= @build.carb_tuning.carburetor.manufacturer.name %> <%= @build.carb_tuning.carburetor.name %>
+                <.link navigate={~p"/carburetors/#{@build.carb_tuning.carburetor}"}>
+                  {@build.carb_tuning.carburetor.manufacturer.name} {@build.carb_tuning.carburetor.name}
+                </.link>
               </div>
             </div>
             <div
@@ -79,13 +83,17 @@ defmodule GarageWeb.Components.Builds.Build do
             >
               <div class="font-semibold">Cylinder:</div>
               <div>
-                <%= @build.cylinder_tuning.cylinder.manufacturer.name %> <%= @build.cylinder_tuning.cylinder.name %>
+                <.link navigate={~p"/cylinders/#{@build.cylinder_tuning.cylinder}"}>
+                  {@build.cylinder_tuning.cylinder.manufacturer.name} {@build.cylinder_tuning.cylinder.name}
+                </.link>
               </div>
             </div>
             <div :if={@build.exhaust} class="flex flex-row justify-between">
               <div class="font-semibold">Exhaust:</div>
               <div>
-                <%= @build.exhaust.manufacturer.name %> <%= @build.exhaust.name %>
+                <.link navigate={~p"/exhausts/#{@build.exhaust}"}>
+                  {@build.exhaust.manufacturer.name} {@build.exhaust.name}
+                </.link>
               </div>
             </div>
             <div
@@ -94,7 +102,9 @@ defmodule GarageWeb.Components.Builds.Build do
             >
               <div class="font-semibold">Clutch:</div>
               <div>
-                <%= @build.clutch_tuning.clutch.manufacturer.name %> <%= @build.clutch_tuning.clutch.name %>
+                <.link navigate={~p"/clutches/#{@build.clutch_tuning.clutch}"}>
+                  {@build.clutch_tuning.clutch.manufacturer.name} {@build.clutch_tuning.clutch.name}
+                </.link>
               </div>
             </div>
             <div
@@ -103,7 +113,9 @@ defmodule GarageWeb.Components.Builds.Build do
             >
               <div class="font-semibold">Ignition:</div>
               <div>
-                <%= @build.ignition_tuning.ignition.manufacturer.name %> <%= @build.ignition_tuning.ignition.name %>
+                <.link navigate={~p"/ignitions/#{@build.ignition_tuning.ignition}"}>
+                  {@build.ignition_tuning.ignition.manufacturer.name} {@build.ignition_tuning.ignition.name}
+                </.link>
               </div>
             </div>
             <div
@@ -112,13 +124,17 @@ defmodule GarageWeb.Components.Builds.Build do
             >
               <div class="font-semibold">Variator:</div>
               <div>
-                <%= @build.variator_tuning.variator.manufacturer.name %> <%= @build.variator_tuning.variator.name %>
+                <.link navigate={~p"/variators/#{@build.variator_tuning.variator}"}>
+                  {@build.variator_tuning.variator.manufacturer.name} {@build.variator_tuning.variator.name}
+                </.link>
               </div>
             </div>
             <div :if={@build.pulley} class="flex flex-row justify-between">
               <div class="font-semibold">Pulley:</div>
               <div>
-                <%= @build.pulley.manufacturer.name %> <%= @build.pulley.name %>
+                <.link navigate={~p"/pulleys/#{@build.pulley}"}>
+                  {@build.pulley.manufacturer.name} {@build.pulley.name}
+                </.link>
               </div>
             </div>
           </div>

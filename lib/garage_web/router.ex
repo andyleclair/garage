@@ -127,8 +127,7 @@ defmodule GarageWeb.Router do
       live "/parts", PartsLive.Index, :index
       live "/about", HomeLive.About, :about
       live "/privacy", HomeLive.Privacy, :privacy
-      # This one _needs_ to be last
-      live "/:username", UsersLive.Show, :show
+      live "/u/:username", UsersLive.Show, :show
     end
   end
 

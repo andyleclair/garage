@@ -1,11 +1,12 @@
 defmodule GarageWeb.CarburetorLive.Show do
+  import GarageWeb.Components.Builds.Build
   use GarageWeb, :live_view
 
   @impl true
   def render(assigns) do
     ~H"""
     <.header>
-      <%= @carburetor.manufacturer.name %> <%= @carburetor.name %>
+      {@carburetor.manufacturer.name} {@carburetor.name}
 
       <:actions>
         <%= if @current_user do %>
@@ -19,24 +20,34 @@ defmodule GarageWeb.CarburetorLive.Show do
     <.list>
       <:item title="Manufacturer">
         <.link navigate={~p"/manufacturers/#{@carburetor.manufacturer}"}>
-          <%= @carburetor.manufacturer.name %>
+          {@carburetor.manufacturer.name}
         </.link>
       </:item>
 
-      <:item title="Name"><%= @carburetor.name %></:item>
+      <:item title="Name">{@carburetor.name}</:item>
 
-      <:item title="Description"><%= @carburetor.description %></:item>
+      <:item title="Description">{@carburetor.description}</:item>
 
       <:item title="Sizes">
-        <.badge :for={size <- @carburetor.sizes}><%= size %></.badge>
+        <.badge :for={size <- @carburetor.sizes}>{size}</.badge>
       </:item>
 
       <:item title="Tunable Parts">
         <.badge :for={part <- @carburetor.tunable_parts}>
-          <%= part |> humanize() %>
+          {part |> humanize()}
         </.badge>
       </:item>
     </.list>
+
+    <div :if={@carburetor.carb_tunings != []} class="mt-24 flex flex-col gap-y-10">
+      <.subheading>
+        Builds with this carburetor
+      </.subheading>
+
+      <%= for tuning <- @carburetor.carb_tunings do %>
+        <.build build={tuning.build} current_user={@current_user} />
+      <% end %>
+    </div>
 
     <.back navigate={~p"/carburetors"}>Back to carburetors</.back>
 
@@ -72,7 +83,10 @@ defmodule GarageWeb.CarburetorLive.Show do
      |> assign(:page_title, page_title(socket.assigns.live_action))
      |> assign(
        :carburetor,
-       Ash.get!(Garage.Mopeds.Carburetor, id, actor: socket.assigns.current_user)
+       Ash.get!(Garage.Mopeds.Carburetor, id,
+         actor: socket.assigns.current_user,
+         load: [carb_tunings: [:build]]
+       )
      )}
   end
 
