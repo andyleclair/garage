@@ -42,9 +42,9 @@ defmodule GarageWeb.UsersLive.Settings do
       <!-- Avatar management -->
       <div class="md:flex justify-around space-x-4">
         <div class="md:w-1/2 sm:w-full">
-          <h2 class="text-base font-semibold leading-7 text-gray-900">
+          <h3 class="text-base font-semibold leading-7 text-gray-900">
             Current Avatar
-          </h2>
+          </h3>
           <img src={@user.avatar_url} title={"#{@user.name}'s avatar"} />
         </div>
 
@@ -52,9 +52,9 @@ defmodule GarageWeb.UsersLive.Settings do
           <!-- Selected files preview section -->
           <%= if @uploads.avatar_url.entries != [] do %>
             <div class="">
-              <h2 class="text-base font-semibold leading-7 text-gray-900">
+              <h3 class="text-base font-semibold leading-7 text-gray-900">
                 New Avatar
-              </h2>
+              </h3>
 
               <div class="">
                 <%= for entry <- @uploads.avatar_url.entries do %>
@@ -121,9 +121,9 @@ defmodule GarageWeb.UsersLive.Settings do
           <% else %>
             <div class="space-y-12">
               <div class="border-gray-900/10 pb-12">
-                <h2 class="text-base font-semibold leading-7 text-gray-900">
+                <h3 class="text-base font-semibold leading-7 text-gray-900">
                   New Avatar
-                </h2>
+                </h3>
 
                 <p class="mt-1 text-sm leading-6 text-gray-600">
                   A photo is worth a thousand words...
@@ -193,6 +193,7 @@ defmodule GarageWeb.UsersLive.Settings do
      |> allow_upload(:avatar_url,
        accept: ~w(.jpg .jpeg .webp .png .gif),
        max_entries: 1,
+       max_size: max_size(),
        external: &presign_upload/2
      )
      |> assign(:user, user)
@@ -279,4 +280,8 @@ defmodule GarageWeb.UsersLive.Settings do
   end
 
   defp public_root, do: Application.get_env(:garage, :public_image_root)
+
+  defp max_size() do
+    Application.get_env(:garage, :max_upload_size)
+  end
 end

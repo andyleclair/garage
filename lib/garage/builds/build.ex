@@ -192,6 +192,8 @@ defmodule Garage.Builds.Build do
         default_limit 50
         offset? true
       end
+
+      prepare build(sort: [inserted_at: :desc])
     end
 
     read :latest do

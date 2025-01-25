@@ -92,7 +92,8 @@ defmodule GarageWeb.BuildsLive.Edit do
          accept: ~w(.jpg .jpeg .webp .png),
          max_entries: 10,
          external: &presign_upload/2,
-         auto_upload: true
+         auto_upload: true,
+         max_file_size: max_size()
        )}
     else
       Logger.error(
@@ -457,5 +458,9 @@ defmodule GarageWeb.BuildsLive.Edit do
     else
       assign(socket, selected_item, nil)
     end
+  end
+
+  defp max_size() do
+    Application.get_env(:garage, :max_upload_size)
   end
 end

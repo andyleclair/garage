@@ -67,7 +67,8 @@ config :ex_aws,
 
 config :garage,
   ash_domains: [Garage.Builds, Garage.Mopeds, Garage.Accounts],
-  env: config_env()
+  env: config_env(),
+  max_upload_size: 15_000_000
 
 # config :crawly,
 #  closespider_timeout: 10,

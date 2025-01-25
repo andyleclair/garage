@@ -10,7 +10,7 @@ defmodule GarageWeb.Components.Pagination do
 
   def pagination(assigns) do
     ~H"""
-    <div id={@id} :if={@total_entries > 0}>
+    <div :if={@total_entries > 0} id={@id}>
       <div class="grid px-4 py-3 text-sm font-semibold tracking-wide text-gray-500 uppercase border-t  sm:grid-cols-9">
         <div class="flex items-center col-span-3">
           Showing {calculate_totals(@page_number, @page_size, @total_entries, @entries_length)}
