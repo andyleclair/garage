@@ -17,5 +17,6 @@ defmodule Garage.Builds do
     resource Garage.Builds.Like
     resource Garage.Builds.Follow
     resource Garage.Builds.Comment
+    resource Garage.Builds.Image
   end
 end

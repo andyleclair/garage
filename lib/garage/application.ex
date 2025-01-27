@@ -11,10 +11,13 @@ defmodule Garage.Application do
       config: %{metadata: [:file, :line]}
     })
 
+    Oban.Telemetry.attach_default_logger(encode: false, level: :debug)
+
     children = [
       GarageWeb.Telemetry,
       Garage.Repo,
       {DNSCluster, query: Application.get_env(:garage, :dns_cluster_query) || :ignore},
+      {Oban, Application.fetch_env!(:garage, Oban)},
       {Phoenix.PubSub, name: Garage.PubSub},
 
       # Start the Finch HTTP client for sending emails

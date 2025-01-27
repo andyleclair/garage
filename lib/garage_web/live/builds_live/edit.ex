@@ -7,6 +7,7 @@ defmodule GarageWeb.BuildsLive.Edit do
   alias AshPhoenix.Form
   alias ExAws.S3
   alias Garage.Builds.Build
+  alias Garage.Builds.Image
   alias Garage.Mopeds.Carburetor
   alias Garage.Mopeds.Clutch
   alias Garage.Mopeds.Crank
@@ -47,15 +48,13 @@ defmodule GarageWeb.BuildsLive.Edit do
           nil
         end
 
-      images = build.image_urls |> Enum.map(fn url -> {random_id(), url} end)
-
       {:ok,
        socket
        |> assign(:title, "Edit Build - #{build.name}")
        |> assign(:build, build)
        |> assign_form(form)
        |> assign(:manufacturer_options, to_options(manufacturers))
-       |> assign(:images, images)
+       |> assign(:images, build.images)
        |> assign(:uploaded_images, [])
        |> assign(:images_to_delete, [])
        |> assign(:models, models)
@@ -113,13 +112,14 @@ defmodule GarageWeb.BuildsLive.Edit do
   end
 
   @impl true
-  def handle_event("delete-image", %{"ref" => ref}, socket) do
-    {{^ref, url}, rest_images} = List.keytake(socket.assigns.images, ref, 0)
+  def handle_event("delete-image", %{"id" => id}, socket) do
+    index = Enum.find_index(socket.assigns.images, fn img -> img.id == id end)
+    {image, rest_images} = List.pop_at(socket.assigns.images, index)
 
     {:noreply,
      socket
      |> assign(:images, rest_images)
-     |> assign(:images_to_delete, [url | socket.assigns.images_to_delete])}
+     |> assign(:images_to_delete, [image | socket.assigns.images_to_delete])}
   end
 
   def handle_event("reposition", %{"new" => new_idx, "old" => old_idx}, socket) do
@@ -240,33 +240,49 @@ defmodule GarageWeb.BuildsLive.Edit do
   @impl true
   def handle_event(
         "save",
-        %{"form" => form},
+        %{"form" => params},
         %{
-          assigns: %{images: images, images_to_delete: images_to_delete}
+          assigns: %{
+            images: images,
+            images_to_delete: images_to_delete,
+            build: %Build{id: build_id}
+          }
         } = socket
       ) do
     async_delete_images(images_to_delete)
 
     uploaded_files =
       consume_uploaded_entries(socket, :image_urls, fn upload, _entry ->
-        {:ok, public_path(upload.key)}
+        {:ok, %{"original_url" => public_path(upload.key), "build_id" => build_id}}
       end)
 
-    image_urls = for {_ref, img} <- images, do: img
-
-    image_urls = (image_urls -- images_to_delete) ++ uploaded_files
-    params = Map.put(form, "image_urls", image_urls)
+    images = Enum.map(images, fn i -> Map.from_struct(i) end) ++ uploaded_files
+    params = Map.put(params, "images", images)
 
     case Form.submit(socket.assigns.form, params: params) do
       {:ok, build} ->
+        dbg(build)
+        create_resize_jobs(build.images)
+
         {:noreply,
          socket
          |> put_flash(:info, "Build updated successfully")
          |> push_navigate(to: ~p"/builds/#{build.slug}")}
 
       {:error, form} ->
+        dbg(form.source)
+        async_delete_images(uploaded_files)
         {:noreply, assign_form(socket, form)}
     end
+  end
+
+  defp create_resize_jobs(images) do
+    images
+    |> Enum.map(fn %{id: image_id} ->
+      %{"image_id" => image_id}
+      |> Garage.Workers.Resize.new()
+      |> Oban.insert!()
+    end)
   end
 
   defp presign_upload(entry, socket) do
@@ -302,33 +318,28 @@ defmodule GarageWeb.BuildsLive.Edit do
 
   defp public_root, do: Application.get_env(:garage, :public_image_root)
 
-  # stolen from Liveview internals 
-  defp random_id do
-    "build-img-"
-    |> Kernel.<>(random_encoded_bytes())
-    |> String.replace(["/", "+"], "-")
-  end
-
-  defp random_encoded_bytes do
-    binary = :crypto.strong_rand_bytes(32)
-
-    Base.url_encode64(binary)
-  end
-
   defp async_delete_images(images_to_delete) do
-    for img <- images_to_delete do
-      Task.Supervisor.start_child(Garage.TaskSupervisor, fn ->
-        with %URI{path: path} <- URI.parse(img) do
-          bucket()
-          |> S3.delete_object(path)
-          |> ExAws.request!()
-        end
-      end)
+    for %Image{original_url: img, thumbnail_url: thumb, optimized_url: optimized} <-
+          images_to_delete do
+      async_delete_image(img)
+      async_delete_image(thumb)
+      async_delete_image(optimized)
     end
+  end
+
+  defp async_delete_image(url) do
+    Task.Supervisor.start_child(Garage.TaskSupervisor, fn ->
+      with %URI{path: path} <- URI.parse(url) do
+        bucket()
+        |> S3.delete_object(path)
+        |> ExAws.request!()
+      end
+    end)
   end
 
   defp form(build, current_user) do
     Form.for_update(build, :update, forms: [auto?: true], actor: current_user)
+    |> Form.add_form([:images])
     |> maybe_add_form(:carb_tuning)
     |> maybe_add_form(:clutch_tuning)
     |> maybe_add_form(:cylinder_tuning)

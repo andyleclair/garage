@@ -11,7 +11,7 @@ defmodule Garage.Changes.SetSlug do
   end
 
   @impl true
-  def change(changeset, opts, _context) do
+  def change(changeset, _opts, _context) do
     slug = Changeset.get_attribute(changeset, :slug)
     name = Changeset.get_attribute(changeset, :name)
     slugified = Slug.slugify(name || "")

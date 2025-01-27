@@ -14,6 +14,7 @@ defmodule Garage.Builds.Build do
     EngineTuning,
     Follow,
     IgnitionTuning,
+    Image,
     Like,
     VariatorTuning
   }
@@ -35,6 +36,7 @@ defmodule Garage.Builds.Build do
     attribute :name, :string, allow_nil?: false, public?: true
     attribute :description, :string, public?: true
     attribute :year, :integer, allow_nil?: false, public?: true
+    # original uploads these go direct to r2 from the client
     attribute :image_urls, {:array, :string}, allow_nil?: false, default: [], public?: true
 
     attribute :slug, :string do
@@ -53,6 +55,7 @@ defmodule Garage.Builds.Build do
     has_many :likes, Like, public?: true
     has_many :comments, Comment, public?: true
     has_many :follows, Follow, public?: true
+    has_many :images, Image, public?: true
 
     belongs_to :ignition_tuning, IgnitionTuning do
       public? true
@@ -145,15 +148,16 @@ defmodule Garage.Builds.Build do
         :year,
         :builder_id,
         :manufacturer_id,
-        :model_id,
-        :image_urls
+        :model_id
       ]
 
       argument :engine_tuning, :map
+      argument :images, {:array, :map}
 
       change Garage.Changes.SetSlug
       change relate_actor(:builder)
       change manage_relationship(:engine_tuning, type: :direct_control)
+      change manage_relationship(:images, type: :direct_control, order_is_key: :index)
       notifiers [Garage.Notifiers.Discord]
     end
 
@@ -166,7 +170,6 @@ defmodule Garage.Builds.Build do
         :year,
         :manufacturer_id,
         :model_id,
-        :image_urls,
         :exhaust_id,
         :crank_id,
         :pulley_id
@@ -178,6 +181,7 @@ defmodule Garage.Builds.Build do
       argument :cylinder_tuning, :map
       argument :variator_tuning, :map
       argument :engine_tuning, :map
+      argument :images, {:array, :map}
 
       change manage_relationship(:carb_tuning, type: :direct_control)
       change manage_relationship(:clutch_tuning, type: :direct_control)
@@ -185,6 +189,7 @@ defmodule Garage.Builds.Build do
       change manage_relationship(:cylinder_tuning, type: :direct_control)
       change manage_relationship(:variator_tuning, type: :direct_control)
       change manage_relationship(:engine_tuning, type: :direct_control)
+      change manage_relationship(:images, type: :direct_control, order_is_key: :index)
     end
 
     read :all_builds do
@@ -283,6 +288,7 @@ defmodule Garage.Builds.Build do
                 :builder,
                 :first_image,
                 :likes,
+                :images,
                 :manufacturer,
                 :model,
                 :like_count,

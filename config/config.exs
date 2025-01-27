@@ -7,6 +7,12 @@
 # General application configuration
 import Config
 
+config :garage, Oban,
+  engine: Oban.Engines.Basic,
+  notifier: Oban.Notifiers.Postgres,
+  queues: [default: 10],
+  repo: Garage.Repo
+
 config :garage,
   ecto_repos: [Garage.Repo],
   generators: [timestamp_type: :utc_datetime]
@@ -69,6 +75,10 @@ config :garage,
   ash_domains: [Garage.Builds, Garage.Mopeds, Garage.Accounts],
   env: config_env(),
   max_upload_size: 15_000_000
+
+config :garage, Oban,
+  repo: Garage.Repo,
+  queues: [resize: 20]
 
 # config :crawly,
 #  closespider_timeout: 10,

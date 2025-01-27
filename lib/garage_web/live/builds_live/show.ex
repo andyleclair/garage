@@ -22,8 +22,8 @@ defmodule GarageWeb.BuildsLive.Show do
      socket
      |> assign(:page_title, build.name)
      |> assign(:build, build)
-     |> assign(:images, build.image_urls)
-     |> assign(:selected_image, build.first_image)
+     |> assign(:thumbnails, thumbnails(build))
+     |> assign(:selected_image, selected_image(build, 0))
      |> assign(:index, 0)
      |> assign(:meta, %{
        "og:url" => url,
@@ -36,6 +36,24 @@ defmodule GarageWeb.BuildsLive.Show do
        to_form(Form.for_action(Comment, :create, actor: socket.assigns.current_user))
      )
      |> assign(:can_edit?, Build.can_update?(socket.assigns.current_user, build))}
+  end
+
+  defp selected_image(build, index) do
+    if is_list(build.images) and not Enum.empty?(build.images) do
+      Enum.at(build.images, index)
+    else
+      Enum.at(build.image_urls, index)
+    end
+  end
+
+  defp thumbnails(build) do
+    if is_list(build.images) and not Enum.empty?(build.images) do
+      Enum.map(build.images, fn img ->
+        if img.thumbnail_url, do: img.thumbnail_url, else: img.original_url
+      end)
+    else
+      build.image_urls
+    end
   end
 
   @impl true
@@ -115,53 +133,11 @@ defmodule GarageWeb.BuildsLive.Show do
   def handle_event("select-image", %{"index" => index}, socket) do
     index = String.to_integer(index)
 
-    {:noreply,
-     socket
-     |> assign(:selected_image, Enum.at(socket.assigns.build.image_urls, index))
-     |> assign(:index, index)}
-  end
-
-  @impl true
-  def handle_event(
-        "next-image",
-        _,
-        %{assigns: %{index: index, images: images, build: build}} = socket
-      ) do
-    length = length(images)
-
-    # wrap
-    index =
-      if index + 1 == length do
-        0
-      else
-        index + 1
-      end
+    selected_image = selected_image(socket.assigns.build, index)
 
     {:noreply,
      socket
-     |> assign(:selected_image, Enum.at(build.image_urls, index))
-     |> assign(:index, index)}
-  end
-
-  @impl true
-  def handle_event(
-        "prev-image",
-        _,
-        %{assigns: %{index: index, images: images, build: build}} = socket
-      ) do
-    length = length(images)
-
-    # wrap
-    index =
-      if index - 1 == -1 do
-        length - 1
-      else
-        index - 1
-      end
-
-    {:noreply,
-     socket
-     |> assign(:selected_image, Enum.at(build.image_urls, index))
+     |> assign(:selected_image, selected_image)
      |> assign(:index, index)}
   end
 

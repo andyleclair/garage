@@ -27,23 +27,31 @@
 </.header>
 <!-- Gallery -->
 <div class="mb-5">
-  <div class="relative">
-    <div
-      phx-click={JS.push("prev-image") |> JS.transition("horizontal-shake", time: 300)}
-      class="absolute inset-y-0 left-0 cursor-pointer flex flex-col justify-center"
-    >
-      <.icon name="hero-chevron-double-left" class="w-16 h-16 text-white" />
-    </div>
-    <img src={@selected_image} class="w-full rounded-md object-cover mb-5" />
-    <div
-      phx-click={JS.push("next-image") |> JS.transition("horizontal-shake", time: 300)}
-      class="absolute inset-y-0 right-0 cursor-pointer flex flex-col justify-center"
-    >
-      <.icon name="hero-chevron-double-right" class="w-16 h-16 text-white hover:text-slate-100" />
-    </div>
+  <div class="relative grid w-full rounded-md justify-items-center mb-5">
+    <%= if is_binary(@selected_image) do %>
+      <.link href={@selected_image}>
+        <img src={@selected_image} class="h-[600px] object-contain rounded-md" />
+      </.link>
+    <% else %>
+      <.link href={@selected_image.original_url}>
+        <%= if @selected_image.optimized_url do %>
+          <img
+            src={@selected_image.optimized_url}
+            class="max-h-[600px] object-contain rounded-md"
+            phx-click={show_modal("selected-image-modal")}
+          />
+        <% else %>
+          <img
+            src={@selected_image.original_url}
+            class="max-h-[600px] object-contain rounded-md"
+            phx-click={show_modal("selected-image-modal")}
+          />
+        <% end %>
+      </.link>
+    <% end %>
   </div>
   <div class="flex items-inline space-x-4 overflow-x-auto">
-    <%= for {image_url, index} <- Enum.with_index(@build.image_urls) do %>
+    <%= for {image_url, index} <- Enum.with_index(@thumbnails) do %>
       <img
         src={image_url}
         class={[
