@@ -286,7 +286,6 @@ defmodule Garage.Builds.Build do
     prepare build(
               load: [
                 :builder,
-                :first_image,
                 :likes,
                 :images,
                 :manufacturer,
@@ -319,8 +318,6 @@ defmodule Garage.Builds.Build do
         allow_nil? false
       end
     end
-
-    calculate :first_image, :string, expr(at(image_urls, 0))
   end
 
   policies do

@@ -10,14 +10,34 @@ defmodule GarageWeb.Components.Builds.Build do
     ~H"""
     <div class="inline-block rounded-md bg-gray-50 shadow-md p-2 w-full md:w-auto">
       <div class="flex flex-col md:flex-row">
-        <%= if @build.first_image do %>
+        <%= if first_image = @build.images |> List.first() do %>
           <div class="flex-none">
-            <img class="object-cover rounded-md w-full md:w-64 h-64" src={@build.first_image} alt="" />
+            <%= if first_image.thumbnail_url do %>
+              <img
+                class="object-cover rounded-md w-full md:w-64 h-64"
+                src={first_image.thumbnail_url}
+                alt=""
+              />
+            <% else %>
+              <img
+                class="object-cover rounded-md w-full md:w-64 h-64"
+                src={first_image.original_url}
+                alt=""
+              />
+            <% end %>
           </div>
         <% else %>
-          <div class="flex-none w-full md:w-64 h-64 bg-gray-100 flex items-stretch rounded-md">
-            <.icon name="hero-photo" class="m-auto text-gray-300 w-16 h-16" />
-          </div>
+          <%= if @build.image_urls == [] do %>
+            <div class="flex-none w-full md:w-64 h-64 bg-gray-100 flex items-stretch rounded-md">
+              <.icon name="hero-photo" class="m-auto text-gray-300 w-16 h-16" />
+            </div>
+          <% else %>
+            <img
+              class="object-cover rounded-md w-full md:w-64 h-64"
+              src={List.first(@build.image_urls)}
+              alt=""
+            />
+          <% end %>
         <% end %>
 
         <div class="flex flex-col gap-y-10 md:gap-y-4 ml-2 w-full">

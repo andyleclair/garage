@@ -27,7 +27,7 @@ defmodule GarageWeb.BuildsLive.Show do
      |> assign(:index, 0)
      |> assign(:meta, %{
        "og:url" => url,
-       "og:image" => build.first_image,
+       "og:image" => first_image_url(build),
        "og:description" => build.description,
        "og:title" => build.name
      })
@@ -36,6 +36,15 @@ defmodule GarageWeb.BuildsLive.Show do
        to_form(Form.for_action(Comment, :create, actor: socket.assigns.current_user))
      )
      |> assign(:can_edit?, Build.can_update?(socket.assigns.current_user, build))}
+  end
+
+  defp first_image_url(build) do
+    if is_list(build.images) and not Enum.empty?(build.images) do
+      img = Enum.at(build.images, 0)
+      if img.thumbnail_url, do: img.thumbnail_url, else: img.original_url
+    else
+      Enum.at(build.image_urls, 0)
+    end
   end
 
   defp selected_image(build, index) do

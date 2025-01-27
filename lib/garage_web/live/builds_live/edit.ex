@@ -261,7 +261,6 @@ defmodule GarageWeb.BuildsLive.Edit do
 
     case Form.submit(socket.assigns.form, params: params) do
       {:ok, build} ->
-        dbg(build)
         create_resize_jobs(build.images)
 
         {:noreply,
