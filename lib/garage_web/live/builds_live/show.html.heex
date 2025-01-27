@@ -29,11 +29,11 @@
 <div class="mb-5">
   <div class="relative grid w-full rounded-md justify-items-center mb-5">
     <%= if is_binary(@selected_image) do %>
-      <.link href={@selected_image}>
+      <.link href={@selected_image} target="_blank">
         <img src={@selected_image} class="h-[600px] object-contain rounded-md" />
       </.link>
     <% else %>
-      <.link href={@selected_image.original_url}>
+      <.link href={@selected_image.original_url} target="_blank">
         <%= if @selected_image.optimized_url do %>
           <img
             src={@selected_image.optimized_url}
