@@ -249,8 +249,6 @@ defmodule GarageWeb.BuildsLive.Edit do
           }
         } = socket
       ) do
-    async_delete_images(images_to_delete)
-
     uploaded_files =
       consume_uploaded_entries(socket, :image_urls, fn upload, _entry ->
         {:ok, %{"original_url" => public_path(upload.key), "build_id" => build_id}}
@@ -261,6 +259,7 @@ defmodule GarageWeb.BuildsLive.Edit do
 
     case Form.submit(socket.assigns.form, params: params) do
       {:ok, build} ->
+        async_delete_images(images_to_delete)
         create_resize_jobs(build.images)
 
         {:noreply,
@@ -269,7 +268,6 @@ defmodule GarageWeb.BuildsLive.Edit do
          |> push_navigate(to: ~p"/builds/#{build.slug}")}
 
       {:error, form} ->
-        dbg(form.source)
         async_delete_images(uploaded_files)
         {:noreply, assign_form(socket, form)}
     end
@@ -329,6 +327,10 @@ defmodule GarageWeb.BuildsLive.Edit do
       async_delete_image(thumb)
       async_delete_image(optimized)
     end
+  end
+
+  defp async_delete_image(url) when is_nil(url) do
+    :ok
   end
 
   defp async_delete_image(url) do
