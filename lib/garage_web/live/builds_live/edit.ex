@@ -277,10 +277,15 @@ defmodule GarageWeb.BuildsLive.Edit do
 
   defp create_resize_jobs(images) do
     images
-    |> Enum.map(fn %{id: image_id} ->
-      %{"image_id" => image_id}
-      |> Garage.Workers.Resize.new()
-      |> Oban.insert!()
+    |> Enum.map(fn %{id: image_id} = img ->
+      if is_nil(img.optimized_url) do
+        %{"image_id" => image_id}
+        |> Garage.Workers.Resize.new()
+        |> Oban.insert!()
+      else
+        # already resized
+        :ok
+      end
     end)
   end
 

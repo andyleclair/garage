@@ -1,4 +1,6 @@
 defmodule Garage.Builds.Build do
+  @derive {Phoenix.Param, key: :slug}
+
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
     domain: Garage.Builds,
