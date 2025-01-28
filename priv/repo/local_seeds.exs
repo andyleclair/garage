@@ -40,12 +40,27 @@ possible_mopeds = [
   {"derbi", "revolution", "Start V"}
 ]
 
-image_urls = [
-  "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev/garage%2Fusers%2Fadmin%2Fbuilds%2Fbig%20long%20ass%20moped%20bike%20name%20because%20i%20fuckin%20suck%20and%20i'm%20an%20asshole%20to%20everyone%2Fuploads%2F0223da64-fac5-4c80-b758-efc47845fc2f-IMG_23441116145026.jpeg",
-  "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev/garage%2Fusers%2Fadmin%2Fbuilds%2Fbig%20long%20ass%20moped%20bike%20name%20because%20i%20fuckin%20suck%20and%20i'm%20an%20asshole%20to%20everyone%2Fuploads%2F02fd25e1-52f3-45d4-8edc-3e10bbd9062c-MVIMG_20200715_200730.jpg",
-  "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev/garage%2Fusers%2Fadmin%2Fbuilds%2Fbig%20long%20ass%20moped%20bike%20name%20because%20i%20fuckin%20suck%20and%20i'm%20an%20asshole%20to%20everyone%2Fuploads%2F045db959-4cb0-4aeb-8230-8c6dc54b2f83-IMG_20200715_200733.jpg",
-  "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev/garage%2Fusers%2Fadmin%2Fbuilds%2Fbig%20long%20ass%20moped%20bike%20name%20because%20i%20fuckin%20suck%20and%20i'm%20an%20asshole%20to%20everyone%2Fuploads%2F0475a9cc-0d41-4fdd-8b3c-a66e9534ef1c-July%2020%2C%202014%20at%200501PM.jpg",
-  "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev/garage%2Fusers%2Fadmin%2Fbuilds%2Fbig%20long%20ass%20moped%20bike%20name%20because%20i%20fuckin%20suck%20and%20i'm%20an%20asshole%20to%20everyone%2Fuploads%2F0a747def-a8fc-4cf7-b056-54930f889101-PXL_20220828_152440295.jpg"
+images = [
+  %{
+    original_url:
+      "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev/garage%2Fusers%2Fadmin%2Fbuilds%2Fbig%20long%20ass%20moped%20bike%20name%20because%20i%20fuckin%20suck%20and%20i'm%20an%20asshole%20to%20everyone%2Fuploads%2F0223da64-fac5-4c80-b758-efc47845fc2f-IMG_23441116145026.jpeg"
+  },
+  %{
+    original_url:
+      "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev/garage%2Fusers%2Fadmin%2Fbuilds%2Fbig%20long%20ass%20moped%20bike%20name%20because%20i%20fuckin%20suck%20and%20i'm%20an%20asshole%20to%20everyone%2Fuploads%2F02fd25e1-52f3-45d4-8edc-3e10bbd9062c-MVIMG_20200715_200730.jpg"
+  },
+  %{
+    original_url:
+      "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev/garage%2Fusers%2Fadmin%2Fbuilds%2Fbig%20long%20ass%20moped%20bike%20name%20because%20i%20fuckin%20suck%20and%20i'm%20an%20asshole%20to%20everyone%2Fuploads%2F045db959-4cb0-4aeb-8230-8c6dc54b2f83-IMG_20200715_200733.jpg"
+  },
+  %{
+    original_url:
+      "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev/garage%2Fusers%2Fadmin%2Fbuilds%2Fbig%20long%20ass%20moped%20bike%20name%20because%20i%20fuckin%20suck%20and%20i'm%20an%20asshole%20to%20everyone%2Fuploads%2F0475a9cc-0d41-4fdd-8b3c-a66e9534ef1c-July%2020%2C%202014%20at%200501PM.jpg"
+  },
+  %{
+    original_url:
+      "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev/garage%2Fusers%2Fadmin%2Fbuilds%2Fbig%20long%20ass%20moped%20bike%20name%20because%20i%20fuckin%20suck%20and%20i'm%20an%20asshole%20to%20everyone%2Fuploads%2F0a747def-a8fc-4cf7-b056-54930f889101-PXL_20220828_152440295.jpg"
+  }
 ]
 
 for i <- 1..100 do
@@ -62,7 +77,7 @@ for i <- 1..100 do
       manufacturer_id: make.id,
       model_id: model.id,
       year: 1987,
-      image_urls: image_urls,
+      images: images,
       engine_tuning: %{engine_id: engine.id}
     },
     actor: beavis
@@ -83,7 +98,7 @@ for i <- 1..100 do
       name: "My Build #{i} butthead",
       manufacturer_id: make.id,
       model_id: model.id,
-      image_urls: image_urls,
+      images: images,
       year: 1989,
       engine_tuning: %{engine_id: engine.id}
     },

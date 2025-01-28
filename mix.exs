@@ -65,9 +65,13 @@ defmodule Garage.MixProject do
       {:ash_authentication, "~> 4.0"},
       {:ash_authentication_phoenix, "~> 2.0"},
       {:ash_admin, "~> 0.11"},
+      {:igniter, "~> 0.5"},
       {:picosat_elixir, "0.2.3"},
       {:nostrum, "~> 0.8.0"},
-      {:sentry, "~> 10.0"}
+      {:sentry, "~> 10.0"},
+      {:image, "~> 0.55"},
+      {:oban, "~> 2.0"},
+      {:oban_web, "~> 2.0"}
       # {:crawly, "~> 0.16.0"},
     ]
   end

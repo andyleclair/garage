@@ -215,18 +215,18 @@
         data-list_id={@build.id}
       >
         <div
-          :for={{ref, image_url} <- @images}
-          id={"image-#{ref}"}
+          :for={%Image{id: id, optimized_url: image_url} <- @images}
+          id={"image-#{id}"}
           class="hover:cursor-grab active:cursor-grabbing relative drag-item:focus-within:ring-0 drag-item:focus-within:ring-offset-0 drag-ghost:bg-zinc-300 drag-ghost:border-0 drag-ghost:ring-0"
-          data-id={"image-#{ref}"}
+          data-id={"image-#{id}"}
         >
           <div class="drag-ghost:opacity-0">
             <img src={image_url} class="object-cover mb-5 rounded-lg" />
             <div
               class="absolute top-2 right-2 cursor-pointer z-10 hover:ring-1 hover:ring-red-500 hover:rounded-lg"
               phx-click="delete-image"
-              phx-value-ref={ref}
-              id={"delete_image-#{ref}"}
+              phx-value-id={id}
+              id={"delete_image-#{id}"}
             >
               <.icon name="hero-x-mark" class="bg-red-500 w-10 h-10" />
             </div>

@@ -1,9 +1,11 @@
 defmodule GarageWeb.Router do
   use GarageWeb, :router
   use AshAuthentication.Phoenix.Router
+
   require Logger
 
   import AshAdmin.Router
+  import Oban.Web.Router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -28,6 +30,7 @@ defmodule GarageWeb.Router do
     pipe_through :browser
     pipe_through :admin
 
+    oban_dashboard "/oban"
     ash_admin "/admin"
   end
 

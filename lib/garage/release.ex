@@ -30,4 +30,39 @@ defmodule Garage.Release do
   defp load_app do
     Application.load(@app)
   end
+
+  def move_image_urls_to_images() do
+    all_builds = Ash.read!(Garage.Builds.Build)
+
+    for build <- all_builds do
+      image_urls = build.image_urls
+
+      image_urls
+      |> Enum.with_index()
+      |> Enum.each(fn {url, index} ->
+        Ash.Changeset.for_create(
+          Garage.Builds.Image,
+          :create,
+          %{
+            build_id: build.id,
+            original_url: url,
+            index: index
+          }
+        )
+        |> Ash.create!()
+      end)
+    end
+  end
+
+  def create_resize_jobs do
+    all_builds = Ash.read!(Garage.Builds.Build)
+
+    for build <- all_builds do
+      for %{id: image_id} <- build.images do
+        %{"image_id" => image_id}
+        |> Garage.Workers.Resize.new()
+        |> Oban.insert!()
+      end
+    end
+  end
 end
