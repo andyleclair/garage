@@ -2,6 +2,7 @@ defmodule GarageWeb.UsersLive.Settings do
   alias Garage.Accounts.User
   alias Garage.Accounts
   alias AshPhoenix.Form
+  require Logger
 
   use GarageWeb, :live_view
 
@@ -19,7 +20,14 @@ defmodule GarageWeb.UsersLive.Settings do
           - receive notifications when your builds are liked or commented on and for updates on builds you follow!
         </span>
       </.label>
-      <.button id="allow_push_button" phx-hook="PushNotification">Enable Push Notifications</.button>
+      <.button
+        id="allow_push_permission"
+        phx-hook="PushNotificationPermission"
+        phx-data-key={@vapid_key}
+        phx-data-icon={~p"/favicon.ico"}
+      >
+        Enable Push Notifications
+      </.button>
       <!-- color management -->
       <div class="h-20 flex flex-col">
         <.label>
@@ -197,6 +205,7 @@ defmodule GarageWeb.UsersLive.Settings do
        external: &presign_upload/2
      )
      |> assign(:user, user)
+     |> assign(:vapid_key, Application.get_env(:garage, GarageWeb.Push)[:vapid_public_key])
      |> assign_form(form)}
   end
 
@@ -204,15 +213,6 @@ defmodule GarageWeb.UsersLive.Settings do
   def handle_event("new-color", _, socket) do
     {:ok, updated_user} = User.generate_new_color(socket.assigns.user)
     {:noreply, socket |> assign(:user, updated_user) |> assign(:current_user, updated_user)}
-  end
-
-  @impl true
-  def handle_event("push-notification-enabled", _params, socket) do
-    {:ok, updated_user} =
-      Ash.Changeset.for_update(socket.assigns.user, :update, %{enabled_push_notifications: true})
-      |> Ash.update()
-
-    {:noreply, socket |> assign(:user, updated_user)}
   end
 
   @impl true
@@ -224,6 +224,18 @@ defmodule GarageWeb.UsersLive.Settings do
   def handle_event("validate", %{"form" => params}, socket) do
     form = Form.validate(socket.assigns.form, params)
     {:noreply, assign_form(socket, form)}
+  end
+
+  @impl true
+  def handle_event("push-subscription", %{"subscription" => params}, socket) do
+    case User.add_push_token(socket.assigns.user, params) do
+      {:ok, _} ->
+        {:noreply, push_event(socket, "subscription_created", %{})}
+
+      {:error, e} ->
+        Logger.error("Failed to enable push notifications: #{inspect(e)}")
+        {:noreply, socket |> put_flash(:error, "Failed to enable push notifications")}
+    end
   end
 
   @impl true

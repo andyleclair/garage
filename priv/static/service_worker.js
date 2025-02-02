@@ -1,6 +1,9 @@
 self.addEventListener('push', event => {
   if (event.data) {
-    const promiseChain = self.registration.showNotification(event.data.text());
+    const options = {
+      icon: 'favicon.ico',
+    }
+    const promiseChain = self.registration.showNotification(event.data.text(), options);
 
     event.waitUntil(promiseChain);
   } else {

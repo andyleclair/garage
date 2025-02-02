@@ -19,6 +19,16 @@ defmodule Garage.Accounts.User do
       change Garage.Changes.ResetNonce
       change Garage.Changes.SetColor
     end
+
+    update :add_push_token do
+      require_atomic? false
+      argument :push_token, :map
+
+      change manage_relationship(:push_token, :push_tokens,
+               type: :create,
+               use_identities: [:endpoint]
+             )
+    end
   end
 
   changes do
@@ -52,6 +62,7 @@ defmodule Garage.Accounts.User do
     define :get_by_username, action: :read, get_by: :username
     define :read_all, action: :read
     define :generate_new_color, action: :new_color
+    define :add_push_token, args: [:push_token]
   end
 
   authentication do
@@ -104,6 +115,11 @@ defmodule Garage.Accounts.User do
 
     has_many :follows, Garage.Builds.Follow do
       domain Garage.Builds
+      destination_attribute :user_id
+    end
+
+    has_many :push_tokens, Garage.Accounts.PushToken do
+      domain Garage.Accounts
       destination_attribute :user_id
     end
   end

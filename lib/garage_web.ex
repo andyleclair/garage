@@ -17,7 +17,9 @@ defmodule GarageWeb do
   those modules here.
   """
 
-  def static_paths, do: ~w(uploads assets js fonts images favicon.ico robots.txt site.webmanifest)
+  def static_paths,
+    do:
+      ~w(uploads assets js fonts images favicon.ico robots.txt site.webmanifest service_worker.js)
 
   def router do
     quote do

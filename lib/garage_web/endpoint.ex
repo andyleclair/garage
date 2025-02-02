@@ -22,7 +22,8 @@ defmodule GarageWeb.Endpoint do
     at: "/",
     from: :garage,
     gzip: false,
-    only: GarageWeb.static_paths()
+    only: GarageWeb.static_paths(),
+    headers: [{"Service-Worker-Allowed", "/"}]
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.

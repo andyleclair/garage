@@ -27,6 +27,19 @@ import Sortable from "../vendor/sortable"
 import Uploaders from "./uploaders"
 import tag_selector from "./tag_selector"
 
+// Register service worker
+navigator.serviceWorker
+  .register(`/service_worker.js`, { scope: '/' })
+  .then(registration => {
+    console.log('Service Worker registered')
+    console.log(registration)
+  })
+  .catch(err => {
+    console.error('Service Worker registration failed')
+    console.error(err)
+  })
+
+
 const hooks = {
   TrixEditor: {
     mounted() {
@@ -61,49 +74,44 @@ const hooks = {
       })
     }
   },
-  PushNotification: {
+  PushNotificationPermission: {
     mounted() {
-      if (Notification.permission === "granted") {
-        this.el.innerText = "Push Notifications Enabled";
-      } else {
-        this.el.addEventListener("click", e => {
-          e.preventDefault();
-          if (Notification.permission === "granted") {
-            new Notification("Demo Notification from Moped.Club", {
-              body: "This is where a real notification will be... later",
-              icon: this.el.dataset.icon
-            });
-          } else if (Notification.permission !== "denied") {
-            Notification.requestPermission().then(permission => {
-              if (permission === "granted") {
-                this.el.innerText = "Push Notifications Enabled";
-                this.pushEventTo(this.el, "push-notification-enabled", {})
-                new Notification("Demo Notification from Moped.Club", {
-                  body: "This is where a real notification will be... later",
-                  icon: this.el.dataset.icon
-                });
+      this.handleEvent("subscription_created", () => {
+        if (Notification.permission === "granted") {
+          new Notification("Push Notifications Enabled", {
+            body: "You will now receive notifications from Moped.Club",
+            icon: this.el.dataset.icon
+          });
+        }
+      });
+      this.el.addEventListener("click", e => {
+        e.preventDefault();
+        if (Notification.permission !== "denied") {
+          console.log('Subscribe Push');
+          console.log('Service Worker: ', navigator.serviceWorker);
+
+          navigator.serviceWorker.ready.then(registration => {
+            console.log('Service Worker ready: ', registration);
+            const options = { userVisibleOnly: true, applicationServerKey: this.el.dataset.key };
+            console.log('Push subscription options: ', options);
+            registration.pushManager.subscribe(options).then((subscription) => {
+              if (subscription) {
+                console.log('Push subscription: ', subscription);
+                this.pushEvent("push-subscription", { subscription: subscription });
               }
+            }, (error) => {
+              console.error('Push subscription error: ', error);
             });
-          }
-        });
-      }
+          }).catch(error => {
+            console.error('Service Worker registration error: ', error);
+          })
+        }
+      });
     }
   },
   ...live_select,
   ...tag_selector
 }
-
-// Register service worker
-navigator.serviceWorker
-  .register(`/js/service_worker.js`)
-  .then(registration => {
-    console.log('Service Worker registered')
-    console.log(registration)
-  })
-  .catch(err => {
-    console.error('Service Worker registration failed')
-    console.error(err)
-  })
 
 
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")

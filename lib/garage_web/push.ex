@@ -111,8 +111,8 @@ defmodule GarageWeb.Push do
     vapid_public_key = url_decode(Application.get_env(:garage, __MODULE__)[:vapid_public_key])
     vapid_private_key = url_decode(Application.get_env(:garage, __MODULE__)[:vapid_private_key])
 
-    %{endpoint: endpoint, keys: %{p256dh: p256dh, auth: auth}} =
-      Jason.decode!(subscription, keys: :atoms)
+    %{"endpoint" => endpoint, "keys" => %{"p256dh" => p256dh, "auth" => auth}} =
+      Jason.decode!(subscription)
 
     encrypted_payload = encrypt_payload(message, p256dh, auth)
 

@@ -6,7 +6,7 @@ defmodule Garage.Notifiers.Discord do
   @env Application.compile_env(:garage, :env)
 
   def notify(%Ash.Notifier.Notification{data: data, action: %{type: :create}, actor: user}) do
-    if @env == :prod do
+    if enabled?() do
       Api.create_message!(
         @channel,
         "#{user.username} just created a new build, check it out! #{data.name} https://moped.club/builds/#{data.slug}"
@@ -17,7 +17,7 @@ defmodule Garage.Notifiers.Discord do
   end
 
   def notify(%Ash.Notifier.Notification{data: data, action: %{type: :update}, actor: user}) do
-    if @env == :prod do
+    if enabled?() do
       Api.create_message!(
         @channel,
         "#{user.username} just updated their build, check it out! #{data.name} https://moped.club/builds/#{data.slug}"
@@ -25,5 +25,9 @@ defmodule Garage.Notifiers.Discord do
     end
 
     :ok
+  end
+
+  defp enabled? do
+    @env == :prod
   end
 end
