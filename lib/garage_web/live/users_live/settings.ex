@@ -39,7 +39,7 @@ defmodule GarageWeb.UsersLive.Settings do
           >
             Force Enable Push Notifications
           </.button>
-          <div>Push enabled on {@user.push_tokens |> length()} devices</div>
+          <div>Push enabled on {@push_tokens |> length()} devices</div>
         <% end %>
       </div>
       <!-- color management -->
