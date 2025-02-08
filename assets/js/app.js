@@ -25,7 +25,21 @@ import live_select from "live_select"
 import Sortable from "../vendor/sortable"
 // for uploading to S3
 import Uploaders from "./uploaders"
+import push from "./push"
 import tag_selector from "./tag_selector"
+
+// Register service worker
+navigator.serviceWorker
+  .register(`/service_worker.js`, { scope: '/' })
+  .then(registration => {
+    console.log('Service Worker registered')
+    console.log(registration)
+  })
+  .catch(err => {
+    console.error('Service Worker registration failed')
+    console.error(err)
+  })
+
 
 const hooks = {
   TrixEditor: {
@@ -61,49 +75,10 @@ const hooks = {
       })
     }
   },
-  PushNotification: {
-    mounted() {
-      if (Notification.permission === "granted") {
-        this.el.innerText = "Push Notifications Enabled";
-      } else {
-        this.el.addEventListener("click", e => {
-          e.preventDefault();
-          if (Notification.permission === "granted") {
-            new Notification("Demo Notification from Moped.Club", {
-              body: "This is where a real notification will be... later",
-              icon: this.el.dataset.icon
-            });
-          } else if (Notification.permission !== "denied") {
-            Notification.requestPermission().then(permission => {
-              if (permission === "granted") {
-                this.el.innerText = "Push Notifications Enabled";
-                this.pushEventTo(this.el, "push-notification-enabled", {})
-                new Notification("Demo Notification from Moped.Club", {
-                  body: "This is where a real notification will be... later",
-                  icon: this.el.dataset.icon
-                });
-              }
-            });
-          }
-        });
-      }
-    }
-  },
+  ...push,
   ...live_select,
   ...tag_selector
 }
-
-// Register service worker
-navigator.serviceWorker
-  .register(`/js/service_worker.js`)
-  .then(registration => {
-    console.log('Service Worker registered')
-    console.log(registration)
-  })
-  .catch(err => {
-    console.error('Service Worker registration failed')
-    console.error(err)
-  })
 
 
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")

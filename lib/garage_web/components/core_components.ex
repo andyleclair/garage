@@ -871,4 +871,8 @@ defmodule GarageWeb.CoreComponents do
   def page_offset(page_param, page_limit) do
     (page_param - 1) * page_limit
   end
+
+  def vapid_public_key do
+    Application.get_env(:garage_web, GarageWebWeb.Endpoint)[:vapid_public_key]
+  end
 end

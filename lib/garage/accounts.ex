@@ -9,5 +9,6 @@ defmodule Garage.Accounts do
   resources do
     resource Garage.Accounts.User
     resource Garage.Accounts.Token
+    resource Garage.Accounts.PushToken
   end
 end

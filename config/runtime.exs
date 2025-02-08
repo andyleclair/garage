@@ -72,7 +72,7 @@ if config_env() == :prod do
       You can generate one by calling: mix generate.vapid.keys
       """
 
-  config :garage, GarageWeb.Push,
+  config :garage, Garage.Push,
     vapid_private_key: vapid_private_key,
     vapid_public_key: vapid_public_key,
     vapid_subject: vapid_subject

@@ -2,6 +2,7 @@ defmodule GarageWeb.UsersLive.Settings do
   alias Garage.Accounts.User
   alias Garage.Accounts
   alias AshPhoenix.Form
+  require Logger
 
   use GarageWeb, :live_view
 
@@ -19,7 +20,28 @@ defmodule GarageWeb.UsersLive.Settings do
           - receive notifications when your builds are liked or commented on and for updates on builds you follow!
         </span>
       </.label>
-      <.button id="allow_push_button" phx-hook="PushNotification">Enable Push Notifications</.button>
+      <div class="flex flex-row h-full mt-2 space-x-4 items-center">
+        <%= if @push_tokens == [] do %>
+          <.button
+            id="allow_push_permission"
+            phx-hook="ForcePush"
+            phx-data-key={vapid_public_key()}
+            phx-data-icon={~p"/favicon.ico"}
+          >
+            Enable Push Notifications
+          </.button>
+        <% else %>
+          <.button
+            id="allow_push_permission"
+            phx-hook="ForcePush"
+            phx-data-key={vapid_public_key()}
+            phx-data-icon={~p"/favicon.ico"}
+          >
+            Force Enable Push Notifications
+          </.button>
+          <div>Push enabled on {@user.push_tokens |> length()} devices</div>
+        <% end %>
+      </div>
       <!-- color management -->
       <div class="h-20 flex flex-col">
         <.label>
@@ -186,6 +208,7 @@ defmodule GarageWeb.UsersLive.Settings do
 
   @impl true
   def mount(_params, _session, %{assigns: %{current_user: user}} = socket) do
+    user = Ash.get!(Garage.Accounts.User, user.id, load: [:push_tokens])
     form = Form.for_update(user, :update, domain: Accounts, actor: user)
 
     {:ok,
@@ -197,6 +220,7 @@ defmodule GarageWeb.UsersLive.Settings do
        external: &presign_upload/2
      )
      |> assign(:user, user)
+     |> assign(:push_tokens, user.push_tokens)
      |> assign_form(form)}
   end
 
@@ -204,15 +228,6 @@ defmodule GarageWeb.UsersLive.Settings do
   def handle_event("new-color", _, socket) do
     {:ok, updated_user} = User.generate_new_color(socket.assigns.user)
     {:noreply, socket |> assign(:user, updated_user) |> assign(:current_user, updated_user)}
-  end
-
-  @impl true
-  def handle_event("push-notification-enabled", _params, socket) do
-    {:ok, updated_user} =
-      Ash.Changeset.for_update(socket.assigns.user, :update, %{enabled_push_notifications: true})
-      |> Ash.update()
-
-    {:noreply, socket |> assign(:user, updated_user)}
   end
 
   @impl true

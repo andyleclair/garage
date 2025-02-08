@@ -4,7 +4,8 @@ defmodule Garage.Builds.Build do
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
     domain: Garage.Builds,
-    authorizers: [Ash.Policy.Authorizer]
+    authorizers: [Ash.Policy.Authorizer],
+    simple_notifiers: [Garage.Notifiers.Discord]
 
   require Ecto.Query
 
@@ -160,7 +161,6 @@ defmodule Garage.Builds.Build do
       change relate_actor(:builder)
       change manage_relationship(:engine_tuning, type: :direct_control)
       change manage_relationship(:images, type: :direct_control, order_is_key: :index)
-      notifiers [Garage.Notifiers.Discord]
     end
 
     update :update do
@@ -224,6 +224,7 @@ defmodule Garage.Builds.Build do
     update :like do
       accept []
       require_atomic? false
+      notifiers [Garage.Notifiers.Push]
 
       manual fn changeset, %{actor: actor} ->
         with {:ok, _} <- Like.like(changeset.data.id, actor: actor) do
@@ -252,6 +253,7 @@ defmodule Garage.Builds.Build do
     update :follow do
       accept []
       require_atomic? false
+      notifiers [Garage.Notifiers.Push]
 
       manual fn changeset, %{actor: actor} ->
         with {:ok, _} <- Follow.follow(changeset.data.id, actor: actor) do

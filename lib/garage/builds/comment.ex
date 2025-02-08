@@ -8,6 +8,7 @@ defmodule Garage.Builds.Comment do
 
     create :create do
       accept [:text, :build_id, :user_id]
+      notifiers [Garage.Notifiers.Push]
       change relate_actor(:user)
     end
   end

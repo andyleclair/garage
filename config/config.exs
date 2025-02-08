@@ -78,7 +78,7 @@ config :garage,
 
 config :garage, Oban,
   repo: Garage.Repo,
-  queues: [resize: 20]
+  queues: [resize: 20, push: 20]
 
 # config :crawly,
 #  closespider_timeout: 10,
