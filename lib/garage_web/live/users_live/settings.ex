@@ -25,7 +25,7 @@ defmodule GarageWeb.UsersLive.Settings do
           <.button
             id="allow_push_permission"
             phx-hook="ForcePush"
-            phx-data-key={@vapid_key}
+            phx-data-key={vapid_public_key()}
             phx-data-icon={~p"/favicon.ico"}
           >
             Enable Push Notifications
@@ -34,7 +34,7 @@ defmodule GarageWeb.UsersLive.Settings do
           <.button
             id="allow_push_permission"
             phx-hook="ForcePush"
-            phx-data-key={@vapid_key}
+            phx-data-key={vapid_public_key()}
             phx-data-icon={~p"/favicon.ico"}
           >
             Force Enable Push Notifications
@@ -221,7 +221,6 @@ defmodule GarageWeb.UsersLive.Settings do
      )
      |> assign(:user, user)
      |> assign(:push_tokens, user.push_tokens)
-     |> assign(:vapid_key, Application.get_env(:garage, GarageWeb.Push)[:vapid_public_key])
      |> assign_form(form)}
   end
 

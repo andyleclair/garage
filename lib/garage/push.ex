@@ -1,9 +1,50 @@
 defmodule Garage.Push do
-  alias Garage.Accounts.PushToken
-
   @moduledoc """
   Module to send web push notifications with an encrypted payload.
   """
+  alias Garage.Accounts.PushToken
+
+  @doc """
+  Sends a web push notification with an encrypted payload.
+
+  ## Arguments
+
+  * `PushToken` the push token resource
+  * `message` the message string
+
+  ## Return value
+
+  Returns the result of `Finch.request/1`.
+  """
+  def send_notification(
+        %PushToken{endpoint: endpoint, keys: %{"p256dh" => p256dh, "auth" => auth}},
+        message
+      ) do
+    vapid_public_key = url_decode(Application.get_env(:garage, __MODULE__)[:vapid_public_key])
+    vapid_private_key = url_decode(Application.get_env(:garage, __MODULE__)[:vapid_private_key])
+
+    encrypted_payload = encrypt_payload(message, p256dh, auth)
+
+    signed_json_web_token =
+      sign_json_web_token(endpoint, vapid_public_key, vapid_private_key)
+
+    Finch.build(
+      :post,
+      endpoint,
+      [
+        {"Authorization", "WebPush #{signed_json_web_token}"},
+        {"Content-Encoding", "aesgcm"},
+        {"Content-Length", "#{byte_size(encrypted_payload.ciphertext)}"},
+        {"Content-Type", "application/octet-stream"},
+        {"Crypto-Key",
+         "dh=#{url_encode(encrypted_payload.local_public_key)};p256ecdsa=#{url_encode(vapid_public_key)}"},
+        {"Encryption", "salt=#{url_encode(encrypted_payload.salt)}"},
+        {"TTL", "60"}
+      ],
+      encrypted_payload.ciphertext
+    )
+    |> Finch.request(Garage.Finch)
+  end
 
   defp url_encode(string) do
     Base.url_encode64(string, padding: false)
@@ -95,47 +136,5 @@ defmodule Garage.Push do
       JOSE.JWS.compact(JOSE.JWT.sign(json_web_key, %{"alg" => "ES256"}, json_web_token))
 
     signed_json_web_token
-  end
-
-  @doc """
-  Sends a web push notification with an encrypted payload.
-
-  ## Arguments
-
-  * `subscription` the subscription information received from the client. Accepted example: `'{"endpoint":"https://some-push-service","keys":{"p256dh":"BNcRdreALRFXTkOOUHK1EtK2wtaz5Ry4YfYCA_0QTpQtUbVlUls0VJXg7A8u-Ts1XbjhazAkj7I99e8QcYP7DkM=","auth":"tBHItJI5svbpez7KI4CCXg=="}}'`
-  * `message` the message string
-
-  ## Return value
-
-  Returns the result of `Finch.request/1`.
-  """
-  def send_notification(
-        %PushToken{endpoint: endpoint, keys: %{"p256dh" => p256dh, "auth" => auth}},
-        message
-      ) do
-    vapid_public_key = url_decode(Application.get_env(:garage, __MODULE__)[:vapid_public_key])
-    vapid_private_key = url_decode(Application.get_env(:garage, __MODULE__)[:vapid_private_key])
-
-    encrypted_payload = encrypt_payload(message, p256dh, auth)
-
-    signed_json_web_token =
-      sign_json_web_token(endpoint, vapid_public_key, vapid_private_key)
-
-    Finch.build(
-      :post,
-      endpoint,
-      [
-        {"Authorization", "WebPush #{signed_json_web_token}"},
-        {"Content-Encoding", "aesgcm"},
-        {"Content-Length", "#{byte_size(encrypted_payload.ciphertext)}"},
-        {"Content-Type", "application/octet-stream"},
-        {"Crypto-Key",
-         "dh=#{url_encode(encrypted_payload.local_public_key)};p256ecdsa=#{url_encode(vapid_public_key)}"},
-        {"Encryption", "salt=#{url_encode(encrypted_payload.salt)}"},
-        {"TTL", "60"}
-      ],
-      encrypted_payload.ciphertext
-    )
-    |> Finch.request(Garage.Finch)
   end
 end
