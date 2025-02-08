@@ -25,6 +25,7 @@ import live_select from "live_select"
 import Sortable from "../vendor/sortable"
 // for uploading to S3
 import Uploaders from "./uploaders"
+import push from "./push"
 import tag_selector from "./tag_selector"
 
 // Register service worker
@@ -74,41 +75,7 @@ const hooks = {
       })
     }
   },
-  PushNotificationPermission: {
-    mounted() {
-      this.handleEvent("subscription_created", () => {
-        if (Notification.permission === "granted") {
-          new Notification("Push Notifications Enabled", {
-            body: "You will now receive notifications from Moped.Club",
-            icon: this.el.dataset.icon
-          });
-        }
-      });
-      this.el.addEventListener("click", e => {
-        e.preventDefault();
-        if (Notification.permission !== "denied") {
-          console.log('Subscribe Push');
-          console.log('Service Worker: ', navigator.serviceWorker);
-
-          navigator.serviceWorker.ready.then(registration => {
-            console.log('Service Worker ready: ', registration);
-            const options = { userVisibleOnly: true, applicationServerKey: this.el.dataset.key };
-            console.log('Push subscription options: ', options);
-            registration.pushManager.subscribe(options).then((subscription) => {
-              if (subscription) {
-                console.log('Push subscription: ', subscription);
-                this.pushEvent("push-subscription", { subscription: subscription });
-              }
-            }, (error) => {
-              console.error('Push subscription error: ', error);
-            });
-          }).catch(error => {
-            console.error('Service Worker registration error: ', error);
-          })
-        }
-      });
-    }
-  },
+  ...push,
   ...live_select,
   ...tag_selector
 }

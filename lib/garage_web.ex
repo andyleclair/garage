@@ -56,6 +56,8 @@ defmodule GarageWeb do
       use Phoenix.LiveView,
         layout: {GarageWeb.Layouts, :app}
 
+      use GarageWeb.Push
+
       import GarageWeb.Components.Pagination
 
       unquote(html_helpers())

@@ -26,7 +26,8 @@ defmodule Garage.Accounts.User do
 
       change manage_relationship(:push_token, :push_tokens,
                type: :create,
-               use_identities: [:endpoint]
+               use_identities: [:endpoint],
+               on_lookup: :relate
              )
     end
   end
