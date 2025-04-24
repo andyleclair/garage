@@ -4,9 +4,18 @@ defmodule Garage.Notifiers.Discord do
 
   alias Nostrum.Api
   alias Ash.Notifier.Notification
-  @channel 1_220_226_258_294_669_314
+  alias Garage.Builds.Build
+  alias Garage.Builds.Comment
+  alias Garage.Builds.Like
+  @channel 1_237_258_590_675_402_794
 
-  def notify(%Notification{data: data, action: %{type: :create}, actor: user}) do
+  # def notify(n) do
+  #  dbg(n)
+
+  #  :ok
+  # end
+
+  def notify(%Notification{resource: Build, data: data, action: %{type: :create}, actor: user}) do
     if enabled?() do
       Api.create_message!(
         @channel,
@@ -17,29 +26,7 @@ defmodule Garage.Notifiers.Discord do
     :ok
   end
 
-  def notify(%Notification{data: data, action: %{type: :update}, actor: user}) do
-    if enabled?() do
-      Api.create_message!(
-        @channel,
-        "#{user.username} just updated #{data.name}, check it out! https://moped.club/builds/#{data.slug}"
-      )
-    end
-
-    :ok
-  end
-
-  def notify(%Notification{data: data, action: %{type: :delete}, actor: user}) do
-    if enabled?() do
-      Api.create_message!(
-        @channel,
-        "#{user.username} just deleted their build, RIP #{data.name}"
-      )
-    end
-
-    :ok
-  end
-
-  def notify(%Notification{data: data, action: %{type: :like}, actor: user}) do
+  def notify(%Notification{data: data, action: %{name: :like}, actor: user}) do
     if enabled?() do
       Api.create_message!(
         @channel,
@@ -50,7 +37,7 @@ defmodule Garage.Notifiers.Discord do
     :ok
   end
 
-  def notify(%Notification{data: data, action: %{type: :unlike}, actor: user}) do
+  def notify(%Notification{data: data, action: %{name: :unlike}, actor: user}) do
     if enabled?() do
       Api.create_message!(
         @channel,
@@ -61,8 +48,36 @@ defmodule Garage.Notifiers.Discord do
     :ok
   end
 
-  def notify(%Notification{data: data, action: %{type: :comment}, actor: user}) do
+  def notify(%Notification{data: data, action: %{name: :update}, actor: user} = n) do
+    dbg(n)
+
     if enabled?() do
+      Api.create_message!(
+        @channel,
+        "#{user.username} just updated #{data.name}, check it out! https://moped.club/builds/#{data.slug}"
+      )
+    end
+
+    :ok
+  end
+
+  def notify(%Notification{data: data, action: %{name: :delete}, actor: user}) do
+    if enabled?() do
+      Api.create_message!(
+        @channel,
+        "#{user.username} just deleted their build, RIP #{data.name}"
+      )
+    end
+
+    :ok
+  end
+
+  def notify(
+        %Notification{resource: Comment, data: data, action: %{name: :create}, actor: user} = n
+      ) do
+    if enabled?() do
+      dbg(n)
+
       Api.create_message!(
         @channel,
         "#{user.username} just commented on #{data.name}, check it out! https://moped.club/builds/#{data.slug}"
@@ -73,6 +88,6 @@ defmodule Garage.Notifiers.Discord do
   end
 
   defp enabled? do
-    Application.get_env(:garage, :env) == :prod
+    Application.get_env(:garage, :env) == :dev
   end
 end

@@ -23,7 +23,6 @@ defmodule Garage.Notifiers.Push do
 
   # Comments don't load the full build so we pass the build id (instead of builder) to push
   def notify(%Notification{resource: Comment, action: %{name: :create}, data: data, actor: user}) do
-    dbg(data)
     title = "#{user.username} just commented on your build!"
 
     message =

@@ -1,7 +1,8 @@
 defmodule Garage.Builds.Comment do
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
-    domain: Garage.Builds
+    domain: Garage.Builds,
+    simple_notifiers: [Garage.Notifiers.Discord]
 
   actions do
     defaults [:read, :destroy]
