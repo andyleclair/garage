@@ -67,6 +67,9 @@ defmodule Garage.Accounts.User do
   end
 
   authentication do
+    subject_name :user
+    session_identifier :jti
+
     strategies do
       password :password do
         identity_field :email
@@ -86,6 +89,7 @@ defmodule Garage.Accounts.User do
 
       tokens do
         enabled? true
+        # require_token_presence_for_authentication? true
         token_resource Garage.Accounts.Token
 
         signing_secret Garage.Accounts.Secrets

@@ -1,6 +1,7 @@
 defmodule GarageWeb.Router do
   use GarageWeb, :router
   use AshAuthentication.Phoenix.Router
+  import AshAuthentication.Plug.Helpers
 
   require Logger
 
@@ -24,6 +25,7 @@ defmodule GarageWeb.Router do
   pipeline :api do
     plug :accepts, ["json"]
     plug :load_from_bearer
+    plug :set_actor, :user
   end
 
   scope "/" do
@@ -86,7 +88,7 @@ defmodule GarageWeb.Router do
     end
 
     sign_out_route AuthController
-    auth_routes_for Garage.Accounts.User, to: AuthController
+    auth_routes AuthController, Garage.Accounts.User, path: "/auth"
 
     ash_authentication_live_session :authentication_optional,
       on_mount: {GarageWeb.LiveUserAuth, :live_user_optional} do

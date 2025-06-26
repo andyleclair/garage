@@ -13,14 +13,14 @@ defmodule GarageWeb.AuthController do
       |> delete_session(:return_to)
       |> store_in_session(user)
       |> assign(:current_user, user)
-      |> put_flash(:info, "Welcome!")
+      |> put_flash(:info, "Account created. Welcome!")
       |> redirect(to: return_to)
     else
       conn
       |> delete_session(:return_to)
       |> store_in_session(user)
       |> assign(:current_user, user)
-      |> put_flash(:info, "Success!")
+      |> put_flash(:info, "Sign-in Success!")
       |> redirect(to: return_to)
     end
   end
@@ -35,7 +35,7 @@ defmodule GarageWeb.AuthController do
     return_to = get_session(conn, :return_to) || ~p"/"
 
     conn
-    |> clear_session()
+    |> clear_session(:garage)
     |> put_flash(:info, "Logged Out!")
     |> redirect(to: return_to)
   end

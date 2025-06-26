@@ -4,6 +4,10 @@ defmodule Garage.Accounts.Token do
     data_layer: AshPostgres.DataLayer,
     extensions: [AshAuthentication.TokenResource]
 
+  attributes do
+    attribute :subject, :string, allow_nil?: true
+  end
+
   token do
     domain Garage.Accounts
   end

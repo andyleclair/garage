@@ -6,7 +6,7 @@ defmodule Garage.Notifiers.Discord do
   alias Ash.Notifier.Notification
   alias Garage.Builds.Build
   alias Garage.Builds.Comment
-  alias Garage.Builds.Like
+  # alias Garage.Builds.Like
   @channel 1_237_258_590_675_402_794
 
   # def notify(n) do
