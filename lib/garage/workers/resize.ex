@@ -11,6 +11,8 @@ defmodule Garage.Workers.Resize do
     case ExAws.S3.get_object(bucket(), parsed_uri.path) |> ExAws.request() do
       {:ok, %{body: body}} ->
         {:ok, image} = Image.from_binary(body)
+        # Auto-rotate to handle jpegs, etc. that set rotation on exif data
+        {:ok, {image, _}} = Image.autorotate(image)
         {:ok, thumbnail} = Image.thumbnail(image, 400)
         thumb = Image.write!(thumbnail, :memory, minimize_file_size: true, suffix: ".webp")
 
