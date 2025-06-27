@@ -41,9 +41,11 @@ defmodule Garage.Mopeds.Pulley do
   relationships do
     has_many :builds, Garage.Builds.Build do
       domain Garage.Builds
+      public? true
     end
 
     belongs_to :manufacturer, Garage.Mopeds.Manufacturer do
+      public? true
       allow_nil? false
     end
   end

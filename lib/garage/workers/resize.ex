@@ -12,7 +12,7 @@ defmodule Garage.Workers.Resize do
       {:ok, %{body: body}} ->
         {:ok, image} = Image.from_binary(body)
         {:ok, thumbnail} = Image.thumbnail(image, 400)
-        bin = Image.write!(thumbnail, :memory, minimize_file_size: true, suffix: ".webp")
+        thumb = Image.write!(thumbnail, :memory, minimize_file_size: true, suffix: ".webp")
 
         optimized =
           Image.write!(image, :memory, minimize_file_size: true, suffix: ".webp", quality: 85)
@@ -20,7 +20,7 @@ defmodule Garage.Workers.Resize do
         thumb_path = path(parsed_uri.path, "thumbnail")
         optimized_path = path(parsed_uri.path, "optimized")
 
-        ExAws.S3.put_object(bucket(), thumb_path, bin) |> ExAws.request!()
+        ExAws.S3.put_object(bucket(), thumb_path, thumb) |> ExAws.request!()
         ExAws.S3.put_object(bucket(), optimized_path, optimized) |> ExAws.request!()
 
         Garage.Builds.Image.update!(image_record, %{

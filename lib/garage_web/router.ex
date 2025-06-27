@@ -41,42 +41,65 @@ defmodule GarageWeb.Router do
 
     ash_authentication_live_session :authentication_required,
       on_mount: {GarageWeb.LiveUserAuth, :live_user_required} do
-      live "/builds/:build/edit", BuildsLive.Edit, :edit
       live "/builds/new", BuildsLive.New, :new
+      live "/builds/:build/edit", BuildsLive.Edit, :edit
+      live "/carburetors", CarburetorLive.Index, :index
+      live "/carburetors/new", CarburetorLive.Index, :new
+      live "/carburetors/:id", CarburetorLive.Show, :show
       live "/carburetors/:id/edit", CarburetorLive.Index, :edit
       live "/carburetors/:id/show/edit", CarburetorLive.Show, :edit
-      live "/carburetors/new", CarburetorLive.Index, :new
+      live "/clutches", ClutchLive.Index, :index
+      live "/clutches/new", ClutchLive.Index, :new
+      live "/clutches/:id", ClutchLive.Show, :show
       live "/clutches/:id/edit", ClutchLive.Index, :edit
       live "/clutches/:id/show/edit", ClutchLive.Show, :edit
-      live "/clutches/new", ClutchLive.Index, :new
-      live "/cylinders/:id/edit", CylinderLive.Index, :edit
-      live "/cylinders/:id/show/edit", CylinderLive.Show, :edit
-      live "/cylinders/new", CylinderLive.Index, :new
+      live "/cranks", CrankLive.Index, :index
+      live "/cranks/new", CrankLive.Index, :new
+      live "/cranks/:id", CrankLive.Show, :show
       live "/cranks/:id/edit", CrankLive.Index, :edit
       live "/cranks/:id/show/edit", CrankLive.Show, :edit
-      live "/cranks/new", CrankLive.Index, :new
+      live "/cylinders", CylinderLive.Index, :index
+      live "/cylinders/new", CylinderLive.Index, :new
+      live "/cylinders/:id", CylinderLive.Show, :show
+      live "/cylinders/:id/edit", CylinderLive.Index, :edit
+      live "/cylinders/:id/show/edit", CylinderLive.Show, :edit
+      live "/engines", EngineLive.Index, :index
+      live "/engines/new", EngineLive.Index, :new
+      live "/engines/:id", EngineLive.Show, :show
       live "/engines/:id/edit", EngineLive.Show, :edit
       live "/engines/:id/show/edit", EngineLive.Show, :edit
-      live "/engines/new", EngineLive.Index, :new
+      live "/exhausts", ExhaustLive.Index, :index
+      live "/exhausts/new", ExhaustLive.Index, :new
+      live "/exhausts/:id", ExhaustLive.Show, :show
       live "/exhausts/:id/edit", ExhaustLive.Index, :edit
       live "/exhausts/:id/show/edit", ExhaustLive.Show, :edit
-      live "/exhausts/new", ExhaustLive.Index, :new
+      live "/ignitions", IgnitionLive.Index, :index
+      live "/ignitions/new", IgnitionLive.Index, :new
+      live "/ignitions/:id", IgnitionLive.Show, :show
       live "/ignitions/:id/edit", IgnitionLive.Index, :edit
       live "/ignitions/:id/show/edit", IgnitionLive.Show, :edit
-      live "/ignitions/new", IgnitionLive.Index, :new
+      live "/manufacturers", ManufacturerLive.Index, :index
+      live "/manufacturers/new", ManufacturerLive.Index, :new
+      live "/manufacturers/:id", ManufacturerLive.Show, :show
       live "/manufacturers/:id/edit", ManufacturerLive.Index, :edit
       live "/manufacturers/:id/show/edit", ManufacturerLive.Show, :edit
-      live "/manufacturers/new", ManufacturerLive.Index, :new
+      live "/models", ModelLive.Index, :index
+      live "/models/new", ModelLive.Index, :new
+      live "/models/:id", ModelLive.Show, :show
       live "/models/:id/edit", ModelLive.Index, :edit
       live "/models/:id/show/edit", ModelLive.Show, :edit
-      live "/models/new", ModelLive.Index, :new
+      live "/parts", PartsLive.Index, :index
+      live "/pulleys", PulleyLive.Index, :index
+      live "/pulleys/new", PulleyLive.Index, :new
+      live "/pulleys/:id", PulleyLive.Show, :show
       live "/pulleys/:id/edit", PulleyLive.Index, :edit
       live "/pulleys/:id/show/edit", PulleyLive.Show, :edit
-      live "/pulleys/new", PulleyLive.Index, :new
+      live "/user/settings", UsersLive.Settings, :settings
+      live "/variators", VariatorLive.Index, :index
+      live "/variators/new", VariatorLive.Index, :new
+      live "/variators/:id", VariatorLive.Show, :show
       live "/variators/:id/edit", VariatorLive.Index, :edit
       live "/variators/:id/show/edit", VariatorLive.Show, :edit
-      live "/variators/new", VariatorLive.Index, :new
-      live "/user/settings", UsersLive.Settings, :settings
     end
 
     ash_authentication_live_session :no_user,
@@ -97,39 +120,6 @@ defmodule GarageWeb.Router do
       live "/builds", BuildsLive.Index, :index
       live "/builds/:build", BuildsLive.Show, :show
 
-      live "/carburetors", CarburetorLive.Index, :index
-      live "/carburetors/:id", CarburetorLive.Show, :show
-
-      live "/clutches", ClutchLive.Index, :index
-      live "/clutches/:id", ClutchLive.Show, :show
-
-      live "/cranks", CrankLive.Index, :index
-      live "/cranks/:id", CrankLive.Show, :show
-
-      live "/cylinders", CylinderLive.Index, :index
-      live "/cylinders/:id", CylinderLive.Show, :show
-
-      live "/engines", EngineLive.Index, :index
-      live "/engines/:id", EngineLive.Show, :show
-
-      live "/exhausts", ExhaustLive.Index, :index
-      live "/exhausts/:id", ExhaustLive.Show, :show
-
-      live "/ignitions", IgnitionLive.Index, :index
-      live "/ignitions/:id", IgnitionLive.Show, :show
-
-      live "/manufacturers", ManufacturerLive.Index, :index
-      live "/manufacturers/:id", ManufacturerLive.Show, :show
-
-      live "/models", ModelLive.Index, :index
-      live "/models/:id", ModelLive.Show, :show
-
-      live "/pulleys", PulleyLive.Index, :index
-      live "/pulleys/:id", PulleyLive.Show, :show
-
-      live "/variators", VariatorLive.Index, :index
-      live "/variators/:id", VariatorLive.Show, :show
-      live "/parts", PartsLive.Index, :index
       live "/about", HomeLive.About, :about
       live "/privacy", HomeLive.Privacy, :privacy
       live "/u/:username", UsersLive.Show, :show

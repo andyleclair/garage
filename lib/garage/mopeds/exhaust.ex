@@ -20,7 +20,7 @@ defmodule Garage.Mopeds.Exhaust do
   attributes do
     uuid_primary_key :id
     attribute :name, :string, allow_nil?: false, public?: true
-    attribute :description, :string, default: "", public?: true
+    attribute :description, :string, allow_nil?: true, default: "", public?: true
 
     create_timestamp :inserted_at
     update_timestamp :updated_at
@@ -37,10 +37,11 @@ defmodule Garage.Mopeds.Exhaust do
   relationships do
     has_many :builds, Garage.Builds.Build do
       domain Garage.Builds
+      public? true
     end
 
     belongs_to :manufacturer, Garage.Mopeds.Manufacturer do
-      attribute_writable? true
+      public? true
       allow_nil? false
     end
   end

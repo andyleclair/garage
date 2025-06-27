@@ -74,6 +74,18 @@ defmodule GarageWeb.ExhaustLive.Index do
 
   @impl true
   def handle_params(params, _url, socket) do
+    active_page = page(params["page"])
+    offset = page_offset(active_page, socket.assigns.page_limit)
+    {:ok, page} = load_page(socket.assigns.page_limit, offset)
+
+    socket =
+      socket
+      |> assign(:pages, ceil(page.count / socket.assigns.page_limit))
+      |> assign(:total_entries, page.count)
+      |> assign(:exhausts, page.results)
+      |> assign(:active_page, active_page)
+      |> assign(:page_offset, offset)
+
     {:noreply, apply_action(socket, socket.assigns.live_action, params)}
   end
 
@@ -92,17 +104,8 @@ defmodule GarageWeb.ExhaustLive.Index do
     |> assign(:exhaust, nil)
   end
 
-  defp apply_action(socket, :index, params) do
-    active_page = page(params["page"])
-    offset = page_offset(active_page, socket.assigns.page_limit)
-    {:ok, page} = load_page(socket.assigns.page_limit, offset)
-
+  defp apply_action(socket, :index, _params) do
     socket
-    |> assign(:pages, ceil(page.count / socket.assigns.page_limit))
-    |> assign(:total_entries, page.count)
-    |> assign(:exhausts, page.results)
-    |> assign(:active_page, active_page)
-    |> assign(:page_offset, offset)
     |> assign(:page_title, "All Exhausts")
     |> assign(:exhaust, nil)
   end
