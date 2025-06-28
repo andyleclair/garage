@@ -9,29 +9,30 @@ defmodule Garage.Notifiers.Discord do
   alias Nostrum.Api
 
   @channel Application.compile_env(:garage, :discord_channel)
+  @site_url Application.compile_env(:garage, :site_url)
 
   def notify(%Notification{resource: User, data: data, action: %{type: :create}, actor: _user}) do
     message """
-    New user just signed up! #{data.username} https://moped.club/u/#{data.username}
+    New user just signed up! #{data.username} #{@site_url}/u/#{data.username}
     """
   end
 
   def notify(%Notification{resource: Build, data: data, action: %{type: :create}, actor: user}) do
     message """
-    #{user.username} just created #{data.name}, check it out!  https://moped.club/builds/#{data.slug}
+    #{user.username} just created #{data.name}  #{@site_url}/builds/#{data.slug}
     """
   end
 
   def notify(%Notification{data: data, action: %{name: :like}, actor: user}) do
-    message "#{user.username} just liked #{data.name}, check it out! https://moped.club/builds/#{data.slug}"
+    message "#{user.username} just liked #{data.name} #{@site_url}/builds/#{data.slug}"
   end
 
-  def notify(%Notification{data: data, action: %{name: :unlike}, actor: user}) do
-    message "#{user.username} just unliked #{data.name}. Bogus!  https://moped.club/builds/#{data.slug}"
+  def notify(%Notification{data: data, action: %{name: :dislike}, actor: user}) do
+    message "#{user.username} just unliked #{data.name} #{@site_url}/builds/#{data.slug}"
   end
 
   def notify(%Notification{data: data, action: %{name: :update}, actor: user}) do
-    message "#{user.username} just updated #{data.name}, check it out! https://moped.club/builds/#{data.slug}"
+    message "#{user.username} just updated #{data.name} #{@site_url}/builds/#{data.slug}"
   end
 
   def notify(%Notification{data: data, action: %{name: :delete}, actor: user}) do
@@ -39,7 +40,7 @@ defmodule Garage.Notifiers.Discord do
   end
 
   def notify(%Notification{resource: Comment, data: data, action: %{name: :create}, actor: user}) do
-    message "#{user.username} just commented on #{data.name}, check it out! https://moped.club/builds/#{data.slug}"
+    message "#{user.username} just commented on #{data.name} #{@site_url}/builds/#{data.slug}"
   end
 
   # Ash.Notifier is giving us a call here and we need to pattern-match
@@ -55,4 +56,5 @@ defmodule Garage.Notifiers.Discord do
   defp enabled? do
     Application.get_env(:garage, :env) in [:dev, :prod]
   end
+
 end

@@ -21,7 +21,8 @@ config :logger, level: :info
 config :garage,
   upload_bucket: :prod,
   public_image_root: "https://pics.moped.club",
-  discord_channel: 1_237_258_590_675_402_794
+  discord_channel: 1_237_258_590_675_402_794,
+  site_url: "https://moped.club"
 
 config :ex_aws,
   region: "auto"
