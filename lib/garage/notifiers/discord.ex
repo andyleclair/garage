@@ -2,92 +2,57 @@ defmodule Garage.Notifiers.Discord do
   use Ash.Notifier
   use GarageWeb, :verified_routes
 
-  alias Nostrum.Api
   alias Ash.Notifier.Notification
+  alias Garage.Accounts.User
   alias Garage.Builds.Build
   alias Garage.Builds.Comment
-  # alias Garage.Builds.Like
-  @channel 1_237_258_590_675_402_794
+  alias Nostrum.Api
 
-  # def notify(n) do
-  #  dbg(n)
+  @channel Application.compile_env(:garage, :discord_channel)
 
-  #  :ok
-  # end
+  def notify(%Notification{resource: User, data: data, action: %{type: :create}, actor: _user}) do
+    message """
+    New user just signed up! #{data.username} https://moped.club/u/#{data.username}
+    """
+  end
 
   def notify(%Notification{resource: Build, data: data, action: %{type: :create}, actor: user}) do
-    if enabled?() do
-      Api.create_message!(
-        @channel,
-        "#{user.username} just created #{data.name}, check it out!  https://moped.club/builds/#{data.slug}"
-      )
-    end
-
-    :ok
+    message """
+    #{user.username} just created #{data.name}, check it out!  https://moped.club/builds/#{data.slug}
+    """
   end
 
   def notify(%Notification{data: data, action: %{name: :like}, actor: user}) do
-    if enabled?() do
-      Api.create_message!(
-        @channel,
-        "#{user.username} just liked #{data.name}, check it out! https://moped.club/builds/#{data.slug}"
-      )
-    end
-
-    :ok
+    message "#{user.username} just liked #{data.name}, check it out! https://moped.club/builds/#{data.slug}"
   end
 
   def notify(%Notification{data: data, action: %{name: :unlike}, actor: user}) do
-    if enabled?() do
-      Api.create_message!(
-        @channel,
-        "#{user.username} just unliked #{data.name}. Bogus!  https://moped.club/builds/#{data.slug}"
-      )
-    end
-
-    :ok
+    message "#{user.username} just unliked #{data.name}. Bogus!  https://moped.club/builds/#{data.slug}"
   end
 
-  def notify(%Notification{data: data, action: %{name: :update}, actor: user} = n) do
-    dbg(n)
-
-    if enabled?() do
-      Api.create_message!(
-        @channel,
-        "#{user.username} just updated #{data.name}, check it out! https://moped.club/builds/#{data.slug}"
-      )
-    end
-
-    :ok
+  def notify(%Notification{data: data, action: %{name: :update}, actor: user}) do
+    message "#{user.username} just updated #{data.name}, check it out! https://moped.club/builds/#{data.slug}"
   end
 
   def notify(%Notification{data: data, action: %{name: :delete}, actor: user}) do
-    if enabled?() do
-      Api.create_message!(
-        @channel,
-        "#{user.username} just deleted their build, RIP #{data.name}"
-      )
-    end
-
-    :ok
+    message "#{user.username} just deleted their build, RIP #{data.name}"
   end
 
-  def notify(
-        %Notification{resource: Comment, data: data, action: %{name: :create}, actor: user} = n
-      ) do
-    if enabled?() do
-      dbg(n)
+  def notify(%Notification{resource: Comment, data: data, action: %{name: :create}, actor: user}) do
+    message "#{user.username} just commented on #{data.name}, check it out! https://moped.club/builds/#{data.slug}"
+  end
 
-      Api.create_message!(
-        @channel,
-        "#{user.username} just commented on #{data.name}, check it out! https://moped.club/builds/#{data.slug}"
-      )
+  # Ash.Notifier is giving us a call here and we need to pattern-match
+  # what we want to be notified about, but the message handling is pretty same-y
+  defp message(str) do
+    if enabled?() do
+      Api.create_message!(@channel, str)
     end
 
     :ok
   end
 
   defp enabled? do
-    Application.get_env(:garage, :env) == :dev
+    Application.get_env(:garage, :env) in [:dev, :prod]
   end
 end

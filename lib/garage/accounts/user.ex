@@ -2,7 +2,8 @@ defmodule Garage.Accounts.User do
   use Ash.Resource,
     domain: Garage.Accounts,
     data_layer: AshPostgres.DataLayer,
-    extensions: [AshAuthentication, AshAdmin.Resource]
+    extensions: [AshAuthentication, AshAdmin.Resource],
+    simple_notifiers: [Garage.Notifiers.Discord]
 
   admin do
     actor?(true)

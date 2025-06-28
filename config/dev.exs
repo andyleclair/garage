@@ -84,6 +84,7 @@ config :swoosh, :api_client, false
 
 config :garage,
   upload_bucket: :dev,
-  public_image_root: "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev"
+  public_image_root: "https://pub-09d9519a20aa4503bc4336772b724d1a.r2.dev",
+  discord_channel: 1_388_349_484_383_207_516
 
 import_config("dev.secret.exs")
