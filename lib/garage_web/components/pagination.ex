@@ -24,7 +24,7 @@ defmodule GarageWeb.Components.Pagination do
               <%= if @page_number > 1 do %>
                 <li>
                   <a
-                    class="px-3 py-1 rounded-md rounded-l-lg focus:outline-none focus:shadow-outline-purple cursor-pointer"
+                    class="px-3 py-1 rounded-md rounded-l-lg focus:outline-hidden focus:shadow-outline-purple cursor-pointer"
                     patch={"?page=#{
                       if @page_number > 1 do
                         "#{@page_number - 1}"
@@ -48,7 +48,7 @@ defmodule GarageWeb.Components.Pagination do
 
               <%= if @page_number > 5 do %>
                 <li>
-                  <span class="px-3 py-1 rounded-md focus:outline-none focus:shadow-outline-gray-500">
+                  <span class="px-3 py-1 rounded-md focus:outline-hidden focus:shadow-outline-gray-500">
                     ...
                   </span>
                 </li>
@@ -57,7 +57,7 @@ defmodule GarageWeb.Components.Pagination do
               <li :for={page <- Enum.to_list(pagination_range(@page_number, @total_pages))}>
                 <.link
                   class={
-                      "px-3 py-1 rounded-md focus:outline-none focus:shadow-outline-purple #{active_class(page, @page_number)} "
+                      "px-3 py-1 rounded-md focus:outline-hidden focus:shadow-outline-purple #{active_class(page, @page_number)} "
                     }
                   patch={"?page=#{page}"}
                 >
@@ -67,7 +67,7 @@ defmodule GarageWeb.Components.Pagination do
 
               <%= if (@page_number + 9) < @total_pages do %>
                 <li>
-                  <span class="px-3 py-1 rounded-md focus:outline-none focus:shadow-outline-purple">
+                  <span class="px-3 py-1 rounded-md focus:outline-hidden focus:shadow-outline-purple">
                     ...
                   </span>
                 </li>
@@ -76,7 +76,7 @@ defmodule GarageWeb.Components.Pagination do
               <%= if @page_number < @total_pages do %>
                 <li>
                   <a
-                    class="px-3 py-1 rounded-md rounded-r-lg focus:outline-none focus:shadow-outline-purple cursor-pointer"
+                    class="px-3 py-1 rounded-md rounded-r-lg focus:outline-hidden focus:shadow-outline-purple cursor-pointer"
                     aria-label="Next"
                     patch={"?page=#{
                       if @page_number > 1 do

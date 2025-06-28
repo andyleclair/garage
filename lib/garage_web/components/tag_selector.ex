@@ -22,7 +22,7 @@ defmodule GarageWeb.Components.TagSelector do
           >
             {tag}
             <button
-              class="inline-flex items-center p-1 ms-2 text-sm text-blue-400 bg-transparent rounded-sm hover:bg-blue-200 hover:text-blue-900 dark:hover:bg-blue-800 dark:hover:text-blue-300"
+              class="inline-flex items-center p-1 ms-2 text-sm text-blue-400 bg-transparent rounded-xs hover:bg-blue-200 hover:text-blue-900 dark:hover:bg-blue-800 dark:hover:text-blue-300"
               aria-label="Remove"
               data-tag={tag}
             >
@@ -50,7 +50,7 @@ defmodule GarageWeb.Components.TagSelector do
             type="text"
             class={[
               "mt-2 block w-full rounded-lg border-zinc-300 py-[7px] px-[11px]",
-              "text-zinc-900 focus:outline-none focus:ring-4 sm:text-sm sm:leading-6",
+              "text-zinc-900 focus:outline-hidden focus:ring-4 sm:text-sm sm:leading-6",
               "phx-no-feedback:border-zinc-300 phx-no-feedback:focus:border-zinc-400 phx-no-feedback:focus:ring-zinc-800/5",
               "border-zinc-300 focus:border-zinc-400 focus:ring-zinc-800/5",
               "mr-2"
