@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@config "../tailwind.config.js";
 
 .trix-button-group--file-tools {
   display: none !important;
