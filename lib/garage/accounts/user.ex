@@ -128,5 +128,10 @@ defmodule Garage.Accounts.User do
       domain Garage.Accounts
       destination_attribute :user_id
     end
+
+    has_one :membership, Garage.Clubs.Membership do
+      domain Garage.Clubs
+      destination_attribute :user_id
+    end
   end
 end

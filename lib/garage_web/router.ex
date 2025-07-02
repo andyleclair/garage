@@ -53,6 +53,9 @@ defmodule GarageWeb.Router do
       live "/clutches/:id", ClutchLive.Show, :show
       live "/clutches/:id/edit", ClutchLive.Index, :edit
       live "/clutches/:id/show/edit", ClutchLive.Show, :edit
+      live "/clubs/new", ClubLive.Index, :new
+      live "/clubs/:slug/edit", ClubLive.Index, :edit
+      live "/clubs/:slug/show/edit", ClubLive.Show, :edit
       live "/cranks", CrankLive.Index, :index
       live "/cranks/new", CrankLive.Index, :new
       live "/cranks/:id", CrankLive.Show, :show
@@ -119,6 +122,8 @@ defmodule GarageWeb.Router do
 
       live "/builds", BuildsLive.Index, :index
       live "/builds/:build", BuildsLive.Show, :show
+      live "/clubs", ClubLive.Index, :index
+      live "/clubs/:slug", ClubLive.Show, :show
 
       live "/about", HomeLive.About, :about
       live "/privacy", HomeLive.Privacy, :privacy

@@ -4,5 +4,6 @@ defmodule Garage.Clubs do
 
   resources do
     resource Garage.Clubs.Club
+    resource Garage.Clubs.Membership
   end
 end
