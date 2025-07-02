@@ -1,5 +1,13 @@
 @import "tailwindcss";
-@config "../tailwind.config.js";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+
+@source "../css";
+@source "../js";
+@plugin "../heroicons.tailwind.plugin.js";
+@custom-variant phx-click-loading ([".phx-click-loading&", ".phx-click-loading &"]);
+@custom-variant phx-submit-loading ([".phx-submit-loading&", ".phx-submit-loading &"]);
+@custom-variant phx-change-loading ([".phx-change-loading&", ".phx-change-loading &"]);
 
 .trix-button-group--file-tools {
   display: none !important;
