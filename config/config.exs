@@ -15,7 +15,10 @@ config :garage, Oban,
 
 config :garage,
   ecto_repos: [Garage.Repo],
-  generators: [timestamp_type: :utc_datetime]
+  generators: [timestamp_type: :utc_datetime],
+  ash_domains: [Garage.Builds, Garage.Clubs, Garage.Mopeds, Garage.Accounts],
+  env: config_env(),
+  max_upload_size: 15_000_000
 
 # Configures the endpoint
 config :garage, GarageWeb.Endpoint,
@@ -70,10 +73,6 @@ config :ex_aws,
   http_client: ExAws.Finch,
   json_codec: Jason
 
-config :garage,
-  ash_domains: [Garage.Builds, Garage.Mopeds, Garage.Accounts],
-  env: config_env(),
-  max_upload_size: 15_000_000
 
 config :garage, Oban,
   repo: Garage.Repo,
