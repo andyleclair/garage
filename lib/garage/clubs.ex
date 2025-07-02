@@ -3,5 +3,6 @@ defmodule Garage.Clubs do
     otp_app: :garage
 
   resources do
+    resource Garage.Clubs.Club
   end
 end
