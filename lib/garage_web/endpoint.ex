@@ -21,7 +21,7 @@ defmodule GarageWeb.Endpoint do
   plug Plug.Static,
     at: "/",
     from: :garage,
-    gzip: false,
+    gzip: true,
     only: GarageWeb.static_paths(),
     headers: [{"Service-Worker-Allowed", "/"}]
 
