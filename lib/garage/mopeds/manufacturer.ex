@@ -1,9 +1,9 @@
 defmodule Garage.Mopeds.Manufacturer do
-  @derive {Phoenix.Param, key: :slug}
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
     domain: Garage.Mopeds
 
+  @derive {Phoenix.Param, key: :slug}
   actions do
     default_accept :*
     defaults [:read, :update, :destroy]

@@ -1,5 +1,6 @@
 defmodule Garage.Workers.Push do
   use Oban.Worker, queue: :push
+
   require Logger
 
   @impl Oban.Worker

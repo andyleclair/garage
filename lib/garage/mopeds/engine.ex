@@ -3,8 +3,8 @@ defmodule Garage.Mopeds.Engine do
     data_layer: AshPostgres.DataLayer,
     domain: Garage.Mopeds
 
-  import Ash.Sort, only: [expr_sort: 2]
   import Ash.Expr
+  import Ash.Sort, only: [expr_sort: 2]
 
   actions do
     default_accept :*

@@ -1,13 +1,13 @@
 defmodule GarageWeb.BuildsLive.Show do
   use GarageWeb, :live_view
 
+  import GarageWeb.Components.Builds.Comment
+  import GarageWeb.Components.Builds.FollowButton
+  import GarageWeb.Components.Builds.LikeHeart
+
+  alias AshPhoenix.Form
   alias Garage.Builds.Build
   alias Garage.Builds.Comment
-  alias AshPhoenix.Form
-
-  import GarageWeb.Components.Builds.Comment
-  import GarageWeb.Components.Builds.LikeHeart
-  import GarageWeb.Components.Builds.FollowButton
 
   @impl true
   def mount(_params, _session, socket) do

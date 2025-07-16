@@ -25,10 +25,11 @@ defmodule GarageWeb do
     quote do
       use Phoenix.Router, helpers: true
 
-      # Import common connection and controller functions to use in pipelines
-      import Plug.Conn
       import Phoenix.Controller
       import Phoenix.LiveView.Router
+
+      # Import common connection and controller functions to use in pipelines
+      import Plug.Conn
     end
   end
 
@@ -44,8 +45,9 @@ defmodule GarageWeb do
         formats: [:html, :json],
         layouts: [html: GarageWeb.Layouts]
 
-      import Plug.Conn
       use Gettext, backend: GarageWeb.Gettext
+
+      import Plug.Conn
 
       unquote(verified_routes())
     end
@@ -95,16 +97,13 @@ defmodule GarageWeb do
 
   defp html_helpers do
     quote do
+      use Gettext, backend: GarageWeb.Gettext
+      import GarageWeb.CoreComponents
+      import GarageWeb.Options
+      import GarageWeb.TimeHelpers
       # HTML escaping functionality
       import Phoenix.HTML
       # Core UI components and translation
-      import GarageWeb.CoreComponents
-
-      use Gettext, backend: GarageWeb.Gettext
-
-      import GarageWeb.TimeHelpers
-
-      import GarageWeb.Options
 
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS

@@ -1,7 +1,9 @@
 defmodule GarageWeb.UsersLive.Show do
-  alias Garage.Accounts.User
   use GarageWeb, :live_view
+
   import GarageWeb.Components.Builds.Build
+
+  alias Garage.Accounts.User
 
   def mount(%{"username" => username}, _session, socket) do
     case User.get_by_username(username, load: [builds: [:like_count, :follow_count]]) do

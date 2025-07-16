@@ -3,6 +3,7 @@ defmodule Garage.Changes.ResetNonce do
   Change module to set the slug on a resource
   """
   use Ash.Resource.Change
+
   alias Ash.Changeset
 
   @impl true

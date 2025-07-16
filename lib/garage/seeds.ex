@@ -63,7 +63,7 @@ defmodule Garage.Seeds do
   end
 
   # Run me next
-  def generate_part_seeds() do
+  def generate_part_seeds do
     mapping = %{
       "1" => :engines,
       "2" => :carburetors,

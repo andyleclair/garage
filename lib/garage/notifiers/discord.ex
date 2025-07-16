@@ -56,5 +56,4 @@ defmodule Garage.Notifiers.Discord do
   defp enabled? do
     Application.get_env(:garage, :env) in [:dev, :prod]
   end
-
 end

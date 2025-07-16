@@ -1,5 +1,6 @@
 defmodule GarageWeb.VariatorLive.FormComponent do
   use GarageWeb, :live_component
+
   alias Garage.Mopeds.Manufacturer
   alias Garage.Mopeds.Variator
 
@@ -158,13 +159,13 @@ defmodule GarageWeb.VariatorLive.FormComponent do
     assign(socket, form: to_form(form))
   end
 
-  def manufacturer_options() do
+  def manufacturer_options do
     for manufacturer <- Manufacturer.by_category!(:variators),
         into: [],
         do: {manufacturer.name, manufacturer.id}
   end
 
-  def types() do
+  def types do
     for t <-
           Ash.Resource.Info.attribute(Garage.Mopeds.Variator, :type).constraints[:one_of],
         do: {humanize(t), t}

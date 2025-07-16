@@ -128,7 +128,7 @@ defmodule GarageWeb.CylinderLive.FormComponent do
     assign(socket, form: to_form(form))
   end
 
-  def manufacturer_options() do
+  def manufacturer_options do
     for manufacturer <- Manufacturer.by_category!(:cylinders),
         into: [],
         do: {manufacturer.name, manufacturer.id}

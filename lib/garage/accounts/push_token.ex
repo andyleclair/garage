@@ -1,7 +1,7 @@
 defmodule Garage.Accounts.PushToken do
-  @derive {Jason.Encoder, only: [:endpoint, :keys]}
   use Ash.Resource, otp_app: :garage, domain: Garage.Accounts, data_layer: AshPostgres.DataLayer
 
+  @derive {Jason.Encoder, only: [:endpoint, :keys]}
   actions do
     defaults [
       :read,

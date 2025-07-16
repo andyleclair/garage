@@ -1,8 +1,9 @@
 defmodule GarageWeb.BuildsLive.Index do
   use GarageWeb, :live_view
 
-  alias Garage.Builds.Build
   import GarageWeb.Components.Builds.Build
+
+  alias Garage.Builds.Build
 
   @impl true
   def render(assigns) do

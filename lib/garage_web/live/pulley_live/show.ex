@@ -1,6 +1,7 @@
 defmodule GarageWeb.PulleyLive.Show do
-  import GarageWeb.Components.Builds.Build
   use GarageWeb, :live_view
+
+  import GarageWeb.Components.Builds.Build
 
   @impl true
   def render(assigns) do

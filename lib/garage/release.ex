@@ -31,7 +31,7 @@ defmodule Garage.Release do
     Application.load(@app)
   end
 
-  def move_image_urls_to_images() do
+  def move_image_urls_to_images do
     all_builds = Ash.read!(Garage.Builds.Build)
 
     for build <- all_builds do

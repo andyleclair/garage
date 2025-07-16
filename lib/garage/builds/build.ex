@@ -1,13 +1,11 @@
 defmodule Garage.Builds.Build do
-  @derive {Phoenix.Param, key: :slug}
-
   use Ash.Resource,
     data_layer: AshPostgres.DataLayer,
     domain: Garage.Builds,
     authorizers: [Ash.Policy.Authorizer],
     simple_notifiers: [Garage.Notifiers.Discord]
 
-  require Ecto.Query
+  alias Garage.Accounts.User
 
   alias Garage.Builds.{
     CarbTuning,
@@ -30,7 +28,9 @@ defmodule Garage.Builds.Build do
     Pulley
   }
 
-  alias Garage.Accounts.User
+  require Ecto.Query
+
+  @derive {Phoenix.Param, key: :slug}
 
   attributes do
     uuid_primary_key :id

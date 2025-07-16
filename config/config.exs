@@ -7,15 +7,28 @@
 # General application configuration
 import Config
 
-config :garage, Oban,
-  engine: Oban.Engines.Basic,
-  notifier: Oban.Notifiers.Postgres,
-  queues: [default: 10],
-  repo: Garage.Repo
+# Configure esbuild (the version is required)
+config :esbuild,
+  version: "0.17.11",
+  default: [
+    args:
+      ~w(js/app.js --bundle --target=es2017 --outdir=../priv/static/assets --external:/fonts/* --external:/images/* --external:/js/service-worker.js --external:js/heroicons.tailwind.plugin.js),
+    cd: Path.expand("../assets", __DIR__),
+    env: %{"NODE_PATH" => Path.expand("../deps", __DIR__)}
+  ]
 
-config :garage,
-  ecto_repos: [Garage.Repo],
-  generators: [timestamp_type: :utc_datetime]
+config :ex_aws,
+  http_client: ExAws.Finch,
+  json_codec: Jason
+
+# Configures the mailer
+#
+# By default it uses the "Local" adapter which stores the emails
+# locally. You can see the emails in your browser, at "/dev/mailbox".
+#
+# For production it's recommended to configure a different adapter
+# at the `config/runtime.exs`.
+config :garage, Garage.Mailer, adapter: Swoosh.Adapters.Local
 
 # Configures the endpoint
 config :garage, GarageWeb.Endpoint,
@@ -28,24 +41,28 @@ config :garage, GarageWeb.Endpoint,
   pubsub_server: Garage.PubSub,
   live_view: [signing_salt: "bViCUv7u"]
 
-# Configures the mailer
-#
-# By default it uses the "Local" adapter which stores the emails
-# locally. You can see the emails in your browser, at "/dev/mailbox".
-#
-# For production it's recommended to configure a different adapter
-# at the `config/runtime.exs`.
-config :garage, Garage.Mailer, adapter: Swoosh.Adapters.Local
+config :garage, Oban,
+  engine: Oban.Engines.Basic,
+  notifier: Oban.Notifiers.Postgres,
+  queues: [default: 10, resize: 20, push: 20],
+  repo: Garage.Repo
 
-# Configure esbuild (the version is required)
-config :esbuild,
-  version: "0.17.11",
-  default: [
-    args:
-      ~w(js/app.js --bundle --target=es2017 --outdir=../priv/static/assets --external:/fonts/* --external:/images/* --external:/js/service-worker.js --external:js/heroicons.tailwind.plugin.js),
-    cd: Path.expand("../assets", __DIR__),
-    env: %{"NODE_PATH" => Path.expand("../deps", __DIR__)}
-  ]
+config :garage,
+  ash_domains: [Garage.Builds, Garage.Mopeds, Garage.Accounts],
+  env: config_env(),
+  max_upload_size: 15_000_000
+
+config :garage,
+  ecto_repos: [Garage.Repo],
+  generators: [timestamp_type: :utc_datetime]
+
+# Configures Elixir's Logger
+config :logger, :console,
+  format: "$time $metadata[$level] $message\n",
+  metadata: [:request_id]
+
+# Use Jason for JSON parsing in Phoenix
+config :phoenix, :json_library, JSON
 
 # Configure tailwind (the version is required)
 config :tailwind,
@@ -57,27 +74,6 @@ config :tailwind,
     ),
     cd: Path.expand("../assets", __DIR__)
   ]
-
-# Configures Elixir's Logger
-config :logger, :console,
-  format: "$time $metadata[$level] $message\n",
-  metadata: [:request_id]
-
-# Use Jason for JSON parsing in Phoenix
-config :phoenix, :json_library, JSON
-
-config :ex_aws,
-  http_client: ExAws.Finch,
-  json_codec: Jason
-
-config :garage,
-  ash_domains: [Garage.Builds, Garage.Mopeds, Garage.Accounts],
-  env: config_env(),
-  max_upload_size: 15_000_000
-
-config :garage, Oban,
-  repo: Garage.Repo,
-  queues: [resize: 20, push: 20]
 
 # config :crawly,
 #  closespider_timeout: 10,

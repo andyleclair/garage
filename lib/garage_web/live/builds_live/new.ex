@@ -1,12 +1,13 @@
 defmodule GarageWeb.BuildsLive.New do
   use GarageWeb, :live_view
 
+  import GarageWeb.BuildsLive.Helpers
+
   alias AshPhoenix.Form
   alias Garage.Builds
   alias Garage.Builds.Build
   alias Garage.Mopeds.Manufacturer
   alias Garage.Mopeds.Model
-  import GarageWeb.BuildsLive.Helpers
 
   @impl true
   def render(assigns) do
@@ -69,8 +70,6 @@ defmodule GarageWeb.BuildsLive.New do
     model_options =
       if manufacturer_id = form_manufacturer_id(form) do
         model_options_by_id(manufacturer_id)
-      else
-        nil
       end
 
     {:ok,
@@ -123,11 +122,7 @@ defmodule GarageWeb.BuildsLive.New do
   end
 
   @impl true
-  def handle_event(
-        "save",
-        %{"form" => params},
-        socket
-      ) do
+  def handle_event("save", %{"form" => params}, socket) do
     case Form.submit(socket.assigns.form, params: params) do
       {:ok, build} ->
         {:noreply,
@@ -140,7 +135,7 @@ defmodule GarageWeb.BuildsLive.New do
     end
   end
 
-  def manufacturer_options() do
+  def manufacturer_options do
     for manufacturer <- Manufacturer.by_category!(:mopeds),
         into: [],
         do: {manufacturer.name, manufacturer.id}

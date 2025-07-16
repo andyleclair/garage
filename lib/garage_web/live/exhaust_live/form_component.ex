@@ -1,5 +1,6 @@
 defmodule GarageWeb.ExhaustLive.FormComponent do
   use GarageWeb, :live_component
+
   alias Garage.Mopeds.Manufacturer
 
   @impl true
@@ -123,7 +124,7 @@ defmodule GarageWeb.ExhaustLive.FormComponent do
     assign(socket, form: to_form(form))
   end
 
-  def manufacturer_options() do
+  def manufacturer_options do
     for manufacturer <- Manufacturer.by_category!(:exhausts),
         into: [],
         do: {manufacturer.name, manufacturer.id}

@@ -3,6 +3,7 @@ defmodule Garage.Changes.SetNonce do
   Set a color nonce if one didn't exist before
   """
   use Ash.Resource.Change
+
   alias Ash.Changeset
 
   @impl true

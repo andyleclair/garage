@@ -169,11 +169,11 @@ defmodule GarageWeb.CarburetorLive.FormComponent do
     assign(socket, form: to_form(form))
   end
 
-  def manufacturer_options() do
+  def manufacturer_options do
     Manufacturer.by_category!(:carburetors) |> to_options()
   end
 
-  def tunable_parts() do
+  def tunable_parts do
     Ash.Resource.Info.attribute(Carburetor, :tunable_parts).constraints[:items][:one_of]
     |> to_options()
   end

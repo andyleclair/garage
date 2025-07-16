@@ -1,9 +1,9 @@
 defmodule GarageWeb.AuthLive.Index do
   use GarageWeb, :live_view
 
+  alias AshPhoenix.Form
   alias Garage.Accounts
   alias Garage.Accounts.User
-  alias AshPhoenix.Form
 
   @impl true
   def render(assigns) do

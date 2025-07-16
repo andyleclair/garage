@@ -1,10 +1,11 @@
 defmodule GarageWeb.UsersLive.Settings do
-  alias Garage.Accounts.User
-  alias Garage.Accounts
-  alias AshPhoenix.Form
-  require Logger
-
   use GarageWeb, :live_view
+
+  alias AshPhoenix.Form
+  alias Garage.Accounts
+  alias Garage.Accounts.User
+
+  require Logger
 
   @impl true
   def render(assigns) do
@@ -296,7 +297,7 @@ defmodule GarageWeb.UsersLive.Settings do
 
   defp public_root, do: Application.get_env(:garage, :public_image_root)
 
-  defp max_size() do
+  defp max_size do
     Application.get_env(:garage, :max_upload_size)
   end
 end

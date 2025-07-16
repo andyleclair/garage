@@ -1,6 +1,8 @@
 defmodule GarageWeb.ManufacturerLive.Show do
-  import GarageWeb.Components.Builds.Build
   use GarageWeb, :live_view
+
+  import GarageWeb.Components.Builds.Build
+
   require Ash.Query
 
   @impl true
