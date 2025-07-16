@@ -5,6 +5,7 @@ defmodule Garage.Changes.SetColor do
   The nonce is so users can change it (but only randomly)
   """
   use Ash.Resource.Change
+
   alias Ash.Changeset
 
   @impl true

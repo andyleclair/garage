@@ -1,10 +1,10 @@
-:erlang.system_flag(:backtrace_depth, 100)
 alias AshAuthentication.Info
 alias AshAuthentication.Strategy
+alias Garage.Mopeds.Engine
 alias Garage.Mopeds.Manufacturer
 alias Garage.Mopeds.Model
-alias Garage.Mopeds.Engine
 
+:erlang.system_flag(:backtrace_depth, 100)
 strategy = Info.strategy!(Garage.Accounts.User, :password)
 
 {:ok, _admin} =

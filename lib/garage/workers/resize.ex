@@ -1,5 +1,6 @@
 defmodule Garage.Workers.Resize do
   use Oban.Worker, queue: :resize
+
   require Logger
 
   @impl Oban.Worker
@@ -26,8 +27,8 @@ defmodule Garage.Workers.Resize do
         ExAws.S3.put_object(bucket(), optimized_path, optimized) |> ExAws.request!()
 
         Garage.Builds.Image.update!(image_record, %{
-          thumbnail_url: URI.to_string(%URI{parsed_uri | path: thumb_path}),
-          optimized_url: URI.to_string(%URI{parsed_uri | path: optimized_path})
+          thumbnail_url: URI.to_string(%{parsed_uri | path: thumb_path}),
+          optimized_url: URI.to_string(%{parsed_uri | path: optimized_path})
         })
 
         :ok

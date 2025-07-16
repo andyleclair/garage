@@ -13,6 +13,6 @@
   ],
   locals_without_parens: [oban_dashboard: 1],
   subdirectories: ["priv/*/migrations"],
-  plugins: [Phoenix.LiveView.HTMLFormatter],
+  plugins: [Phoenix.LiveView.HTMLFormatter, Quokka],
   inputs: ["*.{heex,ex,exs}", "{config,lib,test}/**/*.{heex,ex,exs}", "priv/*/*.exs"]
 ]

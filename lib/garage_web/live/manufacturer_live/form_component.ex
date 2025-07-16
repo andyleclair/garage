@@ -1,5 +1,6 @@
 defmodule GarageWeb.ManufacturerLive.FormComponent do
   use GarageWeb, :live_component
+
   alias Garage.Mopeds.Manufacturer
 
   @impl true

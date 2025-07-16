@@ -78,7 +78,8 @@ defmodule Garage.MixProject do
       {:sentry, "~> 10.0"},
       {:image, "~> 0.55"},
       {:oban, "~> 2.0"},
-      {:oban_web, "~> 2.0"}
+      {:oban_web, "~> 2.0"},
+      {:quokka, "~> 2.9", only: [:dev, :test], runtime: false}
       # {:crawly, "~> 0.16.0"},
     ]
   end

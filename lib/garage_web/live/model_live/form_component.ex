@@ -1,5 +1,6 @@
 defmodule GarageWeb.ModelLive.FormComponent do
   use GarageWeb, :live_component
+
   alias Garage.Mopeds.Carburetor
   alias Garage.Mopeds.Clutch
   alias Garage.Mopeds.Crank

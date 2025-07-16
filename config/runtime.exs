@@ -30,12 +30,6 @@ if config_env() == :prod do
 
   maybe_ipv6 = if System.get_env("ECTO_IPV6") in ~w(true 1), do: [:inet6], else: []
 
-  config :garage, Garage.Repo,
-    # ssl: true,
-    url: database_url,
-    pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
-    socket_options: maybe_ipv6
-
   # The secret key base is used to sign/encrypt cookies and other secrets.
   # A default value is used in config/dev.exs and config/test.exs but you
   # want to use a different value for prod and you most likely don't want
@@ -72,12 +66,27 @@ if config_env() == :prod do
       You can generate one by calling: mix generate.vapid.keys
       """
 
+  # ## Configuring the mailer
+  #
+  # In production you need to configure the mailer to use a different adapter.
+  # Also, you may need to configure the Swoosh API client of your choice if you
+  # are not using SMTP. Here is an example of the configuration:
+  #
+  config :garage, Garage.Mailer,
+    adapter: Swoosh.Adapters.Mailgun,
+    api_key: System.get_env("MAILGUN_API_KEY"),
+    domain: System.get_env("MAILGUN_DOMAIN")
+
   config :garage, Garage.Push,
     vapid_private_key: vapid_private_key,
     vapid_public_key: vapid_public_key,
     vapid_subject: vapid_subject
 
-  config :garage, :dns_cluster_query, System.get_env("DNS_CLUSTER_QUERY")
+  config :garage, Garage.Repo,
+    # ssl: true,
+    url: database_url,
+    pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
+    socket_options: maybe_ipv6
 
   config :garage, GarageWeb.Endpoint,
     url: [host: host, port: 443, scheme: "https"],
@@ -91,16 +100,7 @@ if config_env() == :prod do
     ],
     secret_key_base: secret_key_base
 
-  config :nostrum, token: System.get_env("NOSTRUM_TOKEN")
+  config :garage, :dns_cluster_query, System.get_env("DNS_CLUSTER_QUERY")
 
-  # ## Configuring the mailer
-  #
-  # In production you need to configure the mailer to use a different adapter.
-  # Also, you may need to configure the Swoosh API client of your choice if you
-  # are not using SMTP. Here is an example of the configuration:
-  #
-  config :garage, Garage.Mailer,
-    adapter: Swoosh.Adapters.Mailgun,
-    api_key: System.get_env("MAILGUN_API_KEY"),
-    domain: System.get_env("MAILGUN_DOMAIN")
+  config :nostrum, token: System.get_env("NOSTRUM_TOKEN")
 end

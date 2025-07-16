@@ -1,5 +1,6 @@
 defmodule GarageWeb.HomeLive.Index do
   use GarageWeb, :live_view
+
   import GarageWeb.Components.Builds.Card
 
   def render(assigns) do

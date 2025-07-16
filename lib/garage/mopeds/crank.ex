@@ -4,6 +4,7 @@ defmodule Garage.Mopeds.Crank do
     domain: Garage.Mopeds
 
   import Ash.Sort, only: [expr_sort: 2]
+
   alias Garage.Mopeds.Engine
 
   actions do

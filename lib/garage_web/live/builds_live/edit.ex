@@ -1,8 +1,7 @@
 defmodule GarageWeb.BuildsLive.Edit do
-  require Logger
-  alias Garage.Mopeds.Variator
-  alias Garage.Mopeds.Pulley
   use GarageWeb, :live_view
+
+  import GarageWeb.BuildsLive.Helpers
 
   alias AshPhoenix.Form
   alias ExAws.S3
@@ -17,8 +16,9 @@ defmodule GarageWeb.BuildsLive.Edit do
   alias Garage.Mopeds.Ignition
   alias Garage.Mopeds.Manufacturer
   alias Garage.Mopeds.Model
+  alias Garage.Mopeds.Pulley
+  alias Garage.Mopeds.Variator
 
-  import GarageWeb.BuildsLive.Helpers
   require Logger
 
   @impl true
@@ -44,8 +44,6 @@ defmodule GarageWeb.BuildsLive.Edit do
       models =
         if manufacturer_id = form_manufacturer_id(form) do
           Model.by_manufacturer_id!(manufacturer_id)
-        else
-          nil
         end
 
       {:ok,
@@ -477,7 +475,7 @@ defmodule GarageWeb.BuildsLive.Edit do
     end
   end
 
-  defp max_size() do
+  defp max_size do
     Application.get_env(:garage, :max_upload_size)
   end
 end

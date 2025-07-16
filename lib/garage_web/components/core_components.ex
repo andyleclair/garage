@@ -16,9 +16,9 @@ defmodule GarageWeb.CoreComponents do
   """
   use Phoenix.Component
   use GarageWeb, :verified_routes
+  use Gettext, backend: GarageWeb.Gettext
 
   alias Phoenix.LiveView.JS
-  use Gettext, backend: GarageWeb.Gettext
 
   @doc """
   Renders a modal.

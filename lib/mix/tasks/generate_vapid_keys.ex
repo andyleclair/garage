@@ -1,8 +1,8 @@
 defmodule Mix.Tasks.Generate.Vapid.Keys do
+  @shortdoc "Generate vapid keys"
   @moduledoc "The mix task: `mix help generate.vapid.keys`"
   use Mix.Task
 
-  @shortdoc "Generate vapid keys"
   def run(_args) do
     {public_key, private_key} = :crypto.generate_key(:ecdh, :prime256v1)
 

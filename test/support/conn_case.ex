@@ -19,15 +19,14 @@ defmodule GarageWeb.ConnCase do
 
   using do
     quote do
+      use GarageWeb, :verified_routes
+      import GarageWeb.ConnCase
+      import Phoenix.ConnTest
+      import Plug.Conn
       # The default endpoint for testing
       @endpoint GarageWeb.Endpoint
 
-      use GarageWeb, :verified_routes
-
       # Import conveniences for testing with connections
-      import Plug.Conn
-      import Phoenix.ConnTest
-      import GarageWeb.ConnCase
     end
   end
 

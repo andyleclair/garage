@@ -18,12 +18,12 @@ defmodule Garage.DataCase do
 
   using do
     quote do
-      alias Garage.Repo
-
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
       import Garage.DataCase
+
+      alias Garage.Repo
     end
   end
 

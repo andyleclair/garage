@@ -1,5 +1,6 @@
 defmodule GarageWeb.PulleyLive.FormComponent do
   use GarageWeb, :live_component
+
   alias Garage.Mopeds.Manufacturer
 
   @impl true
@@ -146,7 +147,7 @@ defmodule GarageWeb.PulleyLive.FormComponent do
     assign(socket, form: to_form(form))
   end
 
-  def manufacturer_options() do
+  def manufacturer_options do
     for manufacturer <- Manufacturer.by_category!(:pulleys),
         into: [],
         do: {manufacturer.name, manufacturer.id}

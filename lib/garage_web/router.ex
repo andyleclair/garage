@@ -1,12 +1,12 @@
 defmodule GarageWeb.Router do
   use GarageWeb, :router
   use AshAuthentication.Phoenix.Router
-  import AshAuthentication.Plug.Helpers
-
-  require Logger
 
   import AshAdmin.Router
+  import AshAuthentication.Plug.Helpers
   import Oban.Web.Router
+
+  require Logger
 
   pipeline :browser do
     plug :accepts, ["html"]

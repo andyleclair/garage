@@ -1,5 +1,6 @@
 defmodule GarageWeb.CrankLive.FormComponent do
   use GarageWeb, :live_component
+
   alias Garage.Mopeds.Engine
   alias Garage.Mopeds.Manufacturer
 
@@ -144,13 +145,13 @@ defmodule GarageWeb.CrankLive.FormComponent do
     assign(socket, form: to_form(form))
   end
 
-  def manufacturer_options() do
+  def manufacturer_options do
     for manufacturer <- Manufacturer.by_category!(:cranks),
         into: [],
         do: {manufacturer.name, manufacturer.id}
   end
 
-  def engine_options() do
+  def engine_options do
     for engine <- Engine.read_all!(load: [:manufacturer]),
         into: [],
         do: {"#{engine.manufacturer.name} #{engine.name}", engine.id}
