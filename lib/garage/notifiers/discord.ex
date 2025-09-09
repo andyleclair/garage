@@ -39,8 +39,9 @@ defmodule Garage.Notifiers.Discord do
     message "#{user.username} just deleted their build, RIP #{data.name}"
   end
 
+  # TODO: load the build on comment create so we can have this data
   def notify(%Notification{resource: Comment, data: data, action: %{name: :create}, actor: user}) do
-    message "#{user.username} just commented on #{data.name} #{@site_url}/builds/#{data.slug}"
+    message "#{user.username} just commented \"#{data.text}\" on build #{data.build_id}"
   end
 
   # Ash.Notifier is giving us a call here and we need to pattern-match
@@ -56,5 +57,4 @@ defmodule Garage.Notifiers.Discord do
   defp enabled? do
     Application.get_env(:garage, :env) in [:dev, :prod]
   end
-
 end
