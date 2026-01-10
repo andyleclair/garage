@@ -6,7 +6,7 @@ defmodule Garage.Notifiers.Discord do
   alias Garage.Accounts.User
   alias Garage.Builds.Build
   alias Garage.Builds.Comment
-  alias Nostrum.Api
+  alias Nostrum.Api.Message
 
   @channel Application.compile_env(:garage, :discord_channel)
   @site_url Application.compile_env(:garage, :site_url)
@@ -48,7 +48,7 @@ defmodule Garage.Notifiers.Discord do
   # what we want to be notified about, but the message handling is pretty same-y
   defp message(str) do
     if enabled?() do
-      Api.create_message!(@channel, str)
+      Message.create(@channel, content: str)
     end
 
     :ok

@@ -10,6 +10,7 @@ defmodule Garage.MixProject do
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       consolidate_protocols: Mix.env() != :dev,
+      listeners: [Phoenix.CodeReloader],
       deps: deps()
     ]
   end
@@ -33,7 +34,7 @@ defmodule Garage.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.7.9"},
+      {:phoenix, "~> 1.8"},
       {:phoenix_ecto, "~> 4.4"},
       {:ecto_sql, "~> 3.10"},
       {:postgrex, ">= 0.0.0"},
@@ -50,15 +51,15 @@ defmodule Garage.MixProject do
       {:floki, ">= 0.30.0"},
       {:phoenix_live_dashboard, "~> 0.8.2"},
       {:esbuild, "~> 0.7", runtime: Mix.env() == :dev},
-      {:tailwind, "~> 0.3.0", runtime: Mix.env() == :dev},
+      {:tailwind, "~> 0.4.0", runtime: Mix.env() == :dev},
       {:swoosh, "~> 1.3"},
       {:finch, "~> 0.18"},
       {:telemetry_metrics, "~> 1.0"},
       {:telemetry_poller, "~> 1.0"},
-      {:gettext, "~> 0.20"},
+      {:gettext, "~> 1.0", override: true},
       {:jason, "~> 1.2"},
-      {:dns_cluster, "~> 0.1.1"},
-      {:bandit, "~> 1.0-pre"},
+      {:dns_cluster, "~> 0.2"},
+      {:bandit, "~> 1.0"},
       {:live_select, "~> 1.4"},
       {:ex_aws, "~> 2.0"},
       {:ex_aws_s3, "~> 2.0"},
@@ -66,16 +67,15 @@ defmodule Garage.MixProject do
       {:timex, "~> 3.0"},
       {:req, "~> 0.4"},
       {:recase, "~> 0.0"},
-      {:ash, "~> 3.4"},
+      {:ash, "~> 3.11"},
       {:ash_postgres, "~> 2.0"},
       {:ash_phoenix, "~> 2.0"},
       {:ash_authentication, "~> 4.0"},
       {:ash_authentication_phoenix, "~> 2.0"},
       {:ash_admin, "~> 0.11"},
-      {:igniter, "~> 0.5"},
+      {:igniter, "~> 0.6"},
       {:picosat_elixir, "0.2.3"},
-      {:nostrum, "~> 0.8.0"},
-      {:sentry, "~> 10.0"},
+      {:nostrum, "~> 0.10.0", runtime: false},
       {:image, "~> 0.55"},
       {:oban, "~> 2.0"},
       {:oban_web, "~> 2.0"}

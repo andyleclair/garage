@@ -79,6 +79,8 @@ config :garage, Oban,
   repo: Garage.Repo,
   queues: [resize: 20, push: 20]
 
+config :nostrum, ffmpeg: false
+
 # config :crawly,
 #  closespider_timeout: 10,
 #  concurrent_requests_per_domain: 8,
