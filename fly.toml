@@ -4,7 +4,7 @@
 #
 
 app = "mopeds"
-primary_region = "bos"
+primary_region = "ewr"
 kill_signal = "SIGTERM"
 swap_size_mb = 512
 
