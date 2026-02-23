@@ -209,7 +209,7 @@
       </h2>
 
       <div
-        class="md:grid md:grid-cols-4 md:gap-4"
+        class="md:grid md:grid-cols-4 md:gap-4 touch-pan-y"
         id="edit-gallery"
         phx-hook="Sortable"
         data-list_id={@build.id}
@@ -217,7 +217,7 @@
         <div
           :for={%Image{id: id, optimized_url: image_url} <- @images}
           id={"image-#{id}"}
-          class="hover:cursor-grab active:cursor-grabbing relative drag-item:focus-within:ring-0 drag-item:focus-within:ring-offset-0 drag-ghost:bg-zinc-300 drag-ghost:border-0 drag-ghost:ring-0"
+          class="cursor-grab hover:shadow-md rounded-lg mb-4 md:mb-0 relative transition-all duration-200"
           data-id={"image-#{id}"}
         >
           <div class="drag-ghost:opacity-0">

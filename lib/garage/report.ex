@@ -1,9 +1,9 @@
 defmodule Garage.Report do
-  alias Nostrum.Api
+  alias Nostrum.Api.Message
 
   @channel 1_230_003_347_592_052_776
 
   def report_image(url) do
-    Api.create_message!(@channel, "Image Reported: #{url}")
+    Message.create(@channel, content: "Image Reported: #{url}")
   end
 end

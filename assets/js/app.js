@@ -65,9 +65,12 @@ const hooks = {
       new Sortable(this.el, {
         animation: 150,
         delay: 25,
+        delayOnTouchOnly: true,      // Only delay drag start on touch devices
+        touchStartThreshold: 3,      // Require 3px movement before drag starts
         dragClass: "drag-item",
         ghostClass: "drag-ghost",
-        forceFallback: true,
+        chosenClass: "drag-chosen",  // Class applied to chosen item
+        // forceFallback: true,      // REMOVED: Let Sortable use native drag when possible
         onEnd: e => {
           let params = { old: e.oldIndex, new: e.newIndex, ...e.item.dataset };
           this.pushEventTo(this.el, "reposition", params);

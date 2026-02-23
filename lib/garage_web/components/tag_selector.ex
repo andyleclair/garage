@@ -9,6 +9,7 @@ defmodule GarageWeb.Components.TagSelector do
     required: true,
     doc: "Function to call when a tag is added or removed"
 
+  @impl true
   def render(assigns) do
     ~H"""
     <div id={@id} phx-hook="TagSelector">

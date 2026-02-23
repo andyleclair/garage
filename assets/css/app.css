@@ -53,3 +53,44 @@ h2 {
 }
 
 input[disabled] { @apply cursor-not-allowed; }
+
+/* Touch behavior utilities for better scroll performance */
+@utility touch-pan-y {
+  touch-action: pan-y;
+}
+
+@utility touch-pan-x {
+  touch-action: pan-x;
+}
+
+@utility touch-pan-xy {
+  touch-action: pan-x pan-y;
+}
+
+@utility touch-none {
+  touch-action: none;
+}
+
+/* Sortable drag and drop improvements */
+#edit-gallery {
+  touch-action: pan-y;  /* Allow vertical scrolling */
+}
+
+#edit-gallery > div {
+  touch-action: auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Visual feedback for drag states */
+.drag-chosen {
+  @apply ring-2 ring-blue-400 ring-offset-2 shadow-lg scale-105;
+  cursor: grabbing !important;
+}
+
+.drag-item {
+  @apply cursor-grabbing opacity-80;
+}
+
+.drag-ghost {
+  @apply bg-zinc-200 border-2 border-dashed border-zinc-400 ring-0 opacity-60;
+}
