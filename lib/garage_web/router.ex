@@ -1,7 +1,6 @@
 defmodule GarageWeb.Router do
   use GarageWeb, :router
   use AshAuthentication.Phoenix.Router
-  import AshAuthentication.Plug.Helpers
 
   require Logger
 

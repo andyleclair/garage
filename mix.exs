@@ -70,15 +70,16 @@ defmodule Garage.MixProject do
       {:ash, "~> 3.11"},
       {:ash_postgres, "~> 2.0"},
       {:ash_phoenix, "~> 2.0"},
-      {:ash_authentication, "~> 4.0"},
-      {:ash_authentication_phoenix, "~> 2.0"},
+      {:ash_authentication, "~> 5.0-rc.0"},
+      {:ash_authentication_phoenix, "~> 3.0-rc.0"},
       {:ash_admin, "~> 0.11"},
       {:igniter, "~> 0.6"},
       {:picosat_elixir, "0.2.3"},
       {:nostrum, "~> 0.10.0", runtime: false},
       {:image, "~> 0.55"},
       {:oban, "~> 2.0"},
-      {:oban_web, "~> 2.0"}
+      {:oban_web, "~> 2.0"},
+      {:eqrcode, "~> 0.1"}
       # {:crawly, "~> 0.16.0"},
     ]
   end

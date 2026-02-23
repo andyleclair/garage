@@ -69,7 +69,7 @@ defmodule Garage.Accounts.User do
 
   authentication do
     subject_name :user
-    session_identifier :jti
+    # session_identifier :jti
 
     strategies do
       password :password do
@@ -90,7 +90,8 @@ defmodule Garage.Accounts.User do
 
       tokens do
         enabled? true
-        # require_token_presence_for_authentication? true
+        require_token_presence_for_authentication? true
+        store_all_tokens? true
         token_resource Garage.Accounts.Token
 
         signing_secret Garage.Accounts.Secrets
