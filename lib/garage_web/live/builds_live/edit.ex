@@ -55,7 +55,7 @@ defmodule GarageWeb.BuildsLive.Edit do
 
       {:ok,
        socket
-       |> assign(:title, "Edit Build - #{build.name}")
+       |> assign(:page_title, "Edit Build - #{build.name}")
        |> assign(:build, build)
        |> assign_form(form)
        |> assign(:manufacturer_options, to_options(manufacturers))

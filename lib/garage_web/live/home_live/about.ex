@@ -23,4 +23,8 @@ defmodule GarageWeb.HomeLive.About do
     </article>
     """
   end
+
+  def mount(_params, _session, socket) do
+    {:ok, socket |> assign(:page_title, "About")}
+  end
 end

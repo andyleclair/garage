@@ -79,7 +79,8 @@ defmodule Garage.MixProject do
       {:image, "~> 0.55"},
       {:oban, "~> 2.0"},
       {:oban_web, "~> 2.0"},
-      {:eqrcode, "~> 0.1"}
+      {:eqrcode, "~> 0.1"},
+      {:mdex, "~> 0.2"}
       # {:crawly, "~> 0.16.0"},
     ]
   end

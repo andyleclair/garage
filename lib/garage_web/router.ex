@@ -119,6 +119,8 @@ defmodule GarageWeb.Router do
       live "/builds", BuildsLive.Index, :index
       live "/builds/:build", BuildsLive.Show, :show
 
+      live "/news", NewsLive.Index, :index
+
       live "/about", HomeLive.About, :about
       live "/privacy", HomeLive.Privacy, :privacy
       live "/u/:username", UsersLive.Show, :show
