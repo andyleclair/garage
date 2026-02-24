@@ -1,9 +1,17 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "engines"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "125 Semi-Auto Stock Clutch"
+    },
+    {
+      "name": "110cc Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "125 Semi-Auto Stock Crank"

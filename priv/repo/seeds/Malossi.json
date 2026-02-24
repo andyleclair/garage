@@ -1,13 +1,24 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "engines",
     "ignitions",
     "pulleys",
     "variators",
     "cylinders"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "D.E.P.S. Stock Clutch"
+    },
+    {
+      "name": "Vespa Stock Clutch"
+    },
+    {
+      "name": "Peugeot 103 Reed Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "D.E.P.S. Stock Crank"

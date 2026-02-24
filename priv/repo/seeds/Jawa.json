@@ -1,12 +1,20 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "cranks",
     "engines",
     "ignitions",
     "mopeds"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "207 Stock Clutch"
+    },
+    {
+      "name": "210 2 Speed Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "207 Stock Crank"

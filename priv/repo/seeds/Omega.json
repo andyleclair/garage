@@ -1,9 +1,14 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "engines"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "Motobecane AV10 Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "Motobecane AV10 Stock Crank"

@@ -1,6 +1,7 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "cranks",
     "cylinders",
     "engines",
@@ -8,7 +9,23 @@
     "mopeds",
     "pulleys"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "Dimoby Stock Clutch"
+    },
+    {
+      "name": "Isodyne Stock Clutch"
+    },
+    {
+      "name": "AV88 Stock Clutch"
+    },
+    {
+      "name": "AV10 Stock Clutch"
+    },
+    {
+      "name": "AV7 Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "Dimoby Stock Crank"

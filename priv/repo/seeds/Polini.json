@@ -11,12 +11,26 @@
     }
   ],
   "categories": [
+    "clutches",
     "engines",
     "exhausts",
     "cylinders",
     "carburetors"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "Pro Peugeot Stock Clutch"
+    },
+    {
+      "name": "Peugeot Reed Stock Clutch"
+    },
+    {
+      "name": "Budget Peugeot Stock Clutch"
+    },
+    {
+      "name": "Motobecane AV10 Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "Pro Peugeot Stock Crank"

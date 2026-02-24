@@ -1,13 +1,21 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "cranks",
     "engines",
     "ignitions",
     "mopeds",
     "pulleys"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "Laura M56 Stock Clutch"
+    },
+    {
+      "name": "Laura M48 Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "Laura M56 Stock Crank"

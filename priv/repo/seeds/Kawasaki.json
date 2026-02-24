@@ -1,9 +1,14 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "engines"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "KX65 Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "KX65 Stock Crank"

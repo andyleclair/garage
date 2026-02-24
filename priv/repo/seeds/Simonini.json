@@ -1,10 +1,15 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "engines",
     "exhausts"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "Vespa Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "Vespa Stock Crank"

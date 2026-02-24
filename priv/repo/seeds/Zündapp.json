@@ -1,12 +1,17 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "cranks",
     "engines",
     "ignitions",
     "mopeds"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "278 Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "278 Stock Crank"

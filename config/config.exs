@@ -77,7 +77,7 @@ config :garage,
 
 config :garage, Oban,
   repo: Garage.Repo,
-  queues: [resize: 20, push: 20]
+  queues: [resize: 20, push: 20, imports: 5]
 
 config :nostrum, ffmpeg: false
 

@@ -1,9 +1,14 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "engines"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "R80 Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "R80 Stock Crank"

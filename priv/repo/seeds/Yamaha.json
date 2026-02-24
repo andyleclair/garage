@@ -1,12 +1,32 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "cranks",
     "engines",
     "ignitions",
     "mopeds"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "RD60 Stock Clutch"
+    },
+    {
+      "name": "QT50 Stock Clutch"
+    },
+    {
+      "name": "PW80 Stock Clutch"
+    },
+    {
+      "name": "LB80 Stock Clutch"
+    },
+    {
+      "name": "LB50 Stock Clutch"
+    },
+    {
+      "name": "G6SB Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "RD60 Stock Crank"

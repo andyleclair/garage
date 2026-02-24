@@ -1,9 +1,17 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "engines"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "Califfo 2 Speed Stock Clutch"
+    },
+    {
+      "name": "Califfo 1 Speed Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "Califfo 2 Speed Stock Crank"

@@ -1,6 +1,7 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "cranks",
     "cylinders",
     "engines",
@@ -8,7 +9,23 @@
     "mopeds",
     "pulleys"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "Piaggio Stock Clutch"
+    },
+    {
+      "name": "Polini Evolution Stock Clutch"
+    },
+    {
+      "name": "Polini Speed Stock Clutch"
+    },
+    {
+      "name": "Polini Reed Stock Clutch"
+    },
+    {
+      "name": "MP-ONE Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "Piaggio Stock Crank"

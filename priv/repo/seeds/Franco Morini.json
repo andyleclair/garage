@@ -1,9 +1,32 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "engines"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "S5K2 Stock Clutch"
+    },
+    {
+      "name": "P4S Stock Clutch"
+    },
+    {
+      "name": "MO2 Stock Clutch"
+    },
+    {
+      "name": "MO1 Stock Clutch"
+    },
+    {
+      "name": "MK1 Stock Clutch"
+    },
+    {
+      "name": "M101 Stock Clutch"
+    },
+    {
+      "name": "M1 Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "S5K2 Stock Crank"

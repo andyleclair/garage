@@ -1,10 +1,15 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "engines",
     "cylinders"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "Peugeot 103 Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "Peugeot 103 Stock Crank"

@@ -1,6 +1,7 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "cranks",
     "cylinders",
     "engines",
@@ -8,7 +9,17 @@
     "mopeds",
     "pulleys"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "103SPX Stock Clutch"
+    },
+    {
+      "name": "103SP Stock Clutch"
+    },
+    {
+      "name": "102 Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "103SPX Stock Crank"

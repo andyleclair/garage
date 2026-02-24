@@ -1,13 +1,24 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "cranks",
     "cylinders",
     "engines",
     "ignitions",
     "mopeds"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "A55 Stock Clutch"
+    },
+    {
+      "name": "A35 Stock Clutch"
+    },
+    {
+      "name": "A3 Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "A55 Stock Crank"

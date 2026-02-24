@@ -226,4 +226,120 @@ defmodule Garage.Seeds do
       if part in [:models, "models"], do: :mopeds, else: part
     end
   end
+
+  @doc """
+  Generates stock clutches for manufacturers that have engines but no clutches.
+
+  This reads all seed JSON files, and for each manufacturer that has engines
+  but an empty clutches array, it generates stock clutches based on the engine names.
+
+  Run with: Garage.Seeds.generate_stock_clutches()
+  """
+  def generate_stock_clutches do
+    seeds_dir = Path.join([:code.priv_dir(:garage), "repo", "seeds"])
+
+    Path.join(seeds_dir, "*.json")
+    |> Path.wildcard()
+    |> Enum.each(fn path ->
+      content = File.read!(path) |> Jason.decode!()
+
+      engines = Map.get(content, "engines", [])
+      clutches = Map.get(content, "clutches", [])
+
+      # Only generate if there are engines but no clutches
+      if engines != [] and clutches == [] do
+        manufacturer_name = Map.get(content, "name", Path.basename(path, ".json"))
+
+        # Generate stock clutches from engines
+        stock_clutches =
+          engines
+          |> Enum.map(fn %{"name" => name} -> %{"name" => "#{name} Stock Clutch"} end)
+          |> Enum.uniq()
+
+        IO.puts("Adding #{length(stock_clutches)} stock clutches for #{manufacturer_name}")
+
+        updated_content =
+          content
+          |> Map.put("clutches", stock_clutches)
+          |> update_categories_if_needed()
+          |> Jason.encode!()
+          |> Jason.Formatter.pretty_print()
+
+        File.write!(path, updated_content)
+      end
+    end)
+
+    IO.puts("\nDone! Run `mix run priv/repo/seeds.exs` to reload seeds.")
+  end
+
+  # Ensure "clutches" is in categories if clutches were added
+  defp update_categories_if_needed(content) do
+    categories = Map.get(content, "categories", [])
+    clutches = Map.get(content, "clutches", [])
+
+    if clutches != [] and "clutches" not in categories and :clutches not in categories do
+      Map.put(content, "categories", ["clutches" | categories])
+    else
+      content
+    end
+  end
+
+  @doc """
+  Adds missing stock clutches directly to the database for existing manufacturers.
+
+  For each manufacturer with engines but no clutches, this creates stock clutches
+  named "{engine_name} Stock Clutch".
+
+  Run with: Garage.Seeds.add_missing_stock_clutches()
+  """
+  def add_missing_stock_clutches do
+    require Ash.Query
+    alias Garage.Mopeds.{Manufacturer, Engine, Clutch}
+
+    # Get all manufacturers
+    manufacturers = Manufacturer.read_all!()
+
+    Enum.each(manufacturers, fn manufacturer ->
+      mfr_id = manufacturer.id
+
+      # Get engines for this manufacturer
+      engines =
+        Engine
+        |> Ash.Query.filter(manufacturer_id == ^mfr_id)
+        |> Ash.read!()
+
+      # Get existing clutches for this manufacturer
+      existing_clutches =
+        Clutch
+        |> Ash.Query.filter(manufacturer_id == ^mfr_id)
+        |> Ash.read!()
+
+      existing_clutch_names = MapSet.new(existing_clutches, & &1.name)
+
+      # Generate stock clutch names from engines
+      stock_clutch_names =
+        engines
+        |> Enum.map(fn engine -> "#{engine.name} Stock Clutch" end)
+        |> Enum.reject(fn name -> MapSet.member?(existing_clutch_names, name) end)
+
+      if stock_clutch_names != [] do
+        IO.puts("Adding #{length(stock_clutch_names)} clutches for #{manufacturer.name}")
+
+        Enum.each(stock_clutch_names, fn name ->
+          changeset =
+            Ash.Changeset.for_create(Clutch, :create, %{name: name, manufacturer_id: mfr_id})
+
+          case Ash.create(changeset) do
+            {:ok, _clutch} ->
+              IO.puts("  Created: #{name}")
+
+            {:error, error} ->
+              IO.puts("  Failed to create #{name}: #{inspect(error)}")
+          end
+        end)
+      end
+    end)
+
+    IO.puts("\nDone!")
+  end
 end

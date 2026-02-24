@@ -1,12 +1,23 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "cranks",
     "engines",
     "ignitions",
     "mopeds"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "VIP Stock Clutch"
+    },
+    {
+      "name": "Team Stock Clutch"
+    },
+    {
+      "name": "NOI Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "VIP Stock Crank"

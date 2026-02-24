@@ -1,12 +1,17 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "cranks",
     "engines",
     "ignitions",
     "mopeds"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "G2 Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "G2 Stock Crank"

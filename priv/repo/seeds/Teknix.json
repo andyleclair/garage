@@ -1,9 +1,17 @@
 {
   "carburetors": [],
   "categories": [
+    "clutches",
     "engines"
   ],
-  "clutches": [],
+  "clutches": [
+    {
+      "name": "Peugeot 103 Stock Clutch"
+    },
+    {
+      "name": "Motobecane AV10 Stock Clutch"
+    }
+  ],
   "cranks": [
     {
       "name": "Peugeot 103 Stock Crank"

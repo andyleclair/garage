@@ -18,6 +18,7 @@ defmodule GarageWeb.BuildsLive.Helpers do
   end
 
   def year_options() do
-    2023..1900//-1 |> Enum.to_list()
+    current_year = Date.utc_today().year
+    current_year..1900//-1 |> Enum.to_list()
   end
 end
