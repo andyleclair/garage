@@ -75,7 +75,7 @@ defmodule Garage.MixProject do
       {:ash_admin, "~> 0.11"},
       {:igniter, "~> 0.6"},
       {:picosat_elixir, "0.2.3"},
-      {:nostrum, "~> 0.10.0", runtime: false},
+      {:nostrum, "~> 0.10.0"},
       {:image, "~> 0.55"},
       {:oban, "~> 2.0"},
       {:oban_web, "~> 2.0"},

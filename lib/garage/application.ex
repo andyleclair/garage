@@ -20,6 +20,7 @@ defmodule Garage.Application do
       {Finch, name: Garage.Finch},
       {AshAuthentication.Supervisor, otp_app: :garage},
       {Task.Supervisor, name: Garage.TaskSupervisor},
+      Garage.DiscordConsumer,
       # Start to serve requests, typically the last entry
       GarageWeb.Endpoint
     ]

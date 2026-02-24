@@ -46,7 +46,7 @@ defmodule Garage.Notifiers.Discord do
 
   # Ash.Notifier is giving us a call here and we need to pattern-match
   # what we want to be notified about, but the message handling is pretty same-y
-  defp message(str) do
+  def message(str) do
     if enabled?() do
       Message.create(@channel, content: str)
     end
@@ -55,6 +55,7 @@ defmodule Garage.Notifiers.Discord do
   end
 
   defp enabled? do
-    Application.get_env(:garage, :env) in [:prod]
+    true
+    # Application.get_env(:garage, :env) in [:prod]
   end
 end
