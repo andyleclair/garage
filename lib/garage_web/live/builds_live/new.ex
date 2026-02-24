@@ -152,13 +152,18 @@ defmodule GarageWeb.BuildsLive.New do
 
   defp import_preview(assigns) do
     ~H"""
-    <div class="border rounded-lg p-4 mt-4 bg-gray-50 dark:bg-gray-800">
-      <h3 class="font-bold text-lg mb-2">{@preview.name}</h3>
+    <div class="border rounded-lg p-4 mt-4 bg-gray-50">
+      <.input
+        field={@import_form[:name]}
+        type="text"
+        label="Build Name"
+      />
 
       <%= if @preview.description && @preview.description != "" do %>
-        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-3">
-          {@preview.description}
-        </p>
+        <h4 class="font-semibold text-sm my-2">Description</h4>
+        <div class="text-sm text-gray-600 mb-4 trix-content">
+          {raw(@preview.description)}
+        </div>
       <% end %>
       
     <!-- Image thumbnails -->
@@ -207,7 +212,7 @@ defmodule GarageWeb.BuildsLive.New do
               debounce="250"
             />
           <% else %>
-            <label class="block text-sm font-semibold leading-6 text-zinc-800 dark:text-zinc-200">
+            <label class="block text-sm font-semibold leading-6 text-zinc-800">
               Model *
             </label>
             <p class="text-sm text-gray-500 mt-2">Select a manufacturer first</p>
@@ -222,10 +227,10 @@ defmodule GarageWeb.BuildsLive.New do
           <ul class="text-sm space-y-1">
             <%= for {category, part} <- @preview.parts do %>
               <li class="flex items-center gap-2">
-                <span class="font-medium text-gray-700 dark:text-gray-300 w-24">
+                <span class="font-medium text-gray-700 w-24">
                   {humanize_category(category)}:
                 </span>
-                <span class="text-gray-600 dark:text-gray-400">{format_part(part)}</span>
+                <span class="text-gray-600">{format_part(part)}</span>
                 <%= if PartsMatcher.matched?(@matched_parts, category) do %>
                   <span class="inline-flex items-center rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800">
                     Matched
@@ -286,7 +291,10 @@ defmodule GarageWeb.BuildsLive.New do
       end
 
     import_form =
-      to_form(%{"url" => "", "manufacturer_id" => nil, "model_id" => nil, "year" => nil})
+      to_form(
+        %{"url" => "", "name" => "", "manufacturer_id" => nil, "model_id" => nil, "year" => nil},
+        as: "import_form"
+      )
 
     {:ok,
      socket
@@ -377,11 +385,13 @@ defmodule GarageWeb.BuildsLive.New do
 
   @impl true
   def handle_event("import-validate", params, socket) do
-    url = get_url_from_params(params)
+    # Form params may be nested under "import_form" key or at top level
+    form_params = Map.get(params, "import_form", params)
+    url = get_url_from_params(form_params)
 
     # Update model options if manufacturer changed
     socket =
-      case Map.get(params, "manufacturer_id") do
+      case Map.get(form_params, "manufacturer_id") do
         nil ->
           socket
 
@@ -408,7 +418,7 @@ defmodule GarageWeb.BuildsLive.New do
         socket
       end
 
-    import_form = to_form(params, as: "import_form")
+    import_form = to_form(form_params, as: "import_form")
     {:noreply, assign(socket, :import_form, import_form)}
   end
 
@@ -436,14 +446,21 @@ defmodule GarageWeb.BuildsLive.New do
     user = socket.assigns.current_user
     matched_parts = socket.assigns.matched_parts
 
-    manufacturer_id = Map.get(params, "manufacturer_id")
-    model_id = Map.get(params, "model_id")
-    year = Map.get(params, "year") || preview.year
+    # Form params may be nested under "import_form" key or at top level
+    form_params = Map.get(params, "import_form", params)
+
+    name = Map.get(form_params, "name") || (preview && preview.name)
+    manufacturer_id = Map.get(form_params, "manufacturer_id")
+    model_id = Map.get(form_params, "model_id")
+    year = Map.get(form_params, "year") || (preview && preview.year)
 
     # Validate required fields
     cond do
       is_nil(preview) ->
         {:noreply, assign(socket, :import_error, "No build preview loaded")}
+
+      is_nil(name) or name == "" ->
+        {:noreply, assign(socket, :import_error, "Please enter a build name")}
 
       is_nil(manufacturer_id) or manufacturer_id == "" ->
         {:noreply, assign(socket, :import_error, "Please select a manufacturer")}
@@ -464,7 +481,7 @@ defmodule GarageWeb.BuildsLive.New do
 
         case Build.create(
                %{
-                 name: preview.name,
+                 name: name,
                  description: description,
                  year: year_int,
                  manufacturer_id: manufacturer_id,
@@ -476,30 +493,70 @@ defmodule GarageWeb.BuildsLive.New do
             # Apply matched tunings
             apply_matched_parts(build, matched_parts, preview.parts, user)
 
-            # Queue background image import if there are images
+            # Create placeholder images immediately so they show up right away
+            # Then queue background job to download and re-upload to S3
             if length(preview.image_urls) > 0 do
-              %{
-                "build_id" => build.id,
-                "image_urls" => preview.image_urls,
-                "username" => user.username,
-                "build_name" => build.name
-              }
-              |> Garage.Workers.ImportImages.new()
-              |> Oban.insert!()
+              images =
+                Garage.Workers.ImportImages.create_placeholder_images(
+                  build.id,
+                  preview.image_urls
+                )
+
+              # Queue job to process images (download from '77 Garage, upload to S3)
+              if length(images) > 0 do
+                %{
+                  "build_id" => build.id,
+                  "image_ids" => Enum.map(images, & &1.id),
+                  "username" => user.username,
+                  "build_name" => build.name
+                }
+                |> Garage.Workers.ImportImages.new()
+                |> Oban.insert!()
+              end
             end
 
             {:noreply,
              socket
              |> put_flash(
                :info,
-               "Build imported! #{length(preview.image_urls)} image(s) are being processed in the background."
+               "Build imported! Images are being processed in the background."
              )
              |> push_navigate(to: ~p"/builds/#{build.slug}/edit")}
 
           {:error, error} ->
-            {:noreply, assign(socket, :import_error, "Failed to create build: #{inspect(error)}")}
+            {:noreply, assign(socket, :import_error, format_build_error(error))}
         end
     end
+  end
+
+  defp format_build_error(%Ash.Error.Invalid{errors: errors}) do
+    errors
+    |> Enum.map(&format_ash_error/1)
+    |> Enum.join(", ")
+  end
+
+  defp format_build_error(error) do
+    "Failed to create build: #{inspect(error)}"
+  end
+
+  defp format_ash_error(%Ash.Error.Changes.InvalidAttribute{field: field, message: message}) do
+    field_name = field |> to_string() |> String.replace("_", " ") |> String.capitalize()
+
+    case message do
+      "has already been taken" ->
+        "A build with this name already exists. Please choose a different name."
+
+      msg ->
+        "#{field_name} #{msg}"
+    end
+  end
+
+  defp format_ash_error(%{message: message}) when is_binary(message) do
+    message
+  end
+
+  defp format_ash_error(error) do
+    "An error occurred: #{inspect(error)}"
   end
 
   # Helper for import-validate
@@ -534,6 +591,7 @@ defmodule GarageWeb.BuildsLive.New do
           to_form(
             %{
               "url" => url,
+              "name" => preview.name,
               "manufacturer_id" => matched_manufacturer_id,
               "model_id" => matched_model_id,
               "year" => preview.year

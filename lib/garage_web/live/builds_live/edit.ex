@@ -26,6 +26,11 @@ defmodule GarageWeb.BuildsLive.Edit do
     build = Build.get_by_slug!(slug)
 
     if Build.can_update?(assigns.current_user, build) do
+      # Subscribe to image updates for this build
+      if connected?(socket) do
+        Garage.Workers.ImportImages.subscribe(build.id)
+      end
+
       form = form(build, assigns.current_user)
 
       year_options = year_options()
@@ -271,6 +276,31 @@ defmodule GarageWeb.BuildsLive.Edit do
         async_delete_images(uploaded_files)
         {:noreply, assign_form(socket, form)}
     end
+  end
+
+  # Handle PubSub messages for image updates
+  @impl true
+  def handle_info({:image_updated, updated_image}, socket) do
+    # Update the image in our list
+    images =
+      socket.assigns.images
+      |> Enum.map(fn img ->
+        if img.id == updated_image.id, do: updated_image, else: img
+      end)
+
+    {:noreply, assign(socket, :images, images)}
+  end
+
+  @impl true
+  def handle_info({:import_complete, successful, failed}, socket) do
+    message =
+      if failed > 0 do
+        "Image import complete: #{successful} succeeded, #{failed} failed"
+      else
+        "All #{successful} images imported successfully!"
+      end
+
+    {:noreply, put_flash(socket, :info, message)}
   end
 
   defp create_resize_jobs(images) do

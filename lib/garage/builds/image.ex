@@ -5,7 +5,7 @@ defmodule Garage.Builds.Image do
     defaults [:read, :destroy, create: :*, update: :*]
 
     create :manual_create do
-      accept [:original_url, :thumbnail_url, :optimized_url]
+      accept [:original_url, :thumbnail_url, :optimized_url, :index]
 
       argument :build_id, :uuid do
         allow_nil? false

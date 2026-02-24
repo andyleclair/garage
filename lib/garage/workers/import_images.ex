@@ -2,8 +2,8 @@ defmodule Garage.Workers.ImportImages do
   @moduledoc """
   Oban worker that downloads images from '77 Garage and uploads them to S3/R2.
 
-  This worker is queued after a build is imported, allowing the build to be
-  created immediately while images are processed in the background.
+  This worker processes images that were already created with original '77 Garage URLs.
+  It downloads each image, uploads to S3, updates the record, and broadcasts via PubSub.
   """
 
   use Oban.Worker, queue: :imports, max_attempts: 3
@@ -12,44 +12,115 @@ defmodule Garage.Workers.ImportImages do
 
   alias Garage.Builds.Image
 
+  @pubsub Garage.PubSub
+
+  @doc """
+  Creates image records immediately with original URLs so they display right away.
+  Returns the list of created images.
+  """
+  def create_placeholder_images(build_id, image_urls) do
+    image_urls
+    |> Enum.with_index()
+    |> Enum.map(fn {url, index} ->
+      case Image.create(%{build_id: build_id, original_url: url, index: index}) do
+        {:ok, image} ->
+          image
+
+        {:error, reason} ->
+          Logger.error("Failed to create placeholder image: #{inspect(reason)}")
+          nil
+      end
+    end)
+    |> Enum.reject(&is_nil/1)
+  end
+
+  @doc """
+  Broadcasts an image update to subscribers.
+  """
+  def broadcast_image_update(build_id, image) do
+    Phoenix.PubSub.broadcast(@pubsub, "build:#{build_id}:images", {:image_updated, image})
+  end
+
+  @doc """
+  Subscribe to image updates for a build.
+  """
+  def subscribe(build_id) do
+    Phoenix.PubSub.subscribe(@pubsub, "build:#{build_id}:images")
+  end
+
   @impl Oban.Worker
   def perform(%Oban.Job{
         args: %{
           "build_id" => build_id,
-          "image_urls" => image_urls,
+          "image_ids" => image_ids,
           "username" => username,
           "build_name" => build_name
         }
       }) do
-    Logger.info("Starting image import for build #{build_id} - #{length(image_urls)} images")
+    Logger.info("Starting image import for build #{build_id} - #{length(image_ids)} images")
 
     results =
-      image_urls
-      |> Enum.with_index()
-      |> Enum.map(fn {url, index} ->
-        case download_and_upload(url, username, build_name) do
-          {:ok, public_url} ->
-            create_image_record(build_id, public_url, index)
-
-          {:error, reason} ->
-            Logger.error("Failed to import image #{url}: #{inspect(reason)}")
-            {:error, reason}
-        end
+      image_ids
+      |> Enum.map(fn image_id ->
+        process_image(image_id, username, build_name, build_id)
       end)
 
-    successful = Enum.count(results, &match?({:ok, _}, &1))
+    successful = Enum.count(results, &match?(:ok, &1))
     failed = Enum.count(results, &match?({:error, _}, &1))
 
     Logger.info(
       "Image import complete for build #{build_id}: #{successful} successful, #{failed} failed"
     )
 
+    # Broadcast completion
+    Phoenix.PubSub.broadcast(
+      @pubsub,
+      "build:#{build_id}:images",
+      {:import_complete, successful, failed}
+    )
+
     if failed > 0 and successful == 0 do
-      # All failed - retry the job
       {:error, "All image imports failed"}
     else
-      # At least some succeeded
       :ok
+    end
+  end
+
+  defp process_image(image_id, username, build_name, build_id) do
+    case Image.get(image_id) do
+      {:ok, image} ->
+        source_url = image.original_url
+
+        case download_and_upload(source_url, username, build_name) do
+          {:ok, new_url} ->
+            # Update the image record with the new S3 URL
+            case Image.update(image, %{original_url: new_url}) do
+              {:ok, updated_image} ->
+                # Queue resize job
+                %{"image_id" => updated_image.id}
+                |> Garage.Workers.Resize.new()
+                |> Oban.insert!()
+
+                # Broadcast the update
+                broadcast_image_update(build_id, updated_image)
+                :ok
+
+              {:error, reason} ->
+                Logger.error("Failed to update image #{image_id}: #{inspect(reason)}")
+                {:error, reason}
+            end
+
+          {:error, reason} ->
+            Logger.error(
+              "Failed to download/upload image #{image_id} from #{source_url}: #{inspect(reason)}"
+            )
+
+            {:error, reason}
+        end
+
+      {:error, reason} ->
+        Logger.error("Failed to find image #{image_id}: #{inspect(reason)}")
+        {:error, reason}
     end
   end
 
@@ -83,14 +154,12 @@ defmodule Garage.Workers.ImportImages do
   end
 
   defp get_content_type(headers, url) do
-    # Try to get content type from headers
     content_type =
       Enum.find_value(headers, fn
         {"content-type", value} -> value
         _ -> nil
       end)
 
-    # Fall back to extension-based detection
     if content_type && String.starts_with?(content_type, "image/") do
       content_type |> String.split(";") |> List.first()
     else
@@ -108,7 +177,6 @@ defmodule Garage.Workers.ImportImages do
   end
 
   defp generate_key(username, build_name, _url, content_type) do
-    # Sanitize build name for path
     safe_build_name =
       build_name
       |> String.replace(~r/[^\w\s-]/, "")
@@ -132,22 +200,6 @@ defmodule Garage.Workers.ImportImages do
          |> ExAws.request() do
       {:ok, _} -> :ok
       {:error, reason} -> {:error, {:upload_failed, reason}}
-    end
-  end
-
-  defp create_image_record(build_id, original_url, index) do
-    case Image.create(%{build_id: build_id, original_url: original_url, index: index}) do
-      {:ok, image} ->
-        # Queue resize job to create thumbnail and optimized versions
-        %{"image_id" => image.id}
-        |> Garage.Workers.Resize.new()
-        |> Oban.insert!()
-
-        {:ok, image}
-
-      {:error, reason} ->
-        Logger.error("Failed to create image record: #{inspect(reason)}")
-        {:error, {:db_error, reason}}
     end
   end
 

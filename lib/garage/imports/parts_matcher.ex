@@ -263,7 +263,8 @@ defmodule Garage.Imports.PartsMatcher do
   end
 
   @doc """
-  Formats unmatched parts as text to append to description.
+  Formats unmatched parts as HTML to append to description.
+  Since Trix editor outputs HTML, we format as HTML to match.
   """
   def format_unmatched_for_description(matched_parts, original_parts) do
     unmatched = unmatched_parts(matched_parts, original_parts)
@@ -271,16 +272,32 @@ defmodule Garage.Imports.PartsMatcher do
     if Enum.empty?(unmatched) do
       nil
     else
-      parts_text =
+      parts_list =
         unmatched
         |> Enum.map(fn {type, name} ->
-          "#{humanize(type)}: #{name}"
+          "<li><strong>#{html_escape(humanize(type))}:</strong> #{html_escape(name)}</li>"
         end)
-        |> Enum.join(", ")
+        |> Enum.join("\n")
 
-      "\n\n**Imported Parts (from '77 Garage):** #{parts_text}"
+      """
+      <div><br></div>
+      <div><strong>Imported Parts (from '77 Garage):</strong></div>
+      <ul>
+      #{parts_list}
+      </ul>
+      """
     end
   end
+
+  defp html_escape(text) when is_binary(text) do
+    text
+    |> String.replace("&", "&amp;")
+    |> String.replace("<", "&lt;")
+    |> String.replace(">", "&gt;")
+    |> String.replace("\"", "&quot;")
+  end
+
+  defp html_escape(nil), do: ""
 
   defp humanize(atom) do
     atom

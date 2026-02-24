@@ -114,8 +114,75 @@ defmodule Garage.Imports.Garage do
   defp extract_description(document) do
     document
     |> Floki.find("section.build-description p")
-    |> Floki.text()
+    |> extract_html_content()
+  end
+
+  # Extract content from HTML elements and convert to Trix-compatible HTML
+  defp extract_html_content([]), do: nil
+
+  defp extract_html_content(elements) do
+    elements
+    |> Enum.map(&element_to_html/1)
+    |> Enum.join("")
     |> String.trim()
+    |> case do
+      "" -> nil
+      html -> html
+    end
+  end
+
+  # Convert a Floki element to HTML, preserving structure
+  defp element_to_html({tag, _attrs, children}) when tag in ["p", "div"] do
+    inner = children |> Enum.map(&element_to_html/1) |> Enum.join("")
+    "<div>#{inner}</div>"
+  end
+
+  defp element_to_html({tag, _attrs, children}) when tag in ["strong", "b"] do
+    inner = children |> Enum.map(&element_to_html/1) |> Enum.join("")
+    "<strong>#{inner}</strong>"
+  end
+
+  defp element_to_html({tag, _attrs, children}) when tag in ["em", "i"] do
+    inner = children |> Enum.map(&element_to_html/1) |> Enum.join("")
+    "<em>#{inner}</em>"
+  end
+
+  defp element_to_html({"br", _attrs, _children}), do: "<br>"
+
+  defp element_to_html({"a", attrs, children}) do
+    href =
+      Enum.find_value(attrs, "", fn
+        {"href", val} -> val
+        _ -> nil
+      end)
+
+    inner = children |> Enum.map(&element_to_html/1) |> Enum.join("")
+    "<a href=\"#{href}\">#{inner}</a>"
+  end
+
+  defp element_to_html({_tag, _attrs, children}) do
+    # For other tags, just extract the content
+    children |> Enum.map(&element_to_html/1) |> Enum.join("")
+  end
+
+  # Plain text - convert newlines to <br> tags and escape HTML
+  defp element_to_html(text) when is_binary(text) do
+    text
+    # Normalize whitespace (tabs and multiple spaces to single space)
+    |> String.replace(~r/[\t ]+/, " ")
+    |> String.trim()
+    |> html_escape()
+    |> String.replace(~r/\r?\n/, "<br>")
+  end
+
+  defp element_to_html(_), do: ""
+
+  defp html_escape(text) do
+    text
+    |> String.replace("&", "&amp;")
+    |> String.replace("<", "&lt;")
+    |> String.replace(">", "&gt;")
+    |> String.replace("\"", "&quot;")
   end
 
   defp extract_year(document) do

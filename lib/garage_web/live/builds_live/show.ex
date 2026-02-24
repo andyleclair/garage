@@ -18,6 +18,11 @@ defmodule GarageWeb.BuildsLive.Show do
   def handle_params(%{"build" => slug}, url, socket) do
     build = build(slug, socket.assigns.current_user)
 
+    # Subscribe to image updates for this build
+    if connected?(socket) do
+      Garage.Workers.ImportImages.subscribe(build.id)
+    end
+
     {:noreply,
      socket
      |> assign(:page_title, build.name)
@@ -176,6 +181,41 @@ defmodule GarageWeb.BuildsLive.Show do
       ) do
     form = Form.validate(form, params)
     {:noreply, assign(socket, :comment_form, form)}
+  end
+
+  # Handle PubSub messages for image updates
+  @impl true
+  def handle_info({:image_updated, updated_image}, socket) do
+    build = socket.assigns.build
+
+    # Update the image in the build's images list
+    updated_images =
+      Enum.map(build.images, fn img ->
+        if img.id == updated_image.id, do: updated_image, else: img
+      end)
+
+    updated_build = %{build | images: updated_images}
+
+    # Update selected image if it's the one that changed
+    selected_image =
+      if is_map(socket.assigns.selected_image) and
+           socket.assigns.selected_image.id == updated_image.id do
+        updated_image
+      else
+        socket.assigns.selected_image
+      end
+
+    {:noreply,
+     socket
+     |> assign(:build, updated_build)
+     |> assign(:thumbnails, thumbnails(updated_build))
+     |> assign(:selected_image, selected_image)}
+  end
+
+  @impl true
+  def handle_info({:import_complete, _successful, _failed}, socket) do
+    # Just ignore this on show page, it's mainly useful for edit page
+    {:noreply, socket}
   end
 
   defp build(slug, current_user) when not is_nil(current_user) do

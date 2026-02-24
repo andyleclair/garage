@@ -736,8 +736,7 @@ defmodule GarageWeb.CoreComponents do
         {render_slot(@title)}
       </div>
       <nav
-        class="absolute z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
-        hidden="true"
+        class="hidden absolute z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
         id={"#{@id}-menu"}
         phx-click-away={hide("##{@id}-menu")}
       >

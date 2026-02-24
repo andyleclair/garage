@@ -2,6 +2,8 @@ defmodule Garage.Workers.Resize do
   use Oban.Worker, queue: :resize
   require Logger
 
+  @pubsub Garage.PubSub
+
   @impl Oban.Worker
   def perform(%Oban.Job{args: %{"image_id" => image_id} = _args}) do
     Logger.debug("Starting resize for image #{image_id}")
@@ -25,10 +27,14 @@ defmodule Garage.Workers.Resize do
         ExAws.S3.put_object(bucket(), thumb_path, thumb) |> ExAws.request!()
         ExAws.S3.put_object(bucket(), optimized_path, optimized) |> ExAws.request!()
 
-        Garage.Builds.Image.update!(image_record, %{
-          thumbnail_url: URI.to_string(%URI{parsed_uri | path: thumb_path}),
-          optimized_url: URI.to_string(%URI{parsed_uri | path: optimized_path})
-        })
+        updated_image =
+          Garage.Builds.Image.update!(image_record, %{
+            thumbnail_url: URI.to_string(%URI{parsed_uri | path: thumb_path}),
+            optimized_url: URI.to_string(%URI{parsed_uri | path: optimized_path})
+          })
+
+        # Broadcast the update so LiveViews can refresh
+        broadcast_image_update(image_record.build_id, updated_image)
 
         :ok
 
@@ -36,6 +42,10 @@ defmodule Garage.Workers.Resize do
         Logger.error("Failed to fetch image from S3: #{inspect(error)}")
         {:cancel, "Missing source image"}
     end
+  end
+
+  defp broadcast_image_update(build_id, image) do
+    Phoenix.PubSub.broadcast(@pubsub, "build:#{build_id}:images", {:image_updated, image})
   end
 
   defp path(original_path, new_suffix) do
