@@ -385,7 +385,7 @@ defmodule GarageWeb.BuildsLive.Edit do
   end
 
   def maybe_add_form(form, key) do
-    if Form.value(form, key) do
+    if Form.get_form(form, [key]) do
       form
     else
       Form.add_form(form, [key])

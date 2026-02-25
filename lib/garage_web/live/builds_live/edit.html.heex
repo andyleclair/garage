@@ -1,5 +1,5 @@
 <.header>
-  {@title}
+  {@page_title}
   <:subtitle>Tell the world about your moped!</:subtitle>
 </.header>
 
@@ -163,15 +163,15 @@
     />
   </.inputs_for>
 
-  <%= if AshPhoenix.Form.value(AshPhoenix.Form.get_form(@form, [:engine_tuning]), :transmission) in [:single_variated, :dual_variated] do %>
-    <.live_select
-      label="Pulley"
-      debounce="250"
-      phx-focus="set-default"
-      field={@form[:pulley_id]}
-      options={@pulley_options}
-    />
-    <.inputs_for :let={variator_tuning_form} field={@form[:variator_tuning]}>
+  <.inputs_for :let={variator_tuning_form} field={@form[:variator_tuning]}>
+    <%= if AshPhoenix.Form.value(AshPhoenix.Form.get_form(@form, [:engine_tuning]), :transmission) in [:single_variated, :dual_variated, "single_variated", "dual_variated"] do %>
+      <.live_select
+        label="Pulley"
+        debounce="250"
+        phx-focus="set-default"
+        field={@form[:pulley_id]}
+        options={@pulley_options}
+      />
       <.live_select
         label="Variator"
         debounce="250"
@@ -196,8 +196,8 @@
           <% end %>
         </div>
       <% end %>
-    </.inputs_for>
-  <% end %>
+    <% end %>
+  </.inputs_for>
   <.input field={@form[:description]} type="hidden" label="Description" id="trix-editor" />
   <div id="rich-text" phx-update="ignore">
     <trix-editor class="trix-content" input="trix-editor"></trix-editor>
